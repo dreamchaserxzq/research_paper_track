@@ -11,3 +11,4 @@
 | 2026-04-25 | 约85篇（15查询去重） | 8 | arXiv export API (403)，全程使用 WebSearch；8篇新增（1篇RTE 2D ML矩封闭10分、1篇混合神经时间积分器9分、4篇8分、2篇7分），功能正常 |
 | 2026-04-26 | 约80篇（15查询去重） | 4 | arXiv export API (403)，全程使用 WebSearch；4篇新增（1篇神经算子聚变等离子体漂移波湍流9分、1篇Green积分Helmholtz神经求解8分、2篇7分），功能正常 |
 | 2026-04-27 | 约90篇（15查询去重） | 4 | arXiv export API (403)，全程使用 WebSearch；4篇新增（1篇Vlasov-Poisson储层计算矩封闭9分、1篇JointDiff多模态ICF扩散推断8分、2篇7分），注：2504.13313为2025年4月提交但未曾追踪，本期补录 |
+| 2026-04-28 | 约90篇（15查询去重） | 5 | arXiv export API (403)，全程使用 WebSearch 完成检索；5篇新增（1篇等离子体鞘层无数据PINN代理7分、1篇φ-DeepONet间断捕获神经算子7分、1篇DiffusionRollout长时程PDE不确定性规划7分、1篇对抗最优传输混沌仿真7分、1篇PEST 3D湍流Swin Transformer 7分），功能正常 |
