@@ -14,3 +14,4 @@
 | 2026-04-28 | 约90篇（15查询去重） | 5 | arXiv export API (403)，全程使用 WebSearch 完成检索；5篇新增（1篇等离子体鞘层无数据PINN代理7分、1篇φ-DeepONet间断捕获神经算子7分、1篇DiffusionRollout长时程PDE不确定性规划7分、1篇对抗最优传输混沌仿真7分、1篇PEST 3D湍流Swin Transformer 7分），功能正常 |
 | 2026-04-29 | 约90篇（15查询去重） | 7 | arXiv export API (403)，全程使用 WebSearch 完成检索；7篇新增（1篇ML混合流体-PIC QED激光等离子体框架9分、2篇8分等离子体边界FNO代理和5D回旋动理学代理、2篇8分FI-Conv湍流代理+DIFNO理论、1篇solver-aware湍流封闭7分、1篇ML初始条件加速PIC 7分），功能正常 |
 | 2026-05-01 | 约85篇（15查询去重） | 7 | arXiv export API (403)，全程使用 WebSearch 完成检索；7篇新增（1篇FNO热流闭合Vlasov/Landau阻尼10分、1篇LANL ICF因果多保真度代理8分、1篇固体HHG量子路径Transformer分析8分、1篇LESnets PINO湍流8分、3篇7分），功能正常 |
+| 2026-05-24 | 约90篇（15查询去重） | 4 | arXiv export API (403)，全程使用 WebSearch 完成检索；4篇新增（1篇BRICKS零样本辐射物质神经代理9分、3篇HS-FNO非马尔可夫算子/PI-SWNO长时程稳定/物理主动学习各7分），功能正常 |
