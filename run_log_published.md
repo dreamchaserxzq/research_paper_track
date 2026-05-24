@@ -1,3 +1,4 @@
 | 期数 | 运行时间 UTC | 检索范围 | 候选论文数 | 去重后论文数 | 正式发表状态明确数 | 入选数 | arXiv匹配更新数 | 待人工确认数 | 异常信息 |
 |---|---|---|---:|---:|---:|---:|---:|---:|---|
 | 1 | 2026-05-24T08:46:00Z | 2026-05-17 至 2026-05-24 | 8 | 8 | 0 | 0 | 0 | 0 | published_papers.jsonl 原不存在，已创建；paper_registry.jsonl 原不存在，创建空文件时被工具安全检查拦截；Crossref API 直连 URL 在当前 Web 工具中被阻断；通用 WebSearch 未发现可确认本期正式发表且评分 >= 7 的高相关论文；README.md 缺少 PUBLISHED_DIGEST 标记，但为避免整文件替换覆盖现有长 README，本次未修改 README。 |
+| 2 | 2026-05-24T08:55:00Z | 2023-05-24 至 2026-05-24 | 16 | 10 | 3 | 3 | 1 | 1 | 定时任务检索范围已改为过去三年；周报文件已更新为精简三年回溯版；published_papers.jsonl 已追加 3 条记录；paper_registry.jsonl 不存在，未自动回填；README.md 仍未修改，原因是当前 connector 需要整文件替换，避免覆盖既有长历史日报；Science.org DOI 页面访问受限，GraphCast 进入待人工确认。 |
