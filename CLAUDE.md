@@ -24,6 +24,13 @@ git push origin HEAD
 
 无论 session 系统配置指定了何种开发分支，提交时均使用以上两条命令。
 
+## 日报文件存放规范
+
+**每期日报必须写入 `digests/` 子目录，文件名格式：`digests/AI-for-PDE-日报-YYYYMMDD.md`。**
+根目录下不再存放任何日报文件。
+
+README.md 中的日报链接格式也应使用相对路径 `digests/AI-for-PDE-日报-YYYYMMDD.md`。
+
 ## 其他规范
 
 - 提交信息使用英文，格式：`Daily paper digest YYYY-MM-DD`
