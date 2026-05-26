@@ -16,3 +16,4 @@
 | 2026-05-01 | 约85篇（15查询去重） | 7 | arXiv export API (403)，全程使用 WebSearch 完成检索；7篇新增（1篇FNO热流闭合Vlasov/Landau阻尼10分、1篇LANL ICF因果多保真度代理8分、1篇固体HHG量子路径Transformer分析8分、1篇LESnets PINO湍流8分、3篇7分），功能正常 |
 | 2026-05-24 | 约90篇（15查询去重） | 4 | arXiv export API (403)，全程使用 WebSearch 完成检索；4篇新增（1篇BRICKS零样本辐射物质神经代理9分、3篇HS-FNO非马尔可夫算子/PI-SWNO长时程稳定/物理主动学习各7分），功能正常 |
 | 2026-05-25 | 约90篇（15查询去重） | 5 | arXiv export API (403)，全程使用 WebSearch 完成检索；5篇新增（1篇Argonne Huerta MHD+AI综述8分、1篇SOLPS-NN托卡马克等离子体边缘DL代理8分、1篇NEST局部神经Schwarz几何通用PDE求解8分、1篇Tadpole 3D PDE自编码器基础模型8分、1篇PFNet物理信息相场神经算子7分），功能正常 |
+| 2026-05-26 | 约90篇（15查询去重） | 6 | arXiv export API (403)，全程使用 WebSearch 完成检索；6篇新增（2篇Vlasov-Poisson控制/神经算子10分、1篇MSAT不规则域PDE Transformer 8分、1篇TGLF-WINN聚变湍流输运代理8分；含2篇2025年9月补录+1篇2026年3月补录），功能正常 |
