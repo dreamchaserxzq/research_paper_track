@@ -368,4 +368,20 @@
 
 **本期最值得关注：** 2509.05799（Hybrid FNO-Plasma首次以FNO替代FDTD的Maxwell求解步骤实现60×等离子体击穿加速，EM波+电离流体的混合架构可直接迁移至激光等离子体/EUV光源代理建模）和 2603.01762（DGNet将Green函数离散图化嵌入神经架构，数十条轨迹即达SOTA，极端数据效率对高保真EUV/ICF仿真数据稀缺场景具有直接价值）。
 
+### 第19期 · 2026-05-30 · [📄 查看完整日报](digests/AI-for-PDE-日报-20260530.md)
+
+**检索情况：** 15个关键词查询 → 约90篇去重论文（arXiv export API 403，全程使用 WebSearch 完成检索；含4篇补录）
+
+**入选5篇论文（评分≥7）：**
+
+| # | arXiv ID | 标题摘要（≤20字） | 方向 | 评分 |
+|---|----------|----------------|------|------|
+| 1 | [2506.16619](https://arxiv.org/abs/2506.16619) | Oxford非局域热流核神经学习：超越LMV/SNB解析模型（Physical Review Research） | C | 10/10 |
+| 2 | [2509.06088](https://arxiv.org/abs/2509.06088) | Oxford时间嵌入CNN等离子体非局域热传输建模（Phys Rev E） | C | 8/10 |
+| 3 | [2412.20192](https://arxiv.org/abs/2412.20192) | LANL R2FNet+F2PNet：X射线辐射图→ICF内爆EOS逆推断（Scientific Reports） | B/C | 8/10 |
+| 4 | [2510.00282](https://arxiv.org/abs/2510.00282) | KULeuven FCNN非局域电子压力张量闭合磁鞘湍流（Physics of Plasmas） | C | 7/10 |
+| 5 | [2506.14048](https://arxiv.org/abs/2506.14048) | UCLA对称增强数据驱动等离子体PIC压力张量闭合（Lorentz/Galilean增强） | C | 7/10 |
+
+**本期最值得关注：** 2506.16619（牛津Gregori组首次数据驱动学习等离子体非局域热流时空演化核函数，直接命中EUV/ICF辐射流体代码热传导闭合瓶颈，可即插即用替换Spitzer-Härm求解器）和 2509.06088（同组互补工作，时间嵌入CNN精确捕获宽碰撞率区间的非局域热输运时序动力学，两篇合力构建完整EUV激光等离子体热传导神经代理框架）。
+
 <!-- DIGEST_END -->
