@@ -40,3 +40,4 @@
 | 2026-06-16 | 约90篇（20查询去重） | 1 | arXiv export API (403)，全程使用 WebSearch 完成检索；1篇新增（补录：2506.10636 结构+渐近保持深度神经代理Boltzmann/动理学方程UQ，Dimarco/Pareschi SIAM MMS 9分）；2606.12xxx–2606.16xxx 最新投稿尚未被搜索引擎充分索引，功能正常 |
 | 2026-06-17 | 约90篇（20查询去重） | 2 | arXiv export API (403)，全程使用 WebSearch 完成检索；2篇新增（含1篇补录：2506.17774 UCLA PhysiX 4.5B参数自回归物理仿真基础模型The Well 8任务超越单任务基线 8分；2606.00643 FK-PINN Feynman-Kac随机监督算子预条件+非渐近L²误差界 7分），功能正常 |
 | 2026-06-18 | 约90篇（20查询去重） | 3 | arXiv export API (403)，全程使用 WebSearch 完成检索；3篇新增（2606.17733 LRC-FNO两级残差闭合PIC场求解Landau阻尼/双流不稳定/偏滤器基准验证 9分；2606.14913 EP-FNO能量投影Hamiltonian PDE结构保持长时稳定ZK/KP/sine-Gordon基准 9分；2605.15179 Shodh-MoE稀疏MoE多物理负迁移消除精确质量守恒 7分），功能正常 |
+| 2026-06-19 | 约85篇（16查询去重） | 5 | arXiv export API (403)，全程使用 WebSearch 完成检索；5篇新增（2601.23262 SMC粒子引导扩散PDE求解多物理基准SOTA 8分；2602.02264 PhIS-FNO完全无监督算子学习多阶段课程训练 8分；2602.20399 GeoPT几何预训练物理仿真ICML 2026 7分；2605.27408 NVQLS量子-经典混合算子学习首创 7分；2606.18713 Photonic QNF光子量子PINN 7篇PDE基准 7分），功能正常 |

@@ -679,4 +679,20 @@
 
 **本期最值得关注：** 2606.17733（LRC-FNO首次将两级残差-闭合框架引入PIC场求解并在Landau阻尼、双流不稳定性、偏滤器三类等离子体基准上验证，直接命中EUV/激光等离子体PIC代理建模核心需求）和 2606.14913（EP-FNO通过Hamiltonian不变量投影保证ZK等离子体波方程长时代理精度，理论稳定性保证可直接迁移至Vlasov-Poisson等激光等离子体动力学系统）。
 
+### 第39期 · 2026-06-19 · [📄 查看完整日报](digests/AI-for-PDE-日报-20260619.md)
+
+**检索情况：** 16个关键词查询 → 约85篇去重论文（arXiv export API 403，全程使用 WebSearch 完成检索，功能正常）
+
+**入选5篇论文（评分≥7）：**
+
+| # | arXiv ID | 标题摘要（≤20字） | 方向 | 评分 |
+|---|----------|----------------|------|------|
+| 1 | [2601.23262](https://arxiv.org/abs/2601.23262) | Particle-Guided Diffusion：SMC引导扩散PDE求解多物理基准全面超越已有生成式方法 | A/B | 8/10 |
+| 2 | [2602.02264](https://arxiv.org/abs/2602.02264) | PhIS-FNO完全无监督算子学习多阶段课程训练零标签数据（Politecnico di Milano / KTH） | A | 8/10 |
+| 3 | [2602.20399](https://arxiv.org/abs/2602.20399) | GeoPT提升几何预训练统一物理仿真ICML 2026标签需求↓20-60%（MIT/Caltech/Tsinghua） | A/B | 7/10 |
+| 4 | [2605.27408](https://arxiv.org/abs/2605.27408) | NVQLS首个量子-经典混合算子学习Legendre-Galerkin弱公式（KAIST/Yonsei/SNU） | A | 7/10 |
+| 5 | [2606.18713](https://arxiv.org/abs/2606.18713) | Photonic QNF光子量子神经场7类PDE基准PINN量子计算新范式 | A | 7/10 |
+
+**本期最值得关注：** 2601.23262（Particle-Guided Diffusion首次将SMC粒子框架嵌入扩散模型并以PDE残差为引导，在多物理耦合PDE基准上全面超越已有生成式方法，可直接用于EUV/ICF稀疏诊断下的多物理场联合重建）和2602.02264（PhIS-FNO实现真正零标签无监督算子学习，多阶段课程消除梯度停滞，对激光等离子体高保真仿真数据极度稀缺场景具有直接价值）。
+
 <!-- DIGEST_END -->
