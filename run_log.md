@@ -61,3 +61,4 @@
 | 2026-07-11 | 约85篇（20查询去重） | 1 | arXiv export API (403)，全程使用 WebSearch 完成检索；1篇新增（2607.07020 CEA/Paris-Saclay PINN驱动Rayleigh-Taylor湍流过渡封闭学习，显式解析修正嵌入k-ε-b模型 7分；2607.04xxx–2607.07xxx段其余11篇候选均≤6分），功能正常 |
 | 2026-07-12 | 约70篇（20查询去重） | 4 | arXiv export API (403)，全程使用 WebSearch 完成检索；4篇新增（含3篇补录：2606.21659 FSU Jena首创相对论MHD子网格ML模型KHI 44×加速9分；2603.12503 SLAC/DESY/LBNL物理引导深度学习激光波形逆设计53%发射度优化8分；2602.19110 CEA/IOP Transformer WEST托卡马克等离子体参数预测R²=0.94 7分；2506.04742 Aalto DeepONet解耦PDE跟踪控制4×快于伴随法7分），功能正常 |
 | 2026-07-13 | 约80篇（20查询去重） | 0 | arXiv export API (403)，全程使用 WebSearch 完成检索；2607.07xxx–2607.08xxx新作均未达评分≥7阈值；最高候选2607.02088 FNO增量预测Rayleigh-Bénard对流6分、2607.07682 神经算子拓扑演化策略PDE约束优化5分；周日新投稿索引延迟，功能正常 |
+| 2026-07-13 | 约80篇（20查询去重） | 1 | arXiv export API (403)，全程使用 WebSearch 完成检索；本日第二次检索，1篇新增（2607.02194 Oxford DSGNAR二阶优化框架解决PINN病态训练，误差降至机器精度极限 7分）；候选2602.17607 AutoNumerics LLM多智能体数值求解器、2605.25786 NPSolver神经泊松求解器均6分未达阈值，功能正常 |
