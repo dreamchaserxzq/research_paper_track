@@ -1,6 +1,11 @@
-# AI for PDE 论文自动追踪系统
+# PDE 基座大模型 论文自动追踪系统
 
-> 专注于**计算物理 × 科学机器学习**交叉领域的每日 arXiv 论文追踪，由 Claude Code Routine 自动驱动。
+> 专注于 **PDE 基座大模型（PDE Foundation Models）** 的每日 arXiv 论文追踪，由 Claude Code Routine 自动驱动。
+
+> **📌 研究方向变更公告（2026-07-22）**
+> 本仓库研究重心已由"AI 求解 PDE × 激光等离子体/EUV"转向 **PDE 基座大模型** ——
+> 即在多种物理 / 多类 PDE 上大规模预训练、可跨方程 / 跨几何 / 跨分辨率迁移的通用科学计算大模型。
+> 2026-07-22 之前的日报（`digests/AI-for-PDE-日报-*.md`）与下方历史摘要作为**归档保留**，不再重写。
 
 ## 项目简介
 
@@ -8,9 +13,11 @@
 
 | 方向 | 关键词覆盖 |
 |------|----------|
-| **A：AI 求解 PDE** | Neural Operator、PINN、DeepONet、Foundation Model for PDE |
-| **B：数据生成与代理模型** | Surrogate Model、Generative Model、Active Learning for PDE |
-| **C：激光等离子体 / EUV 计算** | Laser-Plasma ML、EUV Simulation、Radiation Hydrodynamics、Vlasov、MHD |
+| **A：基座架构与预训练** | Foundation Model for PDE、Multiple Physics Pretraining、In-context Operator Learning、大规模 Transformer/神经算子主干 |
+| **B：数据、基准与缩放规律** | The Well、PDEBench、PDEArena、多物理数据集、科学基座模型 Scaling Laws |
+| **C：下游泛化与适配** | 零/少样本迁移、微调/PEFT、跨方程/几何/分辨率泛化、基座先验 + 经典求解器耦合 |
+
+> 方向定义、关键词库与评分标准的**唯一事实来源**是 [`docs/TAXONOMY.md`](docs/TAXONOMY.md)。
 
 ## 工作流程
 
@@ -18,36 +25,45 @@
 每日 UTC 01:00（北京时间 09:00）
         │
         ▼
-  搜索 arXiv API（48h 内新论文，三方向并行）
+  读取 docs/TAXONOMY.md（方向/关键词/评分）+ seen_papers.txt（去重集）
+        │
+        ▼
+  WebSearch 检索 48h 内新论文（三方向并行）
         │
         ▼
   去重（跳过 seen_papers.txt 中已有 ID）
         │
         ▼
-  10 分制评分筛选（≥ 7 分入选，目标 6-10 篇）
+  10 分制评分筛选（≥ 7 分入选，数量不设下限）
         │
         ▼
   生成中文摘要报告（Markdown 格式）
         │
         ▼
-  提交到仓库（日报文件 + seen_papers.txt + run_log.md）
+  提交到仓库（日报文件 + seen_papers.txt + run_log.md + README）
 ```
 
-## 仓库文件说明
+## 仓库结构
 
-| 文件 | 说明 |
+| 路径 | 说明 |
 |------|------|
-| `digests/AI-for-PDE-日报-YYYYMMDD.md` | 每日论文摘要报告（自动生成，归档于 `digests/` 目录） |
-| `seen_papers.txt` | 已推送论文的 arXiv ID 列表，用于去重 |
-| `run_log.md` | 每次运行记录（时间、检索数、入选数、异常） |
+| `docs/TAXONOMY.md` | **方向定义 + 关键词库 + 评分标准**（路由例程的事实来源） |
+| `docs/LANDMARK_MODELS.md` | PDE 基座大模型里程碑工作清单（持续维护的领域索引） |
+| `docs/ROUTINE.md` | 日报路由例程提示词的版本化副本 |
+| `digests/PDE-FM-日报-YYYYMMDD.md` | 每日论文摘要报告（2026-07-22 起的新命名） |
+| `digests/AI-for-PDE-日报-*.md` | 旧主题时期日报归档（2026-07-22 前） |
+| `digests/published/` | 正式发表论文周报（由独立的每周例程维护） |
+| `metadata/*.jsonl` | 论文注册表与正式发表状态元数据（周报例程维护） |
+| `seen_papers.txt` | 已推送论文 arXiv ID 列表，用于去重（跨主题连续保留） |
+| `run_log.md` / `run_log_published.md` | 日报 / 周报运行记录 |
 
-## 评分标准
+## 评分标准（满分 10，入选阈值 ≥ 7）
 
-每篇论文按三个维度打分，满分 10 分：
+- **主题相关度**（0–4 分）：与"PDE 基座大模型"核心主题的契合程度
+- **基座特性强度**（0–3 分）：多物理/多任务预训练、可迁移、规模化的证据
+- **创新性**（0–3 分）：新架构、新预训练范式、新基准/数据集或新理论
 
-- **AI + PDE 相关度**（0–4 分）：与神经算子、PINN 等核心方向的契合程度
-- **激光等离子体 / EUV 场景关联性**（0–3 分）：对课题方向的直接参考价值
-- **创新性**（0–3 分）：是否提出新方法、新架构或新理论
+详见 [`docs/TAXONOMY.md`](docs/TAXONOMY.md)。
 
 ## 触发方式
 
@@ -57,13 +73,14 @@
 ## 技术栈
 
 - **运行平台**：Anthropic Cloud（Claude Code Remote Agent）
-- **模型**：claude-sonnet-4-6
-- **数据来源**：[arXiv API](http://export.arxiv.org/api/query)
+- **数据来源**：WebSearch（arXiv export API 在云端常返回 403）
 - **存储**：GitHub 仓库自动提交
 
 ---
 
 ## 历史日报摘要
+
+> 说明：以下条目含 2026-07-22 主题转向前的 "AI for PDE" 时期归档，以及转向后的 "PDE 基座大模型" 时期日报，按时间顺序排列。
 
 <!-- DIGEST_START -->
 
