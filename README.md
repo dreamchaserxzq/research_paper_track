@@ -1,25 +1,26 @@
-# PDE 基座大模型 论文自动追踪系统
+# AI for PDE 论文自动追踪系统
 
-> 专注于 **PDE 基座大模型（PDE Foundation Models）** 的每日 arXiv 论文追踪，由 Claude Code Routine 自动驱动。
+> 计算物理 × 科学机器学习交叉领域的每日 arXiv 论文追踪，由 Claude Code Routine 自动驱动。
 
-> **📌 研究方向变更公告（2026-07-22）**
-> 本仓库研究重心已由"AI 求解 PDE × 激光等离子体/EUV"转向 **PDE 基座大模型** ——
-> 即在多种物理 / 多类 PDE 上大规模预训练、可跨方程 / 跨几何 / 跨分辨率迁移的通用科学计算大模型。
+> **📌 重点检索方向变更（2026-07-22）**
+> 当前重点已聚焦到 **PDE 基座大模型（PDE Foundation Models）** ——
+> 即在多种物理 / 多类 PDE 上大规模预训练、可跨方程 / 跨几何 / 跨分辨率迁移的通用科学计算大模型；
+> 同时保留对整个"AI 求解 PDE"大方向的持续追踪（方向 D）。
 > 2026-07-22 之前的日报、周报与历史摘要已整体归档至
 > [`digests/archive-ai-for-pde/`](digests/archive-ai-for-pde/)，作为旧方向成果保留，不再重写。
 
 ## 项目简介
 
-本项目通过部署在 Anthropic 云端的定时 Agent，每日自动检索 arXiv 最新论文，重点覆盖以下三个方向：
+本项目通过部署在 Anthropic 云端的定时 Agent，每日自动检索 arXiv 最新论文，重点覆盖以下四个方向：
 
 | 方向 | 关键词覆盖 |
 |------|----------|
 | **A：基座架构与预训练** | Foundation Model for PDE、Multiple Physics Pretraining、In-context Operator Learning、大规模 Transformer/神经算子主干 |
 | **B：数据、基准与缩放规律** | The Well、PDEBench、PDEArena、多物理数据集、科学基座模型 Scaling Laws |
 | **C：下游泛化与适配** | 零/少样本迁移、微调/PEFT、跨方程/几何/分辨率泛化、基座先验 + 经典求解器耦合 |
-| **D：AI 求解 PDE（保留方向）** | Neural Operator、PINN、DeepONet、Operator Learning、Neural PDE Solver（延续旧方向持续追踪） |
+| **D：AI 求解 PDE** | Neural Operator、PINN、DeepONet、Operator Learning、Neural PDE Solver、代理模型（Surrogate Model）、数据生成与生成式求解、主动学习、可微分/混合数值方法等整个 AI-for-PDE 大方向 |
 
-> A/B/C 为 PDE 基座大模型核心方向；D 为旧方向"AI 求解 PDE"的保留延续。
+> A/B/C 为 PDE 基座大模型核心方向；D 覆盖除基座模型以外的整个"AI 求解 PDE"大方向。
 > 方向定义、关键词库与评分标准的**唯一事实来源**是 [`docs/TAXONOMY.md`](docs/TAXONOMY.md)。
 
 ## 工作流程
@@ -81,11 +82,11 @@
 
 ---
 
-## 日报摘要（PDE 基座大模型时期）
+## 日报摘要
 
-> 旧方向（AI for PDE × 激光等离子体/EUV）2026-04-19 ~ 2026-07-22 的历史日报摘要已迁移至
+> 2026-04-19 ~ 2026-07-22 的历史日报摘要（重点转向前）已迁移至
 > [`digests/archive-ai-for-pde/历史日报摘要.md`](digests/archive-ai-for-pde/历史日报摘要.md)，
-> 以下仅收录 2026-07-22 主题转向后的新方向日报摘要。
+> 以下仅收录 2026-07-22 重点转向后的日报摘要。
 
 <!-- DIGEST_START -->
 

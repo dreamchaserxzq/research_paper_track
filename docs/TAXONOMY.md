@@ -11,7 +11,7 @@
 
 ## 一、四大追踪方向
 
-> A/B/C 为 PDE 基座大模型核心方向；D 为旧方向"AI 求解 PDE"的保留延续。
+> A/B/C 为 PDE 基座大模型核心方向；D 覆盖除基座模型以外的整个"AI 求解 PDE"大方向。
 
 ### 方向 A：基座架构与预训练（Architectures & Pretraining）
 
@@ -69,16 +69,19 @@
 - `site:arxiv.org parameter-efficient fine-tuning physics model`
 - `site:arxiv.org foundation model transfer new PDE geometry`
 
-### 方向 D：AI 求解 PDE（通用，保留方向）
+### 方向 D：AI 求解 PDE
 
-延续旧研究方向"AI 求解 PDE"的持续追踪。关注**通用的 AI/ML 求解 PDE 方法**，即使其
-尚未具备"基座模型"的多物理/规模化属性，只要方法本身有代表性或对基座模型有启发即纳入。
+覆盖**整个"AI 求解 PDE"大方向**的研究工作 —— 除基座大模型（A/B/C）之外，凡用 AI/ML
+求解、加速、代理或生成 PDE 相关物理场的工作均纳入，力求对该大方向广谱检索。
 
 涵盖：
 - 神经算子（FNO、DeepONet、Transolver 等）求解单类或参数化 PDE
-- 物理信息神经网络（PINN）及其训练/优化改进
-- 算子学习理论、神经 PDE 求解器、混合数值-学习方法
-- 生成式/扩散式 PDE 求解
+- 物理信息神经网络（PINN）及其训练 / 优化 / 采样改进
+- 算子学习理论、神经 PDE 求解器、混合"数值-学习"方法、可微分仿真
+- **代理模型（surrogate model）**：加速昂贵物理仿真的 ML 代理
+- **数据生成与生成式求解**：扩散/流匹配/生成模型用于 PDE 求解或科学数据合成
+- **主动学习 / 数据高效训练**：面向 PDE 的采样与训练策略
+- 降阶模型（ROM）、图神经网络 PDE、隐式神经表示等其它 AI-for-PDE 路线
 
 关键词库（搜索用）：
 - `site:arxiv.org neural operator PDE`
@@ -86,9 +89,15 @@
 - `site:arxiv.org scientific machine learning PDE`
 - `site:arxiv.org operator learning partial differential equation`
 - `site:arxiv.org neural PDE solver`
+- `site:arxiv.org surrogate model PDE simulation machine learning`
+- `site:arxiv.org generative model PDE scientific data`
+- `site:arxiv.org data-driven simulation deep learning`
+- `site:arxiv.org active learning neural operator`
+- `site:arxiv.org reduced-order model machine learning PDE`
+- `site:arxiv.org graph neural network PDE simulation`
 
 > **A 与 D 的边界**：面向多物理/跨方程/规模化预训练的工作归 **A**（基座）；
-> 面向单类或参数化 PDE 的通用求解方法归 **D**（通用求解）。二者可交叉标注，主方向写在前。
+> 其余用 AI 求解/加速/代理/生成 PDE 的工作归 **D**。二者可交叉标注，主方向写在前。
 
 ---
 
@@ -103,7 +112,7 @@
 评分要点：
 - 只保留 **总分 ≥ 7** 的论文；数量不设下限，0 篇也正常，**绝不用已推送过的论文凑数**。
 - 未达阈值但有价值的工作，可放入"附：本期未入选但值得关注的论文"。
-- **优先级**：A/B/C（基座大模型主线）为核心；D（通用 AI 求解 PDE）为保留方向，
+- **优先级**：A/B/C（基座大模型主线）为核心；D 覆盖整个 AI-for-PDE 大方向，
   入选门槛一致，但同期名额紧张时优先呈现 A/B/C。
 - 纯粹的单方程 PINN/神经算子求解器若无任何通用性或启发价值，通常 ≤ 6 分。
 
@@ -118,4 +127,4 @@
 - **A** 基座架构与预训练
 - **B** 数据、基准与缩放规律
 - **C** 下游泛化与适配
-- **D** AI 求解 PDE（通用，保留方向）
+- **D** AI 求解 PDE（整个 AI-for-PDE 大方向）
