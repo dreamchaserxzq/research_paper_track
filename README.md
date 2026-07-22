@@ -51,11 +51,12 @@
 
 | 路径 | 说明 |
 |------|------|
-| `docs/TAXONOMY.md` | **方向定义 + 关键词库 + 评分标准**（路由例程的事实来源） |
+| `docs/TAXONOMY.md` | **日报**方向定义 + 关键词库 + 评分标准（日报例程的事实来源） |
+| `docs/PUBLISHED_CRITERIA.md` | **周报**正式发表判定 + venue + 分类 + 评分（周报例程的事实来源） |
 | `docs/LANDMARK_MODELS.md` | PDE 基座大模型里程碑工作清单（持续维护的领域索引） |
 | `docs/ROUTINE.md` | 日报路由例程提示词的版本化副本 |
 | `digests/PDE-FM-日报-YYYYMMDD.md` | 每日论文摘要报告（2026-07-22 起的新命名） |
-| `digests/published/` | 新方向正式发表论文周报（由独立的每周例程维护） |
+| `digests/published/AI-for-PDE-正式发表周报-YYYY-WW.md` | 正式发表论文周报（由独立的每周例程维护） |
 | `digests/archive-ai-for-pde/` | **旧方向（AI for PDE）时期归档**：日报 `daily/`、周报 `published/`、历史摘要 |
 | `metadata/*.jsonl` | 论文注册表与正式发表状态元数据（周报例程维护，跨主题连续保留） |
 | `seen_papers.txt` | 已推送论文 arXiv ID 列表，用于去重（跨主题连续保留） |

@@ -2,6 +2,7 @@
 
 > 本文件是**日报路由例程（daily routine）唯一的方向 / 评分事实来源**。
 > 更新方向定义、关键词库或评分标准时，只需修改本文件，路由例程会以此为准。
+> 正式发表**周报**的判定 / venue / 分类事实来源另见 [`PUBLISHED_CRITERIA.md`](./PUBLISHED_CRITERIA.md)。
 >
 > **主题转向说明**：自 2026-07-22 起，本仓库研究重心由"AI 求解 PDE × 激光等离子体/EUV"
 > 转向 **PDE 基座大模型（PDE Foundation Models）** —— 即在多种物理/多类 PDE 上
