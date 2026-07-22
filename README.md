@@ -56,12 +56,14 @@
 | `docs/LANDMARK_MODELS.md` | PDE 基座大模型里程碑工作清单（持续维护的领域索引） |
 | `docs/ROUTINE.md` | 日报路由例程提示词的版本化副本 |
 | `docs/ROUTINE_PUBLISHED.md` | 周报路由例程提示词的版本化副本 |
+| `docs/ROUTINE_STATUS_UPDATE.md` | 正式发表状态回填例程提示词的版本化副本 |
 | `digests/PDE-FM-日报-YYYYMMDD.md` | 每日论文摘要报告（2026-07-22 起的新命名） |
 | `digests/published/AI-for-PDE-正式发表周报-YYYY-WW.md` | 正式发表论文周报（由独立的每周例程维护） |
 | `digests/archive-ai-for-pde/` | **旧方向（AI for PDE）时期归档**：日报 `daily/`、周报 `published/`、历史摘要 |
-| `metadata/*.jsonl` | 论文注册表与正式发表状态元数据（周报例程维护，跨主题连续保留） |
+| `digests/status_updates/` | arXiv 正式发表状态回填报告（由状态回填例程维护） |
+| `metadata/*.jsonl` | 论文注册表与正式发表状态元数据（周报 / 状态回填例程维护，跨主题连续保留） |
 | `seen_papers.txt` | 已推送论文 arXiv ID 列表，用于去重（跨主题连续保留） |
-| `run_log.md` / `run_log_published.md` | 日报 / 周报运行记录 |
+| `run_log.md` / `run_log_published.md` / `run_log_status_update.md` | 日报 / 周报 / 状态回填运行记录 |
 
 ## 评分标准（满分 10，入选阈值 ≥ 7）
 
@@ -108,3 +110,14 @@ _（暂无新方向日报，首期日报生成后将自动追加于此。）_
 _（暂无正式发表周报摘要，首期生成后将自动追加于此，保留最近 12 期。）_
 
 <!-- PUBLISHED_DIGEST_END -->
+
+## 正式发表状态回填
+
+> 由**状态回填例程**维护：定期复查仓库已收录的 arXiv 论文是否已出现正式发表版本，
+> 回填 DOI / venue / 出版状态到 `metadata/`，报告见 [`digests/status_updates/`](digests/status_updates/)。
+
+<!-- STATUS_UPDATE_START -->
+
+_（暂无状态回填摘要，首期运行后将自动追加于此。）_
+
+<!-- STATUS_UPDATE_END -->
