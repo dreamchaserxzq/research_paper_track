@@ -21,20 +21,22 @@
 | 🏗️ MPP（Multiple Physics Pretraining） | Polymathic AI，多物理自回归预训练 | 2310.02994 | A |
 | 🏗️ UPT（Universal Physics Transformers） | 统一网格/粒子表示的物理 Transformer | 2402.12365 | A |
 | 🏗️ PDEformer-1 | 以符号 PDE 形式为条件的通用求解器 | 2402.12652 | A |
+| 🏗️ MAE-PDE（Masked Autoencoders are PDE Learners） | 掩码自编码预训练用于 PDE 表征 | 2403.17728 | A |
+| 🏗️ UPS | 跨模态适配高效构建 PDE 求解基座（FNO-Transformer，暖启动自 LLM） | 2403.07187 | A |
 | 🏗️ DPOT | 自回归去噪算子 Transformer，大规模 PDE 预训练 | 2403.03542 | A |
-| 🏗️ UPS（Unified PDE Solver） | 跨维度/跨方程统一基座 | 2403.07187（待核验） | A |
+| 🏗️ Unisolver | PDE 条件 Transformer 迈向通用神经 PDE 求解器 | 2405.17527 | A |
 | 🏗️ Poseidon | 面向 PDE 的高效基座模型，强调样本效率 | 2405.19101 | A |
-| 🏗️ Unisolver | PDE 条件 Transformer 作为通用求解器 | 2405.17527（待核验） | A |
-| 🏗️ Walrus | 连续体动力学基础模型（含等离子体预训练场景） | 2511.15684 | A/C |
 | 🏗️ PDEformer-2 | 二维通用 PDE 基础模型，40TB 预训练 | 2507.15409 | A |
+| 🏗️ Walrus | 连续体动力学基础模型（含等离子体预训练场景） | 2511.15684 | A/C |
 
 ## B. 数据集与基准
 
 | 名称 | 一句话定位 | arXiv | 方向 |
 |------|-----------|-------|------|
+| 📊 PDEArena | 多时空尺度广义 PDE 建模基准（Gupta & Brandstetter） | 2209.15616 | B |
 | 📊 PDEBench | 多物理 PDE 基准与数据集 | 2210.07182 | B |
-| 📊 PDEArena | 多时空尺度广义 PDE 建模基准 | 2209.15616（待核验） | B |
-| 📊 The Well | Polymathic AI，15TB 级多物理仿真数据集合 | 2412.00568（待核验） | B |
+| 📊 The Well | Polymathic AI，15TB / 16 数据集多物理仿真集合（NeurIPS 2024） | 2412.00568 | B |
+| 📊 Physics-FM 泛化基准 | 面向物理基座模型的偏差感知泛化基准（跨物理区间/分布偏移） | 2605.29283 | B/C |
 
 ## C. 缩放规律与理论
 
@@ -44,6 +46,6 @@
 
 ---
 
-**说明**：本清单为主题转向（2026-07-22）时的初始种子，覆盖公认里程碑；标注"待核验"的
-arXiv ID 需路由例程后续用 WebSearch 逐一确认。清单不追求穷尽，只收录对"PDE 基座大模型"
+**说明**：本清单为主题转向（2026-07-22）时的初始种子，覆盖公认里程碑；所有 arXiv ID 均已
+经 WebSearch 核验（缩放律分区留待后续补充）。清单不追求穷尽，只收录对"PDE 基座大模型"
 主线有代表性的工作。
