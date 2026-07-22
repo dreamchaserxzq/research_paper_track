@@ -55,6 +55,7 @@
 | `docs/PUBLISHED_CRITERIA.md` | **周报**正式发表判定 + venue + 分类 + 评分（周报例程的事实来源） |
 | `docs/LANDMARK_MODELS.md` | PDE 基座大模型里程碑工作清单（持续维护的领域索引） |
 | `docs/ROUTINE.md` | 日报路由例程提示词的版本化副本 |
+| `docs/ROUTINE_PUBLISHED.md` | 周报路由例程提示词的版本化副本 |
 | `digests/PDE-FM-日报-YYYYMMDD.md` | 每日论文摘要报告（2026-07-22 起的新命名） |
 | `digests/published/AI-for-PDE-正式发表周报-YYYY-WW.md` | 正式发表论文周报（由独立的每周例程维护） |
 | `digests/archive-ai-for-pde/` | **旧方向（AI for PDE）时期归档**：日报 `daily/`、周报 `published/`、历史摘要 |
