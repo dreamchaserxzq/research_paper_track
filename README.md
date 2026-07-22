@@ -90,6 +90,19 @@
 
 <!-- DIGEST_START -->
 
-_（暂无新方向日报，首期 PDE 基座大模型日报生成后将自动追加于此。）_
+_（暂无新方向日报，首期日报生成后将自动追加于此。）_
 
 <!-- DIGEST_END -->
+
+## 正式发表论文周报
+
+> 由**每周例程**维护：跟踪 AI 求解 PDE 领域**已正式发表 / 正式接收**的论文（补充 DOI、venue、
+> 出版状态，并回填 arXiv 预印本的正式版本）。完整周报见 [`digests/published/`](digests/published/)；
+> 2026-07-22 前的旧周报归档于
+> [`digests/archive-ai-for-pde/published/`](digests/archive-ai-for-pde/published/)。
+
+<!-- PUBLISHED_DIGEST_START -->
+
+_（暂无正式发表周报摘要，首期生成后将自动追加于此，保留最近 12 期。）_
+
+<!-- PUBLISHED_DIGEST_END -->
