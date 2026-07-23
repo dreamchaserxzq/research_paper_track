@@ -121,7 +121,14 @@ _（暂无新方向日报，首期日报生成后将自动追加于此。）_
 
 <!-- PUBLISHED_DIGEST_START -->
 
-_（暂无正式发表周报摘要，首期生成后将自动追加于此，保留最近 12 期。）_
+### 2026-W30 · 2026-07-23
+
+- [📄 AI for PDE 正式发表论文追踪周报](digests/published/AI-for-PDE-正式发表周报-2026-W30.md)
+- **检索范围**：2023-07-23 至 2026-07-23 UTC
+- **统计**：原始候选 48 篇；去重后 31 篇；正式状态明确 20 篇；核心入选 9 篇；扩展入选 0 篇；状态更新 3 篇；待确认 4 篇。
+- **重点论文**：Poseidon、CoDA-NO、DPOT、OmniArch、PDE-Transformer、PROSE-PDE、PITA、VICON、DNO。
+- **主要趋势**：PDE 基座模型正在从单一共享主干转向“方程符号、物理变量、几何与时间推进”四类结构化条件；跨 PDE 迁移、in-context 学习与长时 rollout 对齐成为正式发表工作的主线。
+- **元数据修正**：Poseidon 与 CoDA-NO 的正式 venue 更正为 NeurIPS 2024并补 DOI；DNO 更正为 Communications Physics 并补 DOI、卷号与文章号。
 
 <!-- PUBLISHED_DIGEST_END -->
 
