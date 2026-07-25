@@ -126,6 +126,12 @@ _（暂无新方向日报，首期日报生成后将自动追加于此。）_
 
 本期最值得关注： Test-time Generalization via Neural Operator Splitting 提出无需微调、测试时通过算子组合搜索实现真零样本泛化的新范式；两篇基座模型跨域迁移实证研究（火星大气、极端加载材料动力学）从正反两面刻画了当前PDE基座模型的泛化边界。
 
+第72期 · 2026-07-25 · [📄 查看完整日报](digests/PDE-FM-日报-20260725.md)
+检索情况： 20个关键词查询 → 约80篇去重论文（搜索引擎对2607.19xxx之后区间索引延迟明显）
+入选0篇论文（评分≥7）：本期无新增
+
+本期最值得关注： 未见新增；候选中最接近阈值的是 Physics-Audited Agentic Discovery in Scientific Machine Learning（约6分，验证优先agentic工作流，因通用性证据有限未达标准），其余候选（TRIE代理评估框架、MPU-PINN配点精化）此前已核验，均未达7分阈值。
+
 <!-- DIGEST_END -->
 
 ## 正式发表论文周报
