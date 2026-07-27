@@ -38,6 +38,7 @@
 | 📊 The Well | Polymathic AI，15TB / 16 数据集多物理仿真集合（NeurIPS 2024） | 2412.00568 | B |
 | 📊 Physics-FM 泛化基准 | 面向物理基座模型的偏差感知泛化基准（跨物理区间/分布偏移） | 2605.29283 | B/C |
 | 📊 RealPDEBench | 首个真实世界-仿真配对物理系统基准，直击sim-to-real鸿沟（Westlake，ICLR 2026 Oral） | 2601.01829 | B |
+| 📊 SPDEBench | 首个随机PDE（Φ⁴/波动/N-S/KdV）统一大型基准，含噪声采样误差与奇异SPDE重整化处理 | 2505.18511 | B |
 
 ## C. 缩放规律与理论
 
