@@ -17,6 +17,7 @@
 |------|-----------|-------|------|
 | 🏗️ DeepONet | 算子学习开山之作，学习函数到函数的映射 | 1910.03193 | A |
 | 🏗️ FNO（Fourier Neural Operator） | 谱域算子学习，众多基座模型的主干 | 2010.08895 | A |
+| 🏗️ PROSE-PDE | 双模态（数值+符号）多算子学习基座模型，支持跨方程外推 | 2404.12355 | A |
 | 🏗️ ICON（In-Context Operator Networks） | 以上下文示例进行零样本算子推理 | 2304.07993 | A/C |
 | 🏗️ MPP（Multiple Physics Pretraining） | Polymathic AI，多物理自回归预训练 | 2310.02994 | A |
 | 🏗️ UPT（Universal Physics Transformers） | 统一网格/粒子表示的物理 Transformer | 2402.12365 | A |
