@@ -35,6 +35,9 @@
 | 🏗️ HyCOP | 模块化混合组合算子：数值子求解器+可学习闭合查询条件化组合，可解释+跨基准OOD泛化 | 2605.00820 | A/D |
 | 🏗️ HyPINO | 超网络生成PINN的多物理零样本算子，无需微调超越Poseidon/PINO基线 | 2509.05117 | A/C |
 | 🏗️ PDE-FM | Mamba状态空间主干+谱-空间联合tokenization，The Well 12异质多物理数据集一次预训练免改架构迁移，6/12领域SOTA（IBM Research） | 2511.21861 | A |
+| 🏗️ VICON | 视觉Transformer化ICON，patch级上下文算子学习，多物理流体基准大幅超越DPOT/MPP（UCLA/NUS/UCSD，TMLR2026） | 2411.16063 | A/C |
+| 🏗️ XNN（Axial Neural Networks） | 维度无关轴向神经网络，解决物理基座模型跨维度预训练效率瓶颈（KAIST/NYU，NeurIPS2025 Spotlight） | 2510.13665 | A |
+| 🏗️ BCAT | 分块因果Transformer流体动力学PDE基座模型，整帧自回归预测+跨几何/参数规模化预训练（UCLA） | 2501.18972 | A |
 
 ## B. 数据集与基准
 
