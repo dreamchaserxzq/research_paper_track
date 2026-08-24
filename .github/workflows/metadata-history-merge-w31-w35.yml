@@ -151,7 +151,6 @@ jobs:
                           conflicts.append({'scope':scope,'identity':identity,'field':k,'existing':old[k],'incoming':v})
               return changed
 
-          # ---- published_papers.jsonl ----
           pub_path = META / 'published_papers.jsonl'
           pub_raw, pub = load_jsonl_raw(pub_path)
           pub_orig_len = len(pub)
@@ -188,7 +187,6 @@ jobs:
                   if merge_missing_only(pub[match], cand, 'published_papers', ident):
                       pub_modified.add(match)
 
-          # validate newly merged published-v2 records and new duplicates
           seen_doi, seen_arxiv, seen_title = {}, {}, {}
           for i, o in enumerate(pub):
               if o.get('registry_schema_version') == 'published-v2':
@@ -211,7 +209,6 @@ jobs:
 
           write_jsonl_preserving(pub_path, pub_raw, pub, pub_modified, pub_orig_len)
 
-          # ---- paper_registry.jsonl ----
           reg_path = META / 'paper_registry.jsonl'
           reg_raw, reg = load_jsonl_raw(reg_path)
           reg_orig_len = len(reg)
@@ -263,7 +260,6 @@ jobs:
                   if len(matches) == 1:
                       match = matches[0]
               if match is None:
-                  # Explicit patches are authoritative enough to retain even if the bootstrap registry missed the record.
                   if patch in explicit:
                       p.setdefault('last_status_check', MAINT_DATE)
                       reg.append(p)
@@ -273,7 +269,6 @@ jobs:
               old = reg[match]
               changed = False
               ident = aid or p.get('doi') or p.get('title')
-              # Evidence lists are unioned; trusted formal fields are never overwritten on conflict.
               for list_key in ('status_evidence','source','sources'):
                   v = p.get(list_key)
                   if isinstance(v, list):
@@ -315,7 +310,6 @@ jobs:
 
           write_jsonl_preserving(reg_path, reg_raw, reg, reg_modified, reg_orig_len)
 
-          # ---- README: only PUBLISHED_DIGEST marker block ----
           readme_path = ROOT / 'README.md'
           readme = readme_path.read_text(encoding='utf-8')
           start = '<!-- PUBLISHED_DIGEST_START -->'
@@ -367,12 +361,10 @@ jobs:
           weeks_sorted = sorted(by_week)[-12:]
           new_body = '\n\n' + '\n\n'.join(by_week[w] for w in weeks_sorted) + '\n\n'
           readme_new = before + start + new_body + end + after
-          # Assert marker-external text is unchanged.
           if not readme_new.startswith(before + start) or not readme_new.endswith(end + after):
               raise RuntimeError('README marker-external content changed unexpectedly')
           readme_path.write_text(readme_new, encoding='utf-8')
 
-          # ---- maintenance run log ----
           log_path = ROOT / 'run_log_published.md'
           log = log_path.read_text(encoding='utf-8')
           if '元数据历史归并 W31-W35' not in log:
@@ -396,7 +388,6 @@ jobs:
           elif conflict_path.exists():
               conflict_path.unlink()
 
-          # Final syntax validation.
           for p in (pub_path, reg_path):
               for n, line in enumerate(p.read_text(encoding='utf-8').splitlines(), 1):
                   if line.strip():
@@ -431,3 +422,5 @@ jobs:
           git diff --check
           git commit -m 'merge published metadata history W31-W35'
           git push origin HEAD:main
+
+# trigger-existing-workflow
