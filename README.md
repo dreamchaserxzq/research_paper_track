@@ -420,6 +420,41 @@ _（暂无新方向日报，首期日报生成后将自动追加于此。）_
 - **主要趋势**：PDE 基座模型正在从单一共享主干转向“方程符号、物理变量、几何与时间推进”四类结构化条件；跨 PDE 迁移、in-context 学习与长时 rollout 对齐成为正式发表工作的主线。
 - **元数据修正**：Poseidon 与 CoDA-NO 的正式 venue 更正为 NeurIPS 2024并补 DOI；DNO 更正为 Communications Physics 并补 DOI、卷号与文章号。
 
+### 2026-W31 · 历史补档
+
+- [📄 AI for PDE 正式发表论文追踪周报](digests/published/AI-for-PDE-正式发表周报-2026-W31.md)
+- **统计**：原始候选 18 篇；去重后 10 篇；正式状态明确 6 篇；核心入选 2 篇；扩展入选 1 篇；状态更新 0 篇；待确认 2 篇。
+- **重点论文**：未知流形 Physics-Informed DeepONet、SV-PINO、GAPI-DeepONet。
+- **主要趋势**：几何/流形未知条件下的算子学习、分离变量 physics-informed operator 与任意几何条件化成为补档重点。
+
+### 2026-W32 · 2026-08-03
+
+- [📄 AI for PDE 正式发表论文追踪周报](digests/published/AI-for-PDE-正式发表周报-2026-W32.md)
+- **统计**：原始候选 23 篇；去重后 20 篇；正式状态明确 9 篇；核心入选 1 篇；扩展入选 2 篇；状态更新 0 篇；待确认 1 篇。
+- **重点论文**：PGMNO、Hermite Neural Operator、MPNOT。
+- **主要趋势**：Mamba/SSM、无界域谱基和局部动力学先验继续扩展神经算子结构空间。
+
+### 2026-W33 · 2026-08-12
+
+- [📄 AI for PDE 正式发表论文追踪周报](digests/published/AI-for-PDE-正式发表周报-2026-W33.md)
+- **统计**：原始候选 25 篇；去重后 22 篇；正式状态明确 15 篇；核心入选 9 篇；扩展入选 1 篇；状态更新 7 篇；待确认 0 篇。
+- **重点论文**：HyPINO、P3D、RealPDEBench、PGD-NO、Hyperbolic Neural Operator、ENMA、SC-NO。
+- **主要趋势**：多 PDE 零样本、真实数据 benchmark、生成式 PDE 求解和千万节点 3D 几何扩展成为正式发表主线。
+
+### 2026-W34 · 2026-08-17
+
+- [📄 AI for PDE 正式发表论文追踪周报](digests/published/AI-for-PDE-正式发表周报-2026-W34.md)
+- **统计**：原始候选 24 篇；去重后 15 篇；正式状态明确 8 篇；核心入选 6 篇；扩展入选 0 篇；状态更新 0 篇；待确认 2 篇。
+- **重点论文**：MoE-POT、GAOT、Riesz Neural Operator、NOWS、PFEM、DeltaPhi。
+- **主要趋势**：稀疏 MoE PDE 预训练、复杂几何算子以及 neural-operator + classical-solver warm start 三条路线明显增强。
+
+### 2026-W35 · 2026-08-24
+
+- [📄 AI for PDE 正式发表论文追踪周报](digests/published/AI-for-PDE-正式发表周报-2026-W35.md)
+- **统计**：原始候选 21 篇；去重后 12 篇；正式状态明确 5 篇；核心入选 4 篇；扩展入选 1 篇；状态更新 2 篇；待确认 0 篇。
+- **重点论文**：CFO、Adaptive Mamba Neural Operators、DRIFT-Net、Physics-Informed Laplace Neural Operator。
+- **主要趋势**：连续时间 flow matching、SSM 任意几何算子和显式全局谱耦合成为本期最值得关注的结构方向。
+
 <!-- PUBLISHED_DIGEST_END -->
 
 ## 正式发表状态回填
