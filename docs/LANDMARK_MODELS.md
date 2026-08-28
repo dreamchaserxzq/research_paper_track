@@ -38,6 +38,7 @@
 | 🏗️ VICON | 视觉Transformer化ICON，patch级上下文算子学习，多物理流体基准大幅超越DPOT/MPP（UCLA/NUS/UCSD，TMLR2026） | 2411.16063 | A/C |
 | 🏗️ XNN（Axial Neural Networks） | 维度无关轴向神经网络，解决物理基座模型跨维度预训练效率瓶颈（KAIST/NYU，NeurIPS2025 Spotlight） | 2510.13665 | A |
 | 🏗️ BCAT | 分块因果Transformer流体动力学PDE基座模型，整帧自回归预测+跨几何/参数规模化预训练（UCLA） | 2501.18972 | A |
+| 🏗️ Overtone | 循环patch调制架构无关模块，赋予Transformer物理仿真基座模型推理期算力弹性+长时程谐波误差抑制，The Well多物理基准验证（Polymathic AI/Flatiron Institute） | 2507.09264 | A |
 
 ## B. 数据集与基准
 
