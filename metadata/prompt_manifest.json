@@ -1,0 +1,18 @@
+{
+  "bundle_sha256": "e16875a708ba20ae22d126b3e1d87fc57ed694f411f114efe04bbfb2a4279035",
+  "external_scheduler": {
+    "checked_at": null,
+    "deployed_bundle_sha256": null,
+    "status": "unverified"
+  },
+  "files": {
+    "CLAUDE.md": "28eed732787e398e40f0e9813d355da3541e04edf77500d65091a462f602c793",
+    "docs/OPERATIONS.md": "fc0db427380347260be2d039025a8e50556059a15aaa672af0e215211f6fcf0e",
+    "docs/PUBLISHED_CRITERIA.md": "e288a8e273da159760fa5bea4f5e8923321673ea844de6731bc84afa7c629987",
+    "docs/ROUTINE.md": "cad28f30d8fdd60cf06e198e3ba56acc00c0def06361e6907d064dfbfffb1e5a",
+    "docs/ROUTINE_PUBLISHED.md": "73b93a60f3e6a17529ee90616d9297667cac7290e71f40d147d77c582333ce7b",
+    "docs/ROUTINE_STATUS_UPDATE.md": "cbcd376e7f548e81e84ab311b81d345f85ce280f3eccf6894adc29858218b8ab",
+    "docs/TAXONOMY.md": "fb57c997eac683e49a292389fb0fe70525a47c8ea71e12c49f42798549bd2103"
+  },
+  "schema_version": 1
+}

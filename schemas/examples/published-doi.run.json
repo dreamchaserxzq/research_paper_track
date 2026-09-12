@@ -1,0 +1,32 @@
+{
+  "run_id": "example.published.doi-only",
+  "task_type": "published",
+  "status": "success",
+  "started_at": "2026-09-12T00:00:00Z",
+  "completed_at": "2026-09-12T01:00:00Z",
+  "coverage_start": "2026-09-10T00:00:00Z",
+  "coverage_end": "2026-09-12T00:00:00Z",
+  "previous_successful_coverage_end": "2026-09-11T00:00:00Z",
+  "queries": [
+    {
+      "query": "synthetic DOI identity fixture; do not import",
+      "source": "example.org",
+      "status": "success",
+      "candidate_ids": [
+        "doi:10.1234/example.paper"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": null,
+      "doi": "10.1234/example.paper",
+      "discovered_at": "2026-09-12T00:30:00Z",
+      "submitted_at": null,
+      "updated_at": null,
+      "decision": "excluded",
+      "reason": "Synthetic example only; this is not a real paper or a live search result.",
+      "discovery_type": "backfill"
+    }
+  ]
+}

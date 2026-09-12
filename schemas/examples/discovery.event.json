@@ -1,0 +1,24 @@
+{
+  "event_id": "example.discovery.synthetic",
+  "event_type": "discovery",
+  "recorded_at": "2026-09-12T01:00:00Z",
+  "selected": false,
+  "paper": {
+    "arxiv_id": "2609.00001",
+    "doi": null,
+    "title": "Synthetic schema example; not a real finding and never import into live history",
+    "status": "preprint",
+    "score_relevance": 1,
+    "score_generality": 1,
+    "score_value": 0,
+    "score_total": 2,
+    "score_scheme": "published-v2"
+  },
+  "evidence": [
+    {
+      "url": "https://example.org/synthetic-paper",
+      "checked_at": "2026-09-12T00:55:00Z",
+      "kind": "example"
+    }
+  ]
+}

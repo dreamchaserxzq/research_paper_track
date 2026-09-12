@@ -1,0 +1,505 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "event.schema.json",
+  "title": "Paper evidence event",
+  "description": "Structural documentation for one line of metadata/inbox/*.jsonl. scripts/papertrack.py is the executable validator; the standard-library CLI does not execute a general JSON Schema engine.",
+  "$comment": "Procedural checks additionally normalize identifiers, validate actual UTC timestamps and URL hostnames, require non-arXiv formal-publication evidence, check score sums, enforce unique event IDs and resolve supersedes references. Additional research fields remain extensible. Dated evidence must not postdate recorded_at. Scores use complete daily-v1 (4+3+3) or published-v2 (5+3+2) components; the procedural validator checks their exact sum.",
+  "type": "object",
+  "required": [
+    "event_id",
+    "event_type",
+    "recorded_at",
+    "paper",
+    "evidence"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_type": {
+      "enum": [
+        "discovery",
+        "assessment",
+        "publication",
+        "correction"
+      ]
+    },
+    "recorded_at": {
+      "$ref": "#/$defs/utcTimestamp"
+    },
+    "selected": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Existing source or event IDs. A nonempty list is allowed only for correction events; referenced IDs are checked across input files."
+    },
+    "paper": {
+      "$ref": "#/$defs/paper"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "supersedes"
+        ],
+        "properties": {
+          "supersedes": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "event_type": {
+            "const": "correction"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "paper": {
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "status": {
+                "const": "accepted"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "paper": {
+            "required": [
+              "venue"
+            ],
+            "properties": {
+              "venue": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          },
+          "evidence": {
+            "contains": {
+              "type": "object",
+              "required": [
+                "kind"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "publisher",
+                    "proceedings",
+                    "acceptance"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "paper": {
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "status": {
+                "const": "published"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "paper": {
+            "required": [
+              "venue"
+            ],
+            "properties": {
+              "venue": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          },
+          "evidence": {
+            "contains": {
+              "type": "object",
+              "required": [
+                "kind"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "publisher",
+                    "proceedings"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "utcTimestamp": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "(?:Z|\\+00:00)$",
+      "description": "UTC ISO timestamp. Ordering and coverage comparisons are enforced by scripts/papertrack.py."
+    },
+    "identifier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Non-null identifiers are normalized and syntax-checked by scripts/papertrack.py; supported inputs include bare IDs and recognized arXiv/DOI URL prefixes."
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "url",
+        "checked_at"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^[hH][tT][tT][pP][sS]?://",
+          "description": "An HTTP(S) URL with a hostname. The procedural validator also examines the host for formal publication evidence."
+        },
+        "checked_at": {
+          "$ref": "#/$defs/utcTimestamp"
+        },
+        "kind": {
+          "description": "Use publisher/proceedings for published status; acceptance is additionally allowed for accepted status. Other evidence kinds are permitted for nonformal claims."
+        }
+      }
+    },
+    "paper": {
+      "type": "object",
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "arxiv_id"
+          ],
+          "properties": {
+            "arxiv_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "required": [
+            "doi"
+          ],
+          "properties": {
+            "doi": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ],
+      "properties": {
+        "arxiv_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "doi": {
+          "$ref": "#/$defs/identifier"
+        },
+        "status": {
+          "enum": [
+            "preprint",
+            "submitted",
+            "unknown",
+            "accepted",
+            "published",
+            null
+          ]
+        },
+        "score_relevance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "score_generality": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "score_value": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "score_total": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "abstract": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "venue": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "publisher": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "publication_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "official_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "code_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "data_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "authors": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "training_pdes": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "evaluation_pdes": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "physical_domains": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "generalization_axes": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "score_scheme": {
+          "enum": [
+            "daily-v1",
+            "published-v2"
+          ]
+        },
+        "score_innovation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "anyOf": [
+              {
+                "required": [
+                  "score_relevance"
+                ]
+              },
+              {
+                "required": [
+                  "score_generality"
+                ]
+              },
+              {
+                "required": [
+                  "score_innovation"
+                ]
+              },
+              {
+                "required": [
+                  "score_value"
+                ]
+              },
+              {
+                "required": [
+                  "score_total"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "required": [
+              "score_scheme"
+            ]
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "score_scheme"
+            ],
+            "properties": {
+              "score_scheme": {
+                "const": "daily-v1"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "score_relevance",
+              "score_generality",
+              "score_innovation",
+              "score_total"
+            ],
+            "properties": {
+              "score_relevance": {
+                "maximum": 4
+              }
+            },
+            "not": {
+              "required": [
+                "score_value"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "score_scheme"
+            ],
+            "properties": {
+              "score_scheme": {
+                "const": "published-v2"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "score_relevance",
+              "score_generality",
+              "score_value",
+              "score_total"
+            ],
+            "properties": {
+              "score_relevance": {
+                "maximum": 5
+              }
+            },
+            "not": {
+              "required": [
+                "score_innovation"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

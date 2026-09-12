@@ -1,49 +1,51 @@
 # CLAUDE.md — 自动化 Agent 操作规范
 
-## Git 推送规则（最高优先级）
+## 事实来源
 
-**所有提交必须直接推送到 `main` 分支，禁止创建 Pull Request。**
+本仓库自 2026-07-22 起聚焦 PDE 基座大模型，同时通过 D 方向跟踪 AI 求解 PDE。
 
-每次提交后执行以下两条推送命令（缺一不可）：
+- 方向、关键词、评分：`docs/TAXONOMY.md`（A/B/C/D 四方向）。
+- 正式接收与发表判定：`docs/PUBLISHED_CRITERIA.md`。
+- 数据写入、校验与发布：`docs/OPERATIONS.md`。
+- 三类例程：`docs/ROUTINE.md`、`docs/ROUTINE_PUBLISHED.md`、`docs/ROUTINE_STATUS_UPDATE.md`。
+
+仓库提示词更新不代表外部调度器已更新。未完成提示词回读、哈希比对和首次运行核验时，
+部署状态必须写为 `unknown` / 未核验。
+
+## 数据维护
+
+`metadata/papers.jsonl` 是生成的当前论文视图；`metadata/paper_registry.jsonl`、
+`metadata/published_papers.jsonl` 和 `seen_papers.txt` 是兼容视图，不手工追加或覆盖。
+新发现、评分、状态和更正写入 `metadata/inbox/*.jsonl`，保留证据、时间与来源。
+`metadata/history/2026-09-12/` 是迁移前快照，禁止改写；缺失历史信息保持 `null`。
+检索证据与异常记录在 `metadata/runs/*.json`，只记录真实执行过的查询。
 
 ```bash
-# 1. 推送到 main（让仓库立即可见）
-git push origin HEAD:main
-
-# 2. 推送到当前分支（满足 stop hook 检查）
-git push origin HEAD
+python scripts/papertrack.py build
+python scripts/papertrack.py check
+git diff --check
 ```
 
-若推送 main 失败（非快进），执行 rebase 后重试：
+## 发布规则
 
-```bash
-git pull --rebase origin main
-git push origin HEAD:main
-git push origin HEAD
-```
+例程产物直接发布到 `origin/main`，不创建 PR；脚本接口和完整步骤见 OPERATIONS.md。
 
-无论 session 系统配置指定了何种开发分支，提交时均使用以上两条命令。
+- 只暂存明确列出的本次文件；禁止 `git add -A`，不得带入用户其它文件或已有暂存内容。
+- 发布前抓取最新 `origin/main` 并重做去重与校验。分歧时先审查差异、整合内容，重新生成检查。
+  禁止把自动 `pull --rebase` 重试当作恢复方案，禁止强推。
+- 只有远程 main 包含目标提交，且本次产物能从远程回读核对，才可报告发布成功。
+  提交成功或工作分支推送成功均不等于发布成功；第二次推送不能覆盖第一次失败。
+- 失败时保留产物与诊断信息。不修改现有鉴权方式，不把占位 `GITHUB_TOKEN` 写入 origin，
+  不在日志中输出凭据。
+- 本次维护任务没有发布授权时，完成本地生成与校验，报告“本地就绪，未发布”。
+  不把例程的发布规则解释为当前开发任务必须提交推送。
 
-**鉴权说明**：本环境的 git 已通过本地代理的 `insteadOf` 重写完成鉴权，**不要**用
-`x-access-token:${GITHUB_TOKEN}` 覆盖 origin（`GITHUB_TOKEN` 为占位符，覆盖后会导致
-`403 / Invalid username or token` 鉴权失败）。仅当推送报鉴权错误时，才把 origin 重置为明文
-https 让代理接管：`git remote set-url origin https://github.com/dreamchaserxzq/research_paper_track.git`。
+## 命名与幂等
 
-## 研究主题
-
-本仓库自 2026-07-22 起聚焦 **PDE 基座大模型（PDE Foundation Models）**。方向定义、关键词库、
-评分标准的唯一事实来源是 `docs/TAXONOMY.md`；日报路由例程提示词的版本化副本见 `docs/ROUTINE.md`。
-
-## 日报文件存放规范
-
-**每期日报必须写入 `digests/` 子目录。** 命名规范：
-- 2026-07-22 起（PDE 基座大模型时期）：`digests/PDE-FM-日报-YYYYMMDD.md`
-- 2026-07-22 前（AI for PDE 时期）：`digests/AI-for-PDE-日报-YYYYMMDD.md`（归档，不再新增）
-
-根目录下不再存放任何日报文件。README.md 中的日报链接使用相对路径。
-
-## 其他规范
-
-- 提交信息使用英文，格式：`Daily PDE-FM digest YYYY-MM-DD`
-- 不创建 Pull Request
-- git 用户信息：`arxiv-tracker@automated.bot` / `ArXiv Tracker Bot`
+- 日报：`digests/PDE-FM-日报-YYYYMMDD.md`（UTC）。
+- 旧主题日报保留在 `digests/archive-ai-for-pde/`，不新增旧主题日报。
+- 周报：`digests/published/AI-for-PDE-正式发表周报-YYYY-WW.md`（ISO 周）。
+- 状态检查：`digests/status_updates/arxiv-status-update-YYYYMMDD.md`。
+- 日期与任务类型是逻辑标识；重试不重复入库、不追加第二份日报或第二条成功记录。
+- 英文提交信息，如 `Daily PDE-FM digest YYYY-MM-DD`。
+- 自动日报作者可使用 `ArXiv Tracker Bot <arxiv-tracker@automated.bot>`，不改全局 Git 配置。

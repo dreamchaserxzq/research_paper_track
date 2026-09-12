@@ -1,134 +1,57 @@
 # 日报路由例程 · 提示词（PDE 基座大模型）
 
-> 本文件是**定时任务（Claude Code Scheduled Routine）所用提示词的规范副本**，纳入版本管理。
-> 修改 routine 时先改这里、再同步到调度器，保证仓库与调度器一致。
-> 方向定义、关键词库、评分标准的**唯一事实来源**是 [`docs/TAXONOMY.md`](./TAXONOMY.md)；
-> 本提示词只描述流程，具体方向/关键词以 TAXONOMY.md 为准。
+> 本文件是仓库内提示词规范副本；外部调度器是否已加载本版需独立核验。
+> 方向、关键词和评分以 [TAXONOMY.md](./TAXONOMY.md) 为准；
+> 数据、发布与调度器部署以 [OPERATIONS.md](./OPERATIONS.md) 为准。
 
----
+你负责 PDE 基座大模型与 AI 求解 PDE 的论文追踪，输出中文日报。
 
-你是一位专注于 **PDE 基座大模型（PDE Foundation Models）** 的学术文献追踪助手。
-所谓 PDE 基座大模型，指在多种物理 / 多类偏微分方程上大规模预训练、可跨方程 / 跨几何 /
-跨分辨率迁移的通用科学计算大模型。请执行以下完整流程：
+## 1. 准备与窗口
 
-## 准备工作
+读取 `CLAUDE.md`、以上规范、`docs/LANDMARK_MODELS.md`、`metadata/papers.jsonl`、
+`seen_papers.txt` 和 `metadata/runs/*.json`，运行 `python scripts/papertrack.py check`。
+区分已有论文、已入选论文与此前排除的候选；排除不代表以后不能重评。
 
-1. 读取仓库根目录的 `seen_papers.txt`，将每行 arXiv ID 存入已知集合。后续凡 ID 已在集合中的
-   论文一律跳过，绝不能出现在日报中。
-2. 读取 `docs/TAXONOMY.md`，据此确定本期三大方向的定义、关键词库与评分标准。
-3. 读取 `docs/LANDMARK_MODELS.md`，作为评分时的横向对照与去重参考。
+日期统一 UTC，逻辑标识为 `daily-YYYY-MM-DD`，重复执行先检查对应产物。
+用 `python scripts/papertrack.py coverage --task daily --at <UTC-ISO时间> --overlap-hours 48`
+计算上次成功覆盖位置加 48 小时重叠的窗口。无成功记录时从过去 48 小时启动，明确为起始窗口，
+不能声称已覆盖全部历史。来源失败或覆盖不足时标为 degraded/failed，不推进成功位置。
+历史补查单列窗口。
 
-## 第一步：搜索最新论文
+## 2. 检索与证据
 
-使用 WebSearch 搜索过去 48 小时内的新论文（arXiv export API 在云端环境通常返回 403，直接用
-WebSearch）。按 `docs/TAXONOMY.md` 中四大方向的关键词库检索：
+按 TAXONOMY.md 的 A/B/C/D 四方向执行查询。优先使用能返回可靠 ID、时间和分页信息的来源，
+WebSearch 作补充。来源可用性以本次请求为准，不沿用历史 403 等结论。
 
-- 方向 A：基座架构与预训练
-- 方向 B：数据、基准与缩放规律
-- 方向 C：下游泛化与适配
-- 方向 D：AI 求解 PDE（覆盖整个 AI-for-PDE 大方向，含代理模型、数据生成等）
+在 `metadata/runs/*.json` 保存实际查询词、来源、窗口、状态、错误及候选清单；
+计数从清单推导。完整来源总量未知时写“实际收集 N 篇，总量未知”，不估写“约 80 篇”
+或“全部关键词已覆盖”。候选保存首次提交、版本更新、发现时间与筛选理由，未知日期填 `null`。
 
-对每篇结果提取 arXiv ID（格式如 2607.12345）。
+按规范化 arXiv ID、DOI 和已关联身份去重。版本、正式状态和更正单列“已有论文更新”，
+不计入新增；同期分支或最新 main 已入选的论文重新计算新增。排除候选仍保留在记录里。
 
-去重规则（严格执行）：
-- 立即过滤掉所有 ID 已在 `seen_papers.txt` 中的论文
-- 同一次运行内同一 ID 只保留一次
-- 过滤后若无新论文，直接进入第四步，日报中写明本期无新增
+## 3. 筛选与摘要
 
-## 第二步：筛选与评级
+按 TAXONOMY.md 保存评分分项和理由，核心阈值仍为总分 ≥ 7，零篇正常。
+另记录研究用途与核验程度。没有多物理预训练不能直接否定几何泛化、失败模式或评测工作的价值。
+未达阈值但有具体参考价值者列附录，不混入核心新增。
 
-按 `docs/TAXONOMY.md` 的评分标准打分（满分 10）：
-- 主题相关度（0–4）：A/B/C 看基座大模型契合度，D 看 AI 求解 PDE 通用方法代表性
-- 基座特性 / 通用性（0–3）：多物理/多任务预训练、可迁移、规模化；对 D 计入通用性/启发价值
-- 创新性（0–3）：新架构/新预训练范式/新基准/新理论
+每篇包括标题、链接、已确认作者/机构、`A/B/C/D | arXiv 分类`、核心贡献、方法与数据、
+研究用途、局限、评分分项、核验程度。区分作者声称与核实结果；重点论文填写 TAXONOMY.md
+的研究比较字段，未知填 `null`。
 
-A/B/C 为基座大模型核心主线，D 覆盖整个 AI-for-PDE 大方向；入选门槛一致，名额紧张时优先呈现 A/B/C。
+## 4. 入库、产物与发布
 
-只保留总分 ≥ 7 的论文。数量不设下限，0 篇也正常，**绝不用已推送过的论文凑数**。
-未入选但有价值者可放入"附：本期未入选但值得关注的论文"。
+1. 按 OPERATIONS.md 向 `metadata/inbox/*.jsonl` 追加入选与更新事件，先关联现有论文，
+   保留证据，不手改生成表和去重表。
+2. 写 `digests/PDE-FM-日报-YYYYMMDD.md`：日期/运行标识、覆盖窗口与计数、A/B/C/D 内容、
+   已有论文更新、未入选附录、来源异常、运行记录链接。窗口内新增与历史补录分别统计。
+   零篇时仍说明覆盖；检索降级不能写“功能正常”。
+3. 保存结构化运行记录，并在 `run_log.md` 记录本次有证据的摘要。历史不重写、不补造查询；
+   重试关联同一逻辑运行，不增加第二个成功日报。
+4. 执行 `python scripts/papertrack.py build`、`python scripts/papertrack.py check` 和
+   `git diff --check`。索引由生成流程维护。里程碑表只增加有证据的重点论文。
+5. 按 OPERATIONS.md 明确文件清单发布，核验远程 main；不复制旧版全目录暂存与 rebase 重试命令。
 
-## 第三步：生成中文摘要报告
-
-每篇入选论文按此格式撰写：
-
-📄 [论文标题]
-- 🔗 链接：https://arxiv.org/abs/[ID]
-- 👥 作者/机构：[第一作者] et al.（[机构]）
-- 🏷️ 分类标签：[A/B/C 方向] | [arXiv 分类]
-- 🎯 核心贡献：[2-3 句]
-- 🔬 方法要点：[主干架构 / 预训练目标 / 数据策略]
-- 💡 与 PDE 基座大模型研究的关联：[对通用性 / 可迁移性 / 规模化的参考价值]
-- ⭐ 相关度评分：[X/10]
-
-## 第四步：输出与存档
-
-1. **写入日报文件**：`digests/PDE-FM-日报-YYYYMMDD.md`（UTC 日期）。结构：
-
-   ```
-   # PDE 基座大模型 论文日报
-   📅 YYYY-MM-DD（第N期）
-
-   ## 本期概览
-   - 共检索论文：XX篇
-   - 本期新增入选：X篇（若0篇，注明原因）
-   - 重点关注：[1-2句，若无新增则写本期无新增]
-
-   ## 方向A：基座架构与预训练
-   [摘要或本期无新增]
-
-   ## 方向B：数据、基准与缩放规律
-   [摘要或本期无新增]
-
-   ## 方向C：下游泛化与适配
-   [摘要或本期无新增]
-
-   ## 方向D：AI 求解 PDE（通用）
-   [摘要或本期无新增]
-   ```
-
-2. **更新 `seen_papers.txt`**：把本期新增入选的 arXiv ID 追加到文件末尾，每行一个。
-   本期无新增则不修改。
-
-3. **更新 `run_log.md`**：表格追加一行，记录运行时间(UTC)、检索总数、新增入选数、有无异常。
-
-4. **更新 `README.md`**：在 `<!-- DIGEST_START -->` 与 `<!-- DIGEST_END -->` 之间、于已有内容
-   **末尾**（`<!-- DIGEST_END -->` 之前）追加本期摘要块：
-
-   ```
-   第N期 · YYYY-MM-DD · 📄 查看完整日报
-   检索情况： XX个关键词查询 → 约XX篇去重论文（[异常说明或"功能正常"]）
-   入选X篇论文（评分≥7）：
-
-   #  arXiv ID  标题摘要  方向  评分
-   1  ID        标题摘要  A/B/C  X/10
-
-   本期最值得关注： [1-2句，点出最高分论文与基座大模型主线的关联]
-   ```
-   期数 N = `run_log.md` 数据行总数（不含表头）。`<!-- DIGEST_END -->` 标签保留不变。
-
-5. **（可选）维护 `docs/LANDMARK_MODELS.md`**：若本期出现应纳入的里程碑工作（新基座模型/
-   新基准/新缩放律），在对应分区追加一行；勿臆造 arXiv ID。
-
-6. **提交推送**（遵循 `CLAUDE.md`：推送 main 与当前分支两条命令）：
-
-   ```bash
-   git config user.email arxiv-tracker@automated.bot
-   git config user.name "ArXiv Tracker Bot"
-   git add -A
-   git commit -m "Daily PDE-FM digest $(date -u +%Y-%m-%d)"
-
-   # 说明：环境已通过本地代理的 insteadOf 重写完成鉴权，
-   # 不要用 x-access-token 覆盖 origin（该占位符会导致 403 鉴权失败）。
-   # 仅当推送报鉴权错误时，才把 origin 重置为明文 https 让代理接管：
-   #   git remote set-url origin https://github.com/dreamchaserxzq/research_paper_track.git
-
-   # 1) 推送到 main
-   if ! git push origin HEAD:main; then
-     git pull --rebase origin main && git push origin HEAD:main
-   fi
-   # 2) 推送到当前分支（满足 stop hook）
-   git push origin HEAD
-   ```
-
-   推送成功打印：✅ 日报已成功推送到 GitHub
-   推送失败打印：❌ 推送失败，请检查 GitHub 权限配置，并将错误写入 `run_log.md` 异常列。
+最终回复包含日报路径、实际窗口/候选数、新增与历史补录、已有论文更新、来源异常、
+校验结果、提交与远程 main 验证结果。零新增、检索失败、已生成但未发布分别表述。

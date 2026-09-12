@@ -23,14 +23,21 @@ PDE 基座模型、通用 PDE 求解器、神经算子、代理模型（surrogat
 
 ## 二、正式发表判定
 
-**只收录具备明确正式发表 / 正式接收证据者。** 满足任一即可：
+**只收录身份匹配且具备可回查官方证据者。DOI 的存在本身不充分。**
 
-- 存在有效 DOI
-- 出版商页面显示 published / online first / early access / in press
-- 正式期刊页面确认发表，或正式会议 proceedings
-- 已具备正式 venue，或已有卷期 / 页码 / article number
-- Crossref / OpenAlex / Semantic Scholar 提供可靠出版信息
-- 会议官网或 OpenReview 页面确认正式接收
+- `published`：出版商/期刊正式页面或会议 proceedings 明确已发表，记录官方链接、venue 和证据时间。
+  已正式在线出版的 online first / early access 归 published，细节记在 `publication_type`。
+- `accepted`：会议官网、官方 OpenReview 接收决定或出版商明确接收，但尚无正式出版证明。
+  in press 若只证明已接收，归 accepted；不能计为已发表，缺发表日期填 `null`。
+- `preprint / submitted / unknown`：无上述证据，不进入正式接收/发表主列表。
+
+`10.48550/arXiv.*` 等预印本 DOI 不作为正式发表证据。其它 DOI 也必须核对对应作品类型、
+标题、作者与正式版本；数据、代码、勘误等 DOI 不能误归论文正式版。
+Crossref / OpenAlex / Semantic Scholar 用于发现和交叉核对，不替代有冲突时的官方查证。
+venue 名称、作者主页上的“accepted”或 arXiv comments 是线索，单独不作最终证据。
+
+正式接收与已发表分别统计。每次新断言保存官方 URL、证据类别与实际检查时间。
+迁移前记录仅作为历史声明保留，其 `legacy_unverified` 标记不能自动升级。
 
 **不得进入正式入选列表**：仅有 arXiv / 仅有项目主页 / 仅有 GitHub / 仅有个人主页 /
 无任何正式出版证明。
@@ -41,7 +48,7 @@ arXiv 仅用于：匹配正式版本、查找历史版本、补充摘要、查�
 
 ## 三、检索时间范围
 
-- 默认 **运行日期向前回溯三年**，日期统一 **UTC**，**不得硬编码**。
+- 首次或明确历史回溯任务默认 **运行日期向前回溯三年**，日期统一 **UTC**，**不得硬编码**。后续常规运行从上次成功覆盖位置加重叠窗口开始，失败/降级不推进覆盖位置。
   （例：运行日 `2026-07-22` → 检索范围 `2023-07-22 至 2026-07-22 UTC`。）
 - 对已有记录中 `status ∈ {preprint, submitted, unknown}` 或缺 DOI / venue / publication_date 的论文，
   **即使 arXiv 时间超过三年，也应复查其正式发表状态**。
@@ -129,7 +136,11 @@ arXiv 仅用于：匹配正式版本、查找历史版本、补充摘要、查�
 
 > **Schema 说明**：以上为 **published-v2** 评分字段。历史记录（2026-07 前）使用 v1 字段
 > `score_ai_scicomp / score_transfer_physics / score_innovation_venue`，予以保留、不回改；
-> 新记录一律带 `registry_schema_version: "published-v2"` 以便区分与统计。
+> 新增带评分事件必须在 `paper` 内填写 `score_scheme: "published-v2"` 和完整的
+> `score_relevance`（0–5）、`score_generality`（0–3）、`score_value`（0–2）、`score_total`，
+> 总分必须等于三项之和。`registry_schema_version` 可保留用于领域元数据版本，但不能替代
+> `score_scheme`。统一表的 `assessments` 按来源和方案保留评分，不设顶层 `score_total`；
+> 历史分数不重评，不和 daily-v1 混合排名。
 
 ---
 
@@ -140,17 +151,20 @@ arXiv 仅用于：匹配正式版本、查找历史版本、补充摘要、查�
 
 ---
 
-## 十一、元数据字段（`metadata/published_papers.jsonl`，每行一条 JSON）
+## 十一、正式发表事件的领域字段
 
-必填：`title`、`authors`、`venue`、`publisher`、`publication_date`、`doi`、`official_url`、
-`abstract`、`keywords`、`sources`、`status`、`selection_tier`、`published_category`、
-`foundation_model_level`、`score_relevance`、`score_generality`、`score_value`、`score_total`、
-`registry_schema_version`（= `"published-v2"`）。
+已查证时记录：`title`、`authors`、`venue`、`publisher`、`publication_date`、`doi`、
+`official_url`、`abstract`、`keywords`、`sources`、`status`、`selection_tier`、
+`published_category`、`foundation_model_level`。
+
+正式状态必须有匹配的论文 ID、venue 与官方证据，具体入库契约见 OPERATIONS.md。
+有本次新评分时必须填写第九节的 scheme 与完整分项；纯状态更新不要求重评，
+没有新评分依据时省略评分字段，不能只复制历史总分。
 
 补充：`arxiv_id`、`arxiv_url`、`code_url`、`data_url`、`published_categories`、`training_pdes`、
 `evaluation_pdes`、`physical_domains`、`generalization_axes`。
 
-规则：缺失字段填 `null`；不重复（按 DOI / arXiv ID / 标题+作者+venue 去重）；追加写入不覆盖历史。
+规则：新记录作为 `metadata/inbox/*.jsonl` 事件的 `paper` 字段写入，事件外层含稳定 ID、时间和证据，详见 [OPERATIONS.md](./OPERATIONS.md)。缺失字段填 `null`；`accepted` 可没有正式 DOI/发表日期。`metadata/papers.jsonl` 是生成的统一当前表，`published_papers.jsonl` 是兼容视图，不直接写入。历史字段和评分版本保留在源记录，不改写历史。
 
 ### `publication_date` 取值优先级
 出版商日期 → 会议日期 → Crossref → OpenAlex → Semantic Scholar。
@@ -160,7 +174,7 @@ arXiv 仅用于：匹配正式版本、查找历史版本、补充摘要、查�
 
 ## 十二、去重与幂等
 
-- **去重以 `metadata/published_papers.jsonl` 为准**（跨主题连续保留，在仓库根 `metadata/`）。
+- **身份与去重以生成的 `metadata/papers.jsonl` 为准**，结合 DOI / arXiv 别名和来源。兼容视图不再单独维护去重逻辑。标题相似但作者/版本不明者保留待确认。
 - 历史周报正文已归档在 `digests/archive-ai-for-pde/published/`（旧目录），去重时可参考其标题，
   但不作为权威来源。
 - 重复运行不得重复论文 / 重复周报 / 重复 README 块 / 重复日志；提交前做 JSON、Markdown、git diff 检查。
@@ -171,8 +185,6 @@ arXiv 仅用于：匹配正式版本、查找历史版本、补充摘要、查�
 
 - **周报文件**：`digests/published/AI-for-PDE-正式发表周报-YYYY-WW.md`
   （与日报及归档周报命名一致；标题「AI for PDE 正式发表论文追踪周报」）。
-- **README**：更新 `<!-- PUBLISHED_DIGEST_START -->` 与 `<!-- PUBLISHED_DIGEST_END -->` 之间，
-  **保留最近 12 期**（超出则裁剪最旧块）。
-- **运行日志**：追加 `run_log_published.md`（时间、范围、候选、新增、更新、Git 状态、异常）。
-- **Git**：遵循根目录 `CLAUDE.md` —— 直接推 `main`、**不创建 PR**、提交信息英文，
-  建议 `update AI for PDE published digest YYYY-WW`。推送失败不得声称成功，须记录原因。
+- **README**：通过 `python scripts/papertrack.py build` 生成最近 12 期索引，完整目录另存，不手工重复追加。
+- **运行证据**：本次真实查询与候选写入 `metadata/runs/*.json`，`run_log_published.md` 保留可读摘要。检索状态和 Git 发布状态分别报告。
+- **Git**：遵循根目录 `CLAUDE.md` 与 [OPERATIONS.md](./OPERATIONS.md)，明确路径暂存、检查暂存快照、发布并回读远程 main；不自动 rebase 重试。提交信息英文，建议 `Update AI for PDE published digest YYYY-WW`。未验证 main 内容不得报告已发布。

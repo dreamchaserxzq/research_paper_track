@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "recovered_at": "2026-09-12",
+  "baseline_main_commit": "56e6efb7a69a11ce8b1997bc4f17c4d1ee8f3220",
+  "scope": "Recover missing digest bytes from fetched Git history; do not assert scheduler or push failure causes.",
+  "recovered_digests": [
+    {
+      "date": "2026-08-02",
+      "source_commit": "0c3c860af75ca544de73124e8ebbbb31bba3c1c6",
+      "source_branch": "origin/claude/inspiring-allen-a0h9om",
+      "source_path": "digests/PDE-FM-日报-20260802.md",
+      "restored_path": "digests/PDE-FM-日报-20260802.md",
+      "source_blob": "4c9717d2ec2e48e8ff913c0581ee28156e75b331",
+      "sha256": "fa0071425bce010df0e53e44ec00aea1d61373694db31658db1108bce4d44f36",
+      "restored_sha256": "fa0071425bce010df0e53e44ec00aea1d61373694db31658db1108bce4d44f36",
+      "byte_identical": true,
+      "original_issue": 80,
+      "issue_collisions_at_baseline": [
+        "digests/PDE-FM-日报-20260803.md"
+      ],
+      "original_run_log_lines": [
+        "| 2026-08-02 | 约85篇（20+查询去重） | 1 | arXiv export API (403)，全程使用 WebSearch 完成检索；1篇新增：2607.24513 Physics Transformer函数投影式tokenization通用PDE预测架构（人大高瓴/北大，2D动力学至工业3D CFD多基准验证）8分；候选2607.23466 FNO参数化/耦合PDE扩展（ICLR2026）约6分、2607.25608 PI-BLS无反传PINN框架约5分、2602.18679 Transformer上下文迁移算子机制分析约6分均未达阈值，功能正常 |"
+      ],
+      "original_selected_ids": [
+        "2607.24513"
+      ],
+      "already_seen_at_baseline": [
+        "2607.24513"
+      ],
+      "new_ids_relative_to_baseline": [],
+      "not_in_baseline_main": true
+    },
+    {
+      "date": "2026-09-06",
+      "source_commit": "0f6b1d3680a4c1be5b99d9384e529452490d3731",
+      "source_branch": "origin/claude/inspiring-allen-kq3qr6",
+      "source_path": "digests/PDE-FM-日报-20260906.md",
+      "restored_path": "digests/PDE-FM-日报-20260906.md",
+      "source_blob": "dbad365154bc445a001ea234f478bafa2d581b21",
+      "sha256": "31c568452fe188a57fc6f235e50f3453b672c85f570facc2b3fb92c606007f55",
+      "restored_sha256": "31c568452fe188a57fc6f235e50f3453b672c85f570facc2b3fb92c606007f55",
+      "byte_identical": true,
+      "original_issue": 115,
+      "issue_collisions_at_baseline": [
+        "digests/PDE-FM-日报-20260907.md"
+      ],
+      "original_run_log_lines": [
+        "| 2026-09-06 | 约75篇（21查询去重，覆盖A/B/C/D全部关键词库） | 0 | arXiv export API (403)、WebFetch 对 arxiv.org 仍返回403，全程使用 WebSearch 完成检索；48小时窗口2609.00xxx-2609.03xxx区间新投稿依旧稀少，搜索引擎索引延迟明显；本期新检出候选2609.02194材料本构神经算子+因果注意力（单一材料任务，约5-6分）、2609.03768多重指标Bell多项式PINN高阶混合导数计算技巧（无多物理验证，约5分）、2609.01417 GPR地下异常PINN（窄应用，约4分）均未达阈值；此前已核验2609.02982、2609.03069仍未达阈值；未见评分≥7候选，功能正常 |"
+      ],
+      "original_selected_ids": [],
+      "already_seen_at_baseline": [],
+      "new_ids_relative_to_baseline": [],
+      "not_in_baseline_main": true
+    },
+    {
+      "date": "2026-09-08",
+      "source_commit": "464bad74c66b4e2ac5cbd948d9b63bf6972e1cff",
+      "source_branch": "origin/claude/inspiring-allen-znpa09",
+      "source_path": "digests/PDE-FM-日报-20260908.md",
+      "restored_path": "digests/PDE-FM-日报-20260908.md",
+      "source_blob": "2f913464d219c281046d341169bfa9c054d88853",
+      "sha256": "f99d2ad1fc8b860074c5e7a8fedb60656ac144ab9714c099c7d288df1448c9d8",
+      "restored_sha256": "f99d2ad1fc8b860074c5e7a8fedb60656ac144ab9714c099c7d288df1448c9d8",
+      "byte_identical": true,
+      "original_issue": 116,
+      "issue_collisions_at_baseline": [
+        "digests/PDE-FM-日报-20260909.md"
+      ],
+      "original_run_log_lines": [
+        "| 2026-09-08 | 约80篇（22查询去重，覆盖A/B/C/D全部关键词库） | 2 | arXiv export API (403)、WebFetch 对 arxiv.org 仍返回403，全程使用 WebSearch 完成检索；48小时窗口2609.03xxx-2609.06xxx区间新投稿仍以窄应用单方程PINN或非核心方向工作为主，未见新分类；2篇新增（均为历史补录，方向C）：2608.07053 无监督PDE基座模型适配框架，物理残差微调+NSLoRA（Newton-Schulz正交化LoRA）解决标准LoRA跨物理量学习不均衡问题，免真解数据（NTU/A*STAR CFAR）9分；2608.11937 TREX教师rollout扩展蒸馏框架，将微调后基座模型预测能力迁移至轻量学生模型解决部署效率瓶颈（Stuttgart大学）7分；候选2609.05158 Context-Enriched Operator Decomposition经核实为控制理论稳定性框架（非PDE主题）排除、2609.01417地下异常GPR-PINN（窄应用）、2601.08404小数据OOD U-Net（此前已核验）均未计入，功能正常 |"
+      ],
+      "original_selected_ids": [
+        "2608.07053",
+        "2608.11937"
+      ],
+      "already_seen_at_baseline": [
+        "2608.07053",
+        "2608.11937"
+      ],
+      "new_ids_relative_to_baseline": [],
+      "not_in_baseline_main": true
+    },
+    {
+      "date": "2026-09-11",
+      "source_commit": "8a98686271f2e8814d0236f5f079fe540273453e",
+      "source_branch": "origin/claude/inspiring-allen-o4it0h",
+      "source_path": "digests/PDE-FM-日报-20260911.md",
+      "restored_path": "digests/PDE-FM-日报-20260911.md",
+      "source_blob": "3ef60ae28a7da250093937ae10d6a47890c195ef",
+      "sha256": "5bdd7375b1bc249830e2f878853f4cfea3aeededa82067e3050fa70851626e51",
+      "restored_sha256": "5bdd7375b1bc249830e2f878853f4cfea3aeededa82067e3050fa70851626e51",
+      "byte_identical": true,
+      "original_issue": 118,
+      "issue_collisions_at_baseline": [
+        "digests/PDE-FM-日报-20260912.md"
+      ],
+      "original_run_log_lines": [
+        "| 2026-09-11 | 约75篇（20余查询去重，覆盖A/B/C/D全部关键词库） | 1 | arXiv export API (403)、WebFetch 对 arxiv.org 仍返回403，全程使用 WebSearch 完成检索；1篇新增：2609.07814 Latent-MoE 从NTK平移变异性理论揭示PINN多区域物理耦合病因，中心化紧支撑路由MoE架构实现学习局部化，为基座模型MoE路由架构设计提供理论依据（UPenn/Perdikaris组）8分；候选2609.07437 AD vs离散化约束系统性误差分解对比（中山大学）约6分、2609.07752 Local Gradient Neural Operator轻量可解释局部算子约5分、2609.08034 Two-Scale Localized PCA-Net约5分、2609.08102小波编码FNO超材料本征模态（单一窄应用）约5分均未达阈值；2609.02982/2609.03069（此前已核验）仍未达阈值，功能正常 |"
+      ],
+      "original_selected_ids": [
+        "2609.07814"
+      ],
+      "already_seen_at_baseline": [],
+      "new_ids_relative_to_baseline": [
+        "2609.07814"
+      ],
+      "not_in_baseline_main": true
+    }
+  ],
+  "known_repeated_selection": [
+    {
+      "paper_ids": [
+        "2608.07053",
+        "2608.11937"
+      ],
+      "first_recovered_date": "2026-09-08",
+      "later_main_date": "2026-09-09",
+      "later_main_path": "digests/PDE-FM-日报-20260909.md",
+      "interpretation": "Both historical digests label these papers as new; retain reports and count canonical identities once."
+    }
+  ],
+  "historical_branch_review": [
+    {
+      "date": "2026-07-13",
+      "source_branch": "origin/claude/loving-bell-4kbqcs",
+      "source_commits": [
+        "2d2a05f9235122d492fbf47a532feb1963d00539",
+        "b3a50fd832498d5d0da603556fc67970a8eaede5"
+      ],
+      "source_path": "digests/AI-for-PDE-日报-20260713.md",
+      "source_sha256": "5f1055548780a0a6e6bded24aa71d01301fa3c0e60eac7f062655dcfe814f84c",
+      "equivalent_main_commit": "82581bacfde3275f896c0fc98f6a7ccec70091c1",
+      "equivalent_main_path": "digests/AI-for-PDE-日报-20260713.md",
+      "equivalent_main_sha256": "78443f79eeba1b81585d9db8f0dc406980fc26adf334bbb83387a149fd4fcb7f",
+      "equivalence": "same zero-selection report after documented typography normalization; not byte identical",
+      "normalization": [
+        "class-𝒦ℒ -> class-KL",
+        "remove two trailing spaces after Operator**"
+      ],
+      "archive_path": "digests/archive-ai-for-pde/daily/AI-for-PDE-日报-20260713.md",
+      "archive_sha256": "65ccc1697484092941db2f34f0da4826ccf5d1edfdb5fcce7c3eb80992562814",
+      "archive_source_commit": "19c0b63460e13f87234a3562df8172ce48dac78c",
+      "archive_byte_identical_to_source": true,
+      "archive_relation": "combined issue 63 morning zero-selection and issue 64 afternoon one-selection report; not identical to unmerged morning report",
+      "original_selected_ids": [],
+      "restored_to_active_root": false,
+      "disposition": "Historical zero-selection run is represented in the later combined archive; retain original branch commits for exact morning-report content."
+    }
+  ],
+  "limitations": [
+    "Original candidate counts, scoring and source availability statements are historical agent reports, not newly verified facts.",
+    "Git history proves reports existed on fetched branches; scheduler execution logs and the reason main was not updated were not inspected.",
+    "Restoring content does not merge source commit ancestry; publication must separately verify target main contains the recovery commit."
+  ]
+}

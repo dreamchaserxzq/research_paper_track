@@ -1,0 +1,2 @@
+# Preserve the recovered source blob byte-for-byte, including its final blank line.
+digests/PDE-FM-日报-20260908.md whitespace=-blank-at-eof

@@ -1,0 +1,30 @@
+name: Validate paper registry
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run standard-library tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Check committed data, provenance, and links
+        run: python scripts/papertrack.py check
+      - name: Confirm generated views are reproducible
+        run: |
+          python scripts/papertrack.py build
+          git diff --exit-code

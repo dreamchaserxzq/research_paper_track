@@ -1,0 +1,305 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run.schema.json",
+  "title": "Search coverage and candidate decision record",
+  "description": "Structural documentation for metadata/runs/*.json. The standard-library scripts/papertrack.py validate-run/check commands execute procedural validation; they do not execute a general JSON Schema engine.",
+  "$comment": "Procedural validation additionally checks UTC timestamp parsing and order, previous successful coverage overlap, normalized candidate identity uniqueness, query-to-candidate alias joins, discovery timestamps, and the coverage window for new/version_update candidates. schemas/examples contains synthetic fixtures, never live run history.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "run_id",
+    "task_type",
+    "status",
+    "started_at",
+    "completed_at",
+    "coverage_start",
+    "coverage_end",
+    "queries",
+    "candidates"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "pattern": "^[\\w.-]+$",
+      "minLength": 1
+    },
+    "task_type": {
+      "enum": [
+        "daily",
+        "published",
+        "status"
+      ]
+    },
+    "status": {
+      "enum": [
+        "success",
+        "degraded",
+        "failed"
+      ]
+    },
+    "queries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/query"
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/candidate"
+      }
+    },
+    "previous_successful_coverage_end": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/utcTimestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "digest_path": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Optional repository-relative report path; build/check verify containment and existence."
+    },
+    "started_at": {
+      "$ref": "#/$defs/utcTimestamp"
+    },
+    "completed_at": {
+      "$ref": "#/$defs/utcTimestamp"
+    },
+    "coverage_start": {
+      "$ref": "#/$defs/utcTimestamp"
+    },
+    "coverage_end": {
+      "$ref": "#/$defs/utcTimestamp"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "success"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "queries": {
+            "minItems": 1,
+            "items": {
+              "properties": {
+                "status": {
+                  "const": "success"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "utcTimestamp": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "(?:Z|\\+00:00)$",
+      "description": "UTC ISO timestamp. Ordering and coverage comparisons are enforced by scripts/papertrack.py."
+    },
+    "identifier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Non-null identifiers are normalized and syntax-checked by scripts/papertrack.py; supported inputs include bare IDs and recognized arXiv/DOI URL prefixes."
+    },
+    "query": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "query",
+        "source",
+        "status",
+        "candidate_ids"
+      ],
+      "properties": {
+        "query": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "status": {
+          "enum": [
+            "success",
+            "failed"
+          ]
+        },
+        "candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Bare arXiv IDs or DOI strings, optionally prefixed by arxiv: or doi:. Every normalized alias must resolve to a candidate record; their union must equal the run candidate identities."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "failed"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "error"
+            ],
+            "properties": {
+              "error": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "discovered_at",
+        "decision",
+        "reason",
+        "discovery_type"
+      ],
+      "anyOf": [
+        {
+          "required": [
+            "arxiv_id"
+          ],
+          "properties": {
+            "arxiv_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "required": [
+            "doi"
+          ],
+          "properties": {
+            "doi": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ],
+      "properties": {
+        "arxiv_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "doi": {
+          "$ref": "#/$defs/identifier"
+        },
+        "discovered_at": {
+          "$ref": "#/$defs/utcTimestamp"
+        },
+        "submitted_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/utcTimestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "updated_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/utcTimestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "decision": {
+          "enum": [
+            "selected",
+            "excluded",
+            "pending"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "discovery_type": {
+          "enum": [
+            "new",
+            "backfill",
+            "version_update"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "discovery_type": {
+                "const": "new"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "submitted_at"
+            ],
+            "properties": {
+              "submitted_at": {
+                "$ref": "#/$defs/utcTimestamp"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "discovery_type": {
+                "const": "version_update"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "updated_at"
+            ],
+            "properties": {
+              "updated_at": {
+                "$ref": "#/$defs/utcTimestamp"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
