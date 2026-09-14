@@ -1,0 +1,104 @@
+{
+  "run_id": "daily-2026-09-14",
+  "task_type": "daily",
+  "status": "success",
+  "started_at": "2026-09-14T01:08:57Z",
+  "completed_at": "2026-09-14T01:40:00Z",
+  "coverage_start": "2026-09-11T01:07:38Z",
+  "coverage_end": "2026-09-14T01:08:57Z",
+  "previous_successful_coverage_end": "2026-09-13T01:07:38Z",
+  "queries": [
+    {"query": "site:arxiv.org PDE foundation model September 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org 2609 PDE foundation model neural operator pretraining", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org multiple physics pretraining transformer 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org in-context operator learning September 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org universal PDE solver transformer pretrained 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org scaling laws scientific machine learning PDE 2609", "source": "websearch", "status": "success", "candidate_ids": ["2609.05016"]},
+    {"query": "site:arxiv.org neural operator PDE solver September 12 13 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org physics-informed neural network 2609.1", "source": "websearch", "status": "success", "candidate_ids": ["2609.11628", "2609.01881", "2609.00530", "2609.07861"]},
+    {"query": "site:arxiv.org zero-shot PDE neural operator generalization out-of-distribution 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org fine-tuning foundation model PDE downstream LoRA parameter-efficient 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org surrogate model PDE simulation machine learning 2609", "source": "websearch", "status": "success", "candidate_ids": ["2609.08102"]},
+    {"query": "site:arxiv.org generative model PDE diffusion flow matching scientific data 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org PDE benchmark dataset machine learning evaluation 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org active learning neural operator data-efficient 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org graph neural network PDE simulation 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org reduced-order model machine learning PDE 2609", "source": "websearch", "status": "success", "candidate_ids": ["2609.09997"]},
+    {"query": "arxiv 2609 new preprint PDE foundation model neural operator September 13 14 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org 2609.08102 Learning Metamaterial Eigenmodes Wavelet-Encoded Fourier Neural Operators abstract", "source": "websearch", "status": "success", "candidate_ids": ["2609.08102"]},
+    {"query": "site:arxiv.org \"2609.1\" neural operator OR PDE OR foundation model", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org foundation model transfer new PDE geometry few-shot 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org The Well PDEBench PDEArena multi-physics dataset September 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "arxiv September 2026 new PDE foundation model multi-physics pretraining transformer preprint", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "arxiv 2609.05016 Amortizing Scaling Law Construction Costs abstract PDE physics", "source": "websearch", "status": "success", "candidate_ids": ["2609.05016"]},
+    {"query": "site:arxiv.org parameter-efficient fine-tuning physics model September 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org test-time adaptation neural operator PDE 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org token化 physics field representation transformer large-scale PDE September 2026", "source": "websearch", "status": "success", "candidate_ids": []}
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2609.08102",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-14T01:15:00Z",
+      "decision": "excluded",
+      "reason": "小波编码FNO确定性选择多个本征模，解决算子学习唯一映射假设与特征值问题多解性冲突，单一方程(弹性波)/单一物理域(超材料几何)架构改进，无多物理预训练或跨方程可迁移性证据，估约4-5分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.09997",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-14T01:20:00Z",
+      "decision": "excluded",
+      "reason": "参数化侵蚀预测非侵入式降阶框架(坐标映射+幂律数据调节+模态分解+自编码器压缩)，窄应用工程场景，无通用性/可迁移性证据，估约3-4分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.07861",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-14T01:10:00Z",
+      "decision": "excluded",
+      "reason": "PINN求解圆柱绕流黏弹性流动高Weissenberg数问题，窄应用单方程单一几何场景，估约4分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.01881",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-14T01:10:00Z",
+      "decision": "excluded",
+      "reason": "PINN近似Fokker-Planck方程解概率密度并给误差界，用于轨道不确定性传播，窄应用单方程场景，与PDE基座模型主线关联较弱，估约4分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.00530",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-14T01:10:00Z",
+      "decision": "excluded",
+      "reason": "DeSyR：PINN引导符号回归框架用于方程发现而非求解，窄应用场景缺乏通用性证据，估约4-5分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.05016",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-14T01:08:00Z",
+      "decision": "excluded",
+      "reason": "Amortizing Scaling Law Construction Costs：将缩放律拟合数据采集形式化为贝叶斯优化问题，为通用大模型训练方法论，未针对PDE/科学机器学习架构族验证，与方向B(PDE专属缩放律)定义关联较弱，未计入评分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.11628",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-14T01:10:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-13已核验（仿星器刮削层能量输运系数反演PINN，窄应用单方程，约3-4分），本期复检结论不变",
+      "discovery_type": "backfill"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20260914.md"
+}
