@@ -1,0 +1,131 @@
+{
+  "run_id": "daily-2026-09-15",
+  "task_type": "daily",
+  "status": "success",
+  "started_at": "2026-09-15T01:10:00Z",
+  "completed_at": "2026-09-15T02:20:00Z",
+  "coverage_start": "2026-09-12T01:08:57Z",
+  "coverage_end": "2026-09-15T00:00:00Z",
+  "previous_successful_coverage_end": "2026-09-14T01:08:57Z",
+  "queries": [
+    {"query": "site:arxiv.org PDE foundation model September 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org multiple physics pretraining 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org in-context operator learning arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": ["2609.03069", "2609.05158"]},
+    {"query": "arxiv 2609 neural operator large-scale PDE pretraining transformer", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org PDE benchmark dataset foundation model arxiv September 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org scaling laws scientific machine learning arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org zero-shot PDE neural operator generalization 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org fine-tuning foundation model PDE downstream arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org neural operator PDE arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": ["2609.05860", "2609.03069", "2609.02982"]},
+    {"query": "site:arxiv.org physics-informed neural network arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": ["2609.09162", "2609.11628", "2609.03768", "2609.12301", "2609.12900"]},
+    {"query": "site:arxiv.org surrogate model PDE simulation machine learning arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": ["2609.08102"]},
+    {"query": "site:arxiv.org neural PDE solver arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org multi-physics dataset pretraining PDE arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org out-of-distribution generalization neural PDE arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org parameter-efficient fine-tuning physics model arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org foundation model transfer new PDE geometry arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org generative model PDE scientific data arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org graph neural network PDE simulation arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org active learning neural operator arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org reduced-order model machine learning PDE arxiv 2609", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "arxiv September 12 13 14 2026 PDE foundation model neural operator new paper", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org PDE foundation model arxiv 2609.1", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org neural operator OR PDE foundation model 2609.13 OR 2609.14", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "arxiv 2609 multi-physics transformer pretraining new preprint week September 14 2026", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org PDE benchmark scaling law dataset arxiv 2609.1", "source": "websearch", "status": "success", "candidate_ids": []},
+    {"query": "site:arxiv.org multi-physics pretraining foundation model arxiv 2609.10 OR 2609.11 OR 2609.12 OR 2609.13", "source": "websearch", "status": "success", "candidate_ids": []}
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2609.12301",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:30:00Z",
+      "decision": "selected",
+      "reason": "去偏PINN统计推断框架，解决PDE约束反问题参数估计继承神经网络慢收敛速率导致的偏差与低效问题，给出√n一致性、渐近正态性及贝叶斯后验收缩理论，方法与具体方程无关、可迁移；WebSearch确认摘要页提交日期为2026-09-11（先于本次覆盖窗口起点，归为backfill）；relevance3+generality2+innovation3=8分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.03069",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:15:00Z",
+      "decision": "excluded",
+      "reason": "Learnable composition for neural operators (LatentDDM)：2026-09-05至2026-09-14多期run_log已反复核验，仅Darcy/翼型两任务验证、缺乏多物理证据，约5分，本期复检结论不变",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.05860",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:16:00Z",
+      "decision": "excluded",
+      "reason": "TopoBox-3D神经算子拓扑OOD失效模式诊断研究，2026-09-12已核验为诊断性研究、缺乏多物理预训练证据，约6分，本期复检结论不变",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.02982",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:17:00Z",
+      "decision": "excluded",
+      "reason": "Equation Recast for Canonical Operator Learning：2026-09-06起多期run_log已核验未达阈值（单一参数化PDE族验证，缺乏跨物理通用性证据），本期复检结论不变",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.05158",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:18:00Z",
+      "decision": "excluded",
+      "reason": "2026-09-12已核验为控制理论Lp稳定性算子分解工作，非PDE求解/基座模型方向，不计入评分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.09162",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:35:00Z",
+      "decision": "excluded",
+      "reason": "3GAS-PINNs梯度引导高斯自适应采样，改进PINN收敛与激波捕获，单一训练技巧改进缺乏跨方程/多物理通用性证据，约5分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.11628",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:36:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-13已核验：仿星器刮削层能量输运系数反演PINN，窄应用单方程，约3-4分，本期复检结论不变",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.03768",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:37:00Z",
+      "decision": "excluded",
+      "reason": "Bell多项式计算PINN高阶混合导数的技巧性工作，无多物理验证或通用性证据，约5分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.12900",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:38:00Z",
+      "decision": "excluded",
+      "reason": "物理增强神经求解器用于瞬态冰川流动模拟，窄应用单方程单一物理场景，无训练数据但方法局限于该应用领域，约4-5分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.08102",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-15T01:40:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-14已核验：小波编码FNO求解超材料本征模，单一方程/单一物理域架构改进，约4-5分，本期复检结论不变",
+      "discovery_type": "backfill"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20260915.md"
+}
