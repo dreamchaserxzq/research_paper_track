@@ -11,9 +11,9 @@
 | legacy_unverified | 444 |
 | missing_title | 3 |
 | missing_authors | 327 |
-| daily_files | 55 |
+| daily_files | 56 |
 | weekly_files | 6 |
-| structured_runs | 3 |
+| structured_runs | 4 |
 
 ## 待核验冲突
 
