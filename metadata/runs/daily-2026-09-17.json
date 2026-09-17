@@ -1,0 +1,129 @@
+{
+  "run_id": "daily-2026-09-17",
+  "task_type": "daily",
+  "status": "success",
+  "started_at": "2026-09-17T01:07:37Z",
+  "completed_at": "2026-09-17T02:10:00Z",
+  "coverage_start": "2026-09-13T00:00:00Z",
+  "coverage_end": "2026-09-17T01:07:37Z",
+  "previous_successful_coverage_end": "2026-09-15T00:00:00Z",
+  "queries": [
+    {"query": "site:arxiv.org PDE foundation model arxiv 2609.15 OR 2609.16 OR 2609.17", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.15973"]},
+    {"query": "site:arxiv.org multiple physics pretraining arxiv September 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org in-context operator learning arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.03069", "2609.05158"]},
+    {"query": "site:arxiv.org transformer neural operator large-scale PDE arxiv 2609.1", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org universal PDE solver transformer arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org PDE benchmark dataset machine learning arxiv 2609.15 OR 2609.16 OR 2609.17", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org scaling laws scientific machine learning arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16282"]},
+    {"query": "site:arxiv.org The Well PDEBench PDEArena arxiv September 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org zero-shot PDE neural operator generalization arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.02982"]},
+    {"query": "site:arxiv.org fine-tuning foundation model PDE downstream arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org parameter-efficient fine-tuning physics model arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org foundation model transfer new PDE geometry arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org neural operator PDE arxiv 2609.15 OR 2609.16 OR 2609.17", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16406"]},
+    {"query": "site:arxiv.org physics-informed neural network arxiv 2609.15 OR 2609.16 OR 2609.17", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16406", "2609.15261"]},
+    {"query": "site:arxiv.org surrogate model PDE simulation machine learning arxiv 2609.15 OR 2609.16", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org neural PDE solver arxiv 2609.15 OR 2609.16 OR 2609.17", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16406", "2609.15432"]},
+    {"query": "site:arxiv.org generative model PDE scientific data arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.00297"]},
+    {"query": "site:arxiv.org graph neural network PDE simulation arxiv 2609.15 OR 2609.16", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16406"]},
+    {"query": "site:arxiv.org active learning neural operator arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.03069"]},
+    {"query": "site:arxiv.org reduced-order model machine learning PDE arxiv 2609.15 OR 2609.16", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16525"]},
+    {"query": "site:arxiv.org PDE neural operator OR foundation model arxiv 2609.13 OR 2609.14", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org physics-informed neural network arxiv 2609.13 OR 2609.14", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16406"]},
+    {"query": "site:arxiv.org surrogate model PDE simulation arxiv 2609.13 OR 2609.14", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org multi-physics dataset pretraining PDE arxiv 2609.13 OR 2609.14 OR 2609.15 OR 2609.16", "source": "websearch", "status": "success", "error": null, "candidate_ids": []}
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2609.15432",
+      "submitted_at": "2026-09-14T00:00:00Z",
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:45:00Z",
+      "decision": "selected",
+      "reason": "单条件神经PDE求解模型输出雅可比定义可复用响应空间，提出LST/ATM在无跨条件训练数据下实现跨条件迁移，六类PDE族（线性ODE/扩散-反应/Burgers/对流/Darcy/Navier-Stokes）验证，方法与具体方程解耦，对基座模型下游快速适配有参考价值（西北工业大学）；relevance3+generality2+innovation2=7分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2609.15973",
+      "submitted_at": "2026-09-14T00:00:00Z",
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:12:00Z",
+      "decision": "excluded",
+      "reason": "Discovery Foundation Models：面向开放式科学发现的通用智能体框架（问题发现/假设生成/证据修订），不针对PDE/物理场建模，与本仓库PDE基座大模型主题不符，不计入评分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2609.16282",
+      "submitted_at": "2026-09-14T00:00:00Z",
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:15:00Z",
+      "decision": "excluded",
+      "reason": "Scaling Laws for Physics-Aware ACOPF Surrogate Learning：交流最优潮流（代数约束优化问题，非PDE）代理模型的缩放律研究，单一电网应用场景，与PDE方向关联较弱，约3分未达阈值",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2609.16406",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:18:00Z",
+      "decision": "excluded",
+      "reason": "Physics Informed Random Feature Neural Networks for Solving PDEs：用随机特征方法缓解PINN谱偏差、降低配点数需求的单一训练技巧改进，未见多物理/跨方程通用性证据，提交时间未经核验，约4-5分未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.15261",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:20:00Z",
+      "decision": "excluded",
+      "reason": "PINN用于伽马射线暴X射线光变曲线缺口重建的天体物理数据分析应用，非PDE求解或基座模型相关架构工作，方向不符，提交时间未经核验，不计入评分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.16525",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:22:00Z",
+      "decision": "excluded",
+      "reason": "Structure-Informed Data-Driven Reduced-Order Modeling of Scalar Hyperbolic Conservation Laws：针对标量双曲守恒律单一方程族的结构化降阶模型，缺乏跨方程/多物理通用性证据，提交时间未经核验，约3-4分未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.03069",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:10:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-05至2026-09-15多期已反复核验：LatentDDM可学习组合算子，仅Darcy/翼型两任务验证，缺乏多物理证据，约5分，本期复检结论不变",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.05158",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:11:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-12已核验：控制理论Lp稳定性算子分解，非PDE求解/基座模型方向，不计入评分，本期复检结论不变",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.02982",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:23:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-06起多期已核验：Equation Recast for Canonical Operator Learning，缺乏跨物理族通用性证据，本期复检结论不变",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.00297",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-17T01:24:00Z",
+      "decision": "excluded",
+      "reason": "GeoLAMP 已于2026-09-04日报入选并写入seen_papers.txt，本次搜索重复检出，非新论文，不重复计入",
+      "discovery_type": "backfill"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20260917.md"
+}

@@ -397,6 +397,7 @@
 | Geometry-aware Latent Autoregressive Generative Model for PDEs in Complex Domains（GeoLAMP） | [2609.00297](https://arxiv.org/abs/2609.00297) | A, D | preprint | legacy_unverified |
 | Latent-MoE: Domain-Aware Mixture-of-Experts for PDEs with Multi-Regime Physics | [2609.07814](https://arxiv.org/abs/2609.07814) | A, D | preprint | legacy_unverified |
 | PDE-constrained inverse problems at the √n rate via debiased physics-informed neural networks | [2609.12301](https://arxiv.org/abs/2609.12301) | D | preprint | source_checked |
+| Single-condition neural solvers encode transferable response spaces for parametric differential equations | [2609.15432](https://arxiv.org/abs/2609.15432) | C, D | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
 | Novel DeepONet architecture to predict stresses in elastoplastic structures with variable complex geometries and loads | [10.1016/j.cma.2023.116277](https://doi.org/10.1016/j.cma.2023.116277) | unknown | published | legacy_unverified |
 | Interface PINNs (I-PINNs): A physics-informed neural networks framework for interface problems | [10.1016/j.cma.2024.117135](https://doi.org/10.1016/j.cma.2024.117135) | unknown | published | legacy_unverified |
