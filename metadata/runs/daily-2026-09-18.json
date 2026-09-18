@@ -1,0 +1,126 @@
+{
+  "run_id": "daily-2026-09-18",
+  "task_type": "daily",
+  "status": "success",
+  "started_at": "2026-09-18T01:07:47Z",
+  "completed_at": "2026-09-18T02:00:00Z",
+  "coverage_start": "2026-09-15T01:07:37Z",
+  "coverage_end": "2026-09-18T01:07:47Z",
+  "previous_successful_coverage_end": "2026-09-17T01:07:37Z",
+  "queries": [
+    {"query": "site:arxiv.org PDE foundation model September 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org multiple physics pretraining 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org in-context operator learning 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org universal PDE solver transformer 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org PDE benchmark dataset machine learning 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org scaling laws scientific machine learning 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org zero-shot PDE neural operator generalization 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org fine-tuning foundation model PDE downstream 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org neural operator PDE arxiv.org/abs/2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16621", "2609.18419", "2609.03069", "2609.15620"]},
+    {"query": "site:arxiv.org physics-informed neural network 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16406"]},
+    {"query": "arxiv 2609 neural operator PDE September 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.02982", "2609.16621"]},
+    {"query": "arxiv 2609 foundation model PDE physics simulation", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org 2609 operator learning geometry generalization", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org 2609 multi-physics dataset pretraining PDE", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org 2609 parameter-efficient fine-tuning physics model", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org 2609 out-of-distribution generalization neural PDE", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org 2609 surrogate model PDE simulation machine learning", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org 2609 generative model PDE scientific data diffusion flow matching", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org 2609 reduced-order model machine learning PDE", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16237"]},
+    {"query": "site:arxiv.org 2609 graph neural network PDE simulation", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv.org abs 2609.17 2609.18 neural operator PDE", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.18419"]},
+    {"query": "site:arxiv.org transformer neural operator large-scale PDE pretraining", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org PDE foundation model arxiv 2609.17 OR 2609.18", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org neural operator PDE arxiv 2609.17 OR 2609.18", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.16621"]},
+    {"query": "site:arxiv.org physics-informed neural network arxiv 2609.17 OR 2609.18", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.18025", "2609.17638"]},
+    {"query": "site:arxiv.org scaling law benchmark dataset physics arxiv 2609.17 OR 2609.18", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org generalization fine-tuning PDE arxiv 2609.17 OR 2609.18", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org \"The Well\" OR \"PDEArena\" OR \"PDEBench\" arxiv 2609", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org foundation model transfer new PDE geometry arxiv 2609.15 OR 2609.16 OR 2609.17 OR 2609.18", "source": "websearch", "status": "success", "error": null, "candidate_ids": []}
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2609.15620",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-18T01:45:00Z",
+      "decision": "selected",
+      "reason": "GA-AMNO：自适应网格神经算子中提出「算子可读性」与规范化（gauge-aware）特征迁移，分离计算分配与表征交互两个子问题，在Navier-Stokes/Rayleigh-Bénard/KS/Kolmogorov/Darcy五类基准（演化+静态映射）一致优于基线，方法与方程解耦，对基座模型处理异构网格/分辨率有启发价值；此前2026-09-17检索未检出，索引延迟本期补录；relevance3+generality2+innovation2=7分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.16621",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-18T01:46:00Z",
+      "decision": "selected",
+      "reason": "VAMO（Duke University）：变分隐马尔可夫算子解决自回归神经PDE长时程rollout误差累积这一基座/代理模型共性失效模式，训练随机正则化+推断确定性演化，三个流体力学基准验证显著降低误差累积、扩展稳定预测时程；隐空间稳定化机制可迁移至任意隐空间自回归算子；此前2026-09-17检索未检出，索引延迟本期补录；relevance3+generality2+innovation2=7分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.18419",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-18T01:50:00Z",
+      "decision": "excluded",
+      "reason": "HiLNO：分层潜神经算子+多尺度监督+各向异性高斯注意力，在Darcy/Airfoil/ShapeNet-Car三个标准基准上以更少参数（较LinearNO平均降84.4%参数、69.2% FLOPs）取得有竞争力精度，属于效率导向的架构改进，缺乏跨物理族/规模化通用性证据，约6分未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.16237",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-18T01:51:00Z",
+      "decision": "excluded",
+      "reason": "旋转爆震发动机降阶模型+数据同化+机器学习修正项：单一工程应用场景（旋转爆震发动机），缺乏跨方程/多物理通用性证据，约3-4分未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.18025",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-18T01:52:00Z",
+      "decision": "excluded",
+      "reason": "PINN用于太阳大气Hα/Ca II谱线多层光谱反演：天体物理光谱反演单一应用，非PDE求解或基座架构工作，方向不符，不计入评分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.17638",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-18T01:52:00Z",
+      "decision": "excluded",
+      "reason": "PINN/神经算子教学讲义（博士课程课件），非原创研究贡献，不计入评分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.16406",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-18T01:53:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-17已核验：随机特征PINN缓解谱偏差单一训练技巧改进，缺乏多物理/跨方程通用性证据，约4-5分，本期复检结论不变",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.03069",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-18T01:53:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-05至2026-09-17多期已反复核验：LatentDDM可学习组合算子，仅Darcy/翼型两任务验证，缺乏多物理证据，约5分，本期复检结论不变",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.02982",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-18T01:54:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-06起多期已核验：Equation Recast for Canonical Operator Learning，缺乏跨物理族通用性证据，本期复检结论不变",
+      "discovery_type": "backfill"
+    }
+  ],
+  "notes": "Beyond the candidates listed above, WebSearch also surfaced papers already covered or excluded by earlier runs, or outside the current coverage window/topic scope (e.g. 2609.05860, 2609.11935, 2609.07752, 2609.09162, 2609.14269, 2609.11628, 2609.03768, 2609.01881, 2609.14106, 2609.05408, 2609.08102, 2609.10983); these are omitted from query candidate_ids and from candidates[] since they are not new decisions for this run. arXiv export API returned 403; WebFetch to arxiv.org was blocked by the egress proxy (EGRESS_BLOCKED); all retrieval used WebSearch. Exact arXiv submission timestamps for the candidates above could not be verified against a primary arxiv.org page fetch (blocked); submitted_at left null and discovery_type recorded as backfill per OPERATIONS.md guidance rather than asserting an unverified date.",
+  "digest_path": "digests/PDE-FM-日报-20260918.md"
+}
