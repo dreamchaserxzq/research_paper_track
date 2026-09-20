@@ -400,6 +400,7 @@
 | Single-condition neural solvers encode transferable response spaces for parametric differential equations | [2609.15432](https://arxiv.org/abs/2609.15432) | C, D | preprint | source_checked |
 | Where to Compute and How to Interact: Operator-Readable Adaptation with Gauge-Aware Transport | [2609.15620](https://arxiv.org/abs/2609.15620) | D | preprint | source_checked |
 | Stable by Construction: Variational Latent Markov Operators for Long-Horizon PDE Prediction | [2609.16621](https://arxiv.org/abs/2609.16621) | D | preprint | source_checked |
+| PosteriorBench: From Point Estimates to Posterior Matching in Evaluating Generative Inverse Solvers | [2609.20794](https://arxiv.org/abs/2609.20794) | B | preprint | source_checked |
 | How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates? | [2609.20814](https://arxiv.org/abs/2609.20814) | C | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
 | Novel DeepONet architecture to predict stresses in elastoplastic structures with variable complex geometries and loads | [10.1016/j.cma.2023.116277](https://doi.org/10.1016/j.cma.2023.116277) | unknown | published | legacy_unverified |
