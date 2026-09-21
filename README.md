@@ -4,7 +4,7 @@
 
 [论文目录](docs/PAPER_CATALOG.md) · [重点论文对照](docs/RESEARCH_COMPARISON.md) · [全部日报与周报](docs/DIGEST_INDEX.md) · [操作说明](docs/OPERATIONS.md)
 
-当前注册表 **454** 条；去重集 **347** 个 arXiv ID；**8** 项待核验冲突。历史发表状态为记录中的声明，核验程度见各条目。
+当前注册表 **455** 条；去重集 **348** 个 arXiv ID；**8** 项待核验冲突。历史发表状态为记录中的声明，核验程度见各条目。
 
 ## 最新日报
 
@@ -12,6 +12,7 @@
 
 | 日期 | 报告 |
 |---|---|
+| 2026-09-21 | [PDE-FM-日报-20260921.md](digests/PDE-FM-日报-20260921.md) |
 | 2026-09-19 | [PDE-FM-日报-20260919.md](digests/PDE-FM-日报-20260919.md) |
 | 2026-09-18 | [PDE-FM-日报-20260918.md](digests/PDE-FM-日报-20260918.md) |
 | 2026-09-17 | [PDE-FM-日报-20260917.md](digests/PDE-FM-日报-20260917.md) |
@@ -23,7 +24,6 @@
 | 2026-09-10 | [PDE-FM-日报-20260910.md](digests/PDE-FM-日报-20260910.md) |
 | 2026-09-09 | [PDE-FM-日报-20260909.md](digests/PDE-FM-日报-20260909.md) |
 | 2026-09-08 | [PDE-FM-日报-20260908.md](digests/PDE-FM-日报-20260908.md) |
-| 2026-09-07 | [PDE-FM-日报-20260907.md](digests/PDE-FM-日报-20260907.md) |
 
 <!-- DIGEST_END -->
 
