@@ -1,0 +1,123 @@
+{
+  "run_id": "daily-2026-09-23",
+  "task_type": "daily",
+  "status": "success",
+  "started_at": "2026-09-23T01:17:35Z",
+  "completed_at": "2026-09-23T02:05:00Z",
+  "coverage_start": "2026-09-20T01:15:40Z",
+  "coverage_end": "2026-09-23T01:17:35Z",
+  "previous_successful_coverage_end": "2026-09-22T01:15:40Z",
+  "queries": [
+    {"query": "site:arxiv.org PDE foundation model arxiv 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org multiple physics pretraining transformer arxiv 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org in-context operator learning arxiv 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org universal PDE solver transformer arxiv 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org PDE benchmark dataset scaling law arxiv 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.21638"]},
+    {"query": "site:arxiv.org scaling laws scientific machine learning arxiv 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org zero-shot generalization neural operator foundation model arxiv 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.23529"]},
+    {"query": "site:arxiv.org fine-tuning foundation model PDE downstream adaptation arxiv 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org out-of-distribution generalization neural PDE geometry arxiv 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.23529"]},
+    {"query": "site:arxiv.org neural operator PDE arxiv 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org physics-informed neural network arxiv 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.23077", "2609.22185"]},
+    {"query": "site:arxiv.org surrogate model simulation machine learning arxiv 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.22129", "2609.22329"]},
+    {"query": "site:arxiv.org generative model diffusion flow matching PDE scientific data arxiv 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org graph neural network PDE simulation arxiv 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.19915"]},
+    {"query": "site:arxiv.org active learning reduced-order model neural PDE arxiv 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org parameter-efficient fine-tuning LoRA physics model PDE arxiv 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org transformer neural operator large-scale PDE arxiv 2609.20 OR 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org few-shot operator learning transfer arxiv 2609.20 OR 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org \"The Well\" OR PDEBench OR PDEArena benchmark arxiv 2609.20 OR 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org state space model tokenization physics field pretraining arxiv 2609.20 OR 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org multi-physics foundation model pretraining scaling arxiv 2609.20 OR 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org data-driven simulation deep learning arxiv 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.23358"]},
+    {"query": "site:arxiv.org cross-equation generalization neural operator pretrained arxiv 2609.20 OR 2609.21 OR 2609.22 OR 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.23529"]},
+    {"query": "arxiv September 2026 new PDE neural operator paper multi-physics pretrained transferable foundation model", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "huggingface papers PDE foundation model neural operator September 22 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org neural operator foundation model arxiv September 22 2026 OR September 23 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org \"foundation model\" PDE physics arxiv 2609.23", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "site:arxiv.org operator learning pretraining arxiv 2609.20 physics", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv 2609.23529 Predicting Out-of-Distribution Generalization of Neural Operators abstract authors", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.23529"]},
+    {"query": "arxiv 2609.19915 Amortizing Physics-Informed Neural Solvers via Graph Hypernetworks abstract authors", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.19915"]},
+    {"query": "\"Hang-Cheng Dong\" \"Pengcheng Cheng\" neural operator institution university", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.23529"]},
+    {"query": "\"Kookjin Lee\" \"Cheng Jing\" hypernetwork PINN Arizona State University graph", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.19915"]},
+    {"query": "\"Amortizing Physics-Informed Neural Solvers\" graph hypernetworks PDE families burgers heat diffusion advection meta-training results", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.19915"]},
+    {"query": "\"Observable Spectral Error Decomposition\" neural operators Chebyshev elliptic operator experiments FNO DeepONet results", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.23529"]},
+    {"query": "arxiv 2609.22129 Helix-FNO abstract authors institution multiphysics", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.22129"]}
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2609.23529",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-23T01:40:00Z",
+      "decision": "excluded",
+      "reason": "Predicting Out-of-Distribution Generalization of Neural Operators via Observable Spectral Error Decomposition（Hang-Cheng Dong, Pengcheng Cheng）：将学习到的解算子参数化为作用于椭圆算子特征值上的谱滤波器（Chebyshev展开+弱形式训练），给出OOD能量范数误差的精确谱分解（模型相关近似项+分布相关权重项）。属方向C诊断性理论工作，但WebSearch可得证据仅显示其在自定义谱滤波器算子类/椭圆PDE范围内验证，未见对FNO/DeepONet等既有基座架构或跨多物理数据集的广谱验证，通用性证据不足，约6分，未达阈值。arXiv abs/html页面被网络出口代理拦截（EGRESS_BLOCKED），未能直接核验完整实验设置。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.19915",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-23T01:45:00Z",
+      "decision": "excluded",
+      "reason": "Amortizing Physics-Informed Neural Solvers via Graph Hypernetworks（Cheng Jing, Abhishek Verma, Kallol Bera, Yixuan He, Kookjin Lee；Arizona State University，LoG 2026录用）：将PDE表示为算子图（场/导数/项/残差节点，系数为项属性），图超网络生成对角码初始化元训练的分解式PINN，元训练与目标适配均无需解标签，与HyPINO同属超网络生成PINN路线。但WebSearch可得实验范围仅覆盖标量对流-扩散-反应问题与单一固定结构的电容耦合等离子体模型，缺乏跨PDE族/多物理的通用性证据，约5分，未达阈值。arXiv html页面被网络出口代理拦截，未能直接核验完整实验设置。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.22129",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-23T01:48:00Z",
+      "decision": "excluded",
+      "reason": "Helix-FNO: Spectral-Domain Operator Learning Coupled with a High-Fidelity Mechanistic Model for Fast Surrogate Simulation（辽宁科技大学/武汉大学）：teacher-student架构，FNO学生耦合32态机理教师模型，面向单一工程机理模型的窄应用代理加速，缺乏跨PDE/多物理通用性证据，约4分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.22185",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-23T01:48:00Z",
+      "decision": "excluded",
+      "reason": "Adaptive Physics-Informed Neural Networks for the Blasius Boundary-Layer Problem：单一经典边界层方程的PINN自适应训练改进（梯度范数自适应损失权重、非均匀/残差采样、Adam-LBFGS序贯优化），无跨方程通用性或基座模型启发价值，约3分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.23077",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-23T01:48:00Z",
+      "decision": "excluded",
+      "reason": "Physics-Informed Neural Network Surrogates with Polynomial Chaos-Based Uncertainty Propagation for Stochastic Model Predictive Control：PINN+多项式混沌展开的随机MPC可微代理，面向控制工程窄应用，非PDE求解/基座模型通用方法，约3分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.22329",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-23T01:48:00Z",
+      "decision": "excluded",
+      "reason": "Artificial Neural Networks as Surrogate Models in Black Box Optimization：通用黑箱优化中的ANN代理模型，非PDE场求解或PDE基座模型工作，方向不符，不计入评分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.23358",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-23T01:50:00Z",
+      "decision": "excluded",
+      "reason": "Machine Learning Accelerated Plasma Simulation through Physics Guided Time Jumps：学习时间跳跃加速等离子体仿真，单一物理领域（等离子体）代理加速，缺乏跨PDE/多物理通用性证据，约4-5分，未达阈值",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.21638",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-23T01:20:00Z",
+      "decision": "excluded",
+      "reason": "此前2026-09-22运行已核验：Detectability limits of scaling laws，通用缩放律可检测性理论，未针对PDE或物理场基座模型，方向不符，本期复检结论不变",
+      "discovery_type": "backfill"
+    }
+  ],
+  "notes": "覆盖窗口 2026-09-20T01:15:40Z–2026-09-23T01:17:35Z（承接09-22成功覆盖终点，48小时重叠）。arXiv export API 与直接 WebFetch 对 arxiv.org/pith.science 均被网络出口代理拦截（EGRESS_BLOCKED，本次实测），全程使用WebSearch完成检索与核验，28条覆盖性查询+7条候选详情核验查询，覆盖A/B/C/D全部关键词库，实际收集candidates[]中8个候选ID，总量未知。其中2609.21638为此前2026-09-22运行已核验排除的候选，本期复检结论不变；本期新出现的候选为2609.23529（神经算子OOD泛化谱误差分解理论，诊断性但通用性证据不足，约6分）、2609.19915（图超网络分摊PINN，仅验证于对流扩散反应族与单一等离子体模型，约5分）、2609.22129（Helix-FNO窄工程代理，约4分）、2609.22185（Blasius边界层PINN，约3分）、2609.23077（随机MPC用PINN+PCE代理，约3分）、2609.22329（黑箱优化ANN代理，方向不符）、2609.23358（等离子体仿真加速代理，约4-5分），均未达阈值或方向不符，均未计入新增。本期覆盖窗口内未发现新的、此前未核验过且达到≥7分阈值的候选，本期新增入选0篇。",
+  "digest_path": "digests/PDE-FM-日报-20260923.md"
+}
