@@ -1,6 +1,6 @@
 {
   "conflicts": 8,
-  "daily_files": 61,
+  "daily_files": 62,
   "historical_repeat_selections": {
     "2511.21861": [
       "2026-06-15",
@@ -38,6 +38,6 @@
   "reported_formal": 121,
   "schema_version": 1,
   "selected_arxiv_ids": 348,
-  "structured_runs": 9,
+  "structured_runs": 10,
   "weekly_files": 6
 }
