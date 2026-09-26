@@ -1,0 +1,333 @@
+{
+  "run_id": "daily-2026-09-26",
+  "task_type": "daily",
+  "status": "degraded",
+  "started_at": "2026-09-26T01:07:15Z",
+  "completed_at": "2026-09-26T01:09:19Z",
+  "coverage_start": "2026-09-22T01:18:58Z",
+  "coverage_end": "2026-09-26T01:07:15Z",
+  "previous_successful_coverage_end": "2026-09-24T01:18:58Z",
+  "queries": [
+    {
+      "query": "curl https://export.arxiv.org/api/query?search_query=all:%22neural%20operator%22&sortBy=submittedDate&max_results=5",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "CONNECT tunnel failed, response 403 (egress proxy connect_rejected)",
+      "candidate_ids": []
+    },
+    {
+      "query": "curl https://arxiv.org/list/cs.LG/new",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "CONNECT tunnel failed, response 403 (egress proxy connect_rejected)",
+      "candidate_ids": []
+    },
+    {
+      "query": "WebFetch https://arxiv.org/list/physics.comp-ph/new",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "EGRESS_BLOCKED: arxiv.org blocked by network egress proxy",
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org PDE foundation model arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.26924",
+        "2609.26899"
+      ]
+    },
+    {
+      "query": "site:arxiv.org neural operator PDE arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org multiple physics pretraining transformer arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.26310"
+      ]
+    },
+    {
+      "query": "site:arxiv.org physics-informed neural network arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.25222"
+      ]
+    },
+    {
+      "query": "site:arxiv.org PDE benchmark dataset scaling law arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org zero-shot generalization neural operator foundation model arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.25788"
+      ]
+    },
+    {
+      "query": "site:arxiv.org in-context operator learning arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org universal PDE solver transformer arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org fine-tuning foundation model PDE downstream adaptation arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org surrogate model simulation machine learning arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org generative model diffusion flow matching PDE arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.25444"
+      ]
+    },
+    {
+      "query": "site:arxiv.org graph neural network PDE mesh simulation arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org out-of-distribution generalization neural PDE geometry arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org scaling laws scientific machine learning arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv 2609.25 neural operator partial differential equations September 2026",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org \"partial differential equations\" learning arxiv 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org operator learning pretraining physics arxiv 2609.25",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org few-shot operator learning transfer PDE arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org fluid dynamics deep learning turbulence surrogate arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "\"arXiv:2609.25\" PDE OR \"neural operator\" OR \"physics-informed\"",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "\"arXiv:2609.26\" PDE OR \"neural operator\" OR \"physics-informed\"",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "huggingface papers PDE foundation model neural operator September 25 2026",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org multi-physics foundation model pretraining arxiv 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.26899",
+        "2609.27554"
+      ]
+    },
+    {
+      "query": "site:arxiv.org neural PDE solver arxiv 2609.25",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org reduced-order model neural network PDE arxiv 2609.25 OR 2609.26",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "\"PhyMo\" \"Physical-Field Modality\" multimodal AI4Physics arxiv 2609.27554",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.27554",
+        "2609.25738"
+      ]
+    },
+    {
+      "query": "WebFetch https://www.alphaxiv.org/abs/2609.27554",
+      "source": "alphaxiv",
+      "status": "failed",
+      "error": "EGRESS_BLOCKED: www.alphaxiv.org blocked by network egress proxy",
+      "candidate_ids": []
+    },
+    {
+      "query": "PhyMo physical-field modality authors five datasets PDE residual pretraining field encoder visual alignment results",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.27554"
+      ]
+    },
+    {
+      "query": "\"OmniFysics-Nano-V2\" technical report physical world modalities",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.25738"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2609.27554",
+      "submitted_at": "2026-09-23T00:00:00Z",
+      "updated_at": null,
+      "discovered_at": "2026-09-26T01:08:30Z",
+      "decision": "excluded",
+      "reason": "PhyMo: A Physical-Field Modality for Multimodal AI4Physics（Henan Sun et al.，其余作者与机构未能核实）：把物理场作为独立模态，三阶段训练——物理场编码器先在PDE残差监督下做场重建预训练，再与视觉嵌入在共享隐空间对齐，最后接下游预测头；作者称在5个不同物理环境数据集上优于各数据集最强基线。与方向A（物理场表征预训练/多模态基座）相关，思路有新意。但WebSearch摘要未说明编码器是否跨数据集联合预训练、模型规模、涉及的PDE族与零样本/少样本迁移结果，arXiv/alphaxiv 页面被出口代理拦截，无法核对全文。评分 daily-v1：相关度3/4、通用性1/3、创新性2/3，共6分，未达阈值；列入附录，待可访问全文后重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2609.25222",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-26T01:08:00Z",
+      "decision": "excluded",
+      "reason": "Gravity-Informed Neural Networks for Post-Newtonian Binary Dynamics（GravINNs）：把后牛顿双星运动方程嵌入训练的物理信息网络，求解对象为常微分方程形式的轨道动力学而非PDE场，窄应用，方向关联弱，不计入评分。提交日期未核实。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.25444",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-26T01:08:00Z",
+      "decision": "excluded",
+      "reason": "Mean Velocity Matching: Rethinking Generative Dynamics in Diffusion Models：通用扩散/流模型预测参数化方法，未见PDE或物理场应用，方向不符，不计入评分。提交日期未核实。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.25788",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-26T01:08:00Z",
+      "decision": "excluded",
+      "reason": "Evaluating Accuracy and Probabilistic Reliability of Zero-Shot Time Series Foundation Models：时间序列基础模型（能源/交通/金融）零样本评测，非PDE方向，不计入评分。提交日期未核实。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.26899",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-26T01:08:00Z",
+      "decision": "excluded",
+      "reason": "Towards Foundation Models on Hardware Accelerators for Particle Physics：粒子物理硬件加速器上的基础模型部署，非PDE方向，不计入评分。提交日期未核实。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.26924",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-26T01:08:00Z",
+      "decision": "excluded",
+      "reason": "nnFoundation: 3D Foundation Models for Radiology：医学影像三维基础模型，非PDE方向，不计入评分。提交日期未核实。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.26310",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-26T01:08:00Z",
+      "decision": "excluded",
+      "reason": "PreGS: A Parameter-Transfer-Based Multi-Expert Graph Neural Network for Node Classification：图节点分类，非PDE方向，不计入评分。提交日期未核实。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.25738",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-26T01:08:30Z",
+      "decision": "excluded",
+      "reason": "OmniFysics-Nano-V2 Technical Report: Understanding the Physical World Across Modalities（Fysics-AI）：面向图像/视频/音频/语音/文本的小型全模态物理世界理解模型（GRPO课程训练），属多模态物理常识推理而非PDE场求解/基座模型，方向不符，不计入评分。提交日期未核实。",
+      "discovery_type": "backfill"
+    }
+  ],
+  "notes": "2026-09-25 无日报运行记录，本次窗口由 coverage 命令从上次成功终点 2026-09-24T01:18:58Z 前推48小时计算。arXiv export API、arxiv.org 列表页与 alphaxiv 本次实测均被出口代理拦截，检索与核验全部依赖 WebSearch 摘要；WebSearch 对 ID 前缀的检索命中有限，实际收集 8 个候选，总量未知。 由于主要来源（arXiv）不可用且 WebSearch 对窗口内 ID 段覆盖不完整，本次状态记为 degraded，不推进成功覆盖位置。",
+  "digest_path": "digests/PDE-FM-日报-20260926.md"
+}
