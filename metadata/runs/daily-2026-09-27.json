@@ -1,0 +1,208 @@
+{
+  "run_id": "daily-2026-09-27",
+  "task_type": "daily",
+  "status": "degraded",
+  "started_at": "2026-09-27T01:15:18Z",
+  "completed_at": "2026-09-27T01:16:51Z",
+  "coverage_start": "2026-09-22T01:18:58Z",
+  "coverage_end": "2026-09-27T01:15:18Z",
+  "previous_successful_coverage_end": "2026-09-24T01:18:58Z",
+  "queries": [
+    {
+      "query": "curl https://export.arxiv.org/api/query?search_query=all:%22neural%20operator%22&sortBy=submittedDate&max_results=3",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "CONNECT tunnel failed, response 403 (egress proxy connect_rejected)",
+      "candidate_ids": []
+    },
+    {
+      "query": "curl https://arxiv.org/list/cs.LG/new",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "CONNECT tunnel failed, response 403 (egress proxy connect_rejected)",
+      "candidate_ids": []
+    },
+    {
+      "query": "WebFetch https://arxiv.org/abs/2609.29403",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "EGRESS_BLOCKED: arxiv.org blocked by network egress proxy",
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv PDE foundation model September 2026",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org neural operator PDE 2609.2",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.27739",
+        "2609.20309"
+      ]
+    },
+    {
+      "query": "site:arxiv.org multiple physics pretraining 2609",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.29403",
+        "2609.27554",
+        "2609.25505"
+      ]
+    },
+    {
+      "query": "site:arxiv.org physics-informed neural network PDE 2609.2",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.23077"
+      ]
+    },
+    {
+      "query": "RD-JEPA predictive latent pretraining few-trajectory transfer reaction-diffusion equations",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.29403"
+      ]
+    },
+    {
+      "query": "MENO Memory-Efficient Neural Operator Manifold Function Encoder arxiv",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.27739"
+      ]
+    },
+    {
+      "query": "site:arxiv.org PDE benchmark dataset scaling 2609.28 OR 2609.29",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org foundation model fluid dynamics transformer pretraining 2609.28 OR 2609.29 OR 2609.30",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv 2609 zero-shot generalization neural operator unseen geometry PDE",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv 2609 diffusion model surrogate PDE generative operator learning new",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv 2609 LLM agent PDE solver scientific computing",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "\"RD-JEPA\" reaction–diffusion authors",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.29403"
+      ]
+    },
+    {
+      "query": "\"MENO: Memory-Efficient Neural Operator\" authors",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.27739"
+      ]
+    },
+    {
+      "query": "site:arxiv.org operator learning PDE September 2026 new submission 2609.28",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.20309"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2609.29403",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-27T01:15:18Z",
+      "decision": "selected",
+      "reason": "RD-JEPA: Predictive latent pretraining for few-trajectory transfer across reaction–diffusion equations（Chenhao Si 等，其余作者与机构未核实）：JEPA式自监督预测隐表示预训练，单一模型在5个参数化反应扩散系统上联合预训练，再以1/5/10条完整轨迹适配到3个反应算子与轨迹均未参与预训练的留出系统；作者称相对5个监督代理基线、去除预测隐通路的对照及同架构从零训练模型误差更低。方向A（预训练范式）/C（少样本迁移）。评分 daily-v1：相关度3/4、通用性2/3（多系统预训练+留出系统迁移，但限于反应扩散族）、创新性2/3（JEPA隐空间预测用于跨方程迁移），共7分，入选。WebSearch 显示约3天前发布，但arXiv页面被出口代理拦截，提交日期未核实，按backfill记录。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.27739",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-27T01:15:18Z",
+      "decision": "excluded",
+      "reason": "MENO: Memory-Efficient Neural Operator（Shengyang Xu, Weijun Zhang, Jun Hu, Pengzhan Jin；机构未核实）：基于先前 Manifold Function Encoder 的神经算子，作者称内存与数据分辨率无关、训练更快，可接受任意几何与离散的输入并处理输入/输出定义在不同流形的跨几何场景，多数基准精度最佳。方向D。评分 daily-v1：相关度3/4、通用性2/3、创新性1/3（主要建立在已有MFE之上，改进为效率方向），共6分，未达阈值，列附录。提交日期未核实（WebSearch 称约4天前）。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.25505",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-27T01:15:18Z",
+      "decision": "excluded",
+      "reason": "FAST-ML: A Hybrid Physics–Machine Learning Framework for Tropical Cyclone Intensity Forecasting：热带气旋强度预报的物理-ML混合框架，窄应用，未见PDE求解通用方法，不评分。提交日期未核实。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.27554",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-27T01:15:18Z",
+      "decision": "excluded",
+      "reason": "PhyMo（2026-09-26 运行已评6分列附录）：本次仅再次出现在检索结果中，未获新证据，不重评。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.20309",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-27T01:15:18Z",
+      "decision": "excluded",
+      "reason": "SANO 超网络空间自适应神经算子：此前运行（daily-2026-09-19/21/22）已评估，本次无新证据，不重评。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.23077",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-27T01:15:18Z",
+      "decision": "excluded",
+      "reason": "PINN代理+多项式混沌不确定性传播用于随机MPC：daily-2026-09-23 已评估，本次无新证据，不重评。",
+      "discovery_type": "backfill"
+    }
+  ],
+  "notes": "arXiv export API、arxiv.org 列表页与摘要页本次实测均被出口代理拦截（CONNECT 403 / EGRESS_BLOCKED），检索与核验全部依赖 WebSearch 摘要，对窗口内 ID 段覆盖有限；实际收集 6 个候选，总量未知。状态记为 degraded，不推进成功覆盖位置。候选提交日期均无法从 arXiv 核实，按 backfill 记录。",
+  "digest_path": "digests/PDE-FM-日报-20260927.md"
+}

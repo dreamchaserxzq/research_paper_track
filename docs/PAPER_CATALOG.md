@@ -402,6 +402,7 @@
 | Stable by Construction: Variational Latent Markov Operators for Long-Horizon PDE Prediction | [2609.16621](https://arxiv.org/abs/2609.16621) | D | preprint | source_checked |
 | Beyond PINNs: A Unified Gauss--Newton and Petrov--Galerkin Framework for Neural and Hybrid PDE Solvers | [2609.20641](https://arxiv.org/abs/2609.20641) | D | preprint | source_checked |
 | How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates? | [2609.20814](https://arxiv.org/abs/2609.20814) | C | preprint | source_checked |
+| RD-JEPA: Predictive latent pretraining for few-trajectory transfer across reaction--diffusion equations | [2609.29403](https://arxiv.org/abs/2609.29403) | A, C | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
 | Novel DeepONet architecture to predict stresses in elastoplastic structures with variable complex geometries and loads | [10.1016/j.cma.2023.116277](https://doi.org/10.1016/j.cma.2023.116277) | unknown | published | legacy_unverified |
 | Interface PINNs (I-PINNs): A physics-informed neural networks framework for interface problems | [10.1016/j.cma.2024.117135](https://doi.org/10.1016/j.cma.2024.117135) | unknown | published | legacy_unverified |
