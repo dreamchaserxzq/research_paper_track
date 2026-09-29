@@ -1,0 +1,281 @@
+{
+  "run_id": "daily-2026-09-29",
+  "task_type": "daily",
+  "status": "degraded",
+  "started_at": "2026-09-29T01:16:24Z",
+  "completed_at": "2026-09-29T01:18:02Z",
+  "coverage_start": "2026-09-22T01:18:58Z",
+  "coverage_end": "2026-09-29T01:16:24Z",
+  "previous_successful_coverage_end": "2026-09-24T01:18:58Z",
+  "queries": [
+    {
+      "query": "curl https://export.arxiv.org/api/query?search_query=all:%22neural%20operator%22&sortBy=submittedDate&max_results=3",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "CONNECT tunnel failed, response 403 (egress proxy connect_rejected)",
+      "candidate_ids": []
+    },
+    {
+      "query": "curl https://arxiv.org/list/cs.LG/new",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "CONNECT tunnel failed, response 403 (egress proxy connect_rejected)",
+      "candidate_ids": []
+    },
+    {
+      "query": "WebFetch https://arxiv.org/list/cs.LG/new",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "EGRESS_BLOCKED: Access to arxiv.org is blocked by the network egress proxy.",
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org PDE foundation model pretraining 2609.3",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.20814",
+        "2608.24547"
+      ]
+    },
+    {
+      "query": "site:arxiv.org neural operator 2609.31 OR 2609.32 OR 2609.33",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.20309",
+        "2609.03069",
+        "2609.30580"
+      ]
+    },
+    {
+      "query": "\"2609.30580\" neural operators virtual sensing",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.30580"
+      ]
+    },
+    {
+      "query": "site:arxiv.org physics-informed neural network PDE 2609.3",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.16406",
+        "2609.23023",
+        "2609.17638"
+      ]
+    },
+    {
+      "query": "site:arxiv.org PDE benchmark dataset scaling neural surrogate multiphysics 2609",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv 2609 zero-shot generalization unseen PDE geometry neural operator fine-tuning",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.05860"
+      ]
+    },
+    {
+      "query": "site:arxiv.org diffusion flow matching PDE surrogate 2609.2 OR 2609.3",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.20769",
+        "2609.20814",
+        "2608.25454"
+      ]
+    },
+    {
+      "query": "site:arxiv.org foundation model fluid dynamics transformer pretrained 2609",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "\"PINNForge\" execution-grounded evolutionary design physics-informed neural networks LLM",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.23023"
+      ]
+    },
+    {
+      "query": "site:arxiv.org operator learning PDE 2609.29 OR 2609.30 OR 2609.31",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.20309",
+        "2609.03069",
+        "2609.29847"
+      ]
+    },
+    {
+      "query": "arxiv LLM agent automated PDE solver scientific simulation September 2026",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv.org/list/physics.comp-ph pastweek neural operator PDE",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "\"2609.29847\" Brinkman penalisation operator learning Hamiltonian PDEs",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.29847"
+      ]
+    },
+    {
+      "query": "site:arxiv.org \"neural PDE\" OR \"PDE surrogate\" pretraining transfer 2609.3",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.20814",
+        "2609.03069"
+      ]
+    },
+    {
+      "query": "site:arxiv.org mesh graph neural network simulation PDE geometry 2609.2 OR 2609.3",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.05860"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2609.29847",
+      "submitted_at": "2026-09-24T00:00:00Z",
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "Elucidating the Conformal Structure of the Brinkman Penalisation Method for Geometry-Adapted, Structure-Preserving Operator Learning of Hamiltonian PDEs（Teo Deveney, Baige Xu, Takaharu Yaguchi；Bath/RIKEN AIP/Kyushu，据WebSearch摘要）：证明Brinkman型惩罚正则化后的多辛Hamiltonian PDE在兼容条件下保持多共形辛结构，用于在简单计算盒上做几何自适应、结构保持的算子学习，免去贴体网格。方向D。评分 daily-v1：相关度2/4、通用性1/3（限Hamiltonian PDE族，无跨方程预训练）、创新性2/3，共5分，列附录。WebSearch称2026-09-24提交，落在窗口内；arXiv页面被代理拦截，未直接核实。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2609.30580",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "Energy-efficient operation of neural operators for virtual sensing（Jason Yoo et al.）：固定几何虚拟传感场景下复用共享空间计算（trunk复用、图重放）降低神经算子推理能耗，DeepONet/FNO对照，报告约20%–22.5%节能。部署工程研究，方向D关联弱。评分 daily-v1：相关度1/4、通用性1/3、创新性1/3，共3分。提交日期未核实。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.23023",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "PINNForge（LLM驱动、执行反馈进化的PINN自动设计）：2026-09-24运行已评估并排除。本次WebSearch新增摘要信息：25个PDE基准中24个任务均值MSE最低（对比RoPINN、PINNsFormer、PINNsAgent），消融支持知识库、执行反馈与进化搜索。按新证据复评 daily-v1：相关度2/4、通用性1/3（仍是逐目标PDE设计，无可迁移模型）、创新性2/3，共5分，仍未达阈值，列附录。提交日期沿用此前记录（早于窗口）。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2608.25454",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "Physics-Guided Generative Surrogates for Parametric Rarefied Flows with Neural-Field Auto-Decoders：稀薄流参数化生成式代理的流匹配/扩散管线研究，单一应用领域，ID段早于窗口，与基座主线关联弱，不评分。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.20769",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "FlowSGS: Improving Flow Matching Priors for Inverse Imaging with Stochastic Interpolants：成像逆问题，非PDE求解，方向不符。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.20814",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "此前运行已评估，本次仅再次出现在检索结果中，无新证据，不重评。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2608.24547",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "此前运行已评估，本次仅再次出现在检索结果中，无新证据，不重评。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.20309",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "此前运行已评估，本次仅再次出现在检索结果中，无新证据，不重评。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.03069",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "此前运行已评估，本次仅再次出现在检索结果中，无新证据，不重评。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.16406",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "此前运行已评估，本次仅再次出现在检索结果中，无新证据，不重评。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.17638",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "此前运行已评估，本次仅再次出现在检索结果中，无新证据，不重评。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.05860",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-29T01:16:24Z",
+      "decision": "excluded",
+      "reason": "此前运行已评估，本次仅再次出现在检索结果中，无新证据，不重评。",
+      "discovery_type": "backfill"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20260929.md"
+}
