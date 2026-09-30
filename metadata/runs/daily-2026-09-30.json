@@ -1,0 +1,82 @@
+{
+  "run_id": "daily-2026-09-30",
+  "task_type": "daily",
+  "status": "degraded",
+  "started_at": "2026-09-30T01:15:25Z",
+  "completed_at": "2026-09-30T01:22:00Z",
+  "coverage_start": "2026-09-22T01:18:58Z",
+  "coverage_end": "2026-09-30T01:15:25Z",
+  "previous_successful_coverage_end": "2026-09-24T01:18:58Z",
+  "queries": [
+    {
+      "query": "curl https://export.arxiv.org/api/query?search_query=all:%22neural%20operator%22&sortBy=submittedDate&max_results=3",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "curl HTTP code 000, no response (egress proxy)",
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv PDE foundation model pretraining multiple physics September 2026",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org neural operator 2610.0",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org in-context operator learning PDE 2609.3",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org scaling laws PDE benchmark dataset foundation model 2609.3",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org zero-shot fine-tuning PDE foundation model transfer 2609.3 OR 2610.0",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "\"2609.3\" arXiv physics foundation model neural operator PDE surrogate",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2609.03069"
+      ]
+    },
+    {
+      "query": "arXiv new preprint September 29 2026 PDE solver transformer operator pretrained",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2609.03069",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-09-30T01:15:25Z",
+      "decision": "excluded",
+      "reason": "Learnable composition for neural operators：仅有标题与摘要片段级证据，ID序号提示早于覆盖窗口，未评分；提交日期未核实，按backfill记，不计入新增。",
+      "discovery_type": "backfill"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20260930.md"
+}
