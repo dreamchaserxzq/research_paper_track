@@ -1,0 +1,29 @@
+{
+  "run_id": "daily-2026-10-02",
+  "task_type": "daily",
+  "status": "degraded",
+  "started_at": "2026-10-02T01:16:25Z",
+  "completed_at": "2026-10-02T01:22:00Z",
+  "coverage_start": "2026-09-22T01:18:58Z",
+  "coverage_end": "2026-10-02T01:16:25Z",
+  "previous_successful_coverage_end": "2026-09-24T01:18:58Z",
+  "queries": [
+    {"query": "arXiv PDE foundation model pretraining multiple physics October 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv 2610 neural operator foundation model partial differential equations", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv 2610 PDE benchmark dataset scaling laws scientific machine learning", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv 2610 zero-shot fine-tuning PDE neural operator generalization", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2606.14597"]},
+    {"query": "arxiv 2610 physics-informed neural network surrogate model PDE generative", "source": "websearch", "status": "success", "error": null, "candidate_ids": []}
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2606.14597",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-10-02T01:19:00Z",
+      "decision": "excluded",
+      "reason": "已在 2026-07 日报评估并入库的既有论文，不计入新增。",
+      "discovery_type": "backfill"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261002.md"
+}
