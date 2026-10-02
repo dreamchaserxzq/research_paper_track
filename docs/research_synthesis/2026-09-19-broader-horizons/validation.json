@@ -1,0 +1,426 @@
+{
+  "schema_version": "research-horizons-validation-v1",
+  "validated_at": "2026-09-19T09:55:01.643583+00:00",
+  "status": "passed",
+  "snapshot": "2026-09-19",
+  "browser": {
+    "status": "passed",
+    "stats": {
+      "sources": 64,
+      "concepts": 65,
+      "hypotheses": 9,
+      "nodes": 138,
+      "edges": 296,
+      "levels": {
+        "fulltext_sections": 56,
+        "book_sections": 2,
+        "abstract": 3,
+        "official_documentation": 3
+      },
+      "tracks": {
+        "ai_foundations": {
+          "fulltext_sections": 18
+        },
+        "ai_reasoning_systems": {
+          "fulltext_sections": 18
+        },
+        "pde_numerics": {
+          "book_sections": 2,
+          "fulltext_sections": 13,
+          "abstract": 2,
+          "official_documentation": 2
+        },
+        "bridge": {
+          "fulltext_sections": 7,
+          "abstract": 1,
+          "official_documentation": 1
+        }
+      }
+    },
+    "checks": [
+      "offline file mode",
+      "seven embedded full chapters and math preservation",
+      "internal chapter navigation",
+      "all 64 source cards",
+      "reading-level filters and search empty state",
+      "65 concept neighborhoods",
+      "SVG node clicks",
+      "nine hypotheses",
+      "year filtering",
+      "four offline downloads byte-exact",
+      "390px mobile no page overflow",
+      "no external HTTP requests",
+      "no browser exceptions"
+    ],
+    "mathBlocks": 31,
+    "downloads": [
+      "knowledge_graph.json",
+      "evidence_catalog.json",
+      "nodes.csv",
+      "edges.csv"
+    ],
+    "screenshots": [
+      "/tmp/research-horizons-overview.png",
+      "/tmp/research-horizons-reader.png",
+      "/tmp/research-horizons-graph.png",
+      "/tmp/research-horizons-mobile.png"
+    ]
+  },
+  "artifact_sha256": "25b470a84477f6b24fb270c25fffc59413f7d8c42058ed6f2784cf478f8b094c",
+  "checks": {
+    "deterministic_build": "passed: python scripts/build_research_horizons.py --check",
+    "registry": "passed: 14 generated views, JSONL, historical hashes and local links",
+    "prior_snapshot": "passed: prior graph/site checks; old snapshot not rebuilt or edited",
+    "markdown": "8 Markdown files checked for control characters, trailing whitespace and local links",
+    "graph": "138 unique nodes, 296 valid endpoints and evidence references; 9 hypothesis anchors resolve",
+    "offline_exports": "four JSON/CSV downloads byte-exact with generated files",
+    "layout": "passed: desktop 1440px; all six panels and seven chapters at 320px, 390px and 768px; screenshots visually inspected",
+    "server_http": "200 from server-local 127.0.0.1:8765 with proxy bypass; Windows client access not verified"
+  },
+  "scientific_review": {
+    "status": "independent cross-reading completed; no experiment or reproduction",
+    "corrections": [
+      "Separated discrete algebraic residual error from continuous discretization error.",
+      "Corrected gradient-interface to inverse-problem relation direction.",
+      "Qualified backward error analysis using a truncated modified system and defect.",
+      "Re-read VPR v2 propositions and tables, preserving initial v1 selection and corrected results.",
+      "Separated candidate-action predictions from identified causal counterfactuals."
+    ]
+  },
+  "boundaries": [
+    "Sources were selectively read at recorded locations; not full-page reading of all referenced papers or books.",
+    "Coverage is representative, not exhaustive through September 2026.",
+    "Nine research hypotheses remain untested and novelty is not established.",
+    "No training, solver run, external scheduler change, commit, push or public deployment."
+  ],
+  "initial_validation_at": "2026-09-19T09:42:03.868668+00:00",
+  "ui_redesign": {
+    "status": "passed",
+    "changes": [
+      "Paper-white and blue-gray palette, fixed sidebar, SVG hero illustration and grouped research cards",
+      "Improved reading width, typography, tables, source cards and evidence-detail contrast",
+      "Graph node cards, selection halo, word-aware title wrapping and detail panel",
+      "Responsive navigation with automatic active-tab visibility and keyboard-accessible graph nodes"
+    ],
+    "content_integrity": {
+      "status": "passed",
+      "unchanged_files": {
+        "evidence_catalog.json": "8b0f4bd12a9935faa6e7a851f6dbd38cf295000981d3a4333e1b6fd1506c5ea2",
+        "knowledge_graph.json": "8a8f9b0534b05d30cf72a72c3900ff33997fc4d70ac3b76cbcb256ee3c1a14b8",
+        "nodes.csv": "7c633f28b291396f3ab069f1e95e124fc928a9e4b790d2d277fc5fbc010ef706",
+        "edges.csv": "bf1e48e54bae58df161915ae081dced84924c59a707396699542572f8ab67e1f",
+        "coverage.md": "2ac99bd268faca0f98c2a22851dceea444e2ad9011d60e7315689fec5101f66b",
+        "ai_reasoning_systems_evidence.json": "7609e27e143ca4ad5836d9bcd43c8ef3e56158fdb6bb8056b532b129c543e70b",
+        "bridge_evidence.json": "e30ed37fd0ebcbaa45c32e875b923879b6d8f48b49ae15b4b6c5660aabc88216",
+        "pde_numerics_evidence.json": "e316d3d298cce023dee111c3fcdadbed7d3f2b0d649ba6c1b3114121929ea246",
+        "ai_foundations_evidence.json": "8731b1bad1a448f4c8141ec2b1e5102d8421ed73bb18218275b82ef84ba0c308"
+      }
+    },
+    "responsive_and_keyboard": {
+      "status": "passed",
+      "observations": [
+        "320px: six panels + seven chapters, no page overflow",
+        "768px: six panels + seven chapters, no page overflow",
+        "Internal full-analysis button returns from rightmost navigation tab to visible active reader tab",
+        "SVG nodes activated with Enter and Space",
+        "aria-pressed matches each active navigation tab",
+        "Main descriptions use #69778a; direction/source-detail/graph-detail/idea prose uses 13px"
+      ],
+      "navigationChecks": [
+        {
+          "width": 320,
+          "previousScrollLeft": 223,
+          "active": {
+            "scrollLeft": 87,
+            "left": 12,
+            "right": 96,
+            "containerLeft": 0,
+            "containerRight": 320,
+            "selected": "true"
+          }
+        },
+        {
+          "width": 768,
+          "previousScrollLeft": 0,
+          "active": {
+            "scrollLeft": 0,
+            "left": 12,
+            "right": 161,
+            "containerLeft": 12,
+            "containerRight": 161,
+            "selected": "true"
+          }
+        }
+      ],
+      "colors": {
+        ".direction p": {
+          "color": "rgb(105, 119, 138)",
+          "fontSize": "13px"
+        },
+        ".notice p": {
+          "color": "rgb(105, 119, 138)",
+          "fontSize": "11px"
+        },
+        ".source-card details": {
+          "color": "rgb(105, 119, 138)",
+          "fontSize": "13px"
+        },
+        ".detail": {
+          "color": "rgb(105, 119, 138)",
+          "fontSize": "13px"
+        },
+        ".idea-grid p:not(.idea-question)": {
+          "color": "rgb(105, 119, 138)",
+          "fontSize": "13px"
+        }
+      },
+      "screenshots": [
+        "/tmp/research-horizons-ui-review-320.png",
+        "/tmp/research-horizons-ui-review-768.png"
+      ],
+      "browserErrors": []
+    },
+    "final_graph": {
+      "status": "passed",
+      "checks": [
+        "138 node labels constrained to two nonempty lines",
+        "English titles wrap at word boundaries",
+        "65 concept neighborhoods fit labels within node cards"
+      ],
+      "browserErrors": []
+    },
+    "preview_files": [
+      "ui-preview.png",
+      "ui-graph-preview.png"
+    ]
+  },
+  "browser_checked_at_utc": "2026-09-22T10:16:48.882948+00:00",
+  "reading_update": {
+    "date": "2026-09-22",
+    "status": "passed",
+    "validated_at_utc": "2026-09-22T09:52:27.578127+00:00",
+    "artifact_sha256": "68fc81220cb2c98b1ce998fa4774d0528725cfcb0fad054666dc83bae0c51bf9",
+    "changes": [
+      "Full-text search across seven review chapters with section previews and navigation",
+      "Chapter contents, font sizes, previous/next chapter and reading progress",
+      "Resume after returning from other panels or browser reload; localStorage exception handling",
+      "Direct link to PDE atlas"
+    ],
+    "independent_browser_review": {
+      "name": "horizons",
+      "index_sha256": "68fc81220cb2c98b1ce998fa4774d0528725cfcb0fad054666dc83bae0c51bf9",
+      "status": "passed",
+      "chapters": 7,
+      "checks": [
+        "320px all panels/chapters fit; chapter anchors visible",
+        "390px all panels/chapters fit; chapter anchors visible",
+        "768px all panels/chapters fit; chapter anchors visible",
+        "1440px all panels/chapters fit; chapter anchors visible",
+        "cross-chapter body search, safe literal query, mobile search result visibility",
+        "font size increases and persists",
+        "previous/next chapters",
+        "pane return and reload restore reading progress",
+        "Storage get/set/remove denied: reader remains usable without exceptions"
+      ],
+      "externalRequests": 0,
+      "errors": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "files_unchanged": 33,
+      "sha256": {
+        "docs/research_synthesis/2026-09-19-broader-horizons/nodes.csv": "7c633f28b291396f3ab069f1e95e124fc928a9e4b790d2d277fc5fbc010ef706",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems_evidence.json": "7609e27e143ca4ad5836d9bcd43c8ef3e56158fdb6bb8056b532b129c543e70b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/bridge_evidence.json": "e30ed37fd0ebcbaa45c32e875b923879b6d8f48b49ae15b4b6c5660aabc88216",
+        "docs/research_synthesis/2026-09-19-broader-horizons/knowledge_graph.json": "8a8f9b0534b05d30cf72a72c3900ff33997fc4d70ac3b76cbcb256ee3c1a14b8",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics.md": "2dcdc5e9c6d2569bc5d710e2fd9110a91e98494968f2d4219e7a29626051d788",
+        "docs/research_synthesis/2026-09-19-broader-horizons/coverage.md": "2ac99bd268faca0f98c2a22851dceea444e2ad9011d60e7315689fec5101f66b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems.md": "aa9c185535307e3a7de41417889f815a09d9c795422838feb1836dfe59f905c4",
+        "docs/research_synthesis/2026-09-19-broader-horizons/evidence_catalog.json": "8b0f4bd12a9935faa6e7a851f6dbd38cf295000981d3a4333e1b6fd1506c5ea2",
+        "docs/research_synthesis/2026-09-19-broader-horizons/learning_roadmap.md": "8801fb135a63d3111492ceeec86f9f2e9b4ca11e46022fab2aa49d57943740e9",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics_evidence.json": "e316d3d298cce023dee111c3fcdadbed7d3f2b0d649ba6c1b3114121929ea246",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations.md": "e5a2462e7d14b79983bb3b7aa277203e635292f2e43f74895b9922ee2a902baf",
+        "docs/research_synthesis/2026-09-19-broader-horizons/edges.csv": "bf1e48e54bae58df161915ae081dced84924c59a707396699542572f8ab67e1f",
+        "docs/research_synthesis/2026-09-19-broader-horizons/RESEARCH_HORIZONS.zh-CN.md": "8dd209e4f23b78ccdf8199a6809abaf276f5d833d00c3c93c6460abd1729909b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations_evidence.json": "8731b1bad1a448f4c8141ec2b1e5102d8421ed73bb18218275b82ef84ba0c308",
+        "docs/research_synthesis/2026-09-19-broader-horizons/cross_domain.md": "b291a17db11b8e617e81dfb993e06c92117e4bed18a23de27639e9f0986addf3",
+        "docs/research_synthesis/2026-09-19/paper_cards.jsonl": "c34bbb729fc737c000f641d09288b9fc6132f09d14b6c88bfafcef3c151e37ca",
+        "docs/research_synthesis/2026-09-19/nodes.csv": "dbec7f94da309e6168f8a8bc0ade5b4b0afdb5d543c7c7eec506bbfbf931f623",
+        "docs/research_synthesis/2026-09-19/primary_evidence.json": "21471862a6b489f9a0c90f17e855efbe13a171761647b0a76d0f46337bfa51a1",
+        "docs/research_synthesis/2026-09-19/knowledge_graph.json": "b200a1edd519cff5f42b4e5c2b4e0ba2cb29acb4a1168598de6a77b480c08d5c",
+        "docs/research_synthesis/2026-09-19/architecture_evidence.json": "d388d5a2bbc78eb005e63bc10d6493c546af95806a304ebfc7aa73679fa596b8",
+        "docs/research_synthesis/2026-09-19/domain_evidence.json": "5d697f14a5cbf36ff7085ec77185a5a039837b9e8ba552525268ed81926f4184",
+        "docs/research_synthesis/2026-09-19/corpus_audit.md": "b027367cc7ff2bc6d08387220ee8e61ae1c78424f3ec44758ebb1cba9275e929",
+        "docs/research_synthesis/2026-09-19/corpus_manifest.json": "de73542b1278d8f6b23ad32d3b84217a3a3780eda492ea064b0fe3b2905f4d9a",
+        "docs/research_synthesis/2026-09-19/RESEARCH_SYNTHESIS.zh-CN.md": "af3d3e46ca544fb6b26cd907ca44ac6b0c82cacd1ae13194599d622cdaf0eb3e",
+        "docs/research_synthesis/2026-09-19/edges.csv": "5ba8782fe63244a015e91a37f17cfe0cb043bb9cdaad1a0fc7950beccf1f59fe",
+        "docs/research_synthesis/2026-09-19/remote_sync.json": "3ffe3cf116fef6c653d112bac9a77f11c17db72e66818e863f0fbf6be9068346",
+        "docs/research_synthesis/2026-09-19/domain_review.md": "9c9ae9e84c27e11155f5888b4125a8d1578c2d5f5ba0acb06d69f200dc449e9f",
+        "docs/research_synthesis/2026-09-19/evaluation_review.md": "1d15eee0ea7420812e25a21d017bee2769329a355b2f199ad1f668332ed8a504",
+        "docs/research_synthesis/2026-09-19/semantic_graph.json": "1d857c596c332d63b16b52d554a04e67b59281c3b67d0c8e3fd20a6a6e721b8b",
+        "docs/research_synthesis/2026-09-19/ALL_PAPERS.md": "bbc6940d3c2c38e675b57aa424c8416aaea658ae2f095d6a2d473f3fd4ad1921",
+        "docs/research_synthesis/2026-09-19/architecture_review.md": "8a8f28e8c55863c391c5ab9a8216fce424ccb75f7381579ab2c40c5463794a57",
+        "docs/research_synthesis/2026-09-19/evaluation_evidence.json": "74dbb208fb87c65a0d338317e7fabc2f1a2872ca901ed9fec042cbe395bde1e4",
+        "docs/research_synthesis/2026-09-19/innovation_agenda.md": "d2ee5359c9adb042d1252ce00014d246e63943ffaaa3cbfc72b0ddce83edb7a8"
+      }
+    },
+    "server_access": "HTTP 200 for both pages at server loopback 127.0.0.1:8765 on this date; Windows requires the existing SSH tunnel to 18765",
+    "checks": [
+      "deterministic build --check",
+      "research graph --check",
+      "papertrack registry check",
+      "git diff --check",
+      "embedded exports byte-exact: atlas 18, horizons 4"
+    ],
+    "research_boundary": "UI and reader improvement only; no new paper reading, experiment, registry changes or remote publication.",
+    "previews": [
+      "ui-reader-preview.png",
+      "ui-reader-mobile-preview.png"
+    ]
+  },
+  "interaction_update": {
+    "status": "passed",
+    "checked_at_utc": "2026-09-22T10:16:48.882948+00:00",
+    "artifact_sha256": "25b470a84477f6b24fb270c25fffc59413f7d8c42058ed6f2784cf478f8b094c",
+    "changes": [
+      "Local personal reading list, independent reading marks and notes, search and return to source",
+      "JSON backup and previewed add-only import; Markdown export; archival removal and undo",
+      "Visible session-only warning when browser storage is unavailable; corrupt existing data is preserved",
+      "Consistent controls and keyboard-contained dialog across desktop and mobile",
+      "Stop overwriting when the stored version was changed by another tab; preserve session notes for backup",
+      "Graph exploration history, 75–175% zoom, current-node centering, complete neighbors and cleared empty-search state"
+    ],
+    "notebook_browser": {
+      "name": "horizons",
+      "index_sha256": "25b470a84477f6b24fb270c25fffc59413f7d8c42058ed6f2784cf478f8b094c",
+      "status": "passed",
+      "checks": [
+        "Adding a record, immediate note/status persistence, reload recovery and literal unsafe-looking text rendering",
+        "Status/note search filtering, archival retains note, undo restores record",
+        "JSON and Markdown exports retain notes; validated import previews before mutation, adds new ID and preserves conflicting local note/status",
+        "Malformed JSON, wrong workbench, unknown/duplicate IDs, invalid status, oversized note reject atomically; duplicate-only import is disabled",
+        "Dialog fits 320/390/768/1440px, traps Tab and Shift+Tab, keeps selection focus, closes with Escape",
+        "Browser localStorage SecurityError injection leaves editing and JSON export usable with visible session-only warning"
+      ],
+      "external_requests": 0,
+      "errors": []
+    },
+    "import_and_corrupt_storage_checks": {
+      "kind": "horizons",
+      "status": "passed",
+      "checks": [
+        "atomic import preview then append",
+        "keep existing note on conflicts",
+        "reject malformed JSON and unknown IDs and long notes",
+        "return to selected item with filters",
+        "corrupt raw storage preserved while session data exports"
+      ]
+    },
+    "same_origin_namespace_isolation": "passed",
+    "storage_failure_browser": {
+      "name": "horizons",
+      "index_sha256": "25b470a84477f6b24fb270c25fffc59413f7d8c42058ed6f2784cf478f8b094c",
+      "status": "passed",
+      "checks": [
+        "corrupt-json: original localStorage retained byte-exact, warning shown, session note export works",
+        "corrupt-schema: original localStorage retained byte-exact, warning shown, session note export works",
+        "quota: original localStorage retained byte-exact, warning shown, session note export works"
+      ]
+    },
+    "cross_tab_browser": {
+      "name": "horizons",
+      "index_sha256": "25b470a84477f6b24fb270c25fffc59413f7d8c42058ed6f2784cf478f8b094c",
+      "status": "passed",
+      "checks": [
+        "distinct-ids: stale writes persistently blocked, original storage byte-exact, both tabs export independent notes, reload restores writable current state, reverse stale write blocked",
+        "same-id: stale writes persistently blocked, original storage byte-exact, both tabs export independent notes, reload restores writable current state, reverse stale write blocked"
+      ]
+    },
+    "reader_regression": {
+      "name": "horizons",
+      "index_sha256": "851275ed2b0be4fa8c590473b8240b8689e6ad9e4446f9f90c43ccd26de1bd67",
+      "status": "passed",
+      "chapters": 7,
+      "checks": [
+        "320px all panels/chapters fit; chapter anchors visible",
+        "390px all panels/chapters fit; chapter anchors visible",
+        "768px all panels/chapters fit; chapter anchors visible",
+        "1440px all panels/chapters fit; chapter anchors visible",
+        "cross-chapter body search, safe literal query, mobile search result visibility",
+        "font size increases and persists",
+        "previous/next chapters",
+        "pane return and reload restore reading progress",
+        "Storage get/set/remove denied: reader remains usable without exceptions"
+      ],
+      "externalRequests": 0,
+      "errors": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "unchanged_artifacts": {
+        "docs/research_synthesis/2026-09-19-broader-horizons/nodes.csv": "7c633f28b291396f3ab069f1e95e124fc928a9e4b790d2d277fc5fbc010ef706",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems_evidence.json": "7609e27e143ca4ad5836d9bcd43c8ef3e56158fdb6bb8056b532b129c543e70b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/bridge_evidence.json": "e30ed37fd0ebcbaa45c32e875b923879b6d8f48b49ae15b4b6c5660aabc88216",
+        "docs/research_synthesis/2026-09-19-broader-horizons/knowledge_graph.json": "8a8f9b0534b05d30cf72a72c3900ff33997fc4d70ac3b76cbcb256ee3c1a14b8",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics.md": "2dcdc5e9c6d2569bc5d710e2fd9110a91e98494968f2d4219e7a29626051d788",
+        "docs/research_synthesis/2026-09-19-broader-horizons/coverage.md": "2ac99bd268faca0f98c2a22851dceea444e2ad9011d60e7315689fec5101f66b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems.md": "aa9c185535307e3a7de41417889f815a09d9c795422838feb1836dfe59f905c4",
+        "docs/research_synthesis/2026-09-19-broader-horizons/evidence_catalog.json": "8b0f4bd12a9935faa6e7a851f6dbd38cf295000981d3a4333e1b6fd1506c5ea2",
+        "docs/research_synthesis/2026-09-19-broader-horizons/learning_roadmap.md": "8801fb135a63d3111492ceeec86f9f2e9b4ca11e46022fab2aa49d57943740e9",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics_evidence.json": "e316d3d298cce023dee111c3fcdadbed7d3f2b0d649ba6c1b3114121929ea246",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations.md": "e5a2462e7d14b79983bb3b7aa277203e635292f2e43f74895b9922ee2a902baf",
+        "docs/research_synthesis/2026-09-19-broader-horizons/edges.csv": "bf1e48e54bae58df161915ae081dced84924c59a707396699542572f8ab67e1f",
+        "docs/research_synthesis/2026-09-19-broader-horizons/RESEARCH_HORIZONS.zh-CN.md": "8dd209e4f23b78ccdf8199a6809abaf276f5d833d00c3c93c6460abd1729909b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations_evidence.json": "8731b1bad1a448f4c8141ec2b1e5102d8421ed73bb18218275b82ef84ba0c308",
+        "docs/research_synthesis/2026-09-19-broader-horizons/cross_domain.md": "b291a17db11b8e617e81dfb993e06c92117e4bed18a23de27639e9f0986addf3"
+      }
+    },
+    "local_checks": [
+      "Both deterministic site builds: --check passed",
+      "Original graph build: --check passed (454 identities, 658 nodes, 3610 edges)",
+      "Registry check: 14 generated views, JSONL, snapshot hashes and local links passed",
+      "Shared notebook JavaScript syntax and task-source whitespace/control-character checks passed"
+    ],
+    "test_scripts_sha256": {
+      "check_research_iteration_notebook.cjs": "5579788edb23f2e2178e2a5cb8c893cb70deb9d342a096787b3d842ccc8b9a59",
+      "check_notebook_import.cjs": "d339047407dce7ae977e963b1cefe9406dda17094f2c7c1754d0cd883e5f1b1b",
+      "check_research_workspace_reading.cjs": "ecc5c675d44fc5a2f3af55aa327c60bb575738d33a865999f2d64c37a8a3e06c"
+    },
+    "manual_visual_inspection": [
+      "Desktop reading-list dialog with uniform form controls",
+      "Mobile reading-list dialog",
+      "Desktop graph and mobile centered graph"
+    ],
+    "previews": [
+      "ui-notebook-preview.png",
+      "ui-notebook-mobile.png",
+      "ui-graph-interaction.png",
+      "ui-graph-interaction-mobile.png"
+    ],
+    "boundaries": [
+      "Personal notes remain in the current browser; no server sync or research evidence promotion.",
+      "Research snapshot and all 33 checked scientific/evidence/data artifacts remain byte-identical.",
+      "No new literature reading, experiment, commit, push or public deployment in this UI iteration."
+    ],
+    "graph_browser": {
+      "status": "passed",
+      "index_sha256": "eb15869bf1a34cfb53c064cbda209bac9486e5e0d69c919912d7a35acb593363",
+      "nodes_checked": 138,
+      "edges_in_data": 296,
+      "max_real_degree": 13,
+      "checks": [
+        "All 138 real graph nodes show complete distinct neighbors and incident relationships; max real degree 13",
+        "Empty search clears graph/detail/relations, disables selector, and clear query restores previous node",
+        "Enter and Space both select graph nodes and retain focus on rebuilt selected node",
+        "Exploration back/forward restore selected nodes, divergent exploration discards forward branch, reset clears history",
+        "Keyboard Enter on relation table node retains focus at graph selection",
+        "Zoom is bounded at 75-175%; empty results disable canvas controls and reset restores 100%",
+        "Selected center stays inside graph scroll viewport after centering and zoom at all four sizes",
+        "Graph viewport fits 320, 390, 768 and 1440 px without page overflow"
+      ],
+      "errors": [],
+      "external_requests": []
+    },
+    "graph_regression_boundary": "Full graph regression ran on the recorded prior HTML hash; only shared notebook storage protection changed afterward. Graph template and payload are unchanged."
+  }
+}

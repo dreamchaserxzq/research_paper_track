@@ -1,0 +1,42 @@
+{
+  "schema_version": "research-site-build-v1",
+  "inputs_sha256": {
+    "docs/research_synthesis/2026-09-19/architecture_evidence.json": "d388d5a2bbc78eb005e63bc10d6493c546af95806a304ebfc7aa73679fa596b8",
+    "docs/research_synthesis/2026-09-19/corpus_manifest.json": "de73542b1278d8f6b23ad32d3b84217a3a3780eda492ea064b0fe3b2905f4d9a",
+    "docs/research_synthesis/2026-09-19/domain_evidence.json": "5d697f14a5cbf36ff7085ec77185a5a039837b9e8ba552525268ed81926f4184",
+    "docs/research_synthesis/2026-09-19/edges.csv": "5ba8782fe63244a015e91a37f17cfe0cb043bb9cdaad1a0fc7950beccf1f59fe",
+    "docs/research_synthesis/2026-09-19/evaluation_evidence.json": "74dbb208fb87c65a0d338317e7fabc2f1a2872ca901ed9fec042cbe395bde1e4",
+    "docs/research_synthesis/2026-09-19/knowledge_graph.json": "b200a1edd519cff5f42b4e5c2b4e0ba2cb29acb4a1168598de6a77b480c08d5c",
+    "docs/research_synthesis/2026-09-19/nodes.csv": "dbec7f94da309e6168f8a8bc0ade5b4b0afdb5d543c7c7eec506bbfbf931f623",
+    "docs/research_synthesis/2026-09-19/paper_cards.jsonl": "c34bbb729fc737c000f641d09288b9fc6132f09d14b6c88bfafcef3c151e37ca",
+    "docs/research_synthesis/2026-09-19/remote_20260916_digest.txt": "73c3682d1fd05cac1afbbc98eddc97e05afced8426f3d190f9e69c6f2e1169a4",
+    "docs/research_synthesis/2026-09-19/remote_sync.json": "3ffe3cf116fef6c653d112bac9a77f11c17db72e66818e863f0fbf6be9068346",
+    "docs/research_synthesis/2026-09-19/RESEARCH_SYNTHESIS.zh-CN.md": "af3d3e46ca544fb6b26cd907ca44ac6b0c82cacd1ae13194599d622cdaf0eb3e",
+    "docs/research_synthesis/2026-09-19/architecture_review.md": "8a8f28e8c55863c391c5ab9a8216fce424ccb75f7381579ab2c40c5463794a57",
+    "docs/research_synthesis/2026-09-19/evaluation_review.md": "1d15eee0ea7420812e25a21d017bee2769329a355b2f199ad1f668332ed8a504",
+    "docs/research_synthesis/2026-09-19/domain_review.md": "9c9ae9e84c27e11155f5888b4125a8d1578c2d5f5ba0acb06d69f200dc449e9f",
+    "docs/research_synthesis/2026-09-19/innovation_agenda.md": "d2ee5359c9adb042d1252ce00014d246e63943ffaaa3cbfc72b0ddce83edb7a8",
+    "docs/research_synthesis/2026-09-19/corpus_audit.md": "b027367cc7ff2bc6d08387220ee8e61ae1c78424f3ec44758ebb1cba9275e929",
+    "scripts/research_atlas.html": "98c6c09b9d60a10504486958cf64fd6e5e876fd91012741a887778923fa01354",
+    "scripts/research_notebook.js": "e41ae97f49b577dd86026e8ff8714fff14de8f66c802a935e8fb4473e75d0aa6",
+    "scripts/research_notebook.css": "60bbd2cfdb82147799b6398631982761e025455daf623f12a8ac817a396bc307",
+    "scripts/build_research_site.py": "6519e78194414e2dadbae288563d0baa436ca15763e23fd9b123ee0affa3b187"
+  },
+  "outputs_sha256": {
+    "primary_evidence.json": "21471862a6b489f9a0c90f17e855efbe13a171761647b0a76d0f46337bfa51a1",
+    "semantic_graph.json": "1d857c596c332d63b16b52d554a04e67b59281c3b67d0c8e3fd20a6a6e721b8b",
+    "index.html": "8605905d44cc006d5892f534c7869cbe8e5a32cc918ca64a4b126a15abf16c47"
+  },
+  "dependencies": {
+    "Python-Markdown": "3.3.4"
+  },
+  "embedded_chapters": 6,
+  "embedded_downloads": 18,
+  "corpus_count": 454,
+  "background_count": 12,
+  "review_records": 43,
+  "review_unique_work_ids": 42,
+  "semantic_nodes": 271,
+  "semantic_edges": 228,
+  "validation": "Unique corpus coverage; typed evidence; scoped paper identities; semantic endpoints; deterministic bytes."
+}

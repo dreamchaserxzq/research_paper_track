@@ -1,0 +1,7 @@
+.delivery-status{position:fixed;z-index:40;bottom:20px;left:50%;transform:translateX(-50%);
+  max-width:calc(100vw - 32px);padding:12px 18px;border:1px solid #dce3f2;border-radius:12px;
+  background:#fff;box-shadow:0 6px 25px #30497818;color:#526785;font-size:13px;line-height:1.7}
+.delivery-status[hidden]{display:none}.delivery-status button{margin-left:12px}
+.offline-download{display:block;font-size:12px;padding:8px 10px;color:#637ba9;text-decoration:none}
+.offline-download:hover{color:#4359b0;text-decoration:underline}
+.delivery-footer{margin-top:12px;width:100%}

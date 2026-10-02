@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-02",
+  "retrieval_date": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "window": {
+    "from": "2026-09-17",
+    "through": "2026-10-02",
+    "reason": "在2026-09-19既有快照前保留两天重叠，补晚索引；不宣称索引穷尽。"
+  },
+  "baseline": {
+    "snapshot": "2026-09-19-broader-horizons",
+    "unique_sources": 64,
+    "concepts": 65,
+    "hypotheses": 9,
+    "inherited_sources_reread": false
+  },
+  "method": "英语选题检索；第三方只发现ID，科学结论回到作者/出版方/arXiv原文；按现有source ID去重并锁定所读版本。",
+  "queries": [
+    {
+      "family": "recent_ai",
+      "query": "site.arxiv.org (\"2026-09-17\" OR \"2026-09-18\" OR \"2026-09-21\" OR \"2026-09-28\") (\"world model\" OR \"retrieval\" OR \"self-supervised\")",
+      "result_note": "没有据此确证入选来源，日期字符串检索覆盖有限。"
+    },
+    {
+      "family": "recent_numerics",
+      "query": "site.arxiv.org (\"September 2026\" OR \"Sep 2026\") (\"domain decomposition\" OR \"Petrov-Galerkin\" OR \"parallel-in-time\")",
+      "result_note": "未获得可核查的窗内新发布来源。"
+    },
+    {
+      "family": "foundational",
+      "query": "I-JEPA Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture arxiv",
+      "result_note": "定位arXiv与CVPR原文。"
+    },
+    {
+      "family": "foundational",
+      "query": "Discontinuous Petrov Galerkin optimal test functions Demkowicz Gopalakrishnan 2011 pdf",
+      "result_note": "定位作者PDF和Wiley日期元数据；在线2010，期刊卷期2011。"
+    },
+    {
+      "family": "recent_ai",
+      "query": "site.arxiv.org \"2609\" \"world model\" \"Submitted\"",
+      "result_note": "补充近期发现；最终入选日期以arXiv版本记录为准。"
+    },
+    {
+      "family": "recent_numerics",
+      "query": "site.arxiv.org \"2609\" \"domain decomposition\"",
+      "result_note": "结果未支持窗内新工作入选。"
+    },
+    {
+      "family": "foundational",
+      "query": "Spillane Dolean Hauret Nataf Pechstein Scheichl abstract robust coarse spaces generalized eigenproblems overlaps pdf",
+      "result_note": "定位大学仓储作者稿与2013在线出版日期。"
+    },
+    {
+      "family": "foundational",
+      "query": "Gander Vandewalle analysis parareal time parallel time integration 2007 pdf",
+      "result_note": "定位作者PDF及SIAM元数据；2007基础补读。"
+    },
+    {
+      "family": "recent_ai",
+      "query": "site.arxiv.org \"2609\" \"retrieval augmented\" after:2026-09-16 before:2026-10-03",
+      "result_note": "出现第三方简报条目；本轮未逐项读取原文，不据此加入来源或更新研究结论。"
+    },
+    {
+      "family": "recent_pde_bridge",
+      "query": "site.arxiv.org \"2609\" \"foundation\" \"partial differential\" after:2026-09-16 before:2026-10-03",
+      "result_note": "与其他机制查询共同发现跨域候选；PDE主知识库由独立路线更新。"
+    },
+    {
+      "family": "recent_ai",
+      "query": "site.arxiv.org \"2609\" \"JEPA\" after:2026-09-16 before:2026-10-03",
+      "result_note": "发现JEPA-Anything与DroneWAM线索，随后回到arXiv摘要身份页和指定v1正文确认。"
+    },
+    {
+      "family": "recent_numerics",
+      "query": "site.arxiv.org \"2609\" \"multigrid\" after:2026-09-16 before:2026-10-03",
+      "result_note": "未确认足够相关、可回查的窗内来源。"
+    },
+    {
+      "family": "recent_numerics",
+      "query": "site.arxiv.org \"2609\" \"numerical\" \"domain decomposition\"",
+      "result_note": "主要返回旧文页码2609等无关匹配，未纳入。"
+    },
+    {
+      "family": "recent_numerics",
+      "query": "site.arxiv.org \"2609\" \"finite element\" \"preconditioner\"",
+      "result_note": "返回旧文/代码行号等无关匹配，未纳入。"
+    },
+    {
+      "family": "recent_numerics",
+      "query": "site.arxiv.org \"2609\" \"parallel-in-time\"",
+      "result_note": "未形成窗内新作证据；选择Parareal历史补读而不冒充最新。"
+    }
+  ],
+  "new_sources": [
+    {
+      "id": "arxiv:2506.09985",
+      "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+      "url": "https://arxiv.org/html/2506.09985v1",
+      "first_publication_date": "2025-06-11",
+      "selected_version": "v1",
+      "update_kind": "foundational_backfill",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.1 Action-Conditioned World Model Training；§3.2规划接口；§4.2表2–3；§4.3 Limitations"
+      ]
+    },
+    {
+      "id": "arxiv:2112.04426",
+      "title": "Improving language models by retrieving from trillions of tokens",
+      "url": "https://arxiv.org/html/2112.04426v3",
+      "first_publication_date": "2021-12-08",
+      "selected_version": "v3",
+      "update_kind": "foundational_backfill",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.3–2.4 检索与chunked cross-attention；Algorithm 1；§2.6 数据泄漏量化"
+      ]
+    },
+    {
+      "id": "arxiv:2609.33148",
+      "title": "DroneWAM: Efficient World Action Model for Drone Visual Navigation",
+      "url": "https://arxiv.org/html/2609.33148v1",
+      "first_publication_date": "2026-09-27",
+      "selected_version": "v1",
+      "update_kind": "recent_publication",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2数据划分；§3.1–3.3；§4.1–4.3表1–5；§7 Limitations"
+      ]
+    },
+    {
+      "id": "doi:10.1002/num.20640",
+      "title": "A class of discontinuous Petrov–Galerkin methods. II. Optimal test functions",
+      "url": "https://web.pdx.edu/~gjay/pub/dpg2.pdf",
+      "first_publication_date": "2010-10-25",
+      "selected_version": "author manuscript; publisher metadata cross-checked",
+      "update_kind": "foundational_backfill",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "作者稿§1；§2式(2.1)–(2.13)、定理2.2、实际步骤S1–S4；§3纯对流形式开头"
+      ]
+    },
+    {
+      "id": "doi:10.1007/s00211-013-0576-y",
+      "title": "Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps",
+      "url": "https://strathprints.strath.ac.uk/44827/1/10.1007_s00211_013_0576_y.pdf",
+      "first_publication_date": "2013-08-15",
+      "selected_version": "author preprint in institutional repository",
+      "update_kind": "foundational_backfill",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1问题假设；§3.1粗空间构造；定理3.22、推论3.23及其后限制；§4实现输入开头"
+      ]
+    },
+    {
+      "id": "doi:10.1137/05064607X",
+      "title": "Analysis of the Parareal Time-Parallel Time-Integration Method",
+      "url": "https://www.unige.ch/~gander/Preprints/parareal.pdf",
+      "first_publication_date": "2007-03-22",
+      "selected_version": "published paper hosted by author",
+      "update_kind": "foundational_backfill",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2 Parareal与multiple shooting、式(2.2)–(2.8)；§3与时间多重网格联系；§6热方程与输运例、图6.2–6.3"
+      ]
+    },
+    {
+      "id": "arxiv:2301.08243",
+      "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
+      "url": "https://arxiv.org/html/2301.08243v3",
+      "first_publication_date": "2023-01-19",
+      "selected_version": "v3",
+      "update_kind": "foundational_backfill",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2背景；§3 Method；§9 Ablations（目标空间与遮挡策略）"
+      ]
+    },
+    {
+      "id": "arxiv:2609.20800",
+      "title": "JEPA-Anything: Learning Predictive Models across Different Worlds",
+      "url": "https://arxiv.org/html/2609.20800v1",
+      "first_publication_date": "2026-09-17",
+      "selected_version": "v1",
+      "update_kind": "recent_publication",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–2.4：OPF、正交/活性约束、伪逆合成；§3.1表2；§3.3.1–3.3.2表5–8"
+      ]
+    }
+  ],
+  "counts": {
+    "inherited_sources": 64,
+    "new_sources": 8,
+    "recent_publications": 2,
+    "foundational_backfills": 6,
+    "new_fulltext_section_checks": 8,
+    "total_unique_sources": 72,
+    "new_concepts": 9,
+    "total_concepts": 74,
+    "hypotheses_unchanged": 9
+  },
+  "coverage_status": "selected_incremental_search_with_gaps",
+  "coverage_boundary_advanced": false,
+  "limits": [
+    "未全量遍历arXiv、会议或期刊；截止日不是穷尽覆盖承诺。",
+    "传统数值的窗内检索未形成可靠入选项，不能推断无新进展；此侧3项为历史机制补读。",
+    "没有全面重读继承64项来源，其accessed_at与阅读记录保持2026-09-19原值。",
+    "新增8项只读明确记录的相关章节；未逐页读全篇或核全部附录/证明。",
+    "未审计作者代码/提交、未独立复现、未训练，也未修改已接受UPFM架构。",
+    "网页第三方发现内容未作为科学证据；作者/出版方原文链接用于最终判断。",
+    "原有9个假说状态不变，新增图谱类比关系为synthesis_inference。"
+  ],
+  "access_notes": [
+    "作者稿与arXiv HTML均通过web读取；辅助shell抓取一次因网络沙箱拒绝，已通过web原文读取完成，不把该辅助错误冒充来源不可访问。"
+  ],
+  "validation": {
+    "inherited_source_records_exactly_equal": true,
+    "source_and_concept_ids_unique": true,
+    "new_relations_endpoints_resolved": true,
+    "checks_scope": "JSON和局部关系完整性；完整图谱与网页生成/浏览器校验由主任务完成"
+  }
+}

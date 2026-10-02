@@ -1,0 +1,11 @@
+/* Keep mathematical typography distinct from code and readable on narrow screens. */
+.research-math-inline{color:inherit;background:none;font-size:inherit}
+.research-math .katex{font-size:1.08em;text-indent:0}
+.research-math-display{max-width:100%;min-width:0;overflow-x:auto;overflow-y:hidden;
+  margin:1.4em 0;padding:1em .8em;background:#f7f9fd;border:1px solid #e4eaf4;
+  border-radius:10px;overscroll-behavior-x:contain;scrollbar-width:thin}
+.research-math-display .katex-display{margin:0;text-align:center}
+.research-math-display .katex-display>.katex{display:block;width:max-content;min-width:100%;text-align:center}
+.research-math-display:focus-visible{outline:2px solid #7189c7;outline-offset:3px}
+@media(max-width:700px){.research-math-display{padding:.9em .6em}}
+@media print{.research-math-display{background:none;border:0;overflow:visible;break-inside:avoid}}

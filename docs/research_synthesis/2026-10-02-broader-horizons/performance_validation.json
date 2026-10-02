@@ -1,0 +1,173 @@
+{
+  "schema_version": "research-performance-validation-v1",
+  "checked_at_utc": "2026-10-02T16:02:00.652949+00:00",
+  "status": "passed",
+  "snapshot_date": "2026-10-02",
+  "artifacts": {
+    "site": "2026-10-02-broader-horizons",
+    "index_sha256": "2dfadd4c89b8e1a992637de9f91f6a251951a477479719d677d9dd3f43e885eb",
+    "offline_sha256": "ea3af86531f855b80f9ba84727e2a8d57d2b6fc7a9f98a66a05e129ed40da2ee",
+    "queued_navigation": true,
+    "rendered_math": true,
+    "offline_download_exact": true,
+    "errors": []
+  },
+  "sizes_bytes": {
+    "previous_initial_html": 2081426,
+    "current_html": 146872,
+    "compressed_reader_data": 161431,
+    "current_initial_total": 308303,
+    "standalone_offline": 842174
+  },
+  "measurement": {
+    "conditions": {
+      "network_mbps": 10,
+      "latency_ms": 100,
+      "cpu_slowdown": 4,
+      "cold_cache": true
+    },
+    "runs_per_site_per_version": 1,
+    "before": {
+      "site": "2026-10-02-broader-horizons",
+      "navigation": {
+        "duration": 2290.8999996185303,
+        "transfer": 2081726,
+        "domContentLoaded": 2285
+      },
+      "paint": [
+        {
+          "name": "first-paint",
+          "ms": 740
+        },
+        {
+          "name": "first-contentful-paint",
+          "ms": 740
+        }
+      ],
+      "ready": 2387.699998855591,
+      "longTasks": [
+        {
+          "start": 470.6999988555908,
+          "duration": 220
+        },
+        {
+          "start": 1777.5,
+          "duration": 300
+        }
+      ],
+      "resources": []
+    },
+    "after": {
+      "site": "2026-10-02-broader-horizons",
+      "navigation": {
+        "duration": 418.5999984741211,
+        "transfer": 147172,
+        "domContentLoaded": 418.5
+      },
+      "paint": [
+        {
+          "name": "first-paint",
+          "ms": 176
+        },
+        {
+          "name": "first-contentful-paint",
+          "ms": 408
+        }
+      ],
+      "ready": 757.8999996185303,
+      "longTasks": [
+        {
+          "start": 183,
+          "duration": 173
+        }
+      ],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:8765/docs/research_synthesis/2026-10-02-broader-horizons/site-data.bb3f3fbe2e2b94b2.json.gz",
+          "bytes": 161731
+        }
+      ]
+    },
+    "boundary": "Controlled local Chromium simulation, not a measurement of the Windows SSH path. Before ready is observed after host and notebook become available; after ready is marked at initialization completion. Final PDE reader-note wording changed after timing; transport and startup code are identical."
+  },
+  "checks": {
+    "unit_tests": {
+      "passed": 11,
+      "command": "python -m unittest discover -s tests -p 'test_research_*.py' -v"
+    },
+    "browser_delivery": [
+      {
+        "site": "2026-10-02-broader-horizons",
+        "offline": false,
+        "exact_downloads": 6,
+        "notes_preserved": true,
+        "lazy_views": true,
+        "no_startup_archive_or_font_requests": true
+      },
+      {
+        "site": "2026-10-02-broader-horizons",
+        "offline": true,
+        "exact_downloads": 6,
+        "notes_preserved": true,
+        "lazy_views": true,
+        "no_startup_archive_or_font_requests": true
+      },
+      {
+        "site": "2026-10-02-broader-horizons",
+        "failed_request_recovery": true,
+        "uncompressed_browser_fallback": true
+      }
+    ],
+    "math_regression": {
+      "site": "2026-10-02-broader-horizons",
+      "artifact_sha256": "2dfadd4c89b8e1a992637de9f91f6a251951a477479719d677d9dd3f43e885eb",
+      "checks": [
+        {
+          "mode": "http",
+          "chapters": 8,
+          "formulas": 109,
+          "viewports": [
+            1440
+          ],
+          "long_equations_scroll_at_320": 0,
+          "js_errors": [],
+          "external_requests": []
+        },
+        {
+          "mode": "offline",
+          "chapters": 8,
+          "formulas": 109,
+          "viewports": [
+            320,
+            390,
+            768,
+            1440
+          ],
+          "long_equations_scroll_at_320": 19,
+          "js_errors": [],
+          "external_requests": []
+        }
+      ]
+    },
+    "final_smoke": {
+      "site": "2026-10-02-broader-horizons",
+      "index_sha256": "2dfadd4c89b8e1a992637de9f91f6a251951a477479719d677d9dd3f43e885eb",
+      "offline_sha256": "ea3af86531f855b80f9ba84727e2a8d57d2b6fc7a9f98a66a05e129ed40da2ee",
+      "queued_navigation": true,
+      "rendered_math": true,
+      "offline_download_exact": true,
+      "errors": []
+    },
+    "registry_check": "14 generated views, JSONL, snapshot hashes and local links passed",
+    "deterministic_build_check": "passed"
+  },
+  "changes": [
+    "Separate light online index.html and complete offline.html",
+    "Versioned gzip reader bundle; uncompressed online fallback",
+    "Archive downloads requested only on click; offline archives decompressed individually",
+    "Same-origin fonts requested only when formulas are displayed; embedded offline fonts",
+    "Hidden graph, evidence/source/timeline panels and full-text index initialized on demand",
+    "Preserved notebook keys, queued early navigation, visible load/download failure handling"
+  ],
+  "boundary": "Local UI delivery optimization; source evidence and scientific conclusions unchanged; no commit or push."
+}

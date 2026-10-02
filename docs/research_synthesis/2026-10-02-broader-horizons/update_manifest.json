@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-02",
+  "baseline_date": "2026-09-19",
+  "title": "把 AI 的学习机制，与数值方法的结构放在一起看",
+  "summary": "本轮沿预测表征、外部记忆、测试空间、谱粗空间与时间并行五条线索补齐研究地图；新作与历史基础补读分别标记。",
+  "coverage_note": "本轮检索窗口为2026-09-17至10-02，包含对新作的定向核查及早期基础补读；不声称穷尽整个人工智能或数值PDE领域。原64个来源沿用09-19核查范围，本轮新增记录保留各自发表和访问日期。",
+  "stats": [
+    {
+      "label": "新增来源",
+      "value": 8,
+      "detail": "新作和历史补读分开；与主表新增独立"
+    },
+    {
+      "label": "累计来源",
+      "value": 72,
+      "detail": "含论文、书籍/讲义和官方资料"
+    },
+    {
+      "label": "新增概念",
+      "value": 9,
+      "detail": "接入已有知识图谱，保留关系证据"
+    },
+    {
+      "label": "沿用研究问题",
+      "value": 9,
+      "detail": "均未验证；新增联系不改变其状态"
+    }
+  ],
+  "items": [
+    {
+      "id": "arxiv:2609.20800",
+      "title": "JEPA-Anything: Learning Predictive Models across Different Worlds",
+      "kind": "窗口内新作 · 本轮核查",
+      "reading_level": "fulltext_sections",
+      "summary": "将目标潜状态投影到多组子空间，以专用分支预测，并用伪逆合成；额外约束因子及编码器活性。；§3.3.2区分PDEBench、APEBench及参数匹配的Burgers H20/H50协议，报告作者实验收益。",
+      "url": "https://arxiv.org/html/2609.20800v1"
+    },
+    {
+      "id": "arxiv:2609.33148",
+      "title": "DroneWAM: Efficient World Action Model for Drone Visual Navigation",
+      "kind": "窗口内新作 · 本轮核查",
+      "reading_level": "fulltext_sections",
+      "summary": "固定特征压缩器加潜空间预测/动作规划，偏好训练Gate选择想象深度。；表4的近等平均深度随机停止对照支持研究“计算分配”而非只比较是否早停。",
+      "url": "https://arxiv.org/html/2609.33148v1"
+    },
+    {
+      "id": "arxiv:2112.04426",
+      "title": "Improving language models by retrieving from trillions of tokens",
+      "kind": "体系补读 · 较早基础工作",
+      "reading_level": "fulltext_sections",
+      "summary": "RETRO用冻结检索器取回邻近文本，由可训练编码器与分块交叉注意力融入自回归预测。；§2.6按检索到的重合子串分层评测，显式处理测试数据与外部记忆的重合。",
+      "url": "https://arxiv.org/html/2112.04426v3"
+    },
+    {
+      "id": "arxiv:2301.08243",
+      "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
+      "kind": "体系补读 · 较早基础工作",
+      "reading_level": "fulltext_sections",
+      "summary": "从可见上下文预测EMA目标编码器产生的遮挡区域表示；位置条件控制预测目标。；§9把潜空间目标与像素目标、不同mask策略分开消融。",
+      "url": "https://arxiv.org/html/2301.08243v3"
+    },
+    {
+      "id": "arxiv:2506.09985",
+      "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+      "kind": "体系补读 · 较早基础工作",
+      "reading_level": "fulltext_sections",
+      "summary": "冻结视频编码器后，用含动作和状态信息的数据学习因果预测器，接入MPC闭环。",
+      "url": "https://arxiv.org/html/2506.09985v1"
+    },
+    {
+      "id": "doi:10.1002/num.20640",
+      "title": "A class of discontinuous Petrov–Galerkin methods. II. Optimal test functions",
+      "kind": "体系补读 · 较早基础工作",
+      "reading_level": "fulltext_sections",
+      "summary": "由试探到测试的Riesz映射构造最优测试空间，在指定能量范数与适定性条件下实现最佳逼近。；不连续测试空间使近似最优测试函数可按单元局部求解。",
+      "url": "https://web.pdx.edu/~gjay/pub/dpg2.pdf"
+    },
+    {
+      "id": "doi:10.1007/s00211-013-0576-y",
+      "title": "Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps",
+      "kind": "体系补读 · 较早基础工作",
+      "reading_level": "fulltext_sections",
+      "summary": "局部广义特征方向经分片单位拼成GenEO粗空间，配合两层重叠Schwarz。；在文中假设与阈值选择下，条件数界不含系数对比度和子域数，但粗空间尺寸会变化。",
+      "url": "https://strathprints.strath.ac.uk/44827/1/10.1007_s00211_013_0576_y.pdf"
+    },
+    {
+      "id": "doi:10.1137/05064607X",
+      "title": "Analysis of the Parareal Time-Parallel Time-Integration Method",
+      "kind": "体系补读 · 较早基础工作",
+      "reading_level": "fulltext_sections",
+      "summary": "粗传播与细传播缺陷校正把时间分段连接起来；文中建立与multiple shooting和时间多重网格的联系。；热方程与周期输运的数值例显示收敛表现不同，某些输运设置停滞直至顺序细传播完成。",
+      "url": "https://www.unige.ch/~gander/Preprints/parareal.pdf"
+    }
+  ],
+  "chapters": [
+    "research_update.md"
+  ],
+  "previous_url": "../2026-09-19-broader-horizons/index.html",
+  "questions": [
+    {
+      "title": "从潜空间预测到可观测物理状态",
+      "mechanism": "JEPA与世界模型提示预测目标可从像素/场值迁往表征，但哪些量被保留需要单独验证。",
+      "experiment": "同容量对照预测隐目标与重建目标，在未见动力学上评估场、梯度、频谱与闭环轨迹。",
+      "failure": "仅隐空间更可预测而真实物理量退化，或闭环仍不可用，则不足以支持物理泛化。"
+    },
+    {
+      "title": "外部记忆与共享粗空间能否互补？",
+      "mechanism": "RETRO的条件检索与GenEO的困难误差模态选择属于不同机制；可借鉴选择标准，不把两者等同。",
+      "experiment": "在具有明确数值接口的小问题，比较随机案例、物理相似案例与谱准则；匹配检索/构建成本，保留纯数值粗空间对照。",
+      "failure": "收益只来自测试泄漏，或检索成本与不稳定性抵消收益，则类比没有转化为有效求解机制。"
+    },
+    {
+      "title": "可学习粗推进是否真正减少串行成本？",
+      "mechanism": "Parareal的粗细传播器修正说明局部并行必须计入全局迭代与稳定条件。",
+      "experiment": "固定物理时长和终止容差，比较传统粗传播器与学习粗传播器的迭代数、总墙钟、通信与长时误差。",
+      "failure": "一步误差更低但迭代总数、总成本或长时稳定性变差，不能称为时间并行加速。"
+    }
+  ],
+  "evidence_boundary": "Knowledge links and transfer hypotheses are not citation edges or validated PDE capabilities."
+}

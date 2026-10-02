@@ -1,0 +1,33 @@
+/* Shared local notebook; no external assets or requests. */
+.notebook-open{color:#536bc0;background:#edf1fc;border-color:#dfe5f5;font-size:11px;padding:7px 11px;white-space:nowrap}
+.notebook-add{display:inline-flex;color:#5d73ad;background:#f3f6fd;border-color:#e2e8f4;font-size:11px;padding:7px 10px;margin:0 0 13px}
+.top-actions:has(.notebook-open){gap:13px}.top-actions:has(.notebook-open)>.edition{display:none}
+body.notebook-modal-open{overflow:hidden}
+.notebook-dialog{padding:0;border:1px solid #dfe5f0;border-radius:18px;width:min(1000px,calc(100vw - 36px));max-width:none;max-height:calc(100dvh - 48px);background:#f8fafd;color:#35455e;box-shadow:0 28px 110px #1e2f5752;overflow:auto}
+.notebook-dialog::backdrop{background:#263b625c;backdrop-filter:blur(5px)}
+.notebook-layout{padding:26px}.notebook-header{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.notebook-kicker{color:#7187b1;font:10px/1.8 system-ui,sans-serif;letter-spacing:1.2px}.notebook-header h2{font-size:25px;line-height:1.5;margin:8px 0 0;color:#314364}
+.notebook-close{font-size:12px;padding:7px 11px;background:#fff}.notebook-boundary{font-size:12px;color:#65758c;line-height:1.8;margin:12px 0 17px;max-width:760px}
+.notebook-warning{font-size:12px;background:#fff5e8;border:1px solid #eed8b8;color:#835b2a;border-radius:9px;padding:11px 14px;line-height:1.8}
+.notebook-tools{display:grid;grid-template-columns:minmax(100px,1fr) 180px;gap:10px;margin-bottom:15px}.notebook-tools input,.notebook-tools select,.notebook-field select{border:1px solid #dce4f1;border-radius:8px;padding:10px 12px;min-height:40px;color:#627591;background:#fff;font:12px/1.6 system-ui,sans-serif;width:100%;min-width:0;max-width:100%;box-sizing:border-box}.notebook-tools input:focus-visible,.notebook-tools select:focus-visible,.notebook-field select:focus-visible{outline:3px solid #b1bce9;outline-offset:3px}
+.notebook-body{display:grid;grid-template-columns:minmax(210px,.8fr) minmax(0,1.4fr);gap:16px;min-height:400px}
+.notebook-list{max-height:500px;overflow:auto;display:flex;flex-direction:column;gap:9px;padding:2px}
+.notebook-item{display:block;flex:none;width:100%;text-align:left;padding:13px 15px;background:#fff;border:1px solid #e5eaf3;border-radius:10px;overflow-wrap:anywhere;line-height:1.7}
+.notebook-item:hover{border-color:#bbc8e7}.notebook-item[aria-pressed=true]{background:#edf2fd;border-color:#bdcaec;box-shadow:inset 3px 0 #6c83c6}
+.notebook-item-meta{display:block;color:#7285a3;font-size:10px}.notebook-item strong{display:block;font-size:12px;font-weight:600;color:#415773;margin:5px 0}
+.notebook-item-note{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;font-size:11px;color:#76849a;white-space:pre-wrap}
+.notebook-editor{padding:23px;background:#fff;border:1px solid #e2e8f3;border-radius:12px;min-width:0;overflow-wrap:anywhere}
+.notebook-editor h3{font-size:18px;color:#405579;line-height:1.65;margin:6px 0 6px}.notebook-id{font:10px/1.8 ui-monospace,monospace;color:#8391a7;margin:0 0 13px}
+.notebook-entry-actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:17px}.notebook-entry-actions button{font-size:11px;padding:6px 10px;color:#657bac}.notebook-entry-actions .notebook-remove{color:#8d7381}
+.notebook-field{display:block;font-size:12px;color:#627591;margin-top:14px}.notebook-field select{display:block;width:100%;font-size:12px;margin-top:7px;background:#f9fbff}
+.notebook-field textarea{display:block;width:100%;max-width:100%;min-height:160px;resize:vertical;border:1px solid #dce4f1;border-radius:8px;padding:12px 13px;background:#fafcff;color:#405470;font:13px/1.9 system-ui,sans-serif;outline-offset:3px;margin-top:7px}
+.notebook-field textarea:focus-visible{outline:3px solid #b1bce9}.notebook-field textarea::placeholder{color:#909eb3}
+.notebook-note-hint,.notebook-evidence-note{font-size:10px;color:#7b8ba3;line-height:1.8;margin:7px 0 0}.notebook-evidence-note{margin-top:13px}
+.notebook-feedback{font-size:11px;line-height:1.7;color:#607896;margin:15px 0 0;min-height:19px}
+.notebook-empty,.notebook-editor-empty{font-size:13px;color:#7c8da6;line-height:2;padding:25px 16px;margin:0}.notebook-editor-empty{padding-top:90px;text-align:center}
+.notebook-footer{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px;padding:16px 0 0;border-top:1px solid #e2e8f3}.notebook-footer button,#notebook-undo{font-size:11px;padding:8px 12px;background:#fff;color:#627cac}.notebook-footer .notebook-export-json{background:#536ec0;color:#fff;border-color:#536ec0}
+#notebook-undo{margin-top:9px}.notebook-import{background:#edf3fc;border:1px solid #dae4f6;border-radius:10px;padding:14px;margin-top:14px}.notebook-import p{font-size:12px;margin:0 0 12px}.notebook-import button{font-size:11px;margin-right:8px;padding:8px 11px}.notebook-import .notebook-primary{background:#5d77bb;color:white;border-color:#5d77bb}
+.notebook-dialog [hidden]{display:none!important}
+@media(max-width:900px){.top-actions:has(.notebook-open){gap:9px}.notebook-dialog{max-height:calc(100dvh - 24px)}.notebook-layout{padding:20px}.notebook-body{grid-template-columns:minmax(185px,.8fr) minmax(0,1.4fr)}}
+@media(max-width:700px){.topbar.has-notebook{height:auto;min-height:49px}.topbar.has-notebook>.shell{flex-wrap:wrap;padding-top:10px;padding-bottom:10px;gap:7px}.top-actions:has(.notebook-open){gap:10px;flex-wrap:wrap;justify-content:flex-end}.notebook-open{font-size:10px;padding:5px 8px}.notebook-dialog{width:calc(100vw - 18px);max-height:calc(100dvh - 18px);border-radius:12px}.notebook-layout{padding:16px}.notebook-header h2{font-size:21px}.notebook-kicker{font-size:8px}.notebook-header{gap:8px}.notebook-boundary{font-size:11px}.notebook-tools{grid-template-columns:1fr;gap:8px}.notebook-body{grid-template-columns:1fr;gap:12px;min-height:0}.notebook-list{max-height:190px}.notebook-item{padding:10px 12px}.notebook-editor{padding:17px}.notebook-editor h3{font-size:16px}.notebook-editor-empty{padding:20px}.notebook-footer{gap:7px}.notebook-footer button{padding:8px 10px;font-size:10px}}
+@media print{.notebook-open,.notebook-add,.notebook-dialog{display:none!important}}

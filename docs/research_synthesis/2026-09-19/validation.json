@@ -1,0 +1,581 @@
+{
+  "checked_at_utc": "2026-09-19T08:48:07.415406+00:00",
+  "source_head": "428741f55fe2301ea7ca3029fedc3e913b07b2cc",
+  "status": "passed",
+  "checks": [
+    {
+      "command": "python scripts/build_research_graph.py --check",
+      "result": "PASS: coverage of 454 identities, 144 reports, 658 nodes, 3610 edges; 217 input hashes, references, uniqueness, endpoints and deterministic outputs."
+    },
+    {
+      "command": "python scripts/build_research_site.py --check",
+      "result": "PASS: 454 corpus identities, 43 reading records, 42 unique work IDs, 228 semantic edges; deterministic outputs."
+    },
+    {
+      "command": "python scripts/papertrack.py check",
+      "result": "PASS: 14 existing generated views, JSONL, historical snapshot hashes and local links."
+    },
+    {
+      "command": "python -m unittest discover -s tests -q",
+      "result": "PASS: 43 repository tests; no scientific experiments."
+    },
+    {
+      "command": "new Markdown local-link / math-fence / control-character checks",
+      "result": "PASS"
+    },
+    {
+      "command": "all new text trailing whitespace scan (byte-preserved remote snapshot excepted)",
+      "result": "PASS"
+    },
+    {
+      "command": "git diff --check",
+      "result": "PASS; untracked new text additionally checked as above"
+    },
+    {
+      "command": "remote supplemental report SHA-256 validation",
+      "result": "PASS; byte-identical to fetched branch content"
+    }
+  ],
+  "browser": {
+    "status": "passed",
+    "stats": {
+      "corpus": 454,
+      "refs": 12,
+      "records": 43,
+      "works": 42
+    },
+    "pages_checked": 19,
+    "unique_corpus_rows_checked": 454,
+    "local_links_checked": 16,
+    "checks": [
+      "all corpus pagination",
+      "targeted search",
+      "primary review before collapsed historical content",
+      "background scope",
+      "evidence filter",
+      "empty state",
+      "graph node and topic clicks",
+      "timeline year filter",
+      "eight hypotheses",
+      "43 review records",
+      "desktop and mobile rendering",
+      "no horizontal page overflow at 390px",
+      "offline file mode",
+      "no browser exceptions"
+    ],
+    "screenshots": [
+      "/tmp/research-atlas-overview.png",
+      "/tmp/research-atlas-network.png",
+      "/tmp/research-atlas-mobile.png"
+    ]
+  },
+  "browser_script_sha256": "c5dd51d9fca8ea1266c7a8186139673a2e7b33e70455bb3bd852f4867ba1d8f7",
+  "manual_visual_inspection": [
+    "Desktop overview",
+    "Desktop network/detail",
+    "Mobile catalog/detail"
+  ],
+  "peer_review_repairs": [
+    "Corrected compress regex false matches on incompressible/compressible",
+    "Distinguished registered identity count from core selection tier",
+    "Prioritized present review over collapsed historical assertions",
+    "Used reviewed_source_summary instead of blanket author attribution"
+  ],
+  "publication": {
+    "local_artifacts_created": true,
+    "git_commit_created": false,
+    "pushed_to_remote": false
+  },
+  "scientific_boundary": "Selective source reading only. No paper code execution, numerical experiments, performance reproduction, or full-corpus full-text reading.",
+  "browser_checked_at_utc": "2026-09-22T10:16:48.882948+00:00",
+  "artifact_sha256": "8605905d44cc006d5892f534c7869cbe8e5a32cc918ca64a4b126a15abf16c47",
+  "ui_redesign": {
+    "status": "passed",
+    "checked_at_utc": "2026-09-19T10:05:49.339469+00:00",
+    "changes": [
+      "Light sidebar navigation, paper-white cards, blue-gray palette and field illustration",
+      "Readable catalog and evidence cards with explicit selected paper rows",
+      "Wider graph canvas, selected node and incident-edge highlighting",
+      "Responsive layouts, keyboard selection, mobile active-navigation visibility and detail scrolling below fixed navigation"
+    ],
+    "validation": {
+      "status": "passed",
+      "artifact": "/home/xzq/projects/research_paper_track/docs/research_synthesis/2026-09-19/index.html",
+      "checks": [
+        "All six panels fit 320px without page overflow",
+        "All six panels fit 768px without page overflow",
+        "Keyboard navigation activates network tab",
+        "All ten graph pages cover 454 nodes and previous paging returns to first page",
+        "Graph papers support Enter and Space with a single selected aria-pressed state",
+        "Graph selection persists through paging",
+        "Graph topics support Enter and Space and apply correct topic filter",
+        "Every 22 topic filter matches corpus data",
+        "Empty graph has an explanatory state and disabled pagination",
+        "Background and combined scopes preserve 12 and 466 record boundaries",
+        "Offline UI made no HTTP requests or browser exceptions",
+        "320px and 390px selected paper titles remain fully below sticky navigation",
+        "Hero navigation scrolls active mobile tab into view",
+        "768px sidebar caption remains on one line"
+      ],
+      "geometry": [
+        {
+          "panel": "overview",
+          "width": 320,
+          "scrollWidth": 320,
+          "bodyWidth": 320
+        },
+        {
+          "panel": "network",
+          "width": 320,
+          "scrollWidth": 320,
+          "bodyWidth": 320
+        },
+        {
+          "panel": "catalog",
+          "width": 320,
+          "scrollWidth": 320,
+          "bodyWidth": 320
+        },
+        {
+          "panel": "timeline",
+          "width": 320,
+          "scrollWidth": 320,
+          "bodyWidth": 320
+        },
+        {
+          "panel": "ideas",
+          "width": 320,
+          "scrollWidth": 320,
+          "bodyWidth": 320
+        },
+        {
+          "panel": "evidence",
+          "width": 320,
+          "scrollWidth": 320,
+          "bodyWidth": 320
+        },
+        {
+          "panel": "expanded-paper-detail",
+          "width": 320,
+          "scrollWidth": 320
+        },
+        {
+          "panel": "overview",
+          "width": 768,
+          "scrollWidth": 768,
+          "bodyWidth": 768
+        },
+        {
+          "panel": "network",
+          "width": 768,
+          "scrollWidth": 768,
+          "bodyWidth": 768
+        },
+        {
+          "panel": "catalog",
+          "width": 768,
+          "scrollWidth": 768,
+          "bodyWidth": 768
+        },
+        {
+          "panel": "timeline",
+          "width": 768,
+          "scrollWidth": 768,
+          "bodyWidth": 768
+        },
+        {
+          "panel": "ideas",
+          "width": 768,
+          "scrollWidth": 768,
+          "bodyWidth": 768
+        },
+        {
+          "panel": "evidence",
+          "width": 768,
+          "scrollWidth": 768,
+          "bodyWidth": 768
+        },
+        {
+          "panel": "expanded-paper-detail",
+          "width": 768,
+          "scrollWidth": 768
+        }
+      ],
+      "graph_pages_checked": 10,
+      "graph_nodes_checked": 454,
+      "topic_filters_checked": 22,
+      "screenshots": [
+        "/tmp/research-atlas-supplement-320.png",
+        "/tmp/research-atlas-supplement-768.png"
+      ],
+      "mobile_selection_and_navigation": [
+        {
+          "check": "mobile selection reveals title",
+          "width": 320,
+          "titleTop": 184.28125,
+          "titleBottom": 303.03125,
+          "stickyBottom": 102,
+          "detailTop": 118.890625,
+          "scrollY": 973,
+          "scrollMarginTop": "124px",
+          "position": "static",
+          "sidebarRect": {
+            "top": 0,
+            "bottom": 102,
+            "height": 102
+          },
+          "detailRect": {
+            "top": 118.890625,
+            "bottom": 1625.4375,
+            "height": 1506.546875
+          },
+          "detailScrollTop": 0,
+          "passed": true
+        },
+        {
+          "check": "hero navigation exposes active nav button",
+          "width": 320,
+          "left": 12,
+          "right": 96,
+          "navLeft": 0,
+          "navRight": 320,
+          "scrollLeft": 87
+        },
+        {
+          "check": "mobile selection reveals title",
+          "width": 390,
+          "titleTop": 184.28125,
+          "titleBottom": 273.34375,
+          "stickyBottom": 102,
+          "detailTop": 118.890625,
+          "scrollY": 825,
+          "scrollMarginTop": "124px",
+          "position": "static",
+          "sidebarRect": {
+            "top": 0,
+            "bottom": 102,
+            "height": 102
+          },
+          "detailRect": {
+            "top": 118.890625,
+            "bottom": 1455.375,
+            "height": 1336.484375
+          },
+          "detailScrollTop": 0,
+          "passed": true
+        },
+        {
+          "check": "hero navigation exposes active nav button",
+          "width": 390,
+          "left": 12,
+          "right": 96,
+          "navLeft": 0,
+          "navRight": 390,
+          "scrollLeft": 87
+        }
+      ],
+      "visual_review": {
+        "status": "passed",
+        "notes": [
+          "Desktop graph selection and highlighted relationships are visually legible",
+          "Mobile selected title is fully visible under sticky navigation",
+          "Tablet navigation caption no longer wraps"
+        ],
+        "screenshots": [
+          "/tmp/research-atlas-network-clean.png",
+          "/tmp/research-atlas-mobile-selected-320.png",
+          "/tmp/research-atlas-mobile-selected-390.png",
+          "/tmp/research-atlas-supplement-768-stable.png"
+        ]
+      },
+      "final_artifact_sha256": "36f4d3ef0f11e203ad316a0ab899f2ee75fa2af082017f2027b5bcf31f419f4e"
+    },
+    "content_integrity": {
+      "status": "passed",
+      "unchanged_sha256": {
+        "docs/research_synthesis/2026-09-19/remote_20260916_digest.txt": "73c3682d1fd05cac1afbbc98eddc97e05afced8426f3d190f9e69c6f2e1169a4",
+        "docs/research_synthesis/2026-09-19/paper_cards.jsonl": "c34bbb729fc737c000f641d09288b9fc6132f09d14b6c88bfafcef3c151e37ca",
+        "docs/research_synthesis/2026-09-19/nodes.csv": "dbec7f94da309e6168f8a8bc0ade5b4b0afdb5d543c7c7eec506bbfbf931f623",
+        "docs/research_synthesis/2026-09-19/primary_evidence.json": "21471862a6b489f9a0c90f17e855efbe13a171761647b0a76d0f46337bfa51a1",
+        "docs/research_synthesis/2026-09-19/knowledge_graph.json": "b200a1edd519cff5f42b4e5c2b4e0ba2cb29acb4a1168598de6a77b480c08d5c",
+        "docs/research_synthesis/2026-09-19/architecture_evidence.json": "d388d5a2bbc78eb005e63bc10d6493c546af95806a304ebfc7aa73679fa596b8",
+        "docs/research_synthesis/2026-09-19/domain_evidence.json": "5d697f14a5cbf36ff7085ec77185a5a039837b9e8ba552525268ed81926f4184",
+        "docs/research_synthesis/2026-09-19/corpus_audit.md": "b027367cc7ff2bc6d08387220ee8e61ae1c78424f3ec44758ebb1cba9275e929",
+        "docs/research_synthesis/2026-09-19/corpus_manifest.json": "de73542b1278d8f6b23ad32d3b84217a3a3780eda492ea064b0fe3b2905f4d9a",
+        "docs/research_synthesis/2026-09-19/RESEARCH_SYNTHESIS.zh-CN.md": "af3d3e46ca544fb6b26cd907ca44ac6b0c82cacd1ae13194599d622cdaf0eb3e",
+        "docs/research_synthesis/2026-09-19/edges.csv": "5ba8782fe63244a015e91a37f17cfe0cb043bb9cdaad1a0fc7950beccf1f59fe",
+        "docs/research_synthesis/2026-09-19/remote_sync.json": "3ffe3cf116fef6c653d112bac9a77f11c17db72e66818e863f0fbf6be9068346",
+        "docs/research_synthesis/2026-09-19/domain_review.md": "9c9ae9e84c27e11155f5888b4125a8d1578c2d5f5ba0acb06d69f200dc449e9f",
+        "docs/research_synthesis/2026-09-19/evaluation_review.md": "1d15eee0ea7420812e25a21d017bee2769329a355b2f199ad1f668332ed8a504",
+        "docs/research_synthesis/2026-09-19/semantic_graph.json": "1d857c596c332d63b16b52d554a04e67b59281c3b67d0c8e3fd20a6a6e721b8b",
+        "docs/research_synthesis/2026-09-19/ALL_PAPERS.md": "bbc6940d3c2c38e675b57aa424c8416aaea658ae2f095d6a2d473f3fd4ad1921",
+        "docs/research_synthesis/2026-09-19/architecture_review.md": "8a8f28e8c55863c391c5ab9a8216fce424ccb75f7381579ab2c40c5463794a57",
+        "docs/research_synthesis/2026-09-19/evaluation_evidence.json": "74dbb208fb87c65a0d338317e7fabc2f1a2872ca901ed9fec042cbe395bde1e4",
+        "docs/research_synthesis/2026-09-19/innovation_agenda.md": "d2ee5359c9adb042d1252ce00014d246e63943ffaaa3cbfc72b0ddce83edb7a8",
+        "docs/research_synthesis/2026-09-19-broader-horizons/nodes.csv": "7c633f28b291396f3ab069f1e95e124fc928a9e4b790d2d277fc5fbc010ef706",
+        "docs/research_synthesis/2026-09-19-broader-horizons/build_manifest.json": "35366cd6a3e6fd01d039f2762a8767ae243962bf001223e3e5948cc216906761",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems_evidence.json": "7609e27e143ca4ad5836d9bcd43c8ef3e56158fdb6bb8056b532b129c543e70b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/bridge_evidence.json": "e30ed37fd0ebcbaa45c32e875b923879b6d8f48b49ae15b4b6c5660aabc88216",
+        "docs/research_synthesis/2026-09-19-broader-horizons/knowledge_graph.json": "8a8f9b0534b05d30cf72a72c3900ff33997fc4d70ac3b76cbcb256ee3c1a14b8",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-preview.png": "06d29b9bb4c3e7792ba9ac0d47dbcd6ef290e1838241bfdeb76dad6e76d8c437",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics.md": "2dcdc5e9c6d2569bc5d710e2fd9110a91e98494968f2d4219e7a29626051d788",
+        "docs/research_synthesis/2026-09-19-broader-horizons/coverage.md": "2ac99bd268faca0f98c2a22851dceea444e2ad9011d60e7315689fec5101f66b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-graph-preview.png": "d9f03083a85ce46c1204522a233880e7a536dd4ed54eca9b7924a3dfdd9bbc35",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems.md": "aa9c185535307e3a7de41417889f815a09d9c795422838feb1836dfe59f905c4",
+        "docs/research_synthesis/2026-09-19-broader-horizons/evidence_catalog.json": "8b0f4bd12a9935faa6e7a851f6dbd38cf295000981d3a4333e1b6fd1506c5ea2",
+        "docs/research_synthesis/2026-09-19-broader-horizons/learning_roadmap.md": "8801fb135a63d3111492ceeec86f9f2e9b4ca11e46022fab2aa49d57943740e9",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics_evidence.json": "e316d3d298cce023dee111c3fcdadbed7d3f2b0d649ba6c1b3114121929ea246",
+        "docs/research_synthesis/2026-09-19-broader-horizons/validation.json": "c51534e8baa8845dcd41341bced5273f15fc42a97965d2267d765846f3b1f76b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations.md": "e5a2462e7d14b79983bb3b7aa277203e635292f2e43f74895b9922ee2a902baf",
+        "docs/research_synthesis/2026-09-19-broader-horizons/edges.csv": "bf1e48e54bae58df161915ae081dced84924c59a707396699542572f8ab67e1f",
+        "docs/research_synthesis/2026-09-19-broader-horizons/index.html": "2b295edc6d06ad890a0905ef99c58afd98be7685b2f2e16be0a1ead2f473b596",
+        "docs/research_synthesis/2026-09-19-broader-horizons/README.md": "35cd23ed68037e32e54e6e8efaedd72a3ba05afbdf47d369e5f82c3fa9d7869a",
+        "docs/research_synthesis/2026-09-19-broader-horizons/RESEARCH_HORIZONS.zh-CN.md": "8dd209e4f23b78ccdf8199a6809abaf276f5d833d00c3c93c6460abd1729909b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations_evidence.json": "8731b1bad1a448f4c8141ec2b1e5102d8421ed73bb18218275b82ef84ba0c308",
+        "docs/research_synthesis/2026-09-19-broader-horizons/cross_domain.md": "b291a17db11b8e617e81dfb993e06c92117e4bed18a23de27639e9f0986addf3"
+      }
+    },
+    "checks": [
+      "python scripts/build_research_site.py --check",
+      "python scripts/build_research_graph.py --check",
+      "python scripts/papertrack.py check",
+      "git diff --check",
+      "Template marker, whitespace and control characters"
+    ],
+    "previews": [
+      "ui-preview.png",
+      "ui-network-preview.png"
+    ]
+  },
+  "reading_update": {
+    "date": "2026-09-22",
+    "status": "passed",
+    "validated_at_utc": "2026-09-22T09:52:27.578127+00:00",
+    "artifact_sha256": "5c4fefe3f6ff9ebd3ba4ef8048289b33195d10ca9f354c4cf75f76683cd5827d",
+    "changes": [
+      "Six embedded review chapters, chapter/section navigation, reading size and previous/next chapter",
+      "Return/resume progress in current browser with denied-storage fallback",
+      "18 byte-exact offline exports and per-paper evidence notes"
+    ],
+    "independent_browser_review": {
+      "name": "atlas",
+      "index_sha256": "5c4fefe3f6ff9ebd3ba4ef8048289b33195d10ca9f354c4cf75f76683cd5827d",
+      "status": "passed",
+      "chapters": 6,
+      "checks": [
+        "320px all panels/chapters fit; chapter anchors visible",
+        "390px all panels/chapters fit; chapter anchors visible",
+        "768px all panels/chapters fit; chapter anchors visible",
+        "1440px all panels/chapters fit; chapter anchors visible",
+        "8 internal chapter and anchor links clicked across six documents",
+        "visible reading toolbar and font size increases/persists",
+        "previous/next chapters and inline Markdown links stay in reader",
+        "pane return and reload restore reading progress",
+        "18 offline downloads byte-exact",
+        "Storage get/set/remove denied: reader remains usable without exceptions"
+      ],
+      "externalRequests": 0,
+      "errors": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "files_unchanged": 33,
+      "sha256": {
+        "docs/research_synthesis/2026-09-19-broader-horizons/nodes.csv": "7c633f28b291396f3ab069f1e95e124fc928a9e4b790d2d277fc5fbc010ef706",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems_evidence.json": "7609e27e143ca4ad5836d9bcd43c8ef3e56158fdb6bb8056b532b129c543e70b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/bridge_evidence.json": "e30ed37fd0ebcbaa45c32e875b923879b6d8f48b49ae15b4b6c5660aabc88216",
+        "docs/research_synthesis/2026-09-19-broader-horizons/knowledge_graph.json": "8a8f9b0534b05d30cf72a72c3900ff33997fc4d70ac3b76cbcb256ee3c1a14b8",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics.md": "2dcdc5e9c6d2569bc5d710e2fd9110a91e98494968f2d4219e7a29626051d788",
+        "docs/research_synthesis/2026-09-19-broader-horizons/coverage.md": "2ac99bd268faca0f98c2a22851dceea444e2ad9011d60e7315689fec5101f66b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems.md": "aa9c185535307e3a7de41417889f815a09d9c795422838feb1836dfe59f905c4",
+        "docs/research_synthesis/2026-09-19-broader-horizons/evidence_catalog.json": "8b0f4bd12a9935faa6e7a851f6dbd38cf295000981d3a4333e1b6fd1506c5ea2",
+        "docs/research_synthesis/2026-09-19-broader-horizons/learning_roadmap.md": "8801fb135a63d3111492ceeec86f9f2e9b4ca11e46022fab2aa49d57943740e9",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics_evidence.json": "e316d3d298cce023dee111c3fcdadbed7d3f2b0d649ba6c1b3114121929ea246",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations.md": "e5a2462e7d14b79983bb3b7aa277203e635292f2e43f74895b9922ee2a902baf",
+        "docs/research_synthesis/2026-09-19-broader-horizons/edges.csv": "bf1e48e54bae58df161915ae081dced84924c59a707396699542572f8ab67e1f",
+        "docs/research_synthesis/2026-09-19-broader-horizons/RESEARCH_HORIZONS.zh-CN.md": "8dd209e4f23b78ccdf8199a6809abaf276f5d833d00c3c93c6460abd1729909b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations_evidence.json": "8731b1bad1a448f4c8141ec2b1e5102d8421ed73bb18218275b82ef84ba0c308",
+        "docs/research_synthesis/2026-09-19-broader-horizons/cross_domain.md": "b291a17db11b8e617e81dfb993e06c92117e4bed18a23de27639e9f0986addf3",
+        "docs/research_synthesis/2026-09-19/paper_cards.jsonl": "c34bbb729fc737c000f641d09288b9fc6132f09d14b6c88bfafcef3c151e37ca",
+        "docs/research_synthesis/2026-09-19/nodes.csv": "dbec7f94da309e6168f8a8bc0ade5b4b0afdb5d543c7c7eec506bbfbf931f623",
+        "docs/research_synthesis/2026-09-19/primary_evidence.json": "21471862a6b489f9a0c90f17e855efbe13a171761647b0a76d0f46337bfa51a1",
+        "docs/research_synthesis/2026-09-19/knowledge_graph.json": "b200a1edd519cff5f42b4e5c2b4e0ba2cb29acb4a1168598de6a77b480c08d5c",
+        "docs/research_synthesis/2026-09-19/architecture_evidence.json": "d388d5a2bbc78eb005e63bc10d6493c546af95806a304ebfc7aa73679fa596b8",
+        "docs/research_synthesis/2026-09-19/domain_evidence.json": "5d697f14a5cbf36ff7085ec77185a5a039837b9e8ba552525268ed81926f4184",
+        "docs/research_synthesis/2026-09-19/corpus_audit.md": "b027367cc7ff2bc6d08387220ee8e61ae1c78424f3ec44758ebb1cba9275e929",
+        "docs/research_synthesis/2026-09-19/corpus_manifest.json": "de73542b1278d8f6b23ad32d3b84217a3a3780eda492ea064b0fe3b2905f4d9a",
+        "docs/research_synthesis/2026-09-19/RESEARCH_SYNTHESIS.zh-CN.md": "af3d3e46ca544fb6b26cd907ca44ac6b0c82cacd1ae13194599d622cdaf0eb3e",
+        "docs/research_synthesis/2026-09-19/edges.csv": "5ba8782fe63244a015e91a37f17cfe0cb043bb9cdaad1a0fc7950beccf1f59fe",
+        "docs/research_synthesis/2026-09-19/remote_sync.json": "3ffe3cf116fef6c653d112bac9a77f11c17db72e66818e863f0fbf6be9068346",
+        "docs/research_synthesis/2026-09-19/domain_review.md": "9c9ae9e84c27e11155f5888b4125a8d1578c2d5f5ba0acb06d69f200dc449e9f",
+        "docs/research_synthesis/2026-09-19/evaluation_review.md": "1d15eee0ea7420812e25a21d017bee2769329a355b2f199ad1f668332ed8a504",
+        "docs/research_synthesis/2026-09-19/semantic_graph.json": "1d857c596c332d63b16b52d554a04e67b59281c3b67d0c8e3fd20a6a6e721b8b",
+        "docs/research_synthesis/2026-09-19/ALL_PAPERS.md": "bbc6940d3c2c38e675b57aa424c8416aaea658ae2f095d6a2d473f3fd4ad1921",
+        "docs/research_synthesis/2026-09-19/architecture_review.md": "8a8f28e8c55863c391c5ab9a8216fce424ccb75f7381579ab2c40c5463794a57",
+        "docs/research_synthesis/2026-09-19/evaluation_evidence.json": "74dbb208fb87c65a0d338317e7fabc2f1a2872ca901ed9fec042cbe395bde1e4",
+        "docs/research_synthesis/2026-09-19/innovation_agenda.md": "d2ee5359c9adb042d1252ce00014d246e63943ffaaa3cbfc72b0ddce83edb7a8"
+      }
+    },
+    "server_access": "HTTP 200 for both pages at server loopback 127.0.0.1:8765 on this date; Windows requires the existing SSH tunnel to 18765",
+    "checks": [
+      "deterministic build --check",
+      "research graph --check",
+      "papertrack registry check",
+      "git diff --check",
+      "embedded exports byte-exact: atlas 18, horizons 4"
+    ],
+    "research_boundary": "UI and reader improvement only; no new paper reading, experiment, registry changes or remote publication.",
+    "implementation_browser_review": {
+      "status": "passed",
+      "chapters": 6,
+      "viewports": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "downloads_byte_exact": 18,
+      "checks": [
+        "six chapters offline",
+        "same-file Markdown link navigation",
+        "chapter table of contents",
+        "leave-reader-and-return progress",
+        "reload starts at overview with explicit resume",
+        "font controls",
+        "ALL_PAPERS resolves corpus catalog",
+        "individual evidence-note export",
+        "no external requests",
+        "no browser exceptions"
+      ]
+    },
+    "previews": [
+      "ui-reader-preview.png",
+      "ui-reader-mobile-preview.png"
+    ]
+  },
+  "interaction_update": {
+    "status": "passed",
+    "checked_at_utc": "2026-09-22T10:16:48.882948+00:00",
+    "artifact_sha256": "8605905d44cc006d5892f534c7869cbe8e5a32cc918ca64a4b126a15abf16c47",
+    "changes": [
+      "Local personal reading list, independent reading marks and notes, search and return to source",
+      "JSON backup and previewed add-only import; Markdown export; archival removal and undo",
+      "Visible session-only warning when browser storage is unavailable; corrupt existing data is preserved",
+      "Consistent controls and keyboard-contained dialog across desktop and mobile",
+      "Stop overwriting when the stored version was changed by another tab; preserve session notes for backup"
+    ],
+    "notebook_browser": {
+      "name": "atlas",
+      "index_sha256": "8605905d44cc006d5892f534c7869cbe8e5a32cc918ca64a4b126a15abf16c47",
+      "status": "passed",
+      "checks": [
+        "Adding a record, immediate note/status persistence, reload recovery and literal unsafe-looking text rendering",
+        "Status/note search filtering, archival retains note, undo restores record",
+        "JSON and Markdown exports retain notes; validated import previews before mutation, adds new ID and preserves conflicting local note/status",
+        "Malformed JSON, wrong workbench, unknown/duplicate IDs, invalid status, oversized note reject atomically; duplicate-only import is disabled",
+        "Dialog fits 320/390/768/1440px, traps Tab and Shift+Tab, keeps selection focus, closes with Escape",
+        "Browser localStorage SecurityError injection leaves editing and JSON export usable with visible session-only warning"
+      ],
+      "external_requests": 0,
+      "errors": []
+    },
+    "import_and_corrupt_storage_checks": {
+      "kind": "atlas",
+      "status": "passed",
+      "checks": [
+        "atomic import preview then append",
+        "keep existing note on conflicts",
+        "reject malformed JSON and unknown IDs and long notes",
+        "return to selected item with filters",
+        "corrupt raw storage preserved while session data exports"
+      ]
+    },
+    "same_origin_namespace_isolation": "passed",
+    "storage_failure_browser": {
+      "name": "atlas",
+      "index_sha256": "8605905d44cc006d5892f534c7869cbe8e5a32cc918ca64a4b126a15abf16c47",
+      "status": "passed",
+      "checks": [
+        "corrupt-json: original localStorage retained byte-exact, warning shown, session note export works",
+        "corrupt-schema: original localStorage retained byte-exact, warning shown, session note export works",
+        "quota: original localStorage retained byte-exact, warning shown, session note export works"
+      ]
+    },
+    "cross_tab_browser": {
+      "name": "atlas",
+      "index_sha256": "8605905d44cc006d5892f534c7869cbe8e5a32cc918ca64a4b126a15abf16c47",
+      "status": "passed",
+      "checks": [
+        "distinct-ids: stale writes persistently blocked, original storage byte-exact, both tabs export independent notes, reload restores writable current state, reverse stale write blocked",
+        "same-id: stale writes persistently blocked, original storage byte-exact, both tabs export independent notes, reload restores writable current state, reverse stale write blocked"
+      ]
+    },
+    "reader_regression": {
+      "name": "atlas",
+      "index_sha256": "9729ad71eba20b5b2285f5d25f30f74c190f14857f7b3d6444ab8461201007be",
+      "status": "passed",
+      "chapters": 6,
+      "checks": [
+        "320px all panels/chapters fit; chapter anchors visible",
+        "390px all panels/chapters fit; chapter anchors visible",
+        "768px all panels/chapters fit; chapter anchors visible",
+        "1440px all panels/chapters fit; chapter anchors visible",
+        "8 internal chapter and anchor links clicked across six documents",
+        "visible reading toolbar and font size increases/persists",
+        "previous/next chapters and inline Markdown links stay in reader",
+        "pane return and reload restore reading progress",
+        "18 offline downloads byte-exact",
+        "Storage get/set/remove denied: reader remains usable without exceptions"
+      ],
+      "externalRequests": 0,
+      "errors": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "unchanged_artifacts": {
+        "docs/research_synthesis/2026-09-19/paper_cards.jsonl": "c34bbb729fc737c000f641d09288b9fc6132f09d14b6c88bfafcef3c151e37ca",
+        "docs/research_synthesis/2026-09-19/nodes.csv": "dbec7f94da309e6168f8a8bc0ade5b4b0afdb5d543c7c7eec506bbfbf931f623",
+        "docs/research_synthesis/2026-09-19/primary_evidence.json": "21471862a6b489f9a0c90f17e855efbe13a171761647b0a76d0f46337bfa51a1",
+        "docs/research_synthesis/2026-09-19/knowledge_graph.json": "b200a1edd519cff5f42b4e5c2b4e0ba2cb29acb4a1168598de6a77b480c08d5c",
+        "docs/research_synthesis/2026-09-19/architecture_evidence.json": "d388d5a2bbc78eb005e63bc10d6493c546af95806a304ebfc7aa73679fa596b8",
+        "docs/research_synthesis/2026-09-19/domain_evidence.json": "5d697f14a5cbf36ff7085ec77185a5a039837b9e8ba552525268ed81926f4184",
+        "docs/research_synthesis/2026-09-19/corpus_audit.md": "b027367cc7ff2bc6d08387220ee8e61ae1c78424f3ec44758ebb1cba9275e929",
+        "docs/research_synthesis/2026-09-19/corpus_manifest.json": "de73542b1278d8f6b23ad32d3b84217a3a3780eda492ea064b0fe3b2905f4d9a",
+        "docs/research_synthesis/2026-09-19/RESEARCH_SYNTHESIS.zh-CN.md": "af3d3e46ca544fb6b26cd907ca44ac6b0c82cacd1ae13194599d622cdaf0eb3e",
+        "docs/research_synthesis/2026-09-19/edges.csv": "5ba8782fe63244a015e91a37f17cfe0cb043bb9cdaad1a0fc7950beccf1f59fe",
+        "docs/research_synthesis/2026-09-19/remote_sync.json": "3ffe3cf116fef6c653d112bac9a77f11c17db72e66818e863f0fbf6be9068346",
+        "docs/research_synthesis/2026-09-19/domain_review.md": "9c9ae9e84c27e11155f5888b4125a8d1578c2d5f5ba0acb06d69f200dc449e9f",
+        "docs/research_synthesis/2026-09-19/evaluation_review.md": "1d15eee0ea7420812e25a21d017bee2769329a355b2f199ad1f668332ed8a504",
+        "docs/research_synthesis/2026-09-19/semantic_graph.json": "1d857c596c332d63b16b52d554a04e67b59281c3b67d0c8e3fd20a6a6e721b8b",
+        "docs/research_synthesis/2026-09-19/ALL_PAPERS.md": "bbc6940d3c2c38e675b57aa424c8416aaea658ae2f095d6a2d473f3fd4ad1921",
+        "docs/research_synthesis/2026-09-19/architecture_review.md": "8a8f28e8c55863c391c5ab9a8216fce424ccb75f7381579ab2c40c5463794a57",
+        "docs/research_synthesis/2026-09-19/evaluation_evidence.json": "74dbb208fb87c65a0d338317e7fabc2f1a2872ca901ed9fec042cbe395bde1e4",
+        "docs/research_synthesis/2026-09-19/innovation_agenda.md": "d2ee5359c9adb042d1252ce00014d246e63943ffaaa3cbfc72b0ddce83edb7a8"
+      }
+    },
+    "local_checks": [
+      "Both deterministic site builds: --check passed",
+      "Original graph build: --check passed (454 identities, 658 nodes, 3610 edges)",
+      "Registry check: 14 generated views, JSONL, snapshot hashes and local links passed",
+      "Shared notebook JavaScript syntax and task-source whitespace/control-character checks passed"
+    ],
+    "test_scripts_sha256": {
+      "check_research_iteration_notebook.cjs": "5579788edb23f2e2178e2a5cb8c893cb70deb9d342a096787b3d842ccc8b9a59",
+      "check_notebook_import.cjs": "d339047407dce7ae977e963b1cefe9406dda17094f2c7c1754d0cd883e5f1b1b",
+      "check_research_workspace_reading.cjs": "ecc5c675d44fc5a2f3af55aa327c60bb575738d33a865999f2d64c37a8a3e06c"
+    },
+    "manual_visual_inspection": [
+      "Desktop reading-list dialog with uniform form controls",
+      "Mobile reading-list dialog"
+    ],
+    "previews": [
+      "ui-notebook-preview.png",
+      "ui-notebook-mobile.png"
+    ],
+    "boundaries": [
+      "Personal notes remain in the current browser; no server sync or research evidence promotion.",
+      "Research snapshot and all 33 checked scientific/evidence/data artifacts remain byte-identical.",
+      "No new literature reading, experiment, commit, push or public deployment in this UI iteration."
+    ]
+  }
+}

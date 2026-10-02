@@ -1,0 +1,139 @@
+id,label,type,domain,year,summary
+ai:attention,注意力与可寻址上下文,concept,ai,,以内容相似度形成 token 交互；表征能力、长上下文开销和位置表示须联合评估。
+ai:self_supervised_representation,自监督表征与任务充分性,concept,ai,,通过掩码预测、教师学生一致性等任务学习表示；全局语义与局部细节可能存在目标冲突。
+ai:multimodal_alignment,跨模态对齐与条件接口,concept,ai,,从图文配对检索到任务条件化，将不同观测与语言嵌入建立可使用的对应关系。
+ai:streaming_multimodal,流式多模态与时间对齐,concept,ai,,在异步采样、异速编码和增量生成下处理时间戳、信息到达顺序与首包延迟。
+ai:diffusion,去噪扩散生成,concept,ai,,通过多噪声尺度的去噪学习逆向生成过程；质量、似然与采样成本不是同一指标。
+ai:flow_matching,条件流匹配,concept,ai,,用可采样条件路径的速度监督学习概率流；训练无需模拟轨迹，生成仍需数值积分。
+ai:latent_generative_models,潜空间生成与压缩,concept,ai,,先将高维观测压缩，再学习潜变量分布；压缩节省计算，同时限定可恢复的信息。
+ai:selective_state_space,选择性状态空间与结构化序列计算,concept,ai,,输入依赖的状态更新控制有限记忆，结构化矩阵支持递推和并行分块算法。
+ai:sparse_experts,稀疏专家与条件计算,concept,ai,,仅激活部分专家以扩大总容量；路由质量、负载均衡和通信决定有效成本。
+ai:scaling_laws,经验缩放与资源分配,concept,ai,,在指定数据、优化器和预算下拟合性能随模型及数据规模的变化，不是普适常数。
+ai:data_curation,数据筛选、混合与可追溯评估,concept,ai,,以受控训练比较数据干预；重复、标签偏差、覆盖与验证分布共同定义质量。
+ai:generalization_theory,泛化、归纳偏置与插值,concept,ai,,区别拟合训练数据、同分布泛化与分布外可靠性；参数量本身不足以解释全部行为。
+ai:hardware_aware_systems,硬件感知训练与推理系统,concept,ai,,利用存储层级、异步执行、通信重叠及混合精度改善实际计算，而非只比较 FLOPs。
+ai:compression_and_memory,压缩、记忆与精度预算,concept,ai,,统一考察 KV 压缩、有限状态、潜空间、低精度的资源收益和信息误差。
+ai:reasoning_traces,显式推理轨迹,concept,ai,,将部分任务计算序列化为中间文本；可用于提示、监督和候选选择，但不自动成为内部机制的忠实解释。
+ai:preference_optimization,偏好优化,concept,ai,,根据比较反馈调整策略；偏好来源、参考策略和数据覆盖决定目标含义。
+ai:verifiable_rl,可验证奖励强化学习,concept,ai,,通过答案规则或执行结果形成奖励，优化可采样策略；检验器覆盖与探索支持决定边界。
+ai:process_verification,过程反馈与验证,concept,ai,,对中间决策提供人类、学习模型或算法oracle信号；三类信号的可靠性与成本应分开。
+ai:test_time_compute,推理时计算分配,concept,ai,,在候选生成、修订、搜索和验证之间分配计算，优化特定任务与预算下的成功率。
+ai:tool_agents,工具交互智能体,concept,ai,,以观察—动作闭环维护任务上下文并执行工具，能力属于模型与环境接口组成的系统。
+ai:execution_evaluation,执行与干预评测,concept,ai,,通过测试、终态、过程约束和受控扰动评估实际任务结果，而非只比较生成文本。
+ai:world_models,动作条件世界模型,concept,ai,,学习观察或潜变量转移以支持想象学习或规划；预测分布不天然具有物理或因果真实性。
+ai:embodied_policies,具身与VLA策略,concept,ai,,结合视觉、语言和机器人动作实现闭环控制，训练环境与控制时限是能力组成部分。
+ai:causal_representation,因果表征,concept,ai,,学习支持干预问题的变量与机制，依赖可识别假设和多环境/干预信息。
+ai:calibrated_uncertainty,校准与覆盖,concept,ai,,把预测分数转为可评估的概率或集合保证；须区分边际覆盖、条件覆盖及分布外可靠性。
+ai:continual_adaptation,持续适应,concept,ai,,在序列任务中更新模型并控制遗忘、校准漂移和资源成本，不只保留平均正确率。
+ai:behavioral_safety,行为安全与威胁模型,concept,ai,,在明确定义的触发、分布变化及监督条件下评估不希望行为，区分构造存在性与发生率。
+num:wellposedness,连续问题的适定性,concept,numerics,,先确定函数空间、边界条件、解的意义及数据扰动下的连续依赖。
+num:consistency_stability,一致性、稳定性与收敛,concept,numerics,,一致性控制局部缺陷，稳定性控制传播；等价定理只在所述线性适定框架内使用。
+num:finite_difference,有限差分,concept,numerics,,用局部差分近似导数，分析截断误差、数值色散、CFL及边界闭合。
+num:finite_volume,有限体积,concept,numerics,,推进控制体平均，以相邻单元共享数值通量实现局部守恒。
+num:finite_element,有限元与变分逼近,concept,numerics,,弱形式、有限维试验空间与离散稳定性共同决定近似质量。
+num:discontinuous_galerkin,间断Galerkin,concept,numerics,,单元内高阶多项式与面通量/罚项结合；守恒、稳定和限制器需分别设计。
+num:spectral,谱与伪谱方法,concept,numerics,,全局基表示适合可利用规则性的问题；光滑度、边界和混叠限制高阶收益。
+num:time_integration,时间离散,concept,numerics,,空间离散后的ODE/DAE仍须设计精度、绝对稳定域、误差控制与求解容差。
+num:stiffness_imex,刚性与IMEX,concept,numerics,,把快慢或刚性/非刚性作用分开；隐式部分仍需代数求解，显式部分仍有限制。
+num:symplectic,几何与辛积分,concept,numerics,,对Hamilton结构保辛；长期近能量守恒需要步长、光滑性等条件，不等于每步精确保能。
+num:krylov,Krylov子空间,concept,numerics,,在由残差和算子作用生成的空间内迭代求解；CG与GMRES的适用结构不同。
+num:preconditioning,预条件,concept,numerics,,改变迭代问题的有效谱/几何，同时控制构建、应用和通信成本。
+num:multigrid,多重网格,concept,numerics,,平滑器与粗空间分工处理误差；粗空间须捕捉平滑器难以消除的分量。
+num:domain_decomposition,区域分解,concept,numerics,,局部求解与界面/粗空间耦合，使数学分解和并行分布协同。
+num:newton,非线性与Newton–Krylov,concept,numerics,,线性化、全局化与不精确内层求解共同组成非线性算法。
+num:conservation_entropy,守恒、熵与物理解选择,concept,numerics,,通量守恒控制账本；熵条件/耗散结构用于排除非物理弱解。
+num:mixed_inf_sup,混合形式与inf–sup,concept,numerics,,速度压力等不同变量空间必须兼容；稳定常数不能随网格退化。
+num:compatible_feec,相容离散与FEEC,concept,numerics,,通过离散复形和有界交换投影保存连续问题的微分结构。
+num:geometry_mesh,几何与网格,concept,numerics,,几何映射、单元质量、边界近似和悬挂节点是误差与稳定性的一部分。
+num:amr,自适应网格与多层同步,concept,numerics,,依据误差/物理指标局部细化；粗细通量、时间子循环和并行负载需一致。
+num:aposteriori_dwr,后验估计与目标导向适配,concept,numerics,,计算后估计误差；用伴随敏感度给局部残差加权以控制目标泛函。
+num:multiscale_ap,多尺度与渐近保持,concept,numerics,,固定离散尺度下，小物理参数极限应给出正确宏观离散；AP与统一高阶精度不同。
+num:inverse_adjoint,反问题、正则化与伴随,concept,numerics,,从观测推断参数，需辨识性和先验；伴随控制多参数梯度的求解成本。
+num:uq,不确定性量化与多层采样,concept,numerics,,分开输入不确定性、模型误差、离散偏差与采样方差。
+num:rom,降阶与投影,concept,numerics,,离线构造低维空间，再投影动力学；快照压缩误差不等于在线演化误差。
+num:matrix_free_hpc,无矩阵算子与异构HPC,concept,numerics,,以算子作用代替全矩阵存储，联合优化离散、预条件、数据布局与通信。
+bridge:adaptive_compute,误差约束下分配计算,concept,bridge,,用经过检验的误差与成本信号选择预测、修正和细化。
+bridge:structure_representation,跨离散的物理表示,concept,bridge,,把采样一致性与兼容空间、投影和物理量连接。
+bridge:solver_components,可迁移求解器组件,concept,bridge,,共享预训练作用于预条件、粗空间、离散规则等接口。
+bridge:closed_loop,闭环误差分布,concept,bridge,,修正会改变未来状态，训练和测试应覆盖这种反馈。
+bridge:compositional_physics,物理机制组合,concept,bridge,,专家、算子分裂与区域耦合需有清楚的接口条件。
+bridge:probabilistic_inverse,概率逆问题,concept,bridge,,条件生成的目标是明确定义的后验及可验证校准。
+bridge:data_error_budget,数值误差与数据价值,concept,bridge,,数据量、独立信息、覆盖与标签数值误差分别度量。
+bridge:algorithm_discovery,可审查算法发现,concept,bridge,,生成受限程序并通过独立验证器、反例和分析筛选。
+bridge:gradient_interface,梯度与逆设计接口,concept,bridge,,前向准确、程序导数和真实优化效果分开验证。
+ai:symbolic_search_planning,符号、搜索与规划,concept,ai,,显式表示状态、约束和规则，在候选空间内推断与规划。
+ai:probabilistic_inference,概率建模与推断,concept,ai,,明确随机变量、先验、观测与条件依赖。
+ai:statistical_learning,统计学习与泛化,concept,ai,,从有限样本学习，研究归纳偏置、正则化、泛化和分布变化。
+arxiv:1706.03762,Attention Is All You Need,source,source,2017,以自注意力和前馈层构造编码器—解码器；解码器以因果掩码保持自回归。；注意力按查询、键匹配聚合值，多头提供多个投影子空间。
+arxiv:2111.06377,Masked Autoencoders Are Scalable Vision Learners,source,source,2021,MAE 用高比例随机遮挡和非对称编码器—解码器重建缺失像素。；编码器只处理可见 patch，轻量解码器在训练时恢复完整序列。
+arxiv:2508.10104,DINOv3,source,source,2025,长程训练中全局分类表征提升可伴随局部稠密特征退化。；Gram anchoring 约束学生与早期教师的归一化 patch 相似性矩阵，后续周期更新 Gram 教师。
+arxiv:2103.00020,Learning Transferable Visual Models From Natural Language Supervision,source,source,2021,图像与文本分别编码，批内真实配对用对称交叉熵进行对比学习。；文本描述提供开放词汇条件，预训练侧重配对识别而非逐词重建。
+arxiv:2212.04356,Robust Speech Recognition via Large-Scale Weak Supervision,source,source,2022,Whisper 以音频—转录弱监督训练标准编码器—解码器，任务和时间戳以 token 指定。；数据处理关注转录质量、语言覆盖和重复；作者报告长音频漏词、循环与幻觉等失败。
+arxiv:2509.17765,Qwen3-Omni Technical Report,source,source,2025,Thinker—Talker 系统联合文本、视觉与音频条件，以时间对齐位置表示处理音视频。；RVQ 多码本、MTP 残差码本预测和因果卷积波形解码支持逐帧流式输出。
+arxiv:2604.15804,Qwen3.5-Omni Technical Report,source,source,2026,在 Qwen3-Omni 基础上加入显式时间戳与 ARIA 自适应文本—语音交错约束，处理异速 token 对齐。；音频编码 token 率降低；Hybrid MoE 和 Gated Delta Net 共同服务长序列效率。；预训练分为编码器对齐、全参数一般阶段、长上下文阶段。
+arxiv:2006.11239,Denoising Diffusion Probabilistic Models,source,source,2020,固定正向高斯加噪允许直接采样任意噪声时刻；逆过程可参数化为噪声预测。；简化均方误差重加权变分目标，训练与多步生成有不同计算形态。
+arxiv:2210.02747,Flow Matching for Generative Modeling,source,source,2022,以条件路径的速度回归替代不可计算的边缘速度目标；条件与边缘目标梯度在原文假设下相同。；学习的向量场通过连续流传输分布，生成阶段仍需求解 ODE。；高斯条件概率路径包含扩散过程对应路径作为特例，亦允许其他路径设计。
+arxiv:2212.09748,Scalable Diffusion Models with Transformers,source,source,2022,DiT 把 VAE 潜变量 patch 化，以 Transformer 预测噪声及协方差。；比较条件注入方式，adaLN-Zero 用条件化仿射与零初始化残差调制；patch 尺寸改变 token 数及计算。
+arxiv:2312.00752,Mamba: Linear-Time Sequence Modeling with Selective State Spaces,source,source,2023,使状态空间参数依赖输入，控制哪些上下文信息进入或保留于状态。；选择性扫描结合融合、并行 scan 与重计算，避免把全部扩张状态写入显存。
+arxiv:2405.21060,Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality,source,source,2024,标量乘单位阵形式的 SSM 与 1-半可分掩码的结构化注意力存在精确对偶。；同一结构存在递推线性形式和两两交互二次形式，为分块实现提供结构。
+arxiv:2412.19437,DeepSeek-V3 Technical Report,source,source,2024,MLA 联合压缩 K/V 缓存；细粒度路由专家与共享专家分离总容量和激活计算。；路由偏置调整负载，仍有较小的序列级均衡辅助损失。；MTP 是额外训练目标，也可用于推测解码；FP8 训练保留敏感部分的较高精度。
+arxiv:2203.15556,Training Compute-Optimal Large Language Models,source,source,2022,固定训练 FLOPs 时模型规模与训练 token 需联合优化；作者多种拟合得到近似共同扩大的配置。；参数化损失把规模、数据与不可约项组合，用经验拟合预测计算有效前沿。
+arxiv:2406.11794,DataComp-LM: In search of the next generation of training sets for language models,source,source,2024,固定各尺度训练配方，让数据过滤与混合成为主要受控变量。；区分候选池、实际训练 token 和下游指标，并提供污染核验工具。
+url:qualitypajama-iclr2026,How Text Quality Interventions Reshape Neural Scaling Laws for LLMs: Empirical Study,source,source,2026,23 种干预数据集、2000 余模型的经验分析发现数据质量同时改变缩放律系数与指数。；数据策略排序以及模型/token 最优分配依赖资源尺度与验证域。
+arxiv:2407.08608,FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision,source,source,2024,FlashAttention-3 利用 Hopper 异步数据搬运、warp specialization 与矩阵乘/softmax 调度重叠。；以局部 softmax 避免中间完整矩阵的显存读写；FP8 需额外布局与数值处理。
+arxiv:1812.11118,Reconciling modern machine learning practice and the bias-variance trade-off,source,source,2018,插值阈值附近的测试风险峰值可接续更高容量区的第二次下降。；作者用归纳偏置和较小函数范数讨论为何零训练误差不足以判定泛化。
+arxiv:2201.11903,Chain-of-Thought Prompting Elicits Reasoning in Large Language Models,source,source,2022,通过少样本推理轨迹提示把计算展开为中间文本；无需为该提示更新模型权重。
+arxiv:2305.18290,Direct Preference Optimization: Your Language Model is Secretly a Reward Model,source,source,2023,用KL约束奖励最优化的策略—奖励变换，直接拟合成对偏好，省去显式奖励模型与在线RL循环。
+arxiv:2305.20050,Let's Verify Step by Step,source,source,2023,比较过程和结果监督的奖励模型，在固定生成器候选重排中评估；PRM监督对步骤评价。
+arxiv:2408.03314,Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters,source,source,2024,区分提议分布修订与验证器搜索，按题目难度配置推理计算；追加推理与预训练的收益依任务与调用负载变化。
+arxiv:2501.12948,DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning,source,source,2025,R1-Zero从预训练基座直接进行GRPO，准确性与格式规则奖励驱动更新；R1另含冷启动、SFT和多阶段RL。
+arxiv:2504.13837,Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?,source,source,2025,用pass@k比较基座与RL模型，所测条件下小k成功率提升可伴随大k可解题覆盖下降。
+arxiv:2605.10325,Verifiable Process Rewards for Agentic Reasoning,source,source,2026,用搜索、约束或后验算法构造逐回合奖励，改善结构化游戏中的信用分配；近似验证器误差影响梯度偏差。；定向复核确认v2保留本文所用命题1–3前提与公式；表1评估说明由3次×100局改为5次×1024局，表2 MATH-500/GPQA-D重复次数由5改为10并更正部分数值。；v2表2三种VPR模型平均分62.17/62.35/62.59均高于基座60.92；这不是所有单项任务均提高。
+arxiv:2606.09380,Reasoning Arena: Trace Tournaments When Verifiable Rewards Fall Short,source,source,2026,相同奖励组的组内优势为零；仅将这些组路由给轨迹比较评审，使用动态对手与Bradley–Terry排序，底层为CISPO。
+arxiv:2210.03629,ReAct: Synergizing Reasoning and Acting in Language Models,source,source,2022,交替产生文本推理、工具动作和环境观察，用外部反馈更新后续决策上下文。
+arxiv:2310.06770,SWE-bench: Can Language Models Resolve Real-World GitHub Issues?,source,source,2023,以真实issue、历史仓库状态和测试执行评估补丁；v1含12个Python仓库的2294个任务。
+arxiv:2404.07972,OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments,source,source,2024,将计算机操作形式化为POMDP，支持虚拟机初始化、动作执行与任务专用终态检查；v1为369任务。
+arxiv:2301.04104,Mastering Diverse Domains through World Models,source,source,2023,DreamerV3用RSSM和想象轨迹训练actor–critic，借助尺度处理与KL稳定化复用超参数；交互时actor选动作而不做前瞻搜索。
+arxiv:2501.10100,Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics,source,source,2025,历史上下文与预测反馈的双自回归训练面向部分可观测机器人动力学；MBPO-PPO利用模型轨迹更新策略，展示ANYmal D部署。
+arxiv:2504.16054,π0.5: a Vision-Language-Action Model with Open-World Generalization,source,source,2025,跨机器人、环境、网络与高层语义数据联合训练；同一模型先推子任务，再以动作expert生成连续动作，评估未见家庭环境。
+arxiv:2102.11107,Towards Causal Representation Learning,source,source,2021,区分观测、干预、反事实；提出独立机制和稀疏机制变化视角，将学习变量与学习因果结构结合。
+arxiv:2107.07511,A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification,source,source,2021,用独立校准数据的非一致性分数分位数构造预测集合；交换性下有有限样本边际覆盖。
+arxiv:2604.23987,Continual Calibration: Coverage Can Collapse Before Accuracy in Lifelong LLM Fine-Tuning,source,source,2026,持续微调时分数分布可漂移而argmax近似不变；保留每任务校准缓冲并按当前模型重算阈值，以恢复任务内覆盖。
+arxiv:2401.05566,Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training,source,source,2024,人工构造的条件后门可在所测安全微调和对抗训练后保留，触发分布与通常评测分布的区别影响结论。
+url:trefethen-pdetext,Finite Difference and Spectral Methods for Ordinary and Partial Differential Equations,source,source,1996,Lax等价结论要求线性且连续初值问题适定；一致本身不保证稳定。；谱方法利用全局函数表示，边界处理可限制稳定性和时间步。
+url:leveque-am574-2011,AMath 574: Conservation Laws and Finite Volume Methods — lectures 5 and 15,source,source,2011,有限体积以界面通量更新单元平均。；守恒一致格式若收敛，其极限是弱解；该结论不自行保证收敛或唯一熵解。
+doi:10.1023/A:1012873910884,Runge–Kutta Discontinuous Galerkin Methods for Convection-Dominated Problems,source,source,2001,RKDG组合间断有限元、数值通量和适当RK时间步。；单元局部性方便高阶和并行，但非线性对流问题仍需稳定性设计。
+arxiv:0906.4325,Finite element exterior calculus: from Hodge theory to numerical stability,source,source,2010,混合适定性结合核上强制性和inf–sup条件。；FEEC以子复形与有界交换投影把连续结构传给离散问题。
+doi:10.1016/S0168-9274(97)00056-1,Implicit-Explicit Runge-Kutta Methods for Time-Dependent Partial Differential Equations,source,source,1997,为不同类型项采用隐式/显式时间处理。；论文比较IMEX RK与已有多步方法的稳定区域，适用对象包括对流扩散问题。
+doi:10.1007/978-3-319-05254-0_10,Challenges in Geometric Numerical Integration,source,source,2014,辛方法的修正方程保有Hamilton结构，可解释有条件的长时间行为。；步长乘最高频率不小时，经典后向误差论证不能直接沿用。
+url:saad-iterative-2e,"Iterative Methods for Sparse Linear Systems, Second Edition",source,source,2003,GMRES在Krylov仿射空间中最小化残差。；预条件与区域分解改变有效迭代问题；界面耦合不能因局部求解而省略。
+arxiv:1611.01917,Algebraic Multigrid Methods,source,source,2017,平滑器和粗空间协同；好的粗空间针对难以被平滑的误差。；网格无关收敛和系数/各向异性鲁棒性需要适当假设与粗空间构造。
+doi:10.1017/S0962492902000156,Entropy stability theory for difference approximations of nonlinear conservation laws and related time-dependent problems,source,source,2003,以熵保守通量为基准分析适当数值黏性与熵稳定。；守恒和熵稳定是不同约束。
+doi:10.1017/S0962492901000010,An optimal control approach to a posteriori error estimation in finite element methods,source,source,2001,DWR用近似伴随提供局部残差权重，围绕目标量构造网格适配反馈。
+arxiv:2112.05920,Asymptotic-Preserving Schemes for Multiscale Physical Problems,source,source,2022,AP要求固定数值尺度下小参数极限给出宏观问题的一致稳定离散。；统一误差结论还用到微宏误差和离散误差估计等假设。
+doi:10.1017/S0962492910000061,Inverse problems: A Bayesian perspective,source,source,2010,函数空间先验与似然共同定义后验。；后验存在和对数据的稳定依赖要验证势函数与先验条件。
+doi:10.1137/130932715,A Survey of Projection-Based Model Reduction Methods for Parametric Dynamical Systems,source,source,2015,低维试验/检验空间投影得到小系统。；参数依赖、稳定性和在线算子评估是降阶问题的组成部分。
+doi:10.1017/S096249291500001X,Multilevel Monte Carlo methods,source,source,2015,MLMC通过耦合粗细样本和望远镜恒等式降低估计期望的成本。；复杂度由偏差、层差方差和单样本成本的衰减/增长率共同决定。
+arxiv:2403.12179,AMReX and pyAMReX: Looking beyond the exascale computing project,source,source,2024,AMR计算包含细化、层间插值/平均和粗细通量校正。；块尺度、核启动、内存与通信组织决定异构平台成本。
+arxiv:2405.18982,Multilevel Interior Penalty Methods on GPUs,source,source,2024,结合高阶DG、无矩阵作用、顶点patch平滑与GPU布局。；算子与预条件都需优化，不能只加速一次矩阵向量乘。
+arxiv:2603.09038,Accelerating High-Order Finite Element Simulations at Extreme Scale with FP64 Tensor Cores,source,source,2026,将高阶有限元张量收缩映射为小矩阵乘以利用FP64 tensor cores。；保留双精度的算法/硬件协同也是现代传统数值研究，而非只能依靠低精度或神经代理。
+url:petsc-snes-manual,PETSc SNES: Nonlinear Solvers — official manual,source,source,,非线性求解包含残差/Jacobian接口、Newton更新和线搜索/信赖域全局化。；内层线性系统可用预条件Krylov方法，Jacobian作用可与预条件矩阵分开。
+url:sundials-arkode-7.7,SUNDIALS ARKODE 7.7.0: Mathematical Considerations and Butcher Tables,source,source,,误差控制不等于已知显式稳定限制，隐式阶段仍包含代数求解。；文档区分显式、隐式、IMEX、多速率与辛分裂方法，A稳定与L稳定不同。
+arxiv:2506.13131,AlphaEvolve: A coding agent for scientific and algorithmic discovery,source,source,2025,语言模型生成代码修改，自动评估与演化数据库形成反馈循环。；评价可包含多个指标及由简到难的筛选。
+doi:10.1038/s41586-023-06747-5,Solving olympiad geometry without human demonstrations,source,source,2024,合成数据训练的语言模型与符号推导引擎协作，处理平面几何证明。
+arxiv:1902.10248,Learning to Optimize Multigrid PDE Solvers,source,source,2019,学习系数到prolongation的映射，以误差传播矩阵范数构造训练目标。；在二维扩散算例中研究网格、边界与系数分布迁移。
+arxiv:1808.04930,Data-driven discretization: machine learning for coarse graining of partial differential equations,source,source,2018,学习局部场依赖的离散权重，结合通量、守恒及多项式精度约束。
+arxiv:2007.00016,Solver-in-the-Loop: Learning from Differentiable Physics to Interact with Iterative PDE-Solvers,source,source,2020,让修正模型通过数值演化看到自身改变的输入分布。；对随机外力问题，更长前瞻的收益受到未来不可预测性的限制。
+arxiv:2507.15452,Neural Preconditioning via Krylov Subspace Geometry,source,source,2025,静态训练后通过FGMRES展开优化与残差相关的子空间几何。；实证检验3D–1D混合维度问题的迭代次数。
+arxiv:2502.19611,PRDP: Progressively Refined Differentiable Physics,source,source,2025,依据验证表现逐步增加内层物理求解迭代数，平衡训练成本与精度。
+arxiv:2606.27895,Mosaic: A Benchmark Suite for Differentiable Physics Solvers,source,source,2026,统一前向/VJP接口，分开评估梯度、成本、条件数和任务兼容性。；部分任务中内存和结构支持先于梯度误差成为限制。
+url:aima-contents,Artificial Intelligence: A Modern Approach — Full Table of Contents,source,source,,AI的范围包含搜索、逻辑、规划、概率推断、学习与决策，不能以生成式模型代替整个学科。
+hypothesis:X1,误差驱动的计算分配,hypothesis,hypothesis,,同容差下，自适应修正能否降低总成本与失败尾部？
+hypothesis:X2,保留物理结构的表示,hypothesis,hypothesis,,跨采样一致性能否在新网格上保留物理量与动力学？
+hypothesis:X3,求解器内部的共享预训练,hypothesis,hypothesis,,不同任务能否复用难消除误差模式与粗空间？
+hypothesis:X4,适应自身误差的闭环,hypothesis,hypothesis,,交互训练能否降低部署时的分布漂移？
+hypothesis:X5,按物理机制组合专家,hypothesis,hypothesis,,专家承担物理子机制，还是只识别数据集？
+hypothesis:X6,有明确含义的概率预测,hypothesis,hypothesis,,条件生成能否刻画可检验的后验与目标量不确定性？
+hypothesis:X7,数据价值与数值误差预算,hypothesis,hypothesis,,更多数据带来新信息，还是重复了同一求解器偏差？
+hypothesis:X8,可审查的算法发现,hypothesis,hypothesis,,受限程序搜索能否发现通过独立检验的数值组件？
+hypothesis:X9,从前向预测到逆设计,hypothesis,hypothesis,,前向准确能否转化为可信梯度和真实设计收益？

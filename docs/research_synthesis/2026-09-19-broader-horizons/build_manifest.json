@@ -1,0 +1,65 @@
+{
+  "schema_version": "research-horizons-build-v1",
+  "snapshot_date": "2026-09-19",
+  "source_head": "428741f55fe2301ea7ca3029fedc3e913b07b2cc",
+  "inputs": {
+    "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations_evidence.json": "8731b1bad1a448f4c8141ec2b1e5102d8421ed73bb18218275b82ef84ba0c308",
+    "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems_evidence.json": "7609e27e143ca4ad5836d9bcd43c8ef3e56158fdb6bb8056b532b129c543e70b",
+    "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics_evidence.json": "e316d3d298cce023dee111c3fcdadbed7d3f2b0d649ba6c1b3114121929ea246",
+    "docs/research_synthesis/2026-09-19-broader-horizons/bridge_evidence.json": "e30ed37fd0ebcbaa45c32e875b923879b6d8f48b49ae15b4b6c5660aabc88216",
+    "docs/research_synthesis/2026-09-19-broader-horizons/RESEARCH_HORIZONS.zh-CN.md": "8dd209e4f23b78ccdf8199a6809abaf276f5d833d00c3c93c6460abd1729909b",
+    "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations.md": "e5a2462e7d14b79983bb3b7aa277203e635292f2e43f74895b9922ee2a902baf",
+    "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems.md": "aa9c185535307e3a7de41417889f815a09d9c795422838feb1836dfe59f905c4",
+    "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics.md": "2dcdc5e9c6d2569bc5d710e2fd9110a91e98494968f2d4219e7a29626051d788",
+    "docs/research_synthesis/2026-09-19-broader-horizons/cross_domain.md": "b291a17db11b8e617e81dfb993e06c92117e4bed18a23de27639e9f0986addf3",
+    "docs/research_synthesis/2026-09-19-broader-horizons/learning_roadmap.md": "8801fb135a63d3111492ceeec86f9f2e9b4ca11e46022fab2aa49d57943740e9",
+    "scripts/research_horizons.html": "50f05a50d8f1dab11cee73afcafe9a6ff4ef72968d556947dc8336c9683d29b3",
+    "scripts/research_notebook.js": "e41ae97f49b577dd86026e8ff8714fff14de8f66c802a935e8fb4473e75d0aa6",
+    "scripts/research_notebook.css": "60bbd2cfdb82147799b6398631982761e025455daf623f12a8ac817a396bc307",
+    "scripts/build_research_horizons.py": "32d3968700940f8425e8e88c5821a85fcbc6e85e703a44ce879b1767d13c12d3"
+  },
+  "outputs": {
+    "coverage.md": "2ac99bd268faca0f98c2a22851dceea444e2ad9011d60e7315689fec5101f66b",
+    "evidence_catalog.json": "8b0f4bd12a9935faa6e7a851f6dbd38cf295000981d3a4333e1b6fd1506c5ea2",
+    "knowledge_graph.json": "8a8f9b0534b05d30cf72a72c3900ff33997fc4d70ac3b76cbcb256ee3c1a14b8",
+    "nodes.csv": "7c633f28b291396f3ab069f1e95e124fc928a9e4b790d2d277fc5fbc010ef706",
+    "edges.csv": "bf1e48e54bae58df161915ae081dced84924c59a707396699542572f8ab67e1f",
+    "index.html": "25b470a84477f6b24fb270c25fffc59413f7d8c42058ed6f2784cf478f8b094c"
+  },
+  "stats": {
+    "sources": 64,
+    "concepts": 65,
+    "hypotheses": 9,
+    "nodes": 138,
+    "edges": 296,
+    "levels": {
+      "fulltext_sections": 56,
+      "book_sections": 2,
+      "abstract": 3,
+      "official_documentation": 3
+    },
+    "tracks": {
+      "ai_foundations": {
+        "fulltext_sections": 18
+      },
+      "ai_reasoning_systems": {
+        "fulltext_sections": 18
+      },
+      "pde_numerics": {
+        "book_sections": 2,
+        "fulltext_sections": 13,
+        "abstract": 2,
+        "official_documentation": 2
+      },
+      "bridge": {
+        "fulltext_sections": 7,
+        "abstract": 1,
+        "official_documentation": 1
+      }
+    }
+  },
+  "dependencies": {
+    "Python-Markdown": "3.3.4"
+  },
+  "boundary": "Local snapshot; no registry changes, publication, experiment or replication implied."
+}

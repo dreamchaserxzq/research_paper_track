@@ -1,0 +1,1234 @@
+{
+  "track": "ai_foundations",
+  "sources": [
+    {
+      "id": "arxiv:1706.03762",
+      "title": "Attention Is All You Need",
+      "year": 2017,
+      "url": "https://arxiv.org/html/1706.03762v7",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.1 Encoder and Decoder Stacks",
+        "§3.2 Attention（含 scaled dot-product 与 multi-head）"
+      ],
+      "supported_points": [
+        "以自注意力和前馈层构造编码器—解码器；解码器以因果掩码保持自回归。",
+        "注意力按查询、键匹配聚合值，多头提供多个投影子空间。"
+      ],
+      "limitations": [
+        "原论文机器翻译实验不能代表全部任务或当前模型。",
+        "普通稠密注意力的 token 两两交互随长度二次增长；语义 token 的位置编码不自动包含物理几何。"
+      ],
+      "concept_ids": [
+        "ai:attention",
+        "ai:multimodal_alignment"
+      ],
+      "first_publication_date": "2017-06-12",
+      "selected_version": "v7"
+    },
+    {
+      "id": "arxiv:2111.06377",
+      "title": "Masked Autoencoders Are Scalable Vision Learners",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2111.06377v3",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3 Approach",
+        "§4.1 Main Properties（遮挡比例、解码器与重建目标消融）"
+      ],
+      "supported_points": [
+        "MAE 用高比例随机遮挡和非对称编码器—解码器重建缺失像素。",
+        "编码器只处理可见 patch，轻量解码器在训练时恢复完整序列。"
+      ],
+      "limitations": [
+        "重建目标只是下游表征的代理任务；图像冗余与物理场可观测性并不等同。",
+        "高遮挡比例属于所研究图像任务，不能直接作为其他模态最优值。"
+      ],
+      "concept_ids": [
+        "ai:self_supervised_representation",
+        "ai:compression_and_memory"
+      ],
+      "first_publication_date": "2021-11-11",
+      "selected_version": "v3"
+    },
+    {
+      "id": "arxiv:2508.10104",
+      "title": "DINOv3",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2508.10104v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.2 Large-Scale Self-Supervised Learning",
+        "§4.1 Loss of Patch-Level Consistency Over Training",
+        "§4.2 Gram Anchoring Objective"
+      ],
+      "supported_points": [
+        "长程训练中全局分类表征提升可伴随局部稠密特征退化。",
+        "Gram anchoring 约束学生与早期教师的归一化 patch 相似性矩阵，后续周期更新 Gram 教师。"
+      ],
+      "limitations": [
+        "局部关系约束不是物理守恒或精确空间等变性。",
+        "原文的视觉迁移实验不能证明任意科学场局部结构均会改善。"
+      ],
+      "concept_ids": [
+        "ai:self_supervised_representation",
+        "ai:generalization_theory"
+      ],
+      "first_publication_date": "2025-08-13",
+      "selected_version": "v1"
+    },
+    {
+      "id": "arxiv:2103.00020",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2103.00020v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1 Natural Language Supervision",
+        "§2.2 Creating a Sufficiently Large Dataset",
+        "§2.3 Selecting an Efficient Pre-Training Method",
+        "§2.4 Choosing and Scaling a Model"
+      ],
+      "supported_points": [
+        "图像与文本分别编码，批内真实配对用对称交叉熵进行对比学习。",
+        "文本描述提供开放词汇条件，预训练侧重配对识别而非逐词重建。"
+      ],
+      "limitations": [
+        "配对关联不等于几何、计数或因果变量的精确对齐。",
+        "互联网图文采样和文本描述限制语义覆盖；不能由零样本名称推断无分布依赖。"
+      ],
+      "concept_ids": [
+        "ai:multimodal_alignment",
+        "ai:self_supervised_representation",
+        "ai:data_curation"
+      ],
+      "first_publication_date": "2021-02-26",
+      "selected_version": "v1"
+    },
+    {
+      "id": "arxiv:2212.04356",
+      "title": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2212.04356v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1 Data Processing",
+        "§2.2 Model",
+        "§2.3 Multitask Format",
+        "§2.4 Training Details",
+        "§6 Limitations and Future Work"
+      ],
+      "supported_points": [
+        "Whisper 以音频—转录弱监督训练标准编码器—解码器，任务和时间戳以 token 指定。",
+        "数据处理关注转录质量、语言覆盖和重复；作者报告长音频漏词、循环与幻觉等失败。"
+      ],
+      "limitations": [
+        "这项工作不是纯自监督音频表征学习。",
+        "作者区分零样本评估与微调；长程音频可靠性不能由平均词错率独立证明。"
+      ],
+      "concept_ids": [
+        "ai:multimodal_alignment",
+        "ai:streaming_multimodal",
+        "ai:data_curation"
+      ],
+      "first_publication_date": "2022-12-06",
+      "selected_version": "v1"
+    },
+    {
+      "id": "arxiv:2509.17765",
+      "title": "Qwen3-Omni Technical Report",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2509.17765v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1 Overview",
+        "§2.2 Audio Transformer",
+        "§2.3 Perceivation / TM-RoPE",
+        "§2.4 Speech Generation",
+        "§2.5 Designs for Streaming and Concurrency"
+      ],
+      "supported_points": [
+        "Thinker—Talker 系统联合文本、视觉与音频条件，以时间对齐位置表示处理音视频。",
+        "RVQ 多码本、MTP 残差码本预测和因果卷积波形解码支持逐帧流式输出。"
+      ],
+      "limitations": [
+        "接收图像和视频不意味着生成图像和视频；主要输出为文本和语音。",
+        "首包延迟是给定部署的作者报告；论文不同段落对高层特征的概括有简略之处，应以具体输入接口为准。"
+      ],
+      "concept_ids": [
+        "ai:streaming_multimodal",
+        "ai:multimodal_alignment",
+        "ai:sparse_experts",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2025-09-22",
+      "selected_version": "v1"
+    },
+    {
+      "id": "arxiv:2604.15804",
+      "title": "Qwen3.5-Omni Technical Report",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2604.15804v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1 Overview",
+        "§2.2 Audio Transformer",
+        "§2.3 Audio-visual Timestamp",
+        "§2.4 Speech Generation / ARIA",
+        "§2.5 Designs for Streaming and Concurrency",
+        "§3 Pretraining"
+      ],
+      "supported_points": [
+        "在 Qwen3-Omni 基础上加入显式时间戳与 ARIA 自适应文本—语音交错约束，处理异速 token 对齐。",
+        "音频编码 token 率降低；Hybrid MoE 和 Gated Delta Net 共同服务长序列效率。",
+        "预训练分为编码器对齐、全参数一般阶段、长上下文阶段。"
+      ],
+      "limitations": [
+        "作者明确说明 Plus/Flash 使用不同资源配置，其延迟不是严格横向可比。",
+        "数据规模、能力与长上下文上限为作者报告，未复现；本次未验证完整训练数据及权重可复现性。",
+        "2026-04 报告不代表已穷尽截至 2026-09-19 的全部多模态进展。"
+      ],
+      "concept_ids": [
+        "ai:streaming_multimodal",
+        "ai:multimodal_alignment",
+        "ai:sparse_experts",
+        "ai:compression_and_memory",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2026-04-17",
+      "selected_version": "v2"
+    },
+    {
+      "id": "arxiv:2006.11239",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "year": 2020,
+      "url": "https://arxiv.org/html/2006.11239v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2 Background",
+        "§3.2 Reverse Process",
+        "§3.4 Simplified Training Objective",
+        "Algorithms 1–2"
+      ],
+      "supported_points": [
+        "固定正向高斯加噪允许直接采样任意噪声时刻；逆过程可参数化为噪声预测。",
+        "简化均方误差重加权变分目标，训练与多步生成有不同计算形态。"
+      ],
+      "limitations": [
+        "图像样本质量不等价于精确似然或约束满足。",
+        "噪声过程的时间参数不等于物理演化时间。"
+      ],
+      "concept_ids": [
+        "ai:diffusion",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2020-06-19",
+      "selected_version": "v2"
+    },
+    {
+      "id": "arxiv:2210.02747",
+      "title": "Flow Matching for Generative Modeling",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2210.02747v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3 Flow Matching",
+        "§3.1 Conditional Probability Paths and Vector Fields",
+        "§3.2 Conditional Flow Matching / Theorems 1–2",
+        "§4 / §4.1 Gaussian Conditional Paths（含 VE/VP diffusion 特例）"
+      ],
+      "supported_points": [
+        "以条件路径的速度回归替代不可计算的边缘速度目标；条件与边缘目标梯度在原文假设下相同。",
+        "学习的向量场通过连续流传输分布，生成阶段仍需求解 ODE。",
+        "高斯条件概率路径包含扩散过程对应路径作为特例，亦允许其他路径设计。"
+      ],
+      "limitations": [
+        "条件目标等价具有密度与可积等正则条件，不代表有限模型或有限数据下无误差。",
+        "simulation-free 指训练，不是生成不需数值求解；概率流不是被观测系统的动力学。"
+      ],
+      "concept_ids": [
+        "ai:flow_matching",
+        "ai:diffusion",
+        "ai:latent_generative_models"
+      ],
+      "first_publication_date": "2022-10-06",
+      "selected_version": "v2"
+    },
+    {
+      "id": "arxiv:2212.09748",
+      "title": "Scalable Diffusion Models with Transformers",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2212.09748v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.1 Preliminaries",
+        "§3.2 Diffusion Transformer Design Space"
+      ],
+      "supported_points": [
+        "DiT 把 VAE 潜变量 patch 化，以 Transformer 预测噪声及协方差。",
+        "比较条件注入方式，adaLN-Zero 用条件化仿射与零初始化残差调制；patch 尺寸改变 token 数及计算。"
+      ],
+      "limitations": [
+        "VAE 压缩质量构成生成上限的一部分。",
+        "架构可与不同生成目标组合，原文扩散实验不能直接证明任意流匹配或科学任务收益。"
+      ],
+      "concept_ids": [
+        "ai:latent_generative_models",
+        "ai:diffusion",
+        "ai:attention",
+        "ai:compression_and_memory"
+      ],
+      "first_publication_date": "2022-12-19",
+      "selected_version": "v2"
+    },
+    {
+      "id": "arxiv:2312.00752",
+      "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2312.00752v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.1 Selection as a Means of Compression",
+        "§3.2 Improving SSMs with Selection",
+        "§3.3 Efficient Implementation of Selective SSMs"
+      ],
+      "supported_points": [
+        "使状态空间参数依赖输入，控制哪些上下文信息进入或保留于状态。",
+        "选择性扫描结合融合、并行 scan 与重计算，避免把全部扩张状态写入显存。"
+      ],
+      "limitations": [
+        "固定大小状态是信息压缩；线性序列成本不意味着保留所有任意上下文信息。",
+        "SSM 隐状态不是自动可识别的物理状态，序列化顺序会影响多维数据的归纳偏置。"
+      ],
+      "concept_ids": [
+        "ai:selective_state_space",
+        "ai:compression_and_memory",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2023-12-01",
+      "selected_version": "v2"
+    },
+    {
+      "id": "arxiv:2405.21060",
+      "title": "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2405.21060v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§5.1 Scalar-Identity Structured State Space Models",
+        "§5.2 1-Semiseparable Structured Masked Attention",
+        "§5.3 Structured State-Space Duality"
+      ],
+      "supported_points": [
+        "标量乘单位阵形式的 SSM 与 1-半可分掩码的结构化注意力存在精确对偶。",
+        "同一结构存在递推线性形式和两两交互二次形式，为分块实现提供结构。"
+      ],
+      "limitations": [
+        "标题不能解释为任意 softmax Transformer 与任意 SSM 全等。",
+        "理论等价的子类、具体 Mamba-2 架构与实际硬件速度是不同论断。"
+      ],
+      "concept_ids": [
+        "ai:selective_state_space",
+        "ai:attention",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2024-05-31",
+      "selected_version": "v1"
+    },
+    {
+      "id": "arxiv:2412.19437",
+      "title": "DeepSeek-V3 Technical Report",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2412.19437v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1.1 Multi-Head Latent Attention",
+        "§2.1.2 DeepSeekMoE with Auxiliary-Loss-Free Load Balancing",
+        "§2.2 Multi-Token Prediction",
+        "§3.3 FP8 Training"
+      ],
+      "supported_points": [
+        "MLA 联合压缩 K/V 缓存；细粒度路由专家与共享专家分离总容量和激活计算。",
+        "路由偏置调整负载，仍有较小的序列级均衡辅助损失。",
+        "MTP 是额外训练目标，也可用于推测解码；FP8 训练保留敏感部分的较高精度。"
+      ],
+      "limitations": [
+        "不能把低激活参数量等同于低总内存或零通信成本。",
+        "auxiliary-loss-free 不应译成所有位置均无辅助损失。",
+        "技术报告是作者系统证据，本次未独立复现模型、成本或精度收益。"
+      ],
+      "concept_ids": [
+        "ai:sparse_experts",
+        "ai:compression_and_memory",
+        "ai:hardware_aware_systems",
+        "ai:attention"
+      ],
+      "first_publication_date": "2024-12-27",
+      "selected_version": "v2"
+    },
+    {
+      "id": "arxiv:2203.15556",
+      "title": "Training Compute-Optimal Large Language Models",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2203.15556v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3 Estimating the Optimal Parameter/Training Tokens Allocation",
+        "§3.1 Fixed Model Sizes",
+        "§3.3 Fitting a Parametric Loss Function",
+        "§5 Discussion and Conclusion"
+      ],
+      "supported_points": [
+        "固定训练 FLOPs 时模型规模与训练 token 需联合优化；作者多种拟合得到近似共同扩大的配置。",
+        "参数化损失把规模、数据与不可约项组合，用经验拟合预测计算有效前沿。"
+      ],
+      "limitations": [
+        "作者指出大模型验证点少、幂律曲率与不足一个 epoch 的分析范围。",
+        "结论不直接覆盖推理生命周期预算、任意数据质量及重复训练。"
+      ],
+      "concept_ids": [
+        "ai:scaling_laws",
+        "ai:data_curation"
+      ],
+      "first_publication_date": "2022-03-29",
+      "selected_version": "v1"
+    },
+    {
+      "id": "arxiv:2406.11794",
+      "title": "DataComp-LM: In search of the next generation of training sets for language models",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2406.11794v4",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1 Introduction",
+        "§3.1 DCLM-Pool / Decontamination",
+        "§3.2 Competition Scales",
+        "§3.3 Benchmark Tracks",
+        "§3.4 Training",
+        "§3.5 Evaluation"
+      ],
+      "supported_points": [
+        "固定各尺度训练配方，让数据过滤与混合成为主要受控变量。",
+        "区分候选池、实际训练 token 和下游指标，并提供污染核验工具。"
+      ],
+      "limitations": [
+        "数据选择优劣依赖评价分布；所报告的小尺度排序相关性不构成普遍不变规律。",
+        "240T 是原始候选池规模，不是某个模型的训练 token 数；提供去污染工具不等于池已整体去污染。"
+      ],
+      "concept_ids": [
+        "ai:data_curation",
+        "ai:scaling_laws",
+        "ai:generalization_theory"
+      ],
+      "first_publication_date": "2024-06-17",
+      "selected_version": "v4"
+    },
+    {
+      "id": "url:qualitypajama-iclr2026",
+      "title": "How Text Quality Interventions Reshape Neural Scaling Laws for LLMs: Empirical Study",
+      "year": 2026,
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/6544c0b53cc1ea51d0c7086b536830a8-Paper-Conference.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "p.1 Abstract（实验范围）",
+        "§2 Background, p.3（联合 scaling 拟合）",
+        "§3 QualityPajama, p.4",
+        "§4, pp.4–7（干预及验证集依赖）",
+        "§5 / Figure 5 与 §6 Discussion, p.9"
+      ],
+      "supported_points": [
+        "23 种干预数据集、2000 余模型的经验分析发现数据质量同时改变缩放律系数与指数。",
+        "数据策略排序以及模型/token 最优分配依赖资源尺度与验证域。"
+      ],
+      "limitations": [
+        "实验模型范围 100M–8B、训练 token 范围 100M–200B；超出范围的计算收益曲线为拟合外推。",
+        "上游交叉熵及 Common Crawl 派生文本实验不是所有任务的数据质量定理；本次未复算拟合和置信区间。"
+      ],
+      "concept_ids": [
+        "ai:data_curation",
+        "ai:scaling_laws",
+        "ai:generalization_theory"
+      ],
+      "first_publication_date": null,
+      "selected_version": "ICLR 2026 proceedings PDF; exact first-publication day unverified"
+    },
+    {
+      "id": "arxiv:2407.08608",
+      "title": "FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2407.08608v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.2 GPU Hardware Characteristics and Execution Model",
+        "§2.3 Standard Attention and Flash Attention",
+        "§3.1 Producer-Consumer Asynchrony",
+        "§3.3 Low-Precision with FP8",
+        "§5 Discussion, Limitations, Conclusion"
+      ],
+      "supported_points": [
+        "FlashAttention-3 利用 Hopper 异步数据搬运、warp specialization 与矩阵乘/softmax 调度重叠。",
+        "以局部 softmax 避免中间完整矩阵的显存读写；FP8 需额外布局与数值处理。"
+      ],
+      "limitations": [
+        "保持注意力计算结构的 IO 优化不使稠密注意力 FLOPs 自动变线性。",
+        "论文指出推理优化及大规模低精度训练影响仍待研究；具体收益依赖硬件、形状和精度。"
+      ],
+      "concept_ids": [
+        "ai:hardware_aware_systems",
+        "ai:attention",
+        "ai:compression_and_memory"
+      ],
+      "first_publication_date": "2024-07-11",
+      "selected_version": "v2"
+    },
+    {
+      "id": "arxiv:1812.11118",
+      "title": "Reconciling modern machine learning practice and the bias-variance trade-off",
+      "year": 2018,
+      "url": "https://arxiv.org/html/1812.11118v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1 Introduction / Figure 1",
+        "§4 Concluding Thoughts / Inductive Bias"
+      ],
+      "supported_points": [
+        "插值阈值附近的测试风险峰值可接续更高容量区的第二次下降。",
+        "作者用归纳偏置和较小函数范数讨论为何零训练误差不足以判定泛化。"
+      ],
+      "limitations": [
+        "现象与有限类理论不是任意深度网络的普适保证。",
+        "通常同分布设置，不能据此承诺分布外、因果或物理稳定性。"
+      ],
+      "concept_ids": [
+        "ai:generalization_theory",
+        "ai:scaling_laws"
+      ],
+      "first_publication_date": "2018-12-28",
+      "selected_version": "v2"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "ai:attention",
+      "label": "注意力与可寻址上下文",
+      "summary": "以内容相似度形成 token 交互；表征能力、长上下文开销和位置表示须联合评估。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:self_supervised_representation",
+      "label": "自监督表征与任务充分性",
+      "summary": "通过掩码预测、教师学生一致性等任务学习表示；全局语义与局部细节可能存在目标冲突。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:multimodal_alignment",
+      "label": "跨模态对齐与条件接口",
+      "summary": "从图文配对检索到任务条件化，将不同观测与语言嵌入建立可使用的对应关系。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:streaming_multimodal",
+      "label": "流式多模态与时间对齐",
+      "summary": "在异步采样、异速编码和增量生成下处理时间戳、信息到达顺序与首包延迟。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:diffusion",
+      "label": "去噪扩散生成",
+      "summary": "通过多噪声尺度的去噪学习逆向生成过程；质量、似然与采样成本不是同一指标。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:flow_matching",
+      "label": "条件流匹配",
+      "summary": "用可采样条件路径的速度监督学习概率流；训练无需模拟轨迹，生成仍需数值积分。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:latent_generative_models",
+      "label": "潜空间生成与压缩",
+      "summary": "先将高维观测压缩，再学习潜变量分布；压缩节省计算，同时限定可恢复的信息。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:selective_state_space",
+      "label": "选择性状态空间与结构化序列计算",
+      "summary": "输入依赖的状态更新控制有限记忆，结构化矩阵支持递推和并行分块算法。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:sparse_experts",
+      "label": "稀疏专家与条件计算",
+      "summary": "仅激活部分专家以扩大总容量；路由质量、负载均衡和通信决定有效成本。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:scaling_laws",
+      "label": "经验缩放与资源分配",
+      "summary": "在指定数据、优化器和预算下拟合性能随模型及数据规模的变化，不是普适常数。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:data_curation",
+      "label": "数据筛选、混合与可追溯评估",
+      "summary": "以受控训练比较数据干预；重复、标签偏差、覆盖与验证分布共同定义质量。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:generalization_theory",
+      "label": "泛化、归纳偏置与插值",
+      "summary": "区别拟合训练数据、同分布泛化与分布外可靠性；参数量本身不足以解释全部行为。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:hardware_aware_systems",
+      "label": "硬件感知训练与推理系统",
+      "summary": "利用存储层级、异步执行、通信重叠及混合精度改善实际计算，而非只比较 FLOPs。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:compression_and_memory",
+      "label": "压缩、记忆与精度预算",
+      "summary": "统一考察 KV 压缩、有限状态、潜空间、低精度的资源收益和信息误差。",
+      "domain": "ai"
+    }
+  ],
+  "relations": [
+    {
+      "source": "arxiv:1706.03762",
+      "target": "ai:attention",
+      "type": "supports",
+      "claim": "以自注意力和前馈层构造编码器—解码器；解码器以因果掩码保持自回归。",
+      "evidence_ids": [
+        "arxiv:1706.03762"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:1706.03762",
+      "target": "ai:multimodal_alignment",
+      "type": "supports",
+      "claim": "以自注意力和前馈层构造编码器—解码器；解码器以因果掩码保持自回归。",
+      "evidence_ids": [
+        "arxiv:1706.03762"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2111.06377",
+      "target": "ai:self_supervised_representation",
+      "type": "supports",
+      "claim": "MAE 用高比例随机遮挡和非对称编码器—解码器重建缺失像素。",
+      "evidence_ids": [
+        "arxiv:2111.06377"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2111.06377",
+      "target": "ai:compression_and_memory",
+      "type": "supports",
+      "claim": "MAE 用高比例随机遮挡和非对称编码器—解码器重建缺失像素。",
+      "evidence_ids": [
+        "arxiv:2111.06377"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2508.10104",
+      "target": "ai:self_supervised_representation",
+      "type": "supports",
+      "claim": "长程训练中全局分类表征提升可伴随局部稠密特征退化。",
+      "evidence_ids": [
+        "arxiv:2508.10104"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2508.10104",
+      "target": "ai:generalization_theory",
+      "type": "supports",
+      "claim": "长程训练中全局分类表征提升可伴随局部稠密特征退化。",
+      "evidence_ids": [
+        "arxiv:2508.10104"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2103.00020",
+      "target": "ai:multimodal_alignment",
+      "type": "supports",
+      "claim": "图像与文本分别编码，批内真实配对用对称交叉熵进行对比学习。",
+      "evidence_ids": [
+        "arxiv:2103.00020"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2103.00020",
+      "target": "ai:self_supervised_representation",
+      "type": "supports",
+      "claim": "图像与文本分别编码，批内真实配对用对称交叉熵进行对比学习。",
+      "evidence_ids": [
+        "arxiv:2103.00020"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2212.04356",
+      "target": "ai:multimodal_alignment",
+      "type": "supports",
+      "claim": "Whisper 以音频—转录弱监督训练标准编码器—解码器，任务和时间戳以 token 指定。",
+      "evidence_ids": [
+        "arxiv:2212.04356"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2212.04356",
+      "target": "ai:streaming_multimodal",
+      "type": "supports",
+      "claim": "Whisper 以音频—转录弱监督训练标准编码器—解码器，任务和时间戳以 token 指定。",
+      "evidence_ids": [
+        "arxiv:2212.04356"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2509.17765",
+      "target": "ai:streaming_multimodal",
+      "type": "supports",
+      "claim": "Thinker—Talker 系统联合文本、视觉与音频条件，以时间对齐位置表示处理音视频。",
+      "evidence_ids": [
+        "arxiv:2509.17765"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2509.17765",
+      "target": "ai:multimodal_alignment",
+      "type": "supports",
+      "claim": "Thinker—Talker 系统联合文本、视觉与音频条件，以时间对齐位置表示处理音视频。",
+      "evidence_ids": [
+        "arxiv:2509.17765"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2604.15804",
+      "target": "ai:streaming_multimodal",
+      "type": "supports",
+      "claim": "在 Qwen3-Omni 基础上加入显式时间戳与 ARIA 自适应文本—语音交错约束，处理异速 token 对齐。",
+      "evidence_ids": [
+        "arxiv:2604.15804"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2604.15804",
+      "target": "ai:multimodal_alignment",
+      "type": "supports",
+      "claim": "在 Qwen3-Omni 基础上加入显式时间戳与 ARIA 自适应文本—语音交错约束，处理异速 token 对齐。",
+      "evidence_ids": [
+        "arxiv:2604.15804"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2006.11239",
+      "target": "ai:diffusion",
+      "type": "supports",
+      "claim": "固定正向高斯加噪允许直接采样任意噪声时刻；逆过程可参数化为噪声预测。",
+      "evidence_ids": [
+        "arxiv:2006.11239"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2006.11239",
+      "target": "ai:hardware_aware_systems",
+      "type": "supports",
+      "claim": "固定正向高斯加噪允许直接采样任意噪声时刻；逆过程可参数化为噪声预测。",
+      "evidence_ids": [
+        "arxiv:2006.11239"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2210.02747",
+      "target": "ai:flow_matching",
+      "type": "supports",
+      "claim": "以条件路径的速度回归替代不可计算的边缘速度目标；条件与边缘目标梯度在原文假设下相同。",
+      "evidence_ids": [
+        "arxiv:2210.02747"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2210.02747",
+      "target": "ai:diffusion",
+      "type": "supports",
+      "claim": "以条件路径的速度回归替代不可计算的边缘速度目标；条件与边缘目标梯度在原文假设下相同。",
+      "evidence_ids": [
+        "arxiv:2210.02747"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2212.09748",
+      "target": "ai:latent_generative_models",
+      "type": "supports",
+      "claim": "DiT 把 VAE 潜变量 patch 化，以 Transformer 预测噪声及协方差。",
+      "evidence_ids": [
+        "arxiv:2212.09748"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2212.09748",
+      "target": "ai:diffusion",
+      "type": "supports",
+      "claim": "DiT 把 VAE 潜变量 patch 化，以 Transformer 预测噪声及协方差。",
+      "evidence_ids": [
+        "arxiv:2212.09748"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2312.00752",
+      "target": "ai:selective_state_space",
+      "type": "supports",
+      "claim": "使状态空间参数依赖输入，控制哪些上下文信息进入或保留于状态。",
+      "evidence_ids": [
+        "arxiv:2312.00752"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2312.00752",
+      "target": "ai:compression_and_memory",
+      "type": "supports",
+      "claim": "使状态空间参数依赖输入，控制哪些上下文信息进入或保留于状态。",
+      "evidence_ids": [
+        "arxiv:2312.00752"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2405.21060",
+      "target": "ai:selective_state_space",
+      "type": "supports",
+      "claim": "标量乘单位阵形式的 SSM 与 1-半可分掩码的结构化注意力存在精确对偶。",
+      "evidence_ids": [
+        "arxiv:2405.21060"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2405.21060",
+      "target": "ai:attention",
+      "type": "supports",
+      "claim": "标量乘单位阵形式的 SSM 与 1-半可分掩码的结构化注意力存在精确对偶。",
+      "evidence_ids": [
+        "arxiv:2405.21060"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2412.19437",
+      "target": "ai:sparse_experts",
+      "type": "supports",
+      "claim": "MLA 联合压缩 K/V 缓存；细粒度路由专家与共享专家分离总容量和激活计算。",
+      "evidence_ids": [
+        "arxiv:2412.19437"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2412.19437",
+      "target": "ai:compression_and_memory",
+      "type": "supports",
+      "claim": "MLA 联合压缩 K/V 缓存；细粒度路由专家与共享专家分离总容量和激活计算。",
+      "evidence_ids": [
+        "arxiv:2412.19437"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2203.15556",
+      "target": "ai:scaling_laws",
+      "type": "supports",
+      "claim": "固定训练 FLOPs 时模型规模与训练 token 需联合优化；作者多种拟合得到近似共同扩大的配置。",
+      "evidence_ids": [
+        "arxiv:2203.15556"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2203.15556",
+      "target": "ai:data_curation",
+      "type": "supports",
+      "claim": "固定训练 FLOPs 时模型规模与训练 token 需联合优化；作者多种拟合得到近似共同扩大的配置。",
+      "evidence_ids": [
+        "arxiv:2203.15556"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2406.11794",
+      "target": "ai:data_curation",
+      "type": "supports",
+      "claim": "固定各尺度训练配方，让数据过滤与混合成为主要受控变量。",
+      "evidence_ids": [
+        "arxiv:2406.11794"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2406.11794",
+      "target": "ai:scaling_laws",
+      "type": "supports",
+      "claim": "固定各尺度训练配方，让数据过滤与混合成为主要受控变量。",
+      "evidence_ids": [
+        "arxiv:2406.11794"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "url:qualitypajama-iclr2026",
+      "target": "ai:data_curation",
+      "type": "supports",
+      "claim": "23 种干预数据集、2000 余模型的经验分析发现数据质量同时改变缩放律系数与指数。",
+      "evidence_ids": [
+        "url:qualitypajama-iclr2026"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "url:qualitypajama-iclr2026",
+      "target": "ai:scaling_laws",
+      "type": "supports",
+      "claim": "23 种干预数据集、2000 余模型的经验分析发现数据质量同时改变缩放律系数与指数。",
+      "evidence_ids": [
+        "url:qualitypajama-iclr2026"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2407.08608",
+      "target": "ai:hardware_aware_systems",
+      "type": "supports",
+      "claim": "FlashAttention-3 利用 Hopper 异步数据搬运、warp specialization 与矩阵乘/softmax 调度重叠。",
+      "evidence_ids": [
+        "arxiv:2407.08608"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2407.08608",
+      "target": "ai:attention",
+      "type": "supports",
+      "claim": "FlashAttention-3 利用 Hopper 异步数据搬运、warp specialization 与矩阵乘/softmax 调度重叠。",
+      "evidence_ids": [
+        "arxiv:2407.08608"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:1812.11118",
+      "target": "ai:generalization_theory",
+      "type": "supports",
+      "claim": "插值阈值附近的测试风险峰值可接续更高容量区的第二次下降。",
+      "evidence_ids": [
+        "arxiv:1812.11118"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:1812.11118",
+      "target": "ai:scaling_laws",
+      "type": "supports",
+      "claim": "插值阈值附近的测试风险峰值可接续更高容量区的第二次下降。",
+      "evidence_ids": [
+        "arxiv:1812.11118"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "ai:attention",
+      "target": "ai:self_supervised_representation",
+      "type": "enables",
+      "claim": "注意力可作为掩码学习和教师学生学习的编码骨架，但不会自行确定表征目标。",
+      "evidence_ids": [
+        "arxiv:1706.03762",
+        "arxiv:2111.06377",
+        "arxiv:2508.10104"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:self_supervised_representation",
+      "target": "ai:generalization_theory",
+      "type": "tradeoff",
+      "claim": "代理目标的改善未必保留全部下游充分信息，DINOv3 的全局/局部分歧提供具体实例。",
+      "evidence_ids": [
+        "arxiv:2508.10104",
+        "arxiv:1812.11118"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:multimodal_alignment",
+      "target": "ai:self_supervised_representation",
+      "type": "alternative_to",
+      "claim": "图文对比与图像内部掩码提供不同监督信号，可互补而非简单替代。",
+      "evidence_ids": [
+        "arxiv:2103.00020",
+        "arxiv:2111.06377"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:multimodal_alignment",
+      "target": "ai:streaming_multimodal",
+      "type": "enables",
+      "claim": "静态语义对应为流式多模态提供基础，异速采样仍需显式时间与对齐设计。",
+      "evidence_ids": [
+        "arxiv:2103.00020",
+        "arxiv:2509.17765",
+        "arxiv:2604.15804"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:streaming_multimodal",
+      "target": "ai:compression_and_memory",
+      "type": "tradeoff",
+      "claim": "降低感知 token 率节省长上下文资源，同时改变时间分辨率和信息保留。",
+      "evidence_ids": [
+        "arxiv:2509.17765",
+        "arxiv:2604.15804"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:streaming_multimodal",
+      "target": "ai:hardware_aware_systems",
+      "type": "depends_on",
+      "claim": "首包延迟由编码、prefill、解码与波形生成的关键路径共同决定。",
+      "evidence_ids": [
+        "arxiv:2509.17765",
+        "arxiv:2604.15804"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:data_curation",
+      "target": "ai:multimodal_alignment",
+      "type": "enables",
+      "claim": "配对和转录质量定义可学的语义对应，规模不能单独代替标签和覆盖审查。",
+      "evidence_ids": [
+        "arxiv:2103.00020",
+        "arxiv:2212.04356"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:diffusion",
+      "target": "ai:flow_matching",
+      "type": "alternative_to",
+      "claim": "噪声预测与条件速度回归提供关联但不同的生成建模参数化，二者均须指定路径及采样协议。",
+      "evidence_ids": [
+        "arxiv:2006.11239",
+        "arxiv:2210.02747"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:attention",
+      "target": "ai:latent_generative_models",
+      "type": "enables",
+      "claim": "DiT 展示注意力骨架可在压缩潜空间实施扩散生成。",
+      "evidence_ids": [
+        "arxiv:2212.09748"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:latent_generative_models",
+      "target": "ai:compression_and_memory",
+      "type": "tradeoff",
+      "claim": "潜空间生成减少 token 与计算，同时引入编码器可恢复信息的边界。",
+      "evidence_ids": [
+        "arxiv:2212.09748"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:flow_matching",
+      "target": "ai:hardware_aware_systems",
+      "type": "tradeoff",
+      "claim": "无模拟训练减轻训练链条，但采样 ODE 步数和数值精度仍决定推理成本。",
+      "evidence_ids": [
+        "arxiv:2210.02747"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:attention",
+      "target": "ai:selective_state_space",
+      "type": "alternative_to",
+      "claim": "显式上下文寻址与有限状态选择性压缩采用不同的记忆分配。",
+      "evidence_ids": [
+        "arxiv:2312.00752"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:selective_state_space",
+      "target": "ai:attention",
+      "type": "related_to",
+      "claim": "结构化特例存在 SSD 数学对偶，不应扩展为所有 softmax 注意力与 SSM 等价。",
+      "evidence_ids": [
+        "arxiv:2405.21060"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:selective_state_space",
+      "target": "ai:compression_and_memory",
+      "type": "tradeoff",
+      "claim": "线性序列计算的资源收益建立在有限状态和选择性保留的表示设计上。",
+      "evidence_ids": [
+        "arxiv:2312.00752"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:selective_state_space",
+      "target": "ai:hardware_aware_systems",
+      "type": "depends_on",
+      "claim": "选择性递推需要并行扫描、融合和重计算等实现才能兑现复杂度优势。",
+      "evidence_ids": [
+        "arxiv:2312.00752",
+        "arxiv:2405.21060"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:sparse_experts",
+      "target": "ai:hardware_aware_systems",
+      "type": "depends_on",
+      "claim": "仅激活少数专家后的节约仍受路由负载和分布式通信约束。",
+      "evidence_ids": [
+        "arxiv:2412.19437"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:sparse_experts",
+      "target": "ai:compression_and_memory",
+      "type": "complements",
+      "claim": "稀疏 FFN 与 KV 压缩解决不同开销，DeepSeek-V3 将其组合。",
+      "evidence_ids": [
+        "arxiv:2412.19437"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:hardware_aware_systems",
+      "target": "ai:attention",
+      "type": "enables",
+      "claim": "更少显存读写和异步执行扩大注意力可用预算，但不取消两两交互算术。",
+      "evidence_ids": [
+        "arxiv:2407.08608"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:hardware_aware_systems",
+      "target": "ai:compression_and_memory",
+      "type": "tradeoff",
+      "claim": "低精度减少带宽和矩阵乘开销，需要对敏感运算保留精度并测量累积误差。",
+      "evidence_ids": [
+        "arxiv:2407.08608",
+        "arxiv:2412.19437"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:scaling_laws",
+      "target": "ai:data_curation",
+      "type": "depends_on",
+      "claim": "数据干预会改变经验缩放规律，不能把固定 token/参数比例当作跨数据常量。",
+      "evidence_ids": [
+        "arxiv:2203.15556",
+        "url:qualitypajama-iclr2026"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:data_curation",
+      "target": "ai:generalization_theory",
+      "type": "tradeoff",
+      "claim": "过滤可提高指定验证集效用，也可能收缩覆盖；跨尺度排序应重新测量。",
+      "evidence_ids": [
+        "arxiv:2406.11794",
+        "url:qualitypajama-iclr2026"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:generalization_theory",
+      "target": "ai:scaling_laws",
+      "type": "qualifies",
+      "claim": "参数量、训练误差和测试性能之间不存在单一单调定理，经验前沿须注明范围。",
+      "evidence_ids": [
+        "arxiv:1812.11118",
+        "arxiv:2203.15556"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:compression_and_memory",
+      "target": "ai:generalization_theory",
+      "type": "tradeoff",
+      "claim": "压缩是否有利取决于被丢弃信息是否与任务相关，资源最小化不等于科学充分性。",
+      "evidence_ids": [
+        "arxiv:2111.06377",
+        "arxiv:2312.00752",
+        "arxiv:2212.09748"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:data_curation",
+      "target": "ai:scaling_laws",
+      "type": "addresses",
+      "claim": "受控多尺度数据实验可辨别质量收益是稳定规律还是特定预算下的排序。",
+      "evidence_ids": [
+        "arxiv:2406.11794",
+        "url:qualitypajama-iclr2026"
+      ],
+      "certainty": "synthesis_inference"
+    }
+  ]
+}

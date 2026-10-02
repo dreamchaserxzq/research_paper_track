@@ -1,0 +1,467 @@
+{
+  "schema_version": "research-snapshot-validation-v2",
+  "snapshot_date": "2026-10-02",
+  "checked_at_utc": "2026-10-02T14:49:45.029456+00:00",
+  "status": "passed",
+  "artifact_sha256": "a8eaf3e76af5ba4b68195cea077b778ac51843e83c61ace8934f37439a2c43e5",
+  "source_head": "ca1125a6809e7a3998882a7d134e0c3c8e11c492",
+  "stats": {
+    "registry": 456,
+    "source_records": 1020,
+    "local_reports": 155,
+    "graph_nodes": 673,
+    "graph_edges": 3631,
+    "new_reading_records": 5,
+    "inherited_reading_records": 43,
+    "total_reading_records": 48,
+    "unique_reviewed_work_ids": 47,
+    "semantic_nodes": 312,
+    "semantic_edges": 264
+  },
+  "checks": {
+    "deterministic_build": "PASS: all three research builders --check",
+    "registry": "PASS: papertrack.py check; 14 existing generated views, JSONL, historical hashes and local links",
+    "legacy_snapshot_integrity": {
+      "status": "passed",
+      "files": {
+        "docs/research_synthesis/2026-09-19/remote_20260916_digest.txt": "73c3682d1fd05cac1afbbc98eddc97e05afced8426f3d190f9e69c6f2e1169a4",
+        "docs/research_synthesis/2026-09-19/paper_cards.jsonl": "c34bbb729fc737c000f641d09288b9fc6132f09d14b6c88bfafcef3c151e37ca",
+        "docs/research_synthesis/2026-09-19/nodes.csv": "dbec7f94da309e6168f8a8bc0ade5b4b0afdb5d543c7c7eec506bbfbf931f623",
+        "docs/research_synthesis/2026-09-19/primary_evidence.json": "21471862a6b489f9a0c90f17e855efbe13a171761647b0a76d0f46337bfa51a1",
+        "docs/research_synthesis/2026-09-19/knowledge_graph.json": "b200a1edd519cff5f42b4e5c2b4e0ba2cb29acb4a1168598de6a77b480c08d5c",
+        "docs/research_synthesis/2026-09-19/ui-preview.png": "d1c12d329b3097174b45d28eaa30e1486f79a66cae137b0310b7f3bdf6659b2d",
+        "docs/research_synthesis/2026-09-19/ui-notebook-preview.png": "a5eb14700c3edbb3d349ac6710c61ff06cd27f4342c8196dd868a7b6e1fbf09b",
+        "docs/research_synthesis/2026-09-19/site_build_manifest.json": "a5eef20ec67f199dd53b3c5c266d08b819ee9d49f7c9433c22e94dcdb1eda21c",
+        "docs/research_synthesis/2026-09-19/ui-network-preview.png": "2e6920d721ebf41c9980e7105bd8b586ebffd486f227254313b5eca1aa5a58c6",
+        "docs/research_synthesis/2026-09-19/ui-notebook-mobile.png": "8005f1eb8d21a00647746046a853119df8773c0e1c8aeb9934111572ffeaa549",
+        "docs/research_synthesis/2026-09-19/ui-reader-preview.png": "6157dbef05987aa59d30ebb6550f42fc62b65c4fc1d6eea66fb3eb1ea25773e6",
+        "docs/research_synthesis/2026-09-19/ui-reader-mobile-preview.png": "3e3eafe3397a0b1161115e04c375ddde95b2b7dfbb56fc9a93322a549071d6c2",
+        "docs/research_synthesis/2026-09-19/architecture_evidence.json": "d388d5a2bbc78eb005e63bc10d6493c546af95806a304ebfc7aa73679fa596b8",
+        "docs/research_synthesis/2026-09-19/domain_evidence.json": "5d697f14a5cbf36ff7085ec77185a5a039837b9e8ba552525268ed81926f4184",
+        "docs/research_synthesis/2026-09-19/corpus_audit.md": "b027367cc7ff2bc6d08387220ee8e61ae1c78424f3ec44758ebb1cba9275e929",
+        "docs/research_synthesis/2026-09-19/validation.json": "72e0135bdc401ec3cb37f1c63b85b486ab501d994ab99dd3fb11b2c2ebb54902",
+        "docs/research_synthesis/2026-09-19/corpus_manifest.json": "de73542b1278d8f6b23ad32d3b84217a3a3780eda492ea064b0fe3b2905f4d9a",
+        "docs/research_synthesis/2026-09-19/RESEARCH_SYNTHESIS.zh-CN.md": "af3d3e46ca544fb6b26cd907ca44ac6b0c82cacd1ae13194599d622cdaf0eb3e",
+        "docs/research_synthesis/2026-09-19/edges.csv": "5ba8782fe63244a015e91a37f17cfe0cb043bb9cdaad1a0fc7950beccf1f59fe",
+        "docs/research_synthesis/2026-09-19/index.html": "8605905d44cc006d5892f534c7869cbe8e5a32cc918ca64a4b126a15abf16c47",
+        "docs/research_synthesis/2026-09-19/remote_sync.json": "3ffe3cf116fef6c653d112bac9a77f11c17db72e66818e863f0fbf6be9068346",
+        "docs/research_synthesis/2026-09-19/domain_review.md": "9c9ae9e84c27e11155f5888b4125a8d1578c2d5f5ba0acb06d69f200dc449e9f",
+        "docs/research_synthesis/2026-09-19/evaluation_review.md": "1d15eee0ea7420812e25a21d017bee2769329a355b2f199ad1f668332ed8a504",
+        "docs/research_synthesis/2026-09-19/semantic_graph.json": "1d857c596c332d63b16b52d554a04e67b59281c3b67d0c8e3fd20a6a6e721b8b",
+        "docs/research_synthesis/2026-09-19/ALL_PAPERS.md": "bbc6940d3c2c38e675b57aa424c8416aaea658ae2f095d6a2d473f3fd4ad1921",
+        "docs/research_synthesis/2026-09-19/architecture_review.md": "8a8f28e8c55863c391c5ab9a8216fce424ccb75f7381579ab2c40c5463794a57",
+        "docs/research_synthesis/2026-09-19/evaluation_evidence.json": "74dbb208fb87c65a0d338317e7fabc2f1a2872ca901ed9fec042cbe395bde1e4",
+        "docs/research_synthesis/2026-09-19/innovation_agenda.md": "d2ee5359c9adb042d1252ce00014d246e63943ffaaa3cbfc72b0ddce83edb7a8"
+      }
+    },
+    "browser": {
+      "reader": {
+        "name": "atlas",
+        "index_sha256": "a8eaf3e76af5ba4b68195cea077b778ac51843e83c61ace8934f37439a2c43e5",
+        "status": "passed",
+        "chapters": 7,
+        "checks": [
+          "320px all panels/chapters fit; chapter anchors visible",
+          "390px all panels/chapters fit; chapter anchors visible",
+          "768px all panels/chapters fit; chapter anchors visible",
+          "1440px all panels/chapters fit; chapter anchors visible",
+          "13 internal chapter and anchor links clicked across all documents",
+          "visible reading toolbar and font size increases/persists",
+          "previous/next chapters and inline Markdown links stay in reader",
+          "pane return and reload restore reading progress",
+          "22 offline downloads byte-exact",
+          "Storage get/set/remove denied: reader remains usable without exceptions"
+        ],
+        "externalRequests": 0,
+        "errors": []
+      },
+      "notebook": {
+        "name": "atlas",
+        "index_sha256": "a8eaf3e76af5ba4b68195cea077b778ac51843e83c61ace8934f37439a2c43e5",
+        "status": "passed",
+        "checks": [
+          "Adding a record, immediate note/status persistence, reload recovery and literal unsafe-looking text rendering",
+          "Status/note search filtering, archival retains note, undo restores record",
+          "JSON and Markdown exports retain notes; validated import previews before mutation, adds new ID and preserves conflicting local note/status",
+          "Malformed JSON, wrong workbench, unknown/duplicate IDs, invalid status, oversized note reject atomically; duplicate-only import is disabled",
+          "Dialog fits 320/390/768/1440px, traps Tab and Shift+Tab, keeps selection focus, closes with Escape",
+          "Browser localStorage SecurityError injection leaves editing and JSON export usable with visible session-only warning"
+        ],
+        "external_requests": 0,
+        "errors": []
+      },
+      "storage_failures": {
+        "name": "atlas",
+        "index_sha256": "a8eaf3e76af5ba4b68195cea077b778ac51843e83c61ace8934f37439a2c43e5",
+        "status": "passed",
+        "checks": [
+          "corrupt-json: original localStorage retained byte-exact, warning shown, session note export works",
+          "corrupt-schema: original localStorage retained byte-exact, warning shown, session note export works",
+          "quota: original localStorage retained byte-exact, warning shown, session note export works"
+        ]
+      },
+      "cross_tab": {
+        "name": "atlas",
+        "index_sha256": "a8eaf3e76af5ba4b68195cea077b778ac51843e83c61ace8934f37439a2c43e5",
+        "status": "passed",
+        "checks": [
+          "distinct-ids: stale writes persistently blocked, original storage byte-exact, both tabs export independent notes, reload restores writable current state, reverse stale write blocked",
+          "same-id: stale writes persistently blocked, original storage byte-exact, both tabs export independent notes, reload restores writable current state, reverse stale write blocked"
+        ]
+      },
+      "snapshot_upgrade": {
+        "site": "atlas",
+        "index_sha256": "a8eaf3e76af5ba4b68195cea077b778ac51843e83c61ace8934f37439a2c43e5",
+        "old_note_and_status_preserved": true,
+        "new_note_writable": true,
+        "update_items_checked": [
+          "arxiv:2609.20641",
+          "arxiv:2609.29403",
+          "arxiv:2609.24021",
+          "arxiv:2609.27739",
+          "arxiv:2609.33978"
+        ],
+        "evidence_records": 48,
+        "corpus_rows": 456,
+        "pages": 19,
+        "structured_mechanism_render_and_download": "passed",
+        "errors": []
+      },
+      "updated_ui": {
+        "status": "passed",
+        "artifact": "actual 2026-10-02 standalone HTML",
+        "checks": [
+          {
+            "site": "atlas",
+            "width": 320,
+            "passed": true
+          },
+          {
+            "site": "atlas",
+            "width": 390,
+            "passed": true
+          },
+          {
+            "site": "atlas",
+            "width": 768,
+            "passed": true
+          },
+          {
+            "site": "atlas",
+            "width": 1440,
+            "passed": true
+          },
+          {
+            "site": "atlas",
+            "index_sha256": "a8eaf3e76af5ba4b68195cea077b778ac51843e83c61ace8934f37439a2c43e5",
+            "updateItems": 5,
+            "checks": [
+              "all new items open existing detail",
+              "all reading levels filter correct counts",
+              "current date and cross-site version",
+              "no object string in item details"
+            ],
+            "passed": true
+          }
+        ]
+      }
+    },
+    "independent_content_review": {
+      "reviewer": "snapshot_review_1002",
+      "review_date": "2026-10-02",
+      "scope": "Independent read-only snapshot, evidence inheritance and build wiring review; no scientific code or experiments executed. Browser usability checked separately by root.",
+      "status": "passed",
+      "problems": [],
+      "checks": {
+        "old_55_files_byte_preserved": {
+          "passed": true,
+          "detail": {
+            "count": 55,
+            "changed": []
+          }
+        },
+        "inherited_pde_architecture_evidence.json": {
+          "passed": true,
+          "detail": {
+            "count": 18,
+            "dates": {
+              "2026-09-19": 18
+            }
+          }
+        },
+        "inherited_pde_evaluation_evidence.json": {
+          "passed": true,
+          "detail": {
+            "count": 18,
+            "dates": {
+              "2026-09-19T08:26:45Z": 18
+            }
+          }
+        },
+        "inherited_pde_domain_evidence.json": {
+          "passed": true,
+          "detail": {
+            "count": 7,
+            "dates": {
+              "2026-09-19": 7
+            }
+          }
+        },
+        "pde_new_records_have_current_reading_date": {
+          "passed": true,
+          "detail": {
+            "count": 5
+          }
+        },
+        "registry_coverage": {
+          "passed": true,
+          "detail": {
+            "count": 456,
+            "added": [
+              "arxiv:2609.20641",
+              "arxiv:2609.29403"
+            ],
+            "removed": []
+          }
+        },
+        "new_pde_review_scopes": {
+          "passed": true,
+          "detail": {
+            "corpus": 2,
+            "background": 3
+          }
+        },
+        "inherited_horizons_ai_foundations": {
+          "passed": true,
+          "detail": {
+            "count": 18
+          }
+        },
+        "inherited_horizons_ai_reasoning_systems": {
+          "passed": true,
+          "detail": {
+            "count": 18
+          }
+        },
+        "inherited_horizons_pde_numerics": {
+          "passed": true,
+          "detail": {
+            "count": 19
+          }
+        },
+        "inherited_horizons_bridge": {
+          "passed": true,
+          "detail": {
+            "count": 9
+          }
+        },
+        "horizons_new_source_dates": {
+          "passed": true,
+          "detail": {
+            "inherited": 64,
+            "new": 8,
+            "total_sources": 72,
+            "concepts": 74,
+            "update_kinds": {
+              "foundational_backfill": 6,
+              "recent_publication": 2
+            }
+          }
+        },
+        "horizons_input_edges": {
+          "passed": true,
+          "detail": {
+            "relations": 160
+          }
+        },
+        "exists_2026-10-02_index.html": {
+          "passed": true,
+          "detail": null
+        },
+        "exists_2026-10-02_update_manifest.json": {
+          "passed": true,
+          "detail": null
+        },
+        "exists_2026-10-02_search_coverage.json": {
+          "passed": true,
+          "detail": null
+        },
+        "update_2026-10-02": {
+          "passed": true,
+          "detail": {
+            "item_count": 5
+          }
+        },
+        "embedded_payload_2026-10-02": {
+          "passed": true,
+          "detail": null
+        },
+        "artifact_sha256_2026-10-02": {
+          "value": "a8eaf3e76af5ba4b68195cea077b778ac51843e83c61ace8934f37439a2c43e5"
+        },
+        "manifest_hashes_2026-10-02": {
+          "passed": true,
+          "detail": {
+            "inputs": 24,
+            "outputs": 3,
+            "bad_inputs": [],
+            "bad_outputs": []
+          }
+        },
+        "exists_2026-10-02-broader-horizons_index.html": {
+          "passed": true,
+          "detail": null
+        },
+        "exists_2026-10-02-broader-horizons_update_manifest.json": {
+          "passed": true,
+          "detail": null
+        },
+        "exists_2026-10-02-broader-horizons_search_coverage.json": {
+          "passed": true,
+          "detail": null
+        },
+        "update_2026-10-02-broader-horizons": {
+          "passed": true,
+          "detail": {
+            "item_count": 8
+          }
+        },
+        "embedded_payload_2026-10-02-broader-horizons": {
+          "passed": true,
+          "detail": null
+        },
+        "artifact_sha256_2026-10-02-broader-horizons": {
+          "value": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1"
+        },
+        "manifest_hashes_2026-10-02-broader-horizons": {
+          "passed": true,
+          "detail": {
+            "inputs": 17,
+            "outputs": 6,
+            "bad_inputs": [],
+            "bad_outputs": []
+          }
+        },
+        "graph_2026-10-02_knowledge_graph.json": {
+          "passed": true,
+          "detail": {
+            "nodes": 673,
+            "edges": 3631
+          }
+        },
+        "graph_2026-10-02_semantic_graph.json": {
+          "passed": true,
+          "detail": {
+            "nodes": 312,
+            "edges": 264
+          }
+        },
+        "graph_2026-10-02-broader-horizons_knowledge_graph.json": {
+          "passed": true,
+          "detail": {
+            "nodes": 155,
+            "edges": 333
+          }
+        },
+        "pde_primary_counts": {
+          "passed": true,
+          "detail": {
+            "records": 48,
+            "unique": 47,
+            "date_counts": {
+              "2026-09-19": 43,
+              "2026-10-02": 5
+            }
+          }
+        },
+        "semantic_labels_are_strings": {
+          "passed": true,
+          "detail": {
+            "nodes": 312
+          }
+        },
+        "structured_mechanisms_preserved": {
+          "passed": true,
+          "detail": null
+        },
+        "horizons_source_graph_ids_match": {
+          "passed": true,
+          "detail": null
+        },
+        "horizons_graph_evidence_ids": {
+          "passed": true,
+          "detail": null
+        },
+        "new_cross_domain_edges_are_inferences": {
+          "passed": true,
+          "detail": {
+            "new_bridge_edges": 7
+          }
+        },
+        "snapshot_head_matches_synced_head": {
+          "passed": true,
+          "detail": {
+            "head": "ca1125a6809e7a3998882a7d134e0c3c8e11c492"
+          }
+        },
+        "sync_changed_paths_resolve": {
+          "passed": true,
+          "detail": null
+        },
+        "research_question_mappings_repaired": {
+          "passed": true,
+          "detail": null
+        },
+        "mechanism_display_export_wiring": {
+          "passed": true,
+          "detail": null
+        }
+      },
+      "primary_source_spot_checks": [
+        {
+          "url": "https://arxiv.org/html/2609.27739v1#S4",
+          "scope": "Section 4 Common setting and Table 1",
+          "result": "Independent primary-page check confirms test-accuracy checkpoint selection in absence of validation; cross-geometry Poisson and NASA-CRM Val=0. Incremental evidence is accurate."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.24021v1#S2",
+          "scope": "Sections 2.3, 3.2, 3.3 and supplement SM3.1",
+          "result": "Many-query fixed offline-cost amortization and main modified-FNO family verified. Darcy standard-FNO sensitivity exists. Geometry preprocessing/meshing excluded and resources differ; current notes retain these limits."
+        }
+      ],
+      "memory_used": "MEMORY.md:543-554; rollout 01a0b8bf-4305-7e40-9b43-45105baf8b2b"
+    },
+    "server_http": "Both current pages, both old pages and fixed entry HTTP 200 on server 127.0.0.1:8765; Windows tunnel not newly tested."
+  },
+  "repairs": [
+    "Readable mechanism objects in detail, evidence ledger, exported notes and semantic graph labels",
+    "Preserved H1-H8 question identities across new narrative links",
+    "Recorded current raw UTF-8 changed-file paths"
+  ],
+  "manual_visual_inspection": [
+    "Desktop updated overview",
+    "Mobile updated evidence overview",
+    "Readable reader toolbar, headings and evidence date separation"
+  ],
+  "scientific_boundary": "13 newly checked sources across the two workbenches; selected methods/results/discussion sections, not full-corpus rereading or independent scientific reproduction. Old source access dates and records preserved. Coverage is targeted, not exhaustive.",
+  "publication": {
+    "local_artifacts_created": true,
+    "git_commit_created": false,
+    "pushed_to_remote": false,
+    "public_deployment": false
+  },
+  "personal_data": "Original notebook identities retained. Browser tests confirm original notes and reading state survive using the same HTTP origin; no server-side synchronization.",
+  "subsequent_ui_updates": {
+    "math_rendering": {
+      "report": "math_validation.json",
+      "artifact_sha256": "c98652e0fc349b5d8258614b8d9164328d4a4fefcac77ff17751cf6b8f3f9200",
+      "note": "Original validation above records the earlier artifact; current formula rendering is verified in this follow-up report."
+    },
+    "performance": {
+      "report": "performance_validation.json",
+      "online_artifact_sha256": "fb71895e54ef91f8cf0f2fae3b829dcfe87f12b332dea6a60b4b1e4ec5c8f6b2",
+      "offline_artifact_sha256": "6aa893c0a8f8ad750bda8c359e1129e41db30fd2128b07ebdc07fe4a396db904",
+      "note": "Current delivery format and follow-up checks; original validation and math report retain their historical artifact identities."
+    }
+  }
+}

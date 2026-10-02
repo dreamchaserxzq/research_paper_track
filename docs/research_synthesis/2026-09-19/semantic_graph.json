@@ -1,0 +1,5429 @@
+{
+  "schema_version": "research-semantic-graph-v1",
+  "nodes": [
+    {
+      "id": "arxiv:1910.03193",
+      "type": "reference_work",
+      "label": "DeepONet: Learning nonlinear operators for identifying differential equations based on the universal approximation theorem of operators"
+    },
+    {
+      "id": "review:001:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "分支网络编码固定输入传感器上的函数值；主干网络编码输出查询坐标；两者内积生成函数值。",
+        "conditioning": "输入函数、输出坐标；原始模型不以任意PDE符号为统一条件。",
+        "pretraining_objective": "监督算子输入—输出样本；不是多物理基座预训练。",
+        "generalization_protocol": "同一算子的问题实例、传感器数与输入函数空间研究。"
+      }
+    },
+    {
+      "id": "review:001:claim:0",
+      "type": "claim",
+      "label": "函数输入与坐标查询解耦提供连续输出接口。"
+    },
+    {
+      "id": "review:001:claim:1",
+      "type": "claim",
+      "label": "通用逼近结论涉及表示能力，原文明确不直接保证优化误差及泛化误差。"
+    },
+    {
+      "id": "review:001:limitation:0",
+      "type": "limitation",
+      "label": "原始分支输入依赖一致的传感器配置。"
+    },
+    {
+      "id": "review:001:limitation:1",
+      "type": "limitation",
+      "label": "跨任务分别训练不能视作一次预训练后的跨PDE泛化。"
+    },
+    {
+      "id": "arxiv:2010.08895",
+      "type": "reference_work",
+      "label": "Fourier Neural Operator for Parametric Partial Differential Equations"
+    },
+    {
+      "id": "review:002:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "物理场提升至隐特征；截断Fourier模态上的线性映射与局部分支组合。",
+        "conditioning": "初值或系数字段及坐标；按给定问题族学习。",
+        "pretraining_objective": "监督解算子误差；原始研究非跨方程联合基座预训练。",
+        "generalization_protocol": "不同实例与分辨率；Burgers、Darcy、Navier–Stokes任务分别研究。"
+      }
+    },
+    {
+      "id": "review:002:claim:0",
+      "type": "claim",
+      "label": "Fourier核参数化使跨分辨率共享权重成为可能。"
+    },
+    {
+      "id": "review:002:claim:1",
+      "type": "claim",
+      "label": "论文报告零样本超分辨率，零样本轴是网格分辨率而非未见方程。"
+    },
+    {
+      "id": "review:002:limitation:0",
+      "type": "limitation",
+      "label": "FFT实现要求均匀离散；任意网格不能直接套用同一FFT实现。"
+    },
+    {
+      "id": "review:002:limitation:1",
+      "type": "limitation",
+      "label": "频率截断、网格采样及输出非线性的误差仍需评估。"
+    },
+    {
+      "id": "arxiv:2310.02994",
+      "type": "reference_work",
+      "label": "Multiple Physics Pretraining for Spatiotemporal Surrogate Models"
+    },
+    {
+      "id": "review:003:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "逐物理场嵌入、RevIN、AViT轴向时空注意力；输入输出层随字段选择。",
+        "conditioning": "一段历史轨迹隐式提供物理参数和状态信息。",
+        "pretraining_objective": "多数据集平衡采样的一步自回归预测；本文主实验未加rollout或去噪训练。",
+        "generalization_protocol": "预训练族内测试、少样本微调、新三维任务的权重膨胀与微调。"
+      }
+    },
+    {
+      "id": "review:003:claim:0",
+      "type": "claim",
+      "label": "多物理共享表示可改善作者设定下的数据效率。"
+    },
+    {
+      "id": "review:003:claim:1",
+      "type": "claim",
+      "label": "对流/扩散分开预训练再适配对流扩散是可组合性实验，而非普遍组合定理。"
+    },
+    {
+      "id": "review:003:limitation:0",
+      "type": "limitation",
+      "label": "必须观察历史轨迹；没有明确物理条件时可辨识性依赖观测。"
+    },
+    {
+      "id": "review:003:limitation:1",
+      "type": "limitation",
+      "label": "2D至3D实验含架构膨胀和适配，不能称完全不改结构的零样本3D求解。"
+    },
+    {
+      "id": "arxiv:2403.03542",
+      "type": "paper",
+      "label": "DPOT: Auto-Regressive Denoising Operator Transformer for Large-Scale PDE Pre-Training"
+    },
+    {
+      "id": "review:004:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "网格patch、时序聚合、Fourier mixer；统一分辨率与通道padding，几何使用mask。",
+        "conditioning": "历史帧隐式编码方程及参数；不要求显式PDE标签。",
+        "pretraining_objective": "受噪声扰动的历史帧预测干净下一帧；不是扩散采样模型。",
+        "generalization_protocol": "预训练集合测试与下游微调；含高分辨率、稳态及3D任务。"
+      }
+    },
+    {
+      "id": "review:004:claim:0",
+      "type": "claim",
+      "label": "噪声注入针对一步训练与递推部署之间的分布差。"
+    },
+    {
+      "id": "review:004:claim:1",
+      "type": "claim",
+      "label": "多数据集采样与输入统一化是架构可扩展性的组成部分。"
+    },
+    {
+      "id": "review:004:limitation:0",
+      "type": "limitation",
+      "label": "统一到128网格会改变可见频率，数据预处理不能忽略。"
+    },
+    {
+      "id": "review:004:limitation:1",
+      "type": "limitation",
+      "label": "下游任务含微调与输入适配；超过基线的数值必须保留具体协议。"
+    },
+    {
+      "id": "arxiv:2405.19101",
+      "type": "paper",
+      "label": "Poseidon: Efficient Foundation Models for PDEs"
+    },
+    {
+      "id": "review:005:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "多尺度scOT，Swin窗口注意力与patch合并/扩展。",
+        "conditioning": "初始场及lead time；用时间条件归一化调制网络。",
+        "pretraining_objective": "同一自治PDE轨迹中的多个合法起点—终点对监督，all2all提高轨迹利用率。",
+        "generalization_protocol": "流体预训练后对15项下游任务适配，文中9项包含未见PDE；比较样本效率。"
+      }
+    },
+    {
+      "id": "review:005:claim:0",
+      "type": "claim",
+      "label": "跨PDE收益主要由少样本适配实验证明。"
+    },
+    {
+      "id": "review:005:claim:1",
+      "type": "claim",
+      "label": "all2all利用时间齐次演化结构，不是只增加模型参数。"
+    },
+    {
+      "id": "review:005:limitation:0",
+      "type": "limitation",
+      "label": "论文主要是Cartesian几何，复杂几何证据有限。"
+    },
+    {
+      "id": "review:005:limitation:1",
+      "type": "limitation",
+      "label": "all2all不提供精确半群保证；不能直接推广到任意非自治外力任务。"
+    },
+    {
+      "id": "arxiv:2404.12355",
+      "type": "paper",
+      "label": "Towards a Foundation Model for Partial Differential Equations: Multi-Operator Learning and Extrapolation"
+    },
+    {
+      "id": "review:006:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "数值序列与符号表达分别编码，融合后由数值/符号两个解码器输出。",
+        "conditioning": "初始观测序列与完整方程或方程骨架。",
+        "pretraining_objective": "联合数值预测损失与符号token学习；另比较2-to-1、1-to-1配置。",
+        "generalization_protocol": "一维非线性常系数PDE，评估参数、未见算子组合和物理特征外推。"
+      }
+    },
+    {
+      "id": "review:006:claim:0",
+      "type": "claim",
+      "label": "PROSE-PDE可同时预测轨迹与方程表达。"
+    },
+    {
+      "id": "review:006:claim:1",
+      "type": "claim",
+      "label": "符号条件为消除轨迹信息不足提供可检验接口。"
+    },
+    {
+      "id": "review:006:limitation:0",
+      "type": "limitation",
+      "label": "结论限于选定一维常系数方程分布。"
+    },
+    {
+      "id": "review:006:limitation:1",
+      "type": "limitation",
+      "label": "表达可解析或测试函数误差低不等于科学规律唯一可辨识。"
+    },
+    {
+      "id": "arxiv:2402.12652",
+      "type": "reference_work",
+      "label": "PDEformer: Towards a Foundation Model for One-Dimensional Partial Differential Equations"
+    },
+    {
+      "id": "review:007:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "PDE异构DAG节点表示变量、系数、初值、运算；Graphormer编码后调制INR。",
+        "conditioning": "符号PDE、系数数值和初值函数；输出按(t,x)查询。",
+        "pretraining_objective": "约500k随机一维PDE样本上的监督预训练。",
+        "generalization_protocol": "PDEBench方程的零样本和微调，论文区分系数范围内外。"
+      }
+    },
+    {
+      "id": "review:007:claim:0",
+      "type": "claim",
+      "label": "显式计算图把条件化从数据集标签提高到方程结构。"
+    },
+    {
+      "id": "review:007:claim:1",
+      "type": "claim",
+      "label": "网格无关输出来自坐标INR。"
+    },
+    {
+      "id": "review:007:limitation:0",
+      "type": "limitation",
+      "label": "原文零样本测试中in/out-of-distribution主要按系数范围定义。"
+    },
+    {
+      "id": "review:007:limitation:1",
+      "type": "limitation",
+      "label": "可查询任意坐标不代表输入函数任意采样，也不代表全部方程类可解。"
+    },
+    {
+      "id": "arxiv:2507.15409",
+      "type": "paper",
+      "label": "PDEformer-2: A Versatile Foundation Model for Two-Dimensional Partial Differential Equations"
+    },
+    {
+      "id": "review:008:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "计算图、函数编码器与INR；域和边界用SDF描述，数值函数纳入图。",
+        "conditioning": "方程结构、系数场、边界、几何、变量数及查询坐标。",
+        "pretraining_objective": "40TB数据，8种通用PDE模板随机化，监督解预测。",
+        "generalization_protocol": "相似预训练PDE零样本；新PDE少样本适配；含参数/系数字段逆问题。"
+      }
+    },
+    {
+      "id": "review:008:claim:0",
+      "type": "claim",
+      "label": "PDEformer-1到2的新增难点是二维函数/域/边界及耦合变量统一条件化。"
+    },
+    {
+      "id": "review:008:claim:1",
+      "type": "claim",
+      "label": "作者用独立数值求解器检查部分教师失败或伪影案例。"
+    },
+    {
+      "id": "review:008:limitation:0",
+      "type": "limitation",
+      "label": "8种模板内随机化与整个PDE空间仍有差距。"
+    },
+    {
+      "id": "review:008:limitation:1",
+      "type": "limitation",
+      "label": "无网格输出和无网格输入要分开；S5变体更换函数编码器并训练。"
+    },
+    {
+      "id": "arxiv:2402.12365",
+      "type": "reference_work",
+      "label": "Universal Physics Transformers: A Framework For Efficiently Scaling Neural Operators"
+    },
+    {
+      "id": "review:009:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "点/网格/粒子经局部supernode聚合与perceiver压缩到固定数latent tokens；查询解码器。",
+        "conditioning": "位置、状态及相应物理条件；潜空间推进与输出坐标解耦。",
+        "pretraining_objective": "监督预测与inverse encoding/decoding辅助约束支持潜空间rollout。",
+        "generalization_protocol": "多个流体仿真场景上的统一架构和离散/规模实验。"
+      }
+    },
+    {
+      "id": "review:009:claim:0",
+      "type": "claim",
+      "label": "把动力学计算复杂度与原始输入点数部分解耦。"
+    },
+    {
+      "id": "review:009:claim:1",
+      "type": "claim",
+      "label": "统一架构支持Eulerian和Lagrangian表示。"
+    },
+    {
+      "id": "review:009:limitation:0",
+      "type": "limitation",
+      "label": "原文不是一套已验证跨任意物理统一预训练权重的证据。"
+    },
+    {
+      "id": "review:009:limitation:1",
+      "type": "limitation",
+      "label": "固定潜表示可能压掉局部高频；作者把流体之外泛化留待未来。"
+    },
+    {
+      "id": "arxiv:2511.15684",
+      "type": "paper",
+      "label": "Walrus: A Cross-Domain Foundation Model for Continuum Dynamics"
+    },
+    {
+      "id": "review:010:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "时空因子分解Transformer，计算量自适应patch，归一化增量输出。",
+        "conditioning": "历史帧隐式识别系统与时间尺度；随机时间stride增强。",
+        "pretraining_objective": "19个连续体场景联合一步预测；patch jitter抑制固定patch谐波误差；异构分布式负载均衡。",
+        "generalization_protocol": "2D/3D域内与下游微调，分短/中/长时间窗评估并做多样性消融。"
+      }
+    },
+    {
+      "id": "review:010:claim:0",
+      "type": "claim",
+      "label": "tokenization引入的结构性误差是rollout稳定性问题的一部分。"
+    },
+    {
+      "id": "review:010:claim:1",
+      "type": "claim",
+      "label": "预训练多样性、数值稳定性和系统吞吐在同一研究中联合处理。"
+    },
+    {
+      "id": "review:010:limitation:0",
+      "type": "limitation",
+      "label": "长时混沌逐点误差不能单独衡量物理统计。"
+    },
+    {
+      "id": "review:010:limitation:1",
+      "type": "limitation",
+      "label": "基线经过作者适配；Poseidon固定Δt自回归、MPP上下文缩短，不能跨论文直接总排名。"
+    },
+    {
+      "id": "review:010:limitation:2",
+      "type": "limitation",
+      "label": "作者明确非均匀几何、部分观测和随机系统仍有不足。"
+    },
+    {
+      "id": "arxiv:2509.21670",
+      "type": "paper",
+      "label": "MORPH: PDE Foundation Models with Arbitrary Data Modality"
+    },
+    {
+      "id": "review:011:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "UPTF-7=(B,T,F,C,D,H,W)，分量卷积、字段交叉注意力、四轴注意力。",
+        "conditioning": "保留场/分量/空间轴语义的状态历史。",
+        "pretraining_objective": "异构1D–3D数据自回归预训练；下游全量微调及LoRA。",
+        "generalization_protocol": "6个预训练数据集、7个额外适配集；另做单2D预训练到6种模态的冻结零样本实验。"
+      }
+    },
+    {
+      "id": "review:011:claim:0",
+      "type": "claim",
+      "label": "数据张量的语义轴成为跨维度架构设计对象。"
+    },
+    {
+      "id": "review:011:claim:1",
+      "type": "claim",
+      "label": "零样本模态实验与主联合预训练/微调实验应分别解释。"
+    },
+    {
+      "id": "review:011:limitation:0",
+      "type": "limitation",
+      "label": "GCR相对随机初始化无训练基线的闭合比例不等同于达到工程精度。"
+    },
+    {
+      "id": "review:011:limitation:1",
+      "type": "limitation",
+      "label": "处理标量/向量排列不自动保证旋转等变、单位一致或任意几何。"
+    },
+    {
+      "id": "arxiv:2511.21861",
+      "type": "paper",
+      "label": "Towards a Foundation Model for Partial Differential Equations Across Physics Domains"
+    },
+    {
+      "id": "review:012:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "空间patch及截断谱token融合，Mamba状态空间主干，浅Fourier解码头。",
+        "conditioning": "FiLM式物理元信息条件；按数据集设置1×1输入输出adapter。",
+        "pretraining_objective": "空间与谱双重损失；12个The Well数据集联合训练，温度采样。",
+        "generalization_protocol": "主表为预训练数据来源的官方测试split；未在已读文本中定位严格留一方程的迁移对照。"
+      }
+    },
+    {
+      "id": "review:012:claim:0",
+      "type": "claim",
+      "label": "Mamba提供注意力以外的主干选择。"
+    },
+    {
+      "id": "review:012:claim:1",
+      "type": "claim",
+      "label": "正文明确dataset-specific adapters，与摘要免数据特定修改的宽泛表述需区分。"
+    },
+    {
+      "id": "review:012:limitation:0",
+      "type": "limitation",
+      "label": "不能将主表解读为未见PDE零样本。"
+    },
+    {
+      "id": "review:012:limitation:1",
+      "type": "limitation",
+      "label": "黏弹性、局部刚性及高频线性散射存在作者承认的不足。"
+    },
+    {
+      "id": "arxiv:2304.07993",
+      "type": "reference_work",
+      "label": "In-Context Operator Learning with Data Prompts for Differential Equation Problems"
+    },
+    {
+      "id": "review:013:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "坐标—值采样点组成条件/QoI示例对；Transformer读取示例与新问题。",
+        "conditioning": "同一算子的少量输入输出演示；不更新权重。",
+        "pretraining_objective": "训练网络根据示例推断算子，再对查询输出做监督。",
+        "generalization_protocol": "19类ODE/PDE/控制前向逆问题，测试同分布、分辨率、参数及新形式。"
+      }
+    },
+    {
+      "id": "review:013:claim:0",
+      "type": "claim",
+      "label": "算子本身通过上下文指定，适配成本从梯度更新转为示例取得与上下文计算。"
+    },
+    {
+      "id": "review:013:claim:1",
+      "type": "claim",
+      "label": "训练时随机示例数和采样点数有助于输入灵活性。"
+    },
+    {
+      "id": "review:013:limitation:0",
+      "type": "limitation",
+      "label": "逐点token面对稠密高维场成本高。"
+    },
+    {
+      "id": "review:013:limitation:1",
+      "type": "limitation",
+      "label": "示例获取需解或观测预算，不能视为无数据求解。"
+    },
+    {
+      "id": "arxiv:2411.16063",
+      "type": "paper",
+      "label": "VICON: Vision In-Context Operator Networks for Multi-Physics Fluid Dynamics Prediction"
+    },
+    {
+      "id": "review:014:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "将ICON逐点表示改为patch token，用块因果mask处理条件/QoI示例对。",
+        "conditioning": "历史中的状态转移对、查询状态及一致的prompt归一化。",
+        "pretraining_objective": "归一化MSE，随机stride生成不同时间跨度的上下文算子。",
+        "generalization_protocol": "3个二维流体数据集、初始10帧、单步/灵活步长rollout；缺帧鲁棒性测试。"
+      }
+    },
+    {
+      "id": "review:014:claim:0",
+      "type": "claim",
+      "label": "patch降低稠密场的上下文长度。"
+    },
+    {
+      "id": "review:014:claim:1",
+      "type": "claim",
+      "label": "灵活步长改变rollout路径与递推次数，不能当成同样步数下纯主干收益。"
+    },
+    {
+      "id": "review:014:limitation:0",
+      "type": "limitation",
+      "label": "流体族内多数据集收益不等于任意PDE泛化。"
+    },
+    {
+      "id": "review:014:limitation:1",
+      "type": "limitation",
+      "label": "缺帧实验不自动等价真实传感器噪声或sim-to-real验证。"
+    },
+    {
+      "id": "arxiv:2510.25803",
+      "type": "paper",
+      "label": "Mixture-of-Experts Operator Transformer for Large-Scale PDE Pre-Training"
+    },
+    {
+      "id": "review:015:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "Fourier算子主干中的稀疏专家；16路由专家选4个，另有2个常激活共享专家。",
+        "conditioning": "路由由输入特征产生；非外部真值PDE类型标签。",
+        "pretraining_objective": "自回归去噪损失加负载均衡；6个PDE数据集联合预训练。",
+        "generalization_protocol": "预训练分布test无微调称zero-shot；3个下游任务另做500 epoch微调。"
+      }
+    },
+    {
+      "id": "review:015:claim:0",
+      "type": "claim",
+      "label": "共享与特化容量分配是应对负迁移的一种机制。"
+    },
+    {
+      "id": "review:015:claim:1",
+      "type": "claim",
+      "label": "总参数与激活参数必须分别报告。"
+    },
+    {
+      "id": "review:015:limitation:0",
+      "type": "limitation",
+      "label": "路由可分类数据集并不能证明学到可组合物理算子。"
+    },
+    {
+      "id": "review:015:limitation:1",
+      "type": "limitation",
+      "label": "激活参数少不自动等价墙钟速度更快；通信、显存和路由开销需要测量。"
+    },
+    {
+      "id": "arxiv:2602.22059",
+      "type": "paper",
+      "label": "NESTOR: A Nested MOE-based Neural Operator for Large-Scale PDE Pre-Training"
+    },
+    {
+      "id": "review:016:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "外层图像级MoE加内层token级Sub-MoE，结合频域与时空特征。",
+        "conditioning": "全局特征决定粗粒度专家，局部token决定细粒度专家。",
+        "pretraining_objective": "相对L2主损失与两级负载均衡，12个数据集预训练。",
+        "generalization_protocol": "主表区分预训练与200/500 epoch微调；下游含512²高分辨率湍流。"
+      }
+    },
+    {
+      "id": "review:016:claim:0",
+      "type": "claim",
+      "label": "路由粒度由整个样本推进至局部区域。"
+    },
+    {
+      "id": "review:016:claim:1",
+      "type": "claim",
+      "label": "沿用DPOT的加噪、padding与平衡采样，不能把全部收益归于嵌套专家。"
+    },
+    {
+      "id": "review:016:limitation:0",
+      "type": "limitation",
+      "label": "高分辨率适配不是未见物理证据。"
+    },
+    {
+      "id": "review:016:limitation:1",
+      "type": "limitation",
+      "label": "作者受资源限制仅主实现一种参数规模；专家数消融不等价完整规模律。"
+    },
+    {
+      "id": "arxiv:2509.13805",
+      "type": "paper",
+      "label": "Towards a Physics Foundation Model"
+    },
+    {
+      "id": "review:017:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "原始场及有限差分空间/时间导数输入Transformer神经微分器；配数值积分器。",
+        "conditioning": "历史prompt；不输入完整PDE公式。",
+        "pretraining_objective": "约1.8TB、7个二维数据集，学习时间演化；本文采用Forward Euler积分。",
+        "generalization_protocol": "已知物理、新边界、未见湍流辐射层/超声速场景的上下文测试，含长rollout。"
+      }
+    },
+    {
+      "id": "review:017:claim:0",
+      "type": "claim",
+      "label": "时间导数表示把学习动态与推进算法分开。"
+    },
+    {
+      "id": "review:017:claim:1",
+      "type": "claim",
+      "label": "高阶RK积分在其消融中未显著改善准确度，表明积分阶数不是唯一瓶颈。"
+    },
+    {
+      "id": "review:017:limitation:0",
+      "type": "limitation",
+      "label": "作者限定二维、流体/传热覆盖与固定分辨率。"
+    },
+    {
+      "id": "review:017:limitation:1",
+      "type": "limitation",
+      "label": "未知物理误差高于已知任务，长期精度离数值求解器有距离。"
+    },
+    {
+      "id": "arxiv:2402.16014",
+      "type": "paper",
+      "label": "OmniArch: Building Foundation Model For Scientific Computing"
+    },
+    {
+      "id": "review:018:mechanism:0",
+      "type": "mechanism",
+      "label": {
+        "representation": "分维度Fourier编码器/解码器压缩为谱序列，共享时间Transformer与时间mask。",
+        "conditioning": "预训练基于物理状态；PDE-Aligner在适配时引入方程信息。",
+        "pretraining_objective": "自回归多任务预训练；另用频域对比学习的方程对齐模块支持物理知情微调。",
+        "generalization_protocol": "1D/2D/3D多基准及零样本/微调/逆问题分设实验。"
+      }
+    },
+    {
+      "id": "review:018:claim:0",
+      "type": "claim",
+      "label": "谱表示可作为跨维度中间接口，但编码器仍区分空间维度。"
+    },
+    {
+      "id": "review:018:claim:1",
+      "type": "claim",
+      "label": "方程对齐与多任务预训练是不同训练阶段。"
+    },
+    {
+      "id": "review:018:limitation:0",
+      "type": "limitation",
+      "label": "统一骨干不表示单一无条件编码器。"
+    },
+    {
+      "id": "review:018:limitation:1",
+      "type": "limitation",
+      "label": "LANDMARK“首个”属于历史优先权主张，本次未检索足够同期文献来确认。"
+    },
+    {
+      "id": "arxiv:2210.07182",
+      "type": "reference_work",
+      "label": "PDEBench: An Extensive Benchmark for Scientific Machine Learning"
+    },
+    {
+      "id": "review:019:mechanism:0",
+      "type": "mechanism",
+      "label": "共同数据接口与数据/物理两类指标，比较数值代理的多种失效模式。"
+    },
+    {
+      "id": "review:019:claim:0",
+      "type": "claim",
+      "label": "包含稳态与演化型方程以及正/反问题设置。"
+    },
+    {
+      "id": "review:019:claim:1",
+      "type": "claim",
+      "label": "评测含逐点、边界、守恒量和分频误差；单一MSE不足以表达全部性质。"
+    },
+    {
+      "id": "review:019:limitation:0",
+      "type": "limitation",
+      "label": "是基准基础设施，不自身证明一个预训练模型跨PDE迁移。"
+    },
+    {
+      "id": "review:019:limitation:1",
+      "type": "limitation",
+      "label": "参考解仍为特定生成器和离散条件下的数值结果。"
+    },
+    {
+      "id": "unresolved:ebc4e45d7908178d61af",
+      "type": "paper",
+      "label": "PDEArena: A benchmark suite for neural PDE solvers [registry label; publication identity unresolved]"
+    },
+    {
+      "id": "review:020:mechanism:0",
+      "type": "mechanism",
+      "label": "官方项目提供神经PDE代理的基准实现；关联研究比较FNO、ResNet和U-Net及参数/时间泛化。"
+    },
+    {
+      "id": "review:020:claim:0",
+      "type": "claim",
+      "label": "官方文档引用 Towards Multi-spatiotemporal-scale Generalized PDE Modeling (2209.15616) 与 Clifford neural layers for PDE modeling (2209.04934)。"
+    },
+    {
+      "id": "review:020:claim:1",
+      "type": "claim",
+      "label": "原摘要研究参数和时间尺度条件下的泛化。"
+    },
+    {
+      "id": "review:020:limitation:0",
+      "type": "limitation",
+      "label": "本次未取得2209.15616正文：HTML和PDF打开均内部错误。"
+    },
+    {
+      "id": "review:020:limitation:1",
+      "type": "limitation",
+      "label": "官方证据未确认主表所列独立NeurIPS 2023 Datasets and Benchmarks论文身份。"
+    },
+    {
+      "id": "doi:10.52202/079017-1430",
+      "type": "paper",
+      "label": "The Well: a Large-Scale Collection of Diverse Physics Simulations for Machine Learning"
+    },
+    {
+      "id": "review:021:mechanism:0",
+      "type": "mechanism",
+      "label": "统一多物理模拟数据格式与评测接口，用中心化尺度衡量预测误差。"
+    },
+    {
+      "id": "review:021:claim:0",
+      "type": "claim",
+      "label": "原始集合16个数据集约15TB，包含2D/3D场及异质物理变量。"
+    },
+    {
+      "id": "review:021:claim:1",
+      "type": "claim",
+      "label": "原论文基线按单H100约12小时预算；单步和rollout分别评估。"
+    },
+    {
+      "id": "review:021:claim:2",
+      "type": "claim",
+      "label": "17个基准实验不应直接当成17个数据集。"
+    },
+    {
+      "id": "review:021:limitation:0",
+      "type": "limitation",
+      "label": "基线预算与默认配置不能代表架构峰值性能。"
+    },
+    {
+      "id": "review:021:limitation:1",
+      "type": "limitation",
+      "label": "统一数据集合不是联合预训练收益证明。"
+    },
+    {
+      "id": "arxiv:2505.18511",
+      "type": "paper",
+      "label": "SPDEBench: An Extensive Benchmark for Learning Regular and Singular Stochastic PDEs"
+    },
+    {
+      "id": "review:022:mechanism:0",
+      "type": "mechanism",
+      "label": "将随机驱动截断与奇异方程重整化作为数据身份和条件输入的一部分。"
+    },
+    {
+      "id": "review:022:claim:0",
+      "type": "claim",
+      "label": "覆盖1D/2D环面上的正则与奇异SPDE。"
+    },
+    {
+      "id": "review:022:claim:1",
+      "type": "claim",
+      "label": "同一截断下的低测试误差可以掩盖与更精细参考的差距。"
+    },
+    {
+      "id": "review:022:claim:2",
+      "type": "claim",
+      "label": "向模型提供重整化参数是被检验的条件化方案。"
+    },
+    {
+      "id": "review:022:limitation:0",
+      "type": "limitation",
+      "label": "有限数值截断依然是参考近似。"
+    },
+    {
+      "id": "review:022:limitation:1",
+      "type": "limitation",
+      "label": "输入已含随机强迫路径的任务不等价于未知未来噪声的概率预测。"
+    },
+    {
+      "id": "arxiv:2512.18595",
+      "type": "paper",
+      "label": "Benchmarking neural surrogates on realistic spatiotemporal multiphysics flows"
+    },
+    {
+      "id": "review:023:mechanism:0",
+      "type": "mechanism",
+      "label": "以刚性化学源项耦合输运PDE构成高成本模拟基准，统一预处理和rollout。"
+    },
+    {
+      "id": "review:023:claim:0",
+      "type": "claim",
+      "label": "11个高保真数据集，覆盖反应流、推进与火灾场景。"
+    },
+    {
+      "id": "review:023:claim:1",
+      "type": "claim",
+      "label": "数值平均精度/相关性与瞬态结构、积分物理量可出现差距。"
+    },
+    {
+      "id": "review:023:claim:2",
+      "type": "claim",
+      "label": "维数、刚性与网格不规则性共同构成困难。"
+    },
+    {
+      "id": "review:023:limitation:0",
+      "type": "limitation",
+      "label": "realistic表示应用和模拟复杂度，不表示来自实验测量。"
+    },
+    {
+      "id": "review:023:limitation:1",
+      "type": "limitation",
+      "label": "模型排名依赖给定容量、调参和rollout协议。"
+    },
+    {
+      "id": "arxiv:2601.01829",
+      "type": "paper",
+      "label": "RealPDEBench: A Benchmark for Complex Physical Systems with Real-World Data"
+    },
+    {
+      "id": "review:024:mechanism:0",
+      "type": "mechanism",
+      "label": "实验测量与模拟配对，固定真实验证/测试集比较三种训练信息来源。"
+    },
+    {
+      "id": "review:024:claim:0",
+      "type": "claim",
+      "label": "五种物理场景；真实与模拟差异被显式用于迁移评测。"
+    },
+    {
+      "id": "review:024:claim:1",
+      "type": "claim",
+      "label": "协议允许全部N个模拟样本用于模拟训练/预训练，只有n个真实样本训练。"
+    },
+    {
+      "id": "review:024:limitation:0",
+      "type": "limitation",
+      "label": "因此不是全部测试工况都从模拟训练中留出的新工况泛化。"
+    },
+    {
+      "id": "review:024:limitation:1",
+      "type": "limitation",
+      "label": "真实观测受噪声与可观测变量限制，不能当作无误差全状态。"
+    },
+    {
+      "id": "arxiv:2605.29283",
+      "type": "paper",
+      "label": "Do Physics Foundation Models Learn Generalizable Physics? A Bias-Aware Benchmark Across Physical Regimes and Distribution Shifts"
+    },
+    {
+      "id": "review:025:mechanism:0",
+      "type": "mechanism",
+      "label": "把训练混合、模型/规模、动力学尺度、初值复杂度和时间跨度拆成实验因素。"
+    },
+    {
+      "id": "review:025:claim:0",
+      "type": "claim",
+      "label": "原文覆盖DPOT、GPhyT、MORPH、MPP、Poseidon及八种动力学。"
+    },
+    {
+      "id": "review:025:claim:1",
+      "type": "claim",
+      "label": "动态尺度由密轨迹时间子采样stride产生。"
+    },
+    {
+      "id": "review:025:claim:2",
+      "type": "claim",
+      "label": "未见范围内组合与真正超出轴范围分开。"
+    },
+    {
+      "id": "review:025:limitation:0",
+      "type": "limitation",
+      "label": "时间stride变化不能直接等同改变物理方程参数。"
+    },
+    {
+      "id": "review:025:limitation:1",
+      "type": "limitation",
+      "label": "给定构造分布内的能力剖面不是全部物理规律泛化的最终判定。"
+    },
+    {
+      "id": "arxiv:2606.00296",
+      "type": "paper",
+      "label": "Is Zero-Shot Super-Resolution Possible in Operator Learning?"
+    },
+    {
+      "id": "review:026:mechanism:0",
+      "type": "mechanism",
+      "label": "用不可辨识反例及正则性误差界分离输出细网格泛化与输入离散一致性。"
+    },
+    {
+      "id": "review:026:claim:0",
+      "type": "claim",
+      "label": "缺乏输出正则性时，粗网格拟合并不保证新输出点准确。"
+    },
+    {
+      "id": "review:026:claim:1",
+      "type": "claim",
+      "label": "正向界要求预测与真实输出均有一致Hölder控制，且依赖网格覆盖。"
+    },
+    {
+      "id": "review:026:limitation:0",
+      "type": "limitation",
+      "label": "不是任何超分辨率都不可能的定理。"
+    },
+    {
+      "id": "review:026:limitation:1",
+      "type": "limitation",
+      "label": "加入高分辨率物理残差/细网格监督改变了可用信息协议。"
+    },
+    {
+      "id": "arxiv:2605.09189",
+      "type": "paper",
+      "label": "Practical Scaling Laws: Converting Compute into Performance in a Data-Constrained World"
+    },
+    {
+      "id": "review:027:mechanism:0",
+      "type": "mechanism",
+      "label": "独立区分参数量、独立数据量和重复见过样本数，拟合容量/训练不足与过拟合。"
+    },
+    {
+      "id": "review:027:claim:0",
+      "type": "claim",
+      "label": "有四组跨架构自建实验，包括Darcy-FNO，并回拟合五个LLM网格。"
+    },
+    {
+      "id": "review:027:claim:1",
+      "type": "claim",
+      "label": "L表示最低验证checkpoint损失；拟合限定架构族、分布和训练配方。"
+    },
+    {
+      "id": "review:027:limitation:0",
+      "type": "limitation",
+      "label": "不能直接将系数迁移为PDE跨域收益预测。"
+    },
+    {
+      "id": "review:027:limitation:1",
+      "type": "limitation",
+      "label": "相邻时空样本的有效独立信息量需另行定义。"
+    },
+    {
+      "id": "arxiv:2111.03794",
+      "type": "paper",
+      "label": "Physics-Informed Neural Operator for Learning Partial Differential Equations"
+    },
+    {
+      "id": "review:028:mechanism:0",
+      "type": "mechanism",
+      "label": "把算子训练的数据损失和PDE约束结合，并允许目标实例残差优化。"
+    },
+    {
+      "id": "review:028:claim:0",
+      "type": "claim",
+      "label": "细网格PDE约束为粗观测提供额外信息。"
+    },
+    {
+      "id": "review:028:claim:1",
+      "type": "claim",
+      "label": "实例优化需要在线计算，与纯前向部署有成本权衡。"
+    },
+    {
+      "id": "review:028:limitation:0",
+      "type": "limitation",
+      "label": "无目标解标签不等于无目标方程信息或无适配。"
+    },
+    {
+      "id": "review:028:limitation:1",
+      "type": "limitation",
+      "label": "导数计算存在离散精度与算力代价。"
+    },
+    {
+      "id": "arxiv:2602.01498",
+      "type": "paper",
+      "label": "Geometric Generalization of Neural Operators from Kernel Integral Perspective"
+    },
+    {
+      "id": "review:029:mechanism:0",
+      "type": "mechanism",
+      "label": "以Ewald式近远场分解近似奇异核，构造多尺度点云神经算子。"
+    },
+    {
+      "id": "review:029:claim:0",
+      "type": "claim",
+      "label": "目标是可变几何上的核积分与点云算子。"
+    },
+    {
+      "id": "review:029:claim:1",
+      "type": "claim",
+      "label": "原文报告含大规模3D流动的几何泛化实验。"
+    },
+    {
+      "id": "review:029:limitation:0",
+      "type": "limitation",
+      "label": "核近似理论条件不能自动转成任意训练数据上的几何外推保证。"
+    },
+    {
+      "id": "review:029:limitation:1",
+      "type": "limitation",
+      "label": "线性复杂度声明须固定模式数/邻域等架构配置理解。"
+    },
+    {
+      "id": "arxiv:2602.20399",
+      "type": "paper",
+      "label": "GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training"
+    },
+    {
+      "id": "review:030:mechanism:0",
+      "type": "mechanism",
+      "label": "向无物理标签几何加入合成速度/输运条件，预训练动力学相关表示再做任务微调。"
+    },
+    {
+      "id": "review:030:claim:0",
+      "type": "claim",
+      "label": "原文预训练超过百万几何walk样本。"
+    },
+    {
+      "id": "review:030:claim:1",
+      "type": "claim",
+      "label": "报告跨汽车、飞机、船舶与固体任务的数据效率改善。"
+    },
+    {
+      "id": "review:030:limitation:0",
+      "type": "limitation",
+      "label": "无任务物理标签的预训练不等于无合成条件或无下游标签。"
+    },
+    {
+      "id": "review:030:limitation:1",
+      "type": "limitation",
+      "label": "正文设定以稳态模拟为主，不应据此声称长时程动力学能力。"
+    },
+    {
+      "id": "arxiv:2601.19091",
+      "type": "paper",
+      "label": "Out-of-Distribution Generalization for Neural Physics Solvers"
+    },
+    {
+      "id": "review:031:mechanism:0",
+      "type": "mechanism",
+      "label": "架构搜索结合目标侧末层物理适配，以已知方程约束提高分布外求解能力。"
+    },
+    {
+      "id": "review:031:claim:0",
+      "type": "claim",
+      "label": "实验分别考察初值、几何和方程参数变化。"
+    },
+    {
+      "id": "review:031:claim:1",
+      "type": "claim",
+      "label": "zero-shot adaptation仍使用目标物理信息。"
+    },
+    {
+      "id": "review:031:limitation:0",
+      "type": "limitation",
+      "label": "不应与零优化前向推理使用同一延迟口径。"
+    },
+    {
+      "id": "review:031:limitation:1",
+      "type": "limitation",
+      "label": "多系统上分别验证不自动建立一个统一模型的零样本跨PDE能力。"
+    },
+    {
+      "id": "arxiv:2609.12301",
+      "type": "paper",
+      "label": "PDE-constrained inverse problems at the sqrt(n) rate via debiased physics-informed neural networks"
+    },
+    {
+      "id": "review:032:mechanism:0",
+      "type": "mechanism",
+      "label": "对低维PDE参数的估计方程做影响函数去偏，降低对神经解函数误差的一阶敏感性。"
+    },
+    {
+      "id": "review:032:claim:0",
+      "type": "claim",
+      "label": "满足论文假设时得到根号n一致性、渐近正态与相应Bayesian结果。"
+    },
+    {
+      "id": "review:032:claim:1",
+      "type": "claim",
+      "label": "场函数是非参数nuisance，参数推断速率与场误差速率不同。"
+    },
+    {
+      "id": "review:032:limitation:0",
+      "type": "limitation",
+      "label": "需要正则性、可辨识性、局部曲率、已知采样设计等假设。"
+    },
+    {
+      "id": "review:032:limitation:1",
+      "type": "limitation",
+      "label": "不涵盖任意未知传感偏差、噪声相关性或不可辨识逆问题。"
+    },
+    {
+      "id": "arxiv:2609.15432",
+      "type": "paper",
+      "label": "Single-condition neural solvers encode transferable response spaces for parametric differential equations"
+    },
+    {
+      "id": "review:033:mechanism:0",
+      "type": "mechanism",
+      "label": "缓存输出Jacobian的低秩响应模态与导数，在仿射空间中最小化目标残差，并按需增补源。"
+    },
+    {
+      "id": "review:033:claim:0",
+      "type": "claim",
+      "label": "六种微分方程系统支持局部响应复用。"
+    },
+    {
+      "id": "review:033:claim:1",
+      "type": "claim",
+      "label": "保留目标特定在线求解，而非只做一次前向。"
+    },
+    {
+      "id": "review:033:limitation:0",
+      "type": "limitation",
+      "label": "秩截断、条件数、精度与缓存内存制约可用性。"
+    },
+    {
+      "id": "review:033:limitation:1",
+      "type": "limitation",
+      "label": "残差是实用覆盖指示，不是严格解误差证书；强非线性条件变化没有通用保证。"
+    },
+    {
+      "id": "arxiv:2609.15620",
+      "type": "paper",
+      "label": "Where to Compute and How to Interact: Operator-Readable Adaptation with Gauge-Aware Transport"
+    },
+    {
+      "id": "review:034:mechanism:0",
+      "type": "mechanism",
+      "label": "将自适应节点分配和几何条件低秩特征传输分开，聚合前对齐局部表示上下文。"
+    },
+    {
+      "id": "review:034:claim:0",
+      "type": "claim",
+      "label": "五个基准上报告改善，并用干预检验分配与交互作用。"
+    },
+    {
+      "id": "review:034:claim:1",
+      "type": "claim",
+      "label": "连续性分析限固定节点身份/连接及非退化网格。"
+    },
+    {
+      "id": "review:034:limitation:0",
+      "type": "limitation",
+      "label": "学习特征修正不是严格解析gauge变换或无条件等变保证。"
+    },
+    {
+      "id": "review:034:limitation:1",
+      "type": "limitation",
+      "label": "拓扑变化、折叠和3D非结构网格不在该命题覆盖范围。"
+    },
+    {
+      "id": "arxiv:2609.16621",
+      "type": "paper",
+      "label": "Stable by Construction: Variational Latent Markov Operators for Long-Horizon PDE Prediction"
+    },
+    {
+      "id": "review:035:mechanism:0",
+      "type": "mechanism",
+      "label": "结构化高斯潜扰动与动态KL对齐改善局部敏感性和转移误差，推断用确定性均值演化。"
+    },
+    {
+      "id": "review:035:claim:0",
+      "type": "claim",
+      "label": "流体基准中长时程误差积累低于所测确定性/噪声注入基线。"
+    },
+    {
+      "id": "review:035:claim:1",
+      "type": "claim",
+      "label": "误差界包含转移Lipschitz常数的幂次传播。"
+    },
+    {
+      "id": "review:035:limitation:0",
+      "type": "limitation",
+      "label": "系数大于1时理论仍允许误差放大，不是任意长期稳定证明。"
+    },
+    {
+      "id": "review:035:limitation:1",
+      "type": "limitation",
+      "label": "规则网格、FNO潜转移、固定局部时间步与流体实验限制外推。"
+    },
+    {
+      "id": "arxiv:2609.20814",
+      "type": "paper",
+      "label": "How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?"
+    },
+    {
+      "id": "review:036:mechanism:0",
+      "type": "mechanism",
+      "label": "将几何家族变化与额外转捩建模分开，测量目标数据预算和覆盖对预训练数据效率的交互。"
+    },
+    {
+      "id": "review:036:claim:0",
+      "type": "claim",
+      "label": "G在N=1000时为3.25/2.58，N=5000时为1.56/1.86；变化是目标间排序。"
+    },
+    {
+      "id": "review:036:claim:1",
+      "type": "claim",
+      "label": "所有这些值大于1，不能据此声称负迁移。"
+    },
+    {
+      "id": "review:036:claim:2",
+      "type": "claim",
+      "label": "N=10000转捩目标一项重复因匹配预算不可达而删失。"
+    },
+    {
+      "id": "review:036:limitation:0",
+      "type": "limitation",
+      "label": "单一RANS翼型物理族及两个相关模型设置。"
+    },
+    {
+      "id": "review:036:limitation:1",
+      "type": "limitation",
+      "label": "重复主要是数据抽样/重训练；全数据点仅单次运行。"
+    },
+    {
+      "id": "review:037:mechanism:0",
+      "type": "mechanism",
+      "label": "数据与物理残差共同训练算子，目标实例可继续残差优化。"
+    },
+    {
+      "id": "review:037:claim:0",
+      "type": "claim",
+      "label": "算子预训练与实例优化是两个计算阶段。"
+    },
+    {
+      "id": "review:037:limitation:0",
+      "type": "limitation",
+      "label": "跨参数微调不是无更新的零样本推断。"
+    },
+    {
+      "id": "review:037:limitation:1",
+      "type": "limitation",
+      "label": "FNO实现具有网格与维数成本限制。"
+    },
+    {
+      "id": "doi:10.1038/s41586-024-07744-y",
+      "type": "paper",
+      "label": "Neural general circulation models for weather and climate"
+    },
+    {
+      "id": "review:038:mechanism:0",
+      "type": "mechanism",
+      "label": "将数值动力核心与学习的物理倾向耦合。"
+    },
+    {
+      "id": "review:038:claim:0",
+      "type": "claim",
+      "label": "论文同时讨论天气预报和给定海温下的长期模拟。"
+    },
+    {
+      "id": "review:038:limitation:0",
+      "type": "limitation",
+      "label": "更大海温扰动下有偏离与漂移。"
+    },
+    {
+      "id": "review:038:limitation:1",
+      "type": "limitation",
+      "label": "不能视为任意PDE族的统一基座。"
+    },
+    {
+      "id": "arxiv:2411.18358",
+      "type": "paper",
+      "label": "Data-driven discovery of a heat flux closure for electrostatic plasma phenomena"
+    },
+    {
+      "id": "review:039:mechanism:0",
+      "type": "mechanism",
+      "label": "PIC数据上的稀疏闭合发现，结合量纲和线性理论分析。"
+    },
+    {
+      "id": "review:039:claim:0",
+      "type": "claim",
+      "label": "弱积分减少粒子噪声；交错场与时间对齐很重要。"
+    },
+    {
+      "id": "review:039:limitation:0",
+      "type": "limitation",
+      "label": "1D静电场景。"
+    },
+    {
+      "id": "review:039:limitation:1",
+      "type": "limitation",
+      "label": "闭合嵌入流体求解器的长期稳定性并未由离线拟合确立。"
+    },
+    {
+      "id": "arxiv:2411.08789",
+      "type": "paper",
+      "label": "Physics-Informed Transformation Toward Improving the Machine-Learned NLTE Models of ICF Simulations"
+    },
+    {
+      "id": "review:040:mechanism:0",
+      "type": "mechanism",
+      "label": "将NLTE吸收和发射变换为物理相关变量，评价PCA压缩误差。"
+    },
+    {
+      "id": "review:040:claim:0",
+      "type": "claim",
+      "label": "表示和误差度量围绕能量输运。"
+    },
+    {
+      "id": "review:040:limitation:0",
+      "type": "limitation",
+      "label": "本文不能证明新训练代理已改善完整ICF闭环动力学。"
+    },
+    {
+      "id": "review:040:limitation:1",
+      "type": "limitation",
+      "label": "HTML日期显示与版本头不一致，年份依据arXiv提交历史。"
+    },
+    {
+      "id": "arxiv:2501.08166",
+      "type": "paper",
+      "label": "Asymptotic-Preserving Neural Networks based on Even-odd Decomposition for Multiscale Gray Radiative Transfer Equations"
+    },
+    {
+      "id": "review:041:mechanism:0",
+      "type": "mechanism",
+      "label": "奇偶分解构造保持扩散极限的损失。"
+    },
+    {
+      "id": "review:041:claim:0",
+      "type": "claim",
+      "label": "比较动理学与扩散区间的灰辐射输运算例。"
+    },
+    {
+      "id": "review:041:limitation:0",
+      "type": "limitation",
+      "label": "Marshak波前仍有偏差。"
+    },
+    {
+      "id": "review:041:limitation:1",
+      "type": "limitation",
+      "label": "未核验完整数学证明的所有前提；不宣称任意PDE的稳定性定理。"
+    },
+    {
+      "id": "arxiv:2507.04153",
+      "type": "paper",
+      "label": "Physics-informed neural networks and neural operators for a study of EUV electromagnetic wave diffraction from a lithography mask"
+    },
+    {
+      "id": "review:042:mechanism:0",
+      "type": "mechanism",
+      "label": "保留波导方法结构，以神经网络替换耗时环节。"
+    },
+    {
+      "id": "review:042:claim:0",
+      "type": "claim",
+      "label": "给出EUV二维和三维掩模实验。"
+    },
+    {
+      "id": "review:042:limitation:0",
+      "type": "limitation",
+      "label": "结果受掩模与物理设置限制。"
+    },
+    {
+      "id": "review:042:limitation:1",
+      "type": "limitation",
+      "label": "论文运行时间不等于本次独立复验或整个设计流程加速。"
+    },
+    {
+      "id": "arxiv:2510.07314",
+      "type": "paper",
+      "label": "GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations"
+    },
+    {
+      "id": "review:043:mechanism:0",
+      "type": "mechanism",
+      "label": "5D分布函数与3D电势经潜空间交互，并引入物理模态分离。"
+    },
+    {
+      "id": "review:043:claim:0",
+      "type": "claim",
+      "label": "显式处理不同维度物理状态之间的耦合。"
+    },
+    {
+      "id": "review:043:limitation:0",
+      "type": "limitation",
+      "label": "绝热电子近似。"
+    },
+    {
+      "id": "review:043:limitation:1",
+      "type": "limitation",
+      "label": "忽略线性阶段。"
+    },
+    {
+      "id": "review:043:limitation:2",
+      "type": "limitation",
+      "label": "长时误差累积且尚未充分表达混沌分布性质。"
+    },
+    {
+      "id": "concept:operator",
+      "type": "concept",
+      "label": "从解函数到解算子",
+      "description": "把一次求解变为可重复查询的映射；检查离线成本与训练分布。"
+    },
+    {
+      "id": "concept:pretrain",
+      "type": "concept",
+      "label": "从单族到多物理",
+      "description": "预训练是否提供新任务可复用的结构，需要从零训练和留出任务对照。"
+    },
+    {
+      "id": "concept:condition",
+      "type": "concept",
+      "label": "符号与上下文",
+      "description": "问题通过方程、参数或示例给出；不同目标信息对应不同能力协议。"
+    },
+    {
+      "id": "concept:heterogeneity",
+      "type": "concept",
+      "label": "几何、维度与变量",
+      "description": "共享主干不代表输入输出完全共享；统一形状不代表统一语义。"
+    },
+    {
+      "id": "concept:reliability",
+      "type": "concept",
+      "label": "长时、物理量与分布",
+      "description": "稳定、准确和统计可信分别评测，不能只看一步误差。"
+    },
+    {
+      "id": "concept:evaluation",
+      "type": "concept",
+      "label": "分轴迁移与总成本",
+      "description": "固定目标信息、预算、指标与物理时长，才能判断何时值得复用。"
+    },
+    {
+      "id": "hypothesis:H1",
+      "type": "hypothesis",
+      "label": "跨采样一致性",
+      "question": "统一表示能否在未见采样上保留物理信息？",
+      "experiment": "固定动力学容量，比较同网格重构、跨采样一致性和物理量约束。",
+      "failure_criterion": "改善若仅来自平滑或高频损失，假说不成立。",
+      "status": "untested"
+    },
+    {
+      "id": "hypothesis:H2",
+      "type": "hypothesis",
+      "label": "方程与示例的互补性",
+      "question": "模型究竟使用了哪些任务信息？",
+      "experiment": "符号条件 × 上下文示例 2×2 对照，加错误条件与打乱示例干预。",
+      "failure_criterion": "条件打乱不影响结果，说明条件未有效使用。",
+      "status": "untested"
+    },
+    {
+      "id": "hypothesis:H3",
+      "type": "hypothesis",
+      "label": "可迁移任务配比",
+      "question": "哪些源任务贡献正迁移，哪些互相干扰？",
+      "experiment": "等样本、等计算、留出目标家族；比较相关子集与随机子集。",
+      "failure_criterion": "收益若由目标同源样本增多解释，不能称跨方程复用。",
+      "status": "untested"
+    },
+    {
+      "id": "hypothesis:H4",
+      "type": "hypothesis",
+      "label": "长时物理可信度",
+      "question": "稳定时长是否以牺牲动力学为代价？",
+      "experiment": "同主干比较多步训练、直接噪声、结构噪声与约束。",
+      "failure_criterion": "平均场不爆炸却丢失能谱和事件，不算成功。",
+      "status": "untested"
+    },
+    {
+      "id": "hypothesis:H5",
+      "type": "hypothesis",
+      "label": "按误差分配求解",
+      "question": "残差是否足以决定适配和数值回退？",
+      "experiment": "预测、固定修正、自适应修正与纯数值同容差比较。",
+      "failure_criterion": "小残差大误差无法识别，则不能宣称可靠控制。",
+      "status": "untested"
+    },
+    {
+      "id": "hypothesis:H6",
+      "type": "hypothesis",
+      "label": "跨物理区间结构",
+      "question": "无量纲条件与极限约束能否支持区间外推？",
+      "experiment": "留出连续尺度区间，对齐数值误差并比较四类结构。",
+      "failure_criterion": "仅极限附近正确不能代表有限参数区间也准确。",
+      "status": "untested"
+    },
+    {
+      "id": "hypothesis:H7",
+      "type": "hypothesis",
+      "label": "概率预测的含义",
+      "question": "不确定性来自噪声、观测还是模型失准？",
+      "experiment": "固定观测、多次参考实现，比较严格评分规则和物理样本。",
+      "failure_criterion": "靠扩大区间获得覆盖或样本不物理都不成立。",
+      "status": "untested"
+    },
+    {
+      "id": "hypothesis:H8",
+      "type": "hypothesis",
+      "label": "可组合领域模块",
+      "question": "领域机制能否通过明确接口迁移？",
+      "experiment": "两个相关但不同来源任务，比较逐任务、混合与模块共享。",
+      "failure_criterion": "离线改善但闭环退化，不能支持模块迁移。",
+      "status": "untested"
+    }
+  ],
+  "edges": [
+    {
+      "source": "arxiv:1910.03193",
+      "target": "review:001:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:001",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/1910.03193",
+        "https://huggingface.co/papers/1910.03193.md",
+        "https://arxiv.org/pdf/1910.03193v3"
+      ],
+      "locators": [
+        "Section 2.1 Deep operator networks, Eq. (2)",
+        "Section 3 Number of sensors",
+        "Section 4 Simulation results"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:1910.03193",
+      "target": "review:001:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:001",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/1910.03193",
+        "https://huggingface.co/papers/1910.03193.md",
+        "https://arxiv.org/pdf/1910.03193v3"
+      ],
+      "locators": [
+        "Section 2.1 Deep operator networks, Eq. (2)",
+        "Section 3 Number of sensors",
+        "Section 4 Simulation results"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:1910.03193",
+      "target": "review:001:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:001",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/1910.03193",
+        "https://huggingface.co/papers/1910.03193.md",
+        "https://arxiv.org/pdf/1910.03193v3"
+      ],
+      "locators": [
+        "Section 2.1 Deep operator networks, Eq. (2)",
+        "Section 3 Number of sensors",
+        "Section 4 Simulation results"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:1910.03193",
+      "target": "review:001:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:001",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/1910.03193",
+        "https://huggingface.co/papers/1910.03193.md",
+        "https://arxiv.org/pdf/1910.03193v3"
+      ],
+      "locators": [
+        "Section 2.1 Deep operator networks, Eq. (2)",
+        "Section 3 Number of sensors",
+        "Section 4 Simulation results"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:1910.03193",
+      "target": "review:001:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:001",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/1910.03193",
+        "https://huggingface.co/papers/1910.03193.md",
+        "https://arxiv.org/pdf/1910.03193v3"
+      ],
+      "locators": [
+        "Section 2.1 Deep operator networks, Eq. (2)",
+        "Section 3 Number of sensors",
+        "Section 4 Simulation results"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2010.08895",
+      "target": "review:002:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:002",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2010.08895",
+        "https://huggingface.co/papers/2010.08895.md",
+        "https://arxiv.org/pdf/2010.08895v3"
+      ],
+      "locators": [
+        "Sections 3–4, Fourier integral operator Eq. (4)",
+        "Sections 5.1–5.4 Burgers/Darcy/Navier–Stokes and super-resolution"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2010.08895",
+      "target": "review:002:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:002",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2010.08895",
+        "https://huggingface.co/papers/2010.08895.md",
+        "https://arxiv.org/pdf/2010.08895v3"
+      ],
+      "locators": [
+        "Sections 3–4, Fourier integral operator Eq. (4)",
+        "Sections 5.1–5.4 Burgers/Darcy/Navier–Stokes and super-resolution"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2010.08895",
+      "target": "review:002:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:002",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2010.08895",
+        "https://huggingface.co/papers/2010.08895.md",
+        "https://arxiv.org/pdf/2010.08895v3"
+      ],
+      "locators": [
+        "Sections 3–4, Fourier integral operator Eq. (4)",
+        "Sections 5.1–5.4 Burgers/Darcy/Navier–Stokes and super-resolution"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2010.08895",
+      "target": "review:002:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:002",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2010.08895",
+        "https://huggingface.co/papers/2010.08895.md",
+        "https://arxiv.org/pdf/2010.08895v3"
+      ],
+      "locators": [
+        "Sections 3–4, Fourier integral operator Eq. (4)",
+        "Sections 5.1–5.4 Burgers/Darcy/Navier–Stokes and super-resolution"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2010.08895",
+      "target": "review:002:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:002",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2010.08895",
+        "https://huggingface.co/papers/2010.08895.md",
+        "https://arxiv.org/pdf/2010.08895v3"
+      ],
+      "locators": [
+        "Sections 3–4, Fourier integral operator Eq. (4)",
+        "Sections 5.1–5.4 Burgers/Darcy/Navier–Stokes and super-resolution"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2310.02994",
+      "target": "review:003:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:003",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2310.02994",
+        "https://arxiv.org/html/2310.02994v2"
+      ],
+      "locators": [
+        "Sections 4.1–4.3",
+        "Sections 5.1–5.3",
+        "Appendix C training settings"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2310.02994",
+      "target": "review:003:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:003",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2310.02994",
+        "https://arxiv.org/html/2310.02994v2"
+      ],
+      "locators": [
+        "Sections 4.1–4.3",
+        "Sections 5.1–5.3",
+        "Appendix C training settings"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2310.02994",
+      "target": "review:003:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:003",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2310.02994",
+        "https://arxiv.org/html/2310.02994v2"
+      ],
+      "locators": [
+        "Sections 4.1–4.3",
+        "Sections 5.1–5.3",
+        "Appendix C training settings"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2310.02994",
+      "target": "review:003:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:003",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2310.02994",
+        "https://arxiv.org/html/2310.02994v2"
+      ],
+      "locators": [
+        "Sections 4.1–4.3",
+        "Sections 5.1–5.3",
+        "Appendix C training settings"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2310.02994",
+      "target": "review:003:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:003",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2310.02994",
+        "https://arxiv.org/html/2310.02994v2"
+      ],
+      "locators": [
+        "Sections 4.1–4.3",
+        "Sections 5.1–5.3",
+        "Appendix C training settings"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2403.03542",
+      "target": "review:004:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:004",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2403.03542",
+        "https://arxiv.org/html/2403.03542v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.4, Eq. (3)",
+        "Sections 4.4–4.6",
+        "Appendices A.2 and D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2403.03542",
+      "target": "review:004:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:004",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2403.03542",
+        "https://arxiv.org/html/2403.03542v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.4, Eq. (3)",
+        "Sections 4.4–4.6",
+        "Appendices A.2 and D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2403.03542",
+      "target": "review:004:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:004",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2403.03542",
+        "https://arxiv.org/html/2403.03542v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.4, Eq. (3)",
+        "Sections 4.4–4.6",
+        "Appendices A.2 and D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2403.03542",
+      "target": "review:004:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:004",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2403.03542",
+        "https://arxiv.org/html/2403.03542v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.4, Eq. (3)",
+        "Sections 4.4–4.6",
+        "Appendices A.2 and D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2403.03542",
+      "target": "review:004:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:004",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2403.03542",
+        "https://arxiv.org/html/2403.03542v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.4, Eq. (3)",
+        "Sections 4.4–4.6",
+        "Appendices A.2 and D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2405.19101",
+      "target": "review:005:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:005",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2405.19101",
+        "https://arxiv.org/html/2405.19101v2"
+      ],
+      "locators": [
+        "Section 2 Approach, all2all objective",
+        "Section 3 Results",
+        "Supplementary A.2/B.1/B.2/C/D",
+        "Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2405.19101",
+      "target": "review:005:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:005",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2405.19101",
+        "https://arxiv.org/html/2405.19101v2"
+      ],
+      "locators": [
+        "Section 2 Approach, all2all objective",
+        "Section 3 Results",
+        "Supplementary A.2/B.1/B.2/C/D",
+        "Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2405.19101",
+      "target": "review:005:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:005",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2405.19101",
+        "https://arxiv.org/html/2405.19101v2"
+      ],
+      "locators": [
+        "Section 2 Approach, all2all objective",
+        "Section 3 Results",
+        "Supplementary A.2/B.1/B.2/C/D",
+        "Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2405.19101",
+      "target": "review:005:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:005",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2405.19101",
+        "https://arxiv.org/html/2405.19101v2"
+      ],
+      "locators": [
+        "Section 2 Approach, all2all objective",
+        "Section 3 Results",
+        "Supplementary A.2/B.1/B.2/C/D",
+        "Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2405.19101",
+      "target": "review:005:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:005",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2405.19101",
+        "https://arxiv.org/html/2405.19101v2"
+      ],
+      "locators": [
+        "Section 2 Approach, all2all objective",
+        "Section 3 Results",
+        "Supplementary A.2/B.1/B.2/C/D",
+        "Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2404.12355",
+      "target": "review:006:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:006",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2404.12355",
+        "https://arxiv.org/html/2404.12355v3"
+      ],
+      "locators": [
+        "Section 3.2 Model Overview",
+        "Section 4.2 modality configurations",
+        "Section 5 extrapolation studies",
+        "Appendices A/B/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2404.12355",
+      "target": "review:006:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:006",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2404.12355",
+        "https://arxiv.org/html/2404.12355v3"
+      ],
+      "locators": [
+        "Section 3.2 Model Overview",
+        "Section 4.2 modality configurations",
+        "Section 5 extrapolation studies",
+        "Appendices A/B/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2404.12355",
+      "target": "review:006:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:006",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2404.12355",
+        "https://arxiv.org/html/2404.12355v3"
+      ],
+      "locators": [
+        "Section 3.2 Model Overview",
+        "Section 4.2 modality configurations",
+        "Section 5 extrapolation studies",
+        "Appendices A/B/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2404.12355",
+      "target": "review:006:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:006",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2404.12355",
+        "https://arxiv.org/html/2404.12355v3"
+      ],
+      "locators": [
+        "Section 3.2 Model Overview",
+        "Section 4.2 modality configurations",
+        "Section 5 extrapolation studies",
+        "Appendices A/B/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2404.12355",
+      "target": "review:006:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:006",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2404.12355",
+        "https://arxiv.org/html/2404.12355v3"
+      ],
+      "locators": [
+        "Section 3.2 Model Overview",
+        "Section 4.2 modality configurations",
+        "Section 5 extrapolation studies",
+        "Appendices A/B/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12652",
+      "target": "review:007:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:007",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12652",
+        "https://arxiv.org/html/2402.12652v3"
+      ],
+      "locators": [
+        "Section 2 Methodology",
+        "Sections 3.1–3.3",
+        "Appendices B/C/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12652",
+      "target": "review:007:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:007",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12652",
+        "https://arxiv.org/html/2402.12652v3"
+      ],
+      "locators": [
+        "Section 2 Methodology",
+        "Sections 3.1–3.3",
+        "Appendices B/C/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12652",
+      "target": "review:007:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:007",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12652",
+        "https://arxiv.org/html/2402.12652v3"
+      ],
+      "locators": [
+        "Section 2 Methodology",
+        "Sections 3.1–3.3",
+        "Appendices B/C/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12652",
+      "target": "review:007:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:007",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12652",
+        "https://arxiv.org/html/2402.12652v3"
+      ],
+      "locators": [
+        "Section 2 Methodology",
+        "Sections 3.1–3.3",
+        "Appendices B/C/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12652",
+      "target": "review:007:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:007",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12652",
+        "https://arxiv.org/html/2402.12652v3"
+      ],
+      "locators": [
+        "Section 2 Methodology",
+        "Sections 3.1–3.3",
+        "Appendices B/C/D"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2507.15409",
+      "target": "review:008:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:008",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2507.15409",
+        "https://arxiv.org/html/2507.15409v3"
+      ],
+      "locators": [
+        "Main text: Model architecture; Pretraining results/Table 1; Adaptation to new PDEs",
+        "Methods: computational graph, signed-distance functions",
+        "Supplementary Notes S2/S3/S4; S5 non-grid input variant"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2507.15409",
+      "target": "review:008:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:008",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2507.15409",
+        "https://arxiv.org/html/2507.15409v3"
+      ],
+      "locators": [
+        "Main text: Model architecture; Pretraining results/Table 1; Adaptation to new PDEs",
+        "Methods: computational graph, signed-distance functions",
+        "Supplementary Notes S2/S3/S4; S5 non-grid input variant"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2507.15409",
+      "target": "review:008:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:008",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2507.15409",
+        "https://arxiv.org/html/2507.15409v3"
+      ],
+      "locators": [
+        "Main text: Model architecture; Pretraining results/Table 1; Adaptation to new PDEs",
+        "Methods: computational graph, signed-distance functions",
+        "Supplementary Notes S2/S3/S4; S5 non-grid input variant"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2507.15409",
+      "target": "review:008:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:008",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2507.15409",
+        "https://arxiv.org/html/2507.15409v3"
+      ],
+      "locators": [
+        "Main text: Model architecture; Pretraining results/Table 1; Adaptation to new PDEs",
+        "Methods: computational graph, signed-distance functions",
+        "Supplementary Notes S2/S3/S4; S5 non-grid input variant"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2507.15409",
+      "target": "review:008:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:008",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2507.15409",
+        "https://arxiv.org/html/2507.15409v3"
+      ],
+      "locators": [
+        "Main text: Model architecture; Pretraining results/Table 1; Adaptation to new PDEs",
+        "Methods: computational graph, signed-distance functions",
+        "Supplementary Notes S2/S3/S4; S5 non-grid input variant"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12365",
+      "target": "review:009:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:009",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12365",
+        "https://arxiv.org/html/2402.12365v5"
+      ],
+      "locators": [
+        "Section 3 encoder/approximator/decoder/training procedure",
+        "Section 4.1–4.3",
+        "Appendix A Limitations and Future work"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12365",
+      "target": "review:009:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:009",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12365",
+        "https://arxiv.org/html/2402.12365v5"
+      ],
+      "locators": [
+        "Section 3 encoder/approximator/decoder/training procedure",
+        "Section 4.1–4.3",
+        "Appendix A Limitations and Future work"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12365",
+      "target": "review:009:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:009",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12365",
+        "https://arxiv.org/html/2402.12365v5"
+      ],
+      "locators": [
+        "Section 3 encoder/approximator/decoder/training procedure",
+        "Section 4.1–4.3",
+        "Appendix A Limitations and Future work"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12365",
+      "target": "review:009:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:009",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12365",
+        "https://arxiv.org/html/2402.12365v5"
+      ],
+      "locators": [
+        "Section 3 encoder/approximator/decoder/training procedure",
+        "Section 4.1–4.3",
+        "Appendix A Limitations and Future work"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.12365",
+      "target": "review:009:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:009",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.12365",
+        "https://arxiv.org/html/2402.12365v5"
+      ],
+      "locators": [
+        "Section 3 encoder/approximator/decoder/training procedure",
+        "Section 4.1–4.3",
+        "Appendix A Limitations and Future work"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.15684",
+      "target": "review:010:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:010",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.15684",
+        "https://huggingface.co/papers/2511.15684.md",
+        "https://arxiv.org/pdf/2511.15684v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2; 4.1–4.2; 5.1–5.3; 6",
+        "Appendix C.3.2–C.3.4, PDF pp.23–24",
+        "Appendix E history versus explicit parameters"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.15684",
+      "target": "review:010:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:010",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.15684",
+        "https://huggingface.co/papers/2511.15684.md",
+        "https://arxiv.org/pdf/2511.15684v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2; 4.1–4.2; 5.1–5.3; 6",
+        "Appendix C.3.2–C.3.4, PDF pp.23–24",
+        "Appendix E history versus explicit parameters"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.15684",
+      "target": "review:010:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:010",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.15684",
+        "https://huggingface.co/papers/2511.15684.md",
+        "https://arxiv.org/pdf/2511.15684v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2; 4.1–4.2; 5.1–5.3; 6",
+        "Appendix C.3.2–C.3.4, PDF pp.23–24",
+        "Appendix E history versus explicit parameters"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.15684",
+      "target": "review:010:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:010",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.15684",
+        "https://huggingface.co/papers/2511.15684.md",
+        "https://arxiv.org/pdf/2511.15684v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2; 4.1–4.2; 5.1–5.3; 6",
+        "Appendix C.3.2–C.3.4, PDF pp.23–24",
+        "Appendix E history versus explicit parameters"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.15684",
+      "target": "review:010:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:010",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.15684",
+        "https://huggingface.co/papers/2511.15684.md",
+        "https://arxiv.org/pdf/2511.15684v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2; 4.1–4.2; 5.1–5.3; 6",
+        "Appendix C.3.2–C.3.4, PDF pp.23–24",
+        "Appendix E history versus explicit parameters"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.15684",
+      "target": "review:010:limitation:2",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:010",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.15684",
+        "https://huggingface.co/papers/2511.15684.md",
+        "https://arxiv.org/pdf/2511.15684v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2; 4.1–4.2; 5.1–5.3; 6",
+        "Appendix C.3.2–C.3.4, PDF pp.23–24",
+        "Appendix E history versus explicit parameters"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.21670",
+      "target": "review:011:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:011",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.21670",
+        "https://arxiv.org/html/2509.21670v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.3, UPTF-7",
+        "Section 4 and Tables 1–2",
+        "Section 3.3 zero-shot GCR protocol; Appendix B"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.21670",
+      "target": "review:011:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:011",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.21670",
+        "https://arxiv.org/html/2509.21670v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.3, UPTF-7",
+        "Section 4 and Tables 1–2",
+        "Section 3.3 zero-shot GCR protocol; Appendix B"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.21670",
+      "target": "review:011:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:011",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.21670",
+        "https://arxiv.org/html/2509.21670v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.3, UPTF-7",
+        "Section 4 and Tables 1–2",
+        "Section 3.3 zero-shot GCR protocol; Appendix B"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.21670",
+      "target": "review:011:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:011",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.21670",
+        "https://arxiv.org/html/2509.21670v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.3, UPTF-7",
+        "Section 4 and Tables 1–2",
+        "Section 3.3 zero-shot GCR protocol; Appendix B"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.21670",
+      "target": "review:011:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:011",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.21670",
+        "https://arxiv.org/html/2509.21670v4"
+      ],
+      "locators": [
+        "Sections 3.1–3.3, UPTF-7",
+        "Section 4 and Tables 1–2",
+        "Section 3.3 zero-shot GCR protocol; Appendix B"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.21861",
+      "target": "review:012:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:012",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.21861",
+        "https://arxiv.org/html/2511.21861v1"
+      ],
+      "locators": [
+        "Methodology: Tokenization and Physics-Aware Conditioning; Long-Context Backbone; Spectral Operator Decoder",
+        "Multi-Dataset Pretraining, Eq. (1)",
+        "Pretraining Protocol; Table 3 Comparison with the SOTA; Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.21861",
+      "target": "review:012:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:012",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.21861",
+        "https://arxiv.org/html/2511.21861v1"
+      ],
+      "locators": [
+        "Methodology: Tokenization and Physics-Aware Conditioning; Long-Context Backbone; Spectral Operator Decoder",
+        "Multi-Dataset Pretraining, Eq. (1)",
+        "Pretraining Protocol; Table 3 Comparison with the SOTA; Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.21861",
+      "target": "review:012:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:012",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.21861",
+        "https://arxiv.org/html/2511.21861v1"
+      ],
+      "locators": [
+        "Methodology: Tokenization and Physics-Aware Conditioning; Long-Context Backbone; Spectral Operator Decoder",
+        "Multi-Dataset Pretraining, Eq. (1)",
+        "Pretraining Protocol; Table 3 Comparison with the SOTA; Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.21861",
+      "target": "review:012:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:012",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.21861",
+        "https://arxiv.org/html/2511.21861v1"
+      ],
+      "locators": [
+        "Methodology: Tokenization and Physics-Aware Conditioning; Long-Context Backbone; Spectral Operator Decoder",
+        "Multi-Dataset Pretraining, Eq. (1)",
+        "Pretraining Protocol; Table 3 Comparison with the SOTA; Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2511.21861",
+      "target": "review:012:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:012",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2511.21861",
+        "https://arxiv.org/html/2511.21861v1"
+      ],
+      "locators": [
+        "Methodology: Tokenization and Physics-Aware Conditioning; Long-Context Backbone; Spectral Operator Decoder",
+        "Multi-Dataset Pretraining, Eq. (1)",
+        "Pretraining Protocol; Table 3 Comparison with the SOTA; Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2304.07993",
+      "target": "review:013:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:013",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2304.07993",
+        "https://arxiv.org/html/2304.07993v3"
+      ],
+      "locators": [
+        "Sections 2–3.4",
+        "Sections 4.1–4.5",
+        "Section 6 Summary"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2304.07993",
+      "target": "review:013:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:013",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2304.07993",
+        "https://arxiv.org/html/2304.07993v3"
+      ],
+      "locators": [
+        "Sections 2–3.4",
+        "Sections 4.1–4.5",
+        "Section 6 Summary"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2304.07993",
+      "target": "review:013:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:013",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2304.07993",
+        "https://arxiv.org/html/2304.07993v3"
+      ],
+      "locators": [
+        "Sections 2–3.4",
+        "Sections 4.1–4.5",
+        "Section 6 Summary"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2304.07993",
+      "target": "review:013:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:013",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2304.07993",
+        "https://arxiv.org/html/2304.07993v3"
+      ],
+      "locators": [
+        "Sections 2–3.4",
+        "Sections 4.1–4.5",
+        "Section 6 Summary"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2304.07993",
+      "target": "review:013:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:013",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2304.07993",
+        "https://arxiv.org/html/2304.07993v3"
+      ],
+      "locators": [
+        "Sections 2–3.4",
+        "Sections 4.1–4.5",
+        "Section 6 Summary"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.16063",
+      "target": "review:014:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:014",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2411.16063",
+        "https://arxiv.org/html/2411.16063v5"
+      ],
+      "locators": [
+        "Sections 4.1–4.6",
+        "Sections 5.1–5.8",
+        "Appendix B baseline/training details; Appendix C rollout strategy"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.16063",
+      "target": "review:014:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:014",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2411.16063",
+        "https://arxiv.org/html/2411.16063v5"
+      ],
+      "locators": [
+        "Sections 4.1–4.6",
+        "Sections 5.1–5.8",
+        "Appendix B baseline/training details; Appendix C rollout strategy"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.16063",
+      "target": "review:014:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:014",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2411.16063",
+        "https://arxiv.org/html/2411.16063v5"
+      ],
+      "locators": [
+        "Sections 4.1–4.6",
+        "Sections 5.1–5.8",
+        "Appendix B baseline/training details; Appendix C rollout strategy"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.16063",
+      "target": "review:014:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:014",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2411.16063",
+        "https://arxiv.org/html/2411.16063v5"
+      ],
+      "locators": [
+        "Sections 4.1–4.6",
+        "Sections 5.1–5.8",
+        "Appendix B baseline/training details; Appendix C rollout strategy"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.16063",
+      "target": "review:014:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:014",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2411.16063",
+        "https://arxiv.org/html/2411.16063v5"
+      ],
+      "locators": [
+        "Sections 4.1–4.6",
+        "Sections 5.1–5.8",
+        "Appendix B baseline/training details; Appendix C rollout strategy"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.25803",
+      "target": "review:015:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:015",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2510.25803",
+        "https://arxiv.org/html/2510.25803v2"
+      ],
+      "locators": [
+        "Sections 3–4",
+        "Sections 5.1–5.4",
+        "Section 6 Limitations; Appendix B/C"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.25803",
+      "target": "review:015:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:015",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2510.25803",
+        "https://arxiv.org/html/2510.25803v2"
+      ],
+      "locators": [
+        "Sections 3–4",
+        "Sections 5.1–5.4",
+        "Section 6 Limitations; Appendix B/C"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.25803",
+      "target": "review:015:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:015",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2510.25803",
+        "https://arxiv.org/html/2510.25803v2"
+      ],
+      "locators": [
+        "Sections 3–4",
+        "Sections 5.1–5.4",
+        "Section 6 Limitations; Appendix B/C"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.25803",
+      "target": "review:015:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:015",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2510.25803",
+        "https://arxiv.org/html/2510.25803v2"
+      ],
+      "locators": [
+        "Sections 3–4",
+        "Sections 5.1–5.4",
+        "Section 6 Limitations; Appendix B/C"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.25803",
+      "target": "review:015:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:015",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2510.25803",
+        "https://arxiv.org/html/2510.25803v2"
+      ],
+      "locators": [
+        "Sections 3–4",
+        "Sections 5.1–5.4",
+        "Section 6 Limitations; Appendix B/C"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.22059",
+      "target": "review:016:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:016",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2602.22059",
+        "https://arxiv.org/html/2602.22059v1"
+      ],
+      "locators": [
+        "Sections 4.2.1–4.3.3",
+        "Sections 5.2–5.5",
+        "Appendices A.2–A.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.22059",
+      "target": "review:016:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:016",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2602.22059",
+        "https://arxiv.org/html/2602.22059v1"
+      ],
+      "locators": [
+        "Sections 4.2.1–4.3.3",
+        "Sections 5.2–5.5",
+        "Appendices A.2–A.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.22059",
+      "target": "review:016:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:016",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2602.22059",
+        "https://arxiv.org/html/2602.22059v1"
+      ],
+      "locators": [
+        "Sections 4.2.1–4.3.3",
+        "Sections 5.2–5.5",
+        "Appendices A.2–A.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.22059",
+      "target": "review:016:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:016",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2602.22059",
+        "https://arxiv.org/html/2602.22059v1"
+      ],
+      "locators": [
+        "Sections 4.2.1–4.3.3",
+        "Sections 5.2–5.5",
+        "Appendices A.2–A.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.22059",
+      "target": "review:016:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:016",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2602.22059",
+        "https://arxiv.org/html/2602.22059v1"
+      ],
+      "locators": [
+        "Sections 4.2.1–4.3.3",
+        "Sections 5.2–5.5",
+        "Appendices A.2–A.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.13805",
+      "target": "review:017:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:017",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.13805",
+        "https://arxiv.org/html/2509.13805v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2",
+        "Sections 4.1–4.3",
+        "Appendices 6.1 and 6.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.13805",
+      "target": "review:017:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:017",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.13805",
+        "https://arxiv.org/html/2509.13805v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2",
+        "Sections 4.1–4.3",
+        "Appendices 6.1 and 6.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.13805",
+      "target": "review:017:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:017",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.13805",
+        "https://arxiv.org/html/2509.13805v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2",
+        "Sections 4.1–4.3",
+        "Appendices 6.1 and 6.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.13805",
+      "target": "review:017:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:017",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.13805",
+        "https://arxiv.org/html/2509.13805v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2",
+        "Sections 4.1–4.3",
+        "Appendices 6.1 and 6.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2509.13805",
+      "target": "review:017:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:017",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2509.13805",
+        "https://arxiv.org/html/2509.13805v2"
+      ],
+      "locators": [
+        "Sections 3.1–3.2",
+        "Sections 4.1–4.3",
+        "Appendices 6.1 and 6.4"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.16014",
+      "target": "review:018:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:018",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.16014",
+        "https://arxiv.org/html/2402.16014v3"
+      ],
+      "locators": [
+        "Sections 3.1.1–3.2",
+        "Section 4",
+        "Appendices C/E/F/H"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.16014",
+      "target": "review:018:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:018",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.16014",
+        "https://arxiv.org/html/2402.16014v3"
+      ],
+      "locators": [
+        "Sections 3.1.1–3.2",
+        "Section 4",
+        "Appendices C/E/F/H"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.16014",
+      "target": "review:018:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:018",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.16014",
+        "https://arxiv.org/html/2402.16014v3"
+      ],
+      "locators": [
+        "Sections 3.1.1–3.2",
+        "Section 4",
+        "Appendices C/E/F/H"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.16014",
+      "target": "review:018:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:018",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.16014",
+        "https://arxiv.org/html/2402.16014v3"
+      ],
+      "locators": [
+        "Sections 3.1.1–3.2",
+        "Section 4",
+        "Appendices C/E/F/H"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2402.16014",
+      "target": "review:018:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:018",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2402.16014",
+        "https://arxiv.org/html/2402.16014v3"
+      ],
+      "locators": [
+        "Sections 3.1.1–3.2",
+        "Section 4",
+        "Appendices C/E/F/H"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2210.07182",
+      "target": "review:019:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:019",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2210.07182v2",
+        "https://github.com/pdebench/PDEBench"
+      ],
+      "locators": [
+        "v2 §3.1–3.3: task definition, datasets and metrics",
+        "v2 §4: baselines and temporal extrapolation",
+        "v2 Appendix B: metric definitions"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2210.07182",
+      "target": "review:019:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:019",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2210.07182v2",
+        "https://github.com/pdebench/PDEBench"
+      ],
+      "locators": [
+        "v2 §3.1–3.3: task definition, datasets and metrics",
+        "v2 §4: baselines and temporal extrapolation",
+        "v2 Appendix B: metric definitions"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2210.07182",
+      "target": "review:019:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:019",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2210.07182v2",
+        "https://github.com/pdebench/PDEBench"
+      ],
+      "locators": [
+        "v2 §3.1–3.3: task definition, datasets and metrics",
+        "v2 §4: baselines and temporal extrapolation",
+        "v2 Appendix B: metric definitions"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2210.07182",
+      "target": "review:019:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:019",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2210.07182v2",
+        "https://github.com/pdebench/PDEBench"
+      ],
+      "locators": [
+        "v2 §3.1–3.3: task definition, datasets and metrics",
+        "v2 §4: baselines and temporal extrapolation",
+        "v2 Appendix B: metric definitions"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2210.07182",
+      "target": "review:019:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:019",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2210.07182v2",
+        "https://github.com/pdebench/PDEBench"
+      ],
+      "locators": [
+        "v2 §3.1–3.3: task definition, datasets and metrics",
+        "v2 §4: baselines and temporal extrapolation",
+        "v2 Appendix B: metric definitions"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "unresolved:ebc4e45d7908178d61af",
+      "target": "review:020:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:020",
+      "evidence_level": "primary_abstract",
+      "urls": [
+        "https://pdearena.github.io/pdearena/",
+        "https://arxiv.org/abs/2209.15616",
+        "https://github.com/microsoft/pdearena"
+      ],
+      "locators": [
+        "Official PDEArena documentation: What is PDEArena and Citation",
+        "arXiv:2209.15616 original abstract"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "unresolved:ebc4e45d7908178d61af",
+      "target": "review:020:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:020",
+      "evidence_level": "primary_abstract",
+      "urls": [
+        "https://pdearena.github.io/pdearena/",
+        "https://arxiv.org/abs/2209.15616",
+        "https://github.com/microsoft/pdearena"
+      ],
+      "locators": [
+        "Official PDEArena documentation: What is PDEArena and Citation",
+        "arXiv:2209.15616 original abstract"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "unresolved:ebc4e45d7908178d61af",
+      "target": "review:020:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:020",
+      "evidence_level": "primary_abstract",
+      "urls": [
+        "https://pdearena.github.io/pdearena/",
+        "https://arxiv.org/abs/2209.15616",
+        "https://github.com/microsoft/pdearena"
+      ],
+      "locators": [
+        "Official PDEArena documentation: What is PDEArena and Citation",
+        "arXiv:2209.15616 original abstract"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "unresolved:ebc4e45d7908178d61af",
+      "target": "review:020:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:020",
+      "evidence_level": "primary_abstract",
+      "urls": [
+        "https://pdearena.github.io/pdearena/",
+        "https://arxiv.org/abs/2209.15616",
+        "https://github.com/microsoft/pdearena"
+      ],
+      "locators": [
+        "Official PDEArena documentation: What is PDEArena and Citation",
+        "arXiv:2209.15616 original abstract"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "unresolved:ebc4e45d7908178d61af",
+      "target": "review:020:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:020",
+      "evidence_level": "primary_abstract",
+      "urls": [
+        "https://pdearena.github.io/pdearena/",
+        "https://arxiv.org/abs/2209.15616",
+        "https://github.com/microsoft/pdearena"
+      ],
+      "locators": [
+        "Official PDEArena documentation: What is PDEArena and Citation",
+        "arXiv:2209.15616 original abstract"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.52202/079017-1430",
+      "target": "review:021:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:021",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2412.00568v1",
+        "https://polymathic-ai.org/the_well/datasets_overview/"
+      ],
+      "locators": [
+        "v1 §3: individual simulation datasets",
+        "v1 §4/Table 2: baseline protocol and VRMSE",
+        "Official dataset overview: grids, field types and trajectory splits"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.52202/079017-1430",
+      "target": "review:021:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:021",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2412.00568v1",
+        "https://polymathic-ai.org/the_well/datasets_overview/"
+      ],
+      "locators": [
+        "v1 §3: individual simulation datasets",
+        "v1 §4/Table 2: baseline protocol and VRMSE",
+        "Official dataset overview: grids, field types and trajectory splits"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.52202/079017-1430",
+      "target": "review:021:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:021",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2412.00568v1",
+        "https://polymathic-ai.org/the_well/datasets_overview/"
+      ],
+      "locators": [
+        "v1 §3: individual simulation datasets",
+        "v1 §4/Table 2: baseline protocol and VRMSE",
+        "Official dataset overview: grids, field types and trajectory splits"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.52202/079017-1430",
+      "target": "review:021:claim:2",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:021",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2412.00568v1",
+        "https://polymathic-ai.org/the_well/datasets_overview/"
+      ],
+      "locators": [
+        "v1 §3: individual simulation datasets",
+        "v1 §4/Table 2: baseline protocol and VRMSE",
+        "Official dataset overview: grids, field types and trajectory splits"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.52202/079017-1430",
+      "target": "review:021:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:021",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2412.00568v1",
+        "https://polymathic-ai.org/the_well/datasets_overview/"
+      ],
+      "locators": [
+        "v1 §3: individual simulation datasets",
+        "v1 §4/Table 2: baseline protocol and VRMSE",
+        "Official dataset overview: grids, field types and trajectory splits"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.52202/079017-1430",
+      "target": "review:021:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:021",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2412.00568v1",
+        "https://polymathic-ai.org/the_well/datasets_overview/"
+      ],
+      "locators": [
+        "v1 §3: individual simulation datasets",
+        "v1 §4/Table 2: baseline protocol and VRMSE",
+        "Official dataset overview: grids, field types and trajectory splits"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2505.18511",
+      "target": "review:022:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:022",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2505.18511v1"
+      ],
+      "locators": [
+        "v1 §2.3: learning problem",
+        "v1 §3.1–3.2: regular/singular tasks and renormalization-aware models",
+        "v1 §4.1/Tables 3–4: same-truncation and high-precision reference comparisons"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2505.18511",
+      "target": "review:022:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:022",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2505.18511v1"
+      ],
+      "locators": [
+        "v1 §2.3: learning problem",
+        "v1 §3.1–3.2: regular/singular tasks and renormalization-aware models",
+        "v1 §4.1/Tables 3–4: same-truncation and high-precision reference comparisons"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2505.18511",
+      "target": "review:022:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:022",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2505.18511v1"
+      ],
+      "locators": [
+        "v1 §2.3: learning problem",
+        "v1 §3.1–3.2: regular/singular tasks and renormalization-aware models",
+        "v1 §4.1/Tables 3–4: same-truncation and high-precision reference comparisons"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2505.18511",
+      "target": "review:022:claim:2",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:022",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2505.18511v1"
+      ],
+      "locators": [
+        "v1 §2.3: learning problem",
+        "v1 §3.1–3.2: regular/singular tasks and renormalization-aware models",
+        "v1 §4.1/Tables 3–4: same-truncation and high-precision reference comparisons"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2505.18511",
+      "target": "review:022:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:022",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2505.18511v1"
+      ],
+      "locators": [
+        "v1 §2.3: learning problem",
+        "v1 §3.1–3.2: regular/singular tasks and renormalization-aware models",
+        "v1 §4.1/Tables 3–4: same-truncation and high-precision reference comparisons"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2505.18511",
+      "target": "review:022:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:022",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2505.18511v1"
+      ],
+      "locators": [
+        "v1 §2.3: learning problem",
+        "v1 §3.1–3.2: regular/singular tasks and renormalization-aware models",
+        "v1 §4.1/Tables 3–4: same-truncation and high-precision reference comparisons"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2512.18595",
+      "target": "review:023:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:023",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2512.18595v1"
+      ],
+      "locators": [
+        "v1 Results: Mathematical Formulation and Learning Framework",
+        "v1 benchmark overview and native mesh protocol",
+        "v1 Appendix B.3 / Extended Data Table: case-wise configurations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2512.18595",
+      "target": "review:023:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:023",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2512.18595v1"
+      ],
+      "locators": [
+        "v1 Results: Mathematical Formulation and Learning Framework",
+        "v1 benchmark overview and native mesh protocol",
+        "v1 Appendix B.3 / Extended Data Table: case-wise configurations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2512.18595",
+      "target": "review:023:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:023",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2512.18595v1"
+      ],
+      "locators": [
+        "v1 Results: Mathematical Formulation and Learning Framework",
+        "v1 benchmark overview and native mesh protocol",
+        "v1 Appendix B.3 / Extended Data Table: case-wise configurations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2512.18595",
+      "target": "review:023:claim:2",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:023",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2512.18595v1"
+      ],
+      "locators": [
+        "v1 Results: Mathematical Formulation and Learning Framework",
+        "v1 benchmark overview and native mesh protocol",
+        "v1 Appendix B.3 / Extended Data Table: case-wise configurations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2512.18595",
+      "target": "review:023:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:023",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2512.18595v1"
+      ],
+      "locators": [
+        "v1 Results: Mathematical Formulation and Learning Framework",
+        "v1 benchmark overview and native mesh protocol",
+        "v1 Appendix B.3 / Extended Data Table: case-wise configurations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2512.18595",
+      "target": "review:023:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:023",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2512.18595v1"
+      ],
+      "locators": [
+        "v1 Results: Mathematical Formulation and Learning Framework",
+        "v1 benchmark overview and native mesh protocol",
+        "v1 Appendix B.3 / Extended Data Table: case-wise configurations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.01829",
+      "target": "review:024:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:024",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.01829v1"
+      ],
+      "locators": [
+        "v1 §3.1: real training, simulated training, simulated pretraining plus real fine-tuning",
+        "v1 §3.2: Cylinder, Controlled Cylinder, FSI, Foil, Combustion",
+        "v1 §4/Table 1: evaluation metrics"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.01829",
+      "target": "review:024:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:024",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.01829v1"
+      ],
+      "locators": [
+        "v1 §3.1: real training, simulated training, simulated pretraining plus real fine-tuning",
+        "v1 §3.2: Cylinder, Controlled Cylinder, FSI, Foil, Combustion",
+        "v1 §4/Table 1: evaluation metrics"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.01829",
+      "target": "review:024:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:024",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.01829v1"
+      ],
+      "locators": [
+        "v1 §3.1: real training, simulated training, simulated pretraining plus real fine-tuning",
+        "v1 §3.2: Cylinder, Controlled Cylinder, FSI, Foil, Combustion",
+        "v1 §4/Table 1: evaluation metrics"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.01829",
+      "target": "review:024:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:024",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.01829v1"
+      ],
+      "locators": [
+        "v1 §3.1: real training, simulated training, simulated pretraining plus real fine-tuning",
+        "v1 §3.2: Cylinder, Controlled Cylinder, FSI, Foil, Combustion",
+        "v1 §4/Table 1: evaluation metrics"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.01829",
+      "target": "review:024:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:024",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.01829v1"
+      ],
+      "locators": [
+        "v1 §3.1: real training, simulated training, simulated pretraining plus real fine-tuning",
+        "v1 §3.2: Cylinder, Controlled Cylinder, FSI, Foil, Combustion",
+        "v1 §4/Table 1: evaluation metrics"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.29283",
+      "target": "review:025:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:025",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.29283v1"
+      ],
+      "locators": [
+        "v1 §3.1/Table 1: factorized axes",
+        "v1 §3.2–3.3: mixtures and dynamic scale construction",
+        "v1 §3.4: sample/frame relative L2 and bootstrap"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.29283",
+      "target": "review:025:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:025",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.29283v1"
+      ],
+      "locators": [
+        "v1 §3.1/Table 1: factorized axes",
+        "v1 §3.2–3.3: mixtures and dynamic scale construction",
+        "v1 §3.4: sample/frame relative L2 and bootstrap"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.29283",
+      "target": "review:025:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:025",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.29283v1"
+      ],
+      "locators": [
+        "v1 §3.1/Table 1: factorized axes",
+        "v1 §3.2–3.3: mixtures and dynamic scale construction",
+        "v1 §3.4: sample/frame relative L2 and bootstrap"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.29283",
+      "target": "review:025:claim:2",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:025",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.29283v1"
+      ],
+      "locators": [
+        "v1 §3.1/Table 1: factorized axes",
+        "v1 §3.2–3.3: mixtures and dynamic scale construction",
+        "v1 §3.4: sample/frame relative L2 and bootstrap"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.29283",
+      "target": "review:025:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:025",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.29283v1"
+      ],
+      "locators": [
+        "v1 §3.1/Table 1: factorized axes",
+        "v1 §3.2–3.3: mixtures and dynamic scale construction",
+        "v1 §3.4: sample/frame relative L2 and bootstrap"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.29283",
+      "target": "review:025:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:025",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.29283v1"
+      ],
+      "locators": [
+        "v1 §3.1/Table 1: factorized axes",
+        "v1 §3.2–3.3: mixtures and dynamic scale construction",
+        "v1 §3.4: sample/frame relative L2 and bootstrap"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2606.00296",
+      "target": "review:026:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:026",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2606.00296v1"
+      ],
+      "locators": [
+        "v1 §3.1: input discretization invariance versus output resolution",
+        "v1 §4/Theorem 1: coarse-grid indistinguishability",
+        "v1 §5/Theorem 2: Hölder regularity, grid coverage and load balancing"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2606.00296",
+      "target": "review:026:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:026",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2606.00296v1"
+      ],
+      "locators": [
+        "v1 §3.1: input discretization invariance versus output resolution",
+        "v1 §4/Theorem 1: coarse-grid indistinguishability",
+        "v1 §5/Theorem 2: Hölder regularity, grid coverage and load balancing"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2606.00296",
+      "target": "review:026:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:026",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2606.00296v1"
+      ],
+      "locators": [
+        "v1 §3.1: input discretization invariance versus output resolution",
+        "v1 §4/Theorem 1: coarse-grid indistinguishability",
+        "v1 §5/Theorem 2: Hölder regularity, grid coverage and load balancing"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2606.00296",
+      "target": "review:026:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:026",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2606.00296v1"
+      ],
+      "locators": [
+        "v1 §3.1: input discretization invariance versus output resolution",
+        "v1 §4/Theorem 1: coarse-grid indistinguishability",
+        "v1 §5/Theorem 2: Hölder regularity, grid coverage and load balancing"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2606.00296",
+      "target": "review:026:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:026",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2606.00296v1"
+      ],
+      "locators": [
+        "v1 §3.1: input discretization invariance versus output resolution",
+        "v1 §4/Theorem 1: coarse-grid indistinguishability",
+        "v1 §5/Theorem 2: Hölder regularity, grid coverage and load balancing"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.09189",
+      "target": "review:027:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:027",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.09189v1"
+      ],
+      "locators": [
+        "v1 §2/Eq.2: N,D,T and saturating form",
+        "v1 §2: What L represents / Scope of a fit",
+        "v1 §3 and Appendix H headings: MNIST, CIFAR-100, Darcy, TinyStories"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.09189",
+      "target": "review:027:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:027",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.09189v1"
+      ],
+      "locators": [
+        "v1 §2/Eq.2: N,D,T and saturating form",
+        "v1 §2: What L represents / Scope of a fit",
+        "v1 §3 and Appendix H headings: MNIST, CIFAR-100, Darcy, TinyStories"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.09189",
+      "target": "review:027:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:027",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.09189v1"
+      ],
+      "locators": [
+        "v1 §2/Eq.2: N,D,T and saturating form",
+        "v1 §2: What L represents / Scope of a fit",
+        "v1 §3 and Appendix H headings: MNIST, CIFAR-100, Darcy, TinyStories"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.09189",
+      "target": "review:027:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:027",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.09189v1"
+      ],
+      "locators": [
+        "v1 §2/Eq.2: N,D,T and saturating form",
+        "v1 §2: What L represents / Scope of a fit",
+        "v1 §3 and Appendix H headings: MNIST, CIFAR-100, Darcy, TinyStories"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2605.09189",
+      "target": "review:027:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:027",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2605.09189v1"
+      ],
+      "locators": [
+        "v1 §2/Eq.2: N,D,T and saturating form",
+        "v1 §2: What L represents / Scope of a fit",
+        "v1 §3 and Appendix H headings: MNIST, CIFAR-100, Darcy, TinyStories"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2111.03794",
+      "target": "review:028:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:028",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2111.03794v3"
+      ],
+      "locators": [
+        "v3 §3.1: low-resolution data with high-resolution PDE constraints",
+        "v3 §3.2: optional instance-wise fine-tuning and anchor loss",
+        "v3 §3.3: derivative computation"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2111.03794",
+      "target": "review:028:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:028",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2111.03794v3"
+      ],
+      "locators": [
+        "v3 §3.1: low-resolution data with high-resolution PDE constraints",
+        "v3 §3.2: optional instance-wise fine-tuning and anchor loss",
+        "v3 §3.3: derivative computation"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2111.03794",
+      "target": "review:028:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:028",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2111.03794v3"
+      ],
+      "locators": [
+        "v3 §3.1: low-resolution data with high-resolution PDE constraints",
+        "v3 §3.2: optional instance-wise fine-tuning and anchor loss",
+        "v3 §3.3: derivative computation"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2111.03794",
+      "target": "review:028:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:028",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2111.03794v3"
+      ],
+      "locators": [
+        "v3 §3.1: low-resolution data with high-resolution PDE constraints",
+        "v3 §3.2: optional instance-wise fine-tuning and anchor loss",
+        "v3 §3.3: derivative computation"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2111.03794",
+      "target": "review:028:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:028",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2111.03794v3"
+      ],
+      "locators": [
+        "v3 §3.1: low-resolution data with high-resolution PDE constraints",
+        "v3 §3.2: optional instance-wise fine-tuning and anchor loss",
+        "v3 §3.3: derivative computation"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.01498",
+      "target": "review:029:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:029",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.01498v1"
+      ],
+      "locators": [
+        "v1 §1.1–1.2: M-PCNO and Ewald motivation",
+        "v1 §2: singular-kernel assumptions",
+        "v1 §3–5 section structure"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.01498",
+      "target": "review:029:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:029",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.01498v1"
+      ],
+      "locators": [
+        "v1 §1.1–1.2: M-PCNO and Ewald motivation",
+        "v1 §2: singular-kernel assumptions",
+        "v1 §3–5 section structure"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.01498",
+      "target": "review:029:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:029",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.01498v1"
+      ],
+      "locators": [
+        "v1 §1.1–1.2: M-PCNO and Ewald motivation",
+        "v1 §2: singular-kernel assumptions",
+        "v1 §3–5 section structure"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.01498",
+      "target": "review:029:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:029",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.01498v1"
+      ],
+      "locators": [
+        "v1 §1.1–1.2: M-PCNO and Ewald motivation",
+        "v1 §2: singular-kernel assumptions",
+        "v1 §3–5 section structure"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.01498",
+      "target": "review:029:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:029",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.01498v1"
+      ],
+      "locators": [
+        "v1 §1.1–1.2: M-PCNO and Ewald motivation",
+        "v1 §2: singular-kernel assumptions",
+        "v1 §3–5 section structure"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.20399",
+      "target": "review:030:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:030",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.20399v1"
+      ],
+      "locators": [
+        "v1 Introduction/Fig.1: geometry-only pretraining comparison",
+        "v1 §3: steady-state problem setting",
+        "v1 dynamics-lifted pretraining description"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.20399",
+      "target": "review:030:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:030",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.20399v1"
+      ],
+      "locators": [
+        "v1 Introduction/Fig.1: geometry-only pretraining comparison",
+        "v1 §3: steady-state problem setting",
+        "v1 dynamics-lifted pretraining description"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.20399",
+      "target": "review:030:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:030",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.20399v1"
+      ],
+      "locators": [
+        "v1 Introduction/Fig.1: geometry-only pretraining comparison",
+        "v1 §3: steady-state problem setting",
+        "v1 dynamics-lifted pretraining description"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.20399",
+      "target": "review:030:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:030",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.20399v1"
+      ],
+      "locators": [
+        "v1 Introduction/Fig.1: geometry-only pretraining comparison",
+        "v1 §3: steady-state problem setting",
+        "v1 dynamics-lifted pretraining description"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2602.20399",
+      "target": "review:030:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:030",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2602.20399v1"
+      ],
+      "locators": [
+        "v1 Introduction/Fig.1: geometry-only pretraining comparison",
+        "v1 §3: steady-state problem setting",
+        "v1 dynamics-lifted pretraining description"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.19091",
+      "target": "review:031:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:031",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.19091v1"
+      ],
+      "locators": [
+        "v1 Fig.1: NOVA architecture selection and final-layer physics adaptation",
+        "v1 §2.1–2.4: IC, geometry and PDE-parameter changes"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.19091",
+      "target": "review:031:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:031",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.19091v1"
+      ],
+      "locators": [
+        "v1 Fig.1: NOVA architecture selection and final-layer physics adaptation",
+        "v1 §2.1–2.4: IC, geometry and PDE-parameter changes"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.19091",
+      "target": "review:031:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:031",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.19091v1"
+      ],
+      "locators": [
+        "v1 Fig.1: NOVA architecture selection and final-layer physics adaptation",
+        "v1 §2.1–2.4: IC, geometry and PDE-parameter changes"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.19091",
+      "target": "review:031:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:031",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.19091v1"
+      ],
+      "locators": [
+        "v1 Fig.1: NOVA architecture selection and final-layer physics adaptation",
+        "v1 §2.1–2.4: IC, geometry and PDE-parameter changes"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2601.19091",
+      "target": "review:031:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:031",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2601.19091v1"
+      ],
+      "locators": [
+        "v1 Fig.1: NOVA architecture selection and final-layer physics adaptation",
+        "v1 §2.1–2.4: IC, geometry and PDE-parameter changes"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.12301",
+      "target": "review:032:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:032",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.12301",
+        "https://arxiv.org/html/2609.12301v1"
+      ],
+      "locators": [
+        "v1 §2.1–2.2: debiased estimation and quasi-likelihood",
+        "v1 Assumption 1: beta-2tau>d, known design and noise",
+        "v1 Assumptions 2–5 and Theorem 3.8",
+        "v1 §4: numerical experiment design"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.12301",
+      "target": "review:032:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:032",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.12301",
+        "https://arxiv.org/html/2609.12301v1"
+      ],
+      "locators": [
+        "v1 §2.1–2.2: debiased estimation and quasi-likelihood",
+        "v1 Assumption 1: beta-2tau>d, known design and noise",
+        "v1 Assumptions 2–5 and Theorem 3.8",
+        "v1 §4: numerical experiment design"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.12301",
+      "target": "review:032:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:032",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.12301",
+        "https://arxiv.org/html/2609.12301v1"
+      ],
+      "locators": [
+        "v1 §2.1–2.2: debiased estimation and quasi-likelihood",
+        "v1 Assumption 1: beta-2tau>d, known design and noise",
+        "v1 Assumptions 2–5 and Theorem 3.8",
+        "v1 §4: numerical experiment design"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.12301",
+      "target": "review:032:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:032",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.12301",
+        "https://arxiv.org/html/2609.12301v1"
+      ],
+      "locators": [
+        "v1 §2.1–2.2: debiased estimation and quasi-likelihood",
+        "v1 Assumption 1: beta-2tau>d, known design and noise",
+        "v1 Assumptions 2–5 and Theorem 3.8",
+        "v1 §4: numerical experiment design"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.12301",
+      "target": "review:032:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:032",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.12301",
+        "https://arxiv.org/html/2609.12301v1"
+      ],
+      "locators": [
+        "v1 §2.1–2.2: debiased estimation and quasi-likelihood",
+        "v1 Assumption 1: beta-2tau>d, known design and noise",
+        "v1 Assumptions 2–5 and Theorem 3.8",
+        "v1 §4: numerical experiment design"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15432",
+      "target": "review:033:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:033",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15432",
+        "https://arxiv.org/pdf/2609.15432"
+      ],
+      "locators": [
+        "PDF pp.4–6: LST and residual-guided source enrichment",
+        "PDF pp.12–14: Discussion, limitations, response-space construction",
+        "PDF Methods: output-tangent interpretation; supplement source-coverage discussion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15432",
+      "target": "review:033:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:033",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15432",
+        "https://arxiv.org/pdf/2609.15432"
+      ],
+      "locators": [
+        "PDF pp.4–6: LST and residual-guided source enrichment",
+        "PDF pp.12–14: Discussion, limitations, response-space construction",
+        "PDF Methods: output-tangent interpretation; supplement source-coverage discussion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15432",
+      "target": "review:033:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:033",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15432",
+        "https://arxiv.org/pdf/2609.15432"
+      ],
+      "locators": [
+        "PDF pp.4–6: LST and residual-guided source enrichment",
+        "PDF pp.12–14: Discussion, limitations, response-space construction",
+        "PDF Methods: output-tangent interpretation; supplement source-coverage discussion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15432",
+      "target": "review:033:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:033",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15432",
+        "https://arxiv.org/pdf/2609.15432"
+      ],
+      "locators": [
+        "PDF pp.4–6: LST and residual-guided source enrichment",
+        "PDF pp.12–14: Discussion, limitations, response-space construction",
+        "PDF Methods: output-tangent interpretation; supplement source-coverage discussion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15432",
+      "target": "review:033:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:033",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15432",
+        "https://arxiv.org/pdf/2609.15432"
+      ],
+      "locators": [
+        "PDF pp.4–6: LST and residual-guided source enrichment",
+        "PDF pp.12–14: Discussion, limitations, response-space construction",
+        "PDF Methods: output-tangent interpretation; supplement source-coverage discussion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15620",
+      "target": "review:034:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:034",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15620",
+        "https://arxiv.org/html/2609.15620v1"
+      ],
+      "locators": [
+        "v1 §3/Eqs.8–10: low-rank transport before aggregation",
+        "v1 §4.2–4.3: ablations and frozen-checkpoint interventions",
+        "v1 Appendix E/Proposition 2: topology-preserving deformation stability"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15620",
+      "target": "review:034:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:034",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15620",
+        "https://arxiv.org/html/2609.15620v1"
+      ],
+      "locators": [
+        "v1 §3/Eqs.8–10: low-rank transport before aggregation",
+        "v1 §4.2–4.3: ablations and frozen-checkpoint interventions",
+        "v1 Appendix E/Proposition 2: topology-preserving deformation stability"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15620",
+      "target": "review:034:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:034",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15620",
+        "https://arxiv.org/html/2609.15620v1"
+      ],
+      "locators": [
+        "v1 §3/Eqs.8–10: low-rank transport before aggregation",
+        "v1 §4.2–4.3: ablations and frozen-checkpoint interventions",
+        "v1 Appendix E/Proposition 2: topology-preserving deformation stability"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15620",
+      "target": "review:034:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:034",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15620",
+        "https://arxiv.org/html/2609.15620v1"
+      ],
+      "locators": [
+        "v1 §3/Eqs.8–10: low-rank transport before aggregation",
+        "v1 §4.2–4.3: ablations and frozen-checkpoint interventions",
+        "v1 Appendix E/Proposition 2: topology-preserving deformation stability"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.15620",
+      "target": "review:034:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:034",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.15620",
+        "https://arxiv.org/html/2609.15620v1"
+      ],
+      "locators": [
+        "v1 §3/Eqs.8–10: low-rank transport before aggregation",
+        "v1 §4.2–4.3: ablations and frozen-checkpoint interventions",
+        "v1 Appendix E/Proposition 2: topology-preserving deformation stability"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.16621",
+      "target": "review:035:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:035",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.16621",
+        "https://arxiv.org/html/2609.16621v1"
+      ],
+      "locators": [
+        "v1 §2.1: same IC distribution and temporal extrapolation",
+        "v1 §3.3/Proposition 3.12/Eq.3.21: population rollout bound",
+        "v1 conclusion: limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.16621",
+      "target": "review:035:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:035",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.16621",
+        "https://arxiv.org/html/2609.16621v1"
+      ],
+      "locators": [
+        "v1 §2.1: same IC distribution and temporal extrapolation",
+        "v1 §3.3/Proposition 3.12/Eq.3.21: population rollout bound",
+        "v1 conclusion: limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.16621",
+      "target": "review:035:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:035",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.16621",
+        "https://arxiv.org/html/2609.16621v1"
+      ],
+      "locators": [
+        "v1 §2.1: same IC distribution and temporal extrapolation",
+        "v1 §3.3/Proposition 3.12/Eq.3.21: population rollout bound",
+        "v1 conclusion: limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.16621",
+      "target": "review:035:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:035",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.16621",
+        "https://arxiv.org/html/2609.16621v1"
+      ],
+      "locators": [
+        "v1 §2.1: same IC distribution and temporal extrapolation",
+        "v1 §3.3/Proposition 3.12/Eq.3.21: population rollout bound",
+        "v1 conclusion: limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.16621",
+      "target": "review:035:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:035",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.16621",
+        "https://arxiv.org/html/2609.16621v1"
+      ],
+      "locators": [
+        "v1 §2.1: same IC distribution and temporal extrapolation",
+        "v1 §3.3/Proposition 3.12/Eq.3.21: population rollout bound",
+        "v1 conclusion: limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.20814",
+      "target": "review:036:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:036",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.20814",
+        "https://arxiv.org/html/2609.20814v1"
+      ],
+      "locators": [
+        "v1 §2–3: matched freestream, identical-sample scratch controls, depth/breadth",
+        "v1 Appendix I: matched-error sample-efficiency estimator",
+        "v1 Appendix K/Table: 1000,5000,10000 and censored draw"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.20814",
+      "target": "review:036:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:036",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.20814",
+        "https://arxiv.org/html/2609.20814v1"
+      ],
+      "locators": [
+        "v1 §2–3: matched freestream, identical-sample scratch controls, depth/breadth",
+        "v1 Appendix I: matched-error sample-efficiency estimator",
+        "v1 Appendix K/Table: 1000,5000,10000 and censored draw"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.20814",
+      "target": "review:036:claim:1",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:036",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.20814",
+        "https://arxiv.org/html/2609.20814v1"
+      ],
+      "locators": [
+        "v1 §2–3: matched freestream, identical-sample scratch controls, depth/breadth",
+        "v1 Appendix I: matched-error sample-efficiency estimator",
+        "v1 Appendix K/Table: 1000,5000,10000 and censored draw"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.20814",
+      "target": "review:036:claim:2",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:036",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.20814",
+        "https://arxiv.org/html/2609.20814v1"
+      ],
+      "locators": [
+        "v1 §2–3: matched freestream, identical-sample scratch controls, depth/breadth",
+        "v1 Appendix I: matched-error sample-efficiency estimator",
+        "v1 Appendix K/Table: 1000,5000,10000 and censored draw"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.20814",
+      "target": "review:036:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:036",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.20814",
+        "https://arxiv.org/html/2609.20814v1"
+      ],
+      "locators": [
+        "v1 §2–3: matched freestream, identical-sample scratch controls, depth/breadth",
+        "v1 Appendix I: matched-error sample-efficiency estimator",
+        "v1 Appendix K/Table: 1000,5000,10000 and censored draw"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2609.20814",
+      "target": "review:036:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:036",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/abs/2609.20814",
+        "https://arxiv.org/html/2609.20814v1"
+      ],
+      "locators": [
+        "v1 §2–3: matched freestream, identical-sample scratch controls, depth/breadth",
+        "v1 Appendix I: matched-error sample-efficiency estimator",
+        "v1 Appendix K/Table: 1000,5000,10000 and censored draw"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2111.03794",
+      "target": "review:037:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:037",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2111.03794v4",
+        "https://arxiv.org/abs/2111.03794v4"
+      ],
+      "locators": [
+        "§3.1 Physics-informed operator learning",
+        "§3.2 Instance-wise fine-tuning",
+        "§5 Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2111.03794",
+      "target": "review:037:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:037",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2111.03794v4",
+        "https://arxiv.org/abs/2111.03794v4"
+      ],
+      "locators": [
+        "§3.1 Physics-informed operator learning",
+        "§3.2 Instance-wise fine-tuning",
+        "§5 Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2111.03794",
+      "target": "review:037:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:037",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2111.03794v4",
+        "https://arxiv.org/abs/2111.03794v4"
+      ],
+      "locators": [
+        "§3.1 Physics-informed operator learning",
+        "§3.2 Instance-wise fine-tuning",
+        "§5 Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2111.03794",
+      "target": "review:037:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:037",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2111.03794v4",
+        "https://arxiv.org/abs/2111.03794v4"
+      ],
+      "locators": [
+        "§3.1 Physics-informed operator learning",
+        "§3.2 Instance-wise fine-tuning",
+        "§5 Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.1038/s41586-024-07744-y",
+      "target": "review:038:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:038",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2311.07222v3",
+        "https://arxiv.org/abs/2311.07222v3"
+      ],
+      "locators": [
+        "Methods §3 Learned physics",
+        "Discussion",
+        "§9.4.2 SST perturbation"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.1038/s41586-024-07744-y",
+      "target": "review:038:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:038",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2311.07222v3",
+        "https://arxiv.org/abs/2311.07222v3"
+      ],
+      "locators": [
+        "Methods §3 Learned physics",
+        "Discussion",
+        "§9.4.2 SST perturbation"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.1038/s41586-024-07744-y",
+      "target": "review:038:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:038",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2311.07222v3",
+        "https://arxiv.org/abs/2311.07222v3"
+      ],
+      "locators": [
+        "Methods §3 Learned physics",
+        "Discussion",
+        "§9.4.2 SST perturbation"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "doi:10.1038/s41586-024-07744-y",
+      "target": "review:038:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:038",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2311.07222v3",
+        "https://arxiv.org/abs/2311.07222v3"
+      ],
+      "locators": [
+        "Methods §3 Learned physics",
+        "Discussion",
+        "§9.4.2 SST perturbation"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.18358",
+      "target": "review:039:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:039",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2411.18358v2",
+        "https://arxiv.org/abs/2411.18358v2"
+      ],
+      "locators": [
+        "§2.1 Sparse regression",
+        "§2.2 Simulation setup",
+        "§4 Discussion and conclusions"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.18358",
+      "target": "review:039:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:039",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2411.18358v2",
+        "https://arxiv.org/abs/2411.18358v2"
+      ],
+      "locators": [
+        "§2.1 Sparse regression",
+        "§2.2 Simulation setup",
+        "§4 Discussion and conclusions"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.18358",
+      "target": "review:039:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:039",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2411.18358v2",
+        "https://arxiv.org/abs/2411.18358v2"
+      ],
+      "locators": [
+        "§2.1 Sparse regression",
+        "§2.2 Simulation setup",
+        "§4 Discussion and conclusions"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.18358",
+      "target": "review:039:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:039",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2411.18358v2",
+        "https://arxiv.org/abs/2411.18358v2"
+      ],
+      "locators": [
+        "§2.1 Sparse regression",
+        "§2.2 Simulation setup",
+        "§4 Discussion and conclusions"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.08789",
+      "target": "review:040:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:040",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2411.08789v1",
+        "https://arxiv.org/abs/2411.08789v1"
+      ],
+      "locators": [
+        "§IV PhIT",
+        "§V Transformation Assessment",
+        "§VI Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.08789",
+      "target": "review:040:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:040",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2411.08789v1",
+        "https://arxiv.org/abs/2411.08789v1"
+      ],
+      "locators": [
+        "§IV PhIT",
+        "§V Transformation Assessment",
+        "§VI Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.08789",
+      "target": "review:040:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:040",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2411.08789v1",
+        "https://arxiv.org/abs/2411.08789v1"
+      ],
+      "locators": [
+        "§IV PhIT",
+        "§V Transformation Assessment",
+        "§VI Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2411.08789",
+      "target": "review:040:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:040",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2411.08789v1",
+        "https://arxiv.org/abs/2411.08789v1"
+      ],
+      "locators": [
+        "§IV PhIT",
+        "§V Transformation Assessment",
+        "§VI Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2501.08166",
+      "target": "review:041:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:041",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2501.08166v2",
+        "https://arxiv.org/abs/2501.08166v2"
+      ],
+      "locators": [
+        "§2 GRTE",
+        "Conclusion / numerical tests"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2501.08166",
+      "target": "review:041:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:041",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2501.08166v2",
+        "https://arxiv.org/abs/2501.08166v2"
+      ],
+      "locators": [
+        "§2 GRTE",
+        "Conclusion / numerical tests"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2501.08166",
+      "target": "review:041:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:041",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2501.08166v2",
+        "https://arxiv.org/abs/2501.08166v2"
+      ],
+      "locators": [
+        "§2 GRTE",
+        "Conclusion / numerical tests"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2501.08166",
+      "target": "review:041:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:041",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2501.08166v2",
+        "https://arxiv.org/abs/2501.08166v2"
+      ],
+      "locators": [
+        "§2 GRTE",
+        "Conclusion / numerical tests"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2507.04153",
+      "target": "review:042:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:042",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2507.04153v1",
+        "https://arxiv.org/abs/2507.04153v1"
+      ],
+      "locators": [
+        "§3 Waveguide neural operator",
+        "§4 Numerical results",
+        "§5 Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2507.04153",
+      "target": "review:042:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:042",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2507.04153v1",
+        "https://arxiv.org/abs/2507.04153v1"
+      ],
+      "locators": [
+        "§3 Waveguide neural operator",
+        "§4 Numerical results",
+        "§5 Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2507.04153",
+      "target": "review:042:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:042",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2507.04153v1",
+        "https://arxiv.org/abs/2507.04153v1"
+      ],
+      "locators": [
+        "§3 Waveguide neural operator",
+        "§4 Numerical results",
+        "§5 Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2507.04153",
+      "target": "review:042:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:042",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2507.04153v1",
+        "https://arxiv.org/abs/2507.04153v1"
+      ],
+      "locators": [
+        "§3 Waveguide neural operator",
+        "§4 Numerical results",
+        "§5 Conclusion"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.07314",
+      "target": "review:043:mechanism:0",
+      "type": "described_mechanism",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:043",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2510.07314v4",
+        "https://arxiv.org/abs/2510.07314v4"
+      ],
+      "locators": [
+        "Model description",
+        "§6 Conclusions and Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.07314",
+      "target": "review:043:claim:0",
+      "type": "reviewed_claim",
+      "certainty": "reviewed_source_summary",
+      "evidence_id": "review:043",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2510.07314v4",
+        "https://arxiv.org/abs/2510.07314v4"
+      ],
+      "locators": [
+        "Model description",
+        "§6 Conclusions and Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.07314",
+      "target": "review:043:limitation:0",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:043",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2510.07314v4",
+        "https://arxiv.org/abs/2510.07314v4"
+      ],
+      "locators": [
+        "Model description",
+        "§6 Conclusions and Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.07314",
+      "target": "review:043:limitation:1",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:043",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2510.07314v4",
+        "https://arxiv.org/abs/2510.07314v4"
+      ],
+      "locators": [
+        "Model description",
+        "§6 Conclusions and Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "arxiv:2510.07314",
+      "target": "review:043:limitation:2",
+      "type": "review_scope_limit",
+      "certainty": "review_interpretation",
+      "evidence_id": "review:043",
+      "evidence_level": "primary_fulltext",
+      "urls": [
+        "https://arxiv.org/html/2510.07314v4",
+        "https://arxiv.org/abs/2510.07314v4"
+      ],
+      "locators": [
+        "Model description",
+        "§6 Conclusions and Limitations"
+      ],
+      "independently_reproduced": false
+    },
+    {
+      "source": "concept:operator",
+      "target": "concept:pretrain",
+      "type": "conceptual_progression",
+      "certainty": "synthesis_inference",
+      "provenance": "RESEARCH_SYNTHESIS.zh-CN.md#3",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:pretrain",
+      "target": "concept:condition",
+      "type": "conceptual_progression",
+      "certainty": "synthesis_inference",
+      "provenance": "RESEARCH_SYNTHESIS.zh-CN.md#3",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:condition",
+      "target": "concept:heterogeneity",
+      "type": "conceptual_progression",
+      "certainty": "synthesis_inference",
+      "provenance": "RESEARCH_SYNTHESIS.zh-CN.md#3",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:heterogeneity",
+      "target": "concept:reliability",
+      "type": "conceptual_progression",
+      "certainty": "synthesis_inference",
+      "provenance": "RESEARCH_SYNTHESIS.zh-CN.md#3",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:reliability",
+      "target": "concept:evaluation",
+      "type": "conceptual_progression",
+      "certainty": "synthesis_inference",
+      "provenance": "RESEARCH_SYNTHESIS.zh-CN.md#3",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:evaluation",
+      "target": "hypothesis:H1",
+      "type": "motivates_question",
+      "certainty": "synthesis_inference",
+      "provenance": "innovation_agenda.md",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:evaluation",
+      "target": "hypothesis:H2",
+      "type": "motivates_question",
+      "certainty": "synthesis_inference",
+      "provenance": "innovation_agenda.md",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:evaluation",
+      "target": "hypothesis:H3",
+      "type": "motivates_question",
+      "certainty": "synthesis_inference",
+      "provenance": "innovation_agenda.md",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:evaluation",
+      "target": "hypothesis:H4",
+      "type": "motivates_question",
+      "certainty": "synthesis_inference",
+      "provenance": "innovation_agenda.md",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:evaluation",
+      "target": "hypothesis:H5",
+      "type": "motivates_question",
+      "certainty": "synthesis_inference",
+      "provenance": "innovation_agenda.md",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:evaluation",
+      "target": "hypothesis:H6",
+      "type": "motivates_question",
+      "certainty": "synthesis_inference",
+      "provenance": "innovation_agenda.md",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:evaluation",
+      "target": "hypothesis:H7",
+      "type": "motivates_question",
+      "certainty": "synthesis_inference",
+      "provenance": "innovation_agenda.md",
+      "citation_relation": false
+    },
+    {
+      "source": "concept:evaluation",
+      "target": "hypothesis:H8",
+      "type": "motivates_question",
+      "certainty": "synthesis_inference",
+      "provenance": "innovation_agenda.md",
+      "citation_relation": false
+    }
+  ],
+  "semantics": {
+    "reviewed_source_summary": "Evidence-backed review summary; may combine author descriptions and reviewer interpretation. Not a verbatim or exclusively author-attributed claim.",
+    "review_interpretation": "Scope limit identified during selective reading; not necessarily an explicit author statement.",
+    "synthesis_inference": "Reviewer conceptual connection or untested hypothesis; not a citation or proven causal relationship.",
+    "replication": "No scientific experiments or source code were executed for these claims."
+  }
+}

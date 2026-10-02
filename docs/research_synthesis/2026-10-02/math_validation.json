@@ -1,0 +1,50 @@
+{
+  "schema_version": "research-math-validation-v1",
+  "checked_at_utc": "2026-10-02T15:22:00.107Z",
+  "status": "passed",
+  "site": "2026-10-02",
+  "artifact_sha256": "c98652e0fc349b5d8258614b8d9164328d4a4fefcac77ff17751cf6b8f3f9200",
+  "checks": [
+    {
+      "mode": "http",
+      "chapters": 7,
+      "formulas": 49,
+      "viewports": [
+        1440
+      ],
+      "long_equations_scroll_at_320": 0,
+      "js_errors": [],
+      "external_requests": []
+    },
+    {
+      "mode": "offline",
+      "chapters": 7,
+      "formulas": 49,
+      "viewports": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "long_equations_scroll_at_320": 8,
+      "js_errors": [],
+      "external_requests": []
+    }
+  ],
+  "renderer": "KaTeX 0.19.0; build-time HTML + MathML; embedded WOFF2 fonts",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -p test_research_math.py -v",
+    "passed": 7
+  },
+  "search": "Formula TeX searchable without duplicate HTML/MathML text in broad-horizons reader",
+  "legacy_cards": "HS-FNO historical summary formulas render; original evidence strings and downloads preserved",
+  "visual_review": [
+    "Desktop formula typography",
+    "390px mobile formula typography and horizontal formula scrolling"
+  ],
+  "screenshots": [
+    "ui-math-desktop.png",
+    "ui-math-mobile.png"
+  ],
+  "scope": "UI update only; historical snapshots and scientific evidence unchanged; local preview, no commit or push."
+}

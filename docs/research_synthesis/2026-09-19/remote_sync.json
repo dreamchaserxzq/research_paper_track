@@ -1,0 +1,504 @@
+{
+  "checked_at": "2026-09-19",
+  "remote": "https://github.com/dreamchaserxzq/research_paper_track.git",
+  "local_before": "ce785f1d2414d25c8080bde8bd45870b1c5eebab",
+  "local_after": "428741f55fe2301ea7ca3029fedc3e913b07b2cc",
+  "origin_main": "428741f55fe2301ea7ca3029fedc3e913b07b2cc",
+  "strategy": "fetch --prune + merge --ff-only",
+  "integrated_commits": 6,
+  "remote_refs": [
+    {
+      "ref": "origin/HEAD",
+      "commit": "428741f55fe2301ea7ca3029fedc3e913b07b2cc"
+    },
+    {
+      "ref": "origin/claude/beautiful-shannon-27Uwv",
+      "commit": "11c0e8b501b40818ed4626b529a277b5aae161d6"
+    },
+    {
+      "ref": "origin/claude/cool-mayer-FX4rU",
+      "commit": "3a123845a5d35d1b6c79babf715d66fefc4f86d8"
+    },
+    {
+      "ref": "origin/claude/cool-mayer-rOa7D",
+      "commit": "d9b13006fbba39372261bb6badb5055202b69ea7"
+    },
+    {
+      "ref": "origin/claude/exciting-ptolemy-5NO71",
+      "commit": "b8c4e9c6c0c5c4daad1fed8fbc6ce1e3c56ceb21"
+    },
+    {
+      "ref": "origin/claude/exciting-ptolemy-D8XBk",
+      "commit": "27fdea7a74b94d85a57f6bc2a1e02092f1dded9b"
+    },
+    {
+      "ref": "origin/claude/exciting-ptolemy-QzO20",
+      "commit": "f7c94342fc3be188c468985f342d2165d9221efb"
+    },
+    {
+      "ref": "origin/claude/exciting-ptolemy-oVDaw",
+      "commit": "983200d2960f1fa0f46310d79a32cf878ad1c926"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-013xyi",
+      "commit": "c4a605827d1d1d1e26330cccd14ea42ba6f437ed"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-07i3m6",
+      "commit": "1b819df8fd55775a0cf6b80ec43143de59ff2541"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-094vx7",
+      "commit": "c7082928e50fd11b5132906e8bf39b12c2352156"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-0q6bku",
+      "commit": "813f09baed92675bb26e0213ebc3fafdaaa75324"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-0v4dex",
+      "commit": "c99bc1136354d5ec3b23a4ac77fa466b2d290bb2"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-0v6v8e",
+      "commit": "1e12547945b426439a46b20870b09ac12a61f2c2"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-2it790",
+      "commit": "df2565dddbce36cd23bb452847d170f7e4317445"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-35je0u",
+      "commit": "10b2554943320917154137eecda7327722c07ebc"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-3ydebs",
+      "commit": "f2c62218af5a183a983357ccc706d0c05412622f"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-4tfzx2",
+      "commit": "91cca2ffe52b02644fd48ab2242d16e0e589f4fa"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-52t7pr",
+      "commit": "567f6f965ef9a11e70f34f564a48e38d142346af"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-8euubh",
+      "commit": "8ca53eef3726c61531518f64d541858e0a58ac25"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-8kj52t",
+      "commit": "f807907be851e39980aa9e6c49e77c4c92840d94"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-8nqott",
+      "commit": "1bf69f10382bc28a32c0d1c4cc33b51005d4f33b"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-9qxul8",
+      "commit": "6c5ef0569a28d975d0c816bd97d6c6ba914d15d9"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-a0h9om",
+      "commit": "0c3c860af75ca544de73124e8ebbbb31bba3c1c6"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-azmaas",
+      "commit": "e6b9a529674743b37cb11387805025dc0f9c309c"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-bk3fdd",
+      "commit": "efd6f988c2424530482dddace079a1f49dd04844"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-bn62yc",
+      "commit": "dc236b17ec85b5954f327f32760d5d9ac03cc00e"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-brkabu",
+      "commit": "2db9d3c093453e1469929500b2674b45575f5eb2"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-c46vyv",
+      "commit": "1dfda88aa266d5bfe86b72147b083a8745401add"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-dojnlt",
+      "commit": "a028adfdbe3071112abb979a723b2a635d0bd055"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-j10q9a",
+      "commit": "609276c1b080daf5f6a95c30fae7fa98c362574d"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-k3vnze",
+      "commit": "813f62622d9606321e3584fb779740af90746bd4"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-kbvft9",
+      "commit": "9ded95cb1e506f5247c71231a5a56e573cb33c6f"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-kq3qr6",
+      "commit": "0f6b1d3680a4c1be5b99d9384e529452490d3731"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-ksq1dq",
+      "commit": "8cbd81e61d9fb4bd58d503d90b90a4ed30b45e0f"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-kt9n0q",
+      "commit": "3478529648a45e320069f0410aaae7a2631925f6"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-kyw62x",
+      "commit": "c5aa6e0bcd44c46d83ad7177754ed8fce96c3234"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-l3s0tx",
+      "commit": "4f3350aa72a8d2e9095103472a4c5054d8d74b65"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-n5flf3",
+      "commit": "4ad460a0acef68d3274e84bb1551b9d6b796e5f2"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-neucc5",
+      "commit": "2255b96ebbb7bb8442132d85927f75e6fe131b1d"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-nsuk7o",
+      "commit": "254da757a4b4aeac3f8bae859f1c1a6516278101"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-o4it0h",
+      "commit": "8a98686271f2e8814d0236f5f079fe540273453e"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-ocn7mc",
+      "commit": "84dc21c9ab98284c4ac2339203be55286a6cdd25"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-pvly3d",
+      "commit": "ace510a70828fd952010a3855069427aec9f0a52"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-pvx070",
+      "commit": "80c7537deb16e118373c36fd9707d927cc3d01d1"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-q7t0zx",
+      "commit": "6f84175659a52e5d83b4dec8bac18edf509695e3"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-qn97ju",
+      "commit": "1bcc575e79281195789abccc605aea88a3dba5bf"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-qo0872",
+      "commit": "9013d27b47493ad9fad1ac649803f5d74e889599"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-s4cwlz",
+      "commit": "ebcaaec5f9ceab9af4b8d2c9a5d17016be85847f"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-s7h4in",
+      "commit": "a7af8b93c130f81fb613673b84fccd1ea4406be0"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-sfpgvn",
+      "commit": "e163103da404da25989a721b8502659f530db826"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-slsdvd",
+      "commit": "6df47e3cbb0ca7856b7136baa93b5c9fb6de7812"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-tgdsdl",
+      "commit": "7808ba25ba49857d9642b2c579292a3fa42b67d5"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-ts4mwb",
+      "commit": "f630ee41f145695de23a3b321122abe2633d4b81"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-tyhyny",
+      "commit": "11423990eb67b1715ba00c1f27ccf47ea1d756d4"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-w2lua4",
+      "commit": "290204d2126a4b8f83948faa1279e6c34f54f1ab"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-wqn0fk",
+      "commit": "b54f24bb2bbcd6d71588832ce7732a0d34b8dbc8"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-xjc17n",
+      "commit": "428741f55fe2301ea7ca3029fedc3e913b07b2cc"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-xwa7fx",
+      "commit": "e1b2ff98171e3727e98e41a87e90ec9ecf9222a8"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-y09c8b",
+      "commit": "0391f73900912be26367b3a89e451df9fda6efa6"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-yasz0d",
+      "commit": "0a8104e9b8d9dc25e8421db66f22c608a7c50d54"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-ykq92y",
+      "commit": "aecc25955184ed5a01b60ffba116502fb4b865a1"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-zb6ijc",
+      "commit": "98d4abae456c22bbc6047545c047a0636a9438cc"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-zbbf77",
+      "commit": "14a9b8597aab66c343fa5d35a35033cbb2f8faa8"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-zn2nd7",
+      "commit": "56e6efb7a69a11ce8b1997bc4f17c4d1ee8f3220"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-znpa09",
+      "commit": "464bad74c66b4e2ac5cbd948d9b63bf6972e1cff"
+    },
+    {
+      "ref": "origin/claude/inspiring-allen-zxce7y",
+      "commit": "8968c2a4265340b0f53ec86da0bfa8c191168d27"
+    },
+    {
+      "ref": "origin/claude/loving-bell-2362ff",
+      "commit": "8cb87f9f0098258a3d4c5d06af07e67a1f29b71c"
+    },
+    {
+      "ref": "origin/claude/loving-bell-36Hrz",
+      "commit": "f03c2ea569f8bb42b80c4fa8266fdb018b18c673"
+    },
+    {
+      "ref": "origin/claude/loving-bell-4cufzt",
+      "commit": "5e437283c19905af5c1f151263f55a6073be3b90"
+    },
+    {
+      "ref": "origin/claude/loving-bell-4kbqcs",
+      "commit": "b3a50fd832498d5d0da603556fc67970a8eaede5"
+    },
+    {
+      "ref": "origin/claude/loving-bell-4w86kf",
+      "commit": "59f5d9038db790458bb05642a1757df678b9e0d5"
+    },
+    {
+      "ref": "origin/claude/loving-bell-5m78xn",
+      "commit": "20d37c993fa06dc7bf3f21b6fdc70b4df290cef5"
+    },
+    {
+      "ref": "origin/claude/loving-bell-5r8ljc",
+      "commit": "cae017f119dc7df00b2270f8830ee201d2fe30dc"
+    },
+    {
+      "ref": "origin/claude/loving-bell-5rpol",
+      "commit": "645bf98f0834d53a06fda484f5e72d0c9a65e39f"
+    },
+    {
+      "ref": "origin/claude/loving-bell-6ow6mo",
+      "commit": "4d192019ff3962eea1725f36563cf2818051ff61"
+    },
+    {
+      "ref": "origin/claude/loving-bell-75zzlr",
+      "commit": "2c93e37898eb9d14697443a1c8376d21aa8a2afc"
+    },
+    {
+      "ref": "origin/claude/loving-bell-76sorp",
+      "commit": "8ec568d4f056f107e8195dbb7e5a81f1ec0dc6a8"
+    },
+    {
+      "ref": "origin/claude/loving-bell-988awh",
+      "commit": "6c309e8bec9924f157e6ddbb409babccab9d6096"
+    },
+    {
+      "ref": "origin/claude/loving-bell-9yab3t",
+      "commit": "019da8b5403ed129a219f7f46234367f4eb4d1ac"
+    },
+    {
+      "ref": "origin/claude/loving-bell-B67Lx",
+      "commit": "735137213f25f85224bc595c0948f2988f6453c4"
+    },
+    {
+      "ref": "origin/claude/loving-bell-EukJV",
+      "commit": "a04aae28dd0b71c214633c997cb4ad6ed403a7ca"
+    },
+    {
+      "ref": "origin/claude/loving-bell-G66nU",
+      "commit": "72a16da194d2d63f9b4800d351c56b15a6385c71"
+    },
+    {
+      "ref": "origin/claude/loving-bell-NxwCt",
+      "commit": "9f93983b57f52d88edff4adf9f59e815085a5f6b"
+    },
+    {
+      "ref": "origin/claude/loving-bell-P0wbw",
+      "commit": "779d5b56411a4373e1ef63f1de9cb919654e442a"
+    },
+    {
+      "ref": "origin/claude/loving-bell-QEwUn",
+      "commit": "b39b0ea2774f0271570da5c8ef1e636b606a7dcb"
+    },
+    {
+      "ref": "origin/claude/loving-bell-TPceu",
+      "commit": "393807b9490548812712b71aef9c27278cf665fe"
+    },
+    {
+      "ref": "origin/claude/loving-bell-UlH8o",
+      "commit": "30b4550a921da51259da2ed0b1123dbd80e159cf"
+    },
+    {
+      "ref": "origin/claude/loving-bell-W4cmj",
+      "commit": "626c20accb9231d751f7312c2851a03993ceab6a"
+    },
+    {
+      "ref": "origin/claude/loving-bell-adc76i",
+      "commit": "4ee002093e5201ceba9153a9e7368141632c826e"
+    },
+    {
+      "ref": "origin/claude/loving-bell-aoxz2c",
+      "commit": "c71835bb823b6a00c7d57be38608145217457cee"
+    },
+    {
+      "ref": "origin/claude/loving-bell-bfkjr",
+      "commit": "f45bdc6f4371dc78021195b75cf51e04ba324685"
+    },
+    {
+      "ref": "origin/claude/loving-bell-hk40zk",
+      "commit": "853dd29b76b502e7a93d82359e08d6bd62c6a119"
+    },
+    {
+      "ref": "origin/claude/loving-bell-i1gc1v",
+      "commit": "dbb57a6c45675f645c7e49c7ba3234fc77e214a8"
+    },
+    {
+      "ref": "origin/claude/loving-bell-izfqo7",
+      "commit": "d0727b7fd75fec5274bb1b7f3aa4e42f0d9f7534"
+    },
+    {
+      "ref": "origin/claude/loving-bell-keyfrm",
+      "commit": "23b6549e00992be20fd52229190f7a89117e27f0"
+    },
+    {
+      "ref": "origin/claude/loving-bell-o72ow9",
+      "commit": "cbaaaee2a11e701c7bc84446864262c4a5fabaa6"
+    },
+    {
+      "ref": "origin/claude/loving-bell-o8cfwy",
+      "commit": "e308e198dc8455116bceb178ccd83923dba05fd2"
+    },
+    {
+      "ref": "origin/claude/loving-bell-qB5OC",
+      "commit": "099c317eaf9e3f20579e12d03086c39fb22a734a"
+    },
+    {
+      "ref": "origin/claude/loving-bell-qp35A",
+      "commit": "b0ea5088efcbae6dc72d0b4313d6eecac97d06fa"
+    },
+    {
+      "ref": "origin/claude/loving-bell-r2fybl",
+      "commit": "8b4b7833f15bfaaa423a74c4569a082b661b4503"
+    },
+    {
+      "ref": "origin/claude/loving-bell-t8zaw4",
+      "commit": "122c3b8724d6a6322946ad3898b1578c7ab1c086"
+    },
+    {
+      "ref": "origin/claude/loving-bell-uc1t5v",
+      "commit": "bdae304056c8006e8ba0bea707842022b62f5cc5"
+    },
+    {
+      "ref": "origin/claude/loving-bell-vOvDN",
+      "commit": "032db5ffce40632603a7b6e3a807e16e9447a3df"
+    },
+    {
+      "ref": "origin/claude/loving-bell-vvvddy",
+      "commit": "689523d9aab05195a2527badbd083b3d00372a0e"
+    },
+    {
+      "ref": "origin/claude/loving-bell-z5yeww",
+      "commit": "1f9b818be40a08ea7f726aed0f627075dac5058b"
+    },
+    {
+      "ref": "origin/claude/loving-bell-zlbza0",
+      "commit": "0fc92c968e4799182e1229604557aa70654060ec"
+    },
+    {
+      "ref": "origin/claude/optimistic-feynman-DGdcy",
+      "commit": "77f2248c73fa08ab8a852793aea6323217bfe83d"
+    },
+    {
+      "ref": "origin/claude/peaceful-bohr-00g280",
+      "commit": "a8d720f875d1c5686f530c2cd3aa7875aaa83298"
+    },
+    {
+      "ref": "origin/claude/peaceful-bohr-27pb12",
+      "commit": "3f8e12fa4841b92af986a55af9c892e6119dbc9e"
+    },
+    {
+      "ref": "origin/claude/peaceful-bohr-6bmji6",
+      "commit": "8954a57a56f52772b65a25cec626ca0776c027e7"
+    },
+    {
+      "ref": "origin/claude/peaceful-bohr-6qmd46",
+      "commit": "6dbebd1f5710accbaecfb5071c58d661898738c3"
+    },
+    {
+      "ref": "origin/claude/peaceful-bohr-jmlrjv",
+      "commit": "edab1fedc3c34fc5a4b11f61dbc8db292b420c65"
+    },
+    {
+      "ref": "origin/claude/peaceful-bohr-s20cfi",
+      "commit": "da1943805ff47da0e86d66aada7135eccd52543e"
+    },
+    {
+      "ref": "origin/claude/peaceful-bohr-ttr6wm",
+      "commit": "c20354c75027f30370bf952ffc2c7a858f142d11"
+    },
+    {
+      "ref": "origin/claude/peaceful-bohr-x7gqkw",
+      "commit": "6b8a9a265b04a4e06a40940d8e8efccbeacaaf07"
+    },
+    {
+      "ref": "origin/claude/peaceful-bohr-yh0djj",
+      "commit": "97a7afae6a2cf8bb2f987c7c140d9138f4f9a1e1"
+    },
+    {
+      "ref": "origin/claude/peaceful-galileo-7m35A",
+      "commit": "6b3d31ed11445da24f17ec667f80e8199d45333f"
+    },
+    {
+      "ref": "origin/claude/trusting-tesla-vqJcE",
+      "commit": "0ae8a2bbb39357deca2cafd03e55642086e3a877"
+    },
+    {
+      "ref": "origin/main",
+      "commit": "428741f55fe2301ea7ca3029fedc3e913b07b2cc"
+    }
+  ],
+  "preserved_untracked": [
+    "pelican-bicycle.html",
+    "pelican-ride.html"
+  ],
+  "supplemental_branch_report": {
+    "ref": "origin/claude/inspiring-allen-52t7pr",
+    "commit": "567f6f965ef9a11e70f34f564a48e38d142346af",
+    "source_path": "digests/PDE-FM-日报-20260916.md",
+    "local_snapshot": "remote_20260916_digest.txt",
+    "sha256": "73c3682d1fd05cac1afbbc98eddc97e05afced8426f3d190f9e69c6f2e1169a4",
+    "selected_papers": 0,
+    "note": "Branch report retained as supplemental evidence; main history and registries not changed."
+  }
+}

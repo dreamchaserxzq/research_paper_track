@@ -1,0 +1,507 @@
+{
+  "schema_version": "research-snapshot-validation-v2",
+  "snapshot_date": "2026-10-02",
+  "checked_at_utc": "2026-10-02T14:49:45.029456+00:00",
+  "status": "passed",
+  "artifact_sha256": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1",
+  "source_head": "ca1125a6809e7a3998882a7d134e0c3c8e11c492",
+  "stats": {
+    "sources": 72,
+    "concepts": 74,
+    "hypotheses": 9,
+    "nodes": 155,
+    "edges": 333,
+    "levels": {
+      "fulltext_sections": 64,
+      "book_sections": 2,
+      "abstract": 3,
+      "official_documentation": 3
+    },
+    "tracks": {
+      "ai_foundations": {
+        "fulltext_sections": 20
+      },
+      "ai_reasoning_systems": {
+        "fulltext_sections": 21
+      },
+      "pde_numerics": {
+        "book_sections": 2,
+        "fulltext_sections": 16,
+        "abstract": 2,
+        "official_documentation": 2
+      },
+      "bridge": {
+        "fulltext_sections": 7,
+        "abstract": 1,
+        "official_documentation": 1
+      }
+    },
+    "new_sources": 8,
+    "inherited_sources": 64,
+    "new_concepts": 9
+  },
+  "checks": {
+    "deterministic_build": "PASS: all three research builders --check",
+    "registry": "PASS: papertrack.py check; 14 existing generated views, JSONL, historical hashes and local links",
+    "legacy_snapshot_integrity": {
+      "status": "passed",
+      "files": {
+        "docs/research_synthesis/2026-09-19-broader-horizons/nodes.csv": "7c633f28b291396f3ab069f1e95e124fc928a9e4b790d2d277fc5fbc010ef706",
+        "docs/research_synthesis/2026-09-19-broader-horizons/build_manifest.json": "dd1a69a8a597cb766bb3e4d8168bde3bd61608b167a190126eaee2cecf1e8c58",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems_evidence.json": "7609e27e143ca4ad5836d9bcd43c8ef3e56158fdb6bb8056b532b129c543e70b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/bridge_evidence.json": "e30ed37fd0ebcbaa45c32e875b923879b6d8f48b49ae15b4b6c5660aabc88216",
+        "docs/research_synthesis/2026-09-19-broader-horizons/knowledge_graph.json": "8a8f9b0534b05d30cf72a72c3900ff33997fc4d70ac3b76cbcb256ee3c1a14b8",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-preview.png": "06d29b9bb4c3e7792ba9ac0d47dbcd6ef290e1838241bfdeb76dad6e76d8c437",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-notebook-preview.png": "00d00731dc92f4b82666f44f9e0a9fb0a5f8de0b84ac5c5cd28a1e31376e99f7",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics.md": "2dcdc5e9c6d2569bc5d710e2fd9110a91e98494968f2d4219e7a29626051d788",
+        "docs/research_synthesis/2026-09-19-broader-horizons/coverage.md": "2ac99bd268faca0f98c2a22851dceea444e2ad9011d60e7315689fec5101f66b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-graph-preview.png": "d9f03083a85ce46c1204522a233880e7a536dd4ed54eca9b7924a3dfdd9bbc35",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-notebook-mobile.png": "960f68f198232c5f277c3fae0bb7e4679554e25d5b6e08fcba70fa149600c244",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_reasoning_systems.md": "aa9c185535307e3a7de41417889f815a09d9c795422838feb1836dfe59f905c4",
+        "docs/research_synthesis/2026-09-19-broader-horizons/evidence_catalog.json": "8b0f4bd12a9935faa6e7a851f6dbd38cf295000981d3a4333e1b6fd1506c5ea2",
+        "docs/research_synthesis/2026-09-19-broader-horizons/learning_roadmap.md": "8801fb135a63d3111492ceeec86f9f2e9b4ca11e46022fab2aa49d57943740e9",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-reader-preview.png": "25d226736ed7a079f53a45f0f20f96e8e7b170e629fc2950a75ae9ff8be3f054",
+        "docs/research_synthesis/2026-09-19-broader-horizons/pde_numerics_evidence.json": "e316d3d298cce023dee111c3fcdadbed7d3f2b0d649ba6c1b3114121929ea246",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-reader-mobile-preview.png": "1e34bb5c976133cdf988a38e6d58413ff385a7b91e171ff65d8d6e0a95f6c521",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-graph-interaction-mobile.png": "2e31f8b6de0548dea3dbec7522ed4ec932d72bfb4a8b50e3f098ffafcf7af92c",
+        "docs/research_synthesis/2026-09-19-broader-horizons/validation.json": "710af38d39c501bb4f51e40fbfba6f0db3b49b8843d4878e68ffb2f9bcdff0fd",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ui-graph-interaction.png": "1a2b34a8e1f3cb36106504615b7907ab338d52924eaa33d3882513f9fc79c774",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations.md": "e5a2462e7d14b79983bb3b7aa277203e635292f2e43f74895b9922ee2a902baf",
+        "docs/research_synthesis/2026-09-19-broader-horizons/edges.csv": "bf1e48e54bae58df161915ae081dced84924c59a707396699542572f8ab67e1f",
+        "docs/research_synthesis/2026-09-19-broader-horizons/index.html": "25b470a84477f6b24fb270c25fffc59413f7d8c42058ed6f2784cf478f8b094c",
+        "docs/research_synthesis/2026-09-19-broader-horizons/README.md": "f8f35341682568f25a29d85d69bf817aed522d79a3e307cda3b1fcf72866ef48",
+        "docs/research_synthesis/2026-09-19-broader-horizons/RESEARCH_HORIZONS.zh-CN.md": "8dd209e4f23b78ccdf8199a6809abaf276f5d833d00c3c93c6460abd1729909b",
+        "docs/research_synthesis/2026-09-19-broader-horizons/ai_foundations_evidence.json": "8731b1bad1a448f4c8141ec2b1e5102d8421ed73bb18218275b82ef84ba0c308",
+        "docs/research_synthesis/2026-09-19-broader-horizons/cross_domain.md": "b291a17db11b8e617e81dfb993e06c92117e4bed18a23de27639e9f0986addf3"
+      }
+    },
+    "browser": {
+      "reader": {
+        "name": "horizons",
+        "index_sha256": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1",
+        "status": "passed",
+        "chapters": 8,
+        "checks": [
+          "320px all panels/chapters fit; chapter anchors visible",
+          "390px all panels/chapters fit; chapter anchors visible",
+          "768px all panels/chapters fit; chapter anchors visible",
+          "1440px all panels/chapters fit; chapter anchors visible",
+          "cross-chapter body search, safe literal query, mobile search result visibility",
+          "font size increases and persists",
+          "previous/next chapters",
+          "pane return and reload restore reading progress",
+          "Storage get/set/remove denied: reader remains usable without exceptions"
+        ],
+        "externalRequests": 0,
+        "errors": []
+      },
+      "notebook": {
+        "name": "horizons",
+        "index_sha256": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1",
+        "status": "passed",
+        "checks": [
+          "Adding a record, immediate note/status persistence, reload recovery and literal unsafe-looking text rendering",
+          "Status/note search filtering, archival retains note, undo restores record",
+          "JSON and Markdown exports retain notes; validated import previews before mutation, adds new ID and preserves conflicting local note/status",
+          "Malformed JSON, wrong workbench, unknown/duplicate IDs, invalid status, oversized note reject atomically; duplicate-only import is disabled",
+          "Dialog fits 320/390/768/1440px, traps Tab and Shift+Tab, keeps selection focus, closes with Escape",
+          "Browser localStorage SecurityError injection leaves editing and JSON export usable with visible session-only warning"
+        ],
+        "external_requests": 0,
+        "errors": []
+      },
+      "storage_failures": {
+        "name": "horizons",
+        "index_sha256": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1",
+        "status": "passed",
+        "checks": [
+          "corrupt-json: original localStorage retained byte-exact, warning shown, session note export works",
+          "corrupt-schema: original localStorage retained byte-exact, warning shown, session note export works",
+          "quota: original localStorage retained byte-exact, warning shown, session note export works"
+        ]
+      },
+      "cross_tab": {
+        "name": "horizons",
+        "index_sha256": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1",
+        "status": "passed",
+        "checks": [
+          "distinct-ids: stale writes persistently blocked, original storage byte-exact, both tabs export independent notes, reload restores writable current state, reverse stale write blocked",
+          "same-id: stale writes persistently blocked, original storage byte-exact, both tabs export independent notes, reload restores writable current state, reverse stale write blocked"
+        ]
+      },
+      "snapshot_upgrade": {
+        "site": "horizons",
+        "index_sha256": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1",
+        "old_note_and_status_preserved": true,
+        "new_note_writable": true,
+        "update_items_checked": [
+          "arxiv:2609.20800",
+          "arxiv:2609.33148",
+          "arxiv:2112.04426",
+          "arxiv:2301.08243",
+          "arxiv:2506.09985",
+          "doi:10.1002/num.20640",
+          "doi:10.1007/s00211-013-0576-y",
+          "doi:10.1137/05064607X"
+        ],
+        "source_count": 72,
+        "graph_nodes": 155,
+        "errors": []
+      },
+      "updated_ui": {
+        "status": "passed",
+        "artifact": "actual 2026-10-02 standalone HTML",
+        "checks": [
+          {
+            "site": "horizons",
+            "width": 320,
+            "passed": true
+          },
+          {
+            "site": "horizons",
+            "width": 390,
+            "passed": true
+          },
+          {
+            "site": "horizons",
+            "width": 768,
+            "passed": true
+          },
+          {
+            "site": "horizons",
+            "width": 1440,
+            "passed": true
+          },
+          {
+            "site": "horizons",
+            "index_sha256": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1",
+            "updateItems": 8,
+            "checks": [
+              "all new items open existing detail",
+              "all reading levels filter correct counts",
+              "current date and cross-site version",
+              "no object string in item details"
+            ],
+            "passed": true
+          }
+        ]
+      },
+      "graph": {
+        "status": "passed",
+        "index_sha256": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1",
+        "nodes_checked": 155,
+        "edges_in_data": 333,
+        "max_real_degree": 13,
+        "checks": [
+          "All 155 real graph nodes show complete distinct neighbors and incident relationships; max real degree 13",
+          "Empty search clears graph/detail/relations, disables selector, and clear query restores previous node",
+          "Enter and Space both select graph nodes and retain focus on rebuilt selected node",
+          "Exploration back/forward restore selected nodes, divergent exploration discards forward branch, reset clears history",
+          "Keyboard Enter on relation table node retains focus at graph selection",
+          "Zoom is bounded at 75-175%; empty results disable canvas controls and reset restores 100%",
+          "Selected center stays inside graph scroll viewport after centering and zoom at all four sizes",
+          "Graph viewport fits 320, 390, 768 and 1440 px without page overflow"
+        ],
+        "errors": [],
+        "external_requests": []
+      }
+    },
+    "independent_content_review": {
+      "reviewer": "snapshot_review_1002",
+      "review_date": "2026-10-02",
+      "scope": "Independent read-only snapshot, evidence inheritance and build wiring review; no scientific code or experiments executed. Browser usability checked separately by root.",
+      "status": "passed",
+      "problems": [],
+      "checks": {
+        "old_55_files_byte_preserved": {
+          "passed": true,
+          "detail": {
+            "count": 55,
+            "changed": []
+          }
+        },
+        "inherited_pde_architecture_evidence.json": {
+          "passed": true,
+          "detail": {
+            "count": 18,
+            "dates": {
+              "2026-09-19": 18
+            }
+          }
+        },
+        "inherited_pde_evaluation_evidence.json": {
+          "passed": true,
+          "detail": {
+            "count": 18,
+            "dates": {
+              "2026-09-19T08:26:45Z": 18
+            }
+          }
+        },
+        "inherited_pde_domain_evidence.json": {
+          "passed": true,
+          "detail": {
+            "count": 7,
+            "dates": {
+              "2026-09-19": 7
+            }
+          }
+        },
+        "pde_new_records_have_current_reading_date": {
+          "passed": true,
+          "detail": {
+            "count": 5
+          }
+        },
+        "registry_coverage": {
+          "passed": true,
+          "detail": {
+            "count": 456,
+            "added": [
+              "arxiv:2609.20641",
+              "arxiv:2609.29403"
+            ],
+            "removed": []
+          }
+        },
+        "new_pde_review_scopes": {
+          "passed": true,
+          "detail": {
+            "corpus": 2,
+            "background": 3
+          }
+        },
+        "inherited_horizons_ai_foundations": {
+          "passed": true,
+          "detail": {
+            "count": 18
+          }
+        },
+        "inherited_horizons_ai_reasoning_systems": {
+          "passed": true,
+          "detail": {
+            "count": 18
+          }
+        },
+        "inherited_horizons_pde_numerics": {
+          "passed": true,
+          "detail": {
+            "count": 19
+          }
+        },
+        "inherited_horizons_bridge": {
+          "passed": true,
+          "detail": {
+            "count": 9
+          }
+        },
+        "horizons_new_source_dates": {
+          "passed": true,
+          "detail": {
+            "inherited": 64,
+            "new": 8,
+            "total_sources": 72,
+            "concepts": 74,
+            "update_kinds": {
+              "foundational_backfill": 6,
+              "recent_publication": 2
+            }
+          }
+        },
+        "horizons_input_edges": {
+          "passed": true,
+          "detail": {
+            "relations": 160
+          }
+        },
+        "exists_2026-10-02_index.html": {
+          "passed": true,
+          "detail": null
+        },
+        "exists_2026-10-02_update_manifest.json": {
+          "passed": true,
+          "detail": null
+        },
+        "exists_2026-10-02_search_coverage.json": {
+          "passed": true,
+          "detail": null
+        },
+        "update_2026-10-02": {
+          "passed": true,
+          "detail": {
+            "item_count": 5
+          }
+        },
+        "embedded_payload_2026-10-02": {
+          "passed": true,
+          "detail": null
+        },
+        "artifact_sha256_2026-10-02": {
+          "value": "a8eaf3e76af5ba4b68195cea077b778ac51843e83c61ace8934f37439a2c43e5"
+        },
+        "manifest_hashes_2026-10-02": {
+          "passed": true,
+          "detail": {
+            "inputs": 24,
+            "outputs": 3,
+            "bad_inputs": [],
+            "bad_outputs": []
+          }
+        },
+        "exists_2026-10-02-broader-horizons_index.html": {
+          "passed": true,
+          "detail": null
+        },
+        "exists_2026-10-02-broader-horizons_update_manifest.json": {
+          "passed": true,
+          "detail": null
+        },
+        "exists_2026-10-02-broader-horizons_search_coverage.json": {
+          "passed": true,
+          "detail": null
+        },
+        "update_2026-10-02-broader-horizons": {
+          "passed": true,
+          "detail": {
+            "item_count": 8
+          }
+        },
+        "embedded_payload_2026-10-02-broader-horizons": {
+          "passed": true,
+          "detail": null
+        },
+        "artifact_sha256_2026-10-02-broader-horizons": {
+          "value": "46ec81a15e46c0083f64b0738410bf93cbe4a5991dba6ab61d8414e2ed2efec1"
+        },
+        "manifest_hashes_2026-10-02-broader-horizons": {
+          "passed": true,
+          "detail": {
+            "inputs": 17,
+            "outputs": 6,
+            "bad_inputs": [],
+            "bad_outputs": []
+          }
+        },
+        "graph_2026-10-02_knowledge_graph.json": {
+          "passed": true,
+          "detail": {
+            "nodes": 673,
+            "edges": 3631
+          }
+        },
+        "graph_2026-10-02_semantic_graph.json": {
+          "passed": true,
+          "detail": {
+            "nodes": 312,
+            "edges": 264
+          }
+        },
+        "graph_2026-10-02-broader-horizons_knowledge_graph.json": {
+          "passed": true,
+          "detail": {
+            "nodes": 155,
+            "edges": 333
+          }
+        },
+        "pde_primary_counts": {
+          "passed": true,
+          "detail": {
+            "records": 48,
+            "unique": 47,
+            "date_counts": {
+              "2026-09-19": 43,
+              "2026-10-02": 5
+            }
+          }
+        },
+        "semantic_labels_are_strings": {
+          "passed": true,
+          "detail": {
+            "nodes": 312
+          }
+        },
+        "structured_mechanisms_preserved": {
+          "passed": true,
+          "detail": null
+        },
+        "horizons_source_graph_ids_match": {
+          "passed": true,
+          "detail": null
+        },
+        "horizons_graph_evidence_ids": {
+          "passed": true,
+          "detail": null
+        },
+        "new_cross_domain_edges_are_inferences": {
+          "passed": true,
+          "detail": {
+            "new_bridge_edges": 7
+          }
+        },
+        "snapshot_head_matches_synced_head": {
+          "passed": true,
+          "detail": {
+            "head": "ca1125a6809e7a3998882a7d134e0c3c8e11c492"
+          }
+        },
+        "sync_changed_paths_resolve": {
+          "passed": true,
+          "detail": null
+        },
+        "research_question_mappings_repaired": {
+          "passed": true,
+          "detail": null
+        },
+        "mechanism_display_export_wiring": {
+          "passed": true,
+          "detail": null
+        }
+      },
+      "primary_source_spot_checks": [
+        {
+          "url": "https://arxiv.org/html/2609.27739v1#S4",
+          "scope": "Section 4 Common setting and Table 1",
+          "result": "Independent primary-page check confirms test-accuracy checkpoint selection in absence of validation; cross-geometry Poisson and NASA-CRM Val=0. Incremental evidence is accurate."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.24021v1#S2",
+          "scope": "Sections 2.3, 3.2, 3.3 and supplement SM3.1",
+          "result": "Many-query fixed offline-cost amortization and main modified-FNO family verified. Darcy standard-FNO sensitivity exists. Geometry preprocessing/meshing excluded and resources differ; current notes retain these limits."
+        }
+      ],
+      "memory_used": "MEMORY.md:543-554; rollout 01a0b8bf-4305-7e40-9b43-45105baf8b2b"
+    },
+    "server_http": "Both current pages, both old pages and fixed entry HTTP 200 on server 127.0.0.1:8765; Windows tunnel not newly tested."
+  },
+  "repairs": [
+    "Readable mechanism objects in detail, evidence ledger, exported notes and semantic graph labels",
+    "Preserved H1-H8 question identities across new narrative links",
+    "Recorded current raw UTF-8 changed-file paths"
+  ],
+  "manual_visual_inspection": [
+    "Desktop updated overview",
+    "Mobile updated evidence overview",
+    "Readable reader toolbar, headings and evidence date separation"
+  ],
+  "scientific_boundary": "13 newly checked sources across the two workbenches; selected methods/results/discussion sections, not full-corpus rereading or independent scientific reproduction. Old source access dates and records preserved. Coverage is targeted, not exhaustive.",
+  "publication": {
+    "local_artifacts_created": true,
+    "git_commit_created": false,
+    "pushed_to_remote": false,
+    "public_deployment": false
+  },
+  "personal_data": "Original notebook identities retained. Browser tests confirm original notes and reading state survive using the same HTTP origin; no server-side synchronization.",
+  "subsequent_ui_updates": {
+    "math_rendering": {
+      "report": "math_validation.json",
+      "artifact_sha256": "1fca5fc84e2044bba8a668d7e2c5a2e35eb5149c7d59abcb393d266ea190e71e",
+      "note": "Original validation above records the earlier artifact; current formula rendering is verified in this follow-up report."
+    },
+    "performance": {
+      "report": "performance_validation.json",
+      "online_artifact_sha256": "2dfadd4c89b8e1a992637de9f91f6a251951a477479719d677d9dd3f43e885eb",
+      "offline_artifact_sha256": "ea3af86531f855b80f9ba84727e2a8d57d2b6fc7a9f98a66a05e129ed40da2ee",
+      "note": "Current delivery format and follow-up checks; original validation and math report retain their historical artifact identities."
+    }
+  }
+}

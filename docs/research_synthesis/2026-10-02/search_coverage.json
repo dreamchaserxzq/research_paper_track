@@ -1,0 +1,259 @@
+{
+  "schema_version": "research-search-coverage-v1",
+  "searched_on": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "checked_timestamp_utc": "2026-10-02T14:32:53Z",
+  "window": {
+    "start_date": "2026-09-17",
+    "end_date": "2026-10-02",
+    "overlap_with_previous_snapshot_days": 3,
+    "end_is_search_time_not_end_of_day": true
+  },
+  "prior_snapshot": "2026-09-19",
+  "prior_full_coverage_boundary": null,
+  "complete_coverage_boundary_advanced": false,
+  "scope": "Incremental primary-source PDE mechanism search, not exhaustive all-paper discovery or a registry routine.",
+  "queries": [
+    {
+      "query": "site:arxiv.org \"PDE\" \"foundation\" \"Sep\" \"2026\"",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 1,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org \"neural operator\" \"2026\" \"Sep\" generalization",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 1,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org \"reaction-diffusion\" \"JEPA\"",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 1,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org \"Petrov\" \"Gauss\" \"2026\"",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 1,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org \"PDE foundation\" \"2026\" \"September\" \"October\"",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 2,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org \"neural operator\" \"2026\" \"Oct\"",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 2,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org \"PDE\" \"expert\" \"2026\" \"Sep\"",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 2,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org \"operator composition\" \"2026\"",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 2,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org \"partial differential\" \"pretraining\" after:2026-09-16 before:2026-10-03",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 3,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org \"neural operator\" after:2026-09-16 before:2026-10-03",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 3,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org (\"multiphysics\" OR \"multi-physics\") (\"foundation\" OR \"expert\") after:2026-09-16 before:2026-10-03",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 3,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    },
+    {
+      "query": "site:arxiv.org (\"Petrov-Galerkin\" OR \"multigrid\") \"neural\" after:2026-09-16 before:2026-10-03",
+      "source": "web.search_query",
+      "searched_on": "2026-10-02",
+      "batch": 3,
+      "status": "executed",
+      "result_mapping": "Tool returned grouped batch results; no per-query hit count inferred."
+    }
+  ],
+  "checked_primary_sources": [
+    {
+      "paper_id": "arxiv:2609.20641",
+      "urls": [
+        "https://arxiv.org/abs/2609.20641",
+        "https://arxiv.org/html/2609.20641v1"
+      ],
+      "access_status": "HTML and abs successfully read",
+      "read_version": "v1",
+      "read_scope": [
+        "Sections 2.1, 3.2–3.3: weak residual and measurement/test-space interpretation",
+        "Sections 4.1–4.3, Eqs. (4.2), (4.9)–(4.14): energy-complement hybrid",
+        "Sections 5.1.4, 5.2.1–5.2.3; Tables 1–4: smooth/low-regularity tests and cost caveats"
+      ],
+      "source_text_sha256": "1955e71524a1b5690a5154225fc0541187f862ccda58a4a1921732c9e8492bfc"
+    },
+    {
+      "paper_id": "arxiv:2609.29403",
+      "urls": [
+        "https://arxiv.org/abs/2609.29403",
+        "https://arxiv.org/html/2609.29403v1"
+      ],
+      "access_status": "HTML and abs successfully read",
+      "read_version": "v1",
+      "read_scope": [
+        "Methods: datasets, predictive latent pretraining, adaptation, evaluation and statistical aggregation",
+        "Discussion: inductive bias versus exact splitting, fixed resolution and direct horizons",
+        "Supplementary Notes 2–3 and 5–6; Tables S13–S15",
+        "Data availability and Code availability"
+      ],
+      "source_text_sha256": "559c5e8bb6455a0d5a7115c8e5fdf19829f579b0c698b751b98b733a7476550e"
+    },
+    {
+      "paper_id": "arxiv:2609.27739",
+      "urls": [
+        "https://arxiv.org/abs/2609.27739",
+        "https://arxiv.org/html/2609.27739v1"
+      ],
+      "access_status": "HTML and abs successfully read",
+      "read_version": "v1",
+      "read_scope": [
+        "Section 2: Manifold Function Encoder, Eqs. (5)–(15)",
+        "Section 3: global/local branches, global-to-local injection and memory discussion",
+        "Section 4 Common setting and Table 1; Sections 4.1–4.3, Tables 3–6"
+      ],
+      "source_text_sha256": "6107a6c91015e9aea528afce5a2886a10a878d0a51cb8b9cfbd9b01c7c65d9b1"
+    },
+    {
+      "paper_id": "arxiv:2609.33978",
+      "urls": [
+        "https://arxiv.org/abs/2609.33978",
+        "https://arxiv.org/html/2609.33978v1"
+      ],
+      "access_status": "HTML and abs successfully read",
+      "read_version": "v1",
+      "read_scope": [
+        "Section 3.1–3.4: POD map, empirical QoI estimator, four-FE budget and path-level adaptation",
+        "Sections 4 and 5: nominal/shifted tests, acquisition and acceptance; Tables 5–7",
+        "Section 6 Discussion; Data and code availability"
+      ],
+      "source_text_sha256": "a2abab82fa10fa93c41de53ec3038632ae6add14ef7103d722a452400b7ffafd"
+    },
+    {
+      "paper_id": "arxiv:2609.24021",
+      "urls": [
+        "https://arxiv.org/abs/2609.24021",
+        "https://arxiv.org/html/2609.24021v1"
+      ],
+      "access_status": "HTML and abs successfully read",
+      "read_version": "v1",
+      "read_scope": [
+        "Section 2: many-query cost model and fully amortized offline limit",
+        "Section 3.1–3.3, Tables 1–2: baselines, outputs and timing scope",
+        "Section 4.1–4.3: Darcy, Navier–Stokes and vehicle regimes; Section 5 conclusions"
+      ],
+      "source_text_sha256": "6f00c8228ae2f6089fdd7bd2732b5b86b714506877ded4ac7d14d18f6a06f8e2"
+    }
+  ],
+  "reviewed_new_items": 5,
+  "registry_addition_review_count": 2,
+  "supplemental_reference_review_count": 3,
+  "inherited_review_records": {
+    "count": 43,
+    "unique_work_count": 42,
+    "original_review_date": "2026-09-19",
+    "reread_this_run": false,
+    "files": [
+      "architecture_evidence.json",
+      "evaluation_evidence.json",
+      "domain_evidence.json"
+    ]
+  },
+  "discovery_only": [
+    {
+      "paper_id": "arxiv:2609.35938",
+      "url": "https://arxiv.org/abs/2609.35938",
+      "title": "KernelOnet: An Interpretable Neural Operator Based on Kernel Functions",
+      "status": "search-result abstract only; deferred fulltext and no evidence node admitted"
+    },
+    {
+      "paper_id": "arxiv:2609.31633",
+      "url": "https://arxiv.org/abs/2609.31633",
+      "status": "search result reports 2026-09-10, outside intended incremental interval; not admitted"
+    },
+    {
+      "paper_id": "arxiv:2609.38035",
+      "url": "https://arxiv.org/abs/2609.38035",
+      "status": "expert-advice prediction PDE; keyword match does not establish reusable physical experts; not admitted"
+    },
+    {
+      "paper_id": "arxiv:2609.14892",
+      "url": "https://arxiv.org/abs/2609.14892",
+      "status": "expert-advice prediction PDE and outside date interval; not admitted"
+    },
+    {
+      "paper_id": "arxiv:2609.13651",
+      "url": "https://arxiv.org/abs/2609.13651",
+      "status": "robot compositional shifts; outside date interval and fulltext not reviewed; not admitted"
+    }
+  ],
+  "access_events": [
+    {
+      "source": "requests via sandbox proxy",
+      "urls": [
+        "https://arxiv.org/html/2609.20641v1",
+        "https://arxiv.org/html/2609.29403v1",
+        "https://arxiv.org/html/2609.27739v1",
+        "https://arxiv.org/html/2609.33978v1"
+      ],
+      "status": "ProxyError",
+      "resolution": "same four primary URLs subsequently retrieved successfully with permitted network access; web tool also succeeded"
+    },
+    {
+      "source": "arXiv HTML/abs",
+      "status": "all five shortlisted v1 fulltext pages and identity pages read successfully"
+    }
+  ],
+  "limitations": [
+    "General web search can miss or delay arXiv indexing; no arXiv API pagination or all category feed harvest was performed.",
+    "No exhaustive conference/publisher status check, full reference/citation traversal or systematic revision recheck of the old corpus.",
+    "Search cutoff is 2026-10-02 at actual retrieval time, not all results later that day.",
+    "Two routine registry additions are not the complete literature increment; three additional reviewed references remain outside the registry.",
+    "Repository routine success/degraded statuses are a separate coverage record; no full-coverage guarantee is inferred from them.",
+    "Full text section reading does not mean every proof, appendix, code implementation or supplementary dataset was independently verified."
+  ]
+}

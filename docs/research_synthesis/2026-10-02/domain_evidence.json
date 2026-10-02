@@ -1,0 +1,202 @@
+[
+  {
+    "paper_id": "arxiv:2111.03794",
+    "title": "Physics-Informed Neural Operator for Learning Partial Differential Equations",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2111.03794v4",
+      "https://arxiv.org/abs/2111.03794v4"
+    ],
+    "accessed_at": "2026-09-19",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "§3.1 Physics-informed operator learning",
+      "§3.2 Instance-wise fine-tuning",
+      "§5 Conclusion"
+    ],
+    "mechanism": "数据与物理残差共同训练算子，目标实例可继续残差优化。",
+    "supported_claims": [
+      "算子预训练与实例优化是两个计算阶段。"
+    ],
+    "limitations": [
+      "跨参数微调不是无更新的零样本推断。",
+      "FNO实现具有网格与维数成本限制。"
+    ],
+    "verification_notes": "本次选择性阅读列明正文/方法/结论章节；作者报告，未执行代码或复现实验。",
+    "local_sources": [
+      "metadata/history/2026-09-12/published_papers.jsonl:6"
+    ]
+  },
+  {
+    "paper_id": "doi:10.1038/s41586-024-07744-y",
+    "title": "Neural general circulation models for weather and climate",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2311.07222v3",
+      "https://arxiv.org/abs/2311.07222v3"
+    ],
+    "accessed_at": "2026-09-19",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "Methods §3 Learned physics",
+      "Discussion",
+      "§9.4.2 SST perturbation"
+    ],
+    "mechanism": "将数值动力核心与学习的物理倾向耦合。",
+    "supported_claims": [
+      "论文同时讨论天气预报和给定海温下的长期模拟。"
+    ],
+    "limitations": [
+      "更大海温扰动下有偏离与漂移。",
+      "不能视为任意PDE族的统一基座。"
+    ],
+    "verification_notes": "本次选择性阅读列明正文/方法/结论章节；作者报告，未执行代码或复现实验。",
+    "local_sources": [
+      "metadata/history/2026-09-12/published_papers.jsonl:1"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2411.18358",
+    "title": "Data-driven discovery of a heat flux closure for electrostatic plasma phenomena",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2411.18358v2",
+      "https://arxiv.org/abs/2411.18358v2"
+    ],
+    "accessed_at": "2026-09-19",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "§2.1 Sparse regression",
+      "§2.2 Simulation setup",
+      "§4 Discussion and conclusions"
+    ],
+    "mechanism": "PIC数据上的稀疏闭合发现，结合量纲和线性理论分析。",
+    "supported_claims": [
+      "弱积分减少粒子噪声；交错场与时间对齐很重要。"
+    ],
+    "limitations": [
+      "1D静电场景。",
+      "闭合嵌入流体求解器的长期稳定性并未由离线拟合确立。"
+    ],
+    "verification_notes": "本次选择性阅读列明正文/方法/结论章节；作者报告，未执行代码或复现实验。",
+    "local_sources": [
+      "digests/archive-ai-for-pde/daily/AI-for-PDE-日报-20260611.md:57"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2411.08789",
+    "title": "Physics-Informed Transformation Toward Improving the Machine-Learned NLTE Models of ICF Simulations",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2411.08789v1",
+      "https://arxiv.org/abs/2411.08789v1"
+    ],
+    "accessed_at": "2026-09-19",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "§IV PhIT",
+      "§V Transformation Assessment",
+      "§VI Conclusion"
+    ],
+    "mechanism": "将NLTE吸收和发射变换为物理相关变量，评价PCA压缩误差。",
+    "supported_claims": [
+      "表示和误差度量围绕能量输运。"
+    ],
+    "limitations": [
+      "本文不能证明新训练代理已改善完整ICF闭环动力学。",
+      "HTML日期显示与版本头不一致，年份依据arXiv提交历史。"
+    ],
+    "verification_notes": "本次选择性阅读列明正文/方法/结论章节；作者报告，未执行代码或复现实验。",
+    "local_sources": [
+      "digests/archive-ai-for-pde/daily/AI-for-PDE-日报-20260627.md:25",
+      "metadata/history/2026-09-12/seen_papers.txt#2411.08789"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2501.08166",
+    "title": "Asymptotic-Preserving Neural Networks based on Even-odd Decomposition for Multiscale Gray Radiative Transfer Equations",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2501.08166v2",
+      "https://arxiv.org/abs/2501.08166v2"
+    ],
+    "accessed_at": "2026-09-19",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "§2 GRTE",
+      "Conclusion / numerical tests"
+    ],
+    "mechanism": "奇偶分解构造保持扩散极限的损失。",
+    "supported_claims": [
+      "比较动理学与扩散区间的灰辐射输运算例。"
+    ],
+    "limitations": [
+      "Marshak波前仍有偏差。",
+      "未核验完整数学证明的所有前提；不宣称任意PDE的稳定性定理。"
+    ],
+    "verification_notes": "本次选择性阅读列明正文/方法/结论章节；作者报告，未执行代码或复现实验。",
+    "local_sources": [
+      "digests/archive-ai-for-pde/daily/AI-for-PDE-日报-20260527.md:48",
+      "metadata/history/2026-09-12/paper_registry.jsonl:87",
+      "metadata/history/2026-09-12/seen_papers.txt#2501.08166"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2507.04153",
+    "title": "Physics-informed neural networks and neural operators for a study of EUV electromagnetic wave diffraction from a lithography mask",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2507.04153v1",
+      "https://arxiv.org/abs/2507.04153v1"
+    ],
+    "accessed_at": "2026-09-19",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "§3 Waveguide neural operator",
+      "§4 Numerical results",
+      "§5 Conclusion"
+    ],
+    "mechanism": "保留波导方法结构，以神经网络替换耗时环节。",
+    "supported_claims": [
+      "给出EUV二维和三维掩模实验。"
+    ],
+    "limitations": [
+      "结果受掩模与物理设置限制。",
+      "论文运行时间不等于本次独立复验或整个设计流程加速。"
+    ],
+    "verification_notes": "本次选择性阅读列明正文/方法/结论章节；作者报告，未执行代码或复现实验。",
+    "local_sources": [
+      "digests/archive-ai-for-pde/daily/AI-for-PDE-日报-20260606.md:80",
+      "metadata/history/2026-09-12/seen_papers.txt#2507.04153"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2510.07314",
+    "title": "GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2510.07314v4",
+      "https://arxiv.org/abs/2510.07314v4"
+    ],
+    "accessed_at": "2026-09-19",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "Model description",
+      "§6 Conclusions and Limitations"
+    ],
+    "mechanism": "5D分布函数与3D电势经潜空间交互，并引入物理模态分离。",
+    "supported_claims": [
+      "显式处理不同维度物理状态之间的耦合。"
+    ],
+    "limitations": [
+      "绝热电子近似。",
+      "忽略线性阶段。",
+      "长时误差累积且尚未充分表达混沌分布性质。"
+    ],
+    "verification_notes": "本次选择性阅读列明正文/方法/结论章节；作者报告，未执行代码或复现实验。",
+    "local_sources": [
+      "digests/archive-ai-for-pde/daily/AI-for-PDE-日报-20260706.md:21",
+      "metadata/history/2026-09-12/seen_papers.txt#2510.07314"
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-02",
+  "baseline_date": "2026-09-19",
+  "title": "从预测表征到数值目标，追问迁移为什么成立",
+  "summary": "主表新增2条；本轮另外核查补充参考。重点连接 JEPA、弱残差与测试空间，并用成本—精度和评测划分审查新的效率主张。",
+  "coverage_note": "已同步11次日报运行，其中7次标记检索降级；本轮定向原文核查不代表2026-09-17至10-02所有新论文已穷尽。原43条阅读记录保留09-19访问日期，本輪未全部重读。",
+  "stats": [
+    {
+      "label": "主表身份",
+      "value": 456,
+      "detail": "454 → 456；新增2条登记，不等于全文已读"
+    },
+    {
+      "label": "本轮原文记录",
+      "value": 5,
+      "detail": "方法/评测相关章节；非逐页精读或复现"
+    },
+    {
+      "label": "沿用阅读记录",
+      "value": 43,
+      "detail": "保留原09-19核查范围与日期"
+    },
+    {
+      "label": "本地报告",
+      "value": 155,
+      "detail": "新增11份；日历跨度不代表无缺口"
+    }
+  ],
+  "items": [
+    {
+      "id": "arxiv:2609.20641",
+      "title": "Beyond PINNs: A Unified Gauss–Newton and Petrov–Galerkin Framework for Neural and Hybrid PDE Solvers",
+      "kind": "主表新增 · 本轮原文核查",
+      "reading_level": "primary_fulltext",
+      "summary": "椭圆问题中 u_h + (I-P_h^a)v_theta；有限元空间和神经修正处在能量正交的互补空间。；给定边值问题、系数、源和测试函数；逐实例求解。；函数残差的有限线性测量产生 Gauss–Newton 系统；弱式用测试函数作用替代强残差逐点值。非基座预训练。；光滑与低正则性椭圆算例的数值求解；未展示未见方程的预训练迁移。",
+      "url": "https://arxiv.org/abs/2609.20641"
+    },
+    {
+      "id": "arxiv:2609.29403",
+      "title": "RD-JEPA: Predictive latent pretraining for few-trajectory transfer across reaction–diffusion equations",
+      "kind": "主表新增 · 本轮原文核查",
+      "reading_level": "primary_fulltext",
+      "summary": "四帧上下文编码、EMA 目标编码器和时间条件潜预测器；预测器含扩散式邻域与反应式点通路。；历史场、查询位置和 lead time；没有方程标识或显式系数。；预测未来潜特征而非场重构；5 类反应扩散源系统共享预训练，下游冻结编码器并适配预测器与新解码器。；Lambda–Omega/Barkley/Oregonator 的反应律和轨迹均留出，使用1/5/10条目标完整轨迹适配；128×128单分辨率，5个直接预测时距。",
+      "url": "https://arxiv.org/abs/2609.29403"
+    },
+    {
+      "id": "arxiv:2609.24021",
+      "title": "Cost-Accuracy Trade-offs: Neural Operator vs Classical Numerical Solver",
+      "kind": "补充参考 · 不计入主表新增",
+      "reading_level": "primary_fulltext",
+      "summary": "统一修改版 FNO 的逐任务代理，与问题匹配的传统数值方法比较。；Darcy 系数、NS 初始涡量、汽车表面几何等具体任务输入。；逐任务监督拟合；研究范围是固定已训练模型的多查询极限，不是基座预训练比较。；匹配误差的每查询 FLOPs 与指定软硬件耗时；Darcy/NS 输出全场，汽车仅表面压力系数。",
+      "url": "https://arxiv.org/abs/2609.24021"
+    },
+    {
+      "id": "arxiv:2609.27739",
+      "title": "MENO: Memory-Efficient Neural Operator",
+      "kind": "补充参考 · 不计入主表新增",
+      "reading_level": "primary_fulltext",
+      "summary": "预先以流形积分矩编码几何与场；固定模态全局分支向查询点局部分支注入值和导数。；几何、场和物理参数；输入函数与输出解可位于不同流形。；各 PDE/工程数据集监督训练；没有展示一个多方程联合预训练基座。；Poisson 及飞机/汽车表面场代理；跨几何指输入/输出函数载体不同，也包含变几何测试。",
+      "url": "https://arxiv.org/abs/2609.27739"
+    },
+    {
+      "id": "arxiv:2609.33978",
+      "title": "Adapting neural operators for mechanics decisions under changing operating conditions",
+      "kind": "补充参考 · 不计入主表新增",
+      "reading_level": "primary_fulltext",
+      "summary": "固定 rank-16 POD 位移基；只适配输入到系数映射。；已知材料/刚度、载荷和磁场；两个二维磁弹性结构分别建模。；有限元路径监督训练；新获得的路径与名义数据回放共同微调，经验误差估计器独立重校准。；规定刚度/载荷偏移；每条件4条 FE 路径、累计8/16条后适配；最终路径和命令测试留出。",
+      "url": "https://arxiv.org/abs/2609.33978"
+    }
+  ],
+  "chapters": [
+    "research_update.md"
+  ],
+  "previous_url": "../2026-09-19/index.html",
+  "questions": [
+    {
+      "title": "预测式表征究竟保留了什么？",
+      "mechanism": "把JEPA的隐目标预测与PDE任务所需的物理量、空间结构和动力学信息分别检查。",
+      "experiment": "匹配数据、容量与计算，比较重建预训练、预测隐目标和从零训练；划分留出方程并分别报告场误差、梯度和长时量。",
+      "failure": "收益被额外数据或算力解释，或隐误差降低但解场与守恒量退化，则不能归因于可迁移表征。"
+    },
+    {
+      "title": "弱式收益来自测试空间，还是优化器？",
+      "mechanism": "测试函数、残差范数、离散测量与Gauss–Newton的作用需要分开。",
+      "experiment": "固定网络与预算，交叉改变强/弱残差、测试空间和优化器；检查能量范数及计算代价。",
+      "failure": "优势只在更强优化器或更宽预算出现，就不能称为弱式本身的收益。"
+    },
+    {
+      "title": "相同精度下，学习方法何时更划算？",
+      "mechanism": "对齐输出任务和容差，区分总成本、单次浮点工作与实际耗时。",
+      "experiment": "做完整成本—误差曲线；纳入强数值基线、数据生成/适配成本和失败回退；冻结独立验证/测试划分。",
+      "failure": "换成匹配容差的强基线后优势消失，或通过测试集挑选checkpoint，结论需要重新核验。"
+    }
+  ],
+  "evidence_boundary": "Personal marks do not change scientific evidence. No experiments or code replication performed."
+}

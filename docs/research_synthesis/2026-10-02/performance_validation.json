@@ -1,0 +1,185 @@
+{
+  "schema_version": "research-performance-validation-v1",
+  "checked_at_utc": "2026-10-02T16:02:00.652949+00:00",
+  "status": "passed",
+  "snapshot_date": "2026-10-02",
+  "artifacts": {
+    "site": "2026-10-02",
+    "index_sha256": "fb71895e54ef91f8cf0f2fae3b829dcfe87f12b332dea6a60b4b1e4ec5c8f6b2",
+    "offline_sha256": "6aa893c0a8f8ad750bda8c359e1129e41db30fd2128b07ebdc07fe4a396db904",
+    "queued_navigation": true,
+    "rendered_math": true,
+    "offline_download_exact": true,
+    "errors": []
+  },
+  "sizes_bytes": {
+    "previous_initial_html": 19386141,
+    "current_html": 167323,
+    "compressed_reader_data": 397398,
+    "current_initial_total": 564721,
+    "standalone_offline": 3106503
+  },
+  "measurement": {
+    "conditions": {
+      "network_mbps": 10,
+      "latency_ms": 100,
+      "cpu_slowdown": 4,
+      "cold_cache": true
+    },
+    "runs_per_site_per_version": 1,
+    "before": {
+      "site": "2026-10-02",
+      "navigation": {
+        "duration": 17345.69999885559,
+        "transfer": 19386441,
+        "domContentLoaded": 17295.89999961853
+      },
+      "paint": [
+        {
+          "name": "first-paint",
+          "ms": 712
+        },
+        {
+          "name": "first-contentful-paint",
+          "ms": 712
+        }
+      ],
+      "ready": 17422,
+      "longTasks": [
+        {
+          "start": 466.0999984741211,
+          "duration": 210
+        },
+        {
+          "start": 702.7999992370605,
+          "duration": 88
+        },
+        {
+          "start": 15950,
+          "duration": 329
+        },
+        {
+          "start": 17285.5,
+          "duration": 62
+        }
+      ],
+      "resources": []
+    },
+    "after": {
+      "site": "2026-10-02",
+      "navigation": {
+        "duration": 479.79999923706055,
+        "transfer": 167655,
+        "domContentLoaded": 479
+      },
+      "paint": [
+        {
+          "name": "first-paint",
+          "ms": 180
+        },
+        {
+          "name": "first-contentful-paint",
+          "ms": 476
+        }
+      ],
+      "ready": 1207.6999988555908,
+      "longTasks": [
+        {
+          "start": 187.10000038146973,
+          "duration": 232
+        },
+        {
+          "start": 1101.6000003814697,
+          "duration": 106
+        }
+      ],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:8765/docs/research_synthesis/2026-10-02/site-data.acc3a556e29ed84a.json.gz",
+          "bytes": 397698
+        }
+      ]
+    },
+    "boundary": "Controlled local Chromium simulation, not a measurement of the Windows SSH path. Before ready is observed after host and notebook become available; after ready is marked at initialization completion. Final PDE reader-note wording changed after timing; transport and startup code are identical."
+  },
+  "checks": {
+    "unit_tests": {
+      "passed": 11,
+      "command": "python -m unittest discover -s tests -p 'test_research_*.py' -v"
+    },
+    "browser_delivery": [
+      {
+        "site": "2026-10-02",
+        "offline": false,
+        "exact_downloads": 22,
+        "notes_preserved": true,
+        "lazy_views": true,
+        "no_startup_archive_or_font_requests": true
+      },
+      {
+        "site": "2026-10-02",
+        "offline": true,
+        "exact_downloads": 22,
+        "notes_preserved": true,
+        "lazy_views": true,
+        "no_startup_archive_or_font_requests": true
+      },
+      {
+        "site": "2026-10-02",
+        "failed_request_recovery": true,
+        "uncompressed_browser_fallback": true
+      }
+    ],
+    "math_regression": {
+      "site": "2026-10-02",
+      "artifact_sha256": "bfb3aac07c790cb108aec801307ad3db9d7e41d4a0ed8e82bea7c5fca2adffc8",
+      "checks": [
+        {
+          "mode": "http",
+          "chapters": 7,
+          "formulas": 49,
+          "viewports": [
+            1440
+          ],
+          "long_equations_scroll_at_320": 0,
+          "js_errors": [],
+          "external_requests": []
+        },
+        {
+          "mode": "offline",
+          "chapters": 7,
+          "formulas": 49,
+          "viewports": [
+            320,
+            390,
+            768,
+            1440
+          ],
+          "long_equations_scroll_at_320": 8,
+          "js_errors": [],
+          "external_requests": []
+        }
+      ]
+    },
+    "final_smoke": {
+      "site": "2026-10-02",
+      "index_sha256": "fb71895e54ef91f8cf0f2fae3b829dcfe87f12b332dea6a60b4b1e4ec5c8f6b2",
+      "offline_sha256": "6aa893c0a8f8ad750bda8c359e1129e41db30fd2128b07ebdc07fe4a396db904",
+      "queued_navigation": true,
+      "rendered_math": true,
+      "offline_download_exact": true,
+      "errors": []
+    },
+    "registry_check": "14 generated views, JSONL, snapshot hashes and local links passed",
+    "deterministic_build_check": "passed"
+  },
+  "changes": [
+    "Separate light online index.html and complete offline.html",
+    "Versioned gzip reader bundle; uncompressed online fallback",
+    "Archive downloads requested only on click; offline archives decompressed individually",
+    "Same-origin fonts requested only when formulas are displayed; embedded offline fonts",
+    "Hidden graph, evidence/source/timeline panels and full-text index initialized on demand",
+    "Preserved notebook keys, queued early navigation, visible load/download failure handling"
+  ],
+  "boundary": "Local UI delivery optimization; source evidence and scientific conclusions unchanged; no commit or push."
+}

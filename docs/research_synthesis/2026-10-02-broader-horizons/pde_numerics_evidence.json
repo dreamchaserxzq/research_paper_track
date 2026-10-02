@@ -1,0 +1,1247 @@
+{
+  "track": "pde_numerics",
+  "snapshot_date": "2026-10-02",
+  "scope": "22 primary sources: 19 inherited from 2026-09-19 and 3 foundational papers with selected sections checked on 2026-10-02; not complete reading or reproduction.",
+  "sources": [
+    {
+      "id": "url:trefethen-pdetext",
+      "title": "Finite Difference and Spectral Methods for Ordinary and Partial Differential Equations",
+      "year": 1996,
+      "url": "https://people.maths.ox.ac.uk/trefethen/pdetext.html",
+      "accessed_at": "2026-09-19",
+      "reading_level": "book_sections",
+      "locators": [
+        "作者未完成书稿，第4章§4.2–4.3，PDF第8–11页：线性适定假设与Lax理论；第7章PDF第2页：全局基与边界限制"
+      ],
+      "supported_points": [
+        "Lax等价结论要求线性且连续初值问题适定；一致本身不保证稳定。",
+        "谱方法利用全局函数表示，边界处理可限制稳定性和时间步。"
+      ],
+      "limitations": [
+        "作者说明书稿未完成且部分图表缺失；PDF有文字编码问题，未把模糊公式当精确抄录。",
+        "没有读完整本书；此条不是直接精读1928或1956原始论文。"
+      ],
+      "concept_ids": [
+        "num:wellposedness",
+        "num:consistency_stability",
+        "num:finite_difference",
+        "num:spectral",
+        "num:time_integration"
+      ],
+      "related_urls": [
+        "https://people.maths.ox.ac.uk/trefethen/4all.pdf",
+        "https://people.maths.ox.ac.uk/trefethen/7all.pdf"
+      ],
+      "year_basis": "author suggested citation year for unpublished manuscript"
+    },
+    {
+      "id": "url:leveque-am574-2011",
+      "title": "AMath 574: Conservation Laws and Finite Volume Methods — lectures 5 and 15",
+      "year": 2011,
+      "url": "https://faculty.washington.edu/rjl/classes/hyperbolic2013/am574w2011/index.html",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "Lecture 5，PDF第12–14页：Godunov通量差更新",
+        "Lecture 15，PDF第39–40页：弱熵条件与Lax–Wendroff定理"
+      ],
+      "supported_points": [
+        "有限体积以界面通量更新单元平均。",
+        "守恒一致格式若收敛，其极限是弱解；该结论不自行保证收敛或唯一熵解。"
+      ],
+      "limitations": [
+        "阅读的是作者讲义，不是已经通读2002年专著。",
+        "标量熵条件不能无条件扩展为多维非线性系统唯一性定理。"
+      ],
+      "concept_ids": [
+        "num:finite_volume",
+        "num:conservation_entropy",
+        "num:consistency_stability"
+      ],
+      "related_urls": [
+        "https://faculty.washington.edu/rjl/classes/hyperbolic2013/am574w2011/am574lecture5.pdf",
+        "https://faculty.washington.edu/rjl/classes/hyperbolic2013/am574w2011/am574lecture15.pdf"
+      ],
+      "year_basis": "lecture date"
+    },
+    {
+      "id": "doi:10.1023/A:1012873910884",
+      "title": "Runge–Kutta Discontinuous Galerkin Methods for Convection-Dominated Problems",
+      "year": 2001,
+      "url": "https://helper.ipam.ucla.edu/publications/pcatut2005/pcatut_5477_reprint2.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1，PDF第2–5页：空间弱式、块对角质量矩阵、RK步骤和非线性限制"
+      ],
+      "supported_points": [
+        "RKDG组合间断有限元、数值通量和适当RK时间步。",
+        "单元局部性方便高阶和并行，但非线性对流问题仍需稳定性设计。"
+      ],
+      "limitations": [
+        "没有重现全文所有算例或逐一检查限制器理论。",
+        "综述里的高阶稳定表述不能省略CFL和问题条件。"
+      ],
+      "concept_ids": [
+        "num:discontinuous_galerkin",
+        "num:finite_volume",
+        "num:finite_element",
+        "num:time_integration"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "arxiv:0906.4325",
+      "title": "Finite element exterior calculus: from Hodge theory to numerical stability",
+      "year": 2010,
+      "url": "https://arxiv.org/pdf/0906.4325v3",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1.1，PDF第3–4页：Poisson弱式与Galerkin",
+        "§3.2.2，PDF第24–26页：mixed well-posedness、Theorems 3.2–3.3；摘要与引言：subcomplex/cochain projection"
+      ],
+      "supported_points": [
+        "混合适定性结合核上强制性和inf–sup条件。",
+        "FEEC以子复形与有界交换投影把连续结构传给离散问题。"
+      ],
+      "limitations": [
+        "读取2009年v3预印本，year采用2010年期刊年份。",
+        "并非对任意神经表示或任意非线性PDE的稳定性保证。"
+      ],
+      "concept_ids": [
+        "num:finite_element",
+        "num:mixed_inf_sup",
+        "num:compatible_feec",
+        "num:wellposedness",
+        "num:geometry_mesh"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "doi:10.1016/S0168-9274(97)00056-1",
+      "title": "Implicit-Explicit Runge-Kutta Methods for Time-Dependent Partial Differential Equations",
+      "year": 1997,
+      "url": "https://steveruuth.org/wp-content/uploads/2020/10/ars.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "abstract",
+      "locators": [
+        "作者托管论文可读摘要与Introduction搜索提取；PDF正文文本编码损坏，未据损坏正文作公式核查"
+      ],
+      "supported_points": [
+        "为不同类型项采用隐式/显式时间处理。",
+        "论文比较IMEX RK与已有多步方法的稳定区域，适用对象包括对流扩散问题。"
+      ],
+      "limitations": [
+        "本次未完成正文系数表和稳定区域推导核验；相关实际接口另由ARKODE官方文档支持。"
+      ],
+      "concept_ids": [
+        "num:stiffness_imex",
+        "num:time_integration"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "doi:10.1007/978-3-319-05254-0_10",
+      "title": "Challenges in Geometric Numerical Integration",
+      "year": 2014,
+      "url": "https://www.unige.ch/~hairer/preprints/hairer-pisa.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1–2，PDF第1–5页：保结构、后向误差分析和修正方程；摘要的高振荡边界"
+      ],
+      "supported_points": [
+        "辛方法的修正方程保有Hamilton结构，可解释有条件的长时间行为。",
+        "步长乘最高频率不小时，经典后向误差论证不能直接沿用。"
+      ],
+      "limitations": [
+        "近能量守恒不是每一步精确守恒。",
+        "没有把有限维非刚性分析当成任意网格加密PDE的统一长期定理。"
+      ],
+      "concept_ids": [
+        "num:symplectic",
+        "num:time_integration",
+        "num:stiffness_imex"
+      ],
+      "year_basis": "book chapter publication"
+    },
+    {
+      "id": "url:saad-iterative-2e",
+      "title": "Iterative Methods for Sparse Linear Systems, Second Edition",
+      "year": 2003,
+      "url": "https://www-users.cse.umn.edu/~saad/IterMethBook_2ndEd.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "book_sections",
+      "locators": [
+        "§6.5，书页171–180：GMRES与重启/实现；第9章预条件章节相关段；§14.1，书页470–472：子域与界面矩阵分块"
+      ],
+      "supported_points": [
+        "GMRES在Krylov仿射空间中最小化残差。",
+        "预条件与区域分解改变有效迭代问题；界面耦合不能因局部求解而省略。"
+      ],
+      "limitations": [
+        "只读指定部分，未通读567页PDF；未运行书中算法。",
+        "残差小与解误差小的关系受条件数/稳定常数影响。"
+      ],
+      "concept_ids": [
+        "num:krylov",
+        "num:preconditioning",
+        "num:domain_decomposition"
+      ],
+      "year_basis": "second edition publication"
+    },
+    {
+      "id": "arxiv:1611.01917",
+      "title": "Algebraic Multigrid Methods",
+      "year": 2017,
+      "url": "https://arxiv.org/pdf/1611.01917",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.3–2.4，PDF第12–14页：离散谱与条件数；§4.1–4.2：基本迭代；§5平滑器讨论PDF第38页及摘要粗空间条件"
+      ],
+      "supported_points": [
+        "平滑器和粗空间协同；好的粗空间针对难以被平滑的误差。",
+        "网格无关收敛和系数/各向异性鲁棒性需要适当假设与粗空间构造。"
+      ],
+      "limitations": [
+        "year为2017期刊年份；arXiv首版为2016。",
+        "不能把AMG名称当作任意Helmholtz/非对称/高对比问题的线性复杂度保证。"
+      ],
+      "concept_ids": [
+        "num:multigrid",
+        "num:preconditioning",
+        "num:domain_decomposition",
+        "num:geometry_mesh"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "doi:10.1017/S0962492902000156",
+      "title": "Entropy stability theory for difference approximations of nonlinear conservation laws and related time-dependent problems",
+      "year": 2003,
+      "url": "https://www.math.umd.edu/~tadmor/pub/TV%2Bentropy/Tadmor_Acta2003.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§4，PDF第15–16页：Corollary 4.1和熵保守基准；摘要的耗散比较思想"
+      ],
+      "supported_points": [
+        "以熵保守通量为基准分析适当数值黏性与熵稳定。",
+        "守恒和熵稳定是不同约束。"
+      ],
+      "limitations": [
+        "所述半离散性质不能自动保证任意时间离散后的完全离散性质。",
+        "没有逐一复核全文所有系统和强迫项推广。"
+      ],
+      "concept_ids": [
+        "num:conservation_entropy",
+        "num:finite_volume",
+        "num:discontinuous_galerkin"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "doi:10.1017/S0962492901000010",
+      "title": "An optimal control approach to a posteriori error estimation in finite element methods",
+      "year": 2001,
+      "url": "https://www.cambridge.org/core/journals/acta-numerica/article/abs/an-optimal-control-approach-to-a-posteriori-error-estimation-in-finite-element-methods/5C67A03F528C6FA69F37A97DF5C3BE19",
+      "accessed_at": "2026-09-19",
+      "reading_level": "abstract",
+      "locators": [
+        "出版社摘要：adjoint weights、目标误差与自适应反馈；Volume 10 May 2001元数据"
+      ],
+      "supported_points": [
+        "DWR用近似伴随提供局部残差权重，围绕目标量构造网格适配反馈。"
+      ],
+      "limitations": [
+        "正文获取失败；不是已阅读全文。",
+        "报告中的线性Galerkin恒等式是明确假设下的推导，不声称逐字核验此论文定理。",
+        "在线页面2003日期不同于2001卷期，year采用卷期。"
+      ],
+      "concept_ids": [
+        "num:aposteriori_dwr",
+        "num:amr",
+        "num:inverse_adjoint"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "arxiv:2112.05920",
+      "title": "Asymptotic-Preserving Schemes for Multiscale Physical Problems",
+      "year": 2022,
+      "url": "https://arxiv.org/pdf/2112.05920",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1，PDF第3–5页：AP交换图、式(1.1)–(1.6)；微观到宏观极限说明"
+      ],
+      "supported_points": [
+        "AP要求固定数值尺度下小参数极限给出宏观问题的一致稳定离散。",
+        "统一误差结论还用到微宏误差和离散误差估计等假设。"
+      ],
+      "limitations": [
+        "year采用2022综述年份；预印本首版2021。",
+        "AP定义不自动保证所有参数下同阶精度、正性或熵性质。"
+      ],
+      "concept_ids": [
+        "num:multiscale_ap",
+        "num:stiffness_imex",
+        "num:consistency_stability"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "doi:10.1017/S0962492910000061",
+      "title": "Inverse problems: A Bayesian perspective",
+      "year": 2010,
+      "url": "https://web.stanford.edu/class/ee378a/REFS/stuart.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§4.2，PDF第51–52页：后验定义、Assumptions 2.6、Theorems 4.1–4.2；引言的函数空间正则化"
+      ],
+      "supported_points": [
+        "函数空间先验与似然共同定义后验。",
+        "后验存在和对数据的稳定依赖要验证势函数与先验条件。"
+      ],
+      "limitations": [
+        "贝叶斯建模不消除物理不可辨识性。",
+        "没有核验本文全部MCMC算法或任意模型失配下的校准。"
+      ],
+      "concept_ids": [
+        "num:inverse_adjoint",
+        "num:uq",
+        "num:wellposedness"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "doi:10.1137/130932715",
+      "title": "A Survey of Projection-Based Model Reduction Methods for Parametric Dynamical Systems",
+      "year": 2015,
+      "url": "https://kiwi.oden.utexas.edu/papers/Parametric-model-reduction-survey-Benner-Gugercin-Willcox.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–2.2，PDF第9–10页：参数系统、trial/test投影和假设；引言的offline/online分工"
+      ],
+      "supported_points": [
+        "低维试验/检验空间投影得到小系统。",
+        "参数依赖、稳定性和在线算子评估是降阶问题的组成部分。"
+      ],
+      "limitations": [
+        "核心讨论以状态线性系统为主，不能据此保证任意非线性湍流ROM稳定。",
+        "未实际构造POD、RB或超降阶代码。"
+      ],
+      "concept_ids": [
+        "num:rom",
+        "num:finite_element",
+        "num:inverse_adjoint"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "doi:10.1017/S096249291500001X",
+      "title": "Multilevel Monte Carlo methods",
+      "year": 2015,
+      "url": "https://people.maths.ox.ac.uk/~gilesm/files/acta15.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1，PDF第6–7页：MSE分解、跨层差分、Theorem 1的alpha/beta/gamma条件"
+      ],
+      "supported_points": [
+        "MLMC通过耦合粗细样本和望远镜恒等式降低估计期望的成本。",
+        "复杂度由偏差、层差方差和单样本成本的衰减/增长率共同决定。"
+      ],
+      "limitations": [
+        "最优O(epsilon^-2)并非无条件成立。",
+        "没有把离散偏差或模型偏差混作采样方差。"
+      ],
+      "concept_ids": [
+        "num:uq",
+        "num:multigrid",
+        "num:amr"
+      ],
+      "year_basis": "journal publication"
+    },
+    {
+      "id": "arxiv:2403.12179",
+      "title": "AMReX and pyAMReX: Looking beyond the exascale computing project",
+      "year": 2024,
+      "url": "https://arxiv.org/pdf/2403.12179v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1–2，PDF第2–3页：AMR粗细同步、数据结构和嵌入边界；§3.1–3.2：硬件可移植、kernel fusion"
+      ],
+      "supported_points": [
+        "AMR计算包含细化、层间插值/平均和粗细通量校正。",
+        "块尺度、核启动、内存与通信组织决定异构平台成本。"
+      ],
+      "limitations": [
+        "2024原工作；读取2025-03修订v2，未对软件版本运行验收。",
+        "软件支持多物理应用不是统一方程误差证明；性能收益依工作负载而变。"
+      ],
+      "concept_ids": [
+        "num:amr",
+        "num:geometry_mesh",
+        "num:matrix_free_hpc"
+      ],
+      "year_basis": "first arxiv version"
+    },
+    {
+      "id": "arxiv:2405.18982",
+      "title": "Multilevel Interior Penalty Methods on GPUs",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2405.18982v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–2.2：SIPG、sum factorization与Cartesian假设；§3：vertex-patch multigrid；§5.2 mixed precision标题及摘要"
+      ],
+      "supported_points": [
+        "结合高阶DG、无矩阵作用、顶点patch平滑与GPU布局。",
+        "算子与预条件都需优化，不能只加速一次矩阵向量乘。"
+      ],
+      "limitations": [
+        "正文针对2D/3D Poisson、常系数轴对齐网格；不外推任意复杂几何。",
+        "本次没有复验吞吐率、混合精度或多GPU结果。"
+      ],
+      "concept_ids": [
+        "num:discontinuous_galerkin",
+        "num:multigrid",
+        "num:matrix_free_hpc",
+        "num:preconditioning"
+      ],
+      "year_basis": "first arxiv version"
+    },
+    {
+      "id": "arxiv:2603.09038",
+      "title": "Accelerating High-Order Finite Element Simulations at Extreme Scale with FP64 Tensor Cores",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2603.09038v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§I–II：数值应用、FP64动机与离线PDE求解成本；§III开头和摘要：小GEMM映射与扩展实验口径"
+      ],
+      "supported_points": [
+        "将高阶有限元张量收缩映射为小矩阵乘以利用FP64 tensor cores。",
+        "保留双精度的算法/硬件协同也是现代传统数值研究，而非只能依靠低精度或神经代理。"
+      ],
+      "limitations": [
+        "针对所测算子、MFEM实现和NVIDIA硬件；不是通用端到端加速保证。",
+        "扩展与加速数字为作者报告，未在本机复现。"
+      ],
+      "concept_ids": [
+        "num:matrix_free_hpc",
+        "num:finite_element",
+        "num:inverse_adjoint"
+      ],
+      "year_basis": "first arxiv version"
+    },
+    {
+      "id": "url:petsc-snes-manual",
+      "title": "PETSc SNES: Nonlinear Solvers — official manual",
+      "year": null,
+      "url": "https://petsc.org/release/manual/snes/",
+      "accessed_at": "2026-09-19",
+      "reading_level": "official_documentation",
+      "locators": [
+        "Nonlinear Solvers总述；Newton-based Methods / Line Search Newton；Matrix-Free Methods的文档入口"
+      ],
+      "supported_points": [
+        "非线性求解包含残差/Jacobian接口、Newton更新和线搜索/信赖域全局化。",
+        "内层线性系统可用预条件Krylov方法，Jacobian作用可与预条件矩阵分开。"
+      ],
+      "limitations": [
+        "出版年未知；网页可变，2026-09-19仅为访问日期。",
+        "仅核查文档，未执行PETSc例程或声称所有PDE局部/全局收敛。"
+      ],
+      "concept_ids": [
+        "num:newton",
+        "num:krylov",
+        "num:preconditioning"
+      ],
+      "year_basis": "unknown_publication_year",
+      "year_note": "截至2026-09-19访问；未核实所读文档版本的发布日期，故不以访问年充当出版年。"
+    },
+    {
+      "id": "url:sundials-arkode-7.7",
+      "title": "SUNDIALS ARKODE 7.7.0: Mathematical Considerations and Butcher Tables",
+      "year": null,
+      "url": "https://sundials.readthedocs.io/en/v7.7.0/arkode/Mathematics_link.html",
+      "accessed_at": "2026-09-19",
+      "reading_level": "official_documentation",
+      "locators": [
+        "§2.2.13–2.2.15：显式稳定步限制、固定步模式、非线性/线性代数求解；Butcher Tables中A/L稳定注记"
+      ],
+      "supported_points": [
+        "误差控制不等于已知显式稳定限制，隐式阶段仍包含代数求解。",
+        "文档区分显式、隐式、IMEX、多速率与辛分裂方法，A稳定与L稳定不同。"
+      ],
+      "limitations": [
+        "固定文档版本7.7.0，未核实发布日期；year保留null。",
+        "没有验证软件内部系数或在实际PDE上测时。"
+      ],
+      "concept_ids": [
+        "num:stiffness_imex",
+        "num:time_integration",
+        "num:newton",
+        "num:symplectic"
+      ],
+      "year_basis": "unknown_publication_year",
+      "related_urls": [
+        "https://sundials.readthedocs.io/en/v7.7.0/arkode/Butcher_link.html"
+      ],
+      "year_note": "截至2026-09-19访问；未核实所读文档版本的发布日期，故不以访问年充当出版年。"
+    },
+    {
+      "id": "doi:10.1002/num.20640",
+      "title": "A class of discontinuous Petrov–Galerkin methods. II. Optimal test functions",
+      "year": 2010,
+      "url": "https://web.pdx.edu/~gjay/pub/dpg2.pdf",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "作者稿§1；§2式(2.1)–(2.13)、定理2.2、实际步骤S1–S4；§3纯对流形式开头"
+      ],
+      "supported_points": [
+        "由试探到测试的Riesz映射构造最优测试空间，在指定能量范数与适定性条件下实现最佳逼近。",
+        "不连续测试空间使近似最优测试函数可按单元局部求解。"
+      ],
+      "limitations": [
+        "精确最优测试空间的结论不可自动赋予有限丰富测试空间；原文明确未给出普适的实际空间选择法。",
+        "本轮未核全部输运/对流扩散数值例、证明细节或实现。"
+      ],
+      "concept_ids": [
+        "num:optimal_test_spaces",
+        "num:finite_element",
+        "num:mixed_inf_sup"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2010-10-25",
+      "selected_version": "author manuscript; publisher metadata cross-checked",
+      "year_basis": "first online publication 2010; volume 27(1), 2011, pp.70–105",
+      "publication_status": "正式期刊论文；Wiley元数据核对",
+      "related_urls": [
+        "https://onlinelibrary.wiley.com/doi/10.1002/num.20640"
+      ]
+    },
+    {
+      "id": "doi:10.1007/s00211-013-0576-y",
+      "title": "Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps",
+      "year": 2013,
+      "url": "https://strathprints.strath.ac.uk/44827/1/10.1007_s00211_013_0576_y.pdf",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1问题假设；§3.1粗空间构造；定理3.22、推论3.23及其后限制；§4实现输入开头"
+      ],
+      "supported_points": [
+        "局部广义特征方向经分片单位拼成GenEO粗空间，配合两层重叠Schwarz。",
+        "在文中假设与阈值选择下，条件数界不含系数对比度和子域数，但粗空间尺寸会变化。"
+      ],
+      "limitations": [
+        "该结果依赖对称/coercive问题和稳定分解等条件，不能直接推广所有非线性/非对称耦合。",
+        "近不可压弹性等情况下粗空间可很大；稳定迭代次数不等于低总时间。本轮未复验数值表。"
+      ],
+      "concept_ids": [
+        "num:spectral_coarse_spaces",
+        "num:domain_decomposition",
+        "num:preconditioning"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2013-08-15",
+      "selected_version": "author preprint in institutional repository",
+      "year_basis": "repository records first online publication 2013",
+      "publication_status": "正式期刊论文；大学作者仓储元数据核对",
+      "related_urls": [
+        "https://strathprints.strath.ac.uk/44827/"
+      ]
+    },
+    {
+      "id": "doi:10.1137/05064607X",
+      "title": "Analysis of the Parareal Time-Parallel Time-Integration Method",
+      "year": 2007,
+      "url": "https://www.unige.ch/~gander/Preprints/parareal.pdf",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2 Parareal与multiple shooting、式(2.2)–(2.8)；§3与时间多重网格联系；§6热方程与输运例、图6.2–6.3"
+      ],
+      "supported_points": [
+        "粗传播与细传播缺陷校正把时间分段连接起来；文中建立与multiple shooting和时间多重网格的联系。",
+        "热方程与周期输运的数值例显示收敛表现不同，某些输运设置停滞直至顺序细传播完成。"
+      ],
+      "limitations": [
+        "这里只阅读算法联系与选定数值例，未逐条复核§4–5全部收敛证明。",
+        "并行时间分段不等于任意动力学都能加速；需要计入粗传播、迭代与通信。"
+      ],
+      "concept_ids": [
+        "num:parallel_in_time",
+        "num:time_integration",
+        "num:multigrid"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2007-03-22",
+      "selected_version": "published paper hosted by author",
+      "publication_status": "SIAM J. Sci. Comput. 29(2), 556–578；作者PDF与期刊页核对",
+      "related_urls": [
+        "https://epubs.siam.org/doi/10.1137/05064607X"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "num:wellposedness",
+      "label": "连续问题的适定性",
+      "summary": "先确定函数空间、边界条件、解的意义及数据扰动下的连续依赖。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:consistency_stability",
+      "label": "一致性、稳定性与收敛",
+      "summary": "一致性控制局部缺陷，稳定性控制传播；等价定理只在所述线性适定框架内使用。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:finite_difference",
+      "label": "有限差分",
+      "summary": "用局部差分近似导数，分析截断误差、数值色散、CFL及边界闭合。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:finite_volume",
+      "label": "有限体积",
+      "summary": "推进控制体平均，以相邻单元共享数值通量实现局部守恒。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:finite_element",
+      "label": "有限元与变分逼近",
+      "summary": "弱形式、有限维试验空间与离散稳定性共同决定近似质量。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:discontinuous_galerkin",
+      "label": "间断Galerkin",
+      "summary": "单元内高阶多项式与面通量/罚项结合；守恒、稳定和限制器需分别设计。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:spectral",
+      "label": "谱与伪谱方法",
+      "summary": "全局基表示适合可利用规则性的问题；光滑度、边界和混叠限制高阶收益。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:time_integration",
+      "label": "时间离散",
+      "summary": "空间离散后的ODE/DAE仍须设计精度、绝对稳定域、误差控制与求解容差。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:stiffness_imex",
+      "label": "刚性与IMEX",
+      "summary": "把快慢或刚性/非刚性作用分开；隐式部分仍需代数求解，显式部分仍有限制。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:symplectic",
+      "label": "几何与辛积分",
+      "summary": "对Hamilton结构保辛；长期近能量守恒需要步长、光滑性等条件，不等于每步精确保能。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:krylov",
+      "label": "Krylov子空间",
+      "summary": "在由残差和算子作用生成的空间内迭代求解；CG与GMRES的适用结构不同。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:preconditioning",
+      "label": "预条件",
+      "summary": "改变迭代问题的有效谱/几何，同时控制构建、应用和通信成本。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:multigrid",
+      "label": "多重网格",
+      "summary": "平滑器与粗空间分工处理误差；粗空间须捕捉平滑器难以消除的分量。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:domain_decomposition",
+      "label": "区域分解",
+      "summary": "局部求解与界面/粗空间耦合，使数学分解和并行分布协同。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:newton",
+      "label": "非线性与Newton–Krylov",
+      "summary": "线性化、全局化与不精确内层求解共同组成非线性算法。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:conservation_entropy",
+      "label": "守恒、熵与物理解选择",
+      "summary": "通量守恒控制账本；熵条件/耗散结构用于排除非物理弱解。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:mixed_inf_sup",
+      "label": "混合形式与inf–sup",
+      "summary": "速度压力等不同变量空间必须兼容；稳定常数不能随网格退化。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:compatible_feec",
+      "label": "相容离散与FEEC",
+      "summary": "通过离散复形和有界交换投影保存连续问题的微分结构。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:geometry_mesh",
+      "label": "几何与网格",
+      "summary": "几何映射、单元质量、边界近似和悬挂节点是误差与稳定性的一部分。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:amr",
+      "label": "自适应网格与多层同步",
+      "summary": "依据误差/物理指标局部细化；粗细通量、时间子循环和并行负载需一致。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:aposteriori_dwr",
+      "label": "后验估计与目标导向适配",
+      "summary": "计算后估计误差；用伴随敏感度给局部残差加权以控制目标泛函。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:multiscale_ap",
+      "label": "多尺度与渐近保持",
+      "summary": "固定离散尺度下，小物理参数极限应给出正确宏观离散；AP与统一高阶精度不同。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:inverse_adjoint",
+      "label": "反问题、正则化与伴随",
+      "summary": "从观测推断参数，需辨识性和先验；伴随控制多参数梯度的求解成本。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:uq",
+      "label": "不确定性量化与多层采样",
+      "summary": "分开输入不确定性、模型误差、离散偏差与采样方差。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:rom",
+      "label": "降阶与投影",
+      "summary": "离线构造低维空间，再投影动力学；快照压缩误差不等于在线演化误差。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:matrix_free_hpc",
+      "label": "无矩阵算子与异构HPC",
+      "summary": "以算子作用代替全矩阵存储，联合优化离散、预条件、数据布局与通信。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:optimal_test_spaces",
+      "label": "最优测试空间与DPG",
+      "summary": "给定试探空间，通过测试范数和局部Riesz问题构造稳定测试方向；近似空间仍需稳定性控制。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:spectral_coarse_spaces",
+      "label": "谱粗空间与GenEO",
+      "summary": "依据局部广义特征问题选择阻碍收敛的方向，经分片单位形成全局粗空间。",
+      "domain": "numerics"
+    },
+    {
+      "id": "num:parallel_in_time",
+      "label": "时间并行与粗细传播",
+      "summary": "把时间域分段，以串行粗传播和并行细传播迭代校正；收敛与加速取决于传播器和问题类型。",
+      "domain": "numerics"
+    }
+  ],
+  "relations": [
+    {
+      "source": "num:wellposedness",
+      "target": "num:consistency_stability",
+      "type": "conceptual_dependency",
+      "claim": "先确定连续问题和范数，才能解释离散稳定与收敛。",
+      "evidence_ids": [
+        "url:trefethen-pdetext"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:finite_difference",
+      "target": "num:consistency_stability",
+      "type": "conceptual_dependency",
+      "claim": "差分截断误差需与稳定传播共同分析。",
+      "evidence_ids": [
+        "url:trefethen-pdetext"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:finite_volume",
+      "target": "num:conservation_entropy",
+      "type": "conceptual_dependency",
+      "claim": "共享数值通量带来守恒，熵条件另行约束弱解。",
+      "evidence_ids": [
+        "url:leveque-am574-2011",
+        "doi:10.1017/S0962492902000156"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:finite_element",
+      "target": "num:wellposedness",
+      "type": "conceptual_dependency",
+      "claim": "Galerkin有限维限制仍需稳定性而非仅连续问题适定。",
+      "evidence_ids": [
+        "arxiv:0906.4325"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:finite_element",
+      "target": "num:mixed_inf_sup",
+      "type": "conceptual_dependency",
+      "claim": "混合离散要满足相容空间和网格一致的稳定条件。",
+      "evidence_ids": [
+        "arxiv:0906.4325"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:mixed_inf_sup",
+      "target": "num:compatible_feec",
+      "type": "conceptual_dependency",
+      "claim": "FEEC为一类混合问题提供保结构稳定离散的组织框架。",
+      "evidence_ids": [
+        "arxiv:0906.4325"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:compatible_feec",
+      "target": "num:geometry_mesh",
+      "type": "conceptual_dependency",
+      "claim": "几何映射和离散空间应配合微分结构。",
+      "evidence_ids": [
+        "arxiv:0906.4325"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:finite_volume",
+      "target": "num:discontinuous_galerkin",
+      "type": "conceptual_dependency",
+      "claim": "DG继承通量耦合思想并增加单元内高阶自由度。",
+      "evidence_ids": [
+        "doi:10.1023/A:1012873910884"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:finite_element",
+      "target": "num:discontinuous_galerkin",
+      "type": "conceptual_dependency",
+      "claim": "DG采用不连续有限元空间及面耦合。",
+      "evidence_ids": [
+        "doi:10.1023/A:1012873910884"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:spectral",
+      "target": "num:time_integration",
+      "type": "conceptual_dependency",
+      "claim": "空间离散的谱和边界会影响时间稳定限制。",
+      "evidence_ids": [
+        "url:trefethen-pdetext"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:time_integration",
+      "target": "num:stiffness_imex",
+      "type": "conceptual_dependency",
+      "claim": "空间/物理刚性推动隐式和分裂时间策略。",
+      "evidence_ids": [
+        "doi:10.1016/S0168-9274(97)00056-1",
+        "url:sundials-arkode-7.7"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:stiffness_imex",
+      "target": "num:newton",
+      "type": "conceptual_dependency",
+      "claim": "隐式阶段转化为需控制误差的代数问题。",
+      "evidence_ids": [
+        "url:sundials-arkode-7.7"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:symplectic",
+      "target": "num:time_integration",
+      "type": "conceptual_dependency",
+      "claim": "结构保留是独立于局部误差阶的设计目标。",
+      "evidence_ids": [
+        "doi:10.1007/978-3-319-05254-0_10"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:newton",
+      "target": "num:krylov",
+      "type": "conceptual_dependency",
+      "claim": "Newton线性化可用Krylov内层求解。",
+      "evidence_ids": [
+        "url:petsc-snes-manual"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:krylov",
+      "target": "num:preconditioning",
+      "type": "conceptual_dependency",
+      "claim": "预条件决定有效问题，内存与通信决定实际成本。",
+      "evidence_ids": [
+        "url:saad-iterative-2e"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:preconditioning",
+      "target": "num:multigrid",
+      "type": "conceptual_dependency",
+      "claim": "多重网格可作为预条件器。",
+      "evidence_ids": [
+        "arxiv:1611.01917"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:domain_decomposition",
+      "target": "num:preconditioning",
+      "type": "conceptual_dependency",
+      "claim": "子域与界面求解形成预条件策略。",
+      "evidence_ids": [
+        "url:saad-iterative-2e"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:domain_decomposition",
+      "target": "num:multigrid",
+      "type": "conceptual_dependency",
+      "claim": "二者都可通过粗空间传递全局难消除分量。",
+      "evidence_ids": [
+        "url:saad-iterative-2e",
+        "arxiv:1611.01917"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:geometry_mesh",
+      "target": "num:amr",
+      "type": "conceptual_dependency",
+      "claim": "局部细化需处理层间数据和通量一致性。",
+      "evidence_ids": [
+        "arxiv:2403.12179"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:aposteriori_dwr",
+      "target": "num:amr",
+      "type": "conceptual_dependency",
+      "claim": "目标加权误差驱动网格反馈。",
+      "evidence_ids": [
+        "doi:10.1017/S0962492901000010"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:aposteriori_dwr",
+      "target": "num:inverse_adjoint",
+      "type": "conceptual_dependency",
+      "claim": "伴随用于目标敏感度，也启发参数梯度计算；具体优化仍需其自身推导。",
+      "evidence_ids": [
+        "doi:10.1017/S0962492901000010"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:multiscale_ap",
+      "target": "num:stiffness_imex",
+      "type": "conceptual_dependency",
+      "claim": "快慢分裂可参与AP构造，但IMEX并不自动AP。",
+      "evidence_ids": [
+        "arxiv:2112.05920",
+        "url:sundials-arkode-7.7"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:multiscale_ap",
+      "target": "num:consistency_stability",
+      "type": "conceptual_dependency",
+      "claim": "小参数极限后的数值方法仍需一致与稳定。",
+      "evidence_ids": [
+        "arxiv:2112.05920"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:inverse_adjoint",
+      "target": "num:uq",
+      "type": "conceptual_dependency",
+      "claim": "贝叶斯反问题把数据、先验和预测不确定性放入函数空间框架。",
+      "evidence_ids": [
+        "doi:10.1017/S0962492910000061"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:uq",
+      "target": "num:amr",
+      "type": "conceptual_dependency",
+      "claim": "多层离散可以服务跨分辨率耦合采样；不是所有AMR层级自动构成好MLMC耦合。",
+      "evidence_ids": [
+        "doi:10.1017/S096249291500001X"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:uq",
+      "target": "num:multigrid",
+      "type": "conceptual_dependency",
+      "claim": "多层Monte Carlo与多重网格共享层级思想，分别减少方差和代数误差。",
+      "evidence_ids": [
+        "doi:10.1017/S096249291500001X",
+        "arxiv:1611.01917"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:rom",
+      "target": "num:finite_element",
+      "type": "conceptual_dependency",
+      "claim": "低维投影继承试验/检验空间思路，基选择可以来自数据。",
+      "evidence_ids": [
+        "doi:10.1137/130932715"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:rom",
+      "target": "num:inverse_adjoint",
+      "type": "conceptual_dependency",
+      "claim": "反复参数查询可由ROM摊销，但需控制投影和输出误差。",
+      "evidence_ids": [
+        "doi:10.1137/130932715"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:multigrid",
+      "target": "num:matrix_free_hpc",
+      "type": "conceptual_dependency",
+      "claim": "现代高阶求解联合设计算子与GPU平滑器。",
+      "evidence_ids": [
+        "arxiv:2405.18982"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:finite_element",
+      "target": "num:matrix_free_hpc",
+      "type": "conceptual_dependency",
+      "claim": "高阶张量收缩可映射FP64 tensor cores。",
+      "evidence_ids": [
+        "arxiv:2603.09038"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:amr",
+      "target": "num:matrix_free_hpc",
+      "type": "conceptual_dependency",
+      "claim": "细化收益受小块核启动、层间通信和负载影响。",
+      "evidence_ids": [
+        "arxiv:2403.12179"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:conservation_entropy",
+      "target": "num:time_integration",
+      "type": "conceptual_dependency",
+      "claim": "半离散物理结构要在完全离散时再次核验。",
+      "evidence_ids": [
+        "doi:10.1017/S0962492902000156"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:aposteriori_dwr",
+      "target": "num:preconditioning",
+      "type": "conceptual_dependency",
+      "claim": "代数容差应与离散和目标误差预算协调，而非盲目解至机器精度。",
+      "evidence_ids": [
+        "url:saad-iterative-2e",
+        "doi:10.1017/S0962492901000010"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "doi:10.1002/num.20640",
+      "target": "num:optimal_test_spaces",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "doi:10.1002/num.20640"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "doi:10.1002/num.20640",
+      "target": "num:finite_element",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "doi:10.1002/num.20640"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "doi:10.1002/num.20640",
+      "target": "num:mixed_inf_sup",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "doi:10.1002/num.20640"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "doi:10.1007/s00211-013-0576-y",
+      "target": "num:spectral_coarse_spaces",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "doi:10.1007/s00211-013-0576-y"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "doi:10.1007/s00211-013-0576-y",
+      "target": "num:domain_decomposition",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "doi:10.1007/s00211-013-0576-y"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "doi:10.1007/s00211-013-0576-y",
+      "target": "num:preconditioning",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "doi:10.1007/s00211-013-0576-y"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "doi:10.1137/05064607X",
+      "target": "num:parallel_in_time",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "doi:10.1137/05064607X"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "doi:10.1137/05064607X",
+      "target": "num:time_integration",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "doi:10.1137/05064607X"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "doi:10.1137/05064607X",
+      "target": "num:multigrid",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "doi:10.1137/05064607X"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "num:finite_element",
+      "target": "num:optimal_test_spaces",
+      "type": "extends",
+      "claim": "在变分逼近中把试探空间表达能力与测试空间稳定性分开设计。",
+      "evidence_ids": [
+        "doi:10.1002/num.20640"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:domain_decomposition",
+      "target": "num:spectral_coarse_spaces",
+      "type": "enables",
+      "claim": "局部解算之外的全局粗空间负责难传播误差方向。",
+      "evidence_ids": [
+        "doi:10.1007/s00211-013-0576-y"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:time_integration",
+      "target": "num:parallel_in_time",
+      "type": "extends",
+      "claim": "时间分段之间以缺陷校正建立一致性，收益需由收敛与成本共同判断。",
+      "evidence_ids": [
+        "doi:10.1137/05064607X"
+      ],
+      "certainty": "synthesis_inference"
+    }
+  ],
+  "reading_gaps": [
+    "未系统覆盖边界元/快速多极子、有限差分SBP-SAT细节、FETI/BDDC完整理论、hp自适应收敛证明。",
+    "DWR经典原论文仅访问摘要；Ascher1997 PDF正文编码损坏，降级为摘要。",
+    "尚未系统读均匀高阶AP、熵稳定全离散证明、cut-cell小单元稳定化、并行时间积分。",
+    "所有运行性能和数值结果均未独立复现。",
+    "2026-10-02补读DPG、GenEO与Parareal指定章节；未完成FETI/BDDC、非对称GenEO、时间并行完整谱系或全部证明。"
+  ],
+  "inherited_snapshot_date": "2026-09-19",
+  "update_scope": "原有来源保留 2026-09-19 的阅读记录；新增来源在 2026-10-02 核查指定章节，未全面重读继承材料。"
+}

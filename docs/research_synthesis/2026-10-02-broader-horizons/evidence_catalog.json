@@ -1,0 +1,4158 @@
+{
+  "schema_version": "research-horizons-evidence-v1",
+  "snapshot_date": "2026-10-02",
+  "source_count": 72,
+  "reading_record_count": 72,
+  "reading_levels": {
+    "fulltext_sections": 64,
+    "book_sections": 2,
+    "abstract": 3,
+    "official_documentation": 3
+  },
+  "sources": [
+    {
+      "id": "arxiv:1706.03762",
+      "title": "Attention Is All You Need",
+      "year": 2017,
+      "url": "https://arxiv.org/html/1706.03762v7",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.1 Encoder and Decoder Stacks",
+        "§3.2 Attention（含 scaled dot-product 与 multi-head）"
+      ],
+      "supported_points": [
+        "以自注意力和前馈层构造编码器—解码器；解码器以因果掩码保持自回归。",
+        "注意力按查询、键匹配聚合值，多头提供多个投影子空间。"
+      ],
+      "limitations": [
+        "原论文机器翻译实验不能代表全部任务或当前模型。",
+        "普通稠密注意力的 token 两两交互随长度二次增长；语义 token 的位置编码不自动包含物理几何。"
+      ],
+      "concept_ids": [
+        "ai:attention",
+        "ai:multimodal_alignment"
+      ],
+      "first_publication_date": "2017-06-12",
+      "selected_version": "v7",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:1706.03762",
+          "title": "Attention Is All You Need",
+          "year": 2017,
+          "url": "https://arxiv.org/html/1706.03762v7",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§3.1 Encoder and Decoder Stacks",
+            "§3.2 Attention（含 scaled dot-product 与 multi-head）"
+          ],
+          "supported_points": [
+            "以自注意力和前馈层构造编码器—解码器；解码器以因果掩码保持自回归。",
+            "注意力按查询、键匹配聚合值，多头提供多个投影子空间。"
+          ],
+          "limitations": [
+            "原论文机器翻译实验不能代表全部任务或当前模型。",
+            "普通稠密注意力的 token 两两交互随长度二次增长；语义 token 的位置编码不自动包含物理几何。"
+          ],
+          "concept_ids": [
+            "ai:attention",
+            "ai:multimodal_alignment"
+          ],
+          "first_publication_date": "2017-06-12",
+          "selected_version": "v7",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2111.06377",
+      "title": "Masked Autoencoders Are Scalable Vision Learners",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2111.06377v3",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3 Approach",
+        "§4.1 Main Properties（遮挡比例、解码器与重建目标消融）"
+      ],
+      "supported_points": [
+        "MAE 用高比例随机遮挡和非对称编码器—解码器重建缺失像素。",
+        "编码器只处理可见 patch，轻量解码器在训练时恢复完整序列。"
+      ],
+      "limitations": [
+        "重建目标只是下游表征的代理任务；图像冗余与物理场可观测性并不等同。",
+        "高遮挡比例属于所研究图像任务，不能直接作为其他模态最优值。"
+      ],
+      "concept_ids": [
+        "ai:self_supervised_representation",
+        "ai:compression_and_memory"
+      ],
+      "first_publication_date": "2021-11-11",
+      "selected_version": "v3",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2111.06377",
+          "title": "Masked Autoencoders Are Scalable Vision Learners",
+          "year": 2021,
+          "url": "https://arxiv.org/html/2111.06377v3",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§3 Approach",
+            "§4.1 Main Properties（遮挡比例、解码器与重建目标消融）"
+          ],
+          "supported_points": [
+            "MAE 用高比例随机遮挡和非对称编码器—解码器重建缺失像素。",
+            "编码器只处理可见 patch，轻量解码器在训练时恢复完整序列。"
+          ],
+          "limitations": [
+            "重建目标只是下游表征的代理任务；图像冗余与物理场可观测性并不等同。",
+            "高遮挡比例属于所研究图像任务，不能直接作为其他模态最优值。"
+          ],
+          "concept_ids": [
+            "ai:self_supervised_representation",
+            "ai:compression_and_memory"
+          ],
+          "first_publication_date": "2021-11-11",
+          "selected_version": "v3",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2508.10104",
+      "title": "DINOv3",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2508.10104v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.2 Large-Scale Self-Supervised Learning",
+        "§4.1 Loss of Patch-Level Consistency Over Training",
+        "§4.2 Gram Anchoring Objective"
+      ],
+      "supported_points": [
+        "长程训练中全局分类表征提升可伴随局部稠密特征退化。",
+        "Gram anchoring 约束学生与早期教师的归一化 patch 相似性矩阵，后续周期更新 Gram 教师。"
+      ],
+      "limitations": [
+        "局部关系约束不是物理守恒或精确空间等变性。",
+        "原文的视觉迁移实验不能证明任意科学场局部结构均会改善。"
+      ],
+      "concept_ids": [
+        "ai:self_supervised_representation",
+        "ai:generalization_theory"
+      ],
+      "first_publication_date": "2025-08-13",
+      "selected_version": "v1",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2508.10104",
+          "title": "DINOv3",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2508.10104v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§3.2 Large-Scale Self-Supervised Learning",
+            "§4.1 Loss of Patch-Level Consistency Over Training",
+            "§4.2 Gram Anchoring Objective"
+          ],
+          "supported_points": [
+            "长程训练中全局分类表征提升可伴随局部稠密特征退化。",
+            "Gram anchoring 约束学生与早期教师的归一化 patch 相似性矩阵，后续周期更新 Gram 教师。"
+          ],
+          "limitations": [
+            "局部关系约束不是物理守恒或精确空间等变性。",
+            "原文的视觉迁移实验不能证明任意科学场局部结构均会改善。"
+          ],
+          "concept_ids": [
+            "ai:self_supervised_representation",
+            "ai:generalization_theory"
+          ],
+          "first_publication_date": "2025-08-13",
+          "selected_version": "v1",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2103.00020",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2103.00020v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1 Natural Language Supervision",
+        "§2.2 Creating a Sufficiently Large Dataset",
+        "§2.3 Selecting an Efficient Pre-Training Method",
+        "§2.4 Choosing and Scaling a Model"
+      ],
+      "supported_points": [
+        "图像与文本分别编码，批内真实配对用对称交叉熵进行对比学习。",
+        "文本描述提供开放词汇条件，预训练侧重配对识别而非逐词重建。"
+      ],
+      "limitations": [
+        "配对关联不等于几何、计数或因果变量的精确对齐。",
+        "互联网图文采样和文本描述限制语义覆盖；不能由零样本名称推断无分布依赖。"
+      ],
+      "concept_ids": [
+        "ai:multimodal_alignment",
+        "ai:self_supervised_representation",
+        "ai:data_curation"
+      ],
+      "first_publication_date": "2021-02-26",
+      "selected_version": "v1",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2103.00020",
+          "title": "Learning Transferable Visual Models From Natural Language Supervision",
+          "year": 2021,
+          "url": "https://arxiv.org/html/2103.00020v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1 Natural Language Supervision",
+            "§2.2 Creating a Sufficiently Large Dataset",
+            "§2.3 Selecting an Efficient Pre-Training Method",
+            "§2.4 Choosing and Scaling a Model"
+          ],
+          "supported_points": [
+            "图像与文本分别编码，批内真实配对用对称交叉熵进行对比学习。",
+            "文本描述提供开放词汇条件，预训练侧重配对识别而非逐词重建。"
+          ],
+          "limitations": [
+            "配对关联不等于几何、计数或因果变量的精确对齐。",
+            "互联网图文采样和文本描述限制语义覆盖；不能由零样本名称推断无分布依赖。"
+          ],
+          "concept_ids": [
+            "ai:multimodal_alignment",
+            "ai:self_supervised_representation",
+            "ai:data_curation"
+          ],
+          "first_publication_date": "2021-02-26",
+          "selected_version": "v1",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2212.04356",
+      "title": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2212.04356v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1 Data Processing",
+        "§2.2 Model",
+        "§2.3 Multitask Format",
+        "§2.4 Training Details",
+        "§6 Limitations and Future Work"
+      ],
+      "supported_points": [
+        "Whisper 以音频—转录弱监督训练标准编码器—解码器，任务和时间戳以 token 指定。",
+        "数据处理关注转录质量、语言覆盖和重复；作者报告长音频漏词、循环与幻觉等失败。"
+      ],
+      "limitations": [
+        "这项工作不是纯自监督音频表征学习。",
+        "作者区分零样本评估与微调；长程音频可靠性不能由平均词错率独立证明。"
+      ],
+      "concept_ids": [
+        "ai:multimodal_alignment",
+        "ai:streaming_multimodal",
+        "ai:data_curation"
+      ],
+      "first_publication_date": "2022-12-06",
+      "selected_version": "v1",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2212.04356",
+          "title": "Robust Speech Recognition via Large-Scale Weak Supervision",
+          "year": 2022,
+          "url": "https://arxiv.org/html/2212.04356v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1 Data Processing",
+            "§2.2 Model",
+            "§2.3 Multitask Format",
+            "§2.4 Training Details",
+            "§6 Limitations and Future Work"
+          ],
+          "supported_points": [
+            "Whisper 以音频—转录弱监督训练标准编码器—解码器，任务和时间戳以 token 指定。",
+            "数据处理关注转录质量、语言覆盖和重复；作者报告长音频漏词、循环与幻觉等失败。"
+          ],
+          "limitations": [
+            "这项工作不是纯自监督音频表征学习。",
+            "作者区分零样本评估与微调；长程音频可靠性不能由平均词错率独立证明。"
+          ],
+          "concept_ids": [
+            "ai:multimodal_alignment",
+            "ai:streaming_multimodal",
+            "ai:data_curation"
+          ],
+          "first_publication_date": "2022-12-06",
+          "selected_version": "v1",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2509.17765",
+      "title": "Qwen3-Omni Technical Report",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2509.17765v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1 Overview",
+        "§2.2 Audio Transformer",
+        "§2.3 Perceivation / TM-RoPE",
+        "§2.4 Speech Generation",
+        "§2.5 Designs for Streaming and Concurrency"
+      ],
+      "supported_points": [
+        "Thinker—Talker 系统联合文本、视觉与音频条件，以时间对齐位置表示处理音视频。",
+        "RVQ 多码本、MTP 残差码本预测和因果卷积波形解码支持逐帧流式输出。"
+      ],
+      "limitations": [
+        "接收图像和视频不意味着生成图像和视频；主要输出为文本和语音。",
+        "首包延迟是给定部署的作者报告；论文不同段落对高层特征的概括有简略之处，应以具体输入接口为准。"
+      ],
+      "concept_ids": [
+        "ai:streaming_multimodal",
+        "ai:multimodal_alignment",
+        "ai:sparse_experts",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2025-09-22",
+      "selected_version": "v1",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2509.17765",
+          "title": "Qwen3-Omni Technical Report",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2509.17765v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1 Overview",
+            "§2.2 Audio Transformer",
+            "§2.3 Perceivation / TM-RoPE",
+            "§2.4 Speech Generation",
+            "§2.5 Designs for Streaming and Concurrency"
+          ],
+          "supported_points": [
+            "Thinker—Talker 系统联合文本、视觉与音频条件，以时间对齐位置表示处理音视频。",
+            "RVQ 多码本、MTP 残差码本预测和因果卷积波形解码支持逐帧流式输出。"
+          ],
+          "limitations": [
+            "接收图像和视频不意味着生成图像和视频；主要输出为文本和语音。",
+            "首包延迟是给定部署的作者报告；论文不同段落对高层特征的概括有简略之处，应以具体输入接口为准。"
+          ],
+          "concept_ids": [
+            "ai:streaming_multimodal",
+            "ai:multimodal_alignment",
+            "ai:sparse_experts",
+            "ai:hardware_aware_systems"
+          ],
+          "first_publication_date": "2025-09-22",
+          "selected_version": "v1",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2604.15804",
+      "title": "Qwen3.5-Omni Technical Report",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2604.15804v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1 Overview",
+        "§2.2 Audio Transformer",
+        "§2.3 Audio-visual Timestamp",
+        "§2.4 Speech Generation / ARIA",
+        "§2.5 Designs for Streaming and Concurrency",
+        "§3 Pretraining"
+      ],
+      "supported_points": [
+        "在 Qwen3-Omni 基础上加入显式时间戳与 ARIA 自适应文本—语音交错约束，处理异速 token 对齐。",
+        "音频编码 token 率降低；Hybrid MoE 和 Gated Delta Net 共同服务长序列效率。",
+        "预训练分为编码器对齐、全参数一般阶段、长上下文阶段。"
+      ],
+      "limitations": [
+        "作者明确说明 Plus/Flash 使用不同资源配置，其延迟不是严格横向可比。",
+        "数据规模、能力与长上下文上限为作者报告，未复现；本次未验证完整训练数据及权重可复现性。",
+        "2026-04 报告不代表已穷尽截至 2026-09-19 的全部多模态进展。"
+      ],
+      "concept_ids": [
+        "ai:streaming_multimodal",
+        "ai:multimodal_alignment",
+        "ai:sparse_experts",
+        "ai:compression_and_memory",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2026-04-17",
+      "selected_version": "v2",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2604.15804",
+          "title": "Qwen3.5-Omni Technical Report",
+          "year": 2026,
+          "url": "https://arxiv.org/html/2604.15804v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1 Overview",
+            "§2.2 Audio Transformer",
+            "§2.3 Audio-visual Timestamp",
+            "§2.4 Speech Generation / ARIA",
+            "§2.5 Designs for Streaming and Concurrency",
+            "§3 Pretraining"
+          ],
+          "supported_points": [
+            "在 Qwen3-Omni 基础上加入显式时间戳与 ARIA 自适应文本—语音交错约束，处理异速 token 对齐。",
+            "音频编码 token 率降低；Hybrid MoE 和 Gated Delta Net 共同服务长序列效率。",
+            "预训练分为编码器对齐、全参数一般阶段、长上下文阶段。"
+          ],
+          "limitations": [
+            "作者明确说明 Plus/Flash 使用不同资源配置，其延迟不是严格横向可比。",
+            "数据规模、能力与长上下文上限为作者报告，未复现；本次未验证完整训练数据及权重可复现性。",
+            "2026-04 报告不代表已穷尽截至 2026-09-19 的全部多模态进展。"
+          ],
+          "concept_ids": [
+            "ai:streaming_multimodal",
+            "ai:multimodal_alignment",
+            "ai:sparse_experts",
+            "ai:compression_and_memory",
+            "ai:hardware_aware_systems"
+          ],
+          "first_publication_date": "2026-04-17",
+          "selected_version": "v2",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2006.11239",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "year": 2020,
+      "url": "https://arxiv.org/html/2006.11239v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2 Background",
+        "§3.2 Reverse Process",
+        "§3.4 Simplified Training Objective",
+        "Algorithms 1–2"
+      ],
+      "supported_points": [
+        "固定正向高斯加噪允许直接采样任意噪声时刻；逆过程可参数化为噪声预测。",
+        "简化均方误差重加权变分目标，训练与多步生成有不同计算形态。"
+      ],
+      "limitations": [
+        "图像样本质量不等价于精确似然或约束满足。",
+        "噪声过程的时间参数不等于物理演化时间。"
+      ],
+      "concept_ids": [
+        "ai:diffusion",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2020-06-19",
+      "selected_version": "v2",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2006.11239",
+          "title": "Denoising Diffusion Probabilistic Models",
+          "year": 2020,
+          "url": "https://arxiv.org/html/2006.11239v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2 Background",
+            "§3.2 Reverse Process",
+            "§3.4 Simplified Training Objective",
+            "Algorithms 1–2"
+          ],
+          "supported_points": [
+            "固定正向高斯加噪允许直接采样任意噪声时刻；逆过程可参数化为噪声预测。",
+            "简化均方误差重加权变分目标，训练与多步生成有不同计算形态。"
+          ],
+          "limitations": [
+            "图像样本质量不等价于精确似然或约束满足。",
+            "噪声过程的时间参数不等于物理演化时间。"
+          ],
+          "concept_ids": [
+            "ai:diffusion",
+            "ai:hardware_aware_systems"
+          ],
+          "first_publication_date": "2020-06-19",
+          "selected_version": "v2",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2210.02747",
+      "title": "Flow Matching for Generative Modeling",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2210.02747v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3 Flow Matching",
+        "§3.1 Conditional Probability Paths and Vector Fields",
+        "§3.2 Conditional Flow Matching / Theorems 1–2",
+        "§4 / §4.1 Gaussian Conditional Paths（含 VE/VP diffusion 特例）"
+      ],
+      "supported_points": [
+        "以条件路径的速度回归替代不可计算的边缘速度目标；条件与边缘目标梯度在原文假设下相同。",
+        "学习的向量场通过连续流传输分布，生成阶段仍需求解 ODE。",
+        "高斯条件概率路径包含扩散过程对应路径作为特例，亦允许其他路径设计。"
+      ],
+      "limitations": [
+        "条件目标等价具有密度与可积等正则条件，不代表有限模型或有限数据下无误差。",
+        "simulation-free 指训练，不是生成不需数值求解；概率流不是被观测系统的动力学。"
+      ],
+      "concept_ids": [
+        "ai:flow_matching",
+        "ai:diffusion",
+        "ai:latent_generative_models"
+      ],
+      "first_publication_date": "2022-10-06",
+      "selected_version": "v2",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2210.02747",
+          "title": "Flow Matching for Generative Modeling",
+          "year": 2022,
+          "url": "https://arxiv.org/html/2210.02747v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§3 Flow Matching",
+            "§3.1 Conditional Probability Paths and Vector Fields",
+            "§3.2 Conditional Flow Matching / Theorems 1–2",
+            "§4 / §4.1 Gaussian Conditional Paths（含 VE/VP diffusion 特例）"
+          ],
+          "supported_points": [
+            "以条件路径的速度回归替代不可计算的边缘速度目标；条件与边缘目标梯度在原文假设下相同。",
+            "学习的向量场通过连续流传输分布，生成阶段仍需求解 ODE。",
+            "高斯条件概率路径包含扩散过程对应路径作为特例，亦允许其他路径设计。"
+          ],
+          "limitations": [
+            "条件目标等价具有密度与可积等正则条件，不代表有限模型或有限数据下无误差。",
+            "simulation-free 指训练，不是生成不需数值求解；概率流不是被观测系统的动力学。"
+          ],
+          "concept_ids": [
+            "ai:flow_matching",
+            "ai:diffusion",
+            "ai:latent_generative_models"
+          ],
+          "first_publication_date": "2022-10-06",
+          "selected_version": "v2",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2212.09748",
+      "title": "Scalable Diffusion Models with Transformers",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2212.09748v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.1 Preliminaries",
+        "§3.2 Diffusion Transformer Design Space"
+      ],
+      "supported_points": [
+        "DiT 把 VAE 潜变量 patch 化，以 Transformer 预测噪声及协方差。",
+        "比较条件注入方式，adaLN-Zero 用条件化仿射与零初始化残差调制；patch 尺寸改变 token 数及计算。"
+      ],
+      "limitations": [
+        "VAE 压缩质量构成生成上限的一部分。",
+        "架构可与不同生成目标组合，原文扩散实验不能直接证明任意流匹配或科学任务收益。"
+      ],
+      "concept_ids": [
+        "ai:latent_generative_models",
+        "ai:diffusion",
+        "ai:attention",
+        "ai:compression_and_memory"
+      ],
+      "first_publication_date": "2022-12-19",
+      "selected_version": "v2",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2212.09748",
+          "title": "Scalable Diffusion Models with Transformers",
+          "year": 2022,
+          "url": "https://arxiv.org/html/2212.09748v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§3.1 Preliminaries",
+            "§3.2 Diffusion Transformer Design Space"
+          ],
+          "supported_points": [
+            "DiT 把 VAE 潜变量 patch 化，以 Transformer 预测噪声及协方差。",
+            "比较条件注入方式，adaLN-Zero 用条件化仿射与零初始化残差调制；patch 尺寸改变 token 数及计算。"
+          ],
+          "limitations": [
+            "VAE 压缩质量构成生成上限的一部分。",
+            "架构可与不同生成目标组合，原文扩散实验不能直接证明任意流匹配或科学任务收益。"
+          ],
+          "concept_ids": [
+            "ai:latent_generative_models",
+            "ai:diffusion",
+            "ai:attention",
+            "ai:compression_and_memory"
+          ],
+          "first_publication_date": "2022-12-19",
+          "selected_version": "v2",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2312.00752",
+      "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2312.00752v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.1 Selection as a Means of Compression",
+        "§3.2 Improving SSMs with Selection",
+        "§3.3 Efficient Implementation of Selective SSMs"
+      ],
+      "supported_points": [
+        "使状态空间参数依赖输入，控制哪些上下文信息进入或保留于状态。",
+        "选择性扫描结合融合、并行 scan 与重计算，避免把全部扩张状态写入显存。"
+      ],
+      "limitations": [
+        "固定大小状态是信息压缩；线性序列成本不意味着保留所有任意上下文信息。",
+        "SSM 隐状态不是自动可识别的物理状态，序列化顺序会影响多维数据的归纳偏置。"
+      ],
+      "concept_ids": [
+        "ai:selective_state_space",
+        "ai:compression_and_memory",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2023-12-01",
+      "selected_version": "v2",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2312.00752",
+          "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+          "year": 2023,
+          "url": "https://arxiv.org/html/2312.00752v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§3.1 Selection as a Means of Compression",
+            "§3.2 Improving SSMs with Selection",
+            "§3.3 Efficient Implementation of Selective SSMs"
+          ],
+          "supported_points": [
+            "使状态空间参数依赖输入，控制哪些上下文信息进入或保留于状态。",
+            "选择性扫描结合融合、并行 scan 与重计算，避免把全部扩张状态写入显存。"
+          ],
+          "limitations": [
+            "固定大小状态是信息压缩；线性序列成本不意味着保留所有任意上下文信息。",
+            "SSM 隐状态不是自动可识别的物理状态，序列化顺序会影响多维数据的归纳偏置。"
+          ],
+          "concept_ids": [
+            "ai:selective_state_space",
+            "ai:compression_and_memory",
+            "ai:hardware_aware_systems"
+          ],
+          "first_publication_date": "2023-12-01",
+          "selected_version": "v2",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2405.21060",
+      "title": "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2405.21060v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§5.1 Scalar-Identity Structured State Space Models",
+        "§5.2 1-Semiseparable Structured Masked Attention",
+        "§5.3 Structured State-Space Duality"
+      ],
+      "supported_points": [
+        "标量乘单位阵形式的 SSM 与 1-半可分掩码的结构化注意力存在精确对偶。",
+        "同一结构存在递推线性形式和两两交互二次形式，为分块实现提供结构。"
+      ],
+      "limitations": [
+        "标题不能解释为任意 softmax Transformer 与任意 SSM 全等。",
+        "理论等价的子类、具体 Mamba-2 架构与实际硬件速度是不同论断。"
+      ],
+      "concept_ids": [
+        "ai:selective_state_space",
+        "ai:attention",
+        "ai:hardware_aware_systems"
+      ],
+      "first_publication_date": "2024-05-31",
+      "selected_version": "v1",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2405.21060",
+          "title": "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality",
+          "year": 2024,
+          "url": "https://arxiv.org/html/2405.21060v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§5.1 Scalar-Identity Structured State Space Models",
+            "§5.2 1-Semiseparable Structured Masked Attention",
+            "§5.3 Structured State-Space Duality"
+          ],
+          "supported_points": [
+            "标量乘单位阵形式的 SSM 与 1-半可分掩码的结构化注意力存在精确对偶。",
+            "同一结构存在递推线性形式和两两交互二次形式，为分块实现提供结构。"
+          ],
+          "limitations": [
+            "标题不能解释为任意 softmax Transformer 与任意 SSM 全等。",
+            "理论等价的子类、具体 Mamba-2 架构与实际硬件速度是不同论断。"
+          ],
+          "concept_ids": [
+            "ai:selective_state_space",
+            "ai:attention",
+            "ai:hardware_aware_systems"
+          ],
+          "first_publication_date": "2024-05-31",
+          "selected_version": "v1",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2412.19437",
+      "title": "DeepSeek-V3 Technical Report",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2412.19437v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1.1 Multi-Head Latent Attention",
+        "§2.1.2 DeepSeekMoE with Auxiliary-Loss-Free Load Balancing",
+        "§2.2 Multi-Token Prediction",
+        "§3.3 FP8 Training"
+      ],
+      "supported_points": [
+        "MLA 联合压缩 K/V 缓存；细粒度路由专家与共享专家分离总容量和激活计算。",
+        "路由偏置调整负载，仍有较小的序列级均衡辅助损失。",
+        "MTP 是额外训练目标，也可用于推测解码；FP8 训练保留敏感部分的较高精度。"
+      ],
+      "limitations": [
+        "不能把低激活参数量等同于低总内存或零通信成本。",
+        "auxiliary-loss-free 不应译成所有位置均无辅助损失。",
+        "技术报告是作者系统证据，本次未独立复现模型、成本或精度收益。"
+      ],
+      "concept_ids": [
+        "ai:sparse_experts",
+        "ai:compression_and_memory",
+        "ai:hardware_aware_systems",
+        "ai:attention"
+      ],
+      "first_publication_date": "2024-12-27",
+      "selected_version": "v2",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2412.19437",
+          "title": "DeepSeek-V3 Technical Report",
+          "year": 2024,
+          "url": "https://arxiv.org/html/2412.19437v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1.1 Multi-Head Latent Attention",
+            "§2.1.2 DeepSeekMoE with Auxiliary-Loss-Free Load Balancing",
+            "§2.2 Multi-Token Prediction",
+            "§3.3 FP8 Training"
+          ],
+          "supported_points": [
+            "MLA 联合压缩 K/V 缓存；细粒度路由专家与共享专家分离总容量和激活计算。",
+            "路由偏置调整负载，仍有较小的序列级均衡辅助损失。",
+            "MTP 是额外训练目标，也可用于推测解码；FP8 训练保留敏感部分的较高精度。"
+          ],
+          "limitations": [
+            "不能把低激活参数量等同于低总内存或零通信成本。",
+            "auxiliary-loss-free 不应译成所有位置均无辅助损失。",
+            "技术报告是作者系统证据，本次未独立复现模型、成本或精度收益。"
+          ],
+          "concept_ids": [
+            "ai:sparse_experts",
+            "ai:compression_and_memory",
+            "ai:hardware_aware_systems",
+            "ai:attention"
+          ],
+          "first_publication_date": "2024-12-27",
+          "selected_version": "v2",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2203.15556",
+      "title": "Training Compute-Optimal Large Language Models",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2203.15556v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3 Estimating the Optimal Parameter/Training Tokens Allocation",
+        "§3.1 Fixed Model Sizes",
+        "§3.3 Fitting a Parametric Loss Function",
+        "§5 Discussion and Conclusion"
+      ],
+      "supported_points": [
+        "固定训练 FLOPs 时模型规模与训练 token 需联合优化；作者多种拟合得到近似共同扩大的配置。",
+        "参数化损失把规模、数据与不可约项组合，用经验拟合预测计算有效前沿。"
+      ],
+      "limitations": [
+        "作者指出大模型验证点少、幂律曲率与不足一个 epoch 的分析范围。",
+        "结论不直接覆盖推理生命周期预算、任意数据质量及重复训练。"
+      ],
+      "concept_ids": [
+        "ai:scaling_laws",
+        "ai:data_curation"
+      ],
+      "first_publication_date": "2022-03-29",
+      "selected_version": "v1",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2203.15556",
+          "title": "Training Compute-Optimal Large Language Models",
+          "year": 2022,
+          "url": "https://arxiv.org/html/2203.15556v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§3 Estimating the Optimal Parameter/Training Tokens Allocation",
+            "§3.1 Fixed Model Sizes",
+            "§3.3 Fitting a Parametric Loss Function",
+            "§5 Discussion and Conclusion"
+          ],
+          "supported_points": [
+            "固定训练 FLOPs 时模型规模与训练 token 需联合优化；作者多种拟合得到近似共同扩大的配置。",
+            "参数化损失把规模、数据与不可约项组合，用经验拟合预测计算有效前沿。"
+          ],
+          "limitations": [
+            "作者指出大模型验证点少、幂律曲率与不足一个 epoch 的分析范围。",
+            "结论不直接覆盖推理生命周期预算、任意数据质量及重复训练。"
+          ],
+          "concept_ids": [
+            "ai:scaling_laws",
+            "ai:data_curation"
+          ],
+          "first_publication_date": "2022-03-29",
+          "selected_version": "v1",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2406.11794",
+      "title": "DataComp-LM: In search of the next generation of training sets for language models",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2406.11794v4",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1 Introduction",
+        "§3.1 DCLM-Pool / Decontamination",
+        "§3.2 Competition Scales",
+        "§3.3 Benchmark Tracks",
+        "§3.4 Training",
+        "§3.5 Evaluation"
+      ],
+      "supported_points": [
+        "固定各尺度训练配方，让数据过滤与混合成为主要受控变量。",
+        "区分候选池、实际训练 token 和下游指标，并提供污染核验工具。"
+      ],
+      "limitations": [
+        "数据选择优劣依赖评价分布；所报告的小尺度排序相关性不构成普遍不变规律。",
+        "240T 是原始候选池规模，不是某个模型的训练 token 数；提供去污染工具不等于池已整体去污染。"
+      ],
+      "concept_ids": [
+        "ai:data_curation",
+        "ai:scaling_laws",
+        "ai:generalization_theory"
+      ],
+      "first_publication_date": "2024-06-17",
+      "selected_version": "v4",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2406.11794",
+          "title": "DataComp-LM: In search of the next generation of training sets for language models",
+          "year": 2024,
+          "url": "https://arxiv.org/html/2406.11794v4",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1 Introduction",
+            "§3.1 DCLM-Pool / Decontamination",
+            "§3.2 Competition Scales",
+            "§3.3 Benchmark Tracks",
+            "§3.4 Training",
+            "§3.5 Evaluation"
+          ],
+          "supported_points": [
+            "固定各尺度训练配方，让数据过滤与混合成为主要受控变量。",
+            "区分候选池、实际训练 token 和下游指标，并提供污染核验工具。"
+          ],
+          "limitations": [
+            "数据选择优劣依赖评价分布；所报告的小尺度排序相关性不构成普遍不变规律。",
+            "240T 是原始候选池规模，不是某个模型的训练 token 数；提供去污染工具不等于池已整体去污染。"
+          ],
+          "concept_ids": [
+            "ai:data_curation",
+            "ai:scaling_laws",
+            "ai:generalization_theory"
+          ],
+          "first_publication_date": "2024-06-17",
+          "selected_version": "v4",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "url:qualitypajama-iclr2026",
+      "title": "How Text Quality Interventions Reshape Neural Scaling Laws for LLMs: Empirical Study",
+      "year": 2026,
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/6544c0b53cc1ea51d0c7086b536830a8-Paper-Conference.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "p.1 Abstract（实验范围）",
+        "§2 Background, p.3（联合 scaling 拟合）",
+        "§3 QualityPajama, p.4",
+        "§4, pp.4–7（干预及验证集依赖）",
+        "§5 / Figure 5 与 §6 Discussion, p.9"
+      ],
+      "supported_points": [
+        "23 种干预数据集、2000 余模型的经验分析发现数据质量同时改变缩放律系数与指数。",
+        "数据策略排序以及模型/token 最优分配依赖资源尺度与验证域。"
+      ],
+      "limitations": [
+        "实验模型范围 100M–8B、训练 token 范围 100M–200B；超出范围的计算收益曲线为拟合外推。",
+        "上游交叉熵及 Common Crawl 派生文本实验不是所有任务的数据质量定理；本次未复算拟合和置信区间。"
+      ],
+      "concept_ids": [
+        "ai:data_curation",
+        "ai:scaling_laws",
+        "ai:generalization_theory"
+      ],
+      "first_publication_date": null,
+      "selected_version": "ICLR 2026 proceedings PDF; exact first-publication day unverified",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "url:qualitypajama-iclr2026",
+          "title": "How Text Quality Interventions Reshape Neural Scaling Laws for LLMs: Empirical Study",
+          "year": 2026,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/6544c0b53cc1ea51d0c7086b536830a8-Paper-Conference.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "p.1 Abstract（实验范围）",
+            "§2 Background, p.3（联合 scaling 拟合）",
+            "§3 QualityPajama, p.4",
+            "§4, pp.4–7（干预及验证集依赖）",
+            "§5 / Figure 5 与 §6 Discussion, p.9"
+          ],
+          "supported_points": [
+            "23 种干预数据集、2000 余模型的经验分析发现数据质量同时改变缩放律系数与指数。",
+            "数据策略排序以及模型/token 最优分配依赖资源尺度与验证域。"
+          ],
+          "limitations": [
+            "实验模型范围 100M–8B、训练 token 范围 100M–200B；超出范围的计算收益曲线为拟合外推。",
+            "上游交叉熵及 Common Crawl 派生文本实验不是所有任务的数据质量定理；本次未复算拟合和置信区间。"
+          ],
+          "concept_ids": [
+            "ai:data_curation",
+            "ai:scaling_laws",
+            "ai:generalization_theory"
+          ],
+          "first_publication_date": null,
+          "selected_version": "ICLR 2026 proceedings PDF; exact first-publication day unverified",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2407.08608",
+      "title": "FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2407.08608v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.2 GPU Hardware Characteristics and Execution Model",
+        "§2.3 Standard Attention and Flash Attention",
+        "§3.1 Producer-Consumer Asynchrony",
+        "§3.3 Low-Precision with FP8",
+        "§5 Discussion, Limitations, Conclusion"
+      ],
+      "supported_points": [
+        "FlashAttention-3 利用 Hopper 异步数据搬运、warp specialization 与矩阵乘/softmax 调度重叠。",
+        "以局部 softmax 避免中间完整矩阵的显存读写；FP8 需额外布局与数值处理。"
+      ],
+      "limitations": [
+        "保持注意力计算结构的 IO 优化不使稠密注意力 FLOPs 自动变线性。",
+        "论文指出推理优化及大规模低精度训练影响仍待研究；具体收益依赖硬件、形状和精度。"
+      ],
+      "concept_ids": [
+        "ai:hardware_aware_systems",
+        "ai:attention",
+        "ai:compression_and_memory"
+      ],
+      "first_publication_date": "2024-07-11",
+      "selected_version": "v2",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2407.08608",
+          "title": "FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision",
+          "year": 2024,
+          "url": "https://arxiv.org/html/2407.08608v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.2 GPU Hardware Characteristics and Execution Model",
+            "§2.3 Standard Attention and Flash Attention",
+            "§3.1 Producer-Consumer Asynchrony",
+            "§3.3 Low-Precision with FP8",
+            "§5 Discussion, Limitations, Conclusion"
+          ],
+          "supported_points": [
+            "FlashAttention-3 利用 Hopper 异步数据搬运、warp specialization 与矩阵乘/softmax 调度重叠。",
+            "以局部 softmax 避免中间完整矩阵的显存读写；FP8 需额外布局与数值处理。"
+          ],
+          "limitations": [
+            "保持注意力计算结构的 IO 优化不使稠密注意力 FLOPs 自动变线性。",
+            "论文指出推理优化及大规模低精度训练影响仍待研究；具体收益依赖硬件、形状和精度。"
+          ],
+          "concept_ids": [
+            "ai:hardware_aware_systems",
+            "ai:attention",
+            "ai:compression_and_memory"
+          ],
+          "first_publication_date": "2024-07-11",
+          "selected_version": "v2",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:1812.11118",
+      "title": "Reconciling modern machine learning practice and the bias-variance trade-off",
+      "year": 2018,
+      "url": "https://arxiv.org/html/1812.11118v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1 Introduction / Figure 1",
+        "§4 Concluding Thoughts / Inductive Bias"
+      ],
+      "supported_points": [
+        "插值阈值附近的测试风险峰值可接续更高容量区的第二次下降。",
+        "作者用归纳偏置和较小函数范数讨论为何零训练误差不足以判定泛化。"
+      ],
+      "limitations": [
+        "现象与有限类理论不是任意深度网络的普适保证。",
+        "通常同分布设置，不能据此承诺分布外、因果或物理稳定性。"
+      ],
+      "concept_ids": [
+        "ai:generalization_theory",
+        "ai:scaling_laws"
+      ],
+      "first_publication_date": "2018-12-28",
+      "selected_version": "v2",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:1812.11118",
+          "title": "Reconciling modern machine learning practice and the bias-variance trade-off",
+          "year": 2018,
+          "url": "https://arxiv.org/html/1812.11118v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1 Introduction / Figure 1",
+            "§4 Concluding Thoughts / Inductive Bias"
+          ],
+          "supported_points": [
+            "插值阈值附近的测试风险峰值可接续更高容量区的第二次下降。",
+            "作者用归纳偏置和较小函数范数讨论为何零训练误差不足以判定泛化。"
+          ],
+          "limitations": [
+            "现象与有限类理论不是任意深度网络的普适保证。",
+            "通常同分布设置，不能据此承诺分布外、因果或物理稳定性。"
+          ],
+          "concept_ids": [
+            "ai:generalization_theory",
+            "ai:scaling_laws"
+          ],
+          "first_publication_date": "2018-12-28",
+          "selected_version": "v2",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2301.08243",
+      "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2301.08243v3",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2背景；§3 Method；§9 Ablations（目标空间与遮挡策略）"
+      ],
+      "supported_points": [
+        "从可见上下文预测EMA目标编码器产生的遮挡区域表示；位置条件控制预测目标。",
+        "§9把潜空间目标与像素目标、不同mask策略分开消融。"
+      ],
+      "limitations": [
+        "原文为图像表示任务；语义表示收益不是PDE细尺度、守恒或可逆性证据。",
+        "本轮未完整阅读附录、审计代码或复现实验。"
+      ],
+      "concept_ids": [
+        "ai:predictive_latents",
+        "ai:self_supervised_representation"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2023-01-19",
+      "selected_version": "v3",
+      "publication_status": "CVPR 2023；会议原文页面已核对",
+      "related_urls": [
+        "https://openaccess.thecvf.com/content/CVPR2023/papers/Assran_Self-Supervised_Learning_From_Images_With_a_Joint-Embedding_Predictive_Architecture_CVPR_2023_paper.pdf"
+      ],
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2301.08243",
+          "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
+          "year": 2023,
+          "url": "https://arxiv.org/html/2301.08243v3",
+          "accessed_at": "2026-10-02",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2背景；§3 Method；§9 Ablations（目标空间与遮挡策略）"
+          ],
+          "supported_points": [
+            "从可见上下文预测EMA目标编码器产生的遮挡区域表示；位置条件控制预测目标。",
+            "§9把潜空间目标与像素目标、不同mask策略分开消融。"
+          ],
+          "limitations": [
+            "原文为图像表示任务；语义表示收益不是PDE细尺度、守恒或可逆性证据。",
+            "本轮未完整阅读附录、审计代码或复现实验。"
+          ],
+          "concept_ids": [
+            "ai:predictive_latents",
+            "ai:self_supervised_representation"
+          ],
+          "update_kind": "foundational_backfill",
+          "code_inspection": "not_performed",
+          "reproduction": "not_performed",
+          "first_publication_date": "2023-01-19",
+          "selected_version": "v3",
+          "publication_status": "CVPR 2023；会议原文页面已核对",
+          "related_urls": [
+            "https://openaccess.thecvf.com/content/CVPR2023/papers/Assran_Self-Supervised_Learning_From_Images_With_a_Joint-Embedding_Predictive_Architecture_CVPR_2023_paper.pdf"
+          ],
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2609.20800",
+      "title": "JEPA-Anything: Learning Predictive Models across Different Worlds",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2609.20800v1",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–2.4：OPF、正交/活性约束、伪逆合成；§3.1表2；§3.3.1–3.3.2表5–8"
+      ],
+      "supported_points": [
+        "将目标潜状态投影到多组子空间，以专用分支预测，并用伪逆合成；额外约束因子及编码器活性。",
+        "§3.3.2区分PDEBench、APEBench及参数匹配的Burgers H20/H50协议，报告作者实验收益。"
+      ],
+      "limitations": [
+        "多领域共用学习原则不等于一个联合预训练检查点跨领域零样本泛化；编码器与任务接口仍按域设置。",
+        "正交因子不证明与物理机制一一对应；H50相对收益较H20缩小。生物学实验与全附录本轮未审读。"
+      ],
+      "concept_ids": [
+        "ai:factorized_predictive_states",
+        "ai:predictive_latents",
+        "bridge:task_sufficient_state"
+      ],
+      "update_kind": "recent_publication",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2026-09-17",
+      "selected_version": "v1",
+      "publication_status": "arXiv预印本；未核到正式接收事件",
+      "official_code_url": "https://github.com/Gen-Verse/JEPA-Anything",
+      "tracks": [
+        "ai_foundations"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2609.20800",
+          "title": "JEPA-Anything: Learning Predictive Models across Different Worlds",
+          "year": 2026,
+          "url": "https://arxiv.org/html/2609.20800v1",
+          "accessed_at": "2026-10-02",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1–2.4：OPF、正交/活性约束、伪逆合成；§3.1表2；§3.3.1–3.3.2表5–8"
+          ],
+          "supported_points": [
+            "将目标潜状态投影到多组子空间，以专用分支预测，并用伪逆合成；额外约束因子及编码器活性。",
+            "§3.3.2区分PDEBench、APEBench及参数匹配的Burgers H20/H50协议，报告作者实验收益。"
+          ],
+          "limitations": [
+            "多领域共用学习原则不等于一个联合预训练检查点跨领域零样本泛化；编码器与任务接口仍按域设置。",
+            "正交因子不证明与物理机制一一对应；H50相对收益较H20缩小。生物学实验与全附录本轮未审读。"
+          ],
+          "concept_ids": [
+            "ai:factorized_predictive_states",
+            "ai:predictive_latents",
+            "bridge:task_sufficient_state"
+          ],
+          "update_kind": "recent_publication",
+          "code_inspection": "not_performed",
+          "reproduction": "not_performed",
+          "first_publication_date": "2026-09-17",
+          "selected_version": "v1",
+          "publication_status": "arXiv预印本；未核到正式接收事件",
+          "official_code_url": "https://github.com/Gen-Verse/JEPA-Anything",
+          "track": "ai_foundations"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2201.11903",
+      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2201.11903v6",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v6，2023-01-10；§1、§2、§3.1"
+      ],
+      "supported_points": [
+        "通过少样本推理轨迹提示把计算展开为中间文本；无需为该提示更新模型权重。"
+      ],
+      "limitations": [
+        "原文任务与规模条件不等同普遍推理保证；可读轨迹不证明内部计算忠实。"
+      ],
+      "concept_ids": [
+        "ai:reasoning_traces",
+        "ai:test_time_compute"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2201.11903",
+          "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "year": 2022,
+          "url": "https://arxiv.org/html/2201.11903v6",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v6，2023-01-10；§1、§2、§3.1"
+          ],
+          "supported_points": [
+            "通过少样本推理轨迹提示把计算展开为中间文本；无需为该提示更新模型权重。"
+          ],
+          "limitations": [
+            "原文任务与规模条件不等同普遍推理保证；可读轨迹不证明内部计算忠实。"
+          ],
+          "concept_ids": [
+            "ai:reasoning_traces",
+            "ai:test_time_compute"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2305.18290",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2305.18290v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3、§4，式(3)–(7)；§5开头"
+      ],
+      "supported_points": [
+        "用KL约束奖励最优化的策略—奖励变换，直接拟合成对偏好，省去显式奖励模型与在线RL循环。"
+      ],
+      "limitations": [
+        "推导依赖偏好模型、参考策略及数据分布条件；偏好一致不代表客观正确。"
+      ],
+      "concept_ids": [
+        "ai:preference_optimization"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2305.18290",
+          "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+          "year": 2023,
+          "url": "https://arxiv.org/html/2305.18290v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§3、§4，式(3)–(7)；§5开头"
+          ],
+          "supported_points": [
+            "用KL约束奖励最优化的策略—奖励变换，直接拟合成对偏好，省去显式奖励模型与在线RL循环。"
+          ],
+          "limitations": [
+            "推导依赖偏好模型、参考策略及数据分布条件；偏好一致不代表客观正确。"
+          ],
+          "concept_ids": [
+            "ai:preference_optimization"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2305.20050",
+      "title": "Let's Verify Step by Step",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2305.20050v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–§2.6；§3–§5；§6.3"
+      ],
+      "supported_points": [
+        "比较过程和结果监督的奖励模型，在固定生成器候选重排中评估；PRM监督对步骤评价。"
+      ],
+      "limitations": [
+        "主要结果不是在线RL训练生成器；78%对应500道代表性测试题与候选选择，不是整个MATH单次生成率；大规模监督数据不能视作严格同量对照。"
+      ],
+      "concept_ids": [
+        "ai:process_verification",
+        "ai:test_time_compute"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2305.20050",
+          "title": "Let's Verify Step by Step",
+          "year": 2023,
+          "url": "https://arxiv.org/html/2305.20050v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1–§2.6；§3–§5；§6.3"
+          ],
+          "supported_points": [
+            "比较过程和结果监督的奖励模型，在固定生成器候选重排中评估；PRM监督对步骤评价。"
+          ],
+          "limitations": [
+            "主要结果不是在线RL训练生成器；78%对应500道代表性测试题与候选选择，不是整个MATH单次生成率；大规模监督数据不能视作严格同量对照。"
+          ],
+          "concept_ids": [
+            "ai:process_verification",
+            "ai:test_time_compute"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2408.03314",
+      "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2408.03314v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1–§4；§5.1–§5.2；图1与§7结果概览"
+      ],
+      "supported_points": [
+        "区分提议分布修订与验证器搜索，按题目难度配置推理计算；追加推理与预训练的收益依任务与调用负载变化。"
+      ],
+      "limitations": [
+        "PaLM 2-S*与MATH 500题设定；修订/验证能力需专门训练；难度估计额外成本未计入主实验，不能当部署总成本最优定律。"
+      ],
+      "concept_ids": [
+        "ai:test_time_compute",
+        "ai:process_verification"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2408.03314",
+          "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+          "year": 2024,
+          "url": "https://arxiv.org/html/2408.03314v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1–§4；§5.1–§5.2；图1与§7结果概览"
+          ],
+          "supported_points": [
+            "区分提议分布修订与验证器搜索，按题目难度配置推理计算；追加推理与预训练的收益依任务与调用负载变化。"
+          ],
+          "limitations": [
+            "PaLM 2-S*与MATH 500题设定；修订/验证能力需专门训练；难度估计额外成本未计入主实验，不能当部署总成本最优定律。"
+          ],
+          "concept_ids": [
+            "ai:test_time_compute",
+            "ai:process_verification"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2501.12948",
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2501.12948v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–§2.3概览；§2.2.1–§2.2.4；§4.2、§5"
+      ],
+      "supported_points": [
+        "R1-Zero从预训练基座直接进行GRPO，准确性与格式规则奖励驱动更新；R1另含冷启动、SFT和多阶段RL。"
+      ],
+      "limitations": [
+        "无前置SFT不等于无预训练知识；R1与R1-Zero必须区分；长推理不自动改善函数调用、多轮或软件工程。"
+      ],
+      "concept_ids": [
+        "ai:verifiable_rl",
+        "ai:reasoning_traces"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2501.12948",
+          "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2501.12948v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1–§2.3概览；§2.2.1–§2.2.4；§4.2、§5"
+          ],
+          "supported_points": [
+            "R1-Zero从预训练基座直接进行GRPO，准确性与格式规则奖励驱动更新；R1另含冷启动、SFT和多阶段RL。"
+          ],
+          "limitations": [
+            "无前置SFT不等于无预训练知识；R1与R1-Zero必须区分；长推理不自动改善函数调用、多轮或软件工程。"
+          ],
+          "concept_ids": [
+            "ai:verifiable_rl",
+            "ai:reasoning_traces"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2504.13837",
+      "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2504.13837v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1；§2.1–§2.2；§3.1实验设定；表1、图1–2"
+      ],
+      "supported_points": [
+        "用pass@k比较基座与RL模型，所测条件下小k成功率提升可伴随大k可解题覆盖下降。"
+      ],
+      "limitations": [
+        "有限采样、提示、温度和检验器决定结论边界；大k不是数学能力上界，也不是实际可部署的正确候选选择；不能证明所有RL无法产生新能力。"
+      ],
+      "concept_ids": [
+        "ai:verifiable_rl",
+        "ai:execution_evaluation"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2504.13837",
+          "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2504.13837v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1；§2.1–§2.2；§3.1实验设定；表1、图1–2"
+          ],
+          "supported_points": [
+            "用pass@k比较基座与RL模型，所测条件下小k成功率提升可伴随大k可解题覆盖下降。"
+          ],
+          "limitations": [
+            "有限采样、提示、温度和检验器决定结论边界；大k不是数学能力上界，也不是实际可部署的正确候选选择；不能证明所有RL无法产生新能力。"
+          ],
+          "concept_ids": [
+            "ai:verifiable_rl",
+            "ai:execution_evaluation"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2605.10325",
+      "title": "Verifiable Process Rewards for Agentic Reasoning",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2605.10325v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "初读v1（2026-05-11）：§2.1–§2.4，命题1–3；§3表1–2",
+        "2026-09-19定向复核v2（2026-05-27）：§2.1–§2.4，命题1–3；§3表1–2及§3.1–§3.3相关实验说明",
+        "arXiv v2版本说明：更正minor typos及LLM-assisted data extraction errors；未进行全篇版本差异审计"
+      ],
+      "supported_points": [
+        "用搜索、约束或后验算法构造逐回合奖励，改善结构化游戏中的信用分配；近似验证器误差影响梯度偏差。",
+        "定向复核确认v2保留本文所用命题1–3前提与公式；表1评估说明由3次×100局改为5次×1024局，表2 MATH-500/GPQA-D重复次数由5改为10并更正部分数值。",
+        "v2表2三种VPR模型平均分62.17/62.35/62.59均高于基座60.92；这不是所有单项任务均提高。"
+      ],
+      "limitations": [
+        "井字棋、数独、扫雷为主要受控环境；固定状态分布与有界score gradient是偏差界前提；线性对指数比较限于独立Bernoulli且共享logit的简化情形；过程最优性依oracle定义。",
+        "v2表2中井字棋/数独训练的VPR在MATH-500为83.80/83.54，均低于基座84.40；平均改善不能扩张为普遍单项迁移。",
+        "修订后评估次数和数值来自原文，未重跑实验或检查原始日志；不声称已定位所有数据提取错误。"
+      ],
+      "concept_ids": [
+        "ai:process_verification",
+        "ai:verifiable_rl",
+        "ai:tool_agents"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2605.10325",
+          "title": "Verifiable Process Rewards for Agentic Reasoning",
+          "year": 2026,
+          "url": "https://arxiv.org/html/2605.10325v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "初读v1（2026-05-11）：§2.1–§2.4，命题1–3；§3表1–2",
+            "2026-09-19定向复核v2（2026-05-27）：§2.1–§2.4，命题1–3；§3表1–2及§3.1–§3.3相关实验说明",
+            "arXiv v2版本说明：更正minor typos及LLM-assisted data extraction errors；未进行全篇版本差异审计"
+          ],
+          "supported_points": [
+            "用搜索、约束或后验算法构造逐回合奖励，改善结构化游戏中的信用分配；近似验证器误差影响梯度偏差。",
+            "定向复核确认v2保留本文所用命题1–3前提与公式；表1评估说明由3次×100局改为5次×1024局，表2 MATH-500/GPQA-D重复次数由5改为10并更正部分数值。",
+            "v2表2三种VPR模型平均分62.17/62.35/62.59均高于基座60.92；这不是所有单项任务均提高。"
+          ],
+          "limitations": [
+            "井字棋、数独、扫雷为主要受控环境；固定状态分布与有界score gradient是偏差界前提；线性对指数比较限于独立Bernoulli且共享logit的简化情形；过程最优性依oracle定义。",
+            "v2表2中井字棋/数独训练的VPR在MATH-500为83.80/83.54，均低于基座84.40；平均改善不能扩张为普遍单项迁移。",
+            "修订后评估次数和数值来自原文，未重跑实验或检查原始日志；不声称已定位所有数据提取错误。"
+          ],
+          "concept_ids": [
+            "ai:process_verification",
+            "ai:verifiable_rl",
+            "ai:tool_agents"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2606.09380",
+      "title": "Reasoning Arena: Trace Tournaments When Verifiable Rewards Fall Short",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2606.09380v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1，2026-06-08；§3、§4；§5表1–2"
+      ],
+      "supported_points": [
+        "相同奖励组的组内优势为零；仅将这些组路由给轨迹比较评审，使用动态对手与Bradley–Terry排序，底层为CISPO。"
+      ],
+      "limitations": [
+        "补入的是学习型judge偏好，不是新增确定性正确性证据；零优势指奖励驱动项而非所有正则梯度；表1平均增益7.6是百分点，成本受生成长度及评审开销影响。"
+      ],
+      "concept_ids": [
+        "ai:verifiable_rl",
+        "ai:preference_optimization",
+        "ai:process_verification"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2606.09380",
+          "title": "Reasoning Arena: Trace Tournaments When Verifiable Rewards Fall Short",
+          "year": 2026,
+          "url": "https://arxiv.org/html/2606.09380v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v1，2026-06-08；§3、§4；§5表1–2"
+          ],
+          "supported_points": [
+            "相同奖励组的组内优势为零；仅将这些组路由给轨迹比较评审，使用动态对手与Bradley–Terry排序，底层为CISPO。"
+          ],
+          "limitations": [
+            "补入的是学习型judge偏好，不是新增确定性正确性证据；零优势指奖励驱动项而非所有正则梯度；表1平均增益7.6是百分点，成本受生成长度及评审开销影响。"
+          ],
+          "concept_ids": [
+            "ai:verifiable_rl",
+            "ai:preference_optimization",
+            "ai:process_verification"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2210.03629",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2210.03629v3",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v3，2023-03-10；§1、§2；§3–§4任务概览"
+      ],
+      "supported_points": [
+        "交替产生文本推理、工具动作和环境观察，用外部反馈更新后续决策上下文。"
+      ],
+      "limitations": [
+        "原文少样本与特定工具环境结果不能推出一般长期自治；文本轨迹易读不等于因果忠实解释；工具观察本身也可不可靠。"
+      ],
+      "concept_ids": [
+        "ai:tool_agents",
+        "ai:reasoning_traces"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2210.03629",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "year": 2022,
+          "url": "https://arxiv.org/html/2210.03629v3",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v3，2023-03-10；§1、§2；§3–§4任务概览"
+          ],
+          "supported_points": [
+            "交替产生文本推理、工具动作和环境观察，用外部反馈更新后续决策上下文。"
+          ],
+          "limitations": [
+            "原文少样本与特定工具环境结果不能推出一般长期自治；文本轨迹易读不等于因果忠实解释；工具观察本身也可不可靠。"
+          ],
+          "concept_ids": [
+            "ai:tool_agents",
+            "ai:reasoning_traces"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2310.06770",
+      "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2310.06770v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–§2.3；§3；§4.1"
+      ],
+      "supported_points": [
+        "以真实issue、历史仓库状态和测试执行评估补丁；v1含12个Python仓库的2294个任务。"
+      ],
+      "limitations": [
+        "只记录v1而非后来的Verified/Lite或当前排行榜；通过给定测试不等于完整需求正确、无回归或无污染；检索和环境设置影响成绩。"
+      ],
+      "concept_ids": [
+        "ai:execution_evaluation",
+        "ai:tool_agents"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2310.06770",
+          "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+          "year": 2023,
+          "url": "https://arxiv.org/html/2310.06770v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1–§2.3；§3；§4.1"
+          ],
+          "supported_points": [
+            "以真实issue、历史仓库状态和测试执行评估补丁；v1含12个Python仓库的2294个任务。"
+          ],
+          "limitations": [
+            "只记录v1而非后来的Verified/Lite或当前排行榜；通过给定测试不等于完整需求正确、无回归或无污染；检索和环境设置影响成绩。"
+          ],
+          "concept_ids": [
+            "ai:execution_evaluation",
+            "ai:tool_agents"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2404.07972",
+      "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2404.07972v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1；§2.1–§2.3；§5小节目录与原文摘要的失败归因"
+      ],
+      "supported_points": [
+        "将计算机操作形式化为POMDP，支持虚拟机初始化、动作执行与任务专用终态检查；v1为369任务。"
+      ],
+      "limitations": [
+        "得分依观察形式、步数、环境和检查器；2024原始基线不是2026能力水平；终态检查并不自动覆盖过程副作用。"
+      ],
+      "concept_ids": [
+        "ai:execution_evaluation",
+        "ai:tool_agents"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2404.07972",
+          "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+          "year": 2024,
+          "url": "https://arxiv.org/html/2404.07972v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1；§2.1–§2.3；§5小节目录与原文摘要的失败归因"
+          ],
+          "supported_points": [
+            "将计算机操作形式化为POMDP，支持虚拟机初始化、动作执行与任务专用终态检查；v1为369任务。"
+          ],
+          "limitations": [
+            "得分依观察形式、步数、环境和检查器；2024原始基线不是2026能力水平；终态检查并不自动覆盖过程副作用。"
+          ],
+          "concept_ids": [
+            "ai:execution_evaluation",
+            "ai:tool_agents"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2301.04104",
+      "title": "Mastering Diverse Domains through World Models",
+      "year": 2023,
+      "url": "https://arxiv.org/pdf/2301.04104v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1 PDF印刷页1–7：概览、Symlog Predictions、World Model Learning、Actor Critic Learning"
+      ],
+      "supported_points": [
+        "DreamerV3用RSSM和想象轨迹训练actor–critic，借助尺度处理与KL稳定化复用超参数；交互时actor选动作而不做前瞻搜索。"
+      ],
+      "limitations": [
+        "跨域复用算法与超参数不等于同一组权重零样本解决所有任务；模型仍依赖实际环境数据；想象误差与奖励设定限制策略。"
+      ],
+      "concept_ids": [
+        "ai:world_models",
+        "ai:embodied_policies"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2301.04104",
+          "title": "Mastering Diverse Domains through World Models",
+          "year": 2023,
+          "url": "https://arxiv.org/pdf/2301.04104v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v1 PDF印刷页1–7：概览、Symlog Predictions、World Model Learning、Actor Critic Learning"
+          ],
+          "supported_points": [
+            "DreamerV3用RSSM和想象轨迹训练actor–critic，借助尺度处理与KL稳定化复用超参数；交互时actor选动作而不做前瞻搜索。"
+          ],
+          "limitations": [
+            "跨域复用算法与超参数不等于同一组权重零样本解决所有任务；模型仍依赖实际环境数据；想象误差与奖励设定限制策略。"
+          ],
+          "concept_ids": [
+            "ai:world_models",
+            "ai:embodied_policies"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2501.10100",
+      "title": "Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2501.10100v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§III-A–III-C；§IV-E相关结果；§V"
+      ],
+      "supported_points": [
+        "历史上下文与预测反馈的双自回归训练面向部分可观测机器人动力学；MBPO-PPO利用模型轨迹更新策略，展示ANYmal D部署。"
+      ],
+      "limitations": [
+        "世界模型先用模拟数据预训练；仍落后于高保真模拟器中充分调优的无模型RL；从零训练与硬件安全在线适应尚未解决。"
+      ],
+      "concept_ids": [
+        "ai:world_models",
+        "ai:embodied_policies"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2501.10100",
+          "title": "Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2501.10100v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§III-A–III-C；§IV-E相关结果；§V"
+          ],
+          "supported_points": [
+            "历史上下文与预测反馈的双自回归训练面向部分可观测机器人动力学；MBPO-PPO利用模型轨迹更新策略，展示ANYmal D部署。"
+          ],
+          "limitations": [
+            "世界模型先用模拟数据预训练；仍落后于高保真模拟器中充分调优的无模型RL；从零训练与硬件安全在线适应尚未解决。"
+          ],
+          "concept_ids": [
+            "ai:world_models",
+            "ai:embodied_policies"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2504.16054",
+      "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§II–§IV概览；§V-B–§V-E；§VI；附录A-D评测取消说明"
+      ],
+      "supported_points": [
+        "跨机器人、环境、网络与高层语义数据联合训练；同一模型先推子任务，再以动作expert生成连续动作，评估未见家庭环境。"
+      ],
+      "limitations": [
+        "未见家庭不等于任意世界；网络数据收益依评测指标，高层监督本身贡献不能全归推理时展开；部分取消episode被移除；新把手、遮挡、记忆与复杂指令仍受限。"
+      ],
+      "concept_ids": [
+        "ai:embodied_policies",
+        "ai:reasoning_traces"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2504.16054",
+          "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2504.16054v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§II–§IV概览；§V-B–§V-E；§VI；附录A-D评测取消说明"
+          ],
+          "supported_points": [
+            "跨机器人、环境、网络与高层语义数据联合训练；同一模型先推子任务，再以动作expert生成连续动作，评估未见家庭环境。"
+          ],
+          "limitations": [
+            "未见家庭不等于任意世界；网络数据收益依评测指标，高层监督本身贡献不能全归推理时展开；部分取消episode被移除；新把手、遮挡、记忆与复杂指令仍受限。"
+          ],
+          "concept_ids": [
+            "ai:embodied_policies",
+            "ai:reasoning_traces"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2102.11107",
+      "title": "Towards Causal Representation Learning",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2102.11107v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§II；§V后半；§VI–§VII开头"
+      ],
+      "supported_points": [
+        "区分观测、干预、反事实；提出独立机制和稀疏机制变化视角，将学习变量与学习因果结构结合。"
+      ],
+      "limitations": [
+        "原文属于概念/综述性论证，不是统一实证突破；因果识别需要结构假设或环境/干预信息；预测准确的微分方程也可能不保留真实因果机制。"
+      ],
+      "concept_ids": [
+        "ai:causal_representation",
+        "ai:world_models"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2102.11107",
+          "title": "Towards Causal Representation Learning",
+          "year": 2021,
+          "url": "https://arxiv.org/html/2102.11107v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§II；§V后半；§VI–§VII开头"
+          ],
+          "supported_points": [
+            "区分观测、干预、反事实；提出独立机制和稀疏机制变化视角，将学习变量与学习因果结构结合。"
+          ],
+          "limitations": [
+            "原文属于概念/综述性论证，不是统一实证突破；因果识别需要结构假设或环境/干预信息；预测准确的微分方程也可能不保留真实因果机制。"
+          ],
+          "concept_ids": [
+            "ai:causal_representation",
+            "ai:world_models"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2107.07511",
+      "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2107.07511v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1–§1.1；§3.3；§4.1–§4.2"
+      ],
+      "supported_points": [
+        "用独立校准数据的非一致性分数分位数构造预测集合；交换性下有有限样本边际覆盖。"
+      ],
+      "limitations": [
+        "distribution-free不取消交换性；不保证每输入条件覆盖或任意OOD有效；必须连同集合大小评估，高维同时覆盖可能很宽。"
+      ],
+      "concept_ids": [
+        "ai:calibrated_uncertainty"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2107.07511",
+          "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+          "year": 2021,
+          "url": "https://arxiv.org/html/2107.07511v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1–§1.1；§3.3；§4.1–§4.2"
+          ],
+          "supported_points": [
+            "用独立校准数据的非一致性分数分位数构造预测集合；交换性下有有限样本边际覆盖。"
+          ],
+          "limitations": [
+            "distribution-free不取消交换性；不保证每输入条件覆盖或任意OOD有效；必须连同集合大小评估，高维同时覆盖可能很宽。"
+          ],
+          "concept_ids": [
+            "ai:calibrated_uncertainty"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2604.23987",
+      "title": "Continual Calibration: Coverage Can Collapse Before Accuracy in Lifelong LLM Fine-Tuning",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2604.23987v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1，2026-04-27；§2；§4.2–§4.6；§5定理6、7和命题8；§6"
+      ],
+      "supported_points": [
+        "持续微调时分数分布可漂移而argmax近似不变；保留每任务校准缓冲并按当前模型重算阈值，以恢复任务内覆盖。"
+      ],
+      "limitations": [
+        "主要是分类/多选任务；定理依固定当前模型、保留数据与目标样本交换性；无梯度校准不等于无需标签或计算；开放生成仅探索，不能套用全部形式保证。"
+      ],
+      "concept_ids": [
+        "ai:continual_adaptation",
+        "ai:calibrated_uncertainty"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2604.23987",
+          "title": "Continual Calibration: Coverage Can Collapse Before Accuracy in Lifelong LLM Fine-Tuning",
+          "year": 2026,
+          "url": "https://arxiv.org/html/2604.23987v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v1，2026-04-27；§2；§4.2–§4.6；§5定理6、7和命题8；§6"
+          ],
+          "supported_points": [
+            "持续微调时分数分布可漂移而argmax近似不变；保留每任务校准缓冲并按当前模型重算阈值，以恢复任务内覆盖。"
+          ],
+          "limitations": [
+            "主要是分类/多选任务；定理依固定当前模型、保留数据与目标样本交换性；无梯度校准不等于无需标签或计算；开放生成仅探索，不能套用全部形式保证。"
+          ],
+          "concept_ids": [
+            "ai:continual_adaptation",
+            "ai:calibrated_uncertainty"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2401.05566",
+      "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2401.05566v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1；§3.2–§3.3；§6"
+      ],
+      "supported_points": [
+        "人工构造的条件后门可在所测安全微调和对抗训练后保留，触发分布与通常评测分布的区别影响结论。"
+      ],
+      "limitations": [
+        "是存在性和方法局限研究，未估计自然训练自发欺骗的频率；隐蔽文本也不是部署模型已具恶意目标的证据。"
+      ],
+      "concept_ids": [
+        "ai:behavioral_safety",
+        "ai:execution_evaluation"
+      ],
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2401.05566",
+          "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+          "year": 2024,
+          "url": "https://arxiv.org/html/2401.05566v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1；§3.2–§3.3；§6"
+          ],
+          "supported_points": [
+            "人工构造的条件后门可在所测安全微调和对抗训练后保留，触发分布与通常评测分布的区别影响结论。"
+          ],
+          "limitations": [
+            "是存在性和方法局限研究，未估计自然训练自发欺骗的频率；隐蔽文本也不是部署模型已具恶意目标的证据。"
+          ],
+          "concept_ids": [
+            "ai:behavioral_safety",
+            "ai:execution_evaluation"
+          ],
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2506.09985",
+      "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2506.09985v1",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.1 Action-Conditioned World Model Training；§3.2规划接口；§4.2表2–3；§4.3 Limitations"
+      ],
+      "supported_points": [
+        "冻结视频编码器后，用含动作和状态信息的数据学习因果预测器，接入MPC闭环。"
+      ],
+      "limitations": [
+        "无奖励标签不表示没有动作/状态信息；原文约62小时机器人数据具有末端状态记录。",
+        "相机位置敏感、长程误差积累及图像目标要求均在§4.3中说明；不是任意物理系统上的通用控制器。"
+      ],
+      "concept_ids": [
+        "ai:predictive_latents",
+        "ai:world_models",
+        "bridge:closed_loop"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "selected_version": "v1",
+      "publication_status": "本轮按arXiv所读版本记录；未另核正式发表状态",
+      "first_publication_date": "2025-06-11",
+      "selected_version_date": "2025-06-11",
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2506.09985",
+          "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2506.09985v1",
+          "accessed_at": "2026-10-02",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§3.1 Action-Conditioned World Model Training；§3.2规划接口；§4.2表2–3；§4.3 Limitations"
+          ],
+          "supported_points": [
+            "冻结视频编码器后，用含动作和状态信息的数据学习因果预测器，接入MPC闭环。"
+          ],
+          "limitations": [
+            "无奖励标签不表示没有动作/状态信息；原文约62小时机器人数据具有末端状态记录。",
+            "相机位置敏感、长程误差积累及图像目标要求均在§4.3中说明；不是任意物理系统上的通用控制器。"
+          ],
+          "concept_ids": [
+            "ai:predictive_latents",
+            "ai:world_models",
+            "bridge:closed_loop"
+          ],
+          "update_kind": "foundational_backfill",
+          "code_inspection": "not_performed",
+          "reproduction": "not_performed",
+          "selected_version": "v1",
+          "publication_status": "本轮按arXiv所读版本记录；未另核正式发表状态",
+          "first_publication_date": "2025-06-11",
+          "selected_version_date": "2025-06-11",
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2112.04426",
+      "title": "Improving language models by retrieving from trillions of tokens",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2112.04426v3",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.3–2.4 检索与chunked cross-attention；Algorithm 1；§2.6 数据泄漏量化"
+      ],
+      "supported_points": [
+        "RETRO用冻结检索器取回邻近文本，由可训练编码器与分块交叉注意力融入自回归预测。",
+        "§2.6按检索到的重合子串分层评测，显式处理测试数据与外部记忆的重合。"
+      ],
+      "limitations": [
+        "文本匹配不直接定义PDE算子、量纲或边界条件的相容性。",
+        "未复核全套性能/成本实验；检索库、编码和IO成本需要另计。"
+      ],
+      "concept_ids": [
+        "ai:retrieval_memory",
+        "ai:compression_and_memory",
+        "ai:data_curation"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "selected_version": "v3",
+      "publication_status": "本轮按arXiv所读版本记录；未另核正式发表状态",
+      "first_publication_date": "2021-12-08",
+      "selected_version_date": "2022-02-07",
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2112.04426",
+          "title": "Improving language models by retrieving from trillions of tokens",
+          "year": 2021,
+          "url": "https://arxiv.org/html/2112.04426v3",
+          "accessed_at": "2026-10-02",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.3–2.4 检索与chunked cross-attention；Algorithm 1；§2.6 数据泄漏量化"
+          ],
+          "supported_points": [
+            "RETRO用冻结检索器取回邻近文本，由可训练编码器与分块交叉注意力融入自回归预测。",
+            "§2.6按检索到的重合子串分层评测，显式处理测试数据与外部记忆的重合。"
+          ],
+          "limitations": [
+            "文本匹配不直接定义PDE算子、量纲或边界条件的相容性。",
+            "未复核全套性能/成本实验；检索库、编码和IO成本需要另计。"
+          ],
+          "concept_ids": [
+            "ai:retrieval_memory",
+            "ai:compression_and_memory",
+            "ai:data_curation"
+          ],
+          "update_kind": "foundational_backfill",
+          "code_inspection": "not_performed",
+          "reproduction": "not_performed",
+          "selected_version": "v3",
+          "publication_status": "本轮按arXiv所读版本记录；未另核正式发表状态",
+          "first_publication_date": "2021-12-08",
+          "selected_version_date": "2022-02-07",
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2609.33148",
+      "title": "DroneWAM: Efficient World Action Model for Drone Visual Navigation",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2609.33148v1",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2数据划分；§3.1–3.3；§4.1–4.3表1–5；§7 Limitations"
+      ],
+      "supported_points": [
+        "固定特征压缩器加潜空间预测/动作规划，偏好训练Gate选择想象深度。",
+        "表4的近等平均深度随机停止对照支持研究“计算分配”而非只比较是否早停。"
+      ],
+      "limitations": [
+        "基础训练/验证按轨迹clip拆分，五个环境都出现；Gate的环境留出不等于完整模型的新环境泛化。",
+        "§4.2与§7明确复杂闭环成功仍低、尚未就绪真实部署；想象深度K不是动作计划跨度H。代码链接未审计，不确认已公开完整代码数据。"
+      ],
+      "concept_ids": [
+        "ai:adaptive_rollout",
+        "ai:world_models",
+        "bridge:adaptive_compute"
+      ],
+      "update_kind": "recent_publication",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2026-09-27",
+      "selected_version": "v1",
+      "publication_status": "arXiv预印本；未核到正式接收事件",
+      "official_code_url": "https://github.com/1e12Leon/DroneWAM",
+      "tracks": [
+        "ai_reasoning_systems"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2609.33148",
+          "title": "DroneWAM: Efficient World Action Model for Drone Visual Navigation",
+          "year": 2026,
+          "url": "https://arxiv.org/html/2609.33148v1",
+          "accessed_at": "2026-10-02",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2数据划分；§3.1–3.3；§4.1–4.3表1–5；§7 Limitations"
+          ],
+          "supported_points": [
+            "固定特征压缩器加潜空间预测/动作规划，偏好训练Gate选择想象深度。",
+            "表4的近等平均深度随机停止对照支持研究“计算分配”而非只比较是否早停。"
+          ],
+          "limitations": [
+            "基础训练/验证按轨迹clip拆分，五个环境都出现；Gate的环境留出不等于完整模型的新环境泛化。",
+            "§4.2与§7明确复杂闭环成功仍低、尚未就绪真实部署；想象深度K不是动作计划跨度H。代码链接未审计，不确认已公开完整代码数据。"
+          ],
+          "concept_ids": [
+            "ai:adaptive_rollout",
+            "ai:world_models",
+            "bridge:adaptive_compute"
+          ],
+          "update_kind": "recent_publication",
+          "code_inspection": "not_performed",
+          "reproduction": "not_performed",
+          "first_publication_date": "2026-09-27",
+          "selected_version": "v1",
+          "publication_status": "arXiv预印本；未核到正式接收事件",
+          "official_code_url": "https://github.com/1e12Leon/DroneWAM",
+          "track": "ai_reasoning_systems"
+        }
+      ]
+    },
+    {
+      "id": "url:trefethen-pdetext",
+      "title": "Finite Difference and Spectral Methods for Ordinary and Partial Differential Equations",
+      "year": 1996,
+      "url": "https://people.maths.ox.ac.uk/trefethen/pdetext.html",
+      "accessed_at": "2026-09-19",
+      "reading_level": "book_sections",
+      "locators": [
+        "作者未完成书稿，第4章§4.2–4.3，PDF第8–11页：线性适定假设与Lax理论；第7章PDF第2页：全局基与边界限制"
+      ],
+      "supported_points": [
+        "Lax等价结论要求线性且连续初值问题适定；一致本身不保证稳定。",
+        "谱方法利用全局函数表示，边界处理可限制稳定性和时间步。"
+      ],
+      "limitations": [
+        "作者说明书稿未完成且部分图表缺失；PDF有文字编码问题，未把模糊公式当精确抄录。",
+        "没有读完整本书；此条不是直接精读1928或1956原始论文。"
+      ],
+      "concept_ids": [
+        "num:wellposedness",
+        "num:consistency_stability",
+        "num:finite_difference",
+        "num:spectral",
+        "num:time_integration"
+      ],
+      "related_urls": [
+        "https://people.maths.ox.ac.uk/trefethen/4all.pdf",
+        "https://people.maths.ox.ac.uk/trefethen/7all.pdf"
+      ],
+      "year_basis": "author suggested citation year for unpublished manuscript",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "url:trefethen-pdetext",
+          "title": "Finite Difference and Spectral Methods for Ordinary and Partial Differential Equations",
+          "year": 1996,
+          "url": "https://people.maths.ox.ac.uk/trefethen/pdetext.html",
+          "accessed_at": "2026-09-19",
+          "reading_level": "book_sections",
+          "locators": [
+            "作者未完成书稿，第4章§4.2–4.3，PDF第8–11页：线性适定假设与Lax理论；第7章PDF第2页：全局基与边界限制"
+          ],
+          "supported_points": [
+            "Lax等价结论要求线性且连续初值问题适定；一致本身不保证稳定。",
+            "谱方法利用全局函数表示，边界处理可限制稳定性和时间步。"
+          ],
+          "limitations": [
+            "作者说明书稿未完成且部分图表缺失；PDF有文字编码问题，未把模糊公式当精确抄录。",
+            "没有读完整本书；此条不是直接精读1928或1956原始论文。"
+          ],
+          "concept_ids": [
+            "num:wellposedness",
+            "num:consistency_stability",
+            "num:finite_difference",
+            "num:spectral",
+            "num:time_integration"
+          ],
+          "related_urls": [
+            "https://people.maths.ox.ac.uk/trefethen/4all.pdf",
+            "https://people.maths.ox.ac.uk/trefethen/7all.pdf"
+          ],
+          "year_basis": "author suggested citation year for unpublished manuscript",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "url:leveque-am574-2011",
+      "title": "AMath 574: Conservation Laws and Finite Volume Methods — lectures 5 and 15",
+      "year": 2011,
+      "url": "https://faculty.washington.edu/rjl/classes/hyperbolic2013/am574w2011/index.html",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "Lecture 5，PDF第12–14页：Godunov通量差更新",
+        "Lecture 15，PDF第39–40页：弱熵条件与Lax–Wendroff定理"
+      ],
+      "supported_points": [
+        "有限体积以界面通量更新单元平均。",
+        "守恒一致格式若收敛，其极限是弱解；该结论不自行保证收敛或唯一熵解。"
+      ],
+      "limitations": [
+        "阅读的是作者讲义，不是已经通读2002年专著。",
+        "标量熵条件不能无条件扩展为多维非线性系统唯一性定理。"
+      ],
+      "concept_ids": [
+        "num:finite_volume",
+        "num:conservation_entropy",
+        "num:consistency_stability"
+      ],
+      "related_urls": [
+        "https://faculty.washington.edu/rjl/classes/hyperbolic2013/am574w2011/am574lecture5.pdf",
+        "https://faculty.washington.edu/rjl/classes/hyperbolic2013/am574w2011/am574lecture15.pdf"
+      ],
+      "year_basis": "lecture date",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "url:leveque-am574-2011",
+          "title": "AMath 574: Conservation Laws and Finite Volume Methods — lectures 5 and 15",
+          "year": 2011,
+          "url": "https://faculty.washington.edu/rjl/classes/hyperbolic2013/am574w2011/index.html",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "Lecture 5，PDF第12–14页：Godunov通量差更新",
+            "Lecture 15，PDF第39–40页：弱熵条件与Lax–Wendroff定理"
+          ],
+          "supported_points": [
+            "有限体积以界面通量更新单元平均。",
+            "守恒一致格式若收敛，其极限是弱解；该结论不自行保证收敛或唯一熵解。"
+          ],
+          "limitations": [
+            "阅读的是作者讲义，不是已经通读2002年专著。",
+            "标量熵条件不能无条件扩展为多维非线性系统唯一性定理。"
+          ],
+          "concept_ids": [
+            "num:finite_volume",
+            "num:conservation_entropy",
+            "num:consistency_stability"
+          ],
+          "related_urls": [
+            "https://faculty.washington.edu/rjl/classes/hyperbolic2013/am574w2011/am574lecture5.pdf",
+            "https://faculty.washington.edu/rjl/classes/hyperbolic2013/am574w2011/am574lecture15.pdf"
+          ],
+          "year_basis": "lecture date",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1023/A:1012873910884",
+      "title": "Runge–Kutta Discontinuous Galerkin Methods for Convection-Dominated Problems",
+      "year": 2001,
+      "url": "https://helper.ipam.ucla.edu/publications/pcatut2005/pcatut_5477_reprint2.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1，PDF第2–5页：空间弱式、块对角质量矩阵、RK步骤和非线性限制"
+      ],
+      "supported_points": [
+        "RKDG组合间断有限元、数值通量和适当RK时间步。",
+        "单元局部性方便高阶和并行，但非线性对流问题仍需稳定性设计。"
+      ],
+      "limitations": [
+        "没有重现全文所有算例或逐一检查限制器理论。",
+        "综述里的高阶稳定表述不能省略CFL和问题条件。"
+      ],
+      "concept_ids": [
+        "num:discontinuous_galerkin",
+        "num:finite_volume",
+        "num:finite_element",
+        "num:time_integration"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1023/A:1012873910884",
+          "title": "Runge–Kutta Discontinuous Galerkin Methods for Convection-Dominated Problems",
+          "year": 2001,
+          "url": "https://helper.ipam.ucla.edu/publications/pcatut2005/pcatut_5477_reprint2.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1，PDF第2–5页：空间弱式、块对角质量矩阵、RK步骤和非线性限制"
+          ],
+          "supported_points": [
+            "RKDG组合间断有限元、数值通量和适当RK时间步。",
+            "单元局部性方便高阶和并行，但非线性对流问题仍需稳定性设计。"
+          ],
+          "limitations": [
+            "没有重现全文所有算例或逐一检查限制器理论。",
+            "综述里的高阶稳定表述不能省略CFL和问题条件。"
+          ],
+          "concept_ids": [
+            "num:discontinuous_galerkin",
+            "num:finite_volume",
+            "num:finite_element",
+            "num:time_integration"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:0906.4325",
+      "title": "Finite element exterior calculus: from Hodge theory to numerical stability",
+      "year": 2010,
+      "url": "https://arxiv.org/pdf/0906.4325v3",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1.1，PDF第3–4页：Poisson弱式与Galerkin",
+        "§3.2.2，PDF第24–26页：mixed well-posedness、Theorems 3.2–3.3；摘要与引言：subcomplex/cochain projection"
+      ],
+      "supported_points": [
+        "混合适定性结合核上强制性和inf–sup条件。",
+        "FEEC以子复形与有界交换投影把连续结构传给离散问题。"
+      ],
+      "limitations": [
+        "读取2009年v3预印本，year采用2010年期刊年份。",
+        "并非对任意神经表示或任意非线性PDE的稳定性保证。"
+      ],
+      "concept_ids": [
+        "num:finite_element",
+        "num:mixed_inf_sup",
+        "num:compatible_feec",
+        "num:wellposedness",
+        "num:geometry_mesh"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:0906.4325",
+          "title": "Finite element exterior calculus: from Hodge theory to numerical stability",
+          "year": 2010,
+          "url": "https://arxiv.org/pdf/0906.4325v3",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1.1，PDF第3–4页：Poisson弱式与Galerkin",
+            "§3.2.2，PDF第24–26页：mixed well-posedness、Theorems 3.2–3.3；摘要与引言：subcomplex/cochain projection"
+          ],
+          "supported_points": [
+            "混合适定性结合核上强制性和inf–sup条件。",
+            "FEEC以子复形与有界交换投影把连续结构传给离散问题。"
+          ],
+          "limitations": [
+            "读取2009年v3预印本，year采用2010年期刊年份。",
+            "并非对任意神经表示或任意非线性PDE的稳定性保证。"
+          ],
+          "concept_ids": [
+            "num:finite_element",
+            "num:mixed_inf_sup",
+            "num:compatible_feec",
+            "num:wellposedness",
+            "num:geometry_mesh"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1016/S0168-9274(97)00056-1",
+      "title": "Implicit-Explicit Runge-Kutta Methods for Time-Dependent Partial Differential Equations",
+      "year": 1997,
+      "url": "https://steveruuth.org/wp-content/uploads/2020/10/ars.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "abstract",
+      "locators": [
+        "作者托管论文可读摘要与Introduction搜索提取；PDF正文文本编码损坏，未据损坏正文作公式核查"
+      ],
+      "supported_points": [
+        "为不同类型项采用隐式/显式时间处理。",
+        "论文比较IMEX RK与已有多步方法的稳定区域，适用对象包括对流扩散问题。"
+      ],
+      "limitations": [
+        "本次未完成正文系数表和稳定区域推导核验；相关实际接口另由ARKODE官方文档支持。"
+      ],
+      "concept_ids": [
+        "num:stiffness_imex",
+        "num:time_integration"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1016/S0168-9274(97)00056-1",
+          "title": "Implicit-Explicit Runge-Kutta Methods for Time-Dependent Partial Differential Equations",
+          "year": 1997,
+          "url": "https://steveruuth.org/wp-content/uploads/2020/10/ars.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "abstract",
+          "locators": [
+            "作者托管论文可读摘要与Introduction搜索提取；PDF正文文本编码损坏，未据损坏正文作公式核查"
+          ],
+          "supported_points": [
+            "为不同类型项采用隐式/显式时间处理。",
+            "论文比较IMEX RK与已有多步方法的稳定区域，适用对象包括对流扩散问题。"
+          ],
+          "limitations": [
+            "本次未完成正文系数表和稳定区域推导核验；相关实际接口另由ARKODE官方文档支持。"
+          ],
+          "concept_ids": [
+            "num:stiffness_imex",
+            "num:time_integration"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1007/978-3-319-05254-0_10",
+      "title": "Challenges in Geometric Numerical Integration",
+      "year": 2014,
+      "url": "https://www.unige.ch/~hairer/preprints/hairer-pisa.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1–2，PDF第1–5页：保结构、后向误差分析和修正方程；摘要的高振荡边界"
+      ],
+      "supported_points": [
+        "辛方法的修正方程保有Hamilton结构，可解释有条件的长时间行为。",
+        "步长乘最高频率不小时，经典后向误差论证不能直接沿用。"
+      ],
+      "limitations": [
+        "近能量守恒不是每一步精确守恒。",
+        "没有把有限维非刚性分析当成任意网格加密PDE的统一长期定理。"
+      ],
+      "concept_ids": [
+        "num:symplectic",
+        "num:time_integration",
+        "num:stiffness_imex"
+      ],
+      "year_basis": "book chapter publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1007/978-3-319-05254-0_10",
+          "title": "Challenges in Geometric Numerical Integration",
+          "year": 2014,
+          "url": "https://www.unige.ch/~hairer/preprints/hairer-pisa.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1–2，PDF第1–5页：保结构、后向误差分析和修正方程；摘要的高振荡边界"
+          ],
+          "supported_points": [
+            "辛方法的修正方程保有Hamilton结构，可解释有条件的长时间行为。",
+            "步长乘最高频率不小时，经典后向误差论证不能直接沿用。"
+          ],
+          "limitations": [
+            "近能量守恒不是每一步精确守恒。",
+            "没有把有限维非刚性分析当成任意网格加密PDE的统一长期定理。"
+          ],
+          "concept_ids": [
+            "num:symplectic",
+            "num:time_integration",
+            "num:stiffness_imex"
+          ],
+          "year_basis": "book chapter publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "url:saad-iterative-2e",
+      "title": "Iterative Methods for Sparse Linear Systems, Second Edition",
+      "year": 2003,
+      "url": "https://www-users.cse.umn.edu/~saad/IterMethBook_2ndEd.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "book_sections",
+      "locators": [
+        "§6.5，书页171–180：GMRES与重启/实现；第9章预条件章节相关段；§14.1，书页470–472：子域与界面矩阵分块"
+      ],
+      "supported_points": [
+        "GMRES在Krylov仿射空间中最小化残差。",
+        "预条件与区域分解改变有效迭代问题；界面耦合不能因局部求解而省略。"
+      ],
+      "limitations": [
+        "只读指定部分，未通读567页PDF；未运行书中算法。",
+        "残差小与解误差小的关系受条件数/稳定常数影响。"
+      ],
+      "concept_ids": [
+        "num:krylov",
+        "num:preconditioning",
+        "num:domain_decomposition"
+      ],
+      "year_basis": "second edition publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "url:saad-iterative-2e",
+          "title": "Iterative Methods for Sparse Linear Systems, Second Edition",
+          "year": 2003,
+          "url": "https://www-users.cse.umn.edu/~saad/IterMethBook_2ndEd.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "book_sections",
+          "locators": [
+            "§6.5，书页171–180：GMRES与重启/实现；第9章预条件章节相关段；§14.1，书页470–472：子域与界面矩阵分块"
+          ],
+          "supported_points": [
+            "GMRES在Krylov仿射空间中最小化残差。",
+            "预条件与区域分解改变有效迭代问题；界面耦合不能因局部求解而省略。"
+          ],
+          "limitations": [
+            "只读指定部分，未通读567页PDF；未运行书中算法。",
+            "残差小与解误差小的关系受条件数/稳定常数影响。"
+          ],
+          "concept_ids": [
+            "num:krylov",
+            "num:preconditioning",
+            "num:domain_decomposition"
+          ],
+          "year_basis": "second edition publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:1611.01917",
+      "title": "Algebraic Multigrid Methods",
+      "year": 2017,
+      "url": "https://arxiv.org/pdf/1611.01917",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.3–2.4，PDF第12–14页：离散谱与条件数；§4.1–4.2：基本迭代；§5平滑器讨论PDF第38页及摘要粗空间条件"
+      ],
+      "supported_points": [
+        "平滑器和粗空间协同；好的粗空间针对难以被平滑的误差。",
+        "网格无关收敛和系数/各向异性鲁棒性需要适当假设与粗空间构造。"
+      ],
+      "limitations": [
+        "year为2017期刊年份；arXiv首版为2016。",
+        "不能把AMG名称当作任意Helmholtz/非对称/高对比问题的线性复杂度保证。"
+      ],
+      "concept_ids": [
+        "num:multigrid",
+        "num:preconditioning",
+        "num:domain_decomposition",
+        "num:geometry_mesh"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:1611.01917",
+          "title": "Algebraic Multigrid Methods",
+          "year": 2017,
+          "url": "https://arxiv.org/pdf/1611.01917",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.3–2.4，PDF第12–14页：离散谱与条件数；§4.1–4.2：基本迭代；§5平滑器讨论PDF第38页及摘要粗空间条件"
+          ],
+          "supported_points": [
+            "平滑器和粗空间协同；好的粗空间针对难以被平滑的误差。",
+            "网格无关收敛和系数/各向异性鲁棒性需要适当假设与粗空间构造。"
+          ],
+          "limitations": [
+            "year为2017期刊年份；arXiv首版为2016。",
+            "不能把AMG名称当作任意Helmholtz/非对称/高对比问题的线性复杂度保证。"
+          ],
+          "concept_ids": [
+            "num:multigrid",
+            "num:preconditioning",
+            "num:domain_decomposition",
+            "num:geometry_mesh"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1017/S0962492902000156",
+      "title": "Entropy stability theory for difference approximations of nonlinear conservation laws and related time-dependent problems",
+      "year": 2003,
+      "url": "https://www.math.umd.edu/~tadmor/pub/TV%2Bentropy/Tadmor_Acta2003.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§4，PDF第15–16页：Corollary 4.1和熵保守基准；摘要的耗散比较思想"
+      ],
+      "supported_points": [
+        "以熵保守通量为基准分析适当数值黏性与熵稳定。",
+        "守恒和熵稳定是不同约束。"
+      ],
+      "limitations": [
+        "所述半离散性质不能自动保证任意时间离散后的完全离散性质。",
+        "没有逐一复核全文所有系统和强迫项推广。"
+      ],
+      "concept_ids": [
+        "num:conservation_entropy",
+        "num:finite_volume",
+        "num:discontinuous_galerkin"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1017/S0962492902000156",
+          "title": "Entropy stability theory for difference approximations of nonlinear conservation laws and related time-dependent problems",
+          "year": 2003,
+          "url": "https://www.math.umd.edu/~tadmor/pub/TV%2Bentropy/Tadmor_Acta2003.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§4，PDF第15–16页：Corollary 4.1和熵保守基准；摘要的耗散比较思想"
+          ],
+          "supported_points": [
+            "以熵保守通量为基准分析适当数值黏性与熵稳定。",
+            "守恒和熵稳定是不同约束。"
+          ],
+          "limitations": [
+            "所述半离散性质不能自动保证任意时间离散后的完全离散性质。",
+            "没有逐一复核全文所有系统和强迫项推广。"
+          ],
+          "concept_ids": [
+            "num:conservation_entropy",
+            "num:finite_volume",
+            "num:discontinuous_galerkin"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1017/S0962492901000010",
+      "title": "An optimal control approach to a posteriori error estimation in finite element methods",
+      "year": 2001,
+      "url": "https://www.cambridge.org/core/journals/acta-numerica/article/abs/an-optimal-control-approach-to-a-posteriori-error-estimation-in-finite-element-methods/5C67A03F528C6FA69F37A97DF5C3BE19",
+      "accessed_at": "2026-09-19",
+      "reading_level": "abstract",
+      "locators": [
+        "出版社摘要：adjoint weights、目标误差与自适应反馈；Volume 10 May 2001元数据"
+      ],
+      "supported_points": [
+        "DWR用近似伴随提供局部残差权重，围绕目标量构造网格适配反馈。"
+      ],
+      "limitations": [
+        "正文获取失败；不是已阅读全文。",
+        "报告中的线性Galerkin恒等式是明确假设下的推导，不声称逐字核验此论文定理。",
+        "在线页面2003日期不同于2001卷期，year采用卷期。"
+      ],
+      "concept_ids": [
+        "num:aposteriori_dwr",
+        "num:amr",
+        "num:inverse_adjoint"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1017/S0962492901000010",
+          "title": "An optimal control approach to a posteriori error estimation in finite element methods",
+          "year": 2001,
+          "url": "https://www.cambridge.org/core/journals/acta-numerica/article/abs/an-optimal-control-approach-to-a-posteriori-error-estimation-in-finite-element-methods/5C67A03F528C6FA69F37A97DF5C3BE19",
+          "accessed_at": "2026-09-19",
+          "reading_level": "abstract",
+          "locators": [
+            "出版社摘要：adjoint weights、目标误差与自适应反馈；Volume 10 May 2001元数据"
+          ],
+          "supported_points": [
+            "DWR用近似伴随提供局部残差权重，围绕目标量构造网格适配反馈。"
+          ],
+          "limitations": [
+            "正文获取失败；不是已阅读全文。",
+            "报告中的线性Galerkin恒等式是明确假设下的推导，不声称逐字核验此论文定理。",
+            "在线页面2003日期不同于2001卷期，year采用卷期。"
+          ],
+          "concept_ids": [
+            "num:aposteriori_dwr",
+            "num:amr",
+            "num:inverse_adjoint"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2112.05920",
+      "title": "Asymptotic-Preserving Schemes for Multiscale Physical Problems",
+      "year": 2022,
+      "url": "https://arxiv.org/pdf/2112.05920",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1，PDF第3–5页：AP交换图、式(1.1)–(1.6)；微观到宏观极限说明"
+      ],
+      "supported_points": [
+        "AP要求固定数值尺度下小参数极限给出宏观问题的一致稳定离散。",
+        "统一误差结论还用到微宏误差和离散误差估计等假设。"
+      ],
+      "limitations": [
+        "year采用2022综述年份；预印本首版2021。",
+        "AP定义不自动保证所有参数下同阶精度、正性或熵性质。"
+      ],
+      "concept_ids": [
+        "num:multiscale_ap",
+        "num:stiffness_imex",
+        "num:consistency_stability"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2112.05920",
+          "title": "Asymptotic-Preserving Schemes for Multiscale Physical Problems",
+          "year": 2022,
+          "url": "https://arxiv.org/pdf/2112.05920",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1，PDF第3–5页：AP交换图、式(1.1)–(1.6)；微观到宏观极限说明"
+          ],
+          "supported_points": [
+            "AP要求固定数值尺度下小参数极限给出宏观问题的一致稳定离散。",
+            "统一误差结论还用到微宏误差和离散误差估计等假设。"
+          ],
+          "limitations": [
+            "year采用2022综述年份；预印本首版2021。",
+            "AP定义不自动保证所有参数下同阶精度、正性或熵性质。"
+          ],
+          "concept_ids": [
+            "num:multiscale_ap",
+            "num:stiffness_imex",
+            "num:consistency_stability"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1017/S0962492910000061",
+      "title": "Inverse problems: A Bayesian perspective",
+      "year": 2010,
+      "url": "https://web.stanford.edu/class/ee378a/REFS/stuart.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§4.2，PDF第51–52页：后验定义、Assumptions 2.6、Theorems 4.1–4.2；引言的函数空间正则化"
+      ],
+      "supported_points": [
+        "函数空间先验与似然共同定义后验。",
+        "后验存在和对数据的稳定依赖要验证势函数与先验条件。"
+      ],
+      "limitations": [
+        "贝叶斯建模不消除物理不可辨识性。",
+        "没有核验本文全部MCMC算法或任意模型失配下的校准。"
+      ],
+      "concept_ids": [
+        "num:inverse_adjoint",
+        "num:uq",
+        "num:wellposedness"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1017/S0962492910000061",
+          "title": "Inverse problems: A Bayesian perspective",
+          "year": 2010,
+          "url": "https://web.stanford.edu/class/ee378a/REFS/stuart.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§4.2，PDF第51–52页：后验定义、Assumptions 2.6、Theorems 4.1–4.2；引言的函数空间正则化"
+          ],
+          "supported_points": [
+            "函数空间先验与似然共同定义后验。",
+            "后验存在和对数据的稳定依赖要验证势函数与先验条件。"
+          ],
+          "limitations": [
+            "贝叶斯建模不消除物理不可辨识性。",
+            "没有核验本文全部MCMC算法或任意模型失配下的校准。"
+          ],
+          "concept_ids": [
+            "num:inverse_adjoint",
+            "num:uq",
+            "num:wellposedness"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1137/130932715",
+      "title": "A Survey of Projection-Based Model Reduction Methods for Parametric Dynamical Systems",
+      "year": 2015,
+      "url": "https://kiwi.oden.utexas.edu/papers/Parametric-model-reduction-survey-Benner-Gugercin-Willcox.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–2.2，PDF第9–10页：参数系统、trial/test投影和假设；引言的offline/online分工"
+      ],
+      "supported_points": [
+        "低维试验/检验空间投影得到小系统。",
+        "参数依赖、稳定性和在线算子评估是降阶问题的组成部分。"
+      ],
+      "limitations": [
+        "核心讨论以状态线性系统为主，不能据此保证任意非线性湍流ROM稳定。",
+        "未实际构造POD、RB或超降阶代码。"
+      ],
+      "concept_ids": [
+        "num:rom",
+        "num:finite_element",
+        "num:inverse_adjoint"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1137/130932715",
+          "title": "A Survey of Projection-Based Model Reduction Methods for Parametric Dynamical Systems",
+          "year": 2015,
+          "url": "https://kiwi.oden.utexas.edu/papers/Parametric-model-reduction-survey-Benner-Gugercin-Willcox.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1–2.2，PDF第9–10页：参数系统、trial/test投影和假设；引言的offline/online分工"
+          ],
+          "supported_points": [
+            "低维试验/检验空间投影得到小系统。",
+            "参数依赖、稳定性和在线算子评估是降阶问题的组成部分。"
+          ],
+          "limitations": [
+            "核心讨论以状态线性系统为主，不能据此保证任意非线性湍流ROM稳定。",
+            "未实际构造POD、RB或超降阶代码。"
+          ],
+          "concept_ids": [
+            "num:rom",
+            "num:finite_element",
+            "num:inverse_adjoint"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1017/S096249291500001X",
+      "title": "Multilevel Monte Carlo methods",
+      "year": 2015,
+      "url": "https://people.maths.ox.ac.uk/~gilesm/files/acta15.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1，PDF第6–7页：MSE分解、跨层差分、Theorem 1的alpha/beta/gamma条件"
+      ],
+      "supported_points": [
+        "MLMC通过耦合粗细样本和望远镜恒等式降低估计期望的成本。",
+        "复杂度由偏差、层差方差和单样本成本的衰减/增长率共同决定。"
+      ],
+      "limitations": [
+        "最优O(epsilon^-2)并非无条件成立。",
+        "没有把离散偏差或模型偏差混作采样方差。"
+      ],
+      "concept_ids": [
+        "num:uq",
+        "num:multigrid",
+        "num:amr"
+      ],
+      "year_basis": "journal publication",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1017/S096249291500001X",
+          "title": "Multilevel Monte Carlo methods",
+          "year": 2015,
+          "url": "https://people.maths.ox.ac.uk/~gilesm/files/acta15.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1，PDF第6–7页：MSE分解、跨层差分、Theorem 1的alpha/beta/gamma条件"
+          ],
+          "supported_points": [
+            "MLMC通过耦合粗细样本和望远镜恒等式降低估计期望的成本。",
+            "复杂度由偏差、层差方差和单样本成本的衰减/增长率共同决定。"
+          ],
+          "limitations": [
+            "最优O(epsilon^-2)并非无条件成立。",
+            "没有把离散偏差或模型偏差混作采样方差。"
+          ],
+          "concept_ids": [
+            "num:uq",
+            "num:multigrid",
+            "num:amr"
+          ],
+          "year_basis": "journal publication",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2403.12179",
+      "title": "AMReX and pyAMReX: Looking beyond the exascale computing project",
+      "year": 2024,
+      "url": "https://arxiv.org/pdf/2403.12179v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1–2，PDF第2–3页：AMR粗细同步、数据结构和嵌入边界；§3.1–3.2：硬件可移植、kernel fusion"
+      ],
+      "supported_points": [
+        "AMR计算包含细化、层间插值/平均和粗细通量校正。",
+        "块尺度、核启动、内存与通信组织决定异构平台成本。"
+      ],
+      "limitations": [
+        "2024原工作；读取2025-03修订v2，未对软件版本运行验收。",
+        "软件支持多物理应用不是统一方程误差证明；性能收益依工作负载而变。"
+      ],
+      "concept_ids": [
+        "num:amr",
+        "num:geometry_mesh",
+        "num:matrix_free_hpc"
+      ],
+      "year_basis": "first arxiv version",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2403.12179",
+          "title": "AMReX and pyAMReX: Looking beyond the exascale computing project",
+          "year": 2024,
+          "url": "https://arxiv.org/pdf/2403.12179v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§1–2，PDF第2–3页：AMR粗细同步、数据结构和嵌入边界；§3.1–3.2：硬件可移植、kernel fusion"
+          ],
+          "supported_points": [
+            "AMR计算包含细化、层间插值/平均和粗细通量校正。",
+            "块尺度、核启动、内存与通信组织决定异构平台成本。"
+          ],
+          "limitations": [
+            "2024原工作；读取2025-03修订v2，未对软件版本运行验收。",
+            "软件支持多物理应用不是统一方程误差证明；性能收益依工作负载而变。"
+          ],
+          "concept_ids": [
+            "num:amr",
+            "num:geometry_mesh",
+            "num:matrix_free_hpc"
+          ],
+          "year_basis": "first arxiv version",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2405.18982",
+      "title": "Multilevel Interior Penalty Methods on GPUs",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2405.18982v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–2.2：SIPG、sum factorization与Cartesian假设；§3：vertex-patch multigrid；§5.2 mixed precision标题及摘要"
+      ],
+      "supported_points": [
+        "结合高阶DG、无矩阵作用、顶点patch平滑与GPU布局。",
+        "算子与预条件都需优化，不能只加速一次矩阵向量乘。"
+      ],
+      "limitations": [
+        "正文针对2D/3D Poisson、常系数轴对齐网格；不外推任意复杂几何。",
+        "本次没有复验吞吐率、混合精度或多GPU结果。"
+      ],
+      "concept_ids": [
+        "num:discontinuous_galerkin",
+        "num:multigrid",
+        "num:matrix_free_hpc",
+        "num:preconditioning"
+      ],
+      "year_basis": "first arxiv version",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2405.18982",
+          "title": "Multilevel Interior Penalty Methods on GPUs",
+          "year": 2024,
+          "url": "https://arxiv.org/html/2405.18982v2",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1–2.2：SIPG、sum factorization与Cartesian假设；§3：vertex-patch multigrid；§5.2 mixed precision标题及摘要"
+          ],
+          "supported_points": [
+            "结合高阶DG、无矩阵作用、顶点patch平滑与GPU布局。",
+            "算子与预条件都需优化，不能只加速一次矩阵向量乘。"
+          ],
+          "limitations": [
+            "正文针对2D/3D Poisson、常系数轴对齐网格；不外推任意复杂几何。",
+            "本次没有复验吞吐率、混合精度或多GPU结果。"
+          ],
+          "concept_ids": [
+            "num:discontinuous_galerkin",
+            "num:multigrid",
+            "num:matrix_free_hpc",
+            "num:preconditioning"
+          ],
+          "year_basis": "first arxiv version",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2603.09038",
+      "title": "Accelerating High-Order Finite Element Simulations at Extreme Scale with FP64 Tensor Cores",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2603.09038v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§I–II：数值应用、FP64动机与离线PDE求解成本；§III开头和摘要：小GEMM映射与扩展实验口径"
+      ],
+      "supported_points": [
+        "将高阶有限元张量收缩映射为小矩阵乘以利用FP64 tensor cores。",
+        "保留双精度的算法/硬件协同也是现代传统数值研究，而非只能依靠低精度或神经代理。"
+      ],
+      "limitations": [
+        "针对所测算子、MFEM实现和NVIDIA硬件；不是通用端到端加速保证。",
+        "扩展与加速数字为作者报告，未在本机复现。"
+      ],
+      "concept_ids": [
+        "num:matrix_free_hpc",
+        "num:finite_element",
+        "num:inverse_adjoint"
+      ],
+      "year_basis": "first arxiv version",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2603.09038",
+          "title": "Accelerating High-Order Finite Element Simulations at Extreme Scale with FP64 Tensor Cores",
+          "year": 2026,
+          "url": "https://arxiv.org/html/2603.09038v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§I–II：数值应用、FP64动机与离线PDE求解成本；§III开头和摘要：小GEMM映射与扩展实验口径"
+          ],
+          "supported_points": [
+            "将高阶有限元张量收缩映射为小矩阵乘以利用FP64 tensor cores。",
+            "保留双精度的算法/硬件协同也是现代传统数值研究，而非只能依靠低精度或神经代理。"
+          ],
+          "limitations": [
+            "针对所测算子、MFEM实现和NVIDIA硬件；不是通用端到端加速保证。",
+            "扩展与加速数字为作者报告，未在本机复现。"
+          ],
+          "concept_ids": [
+            "num:matrix_free_hpc",
+            "num:finite_element",
+            "num:inverse_adjoint"
+          ],
+          "year_basis": "first arxiv version",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "url:petsc-snes-manual",
+      "title": "PETSc SNES: Nonlinear Solvers — official manual",
+      "year": null,
+      "url": "https://petsc.org/release/manual/snes/",
+      "accessed_at": "2026-09-19",
+      "reading_level": "official_documentation",
+      "locators": [
+        "Nonlinear Solvers总述；Newton-based Methods / Line Search Newton；Matrix-Free Methods的文档入口"
+      ],
+      "supported_points": [
+        "非线性求解包含残差/Jacobian接口、Newton更新和线搜索/信赖域全局化。",
+        "内层线性系统可用预条件Krylov方法，Jacobian作用可与预条件矩阵分开。"
+      ],
+      "limitations": [
+        "出版年未知；网页可变，2026-09-19仅为访问日期。",
+        "仅核查文档，未执行PETSc例程或声称所有PDE局部/全局收敛。"
+      ],
+      "concept_ids": [
+        "num:newton",
+        "num:krylov",
+        "num:preconditioning"
+      ],
+      "year_basis": "unknown_publication_year",
+      "year_note": "截至2026-09-19访问；未核实所读文档版本的发布日期，故不以访问年充当出版年。",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "url:petsc-snes-manual",
+          "title": "PETSc SNES: Nonlinear Solvers — official manual",
+          "year": null,
+          "url": "https://petsc.org/release/manual/snes/",
+          "accessed_at": "2026-09-19",
+          "reading_level": "official_documentation",
+          "locators": [
+            "Nonlinear Solvers总述；Newton-based Methods / Line Search Newton；Matrix-Free Methods的文档入口"
+          ],
+          "supported_points": [
+            "非线性求解包含残差/Jacobian接口、Newton更新和线搜索/信赖域全局化。",
+            "内层线性系统可用预条件Krylov方法，Jacobian作用可与预条件矩阵分开。"
+          ],
+          "limitations": [
+            "出版年未知；网页可变，2026-09-19仅为访问日期。",
+            "仅核查文档，未执行PETSc例程或声称所有PDE局部/全局收敛。"
+          ],
+          "concept_ids": [
+            "num:newton",
+            "num:krylov",
+            "num:preconditioning"
+          ],
+          "year_basis": "unknown_publication_year",
+          "year_note": "截至2026-09-19访问；未核实所读文档版本的发布日期，故不以访问年充当出版年。",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "url:sundials-arkode-7.7",
+      "title": "SUNDIALS ARKODE 7.7.0: Mathematical Considerations and Butcher Tables",
+      "year": null,
+      "url": "https://sundials.readthedocs.io/en/v7.7.0/arkode/Mathematics_link.html",
+      "accessed_at": "2026-09-19",
+      "reading_level": "official_documentation",
+      "locators": [
+        "§2.2.13–2.2.15：显式稳定步限制、固定步模式、非线性/线性代数求解；Butcher Tables中A/L稳定注记"
+      ],
+      "supported_points": [
+        "误差控制不等于已知显式稳定限制，隐式阶段仍包含代数求解。",
+        "文档区分显式、隐式、IMEX、多速率与辛分裂方法，A稳定与L稳定不同。"
+      ],
+      "limitations": [
+        "固定文档版本7.7.0，未核实发布日期；year保留null。",
+        "没有验证软件内部系数或在实际PDE上测时。"
+      ],
+      "concept_ids": [
+        "num:stiffness_imex",
+        "num:time_integration",
+        "num:newton",
+        "num:symplectic"
+      ],
+      "year_basis": "unknown_publication_year",
+      "related_urls": [
+        "https://sundials.readthedocs.io/en/v7.7.0/arkode/Butcher_link.html"
+      ],
+      "year_note": "截至2026-09-19访问；未核实所读文档版本的发布日期，故不以访问年充当出版年。",
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "url:sundials-arkode-7.7",
+          "title": "SUNDIALS ARKODE 7.7.0: Mathematical Considerations and Butcher Tables",
+          "year": null,
+          "url": "https://sundials.readthedocs.io/en/v7.7.0/arkode/Mathematics_link.html",
+          "accessed_at": "2026-09-19",
+          "reading_level": "official_documentation",
+          "locators": [
+            "§2.2.13–2.2.15：显式稳定步限制、固定步模式、非线性/线性代数求解；Butcher Tables中A/L稳定注记"
+          ],
+          "supported_points": [
+            "误差控制不等于已知显式稳定限制，隐式阶段仍包含代数求解。",
+            "文档区分显式、隐式、IMEX、多速率与辛分裂方法，A稳定与L稳定不同。"
+          ],
+          "limitations": [
+            "固定文档版本7.7.0，未核实发布日期；year保留null。",
+            "没有验证软件内部系数或在实际PDE上测时。"
+          ],
+          "concept_ids": [
+            "num:stiffness_imex",
+            "num:time_integration",
+            "num:newton",
+            "num:symplectic"
+          ],
+          "year_basis": "unknown_publication_year",
+          "related_urls": [
+            "https://sundials.readthedocs.io/en/v7.7.0/arkode/Butcher_link.html"
+          ],
+          "year_note": "截至2026-09-19访问；未核实所读文档版本的发布日期，故不以访问年充当出版年。",
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1002/num.20640",
+      "title": "A class of discontinuous Petrov–Galerkin methods. II. Optimal test functions",
+      "year": 2010,
+      "url": "https://web.pdx.edu/~gjay/pub/dpg2.pdf",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "作者稿§1；§2式(2.1)–(2.13)、定理2.2、实际步骤S1–S4；§3纯对流形式开头"
+      ],
+      "supported_points": [
+        "由试探到测试的Riesz映射构造最优测试空间，在指定能量范数与适定性条件下实现最佳逼近。",
+        "不连续测试空间使近似最优测试函数可按单元局部求解。"
+      ],
+      "limitations": [
+        "精确最优测试空间的结论不可自动赋予有限丰富测试空间；原文明确未给出普适的实际空间选择法。",
+        "本轮未核全部输运/对流扩散数值例、证明细节或实现。"
+      ],
+      "concept_ids": [
+        "num:optimal_test_spaces",
+        "num:finite_element",
+        "num:mixed_inf_sup"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2010-10-25",
+      "selected_version": "author manuscript; publisher metadata cross-checked",
+      "year_basis": "first online publication 2010; volume 27(1), 2011, pp.70–105",
+      "publication_status": "正式期刊论文；Wiley元数据核对",
+      "related_urls": [
+        "https://onlinelibrary.wiley.com/doi/10.1002/num.20640"
+      ],
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1002/num.20640",
+          "title": "A class of discontinuous Petrov–Galerkin methods. II. Optimal test functions",
+          "year": 2010,
+          "url": "https://web.pdx.edu/~gjay/pub/dpg2.pdf",
+          "accessed_at": "2026-10-02",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "作者稿§1；§2式(2.1)–(2.13)、定理2.2、实际步骤S1–S4；§3纯对流形式开头"
+          ],
+          "supported_points": [
+            "由试探到测试的Riesz映射构造最优测试空间，在指定能量范数与适定性条件下实现最佳逼近。",
+            "不连续测试空间使近似最优测试函数可按单元局部求解。"
+          ],
+          "limitations": [
+            "精确最优测试空间的结论不可自动赋予有限丰富测试空间；原文明确未给出普适的实际空间选择法。",
+            "本轮未核全部输运/对流扩散数值例、证明细节或实现。"
+          ],
+          "concept_ids": [
+            "num:optimal_test_spaces",
+            "num:finite_element",
+            "num:mixed_inf_sup"
+          ],
+          "update_kind": "foundational_backfill",
+          "code_inspection": "not_performed",
+          "reproduction": "not_performed",
+          "first_publication_date": "2010-10-25",
+          "selected_version": "author manuscript; publisher metadata cross-checked",
+          "year_basis": "first online publication 2010; volume 27(1), 2011, pp.70–105",
+          "publication_status": "正式期刊论文；Wiley元数据核对",
+          "related_urls": [
+            "https://onlinelibrary.wiley.com/doi/10.1002/num.20640"
+          ],
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1007/s00211-013-0576-y",
+      "title": "Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps",
+      "year": 2013,
+      "url": "https://strathprints.strath.ac.uk/44827/1/10.1007_s00211_013_0576_y.pdf",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1问题假设；§3.1粗空间构造；定理3.22、推论3.23及其后限制；§4实现输入开头"
+      ],
+      "supported_points": [
+        "局部广义特征方向经分片单位拼成GenEO粗空间，配合两层重叠Schwarz。",
+        "在文中假设与阈值选择下，条件数界不含系数对比度和子域数，但粗空间尺寸会变化。"
+      ],
+      "limitations": [
+        "该结果依赖对称/coercive问题和稳定分解等条件，不能直接推广所有非线性/非对称耦合。",
+        "近不可压弹性等情况下粗空间可很大；稳定迭代次数不等于低总时间。本轮未复验数值表。"
+      ],
+      "concept_ids": [
+        "num:spectral_coarse_spaces",
+        "num:domain_decomposition",
+        "num:preconditioning"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2013-08-15",
+      "selected_version": "author preprint in institutional repository",
+      "year_basis": "repository records first online publication 2013",
+      "publication_status": "正式期刊论文；大学作者仓储元数据核对",
+      "related_urls": [
+        "https://strathprints.strath.ac.uk/44827/"
+      ],
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1007/s00211-013-0576-y",
+          "title": "Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps",
+          "year": 2013,
+          "url": "https://strathprints.strath.ac.uk/44827/1/10.1007_s00211_013_0576_y.pdf",
+          "accessed_at": "2026-10-02",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2.1问题假设；§3.1粗空间构造；定理3.22、推论3.23及其后限制；§4实现输入开头"
+          ],
+          "supported_points": [
+            "局部广义特征方向经分片单位拼成GenEO粗空间，配合两层重叠Schwarz。",
+            "在文中假设与阈值选择下，条件数界不含系数对比度和子域数，但粗空间尺寸会变化。"
+          ],
+          "limitations": [
+            "该结果依赖对称/coercive问题和稳定分解等条件，不能直接推广所有非线性/非对称耦合。",
+            "近不可压弹性等情况下粗空间可很大；稳定迭代次数不等于低总时间。本轮未复验数值表。"
+          ],
+          "concept_ids": [
+            "num:spectral_coarse_spaces",
+            "num:domain_decomposition",
+            "num:preconditioning"
+          ],
+          "update_kind": "foundational_backfill",
+          "code_inspection": "not_performed",
+          "reproduction": "not_performed",
+          "first_publication_date": "2013-08-15",
+          "selected_version": "author preprint in institutional repository",
+          "year_basis": "repository records first online publication 2013",
+          "publication_status": "正式期刊论文；大学作者仓储元数据核对",
+          "related_urls": [
+            "https://strathprints.strath.ac.uk/44827/"
+          ],
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1137/05064607X",
+      "title": "Analysis of the Parareal Time-Parallel Time-Integration Method",
+      "year": 2007,
+      "url": "https://www.unige.ch/~gander/Preprints/parareal.pdf",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2 Parareal与multiple shooting、式(2.2)–(2.8)；§3与时间多重网格联系；§6热方程与输运例、图6.2–6.3"
+      ],
+      "supported_points": [
+        "粗传播与细传播缺陷校正把时间分段连接起来；文中建立与multiple shooting和时间多重网格的联系。",
+        "热方程与周期输运的数值例显示收敛表现不同，某些输运设置停滞直至顺序细传播完成。"
+      ],
+      "limitations": [
+        "这里只阅读算法联系与选定数值例，未逐条复核§4–5全部收敛证明。",
+        "并行时间分段不等于任意动力学都能加速；需要计入粗传播、迭代与通信。"
+      ],
+      "concept_ids": [
+        "num:parallel_in_time",
+        "num:time_integration",
+        "num:multigrid"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2007-03-22",
+      "selected_version": "published paper hosted by author",
+      "publication_status": "SIAM J. Sci. Comput. 29(2), 556–578；作者PDF与期刊页核对",
+      "related_urls": [
+        "https://epubs.siam.org/doi/10.1137/05064607X"
+      ],
+      "tracks": [
+        "pde_numerics"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1137/05064607X",
+          "title": "Analysis of the Parareal Time-Parallel Time-Integration Method",
+          "year": 2007,
+          "url": "https://www.unige.ch/~gander/Preprints/parareal.pdf",
+          "accessed_at": "2026-10-02",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "§2 Parareal与multiple shooting、式(2.2)–(2.8)；§3与时间多重网格联系；§6热方程与输运例、图6.2–6.3"
+          ],
+          "supported_points": [
+            "粗传播与细传播缺陷校正把时间分段连接起来；文中建立与multiple shooting和时间多重网格的联系。",
+            "热方程与周期输运的数值例显示收敛表现不同，某些输运设置停滞直至顺序细传播完成。"
+          ],
+          "limitations": [
+            "这里只阅读算法联系与选定数值例，未逐条复核§4–5全部收敛证明。",
+            "并行时间分段不等于任意动力学都能加速；需要计入粗传播、迭代与通信。"
+          ],
+          "concept_ids": [
+            "num:parallel_in_time",
+            "num:time_integration",
+            "num:multigrid"
+          ],
+          "update_kind": "foundational_backfill",
+          "code_inspection": "not_performed",
+          "reproduction": "not_performed",
+          "first_publication_date": "2007-03-22",
+          "selected_version": "published paper hosted by author",
+          "publication_status": "SIAM J. Sci. Comput. 29(2), 556–578；作者PDF与期刊页核对",
+          "related_urls": [
+            "https://epubs.siam.org/doi/10.1137/05064607X"
+          ],
+          "track": "pde_numerics"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2506.13131",
+      "title": "AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2506.13131v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, 2025-06-16; §2.1–2.6, §6; §3仅浏览应用范围"
+      ],
+      "supported_points": [
+        "语言模型生成代码修改，自动评估与演化数据库形成反馈循环。",
+        "评价可包含多个指标及由简到难的筛选。"
+      ],
+      "limitations": [
+        "需要可执行评估器；验证器未覆盖的性质不能由得分推断。",
+        "本次未运行作者算法、未复验矩阵乘法或系统收益。"
+      ],
+      "concept_ids": [
+        "bridge:algorithm_discovery"
+      ],
+      "tracks": [
+        "bridge"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2506.13131",
+          "title": "AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2506.13131v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v1, 2025-06-16; §2.1–2.6, §6; §3仅浏览应用范围"
+          ],
+          "supported_points": [
+            "语言模型生成代码修改，自动评估与演化数据库形成反馈循环。",
+            "评价可包含多个指标及由简到难的筛选。"
+          ],
+          "limitations": [
+            "需要可执行评估器；验证器未覆盖的性质不能由得分推断。",
+            "本次未运行作者算法、未复验矩阵乘法或系统收益。"
+          ],
+          "concept_ids": [
+            "bridge:algorithm_discovery"
+          ],
+          "track": "bridge"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1038/s41586-023-06747-5",
+      "title": "Solving olympiad geometry without human demonstrations",
+      "year": 2024,
+      "url": "https://research.google/pubs/solving-olympiad-geometry-without-human-demonstrations/",
+      "accessed_at": "2026-09-19",
+      "reading_level": "abstract",
+      "locators": [
+        "Google Research官方论文页面 Abstract; Nature正文打开失败"
+      ],
+      "supported_points": [
+        "合成数据训练的语言模型与符号推导引擎协作，处理平面几何证明。"
+      ],
+      "limitations": [
+        "仅核对官方摘要；搜索索引正文片段不计为正文实读。",
+        "几何题的形式化环境不代表任意数值算法可形式证明。"
+      ],
+      "concept_ids": [
+        "bridge:algorithm_discovery"
+      ],
+      "tracks": [
+        "bridge"
+      ],
+      "reading_records": [
+        {
+          "id": "doi:10.1038/s41586-023-06747-5",
+          "title": "Solving olympiad geometry without human demonstrations",
+          "year": 2024,
+          "url": "https://research.google/pubs/solving-olympiad-geometry-without-human-demonstrations/",
+          "accessed_at": "2026-09-19",
+          "reading_level": "abstract",
+          "locators": [
+            "Google Research官方论文页面 Abstract; Nature正文打开失败"
+          ],
+          "supported_points": [
+            "合成数据训练的语言模型与符号推导引擎协作，处理平面几何证明。"
+          ],
+          "limitations": [
+            "仅核对官方摘要；搜索索引正文片段不计为正文实读。",
+            "几何题的形式化环境不代表任意数值算法可形式证明。"
+          ],
+          "concept_ids": [
+            "bridge:algorithm_discovery"
+          ],
+          "track": "bridge"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:1902.10248",
+      "title": "Learning to Optimize Multigrid PDE Solvers",
+      "year": 2019,
+      "url": "https://proceedings.mlr.press/v97/greenfeld19a/greenfeld19a.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "ICML 2019 PDF, §3–4, PDF pp.3–8; 特别§4 setup、零空间与表1–4"
+      ],
+      "supported_points": [
+        "学习系数到prolongation的映射，以误差传播矩阵范数构造训练目标。",
+        "在二维扩散算例中研究网格、边界与系数分布迁移。"
+      ],
+      "limitations": [
+        "构建阶段网络成本高于公式构造；每次cycle成本与完整求解成本须区分。",
+        "不能由这些算例推断所有PDE家族或非结构网格的鲁棒性。"
+      ],
+      "concept_ids": [
+        "bridge:solver_components"
+      ],
+      "tracks": [
+        "bridge"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:1902.10248",
+          "title": "Learning to Optimize Multigrid PDE Solvers",
+          "year": 2019,
+          "url": "https://proceedings.mlr.press/v97/greenfeld19a/greenfeld19a.pdf",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "ICML 2019 PDF, §3–4, PDF pp.3–8; 特别§4 setup、零空间与表1–4"
+          ],
+          "supported_points": [
+            "学习系数到prolongation的映射，以误差传播矩阵范数构造训练目标。",
+            "在二维扩散算例中研究网格、边界与系数分布迁移。"
+          ],
+          "limitations": [
+            "构建阶段网络成本高于公式构造；每次cycle成本与完整求解成本须区分。",
+            "不能由这些算例推断所有PDE家族或非结构网格的鲁棒性。"
+          ],
+          "concept_ids": [
+            "bridge:solver_components"
+          ],
+          "track": "bridge"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:1808.04930",
+      "title": "Data-driven discretization: machine learning for coarse graining of partial differential equations",
+      "year": 2018,
+      "url": "https://arxiv.org/html/1808.04930v3",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v3正文 .2 Models for time integration, Pseudo-linear representation, Appendix III polynomial accuracy constraints"
+      ],
+      "supported_points": [
+        "学习局部场依赖的离散权重，结合通量、守恒及多项式精度约束。"
+      ],
+      "limitations": [
+        "year为首发预印本年份2018；正式PNAS文章2019标题为Learning data-driven discretizations for partial differential equations。",
+        "主要一维规则网格实验，不能直接推广到高维复杂几何。"
+      ],
+      "concept_ids": [
+        "bridge:structure_representation",
+        "bridge:solver_components"
+      ],
+      "tracks": [
+        "bridge"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:1808.04930",
+          "title": "Data-driven discretization: machine learning for coarse graining of partial differential equations",
+          "year": 2018,
+          "url": "https://arxiv.org/html/1808.04930v3",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v3正文 .2 Models for time integration, Pseudo-linear representation, Appendix III polynomial accuracy constraints"
+          ],
+          "supported_points": [
+            "学习局部场依赖的离散权重，结合通量、守恒及多项式精度约束。"
+          ],
+          "limitations": [
+            "year为首发预印本年份2018；正式PNAS文章2019标题为Learning data-driven discretizations for partial differential equations。",
+            "主要一维规则网格实验，不能直接推广到高维复杂几何。"
+          ],
+          "concept_ids": [
+            "bridge:structure_representation",
+            "bridge:solver_components"
+          ],
+          "track": "bridge"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2007.00016",
+      "title": "Solver-in-the-Loop: Learning from Differentiable Physics to Interact with Iterative PDE-Solvers",
+      "year": 2020,
+      "url": "https://arxiv.org/html/2007.00016v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, §2学习交互与NON/PRE/SOL; §3.1–3.2; §4 forced advection-diffusion; Appendix A"
+      ],
+      "supported_points": [
+        "让修正模型通过数值演化看到自身改变的输入分布。",
+        "对随机外力问题，更长前瞻的收益受到未来不可预测性的限制。"
+      ],
+      "limitations": [
+        "需要可微求解及额外训练成本；所评估的闭环不等于全局稳定证明。"
+      ],
+      "concept_ids": [
+        "bridge:closed_loop"
+      ],
+      "tracks": [
+        "bridge"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2007.00016",
+          "title": "Solver-in-the-Loop: Learning from Differentiable Physics to Interact with Iterative PDE-Solvers",
+          "year": 2020,
+          "url": "https://arxiv.org/html/2007.00016v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v1, §2学习交互与NON/PRE/SOL; §3.1–3.2; §4 forced advection-diffusion; Appendix A"
+          ],
+          "supported_points": [
+            "让修正模型通过数值演化看到自身改变的输入分布。",
+            "对随机外力问题，更长前瞻的收益受到未来不可预测性的限制。"
+          ],
+          "limitations": [
+            "需要可微求解及额外训练成本；所评估的闭环不等于全局稳定证明。"
+          ],
+          "concept_ids": [
+            "bridge:closed_loop"
+          ],
+          "track": "bridge"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2507.15452",
+      "title": "Neural Preconditioning via Krylov Subspace Geometry",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2507.15452v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, §3, §5–6, §7.2–7.4, §8"
+      ],
+      "supported_points": [
+        "静态训练后通过FGMRES展开优化与残差相关的子空间几何。",
+        "实证检验3D–1D混合维度问题的迭代次数。"
+      ],
+      "limitations": [
+        "§7.3指出优化窗口之外角度变大；不能宣称任意迭代长度都同样改善。",
+        "§8明确OOD和大规模扩展待研究；迭代减少不等于总耗时降低。"
+      ],
+      "concept_ids": [
+        "bridge:solver_components",
+        "bridge:adaptive_compute"
+      ],
+      "tracks": [
+        "bridge"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2507.15452",
+          "title": "Neural Preconditioning via Krylov Subspace Geometry",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2507.15452v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v1, §3, §5–6, §7.2–7.4, §8"
+          ],
+          "supported_points": [
+            "静态训练后通过FGMRES展开优化与残差相关的子空间几何。",
+            "实证检验3D–1D混合维度问题的迭代次数。"
+          ],
+          "limitations": [
+            "§7.3指出优化窗口之外角度变大；不能宣称任意迭代长度都同样改善。",
+            "§8明确OOD和大规模扩展待研究；迭代减少不等于总耗时降低。"
+          ],
+          "concept_ids": [
+            "bridge:solver_components",
+            "bridge:adaptive_compute"
+          ],
+          "track": "bridge"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2502.19611",
+      "title": "PRDP: Progressively Refined Differentiable Physics",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2502.19611v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, §2.3, §3 controlling/applying refinement, §4.1–4.4, Appendix E thresholds"
+      ],
+      "supported_points": [
+        "依据验证表现逐步增加内层物理求解迭代数，平衡训练成本与精度。"
+      ],
+      "limitations": [
+        "适当精度随问题和训练阶段而变；过粗初始物理可进入发散/退化区间。",
+        "内层迭代节省不能不经测量转称同等比例端到端加速。"
+      ],
+      "concept_ids": [
+        "bridge:data_error_budget",
+        "bridge:gradient_interface"
+      ],
+      "tracks": [
+        "bridge"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2502.19611",
+          "title": "PRDP: Progressively Refined Differentiable Physics",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2502.19611v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v1, §2.3, §3 controlling/applying refinement, §4.1–4.4, Appendix E thresholds"
+          ],
+          "supported_points": [
+            "依据验证表现逐步增加内层物理求解迭代数，平衡训练成本与精度。"
+          ],
+          "limitations": [
+            "适当精度随问题和训练阶段而变；过粗初始物理可进入发散/退化区间。",
+            "内层迭代节省不能不经测量转称同等比例端到端加速。"
+          ],
+          "concept_ids": [
+            "bridge:data_error_budget",
+            "bridge:gradient_interface"
+          ],
+          "track": "bridge"
+        }
+      ]
+    },
+    {
+      "id": "arxiv:2606.27895",
+      "title": "Mosaic: A Benchmark Suite for Differentiable Physics Solvers",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2606.27895v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, 2026-06-26; §3.1–3.3, §4.3–4.4, Discussion and Limitations"
+      ],
+      "supported_points": [
+        "统一前向/VJP接口，分开评估梯度、成本、条件数和任务兼容性。",
+        "部分任务中内存和结构支持先于梯度误差成为限制。"
+      ],
+      "limitations": [
+        "四类任务、指定软件版本与硬件；没有学习组件的优化不覆盖混合训练全部失败模式。",
+        "F2正文有后端只部分收敛，因此不把摘要等价最优描述扩张到所有任务。"
+      ],
+      "concept_ids": [
+        "bridge:gradient_interface"
+      ],
+      "tracks": [
+        "bridge"
+      ],
+      "reading_records": [
+        {
+          "id": "arxiv:2606.27895",
+          "title": "Mosaic: A Benchmark Suite for Differentiable Physics Solvers",
+          "year": 2026,
+          "url": "https://arxiv.org/html/2606.27895v1",
+          "accessed_at": "2026-09-19",
+          "reading_level": "fulltext_sections",
+          "locators": [
+            "v1, 2026-06-26; §3.1–3.3, §4.3–4.4, Discussion and Limitations"
+          ],
+          "supported_points": [
+            "统一前向/VJP接口，分开评估梯度、成本、条件数和任务兼容性。",
+            "部分任务中内存和结构支持先于梯度误差成为限制。"
+          ],
+          "limitations": [
+            "四类任务、指定软件版本与硬件；没有学习组件的优化不覆盖混合训练全部失败模式。",
+            "F2正文有后端只部分收敛，因此不把摘要等价最优描述扩张到所有任务。"
+          ],
+          "concept_ids": [
+            "bridge:gradient_interface"
+          ],
+          "track": "bridge"
+        }
+      ]
+    },
+    {
+      "id": "url:aima-contents",
+      "title": "Artificial Intelligence: A Modern Approach — Full Table of Contents",
+      "year": null,
+      "url": "https://aima.cs.berkeley.edu/contents.html",
+      "accessed_at": "2026-09-19",
+      "reading_level": "official_documentation",
+      "locators": [
+        "作者官网目录 Parts II–VI; Chapters 3–22; 只核对目录结构"
+      ],
+      "supported_points": [
+        "AI的范围包含搜索、逻辑、规划、概率推断、学习与决策，不能以生成式模型代替整个学科。"
+      ],
+      "limitations": [
+        "仅作者目录，不是书正文阅读；不能用该页面支撑具体算法性能或新近前沿结论。"
+      ],
+      "concept_ids": [
+        "ai:symbolic_search_planning",
+        "ai:probabilistic_inference",
+        "ai:statistical_learning"
+      ],
+      "tracks": [
+        "bridge"
+      ],
+      "reading_records": [
+        {
+          "id": "url:aima-contents",
+          "title": "Artificial Intelligence: A Modern Approach — Full Table of Contents",
+          "year": null,
+          "url": "https://aima.cs.berkeley.edu/contents.html",
+          "accessed_at": "2026-09-19",
+          "reading_level": "official_documentation",
+          "locators": [
+            "作者官网目录 Parts II–VI; Chapters 3–22; 只核对目录结构"
+          ],
+          "supported_points": [
+            "AI的范围包含搜索、逻辑、规划、概率推断、学习与决策，不能以生成式模型代替整个学科。"
+          ],
+          "limitations": [
+            "仅作者目录，不是书正文阅读；不能用该页面支撑具体算法性能或新近前沿结论。"
+          ],
+          "concept_ids": [
+            "ai:symbolic_search_planning",
+            "ai:probabilistic_inference",
+            "ai:statistical_learning"
+          ],
+          "track": "bridge"
+        }
+      ]
+    }
+  ]
+}

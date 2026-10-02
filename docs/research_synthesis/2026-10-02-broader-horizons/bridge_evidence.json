@@ -1,0 +1,437 @@
+{
+  "track": "cross_domain",
+  "sources": [
+    {
+      "id": "arxiv:2506.13131",
+      "title": "AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2506.13131v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, 2025-06-16; §2.1–2.6, §6; §3仅浏览应用范围"
+      ],
+      "supported_points": [
+        "语言模型生成代码修改，自动评估与演化数据库形成反馈循环。",
+        "评价可包含多个指标及由简到难的筛选。"
+      ],
+      "limitations": [
+        "需要可执行评估器；验证器未覆盖的性质不能由得分推断。",
+        "本次未运行作者算法、未复验矩阵乘法或系统收益。"
+      ],
+      "concept_ids": [
+        "bridge:algorithm_discovery"
+      ]
+    },
+    {
+      "id": "doi:10.1038/s41586-023-06747-5",
+      "title": "Solving olympiad geometry without human demonstrations",
+      "year": 2024,
+      "url": "https://research.google/pubs/solving-olympiad-geometry-without-human-demonstrations/",
+      "accessed_at": "2026-09-19",
+      "reading_level": "abstract",
+      "locators": [
+        "Google Research官方论文页面 Abstract; Nature正文打开失败"
+      ],
+      "supported_points": [
+        "合成数据训练的语言模型与符号推导引擎协作，处理平面几何证明。"
+      ],
+      "limitations": [
+        "仅核对官方摘要；搜索索引正文片段不计为正文实读。",
+        "几何题的形式化环境不代表任意数值算法可形式证明。"
+      ],
+      "concept_ids": [
+        "bridge:algorithm_discovery"
+      ]
+    },
+    {
+      "id": "arxiv:1902.10248",
+      "title": "Learning to Optimize Multigrid PDE Solvers",
+      "year": 2019,
+      "url": "https://proceedings.mlr.press/v97/greenfeld19a/greenfeld19a.pdf",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "ICML 2019 PDF, §3–4, PDF pp.3–8; 特别§4 setup、零空间与表1–4"
+      ],
+      "supported_points": [
+        "学习系数到prolongation的映射，以误差传播矩阵范数构造训练目标。",
+        "在二维扩散算例中研究网格、边界与系数分布迁移。"
+      ],
+      "limitations": [
+        "构建阶段网络成本高于公式构造；每次cycle成本与完整求解成本须区分。",
+        "不能由这些算例推断所有PDE家族或非结构网格的鲁棒性。"
+      ],
+      "concept_ids": [
+        "bridge:solver_components"
+      ]
+    },
+    {
+      "id": "arxiv:1808.04930",
+      "title": "Data-driven discretization: machine learning for coarse graining of partial differential equations",
+      "year": 2018,
+      "url": "https://arxiv.org/html/1808.04930v3",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v3正文 .2 Models for time integration, Pseudo-linear representation, Appendix III polynomial accuracy constraints"
+      ],
+      "supported_points": [
+        "学习局部场依赖的离散权重，结合通量、守恒及多项式精度约束。"
+      ],
+      "limitations": [
+        "year为首发预印本年份2018；正式PNAS文章2019标题为Learning data-driven discretizations for partial differential equations。",
+        "主要一维规则网格实验，不能直接推广到高维复杂几何。"
+      ],
+      "concept_ids": [
+        "bridge:structure_representation",
+        "bridge:solver_components"
+      ]
+    },
+    {
+      "id": "arxiv:2007.00016",
+      "title": "Solver-in-the-Loop: Learning from Differentiable Physics to Interact with Iterative PDE-Solvers",
+      "year": 2020,
+      "url": "https://arxiv.org/html/2007.00016v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, §2学习交互与NON/PRE/SOL; §3.1–3.2; §4 forced advection-diffusion; Appendix A"
+      ],
+      "supported_points": [
+        "让修正模型通过数值演化看到自身改变的输入分布。",
+        "对随机外力问题，更长前瞻的收益受到未来不可预测性的限制。"
+      ],
+      "limitations": [
+        "需要可微求解及额外训练成本；所评估的闭环不等于全局稳定证明。"
+      ],
+      "concept_ids": [
+        "bridge:closed_loop"
+      ]
+    },
+    {
+      "id": "arxiv:2507.15452",
+      "title": "Neural Preconditioning via Krylov Subspace Geometry",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2507.15452v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, §3, §5–6, §7.2–7.4, §8"
+      ],
+      "supported_points": [
+        "静态训练后通过FGMRES展开优化与残差相关的子空间几何。",
+        "实证检验3D–1D混合维度问题的迭代次数。"
+      ],
+      "limitations": [
+        "§7.3指出优化窗口之外角度变大；不能宣称任意迭代长度都同样改善。",
+        "§8明确OOD和大规模扩展待研究；迭代减少不等于总耗时降低。"
+      ],
+      "concept_ids": [
+        "bridge:solver_components",
+        "bridge:adaptive_compute"
+      ]
+    },
+    {
+      "id": "arxiv:2502.19611",
+      "title": "PRDP: Progressively Refined Differentiable Physics",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2502.19611v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, §2.3, §3 controlling/applying refinement, §4.1–4.4, Appendix E thresholds"
+      ],
+      "supported_points": [
+        "依据验证表现逐步增加内层物理求解迭代数，平衡训练成本与精度。"
+      ],
+      "limitations": [
+        "适当精度随问题和训练阶段而变；过粗初始物理可进入发散/退化区间。",
+        "内层迭代节省不能不经测量转称同等比例端到端加速。"
+      ],
+      "concept_ids": [
+        "bridge:data_error_budget",
+        "bridge:gradient_interface"
+      ]
+    },
+    {
+      "id": "arxiv:2606.27895",
+      "title": "Mosaic: A Benchmark Suite for Differentiable Physics Solvers",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2606.27895v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1, 2026-06-26; §3.1–3.3, §4.3–4.4, Discussion and Limitations"
+      ],
+      "supported_points": [
+        "统一前向/VJP接口，分开评估梯度、成本、条件数和任务兼容性。",
+        "部分任务中内存和结构支持先于梯度误差成为限制。"
+      ],
+      "limitations": [
+        "四类任务、指定软件版本与硬件；没有学习组件的优化不覆盖混合训练全部失败模式。",
+        "F2正文有后端只部分收敛，因此不把摘要等价最优描述扩张到所有任务。"
+      ],
+      "concept_ids": [
+        "bridge:gradient_interface"
+      ]
+    },
+    {
+      "id": "url:aima-contents",
+      "title": "Artificial Intelligence: A Modern Approach — Full Table of Contents",
+      "year": null,
+      "url": "https://aima.cs.berkeley.edu/contents.html",
+      "accessed_at": "2026-09-19",
+      "reading_level": "official_documentation",
+      "locators": [
+        "作者官网目录 Parts II–VI; Chapters 3–22; 只核对目录结构"
+      ],
+      "supported_points": [
+        "AI的范围包含搜索、逻辑、规划、概率推断、学习与决策，不能以生成式模型代替整个学科。"
+      ],
+      "limitations": [
+        "仅作者目录，不是书正文阅读；不能用该页面支撑具体算法性能或新近前沿结论。"
+      ],
+      "concept_ids": [
+        "ai:symbolic_search_planning",
+        "ai:probabilistic_inference",
+        "ai:statistical_learning"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "bridge:adaptive_compute",
+      "label": "误差约束下分配计算",
+      "summary": "用经过检验的误差与成本信号选择预测、修正和细化。",
+      "domain": "bridge"
+    },
+    {
+      "id": "bridge:structure_representation",
+      "label": "跨离散的物理表示",
+      "summary": "把采样一致性与兼容空间、投影和物理量连接。",
+      "domain": "bridge"
+    },
+    {
+      "id": "bridge:solver_components",
+      "label": "可迁移求解器组件",
+      "summary": "共享预训练作用于预条件、粗空间、离散规则等接口。",
+      "domain": "bridge"
+    },
+    {
+      "id": "bridge:closed_loop",
+      "label": "闭环误差分布",
+      "summary": "修正会改变未来状态，训练和测试应覆盖这种反馈。",
+      "domain": "bridge"
+    },
+    {
+      "id": "bridge:compositional_physics",
+      "label": "物理机制组合",
+      "summary": "专家、算子分裂与区域耦合需有清楚的接口条件。",
+      "domain": "bridge"
+    },
+    {
+      "id": "bridge:probabilistic_inverse",
+      "label": "概率逆问题",
+      "summary": "条件生成的目标是明确定义的后验及可验证校准。",
+      "domain": "bridge"
+    },
+    {
+      "id": "bridge:data_error_budget",
+      "label": "数值误差与数据价值",
+      "summary": "数据量、独立信息、覆盖与标签数值误差分别度量。",
+      "domain": "bridge"
+    },
+    {
+      "id": "bridge:algorithm_discovery",
+      "label": "可审查算法发现",
+      "summary": "生成受限程序并通过独立验证器、反例和分析筛选。",
+      "domain": "bridge"
+    },
+    {
+      "id": "bridge:gradient_interface",
+      "label": "梯度与逆设计接口",
+      "summary": "前向准确、程序导数和真实优化效果分开验证。",
+      "domain": "bridge"
+    },
+    {
+      "id": "ai:symbolic_search_planning",
+      "label": "符号、搜索与规划",
+      "summary": "显式表示状态、约束和规则，在候选空间内推断与规划。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:probabilistic_inference",
+      "label": "概率建模与推断",
+      "summary": "明确随机变量、先验、观测与条件依赖。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:statistical_learning",
+      "label": "统计学习与泛化",
+      "summary": "从有限样本学习，研究归纳偏置、正则化、泛化和分布变化。",
+      "domain": "ai"
+    },
+    {
+      "id": "bridge:task_sufficient_state",
+      "label": "任务充分的状态与测试对象",
+      "summary": "跨域研究问题：表示压缩后是否仍可辨识通量、边界、目标量和未来演化所需方向。",
+      "domain": "bridge"
+    },
+    {
+      "id": "bridge:reusable_corrections",
+      "label": "可复用的数值修正记忆",
+      "summary": "跨域研究问题：检索相容的局部修正或粗空间，并用离散约束与残差拒绝不适用候选。",
+      "domain": "bridge"
+    }
+  ],
+  "relations": [
+    {
+      "source": "bridge:structure_representation",
+      "target": "bridge:solver_components",
+      "type": "enables",
+      "claim": "结构兼容表示可作为学习粗空间和离散规则的候选接口。",
+      "evidence_ids": [
+        "arxiv:1808.04930",
+        "arxiv:1902.10248"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "bridge:solver_components",
+      "target": "bridge:adaptive_compute",
+      "type": "enables",
+      "claim": "组件需进入完整求解循环，才能评价同容差计算分配。",
+      "evidence_ids": [
+        "arxiv:2507.15452"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "bridge:closed_loop",
+      "target": "bridge:gradient_interface",
+      "type": "requires",
+      "claim": "可微闭环需要检验梯度可用性与长时条件数。",
+      "evidence_ids": [
+        "arxiv:2007.00016",
+        "arxiv:2606.27895"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "bridge:data_error_budget",
+      "target": "bridge:gradient_interface",
+      "type": "tradeoff",
+      "claim": "内层求解精度与训练成本构成可测量权衡。",
+      "evidence_ids": [
+        "arxiv:2502.19611"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "bridge:algorithm_discovery",
+      "target": "bridge:solver_components",
+      "type": "proposes",
+      "claim": "自动程序搜索可提出受限的求解组件；正确性仍依赖验证范围。",
+      "evidence_ids": [
+        "arxiv:2506.13131",
+        "arxiv:1808.04930"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "bridge:closed_loop",
+      "target": "bridge:compositional_physics",
+      "type": "constrains",
+      "claim": "组合模块必须在耦合闭环内测试，而非仅测离线分量误差。",
+      "evidence_ids": [
+        "arxiv:2007.00016"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "bridge:gradient_interface",
+      "target": "bridge:probabilistic_inverse",
+      "type": "enables",
+      "claim": "梯度可作为部分逆问题推断/优化算法的接口；不意味着后验自动正确。",
+      "evidence_ids": [
+        "arxiv:2606.27895"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:predictive_latents",
+      "target": "bridge:task_sufficient_state",
+      "type": "motivates",
+      "claim": "研究推断：潜空间目标可以压缩信息，但PDE任务还要检验可观察物理量和演化信息是否丢失。",
+      "evidence_ids": [
+        "arxiv:2301.08243",
+        "arxiv:2506.09985"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:optimal_test_spaces",
+      "target": "bridge:task_sufficient_state",
+      "type": "constrains",
+      "claim": "研究推断：用算子相关测试范数检查表示盲区；这不是JEPA等价于DPG或自动继承其稳定性。",
+      "evidence_ids": [
+        "doi:10.1002/num.20640"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:factorized_predictive_states",
+      "target": "bridge:compositional_physics",
+      "type": "motivates",
+      "claim": "研究推断：可研究分支互补性，但潜在正交并不识别物理耦合机制。",
+      "evidence_ids": [
+        "arxiv:2609.20800"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:retrieval_memory",
+      "target": "bridge:reusable_corrections",
+      "type": "motivates",
+      "claim": "研究推断：把历史局部修正当可检索对象；须防同轨迹和测试解泄漏。",
+      "evidence_ids": [
+        "arxiv:2112.04426"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:spectral_coarse_spaces",
+      "target": "bridge:reusable_corrections",
+      "type": "constrains",
+      "claim": "研究推断：候选粗空间必须经过当前算子和边界兼容性检验；相似检索本身没有谱保证。",
+      "evidence_ids": [
+        "doi:10.1007/s00211-013-0576-y"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:adaptive_rollout",
+      "target": "bridge:adaptive_compute",
+      "type": "motivates",
+      "claim": "研究推断：可借鉴等预算随机停止对照；PDE修正器须用独立误差/约束信号校准。",
+      "evidence_ids": [
+        "arxiv:2609.33148"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "num:parallel_in_time",
+      "target": "bridge:adaptive_compute",
+      "type": "constrains",
+      "claim": "研究推断：便宜粗预测要在完整校正循环中评测，不能把单步准确率换算成并行加速。",
+      "evidence_ids": [
+        "doi:10.1137/05064607X"
+      ],
+      "certainty": "synthesis_inference"
+    }
+  ],
+  "snapshot_date": "2026-10-02",
+  "inherited_snapshot_date": "2026-09-19",
+  "update_scope": "原有来源保留 2026-09-19 的阅读记录；新增来源在 2026-10-02 核查指定章节，未全面重读继承材料。"
+}

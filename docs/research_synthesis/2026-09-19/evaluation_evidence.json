@@ -1,0 +1,508 @@
+[
+  {
+    "paper_id": "arxiv:2210.07182",
+    "title": "PDEBench: An Extensive Benchmark for Scientific Machine Learning",
+    "scope": "background",
+    "urls": [
+      "https://arxiv.org/html/2210.07182v2",
+      "https://github.com/pdebench/PDEBench"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v2 §3.1–3.3: task definition, datasets and metrics",
+      "v2 §4: baselines and temporal extrapolation",
+      "v2 Appendix B: metric definitions"
+    ],
+    "mechanism": "共同数据接口与数据/物理两类指标，比较数值代理的多种失效模式。",
+    "supported_claims": [
+      "包含稳态与演化型方程以及正/反问题设置。",
+      "评测含逐点、边界、守恒量和分频误差；单一MSE不足以表达全部性质。"
+    ],
+    "limitations": [
+      "是基准基础设施，不自身证明一个预训练模型跨PDE迁移。",
+      "参考解仍为特定生成器和离散条件下的数值结果。"
+    ],
+    "verification_notes": [
+      "当前454条主表没有精确PDEBench论文身份条目；作为背景补入本专题，不写回主表。",
+      "阅读正文相关章节；未下载数据、重跑基线或通读全部附录。"
+    ]
+  },
+  {
+    "paper_id": "unresolved:ebc4e45d7908178d61af",
+    "title": "PDEArena: A benchmark suite for neural PDE solvers [registry label; publication identity unresolved]",
+    "scope": "corpus",
+    "urls": [
+      "https://pdearena.github.io/pdearena/",
+      "https://arxiv.org/abs/2209.15616",
+      "https://github.com/microsoft/pdearena"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_abstract",
+    "source_locators": [
+      "Official PDEArena documentation: What is PDEArena and Citation",
+      "arXiv:2209.15616 original abstract"
+    ],
+    "mechanism": "官方项目提供神经PDE代理的基准实现；关联研究比较FNO、ResNet和U-Net及参数/时间泛化。",
+    "supported_claims": [
+      "官方文档引用 Towards Multi-spatiotemporal-scale Generalized PDE Modeling (2209.15616) 与 Clifford neural layers for PDE modeling (2209.04934)。",
+      "原摘要研究参数和时间尺度条件下的泛化。"
+    ],
+    "limitations": [
+      "本次未取得2209.15616正文：HTML和PDF打开均内部错误。",
+      "官方证据未确认主表所列独立NeurIPS 2023 Datasets and Benchmarks论文身份。"
+    ],
+    "verification_notes": [
+      "primary_abstract仅指关联原始论文摘要，另核对官方项目文档。",
+      "保留原 unresolved paper_id；没有把关联论文自动认定为主表同一篇。"
+    ]
+  },
+  {
+    "paper_id": "doi:10.52202/079017-1430",
+    "title": "The Well: a Large-Scale Collection of Diverse Physics Simulations for Machine Learning",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2412.00568v1",
+      "https://polymathic-ai.org/the_well/datasets_overview/"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §3: individual simulation datasets",
+      "v1 §4/Table 2: baseline protocol and VRMSE",
+      "Official dataset overview: grids, field types and trajectory splits"
+    ],
+    "mechanism": "统一多物理模拟数据格式与评测接口，用中心化尺度衡量预测误差。",
+    "supported_claims": [
+      "原始集合16个数据集约15TB，包含2D/3D场及异质物理变量。",
+      "原论文基线按单H100约12小时预算；单步和rollout分别评估。",
+      "17个基准实验不应直接当成17个数据集。"
+    ],
+    "limitations": [
+      "基线预算与默认配置不能代表架构峰值性能。",
+      "统一数据集合不是联合预训练收益证明。"
+    ],
+    "verification_notes": [
+      "以现有DOI身份关联同题原文；本次没有独立审计DOI或正式出版元数据。",
+      "实际阅读相关正文、表注与官方格式页；未复验数据。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2505.18511",
+    "title": "SPDEBench: An Extensive Benchmark for Learning Regular and Singular Stochastic PDEs",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2505.18511v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §2.3: learning problem",
+      "v1 §3.1–3.2: regular/singular tasks and renormalization-aware models",
+      "v1 §4.1/Tables 3–4: same-truncation and high-precision reference comparisons"
+    ],
+    "mechanism": "将随机驱动截断与奇异方程重整化作为数据身份和条件输入的一部分。",
+    "supported_claims": [
+      "覆盖1D/2D环面上的正则与奇异SPDE。",
+      "同一截断下的低测试误差可以掩盖与更精细参考的差距。",
+      "向模型提供重整化参数是被检验的条件化方案。"
+    ],
+    "limitations": [
+      "有限数值截断依然是参考近似。",
+      "输入已含随机强迫路径的任务不等价于未知未来噪声的概率预测。"
+    ],
+    "verification_notes": [
+      "正文核验了数据生成和评测协议，不仅复述日报；未运行代码。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2512.18595",
+    "title": "Benchmarking neural surrogates on realistic spatiotemporal multiphysics flows",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2512.18595v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 Results: Mathematical Formulation and Learning Framework",
+      "v1 benchmark overview and native mesh protocol",
+      "v1 Appendix B.3 / Extended Data Table: case-wise configurations"
+    ],
+    "mechanism": "以刚性化学源项耦合输运PDE构成高成本模拟基准，统一预处理和rollout。",
+    "supported_claims": [
+      "11个高保真数据集，覆盖反应流、推进与火灾场景。",
+      "数值平均精度/相关性与瞬态结构、积分物理量可出现差距。",
+      "维数、刚性与网格不规则性共同构成困难。"
+    ],
+    "limitations": [
+      "realistic表示应用和模拟复杂度，不表示来自实验测量。",
+      "模型排名依赖给定容量、调参和rollout协议。"
+    ],
+    "verification_notes": [
+      "原文题名没有大写REALM前缀，注册表别称作为模型/基准名保留。",
+      "未把作者的scaling barrier外推为所有架构的不可逾越定理。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2601.01829",
+    "title": "RealPDEBench: A Benchmark for Complex Physical Systems with Real-World Data",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2601.01829v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §3.1: real training, simulated training, simulated pretraining plus real fine-tuning",
+      "v1 §3.2: Cylinder, Controlled Cylinder, FSI, Foil, Combustion",
+      "v1 §4/Table 1: evaluation metrics"
+    ],
+    "mechanism": "实验测量与模拟配对，固定真实验证/测试集比较三种训练信息来源。",
+    "supported_claims": [
+      "五种物理场景；真实与模拟差异被显式用于迁移评测。",
+      "协议允许全部N个模拟样本用于模拟训练/预训练，只有n个真实样本训练。"
+    ],
+    "limitations": [
+      "因此不是全部测试工况都从模拟训练中留出的新工况泛化。",
+      "真实观测受噪声与可观测变量限制，不能当作无误差全状态。"
+    ],
+    "verification_notes": [
+      "主表历史发表声明未在本项重新核实；此次确认研究协议。",
+      "报告另提出真实/模拟共同工况留出作为更强的新实验设计。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2605.29283",
+    "title": "Do Physics Foundation Models Learn Generalizable Physics? A Bias-Aware Benchmark Across Physical Regimes and Distribution Shifts",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2605.29283v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §3.1/Table 1: factorized axes",
+      "v1 §3.2–3.3: mixtures and dynamic scale construction",
+      "v1 §3.4: sample/frame relative L2 and bootstrap"
+    ],
+    "mechanism": "把训练混合、模型/规模、动力学尺度、初值复杂度和时间跨度拆成实验因素。",
+    "supported_claims": [
+      "原文覆盖DPOT、GPhyT、MORPH、MPP、Poseidon及八种动力学。",
+      "动态尺度由密轨迹时间子采样stride产生。",
+      "未见范围内组合与真正超出轴范围分开。"
+    ],
+    "limitations": [
+      "时间stride变化不能直接等同改变物理方程参数。",
+      "给定构造分布内的能力剖面不是全部物理规律泛化的最终判定。"
+    ],
+    "verification_notes": [
+      "本次阅读协议正文；没有独立复算60000个聚合测量。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2606.00296",
+    "title": "Is Zero-Shot Super-Resolution Possible in Operator Learning?",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2606.00296v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §3.1: input discretization invariance versus output resolution",
+      "v1 §4/Theorem 1: coarse-grid indistinguishability",
+      "v1 §5/Theorem 2: Hölder regularity, grid coverage and load balancing"
+    ],
+    "mechanism": "用不可辨识反例及正则性误差界分离输出细网格泛化与输入离散一致性。",
+    "supported_claims": [
+      "缺乏输出正则性时，粗网格拟合并不保证新输出点准确。",
+      "正向界要求预测与真实输出均有一致Hölder控制，且依赖网格覆盖。"
+    ],
+    "limitations": [
+      "不是任何超分辨率都不可能的定理。",
+      "加入高分辨率物理残差/细网格监督改变了可用信息协议。"
+    ],
+    "verification_notes": [
+      "已读两个定理陈述、假设和证明思路，未逐行审核完整证明。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2605.09189",
+    "title": "Practical Scaling Laws: Converting Compute into Performance in a Data-Constrained World",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2605.09189v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §2/Eq.2: N,D,T and saturating form",
+      "v1 §2: What L represents / Scope of a fit",
+      "v1 §3 and Appendix H headings: MNIST, CIFAR-100, Darcy, TinyStories"
+    ],
+    "mechanism": "独立区分参数量、独立数据量和重复见过样本数，拟合容量/训练不足与过拟合。",
+    "supported_claims": [
+      "有四组跨架构自建实验，包括Darcy-FNO，并回拟合五个LLM网格。",
+      "L表示最低验证checkpoint损失；拟合限定架构族、分布和训练配方。"
+    ],
+    "limitations": [
+      "不能直接将系数迁移为PDE跨域收益预测。",
+      "相邻时空样本的有效独立信息量需另行定义。"
+    ],
+    "verification_notes": [
+      "纠正历史摘要只突出LLM回拟合造成的范围遗漏。",
+      "公式是一种经实验校准的预测模型，不是已证明的普适物理缩放定律。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2111.03794",
+    "title": "Physics-Informed Neural Operator for Learning Partial Differential Equations",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2111.03794v3"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v3 §3.1: low-resolution data with high-resolution PDE constraints",
+      "v3 §3.2: optional instance-wise fine-tuning and anchor loss",
+      "v3 §3.3: derivative computation"
+    ],
+    "mechanism": "把算子训练的数据损失和PDE约束结合，并允许目标实例残差优化。",
+    "supported_claims": [
+      "细网格PDE约束为粗观测提供额外信息。",
+      "实例优化需要在线计算，与纯前向部署有成本权衡。"
+    ],
+    "limitations": [
+      "无目标解标签不等于无目标方程信息或无适配。",
+      "导数计算存在离散精度与算力代价。"
+    ],
+    "verification_notes": [
+      "阅读v3方法正文，未比较后续所有版本与期刊改动。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2602.01498",
+    "title": "Geometric Generalization of Neural Operators from Kernel Integral Perspective",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2602.01498v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §1.1–1.2: M-PCNO and Ewald motivation",
+      "v1 §2: singular-kernel assumptions",
+      "v1 §3–5 section structure"
+    ],
+    "mechanism": "以Ewald式近远场分解近似奇异核，构造多尺度点云神经算子。",
+    "supported_claims": [
+      "目标是可变几何上的核积分与点云算子。",
+      "原文报告含大规模3D流动的几何泛化实验。"
+    ],
+    "limitations": [
+      "核近似理论条件不能自动转成任意训练数据上的几何外推保证。",
+      "线性复杂度声明须固定模式数/邻域等架构配置理解。"
+    ],
+    "verification_notes": [
+      "重点读机制与几何假设；本项不复验完整实验表和全部证明。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2602.20399",
+    "title": "GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2602.20399v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 Introduction/Fig.1: geometry-only pretraining comparison",
+      "v1 §3: steady-state problem setting",
+      "v1 dynamics-lifted pretraining description"
+    ],
+    "mechanism": "向无物理标签几何加入合成速度/输运条件，预训练动力学相关表示再做任务微调。",
+    "supported_claims": [
+      "原文预训练超过百万几何walk样本。",
+      "报告跨汽车、飞机、船舶与固体任务的数据效率改善。"
+    ],
+    "limitations": [
+      "无任务物理标签的预训练不等于无合成条件或无下游标签。",
+      "正文设定以稳态模拟为主，不应据此声称长时程动力学能力。"
+    ],
+    "verification_notes": [
+      "本项核验方法和适用范围，未独立核验ICML正式接收身份。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2601.19091",
+    "title": "Out-of-Distribution Generalization for Neural Physics Solvers",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/html/2601.19091v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 Fig.1: NOVA architecture selection and final-layer physics adaptation",
+      "v1 §2.1–2.4: IC, geometry and PDE-parameter changes"
+    ],
+    "mechanism": "架构搜索结合目标侧末层物理适配，以已知方程约束提高分布外求解能力。",
+    "supported_claims": [
+      "实验分别考察初值、几何和方程参数变化。",
+      "zero-shot adaptation仍使用目标物理信息。"
+    ],
+    "limitations": [
+      "不应与零优化前向推理使用同一延迟口径。",
+      "多系统上分别验证不自动建立一个统一模型的零样本跨PDE能力。"
+    ],
+    "verification_notes": [
+      "以正文定义解释zero-shot，不沿用标签做扩大推论。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2609.12301",
+    "title": "PDE-constrained inverse problems at the sqrt(n) rate via debiased physics-informed neural networks",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/abs/2609.12301",
+      "https://arxiv.org/html/2609.12301v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §2.1–2.2: debiased estimation and quasi-likelihood",
+      "v1 Assumption 1: beta-2tau>d, known design and noise",
+      "v1 Assumptions 2–5 and Theorem 3.8",
+      "v1 §4: numerical experiment design"
+    ],
+    "mechanism": "对低维PDE参数的估计方程做影响函数去偏，降低对神经解函数误差的一阶敏感性。",
+    "supported_claims": [
+      "满足论文假设时得到根号n一致性、渐近正态与相应Bayesian结果。",
+      "场函数是非参数nuisance，参数推断速率与场误差速率不同。"
+    ],
+    "limitations": [
+      "需要正则性、可辨识性、局部曲率、已知采样设计等假设。",
+      "不涵盖任意未知传感偏差、噪声相关性或不可辨识逆问题。"
+    ],
+    "verification_notes": [
+      "已读取原文正文和定理前提，不仅摘要；未逐页验证91页全部证明。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2609.15432",
+    "title": "Single-condition neural solvers encode transferable response spaces for parametric differential equations",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/abs/2609.15432",
+      "https://arxiv.org/pdf/2609.15432"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "PDF pp.4–6: LST and residual-guided source enrichment",
+      "PDF pp.12–14: Discussion, limitations, response-space construction",
+      "PDF Methods: output-tangent interpretation; supplement source-coverage discussion"
+    ],
+    "mechanism": "缓存输出Jacobian的低秩响应模态与导数，在仿射空间中最小化目标残差，并按需增补源。",
+    "supported_claims": [
+      "六种微分方程系统支持局部响应复用。",
+      "保留目标特定在线求解，而非只做一次前向。"
+    ],
+    "limitations": [
+      "秩截断、条件数、精度与缓存内存制约可用性。",
+      "残差是实用覆盖指示，不是严格解误差证书；强非线性条件变化没有通用保证。"
+    ],
+    "verification_notes": [
+      "PDF正文可访问；阅读方法/讨论与部分补充章节，未逐页通读43页。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2609.15620",
+    "title": "Where to Compute and How to Interact: Operator-Readable Adaptation with Gauge-Aware Transport",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/abs/2609.15620",
+      "https://arxiv.org/html/2609.15620v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §3/Eqs.8–10: low-rank transport before aggregation",
+      "v1 §4.2–4.3: ablations and frozen-checkpoint interventions",
+      "v1 Appendix E/Proposition 2: topology-preserving deformation stability"
+    ],
+    "mechanism": "将自适应节点分配和几何条件低秩特征传输分开，聚合前对齐局部表示上下文。",
+    "supported_claims": [
+      "五个基准上报告改善，并用干预检验分配与交互作用。",
+      "连续性分析限固定节点身份/连接及非退化网格。"
+    ],
+    "limitations": [
+      "学习特征修正不是严格解析gauge变换或无条件等变保证。",
+      "拓扑变化、折叠和3D非结构网格不在该命题覆盖范围。"
+    ],
+    "verification_notes": [
+      "原文全称为 Gauge-Aware Adaptive Mesh Neural Operator；主表写作Multi-scale存在名称差异，未改主表。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2609.16621",
+    "title": "Stable by Construction: Variational Latent Markov Operators for Long-Horizon PDE Prediction",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/abs/2609.16621",
+      "https://arxiv.org/html/2609.16621v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §2.1: same IC distribution and temporal extrapolation",
+      "v1 §3.3/Proposition 3.12/Eq.3.21: population rollout bound",
+      "v1 conclusion: limitations"
+    ],
+    "mechanism": "结构化高斯潜扰动与动态KL对齐改善局部敏感性和转移误差，推断用确定性均值演化。",
+    "supported_claims": [
+      "流体基准中长时程误差积累低于所测确定性/噪声注入基线。",
+      "误差界包含转移Lipschitz常数的幂次传播。"
+    ],
+    "limitations": [
+      "系数大于1时理论仍允许误差放大，不是任意长期稳定证明。",
+      "规则网格、FNO潜转移、固定局部时间步与流体实验限制外推。"
+    ],
+    "verification_notes": [
+      "已核对命题和作者局限；不把标题直接当稳定性定理。"
+    ]
+  },
+  {
+    "paper_id": "arxiv:2609.20814",
+    "title": "How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?",
+    "scope": "corpus",
+    "urls": [
+      "https://arxiv.org/abs/2609.20814",
+      "https://arxiv.org/html/2609.20814v1"
+    ],
+    "accessed_at": "2026-09-19T08:26:45Z",
+    "evidence_level": "primary_fulltext",
+    "source_locators": [
+      "v1 §2–3: matched freestream, identical-sample scratch controls, depth/breadth",
+      "v1 Appendix I: matched-error sample-efficiency estimator",
+      "v1 Appendix K/Table: 1000,5000,10000 and censored draw"
+    ],
+    "mechanism": "将几何家族变化与额外转捩建模分开，测量目标数据预算和覆盖对预训练数据效率的交互。",
+    "supported_claims": [
+      "G在N=1000时为3.25/2.58，N=5000时为1.56/1.86；变化是目标间排序。",
+      "所有这些值大于1，不能据此声称负迁移。",
+      "N=10000转捩目标一项重复因匹配预算不可达而删失。"
+    ],
+    "limitations": [
+      "单一RANS翼型物理族及两个相关模型设置。",
+      "重复主要是数据抽样/重训练；全数据点仅单次运行。"
+    ],
+    "verification_notes": [
+      "主表research_relation中“优势下降甚至反转”容易误导，报告明确纠偏；主表保持原状。",
+      "核对全文和附录，未重新拟合数据效率曲线或独立重复训练。"
+    ]
+  }
+]

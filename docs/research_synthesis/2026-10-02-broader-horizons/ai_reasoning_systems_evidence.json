@@ -1,0 +1,930 @@
+{
+  "track": "ai_reasoning_systems",
+  "sources": [
+    {
+      "id": "arxiv:2201.11903",
+      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2201.11903v6",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v6，2023-01-10；§1、§2、§3.1"
+      ],
+      "supported_points": [
+        "通过少样本推理轨迹提示把计算展开为中间文本；无需为该提示更新模型权重。"
+      ],
+      "limitations": [
+        "原文任务与规模条件不等同普遍推理保证；可读轨迹不证明内部计算忠实。"
+      ],
+      "concept_ids": [
+        "ai:reasoning_traces",
+        "ai:test_time_compute"
+      ]
+    },
+    {
+      "id": "arxiv:2305.18290",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2305.18290v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3、§4，式(3)–(7)；§5开头"
+      ],
+      "supported_points": [
+        "用KL约束奖励最优化的策略—奖励变换，直接拟合成对偏好，省去显式奖励模型与在线RL循环。"
+      ],
+      "limitations": [
+        "推导依赖偏好模型、参考策略及数据分布条件；偏好一致不代表客观正确。"
+      ],
+      "concept_ids": [
+        "ai:preference_optimization"
+      ]
+    },
+    {
+      "id": "arxiv:2305.20050",
+      "title": "Let's Verify Step by Step",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2305.20050v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–§2.6；§3–§5；§6.3"
+      ],
+      "supported_points": [
+        "比较过程和结果监督的奖励模型，在固定生成器候选重排中评估；PRM监督对步骤评价。"
+      ],
+      "limitations": [
+        "主要结果不是在线RL训练生成器；78%对应500道代表性测试题与候选选择，不是整个MATH单次生成率；大规模监督数据不能视作严格同量对照。"
+      ],
+      "concept_ids": [
+        "ai:process_verification",
+        "ai:test_time_compute"
+      ]
+    },
+    {
+      "id": "arxiv:2408.03314",
+      "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2408.03314v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1–§4；§5.1–§5.2；图1与§7结果概览"
+      ],
+      "supported_points": [
+        "区分提议分布修订与验证器搜索，按题目难度配置推理计算；追加推理与预训练的收益依任务与调用负载变化。"
+      ],
+      "limitations": [
+        "PaLM 2-S*与MATH 500题设定；修订/验证能力需专门训练；难度估计额外成本未计入主实验，不能当部署总成本最优定律。"
+      ],
+      "concept_ids": [
+        "ai:test_time_compute",
+        "ai:process_verification"
+      ]
+    },
+    {
+      "id": "arxiv:2501.12948",
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2501.12948v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–§2.3概览；§2.2.1–§2.2.4；§4.2、§5"
+      ],
+      "supported_points": [
+        "R1-Zero从预训练基座直接进行GRPO，准确性与格式规则奖励驱动更新；R1另含冷启动、SFT和多阶段RL。"
+      ],
+      "limitations": [
+        "无前置SFT不等于无预训练知识；R1与R1-Zero必须区分；长推理不自动改善函数调用、多轮或软件工程。"
+      ],
+      "concept_ids": [
+        "ai:verifiable_rl",
+        "ai:reasoning_traces"
+      ]
+    },
+    {
+      "id": "arxiv:2504.13837",
+      "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2504.13837v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1；§2.1–§2.2；§3.1实验设定；表1、图1–2"
+      ],
+      "supported_points": [
+        "用pass@k比较基座与RL模型，所测条件下小k成功率提升可伴随大k可解题覆盖下降。"
+      ],
+      "limitations": [
+        "有限采样、提示、温度和检验器决定结论边界；大k不是数学能力上界，也不是实际可部署的正确候选选择；不能证明所有RL无法产生新能力。"
+      ],
+      "concept_ids": [
+        "ai:verifiable_rl",
+        "ai:execution_evaluation"
+      ]
+    },
+    {
+      "id": "arxiv:2605.10325",
+      "title": "Verifiable Process Rewards for Agentic Reasoning",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2605.10325v2",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "初读v1（2026-05-11）：§2.1–§2.4，命题1–3；§3表1–2",
+        "2026-09-19定向复核v2（2026-05-27）：§2.1–§2.4，命题1–3；§3表1–2及§3.1–§3.3相关实验说明",
+        "arXiv v2版本说明：更正minor typos及LLM-assisted data extraction errors；未进行全篇版本差异审计"
+      ],
+      "supported_points": [
+        "用搜索、约束或后验算法构造逐回合奖励，改善结构化游戏中的信用分配；近似验证器误差影响梯度偏差。",
+        "定向复核确认v2保留本文所用命题1–3前提与公式；表1评估说明由3次×100局改为5次×1024局，表2 MATH-500/GPQA-D重复次数由5改为10并更正部分数值。",
+        "v2表2三种VPR模型平均分62.17/62.35/62.59均高于基座60.92；这不是所有单项任务均提高。"
+      ],
+      "limitations": [
+        "井字棋、数独、扫雷为主要受控环境；固定状态分布与有界score gradient是偏差界前提；线性对指数比较限于独立Bernoulli且共享logit的简化情形；过程最优性依oracle定义。",
+        "v2表2中井字棋/数独训练的VPR在MATH-500为83.80/83.54，均低于基座84.40；平均改善不能扩张为普遍单项迁移。",
+        "修订后评估次数和数值来自原文，未重跑实验或检查原始日志；不声称已定位所有数据提取错误。"
+      ],
+      "concept_ids": [
+        "ai:process_verification",
+        "ai:verifiable_rl",
+        "ai:tool_agents"
+      ]
+    },
+    {
+      "id": "arxiv:2606.09380",
+      "title": "Reasoning Arena: Trace Tournaments When Verifiable Rewards Fall Short",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2606.09380v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1，2026-06-08；§3、§4；§5表1–2"
+      ],
+      "supported_points": [
+        "相同奖励组的组内优势为零；仅将这些组路由给轨迹比较评审，使用动态对手与Bradley–Terry排序，底层为CISPO。"
+      ],
+      "limitations": [
+        "补入的是学习型judge偏好，不是新增确定性正确性证据；零优势指奖励驱动项而非所有正则梯度；表1平均增益7.6是百分点，成本受生成长度及评审开销影响。"
+      ],
+      "concept_ids": [
+        "ai:verifiable_rl",
+        "ai:preference_optimization",
+        "ai:process_verification"
+      ]
+    },
+    {
+      "id": "arxiv:2210.03629",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2210.03629v3",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v3，2023-03-10；§1、§2；§3–§4任务概览"
+      ],
+      "supported_points": [
+        "交替产生文本推理、工具动作和环境观察，用外部反馈更新后续决策上下文。"
+      ],
+      "limitations": [
+        "原文少样本与特定工具环境结果不能推出一般长期自治；文本轨迹易读不等于因果忠实解释；工具观察本身也可不可靠。"
+      ],
+      "concept_ids": [
+        "ai:tool_agents",
+        "ai:reasoning_traces"
+      ]
+    },
+    {
+      "id": "arxiv:2310.06770",
+      "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2310.06770v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.1–§2.3；§3；§4.1"
+      ],
+      "supported_points": [
+        "以真实issue、历史仓库状态和测试执行评估补丁；v1含12个Python仓库的2294个任务。"
+      ],
+      "limitations": [
+        "只记录v1而非后来的Verified/Lite或当前排行榜；通过给定测试不等于完整需求正确、无回归或无污染；检索和环境设置影响成绩。"
+      ],
+      "concept_ids": [
+        "ai:execution_evaluation",
+        "ai:tool_agents"
+      ]
+    },
+    {
+      "id": "arxiv:2404.07972",
+      "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2404.07972v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1；§2.1–§2.3；§5小节目录与原文摘要的失败归因"
+      ],
+      "supported_points": [
+        "将计算机操作形式化为POMDP，支持虚拟机初始化、动作执行与任务专用终态检查；v1为369任务。"
+      ],
+      "limitations": [
+        "得分依观察形式、步数、环境和检查器；2024原始基线不是2026能力水平；终态检查并不自动覆盖过程副作用。"
+      ],
+      "concept_ids": [
+        "ai:execution_evaluation",
+        "ai:tool_agents"
+      ]
+    },
+    {
+      "id": "arxiv:2301.04104",
+      "title": "Mastering Diverse Domains through World Models",
+      "year": 2023,
+      "url": "https://arxiv.org/pdf/2301.04104v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1 PDF印刷页1–7：概览、Symlog Predictions、World Model Learning、Actor Critic Learning"
+      ],
+      "supported_points": [
+        "DreamerV3用RSSM和想象轨迹训练actor–critic，借助尺度处理与KL稳定化复用超参数；交互时actor选动作而不做前瞻搜索。"
+      ],
+      "limitations": [
+        "跨域复用算法与超参数不等于同一组权重零样本解决所有任务；模型仍依赖实际环境数据；想象误差与奖励设定限制策略。"
+      ],
+      "concept_ids": [
+        "ai:world_models",
+        "ai:embodied_policies"
+      ]
+    },
+    {
+      "id": "arxiv:2501.10100",
+      "title": "Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2501.10100v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§III-A–III-C；§IV-E相关结果；§V"
+      ],
+      "supported_points": [
+        "历史上下文与预测反馈的双自回归训练面向部分可观测机器人动力学；MBPO-PPO利用模型轨迹更新策略，展示ANYmal D部署。"
+      ],
+      "limitations": [
+        "世界模型先用模拟数据预训练；仍落后于高保真模拟器中充分调优的无模型RL；从零训练与硬件安全在线适应尚未解决。"
+      ],
+      "concept_ids": [
+        "ai:world_models",
+        "ai:embodied_policies"
+      ]
+    },
+    {
+      "id": "arxiv:2504.16054",
+      "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§II–§IV概览；§V-B–§V-E；§VI；附录A-D评测取消说明"
+      ],
+      "supported_points": [
+        "跨机器人、环境、网络与高层语义数据联合训练；同一模型先推子任务，再以动作expert生成连续动作，评估未见家庭环境。"
+      ],
+      "limitations": [
+        "未见家庭不等于任意世界；网络数据收益依评测指标，高层监督本身贡献不能全归推理时展开；部分取消episode被移除；新把手、遮挡、记忆与复杂指令仍受限。"
+      ],
+      "concept_ids": [
+        "ai:embodied_policies",
+        "ai:reasoning_traces"
+      ]
+    },
+    {
+      "id": "arxiv:2102.11107",
+      "title": "Towards Causal Representation Learning",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2102.11107v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§II；§V后半；§VI–§VII开头"
+      ],
+      "supported_points": [
+        "区分观测、干预、反事实；提出独立机制和稀疏机制变化视角，将学习变量与学习因果结构结合。"
+      ],
+      "limitations": [
+        "原文属于概念/综述性论证，不是统一实证突破；因果识别需要结构假设或环境/干预信息；预测准确的微分方程也可能不保留真实因果机制。"
+      ],
+      "concept_ids": [
+        "ai:causal_representation",
+        "ai:world_models"
+      ]
+    },
+    {
+      "id": "arxiv:2107.07511",
+      "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2107.07511v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1–§1.1；§3.3；§4.1–§4.2"
+      ],
+      "supported_points": [
+        "用独立校准数据的非一致性分数分位数构造预测集合；交换性下有有限样本边际覆盖。"
+      ],
+      "limitations": [
+        "distribution-free不取消交换性；不保证每输入条件覆盖或任意OOD有效；必须连同集合大小评估，高维同时覆盖可能很宽。"
+      ],
+      "concept_ids": [
+        "ai:calibrated_uncertainty"
+      ]
+    },
+    {
+      "id": "arxiv:2604.23987",
+      "title": "Continual Calibration: Coverage Can Collapse Before Accuracy in Lifelong LLM Fine-Tuning",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2604.23987v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "v1，2026-04-27；§2；§4.2–§4.6；§5定理6、7和命题8；§6"
+      ],
+      "supported_points": [
+        "持续微调时分数分布可漂移而argmax近似不变；保留每任务校准缓冲并按当前模型重算阈值，以恢复任务内覆盖。"
+      ],
+      "limitations": [
+        "主要是分类/多选任务；定理依固定当前模型、保留数据与目标样本交换性；无梯度校准不等于无需标签或计算；开放生成仅探索，不能套用全部形式保证。"
+      ],
+      "concept_ids": [
+        "ai:continual_adaptation",
+        "ai:calibrated_uncertainty"
+      ]
+    },
+    {
+      "id": "arxiv:2401.05566",
+      "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2401.05566v1",
+      "accessed_at": "2026-09-19",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§1；§3.2–§3.3；§6"
+      ],
+      "supported_points": [
+        "人工构造的条件后门可在所测安全微调和对抗训练后保留，触发分布与通常评测分布的区别影响结论。"
+      ],
+      "limitations": [
+        "是存在性和方法局限研究，未估计自然训练自发欺骗的频率；隐蔽文本也不是部署模型已具恶意目标的证据。"
+      ],
+      "concept_ids": [
+        "ai:behavioral_safety",
+        "ai:execution_evaluation"
+      ]
+    },
+    {
+      "id": "arxiv:2506.09985",
+      "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2506.09985v1",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§3.1 Action-Conditioned World Model Training；§3.2规划接口；§4.2表2–3；§4.3 Limitations"
+      ],
+      "supported_points": [
+        "冻结视频编码器后，用含动作和状态信息的数据学习因果预测器，接入MPC闭环。"
+      ],
+      "limitations": [
+        "无奖励标签不表示没有动作/状态信息；原文约62小时机器人数据具有末端状态记录。",
+        "相机位置敏感、长程误差积累及图像目标要求均在§4.3中说明；不是任意物理系统上的通用控制器。"
+      ],
+      "concept_ids": [
+        "ai:predictive_latents",
+        "ai:world_models",
+        "bridge:closed_loop"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "selected_version": "v1",
+      "publication_status": "本轮按arXiv所读版本记录；未另核正式发表状态",
+      "first_publication_date": "2025-06-11",
+      "selected_version_date": "2025-06-11"
+    },
+    {
+      "id": "arxiv:2112.04426",
+      "title": "Improving language models by retrieving from trillions of tokens",
+      "year": 2021,
+      "url": "https://arxiv.org/html/2112.04426v3",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2.3–2.4 检索与chunked cross-attention；Algorithm 1；§2.6 数据泄漏量化"
+      ],
+      "supported_points": [
+        "RETRO用冻结检索器取回邻近文本，由可训练编码器与分块交叉注意力融入自回归预测。",
+        "§2.6按检索到的重合子串分层评测，显式处理测试数据与外部记忆的重合。"
+      ],
+      "limitations": [
+        "文本匹配不直接定义PDE算子、量纲或边界条件的相容性。",
+        "未复核全套性能/成本实验；检索库、编码和IO成本需要另计。"
+      ],
+      "concept_ids": [
+        "ai:retrieval_memory",
+        "ai:compression_and_memory",
+        "ai:data_curation"
+      ],
+      "update_kind": "foundational_backfill",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "selected_version": "v3",
+      "publication_status": "本轮按arXiv所读版本记录；未另核正式发表状态",
+      "first_publication_date": "2021-12-08",
+      "selected_version_date": "2022-02-07"
+    },
+    {
+      "id": "arxiv:2609.33148",
+      "title": "DroneWAM: Efficient World Action Model for Drone Visual Navigation",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2609.33148v1",
+      "accessed_at": "2026-10-02",
+      "reading_level": "fulltext_sections",
+      "locators": [
+        "§2数据划分；§3.1–3.3；§4.1–4.3表1–5；§7 Limitations"
+      ],
+      "supported_points": [
+        "固定特征压缩器加潜空间预测/动作规划，偏好训练Gate选择想象深度。",
+        "表4的近等平均深度随机停止对照支持研究“计算分配”而非只比较是否早停。"
+      ],
+      "limitations": [
+        "基础训练/验证按轨迹clip拆分，五个环境都出现；Gate的环境留出不等于完整模型的新环境泛化。",
+        "§4.2与§7明确复杂闭环成功仍低、尚未就绪真实部署；想象深度K不是动作计划跨度H。代码链接未审计，不确认已公开完整代码数据。"
+      ],
+      "concept_ids": [
+        "ai:adaptive_rollout",
+        "ai:world_models",
+        "bridge:adaptive_compute"
+      ],
+      "update_kind": "recent_publication",
+      "code_inspection": "not_performed",
+      "reproduction": "not_performed",
+      "first_publication_date": "2026-09-27",
+      "selected_version": "v1",
+      "publication_status": "arXiv预印本；未核到正式接收事件",
+      "official_code_url": "https://github.com/1e12Leon/DroneWAM"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "ai:reasoning_traces",
+      "label": "显式推理轨迹",
+      "summary": "将部分任务计算序列化为中间文本；可用于提示、监督和候选选择，但不自动成为内部机制的忠实解释。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:preference_optimization",
+      "label": "偏好优化",
+      "summary": "根据比较反馈调整策略；偏好来源、参考策略和数据覆盖决定目标含义。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:verifiable_rl",
+      "label": "可验证奖励强化学习",
+      "summary": "通过答案规则或执行结果形成奖励，优化可采样策略；检验器覆盖与探索支持决定边界。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:process_verification",
+      "label": "过程反馈与验证",
+      "summary": "对中间决策提供人类、学习模型或算法oracle信号；三类信号的可靠性与成本应分开。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:test_time_compute",
+      "label": "推理时计算分配",
+      "summary": "在候选生成、修订、搜索和验证之间分配计算，优化特定任务与预算下的成功率。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:tool_agents",
+      "label": "工具交互智能体",
+      "summary": "以观察—动作闭环维护任务上下文并执行工具，能力属于模型与环境接口组成的系统。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:execution_evaluation",
+      "label": "执行与干预评测",
+      "summary": "通过测试、终态、过程约束和受控扰动评估实际任务结果，而非只比较生成文本。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:world_models",
+      "label": "动作条件世界模型",
+      "summary": "学习观察或潜变量转移以支持想象学习或规划；预测分布不天然具有物理或因果真实性。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:embodied_policies",
+      "label": "具身与VLA策略",
+      "summary": "结合视觉、语言和机器人动作实现闭环控制，训练环境与控制时限是能力组成部分。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:causal_representation",
+      "label": "因果表征",
+      "summary": "学习支持干预问题的变量与机制，依赖可识别假设和多环境/干预信息。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:calibrated_uncertainty",
+      "label": "校准与覆盖",
+      "summary": "把预测分数转为可评估的概率或集合保证；须区分边际覆盖、条件覆盖及分布外可靠性。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:continual_adaptation",
+      "label": "持续适应",
+      "summary": "在序列任务中更新模型并控制遗忘、校准漂移和资源成本，不只保留平均正确率。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:behavioral_safety",
+      "label": "行为安全与威胁模型",
+      "summary": "在明确定义的触发、分布变化及监督条件下评估不希望行为，区分构造存在性与发生率。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:retrieval_memory",
+      "label": "检索增强与外部记忆",
+      "summary": "把可寻址资料与模型权重分开，研究检索对象、匹配、融合及污染控制。",
+      "domain": "ai"
+    },
+    {
+      "id": "ai:adaptive_rollout",
+      "label": "自适应想象与停止",
+      "summary": "按当前状态与可校准信号选择额外预测深度；预算、停止深度和物理时间跨度是不同变量。",
+      "domain": "ai"
+    }
+  ],
+  "relations": [
+    {
+      "source": "arxiv:2201.11903",
+      "target": "ai:reasoning_traces",
+      "type": "studies",
+      "claim": "少样本中间轨迹提示是本文被研究的计算接口。",
+      "evidence_ids": [
+        "arxiv:2201.11903"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2305.18290",
+      "target": "ai:preference_optimization",
+      "type": "proposes",
+      "claim": "DPO给出直接成对偏好优化目标。",
+      "evidence_ids": [
+        "arxiv:2305.18290"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2501.12948",
+      "target": "ai:verifiable_rl",
+      "type": "demonstrates",
+      "claim": "R1-Zero报告从预训练基座以规则奖励进行RL。",
+      "evidence_ids": [
+        "arxiv:2501.12948"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2605.10325",
+      "target": "ai:process_verification",
+      "type": "proposes",
+      "claim": "VPR以任务oracle产生逐回合奖励。",
+      "evidence_ids": [
+        "arxiv:2605.10325"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2604.23987",
+      "target": "ai:continual_adaptation",
+      "type": "studies",
+      "claim": "持续微调研究将覆盖漂移列为独立评测对象。",
+      "evidence_ids": [
+        "arxiv:2604.23987"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "ai:reasoning_traces",
+      "target": "ai:test_time_compute",
+      "type": "exposes_computation",
+      "claim": "中间轨迹提供可分配串行计算，但更长文本不保证收益。",
+      "evidence_ids": [
+        "arxiv:2201.11903",
+        "arxiv:2408.03314"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:process_verification",
+      "target": "ai:test_time_compute",
+      "type": "enables_selection",
+      "claim": "过程评分能够参与搜索和候选选择，其误差随选择压力暴露。",
+      "evidence_ids": [
+        "arxiv:2305.20050",
+        "arxiv:2408.03314"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:preference_optimization",
+      "target": "ai:verifiable_rl",
+      "type": "complements_feedback",
+      "claim": "偏好与规则奖励可构成不同反馈渠道，不能将偏好自动标为正确性。",
+      "evidence_ids": [
+        "arxiv:2305.18290",
+        "arxiv:2501.12948",
+        "arxiv:2606.09380"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:verifiable_rl",
+      "target": "ai:execution_evaluation",
+      "type": "requires_budgeted_evaluation",
+      "claim": "比较RL收益须同时记录pass@1、pass@k、可用选择器和总预算。",
+      "evidence_ids": [
+        "arxiv:2504.13837",
+        "arxiv:2408.03314"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:process_verification",
+      "target": "ai:verifiable_rl",
+      "type": "densifies_feedback",
+      "claim": "可靠中间oracle可减少信用分配困难，但可能改变实际优化目标。",
+      "evidence_ids": [
+        "arxiv:2605.10325"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:reasoning_traces",
+      "target": "ai:tool_agents",
+      "type": "supports_context_updates",
+      "claim": "显式轨迹可组织工具行动，外部观察又更新后续推理。",
+      "evidence_ids": [
+        "arxiv:2210.03629"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:tool_agents",
+      "target": "ai:execution_evaluation",
+      "type": "requires_environment_checks",
+      "claim": "工具型系统应在固定初态、接口与执行预算下验证结果。",
+      "evidence_ids": [
+        "arxiv:2310.06770",
+        "arxiv:2404.07972"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:tool_agents",
+      "target": "ai:world_models",
+      "type": "alternative_transition_access",
+      "claim": "执行工具得到真实转移，世界模型提供预测转移；二者可组合但证据地位不同。",
+      "evidence_ids": [
+        "arxiv:2210.03629",
+        "arxiv:2301.04104"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:world_models",
+      "target": "ai:embodied_policies",
+      "type": "supports_imagined_training",
+      "claim": "世界模型为策略提供想象经验，实际控制仍受模型误差约束。",
+      "evidence_ids": [
+        "arxiv:2301.04104",
+        "arxiv:2501.10100"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:reasoning_traces",
+      "target": "ai:embodied_policies",
+      "type": "suggests_hierarchical_interfaces",
+      "claim": "高层语义子任务可连接语言决策和低层动作，收益需分离监督数据与推理机制。",
+      "evidence_ids": [
+        "arxiv:2504.16054"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:causal_representation",
+      "target": "ai:world_models",
+      "type": "qualifies_intervention_claims",
+      "claim": "能够预测动作后果不足以自动证明因果识别；干预语义需要额外条件。",
+      "evidence_ids": [
+        "arxiv:2102.11107",
+        "arxiv:2501.10100"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:causal_representation",
+      "target": "ai:execution_evaluation",
+      "type": "motivates_interventions",
+      "claim": "机制泛化的评测需要已定义干预，而不只随机ID划分。",
+      "evidence_ids": [
+        "arxiv:2102.11107"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:calibrated_uncertainty",
+      "target": "ai:execution_evaluation",
+      "type": "adds_coverage_metrics",
+      "claim": "评测需共同记录覆盖、集合宽度和分组表现。",
+      "evidence_ids": [
+        "arxiv:2107.07511"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:continual_adaptation",
+      "target": "ai:calibrated_uncertainty",
+      "type": "can_shift_scores",
+      "claim": "持续适应可能使分数和阈值不再匹配，即使准确率变化不大。",
+      "evidence_ids": [
+        "arxiv:2604.23987"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:calibrated_uncertainty",
+      "target": "ai:world_models",
+      "type": "suggests_reliability_gates",
+      "claim": "世界模型的长时决策可研究校准门控，但分类边际保证不能直接转成控制安全保证。",
+      "evidence_ids": [
+        "arxiv:2107.07511",
+        "arxiv:2501.10100"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:behavioral_safety",
+      "target": "ai:execution_evaluation",
+      "type": "requires_threat_specific_tests",
+      "claim": "平均任务得分不能排除特定触发分布中的不希望行为。",
+      "evidence_ids": [
+        "arxiv:2401.05566"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:behavioral_safety",
+      "target": "ai:reasoning_traces",
+      "type": "limits_interpretability_claims",
+      "claim": "可见轨迹或轨迹蒸馏不能单独证明所有条件下的安全行为。",
+      "evidence_ids": [
+        "arxiv:2401.05566",
+        "arxiv:2201.11903"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:continual_adaptation",
+      "target": "ai:behavioral_safety",
+      "type": "requires_post_update_checks",
+      "claim": "模型更新后的准确率、校准和条件行为应分别复核，三者没有自动等价。",
+      "evidence_ids": [
+        "arxiv:2604.23987",
+        "arxiv:2401.05566"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "arxiv:2506.09985",
+      "target": "ai:predictive_latents",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "arxiv:2506.09985"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2506.09985",
+      "target": "ai:world_models",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "arxiv:2506.09985"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2506.09985",
+      "target": "bridge:closed_loop",
+      "type": "studies",
+      "claim": "研究推断：该来源的机制可为此跨域问题提供切入点，未验证其在PDE中的迁移。",
+      "evidence_ids": [
+        "arxiv:2506.09985"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "arxiv:2112.04426",
+      "target": "ai:retrieval_memory",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "arxiv:2112.04426"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2112.04426",
+      "target": "ai:compression_and_memory",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "arxiv:2112.04426"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2112.04426",
+      "target": "ai:data_curation",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "arxiv:2112.04426"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2609.33148",
+      "target": "ai:adaptive_rollout",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "arxiv:2609.33148"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2609.33148",
+      "target": "ai:world_models",
+      "type": "studies",
+      "claim": "本轮原文相关章节讨论该机制；具体证据与限制见来源卡。",
+      "evidence_ids": [
+        "arxiv:2609.33148"
+      ],
+      "certainty": "source_supported"
+    },
+    {
+      "source": "arxiv:2609.33148",
+      "target": "bridge:adaptive_compute",
+      "type": "studies",
+      "claim": "研究推断：该来源的机制可为此跨域问题提供切入点，未验证其在PDE中的迁移。",
+      "evidence_ids": [
+        "arxiv:2609.33148"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:predictive_latents",
+      "target": "ai:world_models",
+      "type": "enables",
+      "claim": "加入动作/状态条件和递归使用后，预测式表示可成为规划接口，仍需闭环验证。",
+      "evidence_ids": [
+        "arxiv:2506.09985"
+      ],
+      "certainty": "synthesis_inference"
+    },
+    {
+      "source": "ai:adaptive_rollout",
+      "target": "ai:test_time_compute",
+      "type": "specializes",
+      "claim": "把额外计算分配具体化为想象深度与停止策略，须与计划时间跨度分开。",
+      "evidence_ids": [
+        "arxiv:2609.33148"
+      ],
+      "certainty": "synthesis_inference"
+    }
+  ],
+  "snapshot_date": "2026-10-02",
+  "inherited_snapshot_date": "2026-09-19",
+  "update_scope": "原有来源保留 2026-09-19 的阅读记录；新增来源在 2026-10-02 核查指定章节，未全面重读继承材料。"
+}
