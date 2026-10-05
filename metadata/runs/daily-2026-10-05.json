@@ -1,0 +1,19 @@
+{
+  "run_id": "daily-2026-10-05",
+  "task_type": "daily",
+  "status": "degraded",
+  "started_at": "2026-10-05T01:16:20Z",
+  "completed_at": "2026-10-05T01:21:00Z",
+  "coverage_start": "2026-09-22T01:18:58Z",
+  "coverage_end": "2026-10-05T01:16:20Z",
+  "previous_successful_coverage_end": "2026-09-24T01:18:58Z",
+  "queries": [
+    {"query": "arXiv October 2026 PDE foundation model pretraining multiple physics", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv 2610 neural operator partial differential equations", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv 2610 PDE benchmark dataset scaling laws scientific machine learning", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv 2610 zero-shot fine-tuning foundation model PDE generalization", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "export.arxiv.org API all:PDE foundation model", "source": "arxiv", "status": "failed", "error": "HTTP 403 from proxy", "candidate_ids": []}
+  ],
+  "candidates": [],
+  "digest_path": "digests/PDE-FM-日报-20261005.md"
+}
