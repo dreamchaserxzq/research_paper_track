@@ -1,0 +1,20 @@
+{
+  "run_id": "daily-2026-10-06",
+  "task_type": "daily",
+  "status": "degraded",
+  "started_at": "2026-10-06T01:15:23Z",
+  "completed_at": "2026-10-06T01:20:00Z",
+  "coverage_start": "2026-09-22T01:18:58Z",
+  "coverage_end": "2026-10-06T01:15:23Z",
+  "previous_successful_coverage_end": "2026-09-24T01:18:58Z",
+  "queries": [
+    {"query": "PDE foundation model pretraining arXiv October 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "neural operator multi-physics pretrained transformer PDE arXiv 2610", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "scaling laws PDE benchmark foundation model arXiv 2610", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "fine-tuning pretrained PDE surrogate zero-shot generalization arXiv 2610", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "WaveLiT neural PDE solver TheWell bespoke models compete with foundation models", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "export.arxiv.org API all:PDE foundation model", "source": "arxiv", "status": "failed", "error": "HTTP 403 from proxy", "candidate_ids": []}
+  ],
+  "candidates": [],
+  "digest_path": "digests/PDE-FM-日报-20261006.md"
+}
