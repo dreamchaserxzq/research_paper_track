@@ -1,0 +1,21 @@
+{
+  "run_id": "daily-2026-10-08",
+  "task_type": "daily",
+  "status": "degraded",
+  "started_at": "2026-10-08T01:15:36Z",
+  "completed_at": "2026-10-08T01:20:00Z",
+  "coverage_start": "2026-09-22T01:18:58Z",
+  "coverage_end": "2026-10-08T01:15:32Z",
+  "previous_successful_coverage_end": "2026-09-24T01:18:58Z",
+  "queries": [
+    {"query": "arxiv PDE foundation model pretraining October 2026", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv neural operator PDE benchmark scaling 2610", "source": "websearch", "status": "success", "error": null, "candidate_ids": ["2609.24021"]},
+    {"query": "arxiv zero-shot PDE generalization fine-tuning foundation model 2610", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "arxiv neural PDE solver surrogate physics-informed 2610", "source": "websearch", "status": "success", "error": null, "candidate_ids": []},
+    {"query": "export.arxiv.org API all:PDE foundation model", "source": "arxiv", "status": "failed", "error": "curl exit 6 (no direct DNS/connection); arxiv.org abstract fetch also failed (ENOTFOUND)", "candidate_ids": []}
+  ],
+  "candidates": [
+    {"arxiv_id": "2609.24021", "submitted_at": null, "updated_at": null, "discovered_at": "2026-10-08T01:18:00Z", "decision": "pending", "reason": "Only a search snippet seen (neural operator vs classical solver cost-accuracy benchmark); abstract page could not be opened, submission date unknown, so not scored or selected; treated as backfill", "discovery_type": "backfill"}
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261008.md"
+}
