@@ -1,0 +1,42 @@
+{
+  "run_id": "daily-2026-10-13",
+  "task_type": "daily",
+  "started_at": "2026-10-13T06:00:00Z",
+  "completed_at": "2026-10-13T06:10:00Z",
+  "coverage_start": "2026-09-22T01:18:58Z",
+  "coverage_end": "2026-10-13T06:00:00Z",
+  "previous_successful_coverage_end": "2026-09-24T01:18:58Z",
+  "status": "degraded",
+  "queries": [
+    {
+      "query": "site:arxiv.org PDE foundation model pretraining October 2026",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "site:arxiv.org neural operator PDE 2610",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arXiv October 2026 PDE benchmark dataset scaling laws neural operator zero-shot fine-tuning",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"foundation model\" AND all:PDE (export.arxiv.org API, curl)",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "Could not resolve host: export.arxiv.org",
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [],
+  "digest_path": "digests/PDE-FM-日报-20261013.md"
+}
