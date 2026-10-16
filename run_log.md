@@ -157,3 +157,4 @@
 | 2026-10-13 | 实际收集0个窗口内候选（3条WebSearch成功+1条arXiv直连失败），总量未知 | 0 | 检索降级（degraded）：export.arxiv.org 无法解析，仅依赖WebSearch，2610 ID段无命中，覆盖可能不完整，不推进成功覆盖位置；结构化运行记录 metadata/runs/daily-2026-10-13.json（窗口2026-09-22T01:18:58Z–2026-10-13T06:00:00Z）；本期新增0篇 |
 | 2026-10-14 | 实际收集0个窗口内候选（3条WebSearch成功+1条arXiv直连失败），总量未知 | 0 | 检索降级（degraded）：export.arxiv.org 无法解析，仅依赖WebSearch，2610 ID段无命中，覆盖可能不完整，不推进成功覆盖位置；结构化运行记录 metadata/runs/daily-2026-10-14.json（窗口2026-09-22T01:18:58Z–2026-10-14T01:16:00Z）；本期新增0篇 |
 | 2026-10-15 | 实际收集0个窗口内候选（3条WebSearch成功+1条arXiv直连失败），总量未知 | 0 | 检索降级（degraded）：export.arxiv.org 无法解析，仅依赖WebSearch，2610 ID段无命中，覆盖可能不完整，不推进成功覆盖位置；结构化运行记录 metadata/runs/daily-2026-10-15.json（窗口2026-09-22T01:18:58Z–2026-10-15T01:16:00Z）；本期新增0篇 |
+| 2026-10-16 | 实际收集0个窗口内候选（3条WebSearch成功+1条arXiv直连失败），总量未知 | 0 | 检索降级（degraded）：export.arxiv.org 无法解析，仅依赖WebSearch，2610 ID段无命中，覆盖可能不完整，不推进成功覆盖位置；结构化运行记录 metadata/runs/daily-2026-10-16.json（窗口2026-09-22T01:18:58Z–2026-10-16T01:15:12Z）；本期新增0篇 |
