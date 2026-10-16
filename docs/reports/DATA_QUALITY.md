@@ -4,8 +4,8 @@
 
 | 项目 | 数量 |
 |---|---:|
-| papers | 456 |
-| selected_arxiv_ids | 349 |
+| papers | 480 |
+| selected_arxiv_ids | 373 |
 | reported_formal | 121 |
 | conflicts | 8 |
 | legacy_unverified | 444 |

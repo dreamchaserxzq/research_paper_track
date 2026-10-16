@@ -402,7 +402,31 @@
 | Stable by Construction: Variational Latent Markov Operators for Long-Horizon PDE Prediction | [2609.16621](https://arxiv.org/abs/2609.16621) | D | preprint | source_checked |
 | Beyond PINNs: A Unified Gauss--Newton and Petrov--Galerkin Framework for Neural and Hybrid PDE Solvers | [2609.20641](https://arxiv.org/abs/2609.20641) | D | preprint | source_checked |
 | How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates? | [2609.20814](https://arxiv.org/abs/2609.20814) | C | preprint | source_checked |
+| PhyMo: A Physical-Field Modality for Multimodal AI4Physics | [2609.27554](https://arxiv.org/abs/2609.27554) | A, D | preprint | source_checked |
 | RD-JEPA: Predictive latent pretraining for few-trajectory transfer across reaction--diffusion equations | [2609.29403](https://arxiv.org/abs/2609.29403) | A, C | preprint | source_checked |
+| AutoPDEBench: Benchmarking LLM Auto-Research for Neural PDE Solver Design | [2609.32245](https://arxiv.org/abs/2609.32245) | B, D | preprint | source_checked |
+| Stabilizing Autoregressive PDE Foundation Model Rollouts with Event-Triggered Context Healing | [2609.32321](https://arxiv.org/abs/2609.32321) | C, D | preprint | source_checked |
+| Does Transolver really need a Transformer? | [2609.32525](https://arxiv.org/abs/2609.32525) | D | preprint | source_checked |
+| Neural Scaling Laws of Transformer Operator Network | [2609.33533](https://arxiv.org/abs/2609.33533) | B, D | preprint | source_checked |
+| PDE-JEPA: Predictive Representation Learning of Latent Dynamics Modeling for Parametric PDEs | [2609.34715](https://arxiv.org/abs/2609.34715) | A, C | preprint | source_checked |
+| PDE-OBS: Controlled Evaluation Across Observation Patterns | [2609.36521](https://arxiv.org/abs/2609.36521) | B, D | preprint | source_checked |
+| A foundation model for energy and radiation systems built on heterogeneous scientific interfaces | [2609.38067](https://arxiv.org/abs/2609.38067) | A, C | preprint | source_checked |
+| Geometry-physics confounding impairs PDE learning across varying domains | [2609.38623](https://arxiv.org/abs/2609.38623) | C, D | preprint | source_checked |
+| Warm-starting PDE solvers with any-dimensional machine learning | [2609.38916](https://arxiv.org/abs/2609.38916) | C, D | preprint | source_checked |
+| Beyond Simulation: Retain-and-Repair Neural Operators for Real-World Adaptation | [2609.39387](https://arxiv.org/abs/2609.39387) | C | preprint | source_checked |
+| SPEAR: A Spectral-Disentangled MoE Neural Operator with Knowledge-Guided Expert Aggregation for Large-Scale PDE Pretraining | [2610.03265](https://arxiv.org/abs/2610.03265) | A, C | preprint | source_checked |
+| Geometry Meets Physics: Data-Efficient Pre-Training for Unstructured Neural PDE Solvers | [2610.03363](https://arxiv.org/abs/2610.03363) | A | preprint | source_checked |
+| Transmission Factors for Lossy Compression of PDE Training Data: Measuring What Reaches a Trained Operator | [2610.06095](https://arxiv.org/abs/2610.06095) | B | preprint | source_checked |
+| Do Neural PDE Solvers Learn the Right Dynamics? | [2610.06952](https://arxiv.org/abs/2610.06952) | B, D | preprint | source_checked |
+| The Symbol of the Surrogate: Measuring Numerical Provenance in Neural PDE Solvers | [2610.09255](https://arxiv.org/abs/2610.09255) | B, D | preprint | source_checked |
+| Transferability of Learned States in Neural PDE Solvers | [2610.10972](https://arxiv.org/abs/2610.10972) | B, C | preprint | source_checked |
+| Mesh-Native Tokenisation: Retrofitting Foundation Models to Unstructured Data | [2610.12618](https://arxiv.org/abs/2610.12618) | A, C | preprint | source_checked |
+| PDE-PFN: Prior-Data Fitted Neural PDE Solver | [2610.13334](https://arxiv.org/abs/2610.13334) | A, C | preprint | source_checked |
+| Physics Foundation Models for Efficient Control of Fluid Flows | [2610.15173](https://arxiv.org/abs/2610.15173) | C | preprint | source_checked |
+| From Simulated Fluids to Living Tissue: Zero-Shot Foundation Model Transfer to Perturbed Embryos | [2610.16236](https://arxiv.org/abs/2610.16236) | C | preprint | source_checked |
+| Compute-optimal data scaling for neural surrogates via multi-fidelity training | [2610.17221](https://arxiv.org/abs/2610.17221) | A, B | preprint | source_checked |
+| Structure-preserving fidelity diagnostics for partial differential equations | [2610.17483](https://arxiv.org/abs/2610.17483) | B, D | preprint | source_checked |
+| Test-Time Forecasting: Recurrent Depth Enables In-Context Dynamics Prediction | [2610.19552](https://arxiv.org/abs/2610.19552) | A, C | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
 | Novel DeepONet architecture to predict stresses in elastoplastic structures with variable complex geometries and loads | [10.1016/j.cma.2023.116277](https://doi.org/10.1016/j.cma.2023.116277) | unknown | published | legacy_unverified |
 | Interface PINNs (I-PINNs): A physics-informed neural networks framework for interface problems | [10.1016/j.cma.2024.117135](https://doi.org/10.1016/j.cma.2024.117135) | unknown | published | legacy_unverified |
