@@ -1,0 +1,402 @@
+{
+  "run_id": "daily-2026-10-18",
+  "task_type": "daily",
+  "started_at": "2026-10-18T01:12:54Z",
+  "completed_at": "2026-10-18T01:20:00Z",
+  "coverage_start": "2026-10-15T01:15:43Z",
+  "coverage_end": "2026-10-18T01:12:54Z",
+  "previous_successful_coverage_end": "2026-10-17T01:15:43Z",
+  "status": "degraded",
+  "queries": [
+    {
+      "query": "all:\"foundation model\" AND (all:PDE OR all:\"partial differential\" OR all:\"neural operator\" OR all:physics) AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.22120",
+        "2610.21833",
+        "2610.21771",
+        "2610.21171"
+      ]
+    },
+    {
+      "query": "all:\"neural operator\" AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.21223"
+      ]
+    },
+    {
+      "query": "all:\"operator learning\" AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"physics-informed neural network\" OR all:\"physics-informed neural networks\" AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.22157"
+      ]
+    },
+    {
+      "query": "all:\"PDE\" AND (all:pretrain* OR all:pre-train* OR all:\"pre-trained\") AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"PDE\" AND (all:benchmark OR all:dataset) AND (all:\"machine learning\" OR all:\"neural\" OR all:\"deep learning\") AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"scaling law\" AND (all:PDE OR all:\"scientific machine learning\" OR all:\"neural operator\") AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"in-context\" AND (all:PDE OR all:operator) AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.22301",
+        "2610.22196",
+        "2610.22092",
+        "2610.22089",
+        "2610.22014",
+        "2610.21796",
+        "2610.21496",
+        "2610.21425",
+        "2610.21411",
+        "2610.21391",
+        "2610.21362",
+        "2610.21355",
+        "2610.21345",
+        "2610.21293",
+        "2610.21281",
+        "2610.21165",
+        "2610.21149",
+        "2610.21147",
+        "2610.21113"
+      ]
+    },
+    {
+      "query": "all:\"zero-shot\" AND (all:PDE OR all:\"neural operator\") AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"fine-tuning\" AND (all:PDE OR all:\"neural operator\") AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"neural PDE solver\" OR all:\"neural solver\" AND all:PDE AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:surrogate AND all:PDE AND (all:neural OR all:\"deep learning\" OR all:\"machine learning\") AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"partial differential equations\" AND (all:transformer OR all:\"deep learning\" OR all:\"diffusion model\" OR all:\"flow matching\") AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.21145"
+      ]
+    },
+    {
+      "query": "all:\"scientific machine learning\" AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"reduced-order model\" AND (all:\"neural\" OR all:\"machine learning\") AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"graph neural network\" AND (all:PDE OR all:simulation) AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"generalization\" AND all:\"neural operator\" AND submittedDate:[202610150115 TO 202610180115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.21223"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2610.21113",
+      "submitted_at": "2026-10-15T02:16:12Z",
+      "updated_at": "2026-10-15T02:16:12Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21145",
+      "submitted_at": "2026-10-15T03:00:50Z",
+      "updated_at": "2026-10-15T03:00:50Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21147",
+      "submitted_at": "2026-10-15T03:02:24Z",
+      "updated_at": "2026-10-15T03:02:24Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21149",
+      "submitted_at": "2026-10-15T03:06:20Z",
+      "updated_at": "2026-10-15T03:06:20Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21165",
+      "submitted_at": "2026-10-15T03:24:36Z",
+      "updated_at": "2026-10-15T03:24:36Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21171",
+      "submitted_at": "2026-10-15T03:27:58Z",
+      "updated_at": "2026-10-15T03:27:58Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21223",
+      "submitted_at": "2026-10-15T04:11:40Z",
+      "updated_at": "2026-10-15T04:11:40Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21281",
+      "submitted_at": "2026-10-15T05:20:23Z",
+      "updated_at": "2026-10-15T05:20:23Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21293",
+      "submitted_at": "2026-10-15T05:40:04Z",
+      "updated_at": "2026-10-15T05:40:04Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21345",
+      "submitted_at": "2026-10-15T06:29:17Z",
+      "updated_at": "2026-10-15T06:29:17Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21355",
+      "submitted_at": "2026-10-15T06:36:49Z",
+      "updated_at": "2026-10-15T06:36:49Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21362",
+      "submitted_at": "2026-10-15T06:41:20Z",
+      "updated_at": "2026-10-15T06:41:20Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21391",
+      "submitted_at": "2026-10-15T07:07:42Z",
+      "updated_at": "2026-10-15T07:07:42Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21411",
+      "submitted_at": "2026-10-15T07:26:26Z",
+      "updated_at": "2026-10-15T07:26:26Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21425",
+      "submitted_at": "2026-10-15T07:37:23Z",
+      "updated_at": "2026-10-15T07:37:23Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21496",
+      "submitted_at": "2026-10-15T08:32:30Z",
+      "updated_at": "2026-10-15T08:32:30Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21771",
+      "submitted_at": "2026-10-15T12:26:02Z",
+      "updated_at": "2026-10-15T12:26:02Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21796",
+      "submitted_at": "2026-10-15T12:47:21Z",
+      "updated_at": "2026-10-15T12:47:21Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21833",
+      "submitted_at": "2026-10-15T13:15:36Z",
+      "updated_at": "2026-10-15T13:15:36Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22014",
+      "submitted_at": "2026-10-15T14:55:39Z",
+      "updated_at": "2026-10-15T14:55:39Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22089",
+      "submitted_at": "2026-10-15T15:41:56Z",
+      "updated_at": "2026-10-15T15:41:56Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22092",
+      "submitted_at": "2026-10-15T15:43:49Z",
+      "updated_at": "2026-10-15T15:43:49Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22120",
+      "submitted_at": "2026-10-15T15:59:08Z",
+      "updated_at": "2026-10-15T15:59:08Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22157",
+      "submitted_at": "2026-10-15T16:22:05Z",
+      "updated_at": "2026-10-15T16:22:05Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22196",
+      "submitted_at": "2026-10-15T16:46:47Z",
+      "updated_at": "2026-10-15T16:46:47Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22301",
+      "submitted_at": "2026-10-15T17:48:10Z",
+      "updated_at": "2026-10-15T17:48:10Z",
+      "discovered_at": "2026-10-18T01:20:00Z",
+      "decision": "excluded",
+      "reason": "已在 daily-2026-10-16 评估并排除（与 A/B/C/D 无关或评分<7），48 小时重叠窗口内再次出现，未重评；无新增入选。",
+      "discovery_type": "new"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261018.md",
+  "notes": "沿用 daily-2026-10-17 的 17 条 arXiv API 查询（https，submittedDate 202610150115–202610180115），全部请求成功，共收集 354 个 ID，其中 26 个为窗口内首次提交且不在 seen/论文表的 ID，但均已在 daily-2026-10-16 评估并排除。返回结果中最新首次提交时间为 2026-10-15T17:48:10Z，之后无任何记录，疑似 API 索引滞后或周末无新提交，故标 degraded，不能确认 2026-10-15T18:00Z 之后已覆盖。宽泛查询单次上限 200 条。未使用 WebSearch。"
+}
