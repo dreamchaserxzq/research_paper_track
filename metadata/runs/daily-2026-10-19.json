@@ -1,0 +1,273 @@
+{
+  "run_id": "daily-2026-10-19",
+  "task_type": "daily",
+  "started_at": "2026-10-19T01:13:25Z",
+  "completed_at": "2026-10-19T01:25:00Z",
+  "coverage_start": "2026-10-15T01:15:43Z",
+  "coverage_end": "2026-10-19T01:13:25Z",
+  "previous_successful_coverage_end": "2026-10-17T01:15:43Z",
+  "status": "degraded",
+  "queries": [
+    {
+      "query": "all:\"foundation model\" AND (all:PDE OR all:\"partial differential\" OR all:\"neural operator\" OR all:physics) AND submittedDate:[202610150115 TO 202610190113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.23288",
+        "2610.23068",
+        "2610.22555",
+        "2610.22120",
+        "2610.21833",
+        "2610.21771",
+        "2610.21171"
+      ]
+    },
+    {
+      "query": "all:\"neural operator\" AND submittedDate:[202610150115 TO 202610190113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.23292",
+        "2610.22713",
+        "2610.22446",
+        "2610.22432",
+        "2610.21370",
+        "2610.21223"
+      ]
+    },
+    {
+      "query": "all:\"operator learning\" AND submittedDate:[202610150115 TO 202610190113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.22432"
+      ]
+    },
+    {
+      "query": "(all:\"physics-informed neural network\" OR all:\"physics-informed neural networks\") AND submittedDate:[202610150115 TO 202610190113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.22903",
+        "2610.22743",
+        "2610.22157"
+      ]
+    },
+    {
+      "query": "all:PDE AND (all:pretrain* OR all:pre-train* OR all:\"pre-trained\") AND submittedDate:[202610150115 TO 202610190113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:PDE AND (all:benchmark OR all:dataset) AND (all:\"machine learning\" OR all:neural OR all:\"deep learning\") AND submittedDate:[202610150115 TO 202610190113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.21370"
+      ]
+    },
+    {
+      "query": "(all:\"neural PDE solver\" OR all:\"surrogate model\" OR all:\"scientific machine learning\") AND submittedDate:[202610150115 TO 202610190113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.22122",
+        "2610.21430",
+        "2610.21370",
+        "2610.22420"
+      ]
+    },
+    {
+      "query": "(all:\"in-context\" OR all:\"zero-shot\" OR all:\"fine-tuning\") AND (all:PDE OR all:\"neural operator\") AND submittedDate:[202610150115 TO 202610190113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.22446"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2610.23288",
+      "submitted_at": "2026-10-16T10:56:10Z",
+      "updated_at": "2026-10-16T10:56:10Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：与 PDE/神经算子主题无关。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23068",
+      "submitted_at": "2026-10-16T07:42:06Z",
+      "updated_at": "2026-10-16T07:42:06Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：属单一应用/特定问题的 PINN、代理或应用型微调，通用性与创新性不足，总分约 4–6。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22555",
+      "submitted_at": "2026-10-15T18:48:48Z",
+      "updated_at": "2026-10-15T18:48:48Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：属单一应用/特定问题的 PINN、代理或应用型微调，通用性与创新性不足，总分约 4–6。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22120",
+      "submitted_at": "2026-10-15T15:59:08Z",
+      "updated_at": "2026-10-15T15:59:08Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "此前已入库或已在 daily-2026-10-16/17/18 评估并排除，48 小时重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21833",
+      "submitted_at": "2026-10-15T13:15:36Z",
+      "updated_at": "2026-10-15T13:15:36Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "此前已入库或已在 daily-2026-10-16/17/18 评估并排除，48 小时重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21771",
+      "submitted_at": "2026-10-15T12:26:02Z",
+      "updated_at": "2026-10-15T12:26:02Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "此前已入库或已在 daily-2026-10-16/17/18 评估并排除，48 小时重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21171",
+      "submitted_at": "2026-10-15T03:27:58Z",
+      "updated_at": "2026-10-15T03:27:58Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "此前已入库或已在 daily-2026-10-16/17/18 评估并排除，48 小时重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23292",
+      "submitted_at": "2026-10-16T10:59:07Z",
+      "updated_at": "2026-10-16T10:59:07Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：与 PDE/神经算子主题无关。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22713",
+      "submitted_at": "2026-10-15T22:31:27Z",
+      "updated_at": "2026-10-15T22:31:27Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：与 PDE/神经算子主题无关。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22446",
+      "submitted_at": "2026-10-15T15:15:31Z",
+      "updated_at": "2026-10-15T15:15:31Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "selected",
+      "reason": "daily-v1 总分7（相关3/通用2/创新2）：L-SplineFNO 用可学习 B 样条连接非结构网格与隐空间笛卡尔网格，使 FNO 可用于 3D 工程不规则网格，属 D 通用方法。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22432",
+      "submitted_at": "2026-10-15T07:57:21Z",
+      "updated_at": "2026-10-15T07:57:21Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：属单一应用/特定问题的 PINN、代理或应用型微调，通用性与创新性不足，总分约 4–6。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21370",
+      "submitted_at": "2026-10-15T06:52:30Z",
+      "updated_at": "2026-10-15T06:52:30Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "此前已入库或已在 daily-2026-10-16/17/18 评估并排除，48 小时重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21223",
+      "submitted_at": "2026-10-15T04:11:40Z",
+      "updated_at": "2026-10-15T04:11:40Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "此前已入库或已在 daily-2026-10-16/17/18 评估并排除，48 小时重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22903",
+      "submitted_at": "2026-10-16T04:08:19Z",
+      "updated_at": "2026-10-16T04:08:19Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：属单一应用/特定问题的 PINN、代理或应用型微调，通用性与创新性不足，总分约 4–6。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22743",
+      "submitted_at": "2026-10-15T23:25:50Z",
+      "updated_at": "2026-10-15T23:25:50Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：属单一应用/特定问题的 PINN、代理或应用型微调，通用性与创新性不足，总分约 4–6。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22157",
+      "submitted_at": "2026-10-15T16:22:05Z",
+      "updated_at": "2026-10-15T16:22:05Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "此前已入库或已在 daily-2026-10-16/17/18 评估并排除，48 小时重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22122",
+      "submitted_at": "2026-10-15T16:00:11Z",
+      "updated_at": "2026-10-16T02:55:23Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：与 PDE/神经算子主题无关。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21430",
+      "submitted_at": "2026-10-15T07:41:54Z",
+      "updated_at": "2026-10-15T07:41:54Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：属单一应用/特定问题的 PINN、代理或应用型微调，通用性与创新性不足，总分约 4–6。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22420",
+      "submitted_at": "2026-10-15T02:27:38Z",
+      "updated_at": "2026-10-15T02:27:38Z",
+      "discovered_at": "2026-10-19T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据标题与摘要初评，评分<7：与 PDE/神经算子主题无关。",
+      "discovery_type": "new"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261019.md",
+  "notes": "8 条 arXiv API 查询（https，submittedDate 202610150115–202610190113）全部请求成功，共收集 19 个不同 ID。返回结果中最新首次提交仅到 2026-10-16T10:59:07Z，其后无记录（疑似索引滞后），故标 degraded，不推进成功覆盖位置；宽泛查询单次上限 50 条，仅使用 8 条查询，未覆盖 TAXONOMY 全部关键词；未使用 WebSearch。"
+}
