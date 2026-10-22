@@ -1,0 +1,1823 @@
+{
+  "run_id": "daily-2026-10-22",
+  "task_type": "daily",
+  "started_at": "2026-10-22T01:13:38Z",
+  "completed_at": "2026-10-22T01:25:00Z",
+  "coverage_start": "2026-10-15T01:15:43Z",
+  "coverage_end": "2026-10-22T01:13:38Z",
+  "previous_successful_coverage_end": "2026-10-17T01:15:43Z",
+  "status": "success",
+  "digest_path": "digests/PDE-FM-日报-20261022.md",
+  "notes": "17 条 arXiv API 查询（https，submittedDate 202610150115–202610220115，每查询上限100条）全部成功，共收集 171 个不同 ID，其中 166 个不在 seen_papers 中，窗口内此前未评估的新候选 44 个；未使用 WebSearch。返回结果最新首次提交为 2026-10-21T10:22:27Z；仅依据摘要评分；总量未知，单查询上限可能截断。",
+  "queries": [
+    {
+      "query": "(all:\"foundation model\" AND (all:PDE OR all:\"partial differential\" OR all:\"neural operator\" OR all:physics)) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.29439",
+        "2610.29432",
+        "2610.29313",
+        "2610.28955",
+        "2610.28322",
+        "2610.28284",
+        "2610.26854",
+        "2610.26846",
+        "2610.27045",
+        "2610.27040",
+        "2610.27039",
+        "2610.26701",
+        "2610.26351",
+        "2610.26338",
+        "2610.25600",
+        "2610.25142",
+        "2610.24675",
+        "2610.24587",
+        "2610.24392",
+        "2610.24304",
+        "2610.23776",
+        "2610.23371",
+        "2610.23288",
+        "2610.23068",
+        "2610.22555",
+        "2610.22120",
+        "2610.21833",
+        "2610.21771",
+        "2610.21171"
+      ]
+    },
+    {
+      "query": "(all:\"neural operator\") AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.29009",
+        "2610.28623",
+        "2610.27671",
+        "2610.26605",
+        "2610.26530",
+        "2610.26337",
+        "2610.25556",
+        "2610.24708",
+        "2610.24525",
+        "2610.24400",
+        "2610.24293",
+        "2610.23774",
+        "2610.23748",
+        "2610.23292",
+        "2610.22713",
+        "2610.22432",
+        "2610.21223"
+      ]
+    },
+    {
+      "query": "(all:\"operator learning\") AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.29009",
+        "2610.26605",
+        "2610.26286",
+        "2610.25556",
+        "2610.24293",
+        "2610.22432"
+      ]
+    },
+    {
+      "query": "(all:\"physics-informed neural network\" OR all:\"physics-informed neural networks\") AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.28873",
+        "2610.28591",
+        "2610.28322",
+        "2610.27561",
+        "2610.27500",
+        "2610.27193",
+        "2610.27094",
+        "2610.26495",
+        "2610.23691",
+        "2610.23390",
+        "2610.22903",
+        "2610.22743",
+        "2610.22157"
+      ]
+    },
+    {
+      "query": "(all:\"PDE\" AND (all:pretrain* OR all:pre-train* OR all:\"pre-trained\")) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:\"PDE\" AND (all:benchmark OR all:dataset) AND (all:\"machine learning\" OR all:\"neural\" OR all:\"deep learning\")) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.29532",
+        "2610.29476",
+        "2610.28623",
+        "2610.27317",
+        "2610.26458"
+      ]
+    },
+    {
+      "query": "(all:\"scaling law\" AND (all:PDE OR all:\"scientific machine learning\" OR all:\"neural operator\")) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:\"in-context\" AND (all:PDE OR all:operator)) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.29508",
+        "2610.29234",
+        "2610.29189",
+        "2610.29141",
+        "2610.28998",
+        "2610.28829",
+        "2610.28810",
+        "2610.28747",
+        "2610.28733",
+        "2610.28712",
+        "2610.28577",
+        "2610.28551",
+        "2610.28179",
+        "2610.28121",
+        "2610.28067",
+        "2610.27971",
+        "2610.27946",
+        "2610.27863",
+        "2610.27847",
+        "2610.27722",
+        "2610.27588",
+        "2610.27569",
+        "2610.27544",
+        "2610.27504",
+        "2610.27490",
+        "2610.27470",
+        "2610.27423",
+        "2610.27382",
+        "2610.27243",
+        "2610.27234",
+        "2610.28682",
+        "2610.26781",
+        "2610.26754",
+        "2610.26601",
+        "2610.26453",
+        "2610.26381",
+        "2610.26369",
+        "2610.26360",
+        "2610.26349",
+        "2610.26266",
+        "2610.25933",
+        "2610.25904",
+        "2610.25877",
+        "2610.25758",
+        "2610.25736",
+        "2610.25659",
+        "2610.25561",
+        "2610.25556",
+        "2610.25550",
+        "2610.25140",
+        "2610.25074",
+        "2610.25015",
+        "2610.26937",
+        "2610.24826",
+        "2610.24710",
+        "2610.24537",
+        "2610.24485",
+        "2610.26906",
+        "2610.24107",
+        "2610.23843",
+        "2610.24054",
+        "2610.23640",
+        "2610.23574",
+        "2610.23388",
+        "2610.23311",
+        "2610.23182",
+        "2610.23098",
+        "2610.23077",
+        "2610.23044",
+        "2610.23035",
+        "2610.23018",
+        "2610.22980",
+        "2610.22892",
+        "2610.22878",
+        "2610.22828",
+        "2610.22737",
+        "2610.22597",
+        "2610.22301",
+        "2610.22196",
+        "2610.22092",
+        "2610.22089",
+        "2610.22014",
+        "2610.21796",
+        "2610.21496",
+        "2610.21425",
+        "2610.21411",
+        "2610.21391",
+        "2610.21362",
+        "2610.21355",
+        "2610.21345",
+        "2610.21293",
+        "2610.21281",
+        "2610.21165",
+        "2610.21149",
+        "2610.21147",
+        "2610.21113"
+      ]
+    },
+    {
+      "query": "(all:\"zero-shot\" AND (all:PDE OR all:\"neural operator\")) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.24708"
+      ]
+    },
+    {
+      "query": "(all:\"fine-tuning\" AND (all:PDE OR all:\"neural operator\")) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:\"neural PDE solver\" OR all:\"neural solver\" AND all:PDE) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:surrogate AND all:PDE AND (all:neural OR all:\"deep learning\" OR all:\"machine learning\")) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:\"partial differential equations\" AND (all:transformer OR all:\"deep learning\" OR all:\"diffusion model\" OR all:\"flow matching\")) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.29476",
+        "2610.28224",
+        "2610.27042",
+        "2610.21145"
+      ]
+    },
+    {
+      "query": "(all:\"scientific machine learning\") AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:\"reduced-order model\" AND (all:\"neural\" OR all:\"machine learning\")) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.28378",
+        "2610.28224",
+        "2610.25016"
+      ]
+    },
+    {
+      "query": "(all:\"graph neural network\" AND (all:PDE OR all:simulation)) AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.28486",
+        "2610.28378",
+        "2610.27051",
+        "2610.25124"
+      ]
+    },
+    {
+      "query": "(all:\"generalization\" AND all:\"neural operator\") AND submittedDate:[202610150115 TO 202610220115]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.26605",
+        "2610.25556",
+        "2610.24708",
+        "2610.23774",
+        "2610.21223"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2610.21113",
+      "submitted_at": "2026-10-15T02:16:12Z",
+      "updated_at": "2026-10-15T02:16:12Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21145",
+      "submitted_at": "2026-10-15T03:00:50Z",
+      "updated_at": "2026-10-15T03:00:50Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21147",
+      "submitted_at": "2026-10-15T03:02:24Z",
+      "updated_at": "2026-10-16T05:35:53Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21149",
+      "submitted_at": "2026-10-15T03:06:20Z",
+      "updated_at": "2026-10-15T03:06:20Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21165",
+      "submitted_at": "2026-10-15T03:24:36Z",
+      "updated_at": "2026-10-15T03:24:36Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21171",
+      "submitted_at": "2026-10-15T03:27:58Z",
+      "updated_at": "2026-10-17T07:23:01Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21223",
+      "submitted_at": "2026-10-15T04:11:40Z",
+      "updated_at": "2026-10-15T04:11:40Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21281",
+      "submitted_at": "2026-10-15T05:20:23Z",
+      "updated_at": "2026-10-15T05:20:23Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21293",
+      "submitted_at": "2026-10-15T05:40:04Z",
+      "updated_at": "2026-10-15T05:40:04Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21345",
+      "submitted_at": "2026-10-15T06:29:17Z",
+      "updated_at": "2026-10-15T06:29:17Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21355",
+      "submitted_at": "2026-10-15T06:36:49Z",
+      "updated_at": "2026-10-15T06:36:49Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21362",
+      "submitted_at": "2026-10-15T06:41:20Z",
+      "updated_at": "2026-10-15T06:41:20Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21391",
+      "submitted_at": "2026-10-15T07:07:42Z",
+      "updated_at": "2026-10-15T07:07:42Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21411",
+      "submitted_at": "2026-10-15T07:26:26Z",
+      "updated_at": "2026-10-16T02:03:13Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21425",
+      "submitted_at": "2026-10-15T07:37:23Z",
+      "updated_at": "2026-10-15T07:37:23Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21496",
+      "submitted_at": "2026-10-15T08:32:30Z",
+      "updated_at": "2026-10-20T19:46:27Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21771",
+      "submitted_at": "2026-10-15T12:26:02Z",
+      "updated_at": "2026-10-15T12:26:02Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21796",
+      "submitted_at": "2026-10-15T12:47:21Z",
+      "updated_at": "2026-10-15T12:47:21Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.21833",
+      "submitted_at": "2026-10-15T13:15:36Z",
+      "updated_at": "2026-10-15T13:15:36Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22014",
+      "submitted_at": "2026-10-15T14:55:39Z",
+      "updated_at": "2026-10-15T14:55:39Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22089",
+      "submitted_at": "2026-10-15T15:41:56Z",
+      "updated_at": "2026-10-16T17:58:07Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22092",
+      "submitted_at": "2026-10-15T15:43:49Z",
+      "updated_at": "2026-10-15T15:43:49Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22120",
+      "submitted_at": "2026-10-15T15:59:08Z",
+      "updated_at": "2026-10-15T15:59:08Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22157",
+      "submitted_at": "2026-10-15T16:22:05Z",
+      "updated_at": "2026-10-15T16:22:05Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22196",
+      "submitted_at": "2026-10-15T16:46:47Z",
+      "updated_at": "2026-10-15T16:46:47Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22301",
+      "submitted_at": "2026-10-15T17:48:10Z",
+      "updated_at": "2026-10-15T17:48:10Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22432",
+      "submitted_at": "2026-10-15T07:57:21Z",
+      "updated_at": "2026-10-15T07:57:21Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22555",
+      "submitted_at": "2026-10-15T18:48:48Z",
+      "updated_at": "2026-10-15T18:48:48Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22597",
+      "submitted_at": "2026-10-15T19:47:19Z",
+      "updated_at": "2026-10-15T19:47:19Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22713",
+      "submitted_at": "2026-10-15T22:31:27Z",
+      "updated_at": "2026-10-15T22:31:27Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22737",
+      "submitted_at": "2026-10-15T23:15:00Z",
+      "updated_at": "2026-10-15T23:15:00Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22743",
+      "submitted_at": "2026-10-15T23:25:50Z",
+      "updated_at": "2026-10-15T23:25:50Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22828",
+      "submitted_at": "2026-10-16T02:09:39Z",
+      "updated_at": "2026-10-16T02:09:39Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22878",
+      "submitted_at": "2026-10-16T03:32:22Z",
+      "updated_at": "2026-10-16T03:32:22Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22892",
+      "submitted_at": "2026-10-16T03:46:27Z",
+      "updated_at": "2026-10-16T03:46:27Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22903",
+      "submitted_at": "2026-10-16T04:08:19Z",
+      "updated_at": "2026-10-16T04:08:19Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.22980",
+      "submitted_at": "2026-10-16T06:02:00Z",
+      "updated_at": "2026-10-16T06:02:00Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23018",
+      "submitted_at": "2026-10-16T06:52:37Z",
+      "updated_at": "2026-10-16T06:52:37Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23035",
+      "submitted_at": "2026-10-16T07:12:35Z",
+      "updated_at": "2026-10-16T07:12:35Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23044",
+      "submitted_at": "2026-10-16T07:22:54Z",
+      "updated_at": "2026-10-16T07:22:54Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23068",
+      "submitted_at": "2026-10-16T07:42:06Z",
+      "updated_at": "2026-10-16T07:42:06Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23077",
+      "submitted_at": "2026-10-16T07:47:57Z",
+      "updated_at": "2026-10-16T07:47:57Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23098",
+      "submitted_at": "2026-10-16T08:10:51Z",
+      "updated_at": "2026-10-16T08:10:51Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23182",
+      "submitted_at": "2026-10-16T09:21:49Z",
+      "updated_at": "2026-10-16T09:21:49Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23288",
+      "submitted_at": "2026-10-16T10:56:10Z",
+      "updated_at": "2026-10-19T02:41:29Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23292",
+      "submitted_at": "2026-10-16T10:59:07Z",
+      "updated_at": "2026-10-16T10:59:07Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23311",
+      "submitted_at": "2026-10-16T11:14:52Z",
+      "updated_at": "2026-10-16T11:14:52Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23371",
+      "submitted_at": "2026-10-16T12:23:04Z",
+      "updated_at": "2026-10-16T12:23:04Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23388",
+      "submitted_at": "2026-10-16T12:48:59Z",
+      "updated_at": "2026-10-16T12:48:59Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23390",
+      "submitted_at": "2026-10-16T12:49:58Z",
+      "updated_at": "2026-10-16T12:49:58Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23574",
+      "submitted_at": "2026-10-16T14:57:21Z",
+      "updated_at": "2026-10-16T14:57:21Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23640",
+      "submitted_at": "2026-10-16T15:41:31Z",
+      "updated_at": "2026-10-16T15:41:31Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23691",
+      "submitted_at": "2026-10-16T16:20:03Z",
+      "updated_at": "2026-10-16T16:20:03Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23748",
+      "submitted_at": "2026-10-16T16:55:02Z",
+      "updated_at": "2026-10-16T16:55:02Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23774",
+      "submitted_at": "2026-10-16T17:10:20Z",
+      "updated_at": "2026-10-16T17:10:20Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23776",
+      "submitted_at": "2026-10-16T17:11:07Z",
+      "updated_at": "2026-10-16T17:11:07Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.23843",
+      "submitted_at": "2026-10-16T17:57:39Z",
+      "updated_at": "2026-10-16T17:57:39Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24054",
+      "submitted_at": "2026-10-16T16:58:09Z",
+      "updated_at": "2026-10-16T16:58:09Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24107",
+      "submitted_at": "2026-10-16T18:35:38Z",
+      "updated_at": "2026-10-16T18:35:38Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24293",
+      "submitted_at": "2026-10-16T22:40:58Z",
+      "updated_at": "2026-10-16T22:40:58Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24304",
+      "submitted_at": "2026-10-16T22:58:16Z",
+      "updated_at": "2026-10-16T22:58:16Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24392",
+      "submitted_at": "2026-10-17T02:50:59Z",
+      "updated_at": "2026-10-17T02:50:59Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24400",
+      "submitted_at": "2026-10-17T03:11:05Z",
+      "updated_at": "2026-10-17T03:11:05Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24485",
+      "submitted_at": "2026-10-17T06:10:30Z",
+      "updated_at": "2026-10-17T06:10:30Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24525",
+      "submitted_at": "2026-10-17T07:33:05Z",
+      "updated_at": "2026-10-17T07:33:05Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24537",
+      "submitted_at": "2026-10-17T07:58:29Z",
+      "updated_at": "2026-10-17T07:58:29Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24587",
+      "submitted_at": "2026-10-17T09:48:08Z",
+      "updated_at": "2026-10-17T09:48:08Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24675",
+      "submitted_at": "2026-10-17T12:59:06Z",
+      "updated_at": "2026-10-20T09:46:54Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24708",
+      "submitted_at": "2026-10-17T14:13:54Z",
+      "updated_at": "2026-10-17T14:13:54Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24710",
+      "submitted_at": "2026-10-17T14:17:30Z",
+      "updated_at": "2026-10-17T14:17:30Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.24826",
+      "submitted_at": "2026-10-17T19:19:05Z",
+      "updated_at": "2026-10-17T19:19:05Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25015",
+      "submitted_at": "2026-10-18T04:49:23Z",
+      "updated_at": "2026-10-18T04:49:23Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25016",
+      "submitted_at": "2026-10-18T04:53:43Z",
+      "updated_at": "2026-10-18T04:53:43Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25074",
+      "submitted_at": "2026-10-18T07:29:52Z",
+      "updated_at": "2026-10-18T07:29:52Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25124",
+      "submitted_at": "2026-10-18T09:04:21Z",
+      "updated_at": "2026-10-18T09:04:21Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25140",
+      "submitted_at": "2026-10-18T09:48:51Z",
+      "updated_at": "2026-10-18T09:48:51Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25142",
+      "submitted_at": "2026-10-18T09:53:10Z",
+      "updated_at": "2026-10-18T09:53:10Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25550",
+      "submitted_at": "2026-10-18T21:48:56Z",
+      "updated_at": "2026-10-18T21:48:56Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25556",
+      "submitted_at": "2026-10-18T21:51:53Z",
+      "updated_at": "2026-10-18T21:51:53Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25561",
+      "submitted_at": "2026-10-18T21:56:18Z",
+      "updated_at": "2026-10-18T21:56:18Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25600",
+      "submitted_at": "2026-10-19T00:06:44Z",
+      "updated_at": "2026-10-20T20:08:37Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25659",
+      "submitted_at": "2026-10-19T02:05:58Z",
+      "updated_at": "2026-10-19T02:05:58Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25736",
+      "submitted_at": "2026-10-19T03:41:27Z",
+      "updated_at": "2026-10-21T05:52:57Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25758",
+      "submitted_at": "2026-10-19T04:13:40Z",
+      "updated_at": "2026-10-19T04:13:40Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25877",
+      "submitted_at": "2026-10-19T06:36:38Z",
+      "updated_at": "2026-10-19T06:36:38Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25904",
+      "submitted_at": "2026-10-19T07:04:28Z",
+      "updated_at": "2026-10-19T07:04:28Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.25933",
+      "submitted_at": "2026-10-19T07:31:36Z",
+      "updated_at": "2026-10-19T07:31:36Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26266",
+      "submitted_at": "2026-10-19T12:22:30Z",
+      "updated_at": "2026-10-19T12:22:30Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26286",
+      "submitted_at": "2026-10-19T12:38:05Z",
+      "updated_at": "2026-10-19T12:38:05Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26337",
+      "submitted_at": "2026-10-19T13:08:19Z",
+      "updated_at": "2026-10-19T13:08:19Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26338",
+      "submitted_at": "2026-10-19T13:08:34Z",
+      "updated_at": "2026-10-19T13:08:34Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26349",
+      "submitted_at": "2026-10-19T13:14:17Z",
+      "updated_at": "2026-10-19T13:14:17Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26351",
+      "submitted_at": "2026-10-19T13:16:43Z",
+      "updated_at": "2026-10-19T13:16:43Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26360",
+      "submitted_at": "2026-10-19T13:20:59Z",
+      "updated_at": "2026-10-19T13:20:59Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26369",
+      "submitted_at": "2026-10-19T13:24:44Z",
+      "updated_at": "2026-10-19T13:24:44Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26381",
+      "submitted_at": "2026-10-19T13:32:26Z",
+      "updated_at": "2026-10-19T13:32:26Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26453",
+      "submitted_at": "2026-10-19T14:09:45Z",
+      "updated_at": "2026-10-19T14:09:45Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26458",
+      "submitted_at": "2026-10-19T14:11:14Z",
+      "updated_at": "2026-10-19T14:11:14Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26495",
+      "submitted_at": "2026-10-19T14:34:50Z",
+      "updated_at": "2026-10-19T14:34:50Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26530",
+      "submitted_at": "2026-10-19T14:56:41Z",
+      "updated_at": "2026-10-19T14:56:41Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26601",
+      "submitted_at": "2026-10-19T15:43:17Z",
+      "updated_at": "2026-10-19T15:43:17Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26605",
+      "submitted_at": "2026-10-19T15:45:57Z",
+      "updated_at": "2026-10-19T15:45:57Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26701",
+      "submitted_at": "2026-10-19T16:37:53Z",
+      "updated_at": "2026-10-19T16:37:53Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26754",
+      "submitted_at": "2026-10-19T17:15:53Z",
+      "updated_at": "2026-10-19T17:15:53Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26781",
+      "submitted_at": "2026-10-19T17:35:02Z",
+      "updated_at": "2026-10-19T17:35:02Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26846",
+      "submitted_at": "2026-10-19T17:59:17Z",
+      "updated_at": "2026-10-19T17:59:17Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26854",
+      "submitted_at": "2026-10-19T17:59:54Z",
+      "updated_at": "2026-10-20T17:53:12Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26906",
+      "submitted_at": "2026-10-17T02:09:54Z",
+      "updated_at": "2026-10-17T02:09:54Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.26937",
+      "submitted_at": "2026-10-17T22:07:43Z",
+      "updated_at": "2026-10-17T22:07:43Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27039",
+      "submitted_at": "2026-10-19T17:30:35Z",
+      "updated_at": "2026-10-19T17:30:35Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27040",
+      "submitted_at": "2026-10-19T17:32:28Z",
+      "updated_at": "2026-10-19T17:32:28Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27042",
+      "submitted_at": "2026-10-19T17:34:48Z",
+      "updated_at": "2026-10-19T17:34:48Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27045",
+      "submitted_at": "2026-10-19T17:50:11Z",
+      "updated_at": "2026-10-19T17:50:11Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27051",
+      "submitted_at": "2026-10-19T18:00:00Z",
+      "updated_at": "2026-10-19T18:00:00Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27094",
+      "submitted_at": "2026-10-19T18:00:21Z",
+      "updated_at": "2026-10-19T18:00:21Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27193",
+      "submitted_at": "2026-10-19T19:29:18Z",
+      "updated_at": "2026-10-19T19:29:18Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27234",
+      "submitted_at": "2026-10-19T20:02:07Z",
+      "updated_at": "2026-10-19T20:02:07Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27243",
+      "submitted_at": "2026-10-19T20:15:00Z",
+      "updated_at": "2026-10-19T20:15:00Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27317",
+      "submitted_at": "2026-10-19T21:37:54Z",
+      "updated_at": "2026-10-19T21:37:54Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27382",
+      "submitted_at": "2026-10-19T23:09:34Z",
+      "updated_at": "2026-10-19T23:09:34Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27423",
+      "submitted_at": "2026-10-20T00:20:04Z",
+      "updated_at": "2026-10-20T00:20:04Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27470",
+      "submitted_at": "2026-10-20T01:41:12Z",
+      "updated_at": "2026-10-20T01:41:12Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27490",
+      "submitted_at": "2026-10-20T02:09:21Z",
+      "updated_at": "2026-10-20T02:09:21Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27500",
+      "submitted_at": "2026-10-20T02:18:20Z",
+      "updated_at": "2026-10-20T02:18:20Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27504",
+      "submitted_at": "2026-10-20T02:20:06Z",
+      "updated_at": "2026-10-20T02:20:06Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27544",
+      "submitted_at": "2026-10-20T02:58:05Z",
+      "updated_at": "2026-10-20T02:58:05Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27561",
+      "submitted_at": "2026-10-20T03:22:04Z",
+      "updated_at": "2026-10-20T03:22:04Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27569",
+      "submitted_at": "2026-10-20T03:34:58Z",
+      "updated_at": "2026-10-20T03:34:58Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27588",
+      "submitted_at": "2026-10-20T03:56:26Z",
+      "updated_at": "2026-10-20T03:56:26Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27671",
+      "submitted_at": "2026-10-20T05:37:17Z",
+      "updated_at": "2026-10-20T05:37:17Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27722",
+      "submitted_at": "2026-10-20T06:40:12Z",
+      "updated_at": "2026-10-20T06:40:12Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27847",
+      "submitted_at": "2026-10-20T08:30:30Z",
+      "updated_at": "2026-10-20T08:30:30Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27863",
+      "submitted_at": "2026-10-20T08:45:35Z",
+      "updated_at": "2026-10-20T08:45:35Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估并排除，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27946",
+      "submitted_at": "2026-10-20T09:52:46Z",
+      "updated_at": "2026-10-20T09:52:46Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27971",
+      "submitted_at": "2026-10-20T10:16:08Z",
+      "updated_at": "2026-10-20T10:16:08Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28067",
+      "submitted_at": "2026-10-20T11:50:25Z",
+      "updated_at": "2026-10-20T11:50:25Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28121",
+      "submitted_at": "2026-10-20T12:30:41Z",
+      "updated_at": "2026-10-20T12:30:41Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28179",
+      "submitted_at": "2026-10-20T13:17:35Z",
+      "updated_at": "2026-10-20T13:17:35Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28224",
+      "submitted_at": "2026-10-20T13:56:26Z",
+      "updated_at": "2026-10-20T13:56:26Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28284",
+      "submitted_at": "2026-10-20T14:36:51Z",
+      "updated_at": "2026-10-20T14:36:51Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28322",
+      "submitted_at": "2026-10-20T14:56:48Z",
+      "updated_at": "2026-10-20T14:56:48Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28378",
+      "submitted_at": "2026-10-20T15:32:14Z",
+      "updated_at": "2026-10-20T15:32:14Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28486",
+      "submitted_at": "2026-10-20T16:31:26Z",
+      "updated_at": "2026-10-20T16:31:26Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28551",
+      "submitted_at": "2026-10-20T17:16:48Z",
+      "updated_at": "2026-10-21T07:32:48Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28577",
+      "submitted_at": "2026-10-20T17:32:24Z",
+      "updated_at": "2026-10-20T17:32:24Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28591",
+      "submitted_at": "2026-10-20T17:42:52Z",
+      "updated_at": "2026-10-20T17:42:52Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "D 方向 PINN 时间并行积分，评分 6/10（3+1+2）；列入附录。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28623",
+      "submitted_at": "2026-10-20T17:58:30Z",
+      "updated_at": "2026-10-21T02:53:41Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28682",
+      "submitted_at": "2026-10-19T18:39:34Z",
+      "updated_at": "2026-10-19T18:39:34Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28712",
+      "submitted_at": "2026-10-20T17:42:33Z",
+      "updated_at": "2026-10-20T17:42:33Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28733",
+      "submitted_at": "2026-10-20T18:00:02Z",
+      "updated_at": "2026-10-20T18:00:02Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28747",
+      "submitted_at": "2026-10-20T18:00:47Z",
+      "updated_at": "2026-10-20T18:00:47Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28810",
+      "submitted_at": "2026-10-20T18:33:05Z",
+      "updated_at": "2026-10-20T18:33:05Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28829",
+      "submitted_at": "2026-10-20T18:51:48Z",
+      "updated_at": "2026-10-20T18:51:48Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28873",
+      "submitted_at": "2026-10-20T19:46:46Z",
+      "updated_at": "2026-10-20T19:46:46Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28955",
+      "submitted_at": "2026-10-20T22:09:44Z",
+      "updated_at": "2026-10-20T22:09:44Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28998",
+      "submitted_at": "2026-10-20T23:53:09Z",
+      "updated_at": "2026-10-20T23:53:09Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29009",
+      "submitted_at": "2026-10-21T00:20:47Z",
+      "updated_at": "2026-10-21T00:20:47Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "D 方向核函数算子学习（不可压流），通用性有限，评分 6/10（相关度3+通用性1+创新2）；列入附录。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29141",
+      "submitted_at": "2026-10-21T03:21:45Z",
+      "updated_at": "2026-10-21T03:21:45Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29189",
+      "submitted_at": "2026-10-21T04:19:06Z",
+      "updated_at": "2026-10-21T04:19:06Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29234",
+      "submitted_at": "2026-10-21T05:44:09Z",
+      "updated_at": "2026-10-21T05:44:09Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29313",
+      "submitted_at": "2026-10-21T07:09:14Z",
+      "updated_at": "2026-10-21T07:09:14Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29432",
+      "submitted_at": "2026-10-21T08:56:51Z",
+      "updated_at": "2026-10-21T08:56:51Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29439",
+      "submitted_at": "2026-10-21T09:00:56Z",
+      "updated_at": "2026-10-21T09:00:56Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29476",
+      "submitted_at": "2026-10-21T09:30:53Z",
+      "updated_at": "2026-10-21T09:30:53Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29508",
+      "submitted_at": "2026-10-21T09:58:58Z",
+      "updated_at": "2026-10-21T09:58:58Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "仅依据摘要评估：与 A/B/C/D 主题无关或评分<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29532",
+      "submitted_at": "2026-10-21T10:22:27Z",
+      "updated_at": "2026-10-21T10:22:27Z",
+      "discovered_at": "2026-10-22T01:25:00Z",
+      "decision": "excluded",
+      "reason": "D 方向物理信息回归极小极大速率理论，评分 6/10（3+1+2）；列入附录。",
+      "discovery_type": "new"
+    }
+  ]
+}
