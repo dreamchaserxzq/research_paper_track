@@ -1,0 +1,940 @@
+{
+  "run_id": "daily-2026-10-24",
+  "task_type": "daily",
+  "started_at": "2026-10-24T01:13:38Z",
+  "completed_at": "2026-10-24T01:30:00Z",
+  "coverage_start": "2026-10-20T01:13:38Z",
+  "coverage_end": "2026-10-24T01:13:38Z",
+  "previous_successful_coverage_end": "2026-10-22T01:13:38Z",
+  "status": "success",
+  "digest_path": "digests/PDE-FM-日报-20261024.md",
+  "notes": "17 条 arXiv API 查询（https，submittedDate 202610200113–202610240113，每查询上限100条）全部成功，共收集 78 个不同 ID，窗口内此前未评估的新候选 34 个；未使用 WebSearch 作为主源（WebSearch 无日期过滤，仅作尝试，未采用）。返回结果最新首次提交为 2026-10-22T17:59:51Z；仅依据摘要评分；总量未知，单查询上限可能截断。",
+  "queries": [
+    {
+      "query": "(all:\"foundation model\" AND (all:PDE OR all:\"partial differential\" OR all:\"neural operator\" OR all:physics)) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.31670",
+        "2610.31668",
+        "2610.31539",
+        "2610.31275",
+        "2610.31180",
+        "2610.30971",
+        "2610.30894",
+        "2610.29439",
+        "2610.29432",
+        "2610.29313",
+        "2610.28955",
+        "2610.28322",
+        "2610.28284"
+      ]
+    },
+    {
+      "query": "(all:\"neural operator\") AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.31465",
+        "2610.31071",
+        "2610.30498",
+        "2610.29938",
+        "2610.29009",
+        "2610.28623",
+        "2610.27671"
+      ]
+    },
+    {
+      "query": "(all:\"operator learning\") AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.31465",
+        "2610.31071",
+        "2610.29009"
+      ]
+    },
+    {
+      "query": "(all:\"physics-informed neural network\" OR all:\"physics-informed neural networks\") AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.28873",
+        "2610.28591",
+        "2610.28322",
+        "2610.27561",
+        "2610.27500"
+      ]
+    },
+    {
+      "query": "(all:\"PDE\" AND (all:pretrain* OR all:pre-train* OR all:\"pre-trained\")) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:\"PDE\" AND (all:benchmark OR all:dataset) AND (all:\"machine learning\" OR all:\"neural\" OR all:\"deep learning\")) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.30292",
+        "2610.29532",
+        "2610.29476",
+        "2610.28623"
+      ]
+    },
+    {
+      "query": "(all:\"scaling law\" AND (all:PDE OR all:\"scientific machine learning\" OR all:\"neural operator\")) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:\"in-context\" AND (all:PDE OR all:operator)) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.31627",
+        "2610.31588",
+        "2610.31483",
+        "2610.31374",
+        "2610.31344",
+        "2610.31162",
+        "2610.31147",
+        "2610.31113",
+        "2610.31096",
+        "2610.31064",
+        "2610.31037",
+        "2610.31012",
+        "2610.30920",
+        "2610.30856",
+        "2610.30799",
+        "2610.30698",
+        "2610.30557",
+        "2610.29756",
+        "2610.29753",
+        "2610.29617",
+        "2610.29508",
+        "2610.29234",
+        "2610.29189",
+        "2610.29141",
+        "2610.28998",
+        "2610.28829",
+        "2610.28810",
+        "2610.28747",
+        "2610.28733",
+        "2610.28712",
+        "2610.28577",
+        "2610.28551",
+        "2610.28179",
+        "2610.28121",
+        "2610.28067",
+        "2610.27971",
+        "2610.27946",
+        "2610.27863",
+        "2610.27847",
+        "2610.27722",
+        "2610.27588",
+        "2610.27569",
+        "2610.27544",
+        "2610.27504",
+        "2610.27490",
+        "2610.27470"
+      ]
+    },
+    {
+      "query": "(all:\"zero-shot\" AND (all:PDE OR all:\"neural operator\")) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:\"fine-tuning\" AND (all:PDE OR all:\"neural operator\")) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.31465"
+      ]
+    },
+    {
+      "query": "(all:\"neural PDE solver\" OR all:\"neural solver\" AND all:PDE) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "(all:surrogate AND all:PDE AND (all:neural OR all:\"deep learning\" OR all:\"machine learning\")) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.30498"
+      ]
+    },
+    {
+      "query": "(all:\"partial differential equations\" AND (all:transformer OR all:\"deep learning\" OR all:\"diffusion model\" OR all:\"flow matching\")) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.29476",
+        "2610.28224"
+      ]
+    },
+    {
+      "query": "(all:\"scientific machine learning\") AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.30364"
+      ]
+    },
+    {
+      "query": "(all:\"reduced-order model\" AND (all:\"neural\" OR all:\"machine learning\")) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.31504",
+        "2610.28378",
+        "2610.28224"
+      ]
+    },
+    {
+      "query": "(all:\"graph neural network\" AND (all:PDE OR all:simulation)) AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.28486",
+        "2610.28378"
+      ]
+    },
+    {
+      "query": "(all:\"generalization\" AND all:\"neural operator\") AND submittedDate:[202610200113 TO 202610240113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.31071",
+        "2610.30498"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2610.27470",
+      "submitted_at": "2026-10-20T01:41:12Z",
+      "updated_at": "2026-10-20T01:41:12Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27490",
+      "submitted_at": "2026-10-20T02:09:21Z",
+      "updated_at": "2026-10-20T02:09:21Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27500",
+      "submitted_at": "2026-10-20T02:18:20Z",
+      "updated_at": "2026-10-20T02:18:20Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27504",
+      "submitted_at": "2026-10-20T02:20:06Z",
+      "updated_at": "2026-10-20T02:20:06Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27544",
+      "submitted_at": "2026-10-20T02:58:05Z",
+      "updated_at": "2026-10-20T02:58:05Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27561",
+      "submitted_at": "2026-10-20T03:22:04Z",
+      "updated_at": "2026-10-20T03:22:04Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27569",
+      "submitted_at": "2026-10-20T03:34:58Z",
+      "updated_at": "2026-10-20T03:34:58Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27588",
+      "submitted_at": "2026-10-20T03:56:26Z",
+      "updated_at": "2026-10-20T03:56:26Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27671",
+      "submitted_at": "2026-10-20T05:37:17Z",
+      "updated_at": "2026-10-20T05:37:17Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27722",
+      "submitted_at": "2026-10-20T06:40:12Z",
+      "updated_at": "2026-10-20T06:40:12Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27847",
+      "submitted_at": "2026-10-20T08:30:30Z",
+      "updated_at": "2026-10-20T08:30:30Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27863",
+      "submitted_at": "2026-10-20T08:45:35Z",
+      "updated_at": "2026-10-20T08:45:35Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27946",
+      "submitted_at": "2026-10-20T09:52:46Z",
+      "updated_at": "2026-10-20T09:52:46Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.27971",
+      "submitted_at": "2026-10-20T10:16:08Z",
+      "updated_at": "2026-10-20T10:16:08Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28067",
+      "submitted_at": "2026-10-20T11:50:25Z",
+      "updated_at": "2026-10-20T11:50:25Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28121",
+      "submitted_at": "2026-10-20T12:30:41Z",
+      "updated_at": "2026-10-20T12:30:41Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28179",
+      "submitted_at": "2026-10-20T13:17:35Z",
+      "updated_at": "2026-10-20T13:17:35Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28224",
+      "submitted_at": "2026-10-20T13:56:26Z",
+      "updated_at": "2026-10-20T13:56:26Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28284",
+      "submitted_at": "2026-10-20T14:36:51Z",
+      "updated_at": "2026-10-20T14:36:51Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28322",
+      "submitted_at": "2026-10-20T14:56:48Z",
+      "updated_at": "2026-10-20T14:56:48Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28378",
+      "submitted_at": "2026-10-20T15:32:14Z",
+      "updated_at": "2026-10-20T15:32:14Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28486",
+      "submitted_at": "2026-10-20T16:31:26Z",
+      "updated_at": "2026-10-20T16:31:26Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28551",
+      "submitted_at": "2026-10-20T17:16:48Z",
+      "updated_at": "2026-10-21T07:32:48Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28577",
+      "submitted_at": "2026-10-20T17:32:24Z",
+      "updated_at": "2026-10-20T17:32:24Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28591",
+      "submitted_at": "2026-10-20T17:42:52Z",
+      "updated_at": "2026-10-20T17:42:52Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28623",
+      "submitted_at": "2026-10-20T17:58:30Z",
+      "updated_at": "2026-10-21T02:53:41Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28712",
+      "submitted_at": "2026-10-20T17:42:33Z",
+      "updated_at": "2026-10-20T17:42:33Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28733",
+      "submitted_at": "2026-10-20T18:00:02Z",
+      "updated_at": "2026-10-20T18:00:02Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28747",
+      "submitted_at": "2026-10-20T18:00:47Z",
+      "updated_at": "2026-10-20T18:00:47Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28810",
+      "submitted_at": "2026-10-20T18:33:05Z",
+      "updated_at": "2026-10-20T18:33:05Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28829",
+      "submitted_at": "2026-10-20T18:51:48Z",
+      "updated_at": "2026-10-20T18:51:48Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28873",
+      "submitted_at": "2026-10-20T19:46:46Z",
+      "updated_at": "2026-10-20T19:46:46Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28955",
+      "submitted_at": "2026-10-20T22:09:44Z",
+      "updated_at": "2026-10-20T22:09:44Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.28998",
+      "submitted_at": "2026-10-20T23:53:09Z",
+      "updated_at": "2026-10-20T23:53:09Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29009",
+      "submitted_at": "2026-10-21T00:20:47Z",
+      "updated_at": "2026-10-21T00:20:47Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29141",
+      "submitted_at": "2026-10-21T03:21:45Z",
+      "updated_at": "2026-10-21T03:21:45Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29189",
+      "submitted_at": "2026-10-21T04:19:06Z",
+      "updated_at": "2026-10-21T04:19:06Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29234",
+      "submitted_at": "2026-10-21T05:44:09Z",
+      "updated_at": "2026-10-21T05:44:09Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29313",
+      "submitted_at": "2026-10-21T07:09:14Z",
+      "updated_at": "2026-10-21T07:09:14Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29432",
+      "submitted_at": "2026-10-21T08:56:51Z",
+      "updated_at": "2026-10-21T08:56:51Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29439",
+      "submitted_at": "2026-10-21T09:00:56Z",
+      "updated_at": "2026-10-21T09:00:56Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29476",
+      "submitted_at": "2026-10-21T09:30:53Z",
+      "updated_at": "2026-10-21T09:30:53Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29508",
+      "submitted_at": "2026-10-21T09:58:58Z",
+      "updated_at": "2026-10-21T09:58:58Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29532",
+      "submitted_at": "2026-10-21T10:22:27Z",
+      "updated_at": "2026-10-21T10:22:27Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "已在此前运行评估/交付，重叠窗口内再次出现，未重评。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29617",
+      "submitted_at": "2026-10-21T11:56:23Z",
+      "updated_at": "2026-10-21T11:56:23Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29753",
+      "submitted_at": "2026-10-21T13:54:37Z",
+      "updated_at": "2026-10-21T13:54:37Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29756",
+      "submitted_at": "2026-10-21T13:58:01Z",
+      "updated_at": "2026-10-21T13:58:01Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.29938",
+      "submitted_at": "2026-10-21T16:08:51Z",
+      "updated_at": "2026-10-21T16:08:51Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D 方向：PDE 理论引导的神经算子，针对特定 Boussinesq 系统；评分 6/10（3+1+2），列入附录。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30292",
+      "submitted_at": "2026-10-21T18:07:54Z",
+      "updated_at": "2026-10-21T18:07:54Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D 方向：PDE 智能体的可验证实验环境（构造解法），非求解器本身；评分 6/10（3+1+2），列入附录。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30364",
+      "submitted_at": "2026-10-21T19:28:20Z",
+      "updated_at": "2026-10-21T19:28:20Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30498",
+      "submitted_at": "2026-10-21T22:25:24Z",
+      "updated_at": "2026-10-21T22:25:24Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30557",
+      "submitted_at": "2026-10-22T00:22:47Z",
+      "updated_at": "2026-10-22T00:22:47Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30698",
+      "submitted_at": "2026-10-22T04:13:09Z",
+      "updated_at": "2026-10-22T04:13:09Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30799",
+      "submitted_at": "2026-10-22T06:24:39Z",
+      "updated_at": "2026-10-22T06:24:39Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30856",
+      "submitted_at": "2026-10-22T07:31:45Z",
+      "updated_at": "2026-10-22T07:31:45Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30894",
+      "submitted_at": "2026-10-22T08:13:15Z",
+      "updated_at": "2026-10-22T08:13:15Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30920",
+      "submitted_at": "2026-10-22T08:40:11Z",
+      "updated_at": "2026-10-22T08:40:11Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.30971",
+      "submitted_at": "2026-10-22T09:16:31Z",
+      "updated_at": "2026-10-22T09:16:31Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31012",
+      "submitted_at": "2026-10-22T09:47:42Z",
+      "updated_at": "2026-10-22T09:47:42Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31037",
+      "submitted_at": "2026-10-22T10:16:16Z",
+      "updated_at": "2026-10-22T10:16:16Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31064",
+      "submitted_at": "2026-10-22T10:42:38Z",
+      "updated_at": "2026-10-22T10:42:38Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31071",
+      "submitted_at": "2026-10-22T10:49:29Z",
+      "updated_at": "2026-10-22T10:49:29Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31096",
+      "submitted_at": "2026-10-22T11:07:12Z",
+      "updated_at": "2026-10-22T11:07:12Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31113",
+      "submitted_at": "2026-10-22T11:27:22Z",
+      "updated_at": "2026-10-22T11:27:22Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31147",
+      "submitted_at": "2026-10-22T12:06:59Z",
+      "updated_at": "2026-10-22T12:06:59Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31162",
+      "submitted_at": "2026-10-22T12:17:45Z",
+      "updated_at": "2026-10-22T12:17:45Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31180",
+      "submitted_at": "2026-10-22T12:32:26Z",
+      "updated_at": "2026-10-22T12:32:26Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31275",
+      "submitted_at": "2026-10-22T13:43:47Z",
+      "updated_at": "2026-10-22T13:43:47Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31344",
+      "submitted_at": "2026-10-22T14:26:52Z",
+      "updated_at": "2026-10-22T14:26:52Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31374",
+      "submitted_at": "2026-10-22T14:46:50Z",
+      "updated_at": "2026-10-22T14:46:50Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31465",
+      "submitted_at": "2026-10-22T15:57:31Z",
+      "updated_at": "2026-10-22T15:57:31Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "selected",
+      "reason": "C 方向：牛顿流体预训练+少样本微调非牛顿算子，评分 7/10（3+2+2）。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31483",
+      "submitted_at": "2026-10-22T16:07:49Z",
+      "updated_at": "2026-10-22T16:07:49Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31504",
+      "submitted_at": "2026-10-22T16:19:57Z",
+      "updated_at": "2026-10-22T16:19:57Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31539",
+      "submitted_at": "2026-10-22T16:46:46Z",
+      "updated_at": "2026-10-22T16:46:46Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31588",
+      "submitted_at": "2026-10-22T17:23:39Z",
+      "updated_at": "2026-10-22T17:23:39Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31627",
+      "submitted_at": "2026-10-22T17:45:44Z",
+      "updated_at": "2026-10-22T17:45:44Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31668",
+      "submitted_at": "2026-10-22T17:59:50Z",
+      "updated_at": "2026-10-22T17:59:50Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.31670",
+      "submitted_at": "2026-10-22T17:59:51Z",
+      "updated_at": "2026-10-22T17:59:51Z",
+      "discovered_at": "2026-10-24T01:30:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI 求解 PDE 主题弱相关或无关，依据标题与摘要排除。",
+      "discovery_type": "new"
+    }
+  ]
+}

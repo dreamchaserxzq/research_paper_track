@@ -434,6 +434,7 @@
 | Certified neural approximations for parabolic obstacle problems | [2610.24202](https://arxiv.org/abs/2610.24202) | D | preprint | source_checked |
 | The Segal-Bargmann Transform in Neural Partial Differential Equations | [2610.24497](https://arxiv.org/abs/2610.24497) | D | preprint | source_checked |
 | FoundPDE: A generative foundation model for data-driven symbolic discovery of partial differential equations | [2610.26963](https://arxiv.org/abs/2610.26963) | D | preprint | source_checked |
+| RheOPT: Few-Shot Non-Newtonian Flow Prediction via Newtonian Pretraining of RheOFormer | [2610.31465](https://arxiv.org/abs/2610.31465) | C | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
 | Novel DeepONet architecture to predict stresses in elastoplastic structures with variable complex geometries and loads | [10.1016/j.cma.2023.116277](https://doi.org/10.1016/j.cma.2023.116277) | unknown | published | legacy_unverified |
 | Interface PINNs (I-PINNs): A physics-informed neural networks framework for interface problems | [10.1016/j.cma.2024.117135](https://doi.org/10.1016/j.cma.2024.117135) | unknown | published | legacy_unverified |

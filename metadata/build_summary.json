@@ -1,6 +1,6 @@
 {
   "conflicts": 8,
-  "daily_files": 89,
+  "daily_files": 90,
   "historical_repeat_selections": {
     "2511.21861": [
       "2026-06-15",
@@ -34,10 +34,10 @@
   "legacy_unverified": 444,
   "missing_authors": 327,
   "missing_title": 3,
-  "papers": 487,
+  "papers": 488,
   "reported_formal": 121,
   "schema_version": 1,
-  "selected_arxiv_ids": 380,
-  "structured_runs": 37,
+  "selected_arxiv_ids": 381,
+  "structured_runs": 38,
   "weekly_files": 6
 }
