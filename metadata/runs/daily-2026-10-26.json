@@ -1,0 +1,686 @@
+{
+ "run_id": "daily-2026-10-26",
+ "task_type": "daily",
+ "started_at": "2026-10-26T01:13:35Z",
+ "completed_at": "2026-10-26T01:30:00Z",
+ "coverage_start": "2026-10-22T01:13:38Z",
+ "coverage_end": "2026-10-26T01:15:00Z",
+ "previous_successful_coverage_end": "2026-10-24T01:13:38Z",
+ "status": "success",
+ "digest_path": "digests/PDE-FM-日报-20261026.md",
+ "notes": "17 条 arXiv API 查询（https，submittedDate 202610220113–202610260115，每查询上限100条）全部成功，共收集 53 个不同 ID；返回结果最新首次提交为 2026-10-23T12:35:51Z（周末，公告延迟属预期，距窗口终点约 36 小时）；仅依据摘要评分；未使用 WebSearch；总量未知，单查询上限可能截断。",
+ "queries": [
+  {
+   "query": "((all:\"foundation model\" AND (all:PDE OR all:\"partial differential\" OR all:\"neural operator\" OR all:physics))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.32377",
+    "2610.31935",
+    "2610.31869",
+    "2610.31779",
+    "2610.31762",
+    "2610.31670",
+    "2610.31668",
+    "2610.31539",
+    "2610.31275",
+    "2610.31180",
+    "2610.30971",
+    "2610.30894"
+   ]
+  },
+  {
+   "query": "((all:\"neural operator\")) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.32299",
+    "2610.31465",
+    "2610.31071"
+   ]
+  },
+  {
+   "query": "((all:\"operator learning\")) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.32299",
+    "2610.32167",
+    "2610.32125",
+    "2610.31465",
+    "2610.31071"
+   ]
+  },
+  {
+   "query": "((all:\"physics-informed neural network\" OR all:\"physics-informed neural networks\")) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.31963",
+    "2610.31855",
+    "2610.31813"
+   ]
+  },
+  {
+   "query": "((all:\"PDE\" AND (all:pretrain* OR all:pre-train* OR all:\"pre-trained\"))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"PDE\" AND (all:benchmark OR all:dataset) AND (all:\"machine learning\" OR all:\"neural\" OR all:\"deep learning\"))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.31935",
+    "2610.31855"
+   ]
+  },
+  {
+   "query": "((all:\"scaling law\" AND (all:PDE OR all:\"scientific machine learning\" OR all:\"neural operator\"))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"in-context\" AND (all:PDE OR all:operator))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.32555",
+    "2610.32486",
+    "2610.32421",
+    "2610.32390",
+    "2610.32370",
+    "2610.32285",
+    "2610.32200",
+    "2610.32024",
+    "2610.31968",
+    "2610.31944",
+    "2610.31935",
+    "2610.31874",
+    "2610.31818",
+    "2610.31749",
+    "2610.31627",
+    "2610.31588",
+    "2610.31483",
+    "2610.31374",
+    "2610.31344",
+    "2610.31162",
+    "2610.31147",
+    "2610.31113",
+    "2610.31096",
+    "2610.31064",
+    "2610.31037",
+    "2610.31012",
+    "2610.30920",
+    "2610.30856",
+    "2610.30799",
+    "2610.30698"
+   ]
+  },
+  {
+   "query": "((all:\"zero-shot\" AND (all:PDE OR all:\"neural operator\"))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"fine-tuning\" AND (all:PDE OR all:\"neural operator\"))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.31935",
+    "2610.31465"
+   ]
+  },
+  {
+   "query": "((all:\"neural PDE solver\" OR all:\"neural solver\" AND all:PDE)) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:surrogate AND all:PDE AND (all:neural OR all:\"deep learning\" OR all:\"machine learning\"))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"partial differential equations\" AND (all:transformer OR all:\"deep learning\" OR all:\"diffusion model\" OR all:\"flow matching\"))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"scientific machine learning\")) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.32026"
+   ]
+  },
+  {
+   "query": "((all:\"reduced-order model\" AND (all:\"neural\" OR all:\"machine learning\"))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.31504"
+   ]
+  },
+  {
+   "query": "((all:\"graph neural network\" AND (all:PDE OR all:simulation))) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.31883",
+    "2610.31803"
+   ]
+  },
+  {
+   "query": "((all:\"generalization\" AND all:\"neural operator\")) AND submittedDate:[202610220113 TO 202610260115]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.32299",
+    "2610.31071"
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "arxiv_id": "2610.30698",
+   "submitted_at": "2026-10-22T04:13:09Z",
+   "updated_at": "2026-10-22T04:13:09Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.30799",
+   "submitted_at": "2026-10-22T06:24:39Z",
+   "updated_at": "2026-10-22T06:24:39Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.30856",
+   "submitted_at": "2026-10-22T07:31:45Z",
+   "updated_at": "2026-10-22T07:31:45Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.30894",
+   "submitted_at": "2026-10-22T08:13:15Z",
+   "updated_at": "2026-10-22T08:13:15Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.30920",
+   "submitted_at": "2026-10-22T08:40:11Z",
+   "updated_at": "2026-10-22T08:40:11Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.30971",
+   "submitted_at": "2026-10-22T09:16:31Z",
+   "updated_at": "2026-10-22T09:16:31Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31012",
+   "submitted_at": "2026-10-22T09:47:42Z",
+   "updated_at": "2026-10-22T09:47:42Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31037",
+   "submitted_at": "2026-10-22T10:16:16Z",
+   "updated_at": "2026-10-22T10:16:16Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31064",
+   "submitted_at": "2026-10-22T10:42:38Z",
+   "updated_at": "2026-10-22T10:42:38Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31071",
+   "submitted_at": "2026-10-22T10:49:29Z",
+   "updated_at": "2026-10-22T10:49:29Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "D 方向：条件 mean flow 生成 Helmholtz 散射波场，评分 5/10，列附录。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31096",
+   "submitted_at": "2026-10-22T11:07:12Z",
+   "updated_at": "2026-10-23T03:07:51Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31113",
+   "submitted_at": "2026-10-22T11:27:22Z",
+   "updated_at": "2026-10-22T11:27:22Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31147",
+   "submitted_at": "2026-10-22T12:06:59Z",
+   "updated_at": "2026-10-22T12:06:59Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31162",
+   "submitted_at": "2026-10-22T12:17:45Z",
+   "updated_at": "2026-10-22T12:17:45Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31180",
+   "submitted_at": "2026-10-22T12:32:26Z",
+   "updated_at": "2026-10-22T12:32:26Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31275",
+   "submitted_at": "2026-10-22T13:43:47Z",
+   "updated_at": "2026-10-22T13:43:47Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31344",
+   "submitted_at": "2026-10-22T14:26:52Z",
+   "updated_at": "2026-10-22T14:26:52Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31374",
+   "submitted_at": "2026-10-22T14:46:50Z",
+   "updated_at": "2026-10-22T14:46:50Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31465",
+   "submitted_at": "2026-10-22T15:57:31Z",
+   "updated_at": "2026-10-22T15:57:31Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "已在此前运行评估，重叠窗口内再次出现，未重评。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31483",
+   "submitted_at": "2026-10-22T16:07:49Z",
+   "updated_at": "2026-10-22T16:07:49Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31504",
+   "submitted_at": "2026-10-22T16:19:57Z",
+   "updated_at": "2026-10-22T16:19:57Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31539",
+   "submitted_at": "2026-10-22T16:46:46Z",
+   "updated_at": "2026-10-22T16:46:46Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31588",
+   "submitted_at": "2026-10-22T17:23:39Z",
+   "updated_at": "2026-10-22T17:23:39Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31627",
+   "submitted_at": "2026-10-22T17:45:44Z",
+   "updated_at": "2026-10-22T17:45:44Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31668",
+   "submitted_at": "2026-10-22T17:59:50Z",
+   "updated_at": "2026-10-22T17:59:50Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31670",
+   "submitted_at": "2026-10-22T17:59:51Z",
+   "updated_at": "2026-10-23T05:34:10Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31749",
+   "submitted_at": "2026-10-22T18:00:00Z",
+   "updated_at": "2026-10-22T18:00:00Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31762",
+   "submitted_at": "2026-10-22T18:00:39Z",
+   "updated_at": "2026-10-22T18:00:39Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31779",
+   "submitted_at": "2026-10-22T18:16:17Z",
+   "updated_at": "2026-10-22T18:16:17Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31803",
+   "submitted_at": "2026-10-22T18:41:21Z",
+   "updated_at": "2026-10-22T18:41:21Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31813",
+   "submitted_at": "2026-10-22T18:50:40Z",
+   "updated_at": "2026-10-22T18:50:40Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31818",
+   "submitted_at": "2026-10-22T18:56:07Z",
+   "updated_at": "2026-10-22T18:56:07Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31855",
+   "submitted_at": "2026-10-22T19:39:54Z",
+   "updated_at": "2026-10-22T19:39:54Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31869",
+   "submitted_at": "2026-10-22T20:01:50Z",
+   "updated_at": "2026-10-22T20:01:50Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31874",
+   "submitted_at": "2026-10-22T20:06:03Z",
+   "updated_at": "2026-10-22T20:06:03Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31883",
+   "submitted_at": "2026-10-22T20:24:18Z",
+   "updated_at": "2026-10-22T20:24:18Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31935",
+   "submitted_at": "2026-10-22T21:32:55Z",
+   "updated_at": "2026-10-22T21:32:55Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "selected",
+   "reason": "B/C 方向：PDE 基座模型长时 rollout 可靠性基准，评分 9/10（4+3+2）。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31944",
+   "submitted_at": "2026-10-22T21:42:32Z",
+   "updated_at": "2026-10-22T21:42:32Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31963",
+   "submitted_at": "2026-10-22T22:14:01Z",
+   "updated_at": "2026-10-22T22:14:01Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.31968",
+   "submitted_at": "2026-10-22T22:16:42Z",
+   "updated_at": "2026-10-22T22:16:42Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32024",
+   "submitted_at": "2026-10-23T00:53:24Z",
+   "updated_at": "2026-10-23T00:53:24Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32026",
+   "submitted_at": "2026-10-23T01:05:11Z",
+   "updated_at": "2026-10-23T01:05:11Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32125",
+   "submitted_at": "2026-10-23T03:51:58Z",
+   "updated_at": "2026-10-23T03:51:58Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32167",
+   "submitted_at": "2026-10-23T05:01:30Z",
+   "updated_at": "2026-10-23T05:01:30Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "D 方向：神经基方法求解 NS，单一方程专用，评分 6/10（3+1+2），列附录。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32200",
+   "submitted_at": "2026-10-23T05:53:18Z",
+   "updated_at": "2026-10-23T05:53:18Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32285",
+   "submitted_at": "2026-10-23T07:43:26Z",
+   "updated_at": "2026-10-23T07:43:26Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32299",
+   "submitted_at": "2026-10-23T07:56:49Z",
+   "updated_at": "2026-10-23T07:56:49Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "D 方向：非结构网格气动场代理模型 CoPiT，应用专用，评分 5/10，列附录。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32370",
+   "submitted_at": "2026-10-23T08:59:43Z",
+   "updated_at": "2026-10-23T08:59:43Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32377",
+   "submitted_at": "2026-10-23T09:06:32Z",
+   "updated_at": "2026-10-23T09:06:32Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32390",
+   "submitted_at": "2026-10-23T09:16:22Z",
+   "updated_at": "2026-10-23T09:16:22Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32421",
+   "submitted_at": "2026-10-23T09:50:12Z",
+   "updated_at": "2026-10-23T09:50:12Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32486",
+   "submitted_at": "2026-10-23T11:02:16Z",
+   "updated_at": "2026-10-23T11:02:16Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.32555",
+   "submitted_at": "2026-10-23T12:35:51Z",
+   "updated_at": "2026-10-23T12:35:51Z",
+   "discovered_at": "2026-10-26T01:30:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  }
+ ]
+}
