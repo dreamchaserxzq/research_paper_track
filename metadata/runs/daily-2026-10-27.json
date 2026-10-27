@@ -1,0 +1,319 @@
+{
+ "run_id": "daily-2026-10-27",
+ "task_type": "daily",
+ "started_at": "2026-10-27T01:14:14Z",
+ "completed_at": "2026-10-27T01:25:00Z",
+ "coverage_start": "2026-10-24T01:15:00Z",
+ "coverage_end": "2026-10-27T01:14:00Z",
+ "previous_successful_coverage_end": "2026-10-26T01:15:00Z",
+ "status": "success",
+ "queries": [
+  {
+   "query": "((all:\"foundation model\" AND (all:PDE OR all:\"partial differential\" OR all:\"neural operator\" OR all:physics))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.33955",
+    "2610.33475"
+   ]
+  },
+  {
+   "query": "((all:\"neural operator\")) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.33967",
+    "2610.33771",
+    "2610.33668",
+    "2610.33504",
+    "2610.33482",
+    "2610.33456"
+   ]
+  },
+  {
+   "query": "((all:\"operator learning\")) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"physics-informed neural network\" OR all:\"physics-informed neural networks\")) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.34023",
+    "2610.33562"
+   ]
+  },
+  {
+   "query": "((all:\"PDE\" AND (all:pretrain* OR all:pre-train* OR all:\"pre-trained\"))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"PDE\" AND (all:benchmark OR all:dataset) AND (all:\"machine learning\" OR all:\"neural\" OR all:\"deep learning\"))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"scaling law\" AND (all:PDE OR all:\"scientific machine learning\" OR all:\"neural operator\"))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"in-context\" AND (all:PDE OR all:operator))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.33830",
+    "2610.33719",
+    "2610.33525"
+   ]
+  },
+  {
+   "query": "((all:\"zero-shot\" AND (all:PDE OR all:\"neural operator\"))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"fine-tuning\" AND (all:PDE OR all:\"neural operator\"))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.33771"
+   ]
+  },
+  {
+   "query": "((all:\"neural PDE solver\" OR all:\"neural solver\" AND all:PDE)) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.33769"
+   ]
+  },
+  {
+   "query": "((all:surrogate AND all:PDE AND (all:neural OR all:\"deep learning\" OR all:\"machine learning\"))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"partial differential equations\" AND (all:transformer OR all:\"deep learning\" OR all:\"diffusion model\" OR all:\"flow matching\"))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": []
+  },
+  {
+   "query": "((all:\"scientific machine learning\")) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.33939"
+   ]
+  },
+  {
+   "query": "((all:\"reduced-order model\" AND (all:\"neural\" OR all:\"machine learning\"))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.33925"
+   ]
+  },
+  {
+   "query": "((all:\"graph neural network\" AND (all:PDE OR all:simulation))) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.33769",
+    "2610.33492"
+   ]
+  },
+  {
+   "query": "((all:\"generalization\" AND all:\"neural operator\")) AND submittedDate:[202610240115 TO 202610270114]",
+   "source": "arxiv",
+   "status": "success",
+   "error": null,
+   "candidate_ids": [
+    "2610.33482",
+    "2610.33456"
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "arxiv_id": "2610.33456",
+   "submitted_at": "2026-10-24T05:21:25Z",
+   "updated_at": "2026-10-24T05:21:25Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "D 方向：螺旋桨 CFD 的几何感知神经算子，应用专用；相关2+通用1+创新1=4<7。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33475",
+   "submitted_at": "2026-10-24T05:53:48Z",
+   "updated_at": "2026-10-24T05:53:48Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33482",
+   "submitted_at": "2026-10-24T06:14:49Z",
+   "updated_at": "2026-10-24T06:14:49Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33492",
+   "submitted_at": "2026-10-24T06:41:28Z",
+   "updated_at": "2026-10-24T06:41:28Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33504",
+   "submitted_at": "2026-10-24T07:22:22Z",
+   "updated_at": "2026-10-24T07:22:22Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33525",
+   "submitted_at": "2026-10-24T08:02:47Z",
+   "updated_at": "2026-10-24T08:02:47Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33562",
+   "submitted_at": "2026-10-24T09:29:58Z",
+   "updated_at": "2026-10-24T09:29:58Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33668",
+   "submitted_at": "2026-10-24T13:32:36Z",
+   "updated_at": "2026-10-24T13:32:36Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "D 方向：多分辨率 Transformer DeepONet 用于辐射传输方程；相关3+通用1+创新1=5<7。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33719",
+   "submitted_at": "2026-10-24T15:07:10Z",
+   "updated_at": "2026-10-24T15:07:10Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33769",
+   "submitted_at": "2026-10-24T16:20:20Z",
+   "updated_at": "2026-10-24T16:20:20Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "D 方向：CFL 感知边特征的 GNN 双曲 PDE 求解器；相关3+通用1+创新1=5<7。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33771",
+   "submitted_at": "2026-10-24T16:22:33Z",
+   "updated_at": "2026-10-24T16:22:33Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "D 方向：FNO-MoE 利用专家分歧主动选样，单步预测近显式大气化学；领域专用。相关3+通用1+创新2=6<7，列附录。仅据摘要。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33830",
+   "submitted_at": "2026-10-24T18:01:21Z",
+   "updated_at": "2026-10-24T18:01:21Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33925",
+   "submitted_at": "2026-10-24T21:37:24Z",
+   "updated_at": "2026-10-24T21:37:24Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "D 方向：神经本征流体基用于降阶模型；相关2+通用1+创新2=5<7。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33939",
+   "submitted_at": "2026-10-24T22:49:47Z",
+   "updated_at": "2026-10-24T22:49:47Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33955",
+   "submitted_at": "2026-10-24T23:53:46Z",
+   "updated_at": "2026-10-24T23:53:46Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.33967",
+   "submitted_at": "2026-10-25T00:44:30Z",
+   "updated_at": "2026-10-25T00:44:30Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "B 方向：重新调参评估 The Well 的神经算子基线，指出原基线受 12 小时限制；用途为基准可靠性。相关3+通用2+创新1=6<7，列附录。仅据摘要。",
+   "discovery_type": "new"
+  },
+  {
+   "arxiv_id": "2610.34023",
+   "submitted_at": "2026-10-25T03:27:08Z",
+   "updated_at": "2026-10-25T03:27:08Z",
+   "discovered_at": "2026-10-27T01:25:00Z",
+   "decision": "excluded",
+   "reason": "与 PDE 基座模型/AI 求解 PDE 主题无关或相关度低，仅据标题与摘要判断。",
+   "discovery_type": "new"
+  }
+ ],
+ "digest_path": "digests/PDE-FM-日报-20261027.md",
+ "notes": "17 条 arXiv API 查询（https，submittedDate 202610240115–202610270114，每查询上限100条）全部成功，共收集 17 个不同 ID，均为窗口内此前未评估的新候选；返回结果最新首次提交为 2026-10-25T03:27:08Z（周末提交较少）；仅依据摘要评分；未使用 WebSearch；总量未知，单查询上限可能截断。"
+}
