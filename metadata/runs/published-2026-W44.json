@@ -1,0 +1,124 @@
+{
+  "run_id": "published-2026-W44",
+  "task_type": "published",
+  "started_at": "2026-10-27T13:01:00Z",
+  "completed_at": "2026-10-27T13:01:00Z",
+  "coverage_start": "2023-10-27T00:00:00Z",
+  "coverage_end": "2026-10-27T13:01:00Z",
+  "previous_successful_coverage_end": null,
+  "status": "success",
+  "digest_path": "digests/published/AI-for-PDE-正式发表周报-2026-W44.md",
+  "notes": "迁移后首个结构化正式周报运行。优先复查统一表中的高相关 preprint/legacy_unverified 条目，并核验 ICML 2026 PMLR、NeurIPS 2025 proceedings 与 NeurIPS 2026 官方 Downloads。高置信正式/接收候选 9 篇；其中 7 篇具 arXiv/DOI 稳定身份并写入 canonical inbox，Origo 与 MERLIN 已有 ICML 2026 PMLR 正式 proceedings，但本次未找到 arXiv/DOI，按 OPERATIONS 新事件契约暂不入库，列入待人工确认。",
+  "queries": [
+    {
+      "query": "ICML 2026 PMLR AI for PDE / neural operator / physics-informed formal proceedings",
+      "source": "PMLR",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2602.00884",
+        "2511.19114",
+        "2602.21551",
+        "2505.22391"
+      ]
+    },
+    {
+      "query": "NeurIPS 2026 official Downloads: AOT-POT and Phaedra",
+      "source": "NeurIPS",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2605.15793",
+        "2602.03915"
+      ]
+    },
+    {
+      "query": "NeurIPS 2025 proceedings: F-Adapter",
+      "source": "NeurIPS",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2509.23173"
+      ]
+    },
+    {
+      "query": "Origo: Interpretable Multi-physics PDE Foundation Model through Neural Operator Splitting",
+      "source": "PMLR",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "Interpretable Functional Koopman Learning with Non-Markovian Closure for Spatiotemporal Systems",
+      "source": "PMLR",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2605.15793",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-10-27T13:01:00Z",
+      "decision": "selected",
+      "reason": "NeurIPS 2026 官方 Downloads 列名；按 accepted 处理。PDE foundation model，多 PDE 预训练与 OOD 迁移，published-v2 10/10。",
+      "discovery_type": "version_update"
+    },
+    {
+      "arxiv_id": "2602.03915",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-10-27T13:01:00Z",
+      "decision": "selected",
+      "reason": "NeurIPS 2026 官方 Downloads 列名；按 accepted 处理。物理科学 tokenizer 支撑基座模型，published-v2 9/10。",
+      "discovery_type": "version_update"
+    },
+    {
+      "arxiv_id": "2602.00884",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-10-27T13:01:00Z",
+      "decision": "selected",
+      "reason": "ICML 2026 PMLR 正式 proceedings；测试时算子组合实现未见物理 zero-shot 泛化，published-v2 9/10。",
+      "discovery_type": "version_update"
+    },
+    {
+      "arxiv_id": "2511.19114",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-10-27T13:01:00Z",
+      "decision": "selected",
+      "reason": "ICML 2026 PMLR 正式 proceedings；Grad-Shafranov 单任务 physics-informed neural operator，extended，published-v2 6/10。",
+      "discovery_type": "version_update"
+    },
+    {
+      "arxiv_id": "2509.23173",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-10-27T13:01:00Z",
+      "decision": "selected",
+      "reason": "NeurIPS 2025 主会 proceedings + DOI 10.52202/085713-3710；大算子模型 PEFT 支撑方法，extended，published-v2 7/10。",
+      "discovery_type": "version_update"
+    },
+    {
+      "arxiv_id": "2602.21551",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-10-27T13:01:00Z",
+      "decision": "selected",
+      "reason": "ICML 2026 PMLR 正式 proceedings；Gaussian Particle Operator 支持 irregular geometry、resolution 与 2D→3D，published-v2 9/10。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2505.22391",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-10-27T13:01:00Z",
+      "decision": "selected",
+      "reason": "ICML 2026 PMLR 正式 proceedings；physics-informed diffusion distillation 支持 forward/inverse/partial observation，published-v2 8/10。",
+      "discovery_type": "backfill"
+    }
+  ]
+}
