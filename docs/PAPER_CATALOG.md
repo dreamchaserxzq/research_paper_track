@@ -79,6 +79,7 @@
 | Hierarchical-Embedding Autoencoder with a Predictor (HEAP) as Efficient Architecture for Learning Long-Term Evolution of Complex Multi-Scale Physical Systems | [2505.18857](https://arxiv.org/abs/2505.18857) | unknown | preprint | legacy_unverified |
 | Recurrent Neural Operators: Stable Long-Term PDE Prediction | [2505.20721](https://arxiv.org/abs/2505.20721) | unknown | preprint | legacy_unverified |
 | Spectral-inspired Operator Learning with Limited Data and Unknown Physics | [2505.21573](https://arxiv.org/abs/2505.21573) | unknown | preprint | legacy_unverified |
+| Physics-Informed Distillation of Diffusion Models for PDE-Constrained Generation | [2505.22391](https://arxiv.org/abs/2505.22391) | unknown | published | source_checked |
 | PDE-Transformer: Efficient and Versatile Transformers for Physics Simulations | [2505.24717](https://arxiv.org/abs/2505.24717) | unknown | published | legacy_unverified |
 | Hybrid deep learning and iterative methods for accelerated solutions of viscous incompressible flow | [2506.03016](https://arxiv.org/abs/2506.03016) | unknown | published | legacy_unverified |
 | BridgeNet: A Hybrid, Physics-Informed Machine Learning Framework for Solving High-Dimensional Fokker-Planck Equations | [2506.04354](https://arxiv.org/abs/2506.04354) | unknown | preprint | legacy_unverified |
@@ -127,7 +128,7 @@
 | MORPH: PDE Foundation Models with Arbitrary Data Modality | [2509.21670](https://arxiv.org/abs/2509.21670) | A, C | preprint | legacy_unverified |
 | Fast-Forward Lattice Boltzmann: Learning Kinetic Behaviour with Physics-Informed Neural Operators | [2509.22411](https://arxiv.org/abs/2509.22411) | unknown | preprint | legacy_unverified |
 | Dynamical feedback control with operator learning for the Vlasov-Poisson system | [2509.23063](https://arxiv.org/abs/2509.23063) | unknown | preprint | legacy_unverified |
-| F-Adapter: Frequency-Adaptive Parameter-Efficient Fine-Tuning in Scientific Machine Learning | [2509.23173](https://arxiv.org/abs/2509.23173) | C | preprint | legacy_unverified |
+| F-Adapter: Frequency-Adaptive Parameter-Efficient Fine-Tuning in Scientific Machine Learning | [2509.23173](https://arxiv.org/abs/2509.23173) | C | published | source_checked |
 | Towards Generalizable PDE Dynamics Forecasting via Physics-Guided Invariant Learning | [2509.24332](https://arxiv.org/abs/2509.24332) | C | preprint | legacy_unverified |
 | DRIFT-Net: A Spectral-Coupled Neural Operator for PDEs Learning | [2509.24868](https://arxiv.org/abs/2509.24868) | unknown | published | legacy_unverified |
 | Reframing Generative Models for Physical Systems using Stochastic Interpolants | [2509.26282](https://arxiv.org/abs/2509.26282) | D | preprint | legacy_unverified |
@@ -155,7 +156,7 @@
 | INC: An Indirect Neural Corrector for Auto-Regressive Hybrid PDE Solvers | [2511.12764](https://arxiv.org/abs/2511.12764) | unknown | preprint | legacy_unverified |
 | Physics-Constrained Adaptive Neural Networks Enable Real-Time Semiconductor Manufacturing Optimization with Minimal Training Data | [2511.12788](https://arxiv.org/abs/2511.12788) | unknown | preprint | legacy_unverified |
 | Walrus: A Cross-Domain Foundation Model for Continuum Dynamics | [2511.15684](https://arxiv.org/abs/2511.15684) | unknown | preprint | legacy_unverified |
-| Physics-informed Neural Operator Learning for Nonlinear Grad-Shafranov Equation | [2511.19114](https://arxiv.org/abs/2511.19114) | unknown | preprint | legacy_unverified |
+| Physics-informed Neural Operator Learning for Nonlinear Grad-Shafranov Equation | [2511.19114](https://arxiv.org/abs/2511.19114) | unknown | published | source_checked |
 | Diffusion for Fusion: Designing Stellarators with Generative AI | [2511.20445](https://arxiv.org/abs/2511.20445) | unknown | preprint | legacy_unverified |
 | Towards a Foundation Model for Partial Differential Equations Across Physics Domains | [2511.21861](https://arxiv.org/abs/2511.21861) | A | preprint | legacy_unverified |
 | The Machine Learning Approach to Moment Closure Relations for Plasma: A Review | [2511.22486](https://arxiv.org/abs/2511.22486) | unknown | preprint | legacy_unverified |
@@ -193,12 +194,12 @@
 | ProFlow: Zero-Shot Physics-Consistent Sampling via Proximal Flow Guidance | [2601.20227](https://arxiv.org/abs/2601.20227) | unknown | preprint | legacy_unverified |
 | A Joint Diffusion Approach to Multi-Modal Inference in Inertial Confinement Fusion | [2601.21006](https://arxiv.org/abs/2601.21006) | unknown | preprint | legacy_unverified |
 | Particle-Guided Diffusion Models for Partial Differential Equations | [2601.23262](https://arxiv.org/abs/2601.23262) | unknown | published | legacy_unverified |
-| Test-time Generalization for Physics through Neural Operator Splitting | [2602.00884](https://arxiv.org/abs/2602.00884) | C | preprint | legacy_unverified |
+| Test-time Generalization for Physics through Neural Operator Splitting | [2602.00884](https://arxiv.org/abs/2602.00884) | C | published | source_checked |
 | Geometric Generalization of Neural Operators from Kernel Integral Perspective | [2602.01498](https://arxiv.org/abs/2602.01498) | A, C | preprint | legacy_unverified |
 | Unsupervised Physics-Informed Operator Learning through Multi-Stage Curriculum Training | [2602.02264](https://arxiv.org/abs/2602.02264) | unknown | preprint | legacy_unverified |
 | Structure-Preserving Learning Improves Geometry Generalization in Neural PDEs | [2602.02788](https://arxiv.org/abs/2602.02788) | unknown | preprint | legacy_unverified |
 | Ultra Fast PDE Solving via Physics Guided Few-step Diffusion (Phys-Instruct) | [2602.03627](https://arxiv.org/abs/2602.03627) | unknown | preprint | legacy_unverified |
-| Phaedra: Learning High-Fidelity Discrete Tokenization for the Physical Sciences | [2602.03915](https://arxiv.org/abs/2602.03915) | A | preprint | legacy_unverified |
+| Phaedra: Learning High-Fidelity Discrete Tokenization for the Physical Sciences | [2602.03915](https://arxiv.org/abs/2602.03915) | A | accepted | source_checked |
 | FI-Conv: Convolution Operator Network for Forward and Inverse Problems: Application to Plasma Turbulence Simulations | [2602.04287](https://arxiv.org/abs/2602.04287) | unknown | preprint | legacy_unverified |
 | Physics-Informed Neural Compression of High-Dimensional Plasma Data | [2602.04758](https://arxiv.org/abs/2602.04758) | unknown | preprint | legacy_unverified |
 | Transolver-3: Scaling Up Transformer Solvers to Industrial-Scale Geometries | [2602.04940](https://arxiv.org/abs/2602.04940) | A | preprint | legacy_unverified |
@@ -220,6 +221,7 @@
 | Machine learning prediction of plasma behavior from discharge configurations on WEST | [2602.19110](https://arxiv.org/abs/2602.19110) | unknown | preprint | legacy_unverified |
 | Quantum Simulations for Extreme Ultraviolet Photolithography | [2602.20234](https://arxiv.org/abs/2602.20234) | unknown | preprint | legacy_unverified |
 | GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training | [2602.20399](https://arxiv.org/abs/2602.20399) | unknown | preprint | legacy_unverified |
+| From Basis to Basis: Gaussian Particle Representation for Interpretable PDE Operators | [2602.21551](https://arxiv.org/abs/2602.21551) | unknown | published | source_checked |
 | NESTOR: A Nested MOE-based Neural Operator for Large-Scale PDE Pre-Training | [2602.22059](https://arxiv.org/abs/2602.22059) | unknown | preprint | legacy_unverified |
 | Learning Physical Operators using Neural Operators | [2602.23113](https://arxiv.org/abs/2602.23113) | unknown | preprint | legacy_unverified |
 | Structure-Preserving Randomized Neural Networks for Incompressible Magnetohydrodynamics Equations | [2603.01102](https://arxiv.org/abs/2603.01102) | unknown | preprint | legacy_unverified |
@@ -315,7 +317,7 @@
 | arxiv:2605.15179 | [2605.15179](https://arxiv.org/abs/2605.15179) | unknown | unknown | legacy_unverified |
 | Tadpole: Autoencoders as Foundation Models for 3D PDEs with Online Learning | [2605.15284](https://arxiv.org/abs/2605.15284) | unknown | preprint | legacy_unverified |
 | Spatiotemporal Decoupled Physics-Informed Stone-Weierstrass Neural Operator for Long-Time Prediction of Time-Dependent Parametric PDEs | [2605.15754](https://arxiv.org/abs/2605.15754) | unknown | preprint | legacy_unverified |
-| AOT-POT: Adaptive Operator Transformation for Large-Scale PDE Pre-training | [2605.15793](https://arxiv.org/abs/2605.15793) | A | preprint | legacy_unverified |
+| AOT-POT: Adaptive Operator Transformation for Large-Scale PDE Pre-training | [2605.15793](https://arxiv.org/abs/2605.15793) | A | accepted | source_checked |
 | Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems | [2605.15881](https://arxiv.org/abs/2605.15881) | unknown | preprint | legacy_unverified |
 | Wavelet Flow Matching for Multi-Scale Physics Emulation | [2605.16573](https://arxiv.org/abs/2605.16573) | unknown | preprint | legacy_unverified |
 | Diffusion-Based Stochastic Operator Networks for Uncertainty Quantification in Stochastic Partial Differential Equations | [2605.17107](https://arxiv.org/abs/2605.17107) | unknown | preprint | legacy_unverified |
