@@ -63,8 +63,8 @@
       "updated_at": null,
       "discovered_at": "2026-10-27T13:01:00Z",
       "decision": "selected",
-      "reason": "NeurIPS 2026 官方 Downloads 列名；按 accepted 处理。PDE foundation model，多 PDE 预训练与 OOD 迁移，published-v2 10/10。",
-      "discovery_type": "version_update"
+      "reason": "NeurIPS 2026 官方 Downloads 列名；按 accepted 处理。PDE foundation model，多 PDE 预训练与 OOD 迁移，published-v2 10/10。 本次属于历史正式状态复查，未用 arXiv updated_at 作为发现窗口依据。",
+      "discovery_type": "backfill"
     },
     {
       "arxiv_id": "2602.03915",
@@ -72,8 +72,8 @@
       "updated_at": null,
       "discovered_at": "2026-10-27T13:01:00Z",
       "decision": "selected",
-      "reason": "NeurIPS 2026 官方 Downloads 列名；按 accepted 处理。物理科学 tokenizer 支撑基座模型，published-v2 9/10。",
-      "discovery_type": "version_update"
+      "reason": "NeurIPS 2026 官方 Downloads 列名；按 accepted 处理。物理科学 tokenizer 支撑基座模型，published-v2 9/10。 本次属于历史正式状态复查，未用 arXiv updated_at 作为发现窗口依据。",
+      "discovery_type": "backfill"
     },
     {
       "arxiv_id": "2602.00884",
@@ -81,8 +81,8 @@
       "updated_at": null,
       "discovered_at": "2026-10-27T13:01:00Z",
       "decision": "selected",
-      "reason": "ICML 2026 PMLR 正式 proceedings；测试时算子组合实现未见物理 zero-shot 泛化，published-v2 9/10。",
-      "discovery_type": "version_update"
+      "reason": "ICML 2026 PMLR 正式 proceedings；测试时算子组合实现未见物理 zero-shot 泛化，published-v2 9/10。 本次属于历史正式状态复查，未用 arXiv updated_at 作为发现窗口依据。",
+      "discovery_type": "backfill"
     },
     {
       "arxiv_id": "2511.19114",
@@ -90,8 +90,8 @@
       "updated_at": null,
       "discovered_at": "2026-10-27T13:01:00Z",
       "decision": "selected",
-      "reason": "ICML 2026 PMLR 正式 proceedings；Grad-Shafranov 单任务 physics-informed neural operator，extended，published-v2 6/10。",
-      "discovery_type": "version_update"
+      "reason": "ICML 2026 PMLR 正式 proceedings；Grad-Shafranov 单任务 physics-informed neural operator，extended，published-v2 6/10。 本次属于历史正式状态复查，未用 arXiv updated_at 作为发现窗口依据。",
+      "discovery_type": "backfill"
     },
     {
       "arxiv_id": "2509.23173",
@@ -99,8 +99,8 @@
       "updated_at": null,
       "discovered_at": "2026-10-27T13:01:00Z",
       "decision": "selected",
-      "reason": "NeurIPS 2025 主会 proceedings + DOI 10.52202/085713-3710；大算子模型 PEFT 支撑方法，extended，published-v2 7/10。",
-      "discovery_type": "version_update"
+      "reason": "NeurIPS 2025 主会 proceedings + DOI 10.52202/085713-3710；大算子模型 PEFT 支撑方法，extended，published-v2 7/10。 本次属于历史正式状态复查，未用 arXiv updated_at 作为发现窗口依据。",
+      "discovery_type": "backfill"
     },
     {
       "arxiv_id": "2602.21551",
