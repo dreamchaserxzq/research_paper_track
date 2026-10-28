@@ -438,6 +438,7 @@
 | FoundPDE: A generative foundation model for data-driven symbolic discovery of partial differential equations | [2610.26963](https://arxiv.org/abs/2610.26963) | D | preprint | source_checked |
 | RheOPT: Few-Shot Non-Newtonian Flow Prediction via Newtonian Pretraining of RheOFormer | [2610.31465](https://arxiv.org/abs/2610.31465) | C | preprint | source_checked |
 | Beyond Local Accuracy: Benchmarking the Rollout Reliability of PDE Foundation Models | [2610.31935](https://arxiv.org/abs/2610.31935) | B, C | preprint | source_checked |
+| A generative foundation model for 2D magnetized plasma turbulence | [2610.36155](https://arxiv.org/abs/2610.36155) | A, C | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
 | Novel DeepONet architecture to predict stresses in elastoplastic structures with variable complex geometries and loads | [10.1016/j.cma.2023.116277](https://doi.org/10.1016/j.cma.2023.116277) | unknown | published | legacy_unverified |
 | Interface PINNs (I-PINNs): A physics-informed neural networks framework for interface problems | [10.1016/j.cma.2024.117135](https://doi.org/10.1016/j.cma.2024.117135) | unknown | published | legacy_unverified |
