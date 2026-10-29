@@ -1,0 +1,298 @@
+{
+  "run_id": "daily-2026-10-29",
+  "task_type": "daily",
+  "started_at": "2026-10-29T01:20:00Z",
+  "completed_at": "2026-10-29T01:20:00Z",
+  "coverage_start": "2026-10-26T01:13:43Z",
+  "coverage_end": "2026-10-29T01:13:40Z",
+  "previous_successful_coverage_end": "2026-10-28T01:13:43Z",
+  "status": "success",
+  "queries": [
+    {
+      "query": "((all:\"foundation model\" AND (all:PDE OR all:\"partial differential\" OR all:\"neural operator\" OR all:physics))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "((all:\"neural operator\")) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.37485",
+        "2610.37101"
+      ]
+    },
+    {
+      "query": "((all:\"operator learning\")) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.37485"
+      ]
+    },
+    {
+      "query": "((all:\"physics-informed neural network\" OR all:\"physics-informed neural networks\")) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.37473"
+      ]
+    },
+    {
+      "query": "((all:\"PDE\" AND (all:pretrain* OR all:pre-train* OR all:\"pre-trained\"))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "((all:\"PDE\" AND (all:benchmark OR all:dataset) AND (all:\"machine learning\" OR all:\"neural\" OR all:\"deep learning\"))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.37485",
+        "2610.37333",
+        "2610.37159"
+      ]
+    },
+    {
+      "query": "((all:\"scaling law\" AND (all:PDE OR all:\"scientific machine learning\" OR all:\"neural operator\"))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "((all:\"in-context\" AND (all:PDE OR all:operator))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.37667",
+        "2610.37534",
+        "2610.37467",
+        "2610.37459",
+        "2610.37410",
+        "2610.37321",
+        "2610.37200",
+        "2610.37043"
+      ]
+    },
+    {
+      "query": "((all:\"zero-shot\" AND (all:PDE OR all:\"neural operator\"))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "((all:\"fine-tuning\" AND (all:PDE OR all:\"neural operator\"))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "((all:\"neural PDE solver\" OR all:\"neural solver\" AND all:PDE)) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "((all:surrogate AND all:PDE AND (all:neural OR all:\"deep learning\" OR all:\"machine learning\"))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.37485"
+      ]
+    },
+    {
+      "query": "((all:\"partial differential equations\" AND (all:transformer OR all:\"deep learning\" OR all:\"diffusion model\" OR all:\"flow matching\"))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.37333",
+        "2610.37159"
+      ]
+    },
+    {
+      "query": "((all:\"scientific machine learning\")) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "((all:\"reduced-order model\" AND (all:\"neural\" OR all:\"machine learning\"))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "((all:\"graph neural network\" AND (all:PDE OR all:simulation))) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.37215",
+        "2610.36981"
+      ]
+    },
+    {
+      "query": "((all:\"generalization\" AND all:\"neural operator\")) AND submittedDate:[202610260113 TO 202610290113]",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2610.36981",
+      "submitted_at": "2026-10-27T10:34:17Z",
+      "updated_at": "2026-10-27T10:34:17Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37043",
+      "submitted_at": "2026-10-27T11:14:36Z",
+      "updated_at": "2026-10-27T11:14:36Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37101",
+      "submitted_at": "2026-10-27T12:03:26Z",
+      "updated_at": "2026-10-27T12:03:26Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37159",
+      "submitted_at": "2026-10-27T12:53:18Z",
+      "updated_at": "2026-10-27T12:53:18Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37200",
+      "submitted_at": "2026-10-27T13:20:13Z",
+      "updated_at": "2026-10-27T13:20:13Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37215",
+      "submitted_at": "2026-10-27T13:28:33Z",
+      "updated_at": "2026-10-27T13:28:33Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37321",
+      "submitted_at": "2026-10-27T14:34:07Z",
+      "updated_at": "2026-10-27T14:34:07Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37333",
+      "submitted_at": "2026-10-27T14:39:56Z",
+      "updated_at": "2026-10-27T14:39:56Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37410",
+      "submitted_at": "2026-10-27T15:27:09Z",
+      "updated_at": "2026-10-27T15:27:09Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37459",
+      "submitted_at": "2026-10-27T15:59:13Z",
+      "updated_at": "2026-10-27T15:59:13Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37467",
+      "submitted_at": "2026-10-27T16:01:08Z",
+      "updated_at": "2026-10-27T16:01:08Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37473",
+      "submitted_at": "2026-10-27T16:05:13Z",
+      "updated_at": "2026-10-27T16:05:13Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37485",
+      "submitted_at": "2026-10-27T16:11:54Z",
+      "updated_at": "2026-10-27T16:11:54Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "selected",
+      "reason": "D方向：任意网格/不规则3D几何的神经算子架构，含通用逼近证明；相关3+通用2+创新2=7，入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37534",
+      "submitted_at": "2026-10-27T16:53:25Z",
+      "updated_at": "2026-10-27T16:53:25Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37667",
+      "submitted_at": "2026-10-27T17:59:59Z",
+      "updated_at": "2026-10-27T17:59:59Z",
+      "discovered_at": "2026-10-29T01:20:00Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261029.md",
+  "notes": "17 条 arXiv API 查询（https，submittedDate 202610260113–202610290113，每查询上限100条）全部成功，共收集 48 个不同 ID，其中此前未评估的新候选 15 个（其余与前几期重叠）；返回结果最新首次提交为 2026-10-27T17:59:59Z（疑似索引滞后或提交较少）；仅依据摘要评分；未使用 WebSearch；总量未知，单查询上限可能截断。 查询返回的另外 33 个 ID 此前已评估，未重复列入候选清单与 candidate_ids。"
+}
