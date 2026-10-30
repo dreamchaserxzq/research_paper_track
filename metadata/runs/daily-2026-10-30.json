@@ -1,0 +1,138 @@
+{
+  "run_id": "daily-2026-10-30",
+  "task_type": "daily",
+  "started_at": "2026-10-30T01:13:20Z",
+  "completed_at": "2026-10-30T01:30:00Z",
+  "coverage_start": "2026-10-27T01:13:40Z",
+  "coverage_end": "2026-10-30T01:13:20Z",
+  "previous_successful_coverage_end": "2026-10-29T01:13:40Z",
+  "status": "degraded",
+  "queries": [
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:neural+AND+all:operator",
+      "source": "arxiv",
+      "status": "failed",
+      "error": "HTTPS 请求 30 秒超时（0 字节）；http 端点返回 301 后同样不可用",
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv.org/list/cs.LG/recent?skip=0&show=500（标题关键词过滤：PDE/neural operator/physics-informed/foundation model/surrogate/solver 等）",
+      "source": "arxiv_listing",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.36931",
+        "2610.37333",
+        "2610.33722",
+        "2610.34246",
+        "2610.35952",
+        "2610.30012",
+        "2610.33133"
+      ]
+    },
+    {
+      "query": "arxiv.org/list/physics.comp-ph/recent?skip=0&show=500（标题关键词过滤：PDE/neural operator/physics-informed/foundation model/surrogate/solver 等）",
+      "source": "arxiv_listing",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.36931",
+        "2610.37333",
+        "2610.33722",
+        "2610.34246",
+        "2610.35952",
+        "2610.30012",
+        "2610.33133"
+      ]
+    },
+    {
+      "query": "arxiv.org/list/math.NA/recent?skip=0&show=500（标题关键词过滤：PDE/neural operator/physics-informed/foundation model/surrogate/solver 等）",
+      "source": "arxiv_listing",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.36931",
+        "2610.37333",
+        "2610.33722",
+        "2610.34246",
+        "2610.35952",
+        "2610.30012",
+        "2610.33133"
+      ]
+    },
+    {
+      "query": "arXiv PDE foundation model pretraining neural operator October 2026",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2610.36931",
+      "submitted_at": "2026-10-27T09:56:11Z",
+      "updated_at": "2026-10-27T09:56:11Z",
+      "discovered_at": "2026-10-30T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：蒙特卡洛 PDE 求解的交互式传输架构，偏图形/算法工程；相关2+通用1+创新1=4<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37333",
+      "submitted_at": "2026-10-27T14:39:56Z",
+      "updated_at": "2026-10-27T14:39:56Z",
+      "discovered_at": "2026-10-30T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：GPU 原生可微仿真，刚性动力系统推断；非 PDE 基座主线；相关1+通用1+创新1=3<7。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.33722",
+      "submitted_at": "2026-10-24T15:11:01Z",
+      "updated_at": "2026-10-24T15:11:01Z",
+      "discovered_at": "2026-10-30T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：粗观测重建细尺度 PDE 轨迹的结构化潜在动力学，小规模单任务；相关2+通用1+创新1=4<7。窗口前提交，补查。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.34246",
+      "submitted_at": "2026-10-25T12:20:45Z",
+      "updated_at": "2026-10-25T12:20:45Z",
+      "discovered_at": "2026-10-30T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：3D 多重散射 Transolver，声学专用；相关2+通用1+创新1=4<7。窗口前提交，补查。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.35952",
+      "submitted_at": "2026-10-24T14:03:43Z",
+      "updated_at": "2026-10-24T14:03:43Z",
+      "discovered_at": "2026-10-30T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：蒙特卡洛 PDE 求解的介质预制件，图形学方向；相关1+通用1+创新1=3<7。窗口前提交，补查。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.30012",
+      "submitted_at": "2026-10-21T16:43:52Z",
+      "updated_at": "2026-10-21T16:43:52Z",
+      "discovered_at": "2026-10-30T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：准量子启发的不可压流快速求解器，非 AI 基座主线；相关1+通用0+创新1=2<7。窗口前提交，补查。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.33133",
+      "submitted_at": "2026-10-23T14:03:03Z",
+      "updated_at": "2026-10-23T14:03:03Z",
+      "discovered_at": "2026-10-30T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：PINN 求解漂移扩散方程，单方程；相关2+通用1+创新0=3<7。窗口前提交，补查。",
+      "discovery_type": "backfill"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261030.md",
+  "notes": "arXiv export API 超时，降级为 3 个 arxiv.org listing/recent 页面（cs.LG、physics.comp-ph、math.NA，每页最多 500 条）按标题关键词过滤，覆盖不完整（遗漏其它分类与标题无关键词的论文）；WebSearch 未返回 10 月论文。listing 中约 58 篇标题命中关键词，其中多数已在此前运行评估（excluded）或已入库，仅 7 篇此前未评估；仅依据摘要评分；总量未知。覆盖不足，不推进成功位置。"
+}
