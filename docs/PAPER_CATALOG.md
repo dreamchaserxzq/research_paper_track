@@ -364,6 +364,7 @@
 | Zero-shot generalization of transformer neural operators to larger domains | [2606.14597](https://arxiv.org/abs/2606.14597) | C | preprint | legacy_unverified |
 | arxiv:2606.14913 | [2606.14913](https://arxiv.org/abs/2606.14913) | unknown | unknown | legacy_unverified |
 | Towards Data-Efficient Cross-Device Generalization of Grad-Shafranov Equilibria via Transfer Learning Neural Operator | [2606.15512](https://arxiv.org/abs/2606.15512) | unknown | preprint | legacy_unverified |
+| PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural PDE Surrogates | [2606.16602](https://arxiv.org/abs/2606.16602) | C | preprint | source_checked |
 | Operator Boosting Produces Pareto-Efficient PDE Surrogates | [2606.17460](https://arxiv.org/abs/2606.17460) | unknown | preprint | legacy_unverified |
 | arxiv:2606.17733 | [2606.17733](https://arxiv.org/abs/2606.17733) | unknown | unknown | legacy_unverified |
 | A Diagnostic Software Suite for Auditing Learned PDE Simulators | [2606.18200](https://arxiv.org/abs/2606.18200) | unknown | preprint | legacy_unverified |
@@ -440,6 +441,7 @@
 | Beyond Local Accuracy: Benchmarking the Rollout Reliability of PDE Foundation Models | [2610.31935](https://arxiv.org/abs/2610.31935) | B, C | preprint | source_checked |
 | A generative foundation model for 2D magnetized plasma turbulence | [2610.36155](https://arxiv.org/abs/2610.36155) | A, C | preprint | source_checked |
 | AMOR: Adaptive Modal Operator Refinement for Operator Learning on Arbitrary Meshes and Irregular 3D Geometries | [2610.37485](https://arxiv.org/abs/2610.37485) | D | preprint | source_checked |
+| HotPOT: Operator Transformer with Heterogeneous Physics Experts for Large-Scale PDE Pre-training | [2610.38218](https://arxiv.org/abs/2610.38218) | A | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
 | Novel DeepONet architecture to predict stresses in elastoplastic structures with variable complex geometries and loads | [10.1016/j.cma.2023.116277](https://doi.org/10.1016/j.cma.2023.116277) | unknown | published | legacy_unverified |
 | Interface PINNs (I-PINNs): A physics-informed neural networks framework for interface problems | [10.1016/j.cma.2024.117135](https://doi.org/10.1016/j.cma.2024.117135) | unknown | published | legacy_unverified |

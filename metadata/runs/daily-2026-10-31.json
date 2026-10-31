@@ -1,0 +1,556 @@
+{
+  "run_id": "daily-2026-10-31",
+  "task_type": "daily",
+  "started_at": "2026-10-31T01:15:20Z",
+  "completed_at": "2026-10-31T01:15:20Z",
+  "coverage_start": "2026-10-27T01:13:40Z",
+  "coverage_end": "2026-10-31T01:15:20Z",
+  "previous_successful_coverage_end": "2026-10-29T01:13:40Z",
+  "status": "success",
+  "queries": [
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"foundation model\" AND all:PDE&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"foundation model\" AND all:physics AND all:simulation&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.40528",
+        "2610.40495",
+        "2610.40218"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"neural operator\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.40528",
+        "2610.39845",
+        "2610.39580",
+        "2610.39381",
+        "2610.39041",
+        "2610.39003",
+        "2610.38790",
+        "2610.37986",
+        "2610.37863"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"physics-informed\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.40418",
+        "2610.40304",
+        "2610.39993",
+        "2610.39679",
+        "2610.38976",
+        "2610.38889",
+        "2610.38816",
+        "2610.38814",
+        "2610.38523",
+        "2610.38269",
+        "2610.38260",
+        "2610.38195",
+        "2610.38064",
+        "2610.37843",
+        "2610.36862",
+        "2610.36839",
+        "2610.36498"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"multiple physics\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.38937"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"in-context operator\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.38144"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"partial differential equation\" AND all:pretrain*&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.40383"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"scaling law\" AND all:PDE&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:PDE AND all:benchmark AND all:\"neural\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.40384",
+        "2610.02217"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"zero-shot\" AND all:PDE&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.38218"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"fine-tuning\" AND all:\"neural operator\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2606.16602"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"transfer learning\" AND all:PDE&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"surrogate model\" AND all:PDE&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.40426",
+        "2610.37972"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"PDE solver\" AND all:transformer&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"operator learning\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.39041",
+        "2610.37863"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"scientific machine learning\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"autoregressive\" AND all:PDE AND all:\"neural\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"flow matching\" AND all:PDE&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.02377"
+      ]
+    },
+    {
+      "query": "export.arxiv.org/api/query?search_query=all:\"diffusion model\" AND all:\"partial differential\"&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-10-27T01:00Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.40383",
+        "2610.38933"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2606.16602",
+      "submitted_at": "2026-06-15T11:50:35Z",
+      "updated_at": "2026-10-27T04:50:04Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "selected",
+      "reason": "C方向：相关3+通用2+创新2=7，仅据摘要，入选。首次提交于窗口前（2026-06-15），v 更新落在窗口内，此前未评估，按历史补录入选。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.02217",
+      "submitted_at": "2026-09-09T08:53:53Z",
+      "updated_at": "2026-10-28T09:08:40Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.02377",
+      "submitted_at": "2026-10-01T18:58:36Z",
+      "updated_at": "2026-10-29T11:42:27Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.36498",
+      "submitted_at": "2026-10-27T01:55:05Z",
+      "updated_at": "2026-10-27T01:55:05Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.36839",
+      "submitted_at": "2026-10-27T08:37:21Z",
+      "updated_at": "2026-10-27T08:37:21Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.36862",
+      "submitted_at": "2026-10-27T09:00:25Z",
+      "updated_at": "2026-10-27T09:00:25Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37843",
+      "submitted_at": "2026-10-27T18:53:03Z",
+      "updated_at": "2026-10-27T18:53:03Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37863",
+      "submitted_at": "2026-10-27T19:07:42Z",
+      "updated_at": "2026-10-27T19:07:42Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37972",
+      "submitted_at": "2026-10-27T21:10:01Z",
+      "updated_at": "2026-10-27T21:10:01Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "评估现有预训练 PDE 模型在多材料多物理工业数据上的适配困难，有基准参考价值但方法贡献有限，约5/10，列附录。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.37986",
+      "submitted_at": "2026-10-27T21:29:49Z",
+      "updated_at": "2026-10-27T21:29:49Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38064",
+      "submitted_at": "2026-10-27T23:26:41Z",
+      "updated_at": "2026-10-27T23:26:41Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38144",
+      "submitted_at": "2026-10-28T01:28:24Z",
+      "updated_at": "2026-10-28T01:28:24Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38195",
+      "submitted_at": "2026-10-28T02:41:14Z",
+      "updated_at": "2026-10-28T02:41:14Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38218",
+      "submitted_at": "2026-10-28T03:17:56Z",
+      "updated_at": "2026-10-28T03:17:56Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "selected",
+      "reason": "A方向：相关4+通用3+创新2=9，仅据摘要，入选。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38260",
+      "submitted_at": "2026-10-28T04:20:35Z",
+      "updated_at": "2026-10-28T04:20:35Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38269",
+      "submitted_at": "2026-10-28T04:37:48Z",
+      "updated_at": "2026-10-28T04:37:48Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38523",
+      "submitted_at": "2026-10-28T09:35:13Z",
+      "updated_at": "2026-10-28T09:35:13Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38790",
+      "submitted_at": "2026-10-28T19:59:08Z",
+      "updated_at": "2026-10-28T19:59:08Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38814",
+      "submitted_at": "2026-10-28T20:12:40Z",
+      "updated_at": "2026-10-28T20:12:40Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38816",
+      "submitted_at": "2026-10-28T20:14:02Z",
+      "updated_at": "2026-10-28T20:14:02Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38889",
+      "submitted_at": "2026-10-28T20:51:14Z",
+      "updated_at": "2026-10-28T20:51:14Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38933",
+      "submitted_at": "2026-10-28T21:20:13Z",
+      "updated_at": "2026-10-28T21:20:13Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38937",
+      "submitted_at": "2026-10-28T21:22:34Z",
+      "updated_at": "2026-10-28T21:22:34Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.38976",
+      "submitted_at": "2026-10-28T22:01:24Z",
+      "updated_at": "2026-10-28T22:01:24Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.39003",
+      "submitted_at": "2026-10-28T22:30:30Z",
+      "updated_at": "2026-10-28T22:30:30Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.39041",
+      "submitted_at": "2026-10-28T23:14:35Z",
+      "updated_at": "2026-10-28T23:14:35Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "D方向：变步长神经算子，Duhamel 结构+可辨识性证明，相关3+通用1+创新2=6，列附录。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.39381",
+      "submitted_at": "2026-10-29T05:15:02Z",
+      "updated_at": "2026-10-29T05:15:02Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.39580",
+      "submitted_at": "2026-10-29T08:22:18Z",
+      "updated_at": "2026-10-29T08:22:18Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.39679",
+      "submitted_at": "2026-10-29T09:27:20Z",
+      "updated_at": "2026-10-29T09:27:20Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.39845",
+      "submitted_at": "2026-10-29T11:25:15Z",
+      "updated_at": "2026-10-29T11:25:15Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.39993",
+      "submitted_at": "2026-10-29T13:13:16Z",
+      "updated_at": "2026-10-29T13:13:16Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.40218",
+      "submitted_at": "2026-10-29T15:00:09Z",
+      "updated_at": "2026-10-29T15:00:09Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.40304",
+      "submitted_at": "2026-10-29T15:46:57Z",
+      "updated_at": "2026-10-29T15:46:57Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.40383",
+      "submitted_at": "2026-10-29T16:25:19Z",
+      "updated_at": "2026-10-29T16:25:19Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.40384",
+      "submitted_at": "2026-10-29T16:26:21Z",
+      "updated_at": "2026-10-29T16:26:21Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.40418",
+      "submitted_at": "2026-10-29T16:44:20Z",
+      "updated_at": "2026-10-29T16:44:20Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.40426",
+      "submitted_at": "2026-10-29T16:49:21Z",
+      "updated_at": "2026-10-29T16:49:21Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.40495",
+      "submitted_at": "2026-10-29T17:18:51Z",
+      "updated_at": "2026-10-29T17:18:51Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "与 PDE 基座/AI-for-PDE 通用方法关联弱或为应用专用/理论窄题，低于7分。",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2610.40528",
+      "submitted_at": "2026-10-29T17:33:20Z",
+      "updated_at": "2026-10-29T17:33:20Z",
+      "discovered_at": "2026-10-31T01:15:20Z",
+      "decision": "excluded",
+      "reason": "D方向：作用于粒子经验测度的神经算子场求解器，相关3+通用1+创新2=6，列附录。",
+      "discovery_type": "new"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261031.md",
+  "notes": "19 条 arXiv API 查询（按提交时间降序，每查询上限60条，本地过滤窗口）；窗口内共返回 52 个不同 ID，其中此前未评估 39 个；仅依据摘要评分；未使用 WebSearch；总量未知，单查询上限可能截断。10-30 为降级运行，本次窗口自 10-27 起重叠覆盖。"
+}
