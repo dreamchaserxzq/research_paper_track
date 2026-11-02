@@ -197,7 +197,7 @@
 | Test-time Generalization for Physics through Neural Operator Splitting | [2602.00884](https://arxiv.org/abs/2602.00884) | C | published | source_checked |
 | Geometric Generalization of Neural Operators from Kernel Integral Perspective | [2602.01498](https://arxiv.org/abs/2602.01498) | A, C | preprint | legacy_unverified |
 | Unsupervised Physics-Informed Operator Learning through Multi-Stage Curriculum Training | [2602.02264](https://arxiv.org/abs/2602.02264) | unknown | preprint | legacy_unverified |
-| Structure-Preserving Learning Improves Geometry Generalization in Neural PDEs | [2602.02788](https://arxiv.org/abs/2602.02788) | unknown | preprint | legacy_unverified |
+| Structure-Preserving Learning Improves Geometry Generalization in Neural PDEs | [2602.02788](https://arxiv.org/abs/2602.02788) | unknown | published | source_checked |
 | Ultra Fast PDE Solving via Physics Guided Few-step Diffusion (Phys-Instruct) | [2602.03627](https://arxiv.org/abs/2602.03627) | unknown | preprint | legacy_unverified |
 | Phaedra: Learning High-Fidelity Discrete Tokenization for the Physical Sciences | [2602.03915](https://arxiv.org/abs/2602.03915) | A | accepted | source_checked |
 | FI-Conv: Convolution Operator Network for Forward and Inverse Problems: Application to Plasma Turbulence Simulations | [2602.04287](https://arxiv.org/abs/2602.04287) | unknown | preprint | legacy_unverified |
@@ -333,6 +333,7 @@
 | Small Models, Strong Priors: Architectural Inductive Bias for Parameter-Efficient Neural PDE Solvers | [2605.25949](https://arxiv.org/abs/2605.25949) | unknown | preprint | legacy_unverified |
 | Neural Quantum Spectral Operator Learning for Solving Partial Differential Equations | [2605.27408](https://arxiv.org/abs/2605.27408) | unknown | preprint | legacy_unverified |
 | Do Physics Foundation Models Learn Generalizable Physics? A Bias-Aware Benchmark Across Physical Regimes and Distribution Shifts | [2605.29283](https://arxiv.org/abs/2605.29283) | B, C | preprint | legacy_unverified |
+| Physics-Informed Coarsening for Multigrid Graph Neural Surrogates | [2605.31013](https://arxiv.org/abs/2605.31013) | unknown | published | source_checked |
 | Is Zero-Shot Super-Resolution Possible in Operator Learning? | [2606.00296](https://arxiv.org/abs/2606.00296) | C | preprint | legacy_unverified |
 | Taming the Loss Landscape of PINNs with Noisy Feynman–Kac Supervision: Operator Preconditioning and Non-Asymptotic Error Bounds | [2606.00643](https://arxiv.org/abs/2606.00643) | unknown | preprint | legacy_unverified |
 | Cellular Sheaf Neural Operators for Structure-Preserving Surrogate Modeling of Constrained PDEs | [2606.00937](https://arxiv.org/abs/2606.00937) | unknown | preprint | legacy_unverified |
@@ -340,6 +341,7 @@
 | Emergent Transfer of a Physics Foundation Model from Simulation to Laboratory Turbulence | [2606.01470](https://arxiv.org/abs/2606.01470) | unknown | preprint | legacy_unverified |
 | Deep Learning-Accelerated Dynamic Kinetic Monte Carlo Simulation for Hydrogen Transport in Tungsten | [2606.02084](https://arxiv.org/abs/2606.02084) | unknown | preprint | legacy_unverified |
 | Spectral Audit of In-Context Operator Networks | [2606.02427](https://arxiv.org/abs/2606.02427) | unknown | preprint | legacy_unverified |
+| EqGINO: Equivariant Geometry-Informed Fourier Neural Operators for 3D PDEs | [2606.03260](https://arxiv.org/abs/2606.03260) | unknown | published | source_checked |
 | Physics-guided correction for operator learning under model misspecification | [2606.03469](https://arxiv.org/abs/2606.03469) | unknown | preprint | legacy_unverified |
 | Correcting Neural Operator Spectral Bias via Diffusion Posterior Sampling with Sparse Observations | [2606.03936](https://arxiv.org/abs/2606.03936) | unknown | preprint | legacy_unverified |
 | MeshTok: Efficient Multi-Scale Tokenization for Scalable PDE Transformers | [2606.04366](https://arxiv.org/abs/2606.04366) | A | preprint | legacy_unverified |
@@ -443,6 +445,8 @@
 | AMOR: Adaptive Modal Operator Refinement for Operator Learning on Arbitrary Meshes and Irregular 3D Geometries | [2610.37485](https://arxiv.org/abs/2610.37485) | D | preprint | source_checked |
 | HotPOT: Operator Transformer with Heterogeneous Physics Experts for Large-Scale PDE Pre-training | [2610.38218](https://arxiv.org/abs/2610.38218) | A | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
+| Parametric phase-field brittle fracture computations with convolutional Fourier neural operators | [10.1007/s00466-026-02858-8](https://doi.org/10.1007/s00466-026-02858-8) | unknown | published | source_checked |
+| Deep orthogonal decomposition: a continuously adaptive neural network approach to model order reduction of parametrized partial differential equations | [10.1007/s10444-026-10295-7](https://doi.org/10.1007/s10444-026-10295-7) | unknown | published | source_checked |
 | Novel DeepONet architecture to predict stresses in elastoplastic structures with variable complex geometries and loads | [10.1016/j.cma.2023.116277](https://doi.org/10.1016/j.cma.2023.116277) | unknown | published | legacy_unverified |
 | Interface PINNs (I-PINNs): A physics-informed neural networks framework for interface problems | [10.1016/j.cma.2024.117135](https://doi.org/10.1016/j.cma.2024.117135) | unknown | published | legacy_unverified |
 | Information-Coupled neural operator for computational mechanics and parametric PDEs | [10.1016/j.cma.2026.118851](https://doi.org/10.1016/j.cma.2026.118851) | unknown | published | legacy_unverified |

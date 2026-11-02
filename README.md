@@ -4,7 +4,7 @@
 
 [论文目录](docs/PAPER_CATALOG.md) · [重点论文对照](docs/RESEARCH_COMPARISON.md) · [全部日报与周报](docs/DIGEST_INDEX.md) · [操作说明](docs/OPERATIONS.md)
 
-当前注册表 **495** 条；去重集 **388** 个 arXiv ID；**8** 项待核验冲突。历史发表状态为记录中的声明，核验程度见各条目。
+当前注册表 **499** 条；去重集 **390** 个 arXiv ID；**8** 项待核验冲突。历史发表状态为记录中的声明，核验程度见各条目。
 
 ## 最新日报
 
@@ -31,6 +31,7 @@
 
 <!-- PUBLISHED_DIGEST_START -->
 
+- [AI-for-PDE-正式发表周报-2026-W45](digests/published/AI-for-PDE-正式发表周报-2026-W45.md)
 - [AI-for-PDE-正式发表周报-2026-W44](digests/published/AI-for-PDE-正式发表周报-2026-W44.md)
 - [AI-for-PDE-正式发表周报-2026-W35](digests/published/AI-for-PDE-正式发表周报-2026-W35.md)
 - [AI-for-PDE-正式发表周报-2026-W34](digests/published/AI-for-PDE-正式发表周报-2026-W34.md)
