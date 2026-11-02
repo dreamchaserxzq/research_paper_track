@@ -1,0 +1,160 @@
+{
+  "run_id": "published-2026-W45",
+  "task_type": "published",
+  "started_at": "2026-11-02T01:37:14Z",
+  "completed_at": "2026-11-02T01:44:26.719Z",
+  "coverage_start": "2026-10-25T13:01:00Z",
+  "coverage_end": "2026-11-02T01:44:26.719Z",
+  "previous_successful_coverage_end": "2026-10-27T13:01:00Z",
+  "status": "success",
+  "digest_path": "digests/published/AI-for-PDE-正式发表周报-2026-W45.md",
+  "notes": "Regular weekly discovery overlap Oct25-Nov2 UTC; separately review 2023-11-02 to 2026-11-02 three-year historical backfill and older preprints. 12 distinct titles screened, 9 with stable arXiv/DOI IDs in structured candidates: 5 selected (2 core, 3 extended), 4 excluded. 3 verified PMLR titles lack matched arXiv/DOI (Origo, MERLIN, ReViT), remain pending in digest only per event schema. 1 existing-preprint status update (Geo-NeWF), 4 new formal records. PMLR volume official publication date Sep29 differs from historical ICML 2026 records dated Jul06; no existing trusted fields overwritten; flag separate metadata date audit. AIP full detail pages redirected/fetch limited; no events rely on those pages. DOI-only journal results validated on publisher pages.",
+  "queries": [
+    {
+      "query": "ICML 2026 PMLR 306 official Geo-NeWF EqGINO Physics-Informed Coarsening and preprint matches",
+      "source": "PMLR and arXiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2602.02788",
+        "2606.03260",
+        "2605.31013"
+      ]
+    },
+    {
+      "query": "Springer Nature 2026 published parametric PDE reduced bases, phase-field fracture, neural flux refinement",
+      "source": "Springer Nature",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "10.1007/s10444-026-10295-7",
+        "10.1007/s00466-026-02858-8",
+        "10.1007/s10444-026-10357-w"
+      ]
+    },
+    {
+      "query": "Physics of Plasmas October 2026 DustNET, electron Boltzmann PINN, solar-wind reconstruction",
+      "source": "AIP Publishing and indexed official search result",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "10.1063/5.0337599",
+        "10.1063/5.0342773",
+        "10.1063/5.0349748"
+      ]
+    },
+    {
+      "query": "PMLR ICML 2026: Origo MERLIN ReViT identity cross-check, arXiv and DOI",
+      "source": "PMLR, OpenReview, WebSearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "NeurIPS 2026 PDE foundation/HotPOT formal acceptance, ICML PMLR broad neural operator and Scientific ML",
+      "source": "NeurIPS/PMLR/WebSearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "JCP CMAME SISC MLST plasma radiation MHD and differentiable PDE solvers recent formal publication cross-check",
+      "source": "publisher/WebSearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2602.02788",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-02T01:44:26.719Z",
+      "decision": "selected",
+      "reason": "official ICML/PMLR proceedings; old preprint->published. Geometry-generalizing FEEC-compatible neural solver; core, published-v2 9/10; 2026-09-29 PMLR volume online date. Discovery classified as historical backfill; no arXiv submission/update timestamp used as weekly-window proof.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2606.03260",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-02T01:44:26.719Z",
+      "decision": "selected",
+      "reason": "ICML 2026 PMLR formal proceedings; 3D equivariant geometry-informed neural operator; core 9/10. Discovery classified as historical backfill; no arXiv submission/update timestamp used as weekly-window proof.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2605.31013",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-02T01:44:26.719Z",
+      "decision": "selected",
+      "reason": "ICML 2026 PMLR formal proceedings; physics-informed multigrid coarsening in solid mechanics; extended 6/10; official authors differ from preprint, first author/title match. Discovery classified as historical backfill; no arXiv submission/update timestamp used as weekly-window proof.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": null,
+      "doi": "10.1007/s10444-026-10295-7",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-02T01:44:26.719Z",
+      "decision": "selected",
+      "reason": "Springer Nature journal article published 2026-04-17; adaptive ROM basis for parametric PDE, extended 7/10. Discovery classified as historical backfill; no arXiv submission/update timestamp used as weekly-window proof.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": null,
+      "doi": "10.1007/s00466-026-02858-8",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-02T01:44:26.719Z",
+      "decision": "selected",
+      "reason": "Springer Nature journal article published 2026-09-19; convolutional FNO for phase-field brittle fracture, extended 6/10. Discovery classified as historical backfill; no arXiv submission/update timestamp used as weekly-window proof.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": null,
+      "doi": "10.1007/s10444-026-10357-w",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-02T01:44:26.719Z",
+      "decision": "excluded",
+      "reason": "Published 2026-09-17; specialized 1D scalar conservation flux refinement without sufficiently broad method contribution for this issue. Discovery classified as historical backfill; no arXiv submission/update timestamp used as weekly-window proof.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": null,
+      "doi": "10.1063/5.0337599",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-02T01:44:26.719Z",
+      "decision": "excluded",
+      "reason": "Published 2026-10-30 Physics of Plasmas; DustNET is a broad dusty-plasma review rather than a concrete generalizable AI PDE solving/benchmark contribution. Discovery classified as historical backfill; no arXiv submission/update timestamp used as weekly-window proof.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": null,
+      "doi": "10.1063/5.0342773",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-02T01:44:26.719Z",
+      "decision": "excluded",
+      "reason": "Published 2026-10-14 Physics of Plasmas; electron Boltzmann PINN under restricted 1D/two-term conditions, insufficient demonstrated transfer. Discovery classified as historical backfill; no arXiv submission/update timestamp used as weekly-window proof.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": null,
+      "doi": "10.1063/5.0349748",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-02T01:44:26.719Z",
+      "decision": "excluded",
+      "reason": "Published 2026-10-13 Physics of Plasmas; solar-wind sparse-probe recurrent ROM is specialized reconstruction task, not a broadly reusable forward PDE solver. Discovery classified as historical backfill; no arXiv submission/update timestamp used as weekly-window proof.",
+      "discovery_type": "backfill"
+    }
+  ]
+}
