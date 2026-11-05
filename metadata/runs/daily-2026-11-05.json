@@ -1,0 +1,398 @@
+{
+  "run_id": "daily-2026-11-05",
+  "task_type": "daily",
+  "started_at": "2026-11-05T01:13:10Z",
+  "completed_at": "2026-11-05T01:30:00Z",
+  "coverage_start": "2026-11-02T01:13:19Z",
+  "coverage_end": "2026-11-05T01:13:11Z",
+  "previous_successful_coverage_end": "2026-11-04T01:13:19Z",
+  "status": "success",
+  "digest_path": "digests/PDE-FM-日报-20261105.md",
+  "notes": "38条 arXiv API 查询（短语式18、abs:字段式16、AND 组合4；均经 https 成功，按提交日期降序，单查询上限60条）。窗口内（首次提交或更新≥窗口起点）实际收集82个去重ID，总量未知；仅列出9篇窗口新增且与 PDE/物理机器学习相关的候选，其余（含11-02已评估的并列候选、明显无关的图像/机器人/理论论文及两篇旧论文的版本更新 2603.13663、2605.16351，均非 PDE 求解主线）未列入清单。API 最新提交时间2026-11-03T18:59Z，其后无条目（可能为发布延迟）；未使用 WebSearch；仅据摘要评分，无作者机构核实。",
+  "queries": [
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22PDE+foundation+model%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22multiple+physics+pretraining%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22foundation+model+partial+differential+equations%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22in-context+operator+learning%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22universal+PDE+solver%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22neural+operator%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.04955",
+        "2611.04603",
+        "2611.04517",
+        "2611.04389"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22physics-informed+neural+network%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.05276",
+        "2611.05130"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22operator+learning+partial+differential+equation%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22neural+PDE+solver%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22surrogate+model+PDE%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22scaling+laws+scientific+machine+learning%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22PDE+benchmark+dataset%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22zero-shot+PDE%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22fine-tuning+foundation+model+PDE%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22reduced-order+model+machine+learning%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22generative+model+PDE%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22scientific+machine+learning%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.05157"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=all%3A%22The+Well+PDEBench%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22neural+operator%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.04955",
+        "2611.04603",
+        "2611.04517",
+        "2611.04389"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3APINN&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.05276",
+        "2611.05130"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3APDE&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.05276",
+        "2611.05130",
+        "2611.04063"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22partial+differential+equation%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3Asurrogate&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.05157",
+        "2611.04571",
+        "2611.04517"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22foundation+model+physics%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22pretrained+PDE%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22operator+learning%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22fluid+simulation%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.05157"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22graph+neural+network+mesh%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22diffusion+model+PDE%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22transformer+PDE%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22Fourier+neural+operator%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.04389"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22scientific+foundation+model%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22in-context+PDE%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22physics+foundation+model%22&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22graph+neural+network%22+AND+%28abs%3Amesh+OR+abs%3APDE%29&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3Atransformer+AND+abs%3APDE+AND+abs%3Apretrain%2A&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3Abenchmark+AND+%28abs%3APDE+OR+abs%3Aneural+AND+abs%3Aoperator%29&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.04603",
+        "2611.04571",
+        "2611.04517",
+        "2611.04389"
+      ]
+    },
+    {
+      "query": "https://export.arxiv.org/api/query?search_query=abs%3A%22foundation+model%22+AND+%28abs%3Aphysics+OR+abs%3APDE+OR+abs%3Asimulation%29&sortBy=submittedDate&sortOrder=descending&max_results=60（保留首次提交或更新≥2026-11-02T01:13:19Z）",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2611.04063",
+      "submitted_at": "2026-11-02T23:07:46Z",
+      "updated_at": "2026-11-02T23:07:46Z",
+      "discovered_at": "2026-11-05T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：TB-Transolver：时间捆绑并行长时 rollout 的 Transolver 变体；限于单任务时变 PDE，相关3/通用1/创新2，估6，<7；仅据摘要评分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.04517",
+      "submitted_at": "2026-11-03T08:43:06Z",
+      "updated_at": "2026-11-03T08:43:06Z",
+      "discovered_at": "2026-11-05T01:30:00Z",
+      "decision": "excluded",
+      "reason": "B/D：GeoSim：地球动力学多场神经算子基准；域窄，相关2/通用2/创新2，估6，<7；仅据摘要评分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.04571",
+      "submitted_at": "2026-11-03T09:33:07Z",
+      "updated_at": "2026-11-03T09:33:07Z",
+      "discovered_at": "2026-11-05T01:30:00Z",
+      "decision": "excluded",
+      "reason": "B/D：Ground-Wing：参数化 3D 翼地效 CFD 数据集与六种架构评测；域窄，相关2/通用1/创新2，估5，<7；仅据摘要评分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.04603",
+      "submitted_at": "2026-11-03T09:56:27Z",
+      "updated_at": "2026-11-03T09:56:27Z",
+      "discovered_at": "2026-11-05T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：SCANO：子采样网格边界条件一致性分析与切片交叉注意力神经算子；单类热场，相关2/通用2/创新2，估6，<7；仅据摘要评分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.04389",
+      "submitted_at": "2026-11-03T06:22:10Z",
+      "updated_at": "2026-11-03T06:22:10Z",
+      "discovered_at": "2026-11-05T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：Spin SFNO：自旋场等变球面傅里叶神经算子；相关2/通用2/创新2，估6，<7；仅据摘要评分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.05157",
+      "submitted_at": "2026-11-03T16:30:49Z",
+      "updated_at": "2026-11-03T16:30:49Z",
+      "discovered_at": "2026-11-05T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：Macrocanonical Generator Networks：平稳物理过程代理；非 PDE 求解主线，相关2/通用1/创新2，估5，<7；仅据摘要评分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.04955",
+      "submitted_at": "2026-11-03T14:15:46Z",
+      "updated_at": "2026-11-03T14:15:46Z",
+      "discovered_at": "2026-11-05T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：随机热方程神经算子通用逼近定理；理论但限于 SPDE，相关2/通用1/创新2，估5，<7；仅据摘要评分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.05276",
+      "submitted_at": "2026-11-03T17:57:15Z",
+      "updated_at": "2026-11-03T17:57:15Z",
+      "discovered_at": "2026-11-05T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：Hodge-de Rham PINN（含拓扑孔洞）；PINN 改进，相关2/通用1/创新2，估5，<7；仅据摘要评分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.05130",
+      "submitted_at": "2026-11-03T16:14:10Z",
+      "updated_at": "2026-11-03T16:14:10Z",
+      "discovered_at": "2026-11-05T01:30:00Z",
+      "decision": "excluded",
+      "reason": "D：PINN 求解非线性 Westervelt 方程；应用型，相关1/通用1/创新1，估3，<7；仅据摘要评分",
+      "discovery_type": "new"
+    }
+  ]
+}
