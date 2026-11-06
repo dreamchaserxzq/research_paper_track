@@ -444,6 +444,7 @@
 | A generative foundation model for 2D magnetized plasma turbulence | [2610.36155](https://arxiv.org/abs/2610.36155) | A, C | preprint | source_checked |
 | AMOR: Adaptive Modal Operator Refinement for Operator Learning on Arbitrary Meshes and Irregular 3D Geometries | [2610.37485](https://arxiv.org/abs/2610.37485) | D | preprint | source_checked |
 | HotPOT: Operator Transformer with Heterogeneous Physics Experts for Large-Scale PDE Pre-training | [2610.38218](https://arxiv.org/abs/2610.38218) | A | preprint | source_checked |
+| Self-Supervised Learning of Universal Latent Spaces for Operator Learning | [2611.05735](https://arxiv.org/abs/2611.05735) | A, C | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
 | Parametric phase-field brittle fracture computations with convolutional Fourier neural operators | [10.1007/s00466-026-02858-8](https://doi.org/10.1007/s00466-026-02858-8) | unknown | published | source_checked |
 | Deep orthogonal decomposition: a continuously adaptive neural network approach to model order reduction of parametrized partial differential equations | [10.1007/s10444-026-10295-7](https://doi.org/10.1007/s10444-026-10295-7) | unknown | published | source_checked |

@@ -4,16 +4,16 @@
 
 | 项目 | 数量 |
 |---|---:|
-| papers | 499 |
-| selected_arxiv_ids | 390 |
+| papers | 500 |
+| selected_arxiv_ids | 391 |
 | reported_formal | 133 |
 | conflicts | 8 |
 | legacy_unverified | 438 |
 | missing_title | 3 |
 | missing_authors | 321 |
-| daily_files | 102 |
+| daily_files | 103 |
 | weekly_files | 8 |
-| structured_runs | 52 |
+| structured_runs | 53 |
 
 ## 待核验冲突
 
