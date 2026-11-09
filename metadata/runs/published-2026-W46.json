@@ -6,9 +6,9 @@
   "coverage_start": "2026-10-31T01:44:26.719Z",
   "coverage_end": "2026-11-09T01:20:02Z",
   "previous_successful_coverage_end": "2026-11-02T01:44:26.719Z",
-  "status": "success",
+  "status": "degraded",
   "digest_path": "digests/published/AI-for-PDE-正式发表周报-2026-W46.md",
-  "notes": "Regular new-publication discovery coverage 2026-10-31 01:44 UTC through 2026-11-09 01:20 UTC, plus 2023-11-09 to 2026-11-09 historical backfill and older-preprint review. 12 distinct identities/titles actually checked: 8 with reliable arXiv/DOI candidate IDs (5 selected, 2 excluded, 1 pending); 4 formal PMLR paper titles without verified arXiv/DOI (Origo, MERLIN, ReViT, MiSe-GNN) pending only in digest. 11 officially formal papers, 1 unverified acceptance. 4 new formal identities; 1 existing preprint DISCO upgraded. Venue searches were targeted, not exhaustive. Partial inability to read official OpenReview decision did not advance any NeurIPS claim.",
+  "notes": "Regular new-publication discovery coverage 2026-10-31 01:44 UTC through 2026-11-09 01:20 UTC, plus 2023-11-09 to 2026-11-09 historical backfill and older-preprint review. 12 distinct identities/titles actually checked: 8 with reliable arXiv/DOI candidate IDs (5 selected, 2 excluded, 1 pending); 4 formal PMLR paper titles without verified arXiv/DOI (Origo, MERLIN, ReViT, MiSe-GNN) pending only in digest. 11 officially formal papers, 1 unverified acceptance. 4 new formal identities; 1 existing preprint DISCO upgraded. Venue searches were targeted, not exhaustive. Partial inability to read official OpenReview decision did not advance any NeurIPS claim. Coverage marked degraded due to unresolved official acceptance query; successful-coverage checkpoint remains 2026-11-02.",
   "queries": [
     {
       "query": "ICML 2025/2026 PMLR official DISCO, Flowers and Diffusion Last Layer neural operators; arXiv ID cross-match",
@@ -52,8 +52,8 @@
     {
       "query": "NeurIPS 2026 PDE-PFN official acceptance/openreview check, HotPOT status and recent PDE preprints",
       "source": "NeurIPS/OpenReview/WebSearch",
-      "status": "degraded",
-      "error": "PDE-PFN official NeurIPS 2026 acceptance decision not accessible; arXiv comments and third-party listings insufficient; HotPOT remains preprint",
+      "status": "failed",
+      "error": "Official NeurIPS 2026 acceptance decision for PDE-PFN unavailable from OpenReview/NeurIPS; third-party claim insufficient; this one source is not certified",
       "candidate_ids": [
         "2610.13334"
       ]
