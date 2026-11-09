@@ -36,6 +36,7 @@
 | SNF-ROM: Projection-based nonlinear reduced order modeling with smooth neural fields | [2405.14890](https://arxiv.org/abs/2405.14890) | unknown | published | legacy_unverified |
 | Poseidon: Efficient Foundation Models for PDEs | [2405.19101](https://arxiv.org/abs/2405.19101) | unknown | published | conflict_pending |
 | Latent Neural Operator for Solving Forward and Inverse PDE Problems | [2406.03923](https://arxiv.org/abs/2406.03923) | unknown | published | legacy_unverified |
+| Finite basis Kolmogorov-Arnold networks: Domain decomposition for data-driven and physics-informed problems | [2406.19662](https://arxiv.org/abs/2406.19662) | unknown | published | source_checked |
 | A resolution independent neural operator | [2407.13010](https://arxiv.org/abs/2407.13010) | unknown | published | legacy_unverified |
 | Towards a foundation model for partial differential equations: Multioperator learning and extrapolation | [2408.16168](https://arxiv.org/abs/2408.16168) | A, C | published | legacy_unverified |
 | Artificial intelligence for partial differential equations in computational mechanics: A review | [2410.19843](https://arxiv.org/abs/2410.19843) | unknown | needs_manual_confirmation | legacy_unverified |
@@ -69,7 +70,7 @@
 | Machine-learning Closure for Vlasov-Poisson Dynamics in Fourier-Hermite Space | [2504.13313](https://arxiv.org/abs/2504.13313) | unknown | preprint | legacy_unverified |
 | PODNO: Proper Orthogonal Decomposition Neural Operators | [2504.18513](https://arxiv.org/abs/2504.18513) | unknown | published | legacy_unverified |
 | PaRO-DeepONet: a particle-informed reduced-order deep operator network for Poisson solver in PIC simulations | [2504.19065](https://arxiv.org/abs/2504.19065) | unknown | preprint | legacy_unverified |
-| DISCO: learning to DISCover an evolution Operator for multi-physics-agnostic prediction | [2504.19496](https://arxiv.org/abs/2504.19496) | A, C | preprint | legacy_unverified |
+| DISCO: learning to DISCover an evolution Operator for multi-physics-agnostic prediction | [2504.19496](https://arxiv.org/abs/2504.19496) | A, C | published | source_checked |
 | FourierSpecNet: Neural Collision Operator Approximation Inspired by the Fourier Spectral Method for Solving the Boltzmann Equation | [2504.20408](https://arxiv.org/abs/2504.20408) | unknown | preprint | legacy_unverified |
 | SetONet: A Set-Based Operator Network for Solving PDEs with Variable-Input Sampling | [2505.04738](https://arxiv.org/abs/2505.04738) | unknown | preprint | legacy_unverified |
 | Physics-informed Temporal Alignment for Auto-regressive PDE Foundation Models | [2505.10930](https://arxiv.org/abs/2505.10930) | A, C | published | legacy_unverified |
@@ -200,6 +201,7 @@
 | Structure-Preserving Learning Improves Geometry Generalization in Neural PDEs | [2602.02788](https://arxiv.org/abs/2602.02788) | unknown | published | source_checked |
 | Ultra Fast PDE Solving via Physics Guided Few-step Diffusion (Phys-Instruct) | [2602.03627](https://arxiv.org/abs/2602.03627) | unknown | preprint | legacy_unverified |
 | Phaedra: Learning High-Fidelity Discrete Tokenization for the Physical Sciences | [2602.03915](https://arxiv.org/abs/2602.03915) | A | accepted | source_checked |
+| Generative Neural Operators through Diffusion Last Layer | [2602.04139](https://arxiv.org/abs/2602.04139) | unknown | published | source_checked |
 | FI-Conv: Convolution Operator Network for Forward and Inverse Problems: Application to Plasma Turbulence Simulations | [2602.04287](https://arxiv.org/abs/2602.04287) | unknown | preprint | legacy_unverified |
 | Physics-Informed Neural Compression of High-Dimensional Plasma Data | [2602.04758](https://arxiv.org/abs/2602.04758) | unknown | preprint | legacy_unverified |
 | Transolver-3: Scaling Up Transformer Solvers to Industrial-Scale Geometries | [2602.04940](https://arxiv.org/abs/2602.04940) | A | preprint | legacy_unverified |
@@ -228,8 +230,10 @@
 | One Operator to Rule Them All? On Boundary-Indexed Operator Families in Neural PDE Solvers | [2603.01406](https://arxiv.org/abs/2603.01406) | C | preprint | legacy_unverified |
 | PhysFormer: A Physics-Embedded Generative Model for Physically Self-Consistent Spectral Synthesis | [2603.01459](https://arxiv.org/abs/2603.01459) | unknown | preprint | legacy_unverified |
 | DGNet: Discrete Green Networks for Data-Efficient Learning of Spatiotemporal PDEs | [2603.01762](https://arxiv.org/abs/2603.01762) | unknown | preprint | legacy_unverified |
+| Accelerating PDE Surrogates via RL-Guided Mesh Optimization | [2603.02066](https://arxiv.org/abs/2603.02066) | unknown | published | source_checked |
 | From Complex Dynamics to DynFormer: Rethinking Transformers for PDEs | [2603.03112](https://arxiv.org/abs/2603.03112) | A, D | preprint | legacy_unverified |
 | Out-of-distribution transfer of PDE foundation models to material dynamics under extreme loading | [2603.04354](https://arxiv.org/abs/2603.04354) | C | preprint | legacy_unverified |
+| Flowers: A Warp Drive for Neural PDE Solvers | [2603.04430](https://arxiv.org/abs/2603.04430) | unknown | published | source_checked |
 | PDE foundation model-accelerated inverse estimation of system parameters in inertial confinement fusion | [2603.04606](https://arxiv.org/abs/2603.04606) | unknown | preprint | legacy_unverified |
 | On the Value of Tokeniser Pretraining in Physics Foundation Models | [2603.05598](https://arxiv.org/abs/2603.05598) | A | preprint | legacy_unverified |
 | Neural Operator Transformers Capture Bifurcating Drift Wave Turbulence in Fusion Plasma Simulations | [2603.05730](https://arxiv.org/abs/2603.05730) | unknown | preprint | legacy_unverified |
