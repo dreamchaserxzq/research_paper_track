@@ -1,0 +1,158 @@
+{
+  "run_id": "published-2026-W46",
+  "task_type": "published",
+  "started_at": "2026-11-09T01:14:54Z",
+  "completed_at": "2026-11-09T01:20:02Z",
+  "coverage_start": "2026-10-31T01:44:26.719Z",
+  "coverage_end": "2026-11-09T01:20:02Z",
+  "previous_successful_coverage_end": "2026-11-02T01:44:26.719Z",
+  "status": "success",
+  "digest_path": "digests/published/AI-for-PDE-正式发表周报-2026-W46.md",
+  "notes": "Regular new-publication discovery coverage 2026-10-31 01:44 UTC through 2026-11-09 01:20 UTC, plus 2023-11-09 to 2026-11-09 historical backfill and older-preprint review. 12 distinct identities/titles actually checked: 8 with reliable arXiv/DOI candidate IDs (5 selected, 2 excluded, 1 pending); 4 formal PMLR paper titles without verified arXiv/DOI (Origo, MERLIN, ReViT, MiSe-GNN) pending only in digest. 11 officially formal papers, 1 unverified acceptance. 4 new formal identities; 1 existing preprint DISCO upgraded. Venue searches were targeted, not exhaustive. Partial inability to read official OpenReview decision did not advance any NeurIPS claim.",
+  "queries": [
+    {
+      "query": "ICML 2025/2026 PMLR official DISCO, Flowers and Diffusion Last Layer neural operators; arXiv ID cross-match",
+      "source": "PMLR and arXiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2504.19496",
+        "2603.04430",
+        "2602.04139"
+      ]
+    },
+    {
+      "query": "AISTATS 2026 official PMLR RLMesh PDE surrogate mesh optimization, arXiv ID",
+      "source": "PMLR and arXiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2603.02066"
+      ]
+    },
+    {
+      "query": "Springer Advances in Computational Mathematics 2026 November 5 FBKAN domain decomposition, formal DOI",
+      "source": "Springer Nature",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2406.19662"
+      ]
+    },
+    {
+      "query": "Springer November 2026 Neural SINDy and OPCNet journal official publication cross-check",
+      "source": "Springer Nature",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "10.1007/s11071-026-13122-2",
+        "10.1007/s11063-026-11896-5"
+      ]
+    },
+    {
+      "query": "NeurIPS 2026 PDE-PFN official acceptance/openreview check, HotPOT status and recent PDE preprints",
+      "source": "NeurIPS/OpenReview/WebSearch",
+      "status": "degraded",
+      "error": "PDE-PFN official NeurIPS 2026 acceptance decision not accessible; arXiv comments and third-party listings insufficient; HotPOT remains preprint",
+      "candidate_ids": [
+        "2610.13334"
+      ]
+    },
+    {
+      "query": "ICML 2026 PMLR Origo, MERLIN, ReViT, MiSe-GNN stable arXiv/DOI identifiers and proceedings",
+      "source": "PMLR and WebSearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "JCP CMAME SISC TMLR MLST Physics of Plasmas Nuclear Fusion recent official PDE AI status",
+      "source": "publisher and indexed search",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2504.19496",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-09T01:20:02Z",
+      "decision": "selected",
+      "reason": "existing preprint upgraded; ICML 2025, official PMLR, core, published-v2 8/10; official publication date 2025-10-06; verified arXiv identity; no arXiv update date used as weekly discovery evidence",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2603.04430",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-09T01:20:02Z",
+      "decision": "selected",
+      "reason": "historical formal publication backfill; ICML 2026, official PMLR, core, published-v2 8/10; official publication date 2026-09-29; verified arXiv identity; no arXiv update date used as weekly discovery evidence",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2602.04139",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-09T01:20:02Z",
+      "decision": "selected",
+      "reason": "historical formal publication backfill; ICML 2026, official PMLR, core, published-v2 8/10; official publication date 2026-09-29; verified arXiv identity; no arXiv update date used as weekly discovery evidence",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2603.02066",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-09T01:20:02Z",
+      "decision": "selected",
+      "reason": "historical formal publication backfill; AISTATS 2026, official PMLR, extended, published-v2 6/10; official publication date 2026-08-30; verified arXiv identity; no arXiv update date used as weekly discovery evidence",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2406.19662",
+      "doi": "10.1007/s10444-026-10376-7",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-09T01:20:02Z",
+      "decision": "selected",
+      "reason": "historical formal publication backfill; Advances in Computational Mathematics, official Springer Nature, extended, published-v2 6/10; official publication date 2026-11-05; verified arXiv identity; no arXiv update date used as weekly discovery evidence",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": null,
+      "doi": "10.1007/s11071-026-13122-2",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-09T01:20:02Z",
+      "decision": "excluded",
+      "reason": "Official Springer Nov 6 2026 publication; ODE system-identification (Lotka–Volterra, SIR, kinetics, Lorenz), outside forward PDE-solving core remit",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": null,
+      "doi": "10.1007/s11063-026-11896-5",
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-09T01:20:02Z",
+      "decision": "excluded",
+      "reason": "Official Springer Nov 4 2026 publication; primarily fits oscillatory ODE-pattern data, lacks PDE solution/operator generalization contribution",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.13334",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-09T01:20:02Z",
+      "decision": "pending",
+      "reason": "PDE-PFN preprint metadata and third-party NeurIPS 2026 claims exist, but official decision/forum could not be independently verified; retain preprint",
+      "discovery_type": "backfill"
+    }
+  ]
+}
