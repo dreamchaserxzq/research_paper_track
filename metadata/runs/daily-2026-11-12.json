@@ -1,0 +1,133 @@
+{
+  "run_id": "daily-2026-11-12",
+  "task_type": "daily",
+  "started_at": "2026-11-12T01:17:51Z",
+  "completed_at": "2026-11-12T01:30:00Z",
+  "coverage_start": "2026-11-09T01:17:32Z",
+  "coverage_end": "2026-11-12T01:17:51Z",
+  "previous_successful_coverage_end": "2026-11-11T01:17:32Z",
+  "status": "success",
+  "queries": [
+    {
+      "query": "all:\"foundation model\" AND all:PDE",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.13991",
+        "2611.13989",
+        "2611.13515",
+        "2611.13205",
+        "2611.10945",
+        "2611.13359"
+      ]
+    },
+    {
+      "query": "all:\"neural operator\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.13991",
+        "2611.13989",
+        "2611.13515",
+        "2611.13205",
+        "2611.10945",
+        "2611.13359"
+      ]
+    },
+    {
+      "query": "all:\"physics-informed\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"PDE\" AND all:\"pretrain*\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arXiv PDE foundation model pretraining neural operator November 2026",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv.org multiple physics pretraining in-context operator learning 2611",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "arxiv.org neural operator PDE benchmark scaling laws 2611",
+      "source": "websearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2611.13991",
+      "submitted_at": "2026-11-10T12:36:29Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-12T01:25:00Z",
+      "decision": "excluded",
+      "reason": "据摘要判断为单类/窄方向方法或理论，未达7分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.13989",
+      "submitted_at": "2026-11-10T12:32:55Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-12T01:25:00Z",
+      "decision": "excluded",
+      "reason": "据摘要判断为单类/窄方向方法或理论，未达7分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.13515",
+      "submitted_at": "2026-11-10T03:42:12Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-12T01:25:00Z",
+      "decision": "excluded",
+      "reason": "据摘要判断为单类/窄方向方法或理论，未达7分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.13205",
+      "submitted_at": "2026-11-09T20:29:34Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-12T01:25:00Z",
+      "decision": "excluded",
+      "reason": "据摘要判断为单类/窄方向方法或理论，未达7分",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.10945",
+      "submitted_at": "2026-11-08T09:11:26Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-12T01:25:00Z",
+      "decision": "excluded",
+      "reason": "据摘要判断为单类/窄方向方法或理论，未达7分",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2611.13359",
+      "submitted_at": "2026-11-09T23:34:40Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-12T01:25:00Z",
+      "decision": "excluded",
+      "reason": "据摘要判断为单类/窄方向方法或理论，未达7分",
+      "discovery_type": "new"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261112.md",
+  "notes": "4条arXiv API查询与3条WebSearch均成功；WebSearch未返回2026-11新论文；API最新提交时间2026-11-10T15:51Z；6个未见候选据摘要评分均<7；本期新增0篇；查询集少于往期，覆盖不完整。"
+}
