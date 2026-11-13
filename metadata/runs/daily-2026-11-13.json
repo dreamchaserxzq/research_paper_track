@@ -1,0 +1,152 @@
+{
+  "run_id": "daily-2026-11-13",
+  "task_type": "daily",
+  "started_at": "2026-11-13T01:13:21Z",
+  "completed_at": "2026-11-13T01:20:00Z",
+  "coverage_start": "2026-11-10T01:17:51Z",
+  "coverage_end": "2026-11-13T01:13:21Z",
+  "previous_successful_coverage_end": "2026-11-12T01:17:51Z",
+  "status": "success",
+  "queries": [
+    {
+      "query": "all:\"foundation model\" AND all:PDE",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"neural operator\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.11805"
+      ]
+    },
+    {
+      "query": "all:\"physics-informed\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.14240",
+        "2611.14119",
+        "2611.14058",
+        "2611.14023",
+        "2611.13411",
+        "2611.13340",
+        "2611.13231",
+        "2611.12401"
+      ]
+    },
+    {
+      "query": "all:PDE AND all:pretrain*",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"partial differential\" AND all:\"scaling\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"operator learning\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.11805"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2611.14240",
+      "submitted_at": "2026-11-10T15:51:53Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-13T01:20:00Z",
+      "decision": "excluded",
+      "reason": "电力潮流ANN评测，非PDE基座相关（据摘要/标题粗筛）",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.14119",
+      "submitted_at": "2026-11-10T14:07:56Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-13T01:20:00Z",
+      "decision": "excluded",
+      "reason": "物理信息贝叶斯优化(HHG)，非PDE基座相关（据摘要/标题粗筛）",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.14058",
+      "submitted_at": "2026-11-10T13:25:28Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-13T01:20:00Z",
+      "decision": "excluded",
+      "reason": "4D flow超分辨率RNN，应用向，未达7分（据摘要/标题粗筛）",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.14023",
+      "submitted_at": "2026-11-10T12:56:17Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-13T01:20:00Z",
+      "decision": "excluded",
+      "reason": "PINN学习自旋链哈密顿量，窄方向，未达7分（据摘要/标题粗筛）",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.13411",
+      "submitted_at": "2026-11-10T00:46:14Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-13T01:20:00Z",
+      "decision": "excluded",
+      "reason": "PINN KKL观测器，控制向，未达7分（据摘要/标题粗筛）",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2611.13340",
+      "submitted_at": "2026-11-09T23:04:34Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-13T01:20:00Z",
+      "decision": "excluded",
+      "reason": "电力系统Chebyshev PIKAN，窄方向，未达7分（据摘要/标题粗筛）",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2611.13231",
+      "submitted_at": "2026-11-09T20:59:43Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-13T01:20:00Z",
+      "decision": "excluded",
+      "reason": "FBPINN块稀疏Gauss-Newton优化，单类训练方法，未达7分（据摘要/标题粗筛）",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2611.12401",
+      "submitted_at": "2026-11-09T13:36:11Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-13T01:20:00Z",
+      "decision": "excluded",
+      "reason": "牛顿系统守恒律PINN，窄方向，未达7分（据摘要/标题粗筛）",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2611.11805",
+      "submitted_at": "2026-11-09T03:08:26Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-13T01:20:00Z",
+      "decision": "excluded",
+      "reason": "非弹性均匀化算子学习，窄应用，未达7分（据摘要/标题粗筛）",
+      "discovery_type": "backfill"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261113.md",
+  "notes": "6条arXiv API查询成功（'operator learning'查询延迟完成，仅检查前12条）；未执行WebSearch；API最新提交时间2026-11-10T15:51Z；候选仅据标题粗筛，均<7；本期新增0篇；查询集少于往期，覆盖可能不完整。"
+}
