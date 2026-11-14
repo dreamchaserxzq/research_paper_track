@@ -1,0 +1,199 @@
+{
+  "run_id": "daily-2026-11-14",
+  "task_type": "daily",
+  "started_at": "2026-11-14T01:13:21Z",
+  "completed_at": "2026-11-14T01:25:00Z",
+  "coverage_start": "2026-11-11T01:13:21Z",
+  "coverage_end": "2026-11-14T01:13:21Z",
+  "previous_successful_coverage_end": "2026-11-13T01:13:21Z",
+  "status": "success",
+  "queries": [
+    {
+      "query": "all:\"foundation model\" AND all:PDE",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.17152"
+      ]
+    },
+    {
+      "query": "all:\"neural operator\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.16511",
+        "2611.16356",
+        "2611.16341",
+        "2611.16240",
+        "2611.15002",
+        "2611.13989",
+        "2611.13515"
+      ]
+    },
+    {
+      "query": "all:\"operator learning\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:PDE AND all:pretrain*",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"partial differential\" AND all:\"scaling\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "all:\"physics-informed\"",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.17289",
+        "2611.16240"
+      ]
+    },
+    {
+      "query": "all:\"in-context\" AND all:PDE",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.16106"
+      ]
+    },
+    {
+      "query": "all:\"PDE\" AND all:benchmark",
+      "source": "arxiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2611.17152",
+        "2611.17141",
+        "2611.14949"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2611.17152",
+      "submitted_at": "2026-11-12T17:36:09Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "selected",
+      "reason": "B方向；4/2/2=8；基座模型导向的气动基准，留出式划分（据摘要）",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.17141",
+      "submitted_at": "2026-11-12T17:30:03Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "D方向；3/1/2=6；坐标不变性 slice-attention transformer，附录（据摘要）",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.14949",
+      "submitted_at": "2026-11-11T02:55:14Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "D方向；3/1/2=6；LLM agent 求解 PDE 基准，附录（据摘要）",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.16356",
+      "submitted_at": "2026-11-12T06:15:08Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "D方向；球面神经算子，窄方向，<7",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.16341",
+      "submitted_at": "2026-11-12T06:02:05Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "D方向；多重网格神经算子流体代理，<7",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.13989",
+      "submitted_at": "2026-11-10T12:32:55Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "D方向；Hankel 神经算子，理论为主，<7（窗口前提交，历史补录不计）",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2611.13515",
+      "submitted_at": "2026-11-10T03:42:12Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "D方向；多尺度椭圆有限元，<7（窗口前提交）",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2611.16511",
+      "submitted_at": "2026-11-12T09:10:47Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "相对论流体应用向，<7",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.17289",
+      "submitted_at": "2026-11-12T18:52:50Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "浅水方程 PINN，窄方向，<7",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.16240",
+      "submitted_at": "2026-11-12T03:38:38Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "Eikonal 神经算子，窄方向，<7",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.15002",
+      "submitted_at": "2026-11-11T04:00:48Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "等离子体代理应用向，<7",
+      "discovery_type": "new"
+    },
+    {
+      "arxiv_id": "2611.16106",
+      "submitted_at": "2026-11-11T23:28:29Z",
+      "updated_at": null,
+      "discovered_at": "2026-11-14T01:25:00Z",
+      "decision": "excluded",
+      "reason": "神经预条件子（引力），<7",
+      "discovery_type": "new"
+    }
+  ],
+  "digest_path": "digests/PDE-FM-日报-20261114.md",
+  "notes": "8条arXiv API查询成功（各取最新40条，按提交时间排序）；未执行WebSearch；API最新提交时间2026-11-12T18:52Z；候选据摘要评分；本期新增1篇、历史补录0篇；覆盖可能不完整。"
+}
