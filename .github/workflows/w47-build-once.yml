@@ -1,4 +1,5 @@
 name: W47 one-time registry rebuild
+# Retry after run evidence DOI alias normalization
 
 on:
   push:
