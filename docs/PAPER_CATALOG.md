@@ -204,6 +204,7 @@
 | Generative Neural Operators through Diffusion Last Layer | [2602.04139](https://arxiv.org/abs/2602.04139) | unknown | published | source_checked |
 | FI-Conv: Convolution Operator Network for Forward and Inverse Problems: Application to Plasma Turbulence Simulations | [2602.04287](https://arxiv.org/abs/2602.04287) | unknown | preprint | legacy_unverified |
 | Physics-Informed Neural Compression of High-Dimensional Plasma Data | [2602.04758](https://arxiv.org/abs/2602.04758) | unknown | preprint | legacy_unverified |
+| Imposing Boundary Conditions on Neural Operators via Learned Function Extensions | [2602.04923](https://arxiv.org/abs/2602.04923) | unknown | published | source_checked |
 | Transolver-3: Scaling Up Transformer Solvers to Industrial-Scale Geometries | [2602.04940](https://arxiv.org/abs/2602.04940) | A | preprint | legacy_unverified |
 | SpectraKAN: Conditioning Spectral Operators | [2602.05187](https://arxiv.org/abs/2602.05187) | A, D | preprint | legacy_unverified |
 | Memory-Conditioned Flow-Matching for Stable Autoregressive PDE Rollouts | [2602.06689](https://arxiv.org/abs/2602.06689) | unknown | preprint | legacy_unverified |
@@ -222,7 +223,7 @@
 | SGNO: Spectral Generator Neural Operators for Stable Long Horizon PDE Rollouts | [2602.18801](https://arxiv.org/abs/2602.18801) | unknown | preprint | legacy_unverified |
 | Machine learning prediction of plasma behavior from discharge configurations on WEST | [2602.19110](https://arxiv.org/abs/2602.19110) | unknown | preprint | legacy_unverified |
 | Quantum Simulations for Extreme Ultraviolet Photolithography | [2602.20234](https://arxiv.org/abs/2602.20234) | unknown | preprint | legacy_unverified |
-| GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training | [2602.20399](https://arxiv.org/abs/2602.20399) | unknown | preprint | legacy_unverified |
+| GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training | [2602.20399](https://arxiv.org/abs/2602.20399) | unknown | published | source_checked |
 | From Basis to Basis: Gaussian Particle Representation for Interpretable PDE Operators | [2602.21551](https://arxiv.org/abs/2602.21551) | unknown | published | source_checked |
 | NESTOR: A Nested MOE-based Neural Operator for Large-Scale PDE Pre-Training | [2602.22059](https://arxiv.org/abs/2602.22059) | unknown | preprint | legacy_unverified |
 | Learning Physical Operators using Neural Operators | [2602.23113](https://arxiv.org/abs/2602.23113) | unknown | preprint | legacy_unverified |
@@ -302,7 +303,7 @@
 | HyCOP: Hybrid Composition Operators for Interpretable Learning of PDEs | [2605.00820](https://arxiv.org/abs/2605.00820) | A, D | preprint | legacy_unverified |
 | PerFlow: Physics-Embedded Rectified Flow for Efficient Reconstruction and Uncertainty Quantification of Spatiotemporal Dynamics | [2605.03548](https://arxiv.org/abs/2605.03548) | unknown | preprint | legacy_unverified |
 | Provable imitation learning for control of instability in partially-observed Vlasov–Poisson equations | [2605.05081](https://arxiv.org/abs/2605.05081) | unknown | preprint | legacy_unverified |
-| Do Neural Operators Forget Geometry? The Forgetting Hypothesis in Deep Operator Learning | [2605.05862](https://arxiv.org/abs/2605.05862) | A, C | preprint | legacy_unverified |
+| Do Neural Operators Forget Geometry? The Forgetting Hypothesis in Deep Operator Learning | [2605.05862](https://arxiv.org/abs/2605.05862) | A, C | published | source_checked |
 | BRICKS: Compositional Neural Markov Kernels for Zero-Shot Radiation-Matter Simulation | [2605.06591](https://arxiv.org/abs/2605.06591) | unknown | preprint | legacy_unverified |
 | Physics-informed operator learning for transferable energy-dissipative microstructure dynamics | [2605.07279](https://arxiv.org/abs/2605.07279) | unknown | preprint | legacy_unverified |
 | When Attention Beats Fourier: Multi-Scale Transformers for PDE Solving on Irregular Domains | [2605.08318](https://arxiv.org/abs/2605.08318) | unknown | preprint | legacy_unverified |
@@ -330,6 +331,7 @@
 | Data-Efficient Neural Operator Training via Physics-Based Active Learning | [2605.21348](https://arxiv.org/abs/2605.21348) | unknown | preprint | legacy_unverified |
 | ARC-STAR: Auditable Post-Hoc Correction for PDE Foundation Models | [2605.22222](https://arxiv.org/abs/2605.22222) | C | preprint | legacy_unverified |
 | Multiple Neural Operators Achieve Near-Optimal Rates for Multi-Task Learning | [2605.22724](https://arxiv.org/abs/2605.22724) | B | preprint | legacy_unverified |
+| Iterative Refinement Neural Operators are Learned Fixed-Point Solvers: A Principled Approach to Spectral Bias Mitigation | [2605.24041](https://arxiv.org/abs/2605.24041) | unknown | published | source_checked |
 | PDEInvBench: A Comprehensive Dataset and Design Space Exploration of Neural Networks for PDE Inverse Problems | [2605.25353](https://arxiv.org/abs/2605.25353) | B | preprint | legacy_unverified |
 | Autoregression-Free Neural Operators for Time-Dependent PDEs | [2605.25413](https://arxiv.org/abs/2605.25413) | unknown | preprint | legacy_unverified |
 | Guided Flow Matching for Forward and Inverse PDE Problems with Sparse Observations: Algorithm and Theory | [2605.25509](https://arxiv.org/abs/2605.25509) | unknown | preprint | legacy_unverified |

@@ -120,6 +120,7 @@
 
 ## 正式发表周报
 
+- [AI-for-PDE-正式发表周报-2026-W47](../digests/published/AI-for-PDE-正式发表周报-2026-W47.md)
 - [AI-for-PDE-正式发表周报-2026-W46](../digests/published/AI-for-PDE-正式发表周报-2026-W46.md)
 - [AI-for-PDE-正式发表周报-2026-W45](../digests/published/AI-for-PDE-正式发表周报-2026-W45.md)
 - [AI-for-PDE-正式发表周报-2026-W44](../digests/published/AI-for-PDE-正式发表周报-2026-W44.md)
