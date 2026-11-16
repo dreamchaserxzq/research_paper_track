@@ -1,0 +1,139 @@
+{
+  "run_id": "published-2026-W47",
+  "task_type": "published",
+  "started_at": "2026-11-16T01:21:04Z",
+  "completed_at": "2026-11-16T01:26:53Z",
+  "coverage_start": "2026-10-31T01:44:26.719Z",
+  "coverage_end": "2026-11-16T01:26:53Z",
+  "previous_successful_coverage_end": "2026-11-02T01:44:26.719Z",
+  "status": "degraded",
+  "digest_path": "digests/published/AI-for-PDE-正式发表周报-2026-W47.md",
+  "notes": "Executed six topic/source query groups. Eleven distinct titles/identities scrutinized: 7 with stable identifiers encoded in candidates (4 selected, 2 excluded, 1 pending), plus 4 formally published PMLR papers without corroborated arXiv/DOI (Origo, MERLIN, ReViT, MiSe-GNN), pending only in digest. Ten official formal statuses identifiable including the two excluded papers; PDE-PFN official acceptance unverified. Two existing preprints upgraded, two new formal identities. Four selected publications were historical ICML 2026 online proceedings from 2026-09-29, not W47 new publications. Source verification only targeted, not venue-wide exhaustive. NeurIPS/OpenReview acceptance query unresolved; degraded run does not advance successful discovery checkpoint.",
+  "queries": [
+    {
+      "query": "ICML 2026 PMLR volume 306 official GeoPT, learned function boundary extensions, iterative refinement neural operators and geometric forgetting; arXiv identity match",
+      "source": "PMLR and arXiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2602.20399",
+        "2602.04923",
+        "2605.24041",
+        "2605.05862"
+      ]
+    },
+    {
+      "query": "NeurIPS 2026 and official OpenReview PDE-PFN prior-data fitted neural PDE solver accepted decision",
+      "source": "NeurIPS/OpenReview/WebSearch",
+      "status": "failed",
+      "error": "Official NeurIPS 2026 acceptance decision not independently retrievable; external aggregate conference tags are not sufficient",
+      "candidate_ids": [
+        "2610.13334"
+      ]
+    },
+    {
+      "query": "IEEE WorldSUAS 2026 Neural Operators for Physics-Informed Modeling in Complex Engineering Systems DOI",
+      "source": "IEEE Xplore",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "10.1109/WorldSUAS70880.2026.11767230"
+      ]
+    },
+    {
+      "query": "Springer Journal of Electric Propulsion November 2026 real-time machine learning Hall thruster discharge",
+      "source": "Springer Nature",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "10.1007/s44205-026-00229-2"
+      ]
+    },
+    {
+      "query": "ICML 2026 PMLR Origo MERLIN ReViT MiSe-GNN stable arXiv DOI match",
+      "source": "PMLR/WebSearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "2026 November JCP CMAME SISC TMLR MLST Physics of Plasmas Nuclear Fusion Nature machine learning PDE formal publication",
+      "source": "publisher/indexed web search",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2602.20399",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-16T01:26:53Z",
+      "decision": "selected",
+      "reason": "GeoPT existing preprint upgraded to ICML 2026 PMLR 306 published, 2026-09-29; foundation candidate core 9/10; retrospective formal status review",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2602.04923",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-16T01:26:53Z",
+      "decision": "selected",
+      "reason": "New formal identity: learned boundary-to-domain function extensions for diverse BCs; ICML 2026 PMLR 306 published, 2026-09-29; core 8/10",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2605.24041",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-16T01:26:53Z",
+      "decision": "selected",
+      "reason": "New formal identity: iterative neural operator refinement via learned fixed-point correction and spectral loss; ICML 2026 PMLR 306 published, 2026-09-29; core 7/10",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2605.05862",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-16T01:26:53Z",
+      "decision": "selected",
+      "reason": "Existing geometry-forgetting preprint upgraded to ICML 2026 PMLR 306 published, 2026-09-29; extended 7/10",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.13334",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-16T01:26:53Z",
+      "decision": "pending",
+      "reason": "PDE-PFN has arXiv identity, but no verifiable official NeurIPS 2026 or OpenReview acceptance decision in executed search; keep preprint, do not promote third-party claim.",
+      "discovery_type": "backfill"
+    },
+    {
+      "doi": "10.1109/WorldSUAS70880.2026.11767230",
+      "arxiv_id": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-16T01:26:53Z",
+      "decision": "excluded",
+      "reason": "IEEE WorldSUAS 2026 publication shown by official IEEE Xplore metadata, but engineering neural operator application without compelling cross-PDE value; Xplore added date is not publication_date.",
+      "discovery_type": "backfill"
+    },
+    {
+      "doi": "10.1007/s44205-026-00229-2",
+      "arxiv_id": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-16T01:26:53Z",
+      "decision": "excluded",
+      "reason": "Springer Journal of Electric Propulsion published 2026-11-11; echo-state-network discharge-current control, not a general PDE solver.",
+      "discovery_type": "backfill"
+    }
+  ]
+}
