@@ -1,0 +1,164 @@
+{
+  "run_id": "published-2026-W48",
+  "task_type": "published",
+  "started_at": "2026-11-23T01:37:15Z",
+  "completed_at": "2026-11-23T01:37:15Z",
+  "coverage_start": "2026-10-31T01:44:26.719Z",
+  "coverage_end": "2026-11-23T01:37:15Z",
+  "previous_successful_coverage_end": "2026-11-02T01:44:26.719Z",
+  "status": "degraded",
+  "digest_path": "digests/published/AI-for-PDE-正式发表周报-2026-W48.md",
+  "notes": "W48 targeted official-source sweep and historical preprint backfill. Twelve distinct titles checked: seven selected (four core, three extended), one workshop-only exclusion and four title-only PMLR proceeding candidates without verified stable arXiv/DOI kept pending outside machine candidates. Five NeurIPS official Downloads accepted results and two PMLR published papers. Existing preprints upgraded: Hodge, PDE-PFN, ECHO (3); new formal identities: CoupledFlow, sTCL, TINNs, OpInf-LLM (4). Official formal state ascertainable for eleven of twelve including four PMLR pending identities. Official Nature/Elsevier article pages not uniformly retrievable; source coverage selective and degraded; do not advance success checkpoint 2026-11-02T01:44:26.719Z. NeurIPS 2026 official accepted list is not proceedings; publication_date remains null.",
+  "queries": [
+    {
+      "query": "NeurIPS 2026 official Downloads exact titles PDE-PFN; ECHO; CoupledFlow; sTCL derivative-informed neural operator; OpInf-LLM",
+      "source": "NeurIPS",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2610.13334",
+        "2512.04974",
+        "2611.10945",
+        "2609.32797",
+        "2602.01493"
+      ]
+    },
+    {
+      "query": "ICML 2026 PMLR Volume 306 official proceedings Hodge Spectral Duality and Time-Induced Neural Networks (TINNs)",
+      "source": "PMLR",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2605.13834",
+        "2601.20361"
+      ]
+    },
+    {
+      "query": "arXiv exact title author matching for seven NeurIPS/ICML publication candidates and preprint upgrade check",
+      "source": "arXiv",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2605.13834",
+        "2610.13334",
+        "2512.04974",
+        "2611.10945",
+        "2609.32797",
+        "2601.20361",
+        "2602.01493"
+      ]
+    },
+    {
+      "query": "ICLR 2026 physics-informed fine-tuning of foundation models workshop versus main-track publication",
+      "source": "OpenReview/ICLR/WebSearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": [
+        "2603.15431"
+      ]
+    },
+    {
+      "query": "ICML 2026 PMLR Origo MERLIN ReViT MiSe-GNN official proceedings and stable DOI/arXiv identity matching",
+      "source": "PMLR/WebSearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "Nature Machine Intelligence Nature Communications Communications Physics published 2026 neural operators",
+      "source": "Nature/WebSearch",
+      "status": "success",
+      "error": null,
+      "candidate_ids": []
+    },
+    {
+      "query": "Elsevier CMAME JCP November 2026 new neural operator PDE article direct publisher page",
+      "source": "Elsevier",
+      "status": "failed",
+      "error": "Selected direct Elsevier/DOI detail pages returned access errors; search snippet can provide DOI clues but cannot independently verify all metadata fields",
+      "candidate_ids": []
+    }
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2605.13834",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-23T01:37:15Z",
+      "decision": "selected",
+      "reason": "Existing Hodge neural operator preprint upgraded to published via PMLR ICML 2026, 2026-09-29; core operator 8/10; backfill official status.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2610.13334",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-23T01:37:15Z",
+      "decision": "selected",
+      "reason": "Existing PDE-PFN preprint upgraded from W47 pending to officially accepted NeurIPS 2026 via conference Downloads list; core foundation candidate 9/10, no publication date.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2512.04974",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-23T01:37:15Z",
+      "decision": "selected",
+      "reason": "Existing ECHO million-point generative operator preprint upgraded to NeurIPS 2026 accepted via official Downloads list; core 9/10, not published.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2611.10945",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-23T01:37:15Z",
+      "decision": "selected",
+      "reason": "New stable identity CoupledFlow accepted at NeurIPS 2026; official list plus arXiv match; core 9/10; coupled multi-physics generative operator.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2609.32797",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-23T01:37:15Z",
+      "decision": "selected",
+      "reason": "New stable identity sTCL derivative-informed neural operator officially accepted at NeurIPS 2026; extended 7/10; multi-PDE physics-informed tangent consistency.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2601.20361",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-23T01:37:15Z",
+      "decision": "selected",
+      "reason": "New stable identity TINNs published in ICML 2026 PMLR 306 on 2026-09-29; extended 6/10; continuous-time PINN with hypernetwork-like time-varying spatial weights.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2602.01493",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-23T01:37:15Z",
+      "decision": "selected",
+      "reason": "New stable identity OpInf-LLM accepted at NeurIPS 2026 official Downloads; extended 6/10, reduced-order parametric PDE with tool-driven LLM.",
+      "discovery_type": "backfill"
+    },
+    {
+      "arxiv_id": "2603.15431",
+      "doi": null,
+      "submitted_at": null,
+      "updated_at": null,
+      "discovered_at": "2026-11-23T01:37:15Z",
+      "decision": "excluded",
+      "reason": "ICLR 2026 PDE workshop item; its PDF search result alone does not establish main-conference publication, and the published registry requires an independent formal status. Workshop-only method is not admitted.",
+      "discovery_type": "backfill"
+    }
+  ]
+}
