@@ -31,13 +31,13 @@
       "2026-09-09"
     ]
   },
-  "legacy_unverified": 435,
-  "missing_authors": 318,
+  "legacy_unverified": 433,
+  "missing_authors": 316,
   "missing_title": 3,
-  "papers": 508,
-  "reported_formal": 142,
+  "papers": 512,
+  "reported_formal": 149,
   "schema_version": 1,
-  "selected_arxiv_ids": 399,
-  "structured_runs": 63,
-  "weekly_files": 10
+  "selected_arxiv_ids": 403,
+  "structured_runs": 64,
+  "weekly_files": 11
 }

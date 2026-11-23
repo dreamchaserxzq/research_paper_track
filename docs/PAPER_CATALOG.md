@@ -162,7 +162,7 @@
 | Towards a Foundation Model for Partial Differential Equations Across Physics Domains | [2511.21861](https://arxiv.org/abs/2511.21861) | A | preprint | legacy_unverified |
 | The Machine Learning Approach to Moment Closure Relations for Plasma: A Review | [2511.22486](https://arxiv.org/abs/2511.22486) | unknown | preprint | legacy_unverified |
 | Beyond Loss Guidance: Using PDE Residuals as Spectral Attention in Diffusion Neural Operators | [2512.01370](https://arxiv.org/abs/2512.01370) | D | preprint | legacy_unverified |
-| Efficient Generative Transformer Operators For Million-Point PDEs | [2512.04974](https://arxiv.org/abs/2512.04974) | unknown | preprint | legacy_unverified |
+| Efficient Generative Transformer Operators For Million-Point PDEs | [2512.04974](https://arxiv.org/abs/2512.04974) | unknown | accepted | source_checked |
 | Operator Formalism for Laser-Plasma Wakefield Acceleration | [2512.04982](https://arxiv.org/abs/2512.04982) | unknown | preprint | legacy_unverified |
 | CFO: Learning Continuous-Time PDE Dynamics via Flow-Matched Neural Operators | [2512.05297](https://arxiv.org/abs/2512.05297) | unknown | published | legacy_unverified |
 | Stable Spectral Neural Operator for Learning Stiff PDE Systems from Limited Data | [2512.11686](https://arxiv.org/abs/2512.11686) | unknown | preprint | legacy_unverified |
@@ -193,9 +193,11 @@
 | Learning Neural Operators from Partial Observations via Latent Autoregressive Modeling | [2601.15547](https://arxiv.org/abs/2601.15547) | unknown | preprint | legacy_unverified |
 | Out-of-Distribution Generalization for Neural Physics Solvers（NOVA） | [2601.19091](https://arxiv.org/abs/2601.19091) | C | preprint | legacy_unverified |
 | ProFlow: Zero-Shot Physics-Consistent Sampling via Proximal Flow Guidance | [2601.20227](https://arxiv.org/abs/2601.20227) | unknown | preprint | legacy_unverified |
+| TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs | [2601.20361](https://arxiv.org/abs/2601.20361) | unknown | published | source_checked |
 | A Joint Diffusion Approach to Multi-Modal Inference in Inertial Confinement Fusion | [2601.21006](https://arxiv.org/abs/2601.21006) | unknown | preprint | legacy_unverified |
 | Particle-Guided Diffusion Models for Partial Differential Equations | [2601.23262](https://arxiv.org/abs/2601.23262) | unknown | published | legacy_unverified |
 | Test-time Generalization for Physics through Neural Operator Splitting | [2602.00884](https://arxiv.org/abs/2602.00884) | C | published | source_checked |
+| OpInf-LLM: Parametric PDE Solving with LLMs via Operator Inference | [2602.01493](https://arxiv.org/abs/2602.01493) | unknown | accepted | source_checked |
 | Geometric Generalization of Neural Operators from Kernel Integral Perspective | [2602.01498](https://arxiv.org/abs/2602.01498) | A, C | preprint | legacy_unverified |
 | Unsupervised Physics-Informed Operator Learning through Multi-Stage Curriculum Training | [2602.02264](https://arxiv.org/abs/2602.02264) | unknown | preprint | legacy_unverified |
 | Structure-Preserving Learning Improves Geometry Generalization in Neural PDEs | [2602.02788](https://arxiv.org/abs/2602.02788) | unknown | published | source_checked |
@@ -316,7 +318,7 @@
 | Compositional Neural Operators for Multi-Dimensional Fluid Dynamics (CompNO) | [2605.11691](https://arxiv.org/abs/2605.11691) | A | preprint | legacy_unverified |
 | Neural-Schwarz Tiling for Geometry-Universal PDE Solving at Scale | [2605.12343](https://arxiv.org/abs/2605.12343) | unknown | preprint | legacy_unverified |
 | UFO: A Domain-Unification-Free Operator Framework for Generalized Operator Learning | [2605.12700](https://arxiv.org/abs/2605.12700) | unknown | preprint | legacy_unverified |
-| Topology-Preserving Neural Operator Learning via Hodge Decomposition | [2605.13834](https://arxiv.org/abs/2605.13834) | unknown | preprint | legacy_unverified |
+| Topology-Preserving Neural Operator Learning via Hodge Decomposition | [2605.13834](https://arxiv.org/abs/2605.13834) | unknown | published | source_checked |
 | Discovering Physical Directions in Weight Space: Composing Neural PDE Experts | [2605.14546](https://arxiv.org/abs/2605.14546) | unknown | preprint | legacy_unverified |
 | Real-time virtual circuits for plasma shape control via neural network emulators | [2605.14939](https://arxiv.org/abs/2605.14939) | unknown | preprint | legacy_unverified |
 | arxiv:2605.15179 | [2605.15179](https://arxiv.org/abs/2605.15179) | unknown | unknown | legacy_unverified |
@@ -418,6 +420,7 @@
 | AutoPDEBench: Benchmarking LLM Auto-Research for Neural PDE Solver Design | [2609.32245](https://arxiv.org/abs/2609.32245) | B, D | preprint | source_checked |
 | Stabilizing Autoregressive PDE Foundation Model Rollouts with Event-Triggered Context Healing | [2609.32321](https://arxiv.org/abs/2609.32321) | C, D | preprint | source_checked |
 | Does Transolver really need a Transformer? | [2609.32525](https://arxiv.org/abs/2609.32525) | D | preprint | source_checked |
+| Derivative-Informed Training of Neural Operators On-the-Fly via Sketched Tangent Consistency | [2609.32797](https://arxiv.org/abs/2609.32797) | unknown | accepted | source_checked |
 | Neural Scaling Laws of Transformer Operator Network | [2609.33533](https://arxiv.org/abs/2609.33533) | B, D | preprint | source_checked |
 | PDE-JEPA: Predictive Representation Learning of Latent Dynamics Modeling for Parametric PDEs | [2609.34715](https://arxiv.org/abs/2609.34715) | A, C | preprint | source_checked |
 | PDE-OBS: Controlled Evaluation Across Observation Patterns | [2609.36521](https://arxiv.org/abs/2609.36521) | B, D | preprint | source_checked |
@@ -432,7 +435,7 @@
 | The Symbol of the Surrogate: Measuring Numerical Provenance in Neural PDE Solvers | [2610.09255](https://arxiv.org/abs/2610.09255) | B, D | preprint | source_checked |
 | Transferability of Learned States in Neural PDE Solvers | [2610.10972](https://arxiv.org/abs/2610.10972) | B, C | preprint | source_checked |
 | Mesh-Native Tokenisation: Retrofitting Foundation Models to Unstructured Data | [2610.12618](https://arxiv.org/abs/2610.12618) | A, C | preprint | source_checked |
-| PDE-PFN: Prior-Data Fitted Neural PDE Solver | [2610.13334](https://arxiv.org/abs/2610.13334) | A, C | preprint | source_checked |
+| PDE-PFN: Prior-Data Fitted Neural PDE Solver | [2610.13334](https://arxiv.org/abs/2610.13334) | A, C | accepted | source_checked |
 | Physics Foundation Models for Efficient Control of Fluid Flows | [2610.15173](https://arxiv.org/abs/2610.15173) | C | preprint | source_checked |
 | From Simulated Fluids to Living Tissue: Zero-Shot Foundation Model Transfer to Perturbed Embryos | [2610.16236](https://arxiv.org/abs/2610.16236) | C | preprint | source_checked |
 | Compute-optimal data scaling for neural surrogates via multi-fidelity training | [2610.17221](https://arxiv.org/abs/2610.17221) | A, B | preprint | source_checked |
@@ -452,6 +455,7 @@
 | HotPOT: Operator Transformer with Heterogeneous Physics Experts for Large-Scale PDE Pre-training | [2610.38218](https://arxiv.org/abs/2610.38218) | A | preprint | source_checked |
 | Self-Supervised Learning of Universal Latent Spaces for Operator Learning | [2611.05735](https://arxiv.org/abs/2611.05735) | A, C | preprint | source_checked |
 | Conformal Prediction for Time-Dependent PDEs | [2611.08409](https://arxiv.org/abs/2611.08409) | D | preprint | source_checked |
+| CoupledFlow: One-Step Neural Operators for Coupled Multi-Physics PDEs | [2611.10945](https://arxiv.org/abs/2611.10945) | unknown | accepted | source_checked |
 | AeroZoo: A Benchmark of Well-Posed Flow Problems for Foundation Models of Aerodynamics | [2611.17152](https://arxiv.org/abs/2611.17152) | B | preprint | source_checked |
 | Multistage physics informed neural network for solving coupled multiphysics problems in material degradation and fluid dynamics | [10.1007/s00366-025-02174-4](https://doi.org/10.1007/s00366-025-02174-4) | unknown | published | legacy_unverified |
 | Parametric phase-field brittle fracture computations with convolutional Fourier neural operators | [10.1007/s00466-026-02858-8](https://doi.org/10.1007/s00466-026-02858-8) | unknown | published | source_checked |
